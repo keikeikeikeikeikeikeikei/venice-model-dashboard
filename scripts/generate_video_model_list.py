@@ -170,6 +170,12 @@ def generate_html(models_data):
         .bool-true {{ background-color: rgba(25, 135, 84, 0.15); color: #198754; }}
         .bool-false {{ background-color: rgba(220, 53, 69, 0.15); color: #dc3545; }}
 
+        .price-note {{
+            font-size: 0.9em;
+            color: #6c757d;
+            font-style: italic;
+        }}
+
         a {{
             color: var(--primary-color);
             text-decoration: none;
@@ -203,6 +209,7 @@ def generate_html(models_data):
                     <tr>
                         <th onclick="sortTable('name')">Model</th>
                         <th onclick="sortTable('date')">Created</th>
+                        <th>Pricing</th>
                         <th>Type</th>
                         <th>Resolutions</th>
                         <th>Durations</th>
@@ -255,6 +262,9 @@ def generate_html(models_data):
                         <div class="model-id">${{model.id}}</div>
                     </td>
                     <td>${{formatDate(model.created)}}</td>
+                    <td>
+                        <span class="price-note">Dynamic</span>
+                    </td>
                     <td>
                         <span class="tag">${{modelType}}</span>
                     </td>
