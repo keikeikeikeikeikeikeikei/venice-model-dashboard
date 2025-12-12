@@ -112,7 +112,7 @@
     "type": "video"
   },
   {
-    "created": 1765461195,
+    "created": 1765503106,
     "id": "ltx-2-fast-image-to-video",
     "model_spec": {
       "privacy": "anonymized",
@@ -148,7 +148,7 @@
     "type": "video"
   },
   {
-    "created": 1765461195,
+    "created": 1765503106,
     "id": "ltx-2-fast-text-to-video",
     "model_spec": {
       "privacy": "anonymized",
@@ -184,7 +184,7 @@
     "type": "video"
   },
   {
-    "created": 1765461195,
+    "created": 1765503106,
     "id": "ltx-2-full-image-to-video",
     "model_spec": {
       "privacy": "anonymized",
@@ -215,7 +215,7 @@
     "type": "video"
   },
   {
-    "created": 1765461195,
+    "created": 1765503106,
     "id": "ltx-2-full-text-to-video",
     "model_spec": {
       "privacy": "anonymized",
@@ -270,7 +270,7 @@
     "type": "video"
   },
   {
-    "created": 1765461195,
+    "created": 1765503106,
     "id": "kling-2.6-pro-text-to-video",
     "model_spec": {
       "privacy": "anonymized",
@@ -298,7 +298,7 @@
     "type": "video"
   },
   {
-    "created": 1765461195,
+    "created": 1765503106,
     "id": "kling-2.6-pro-image-to-video",
     "model_spec": {
       "privacy": "anonymized",
@@ -615,7 +615,7 @@
     "type": "video"
   },
   {
-    "created": 1765461195,
+    "created": 1765503106,
     "id": "veo3.1-fast-text-to-video",
     "model_spec": {
       "privacy": "anonymized",
@@ -647,7 +647,7 @@
     "type": "video"
   },
   {
-    "created": 1765461195,
+    "created": 1765503106,
     "id": "veo3.1-fast-image-to-video",
     "model_spec": {
       "privacy": "anonymized",
@@ -676,7 +676,7 @@
     "type": "video"
   },
   {
-    "created": 1765461195,
+    "created": 1765503106,
     "id": "veo3.1-full-text-to-video",
     "model_spec": {
       "privacy": "anonymized",
@@ -708,7 +708,7 @@
     "type": "video"
   },
   {
-    "created": 1765461195,
+    "created": 1765503106,
     "id": "veo3.1-full-image-to-video",
     "model_spec": {
       "privacy": "anonymized",

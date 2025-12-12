@@ -33,12 +33,26 @@ def fetch_and_save_models():
                 models_by_type[model_type] = []
             models_by_type[model_type].append(model)
 
+        # Prepare paths
+        import pathlib
+        base_dir = pathlib.Path(__file__).parent
+        data_dir = base_dir.parent / 'data'
+        data_dir.mkdir(parents=True, exist_ok=True)
+
         # Save to files
         for model_type, type_models in models_by_type.items():
-            filename = f"../data/venice_models_{model_type}.json"
+            filename = data_dir / f"venice_models_{model_type}.json"
             with open(filename, 'w', encoding='utf-8') as f:
                 json.dump(type_models, f, indent=2, ensure_ascii=False)
             print(f"Saved {len(type_models)} models of type '{model_type}' to {filename}")
+
+        # Save all models to a single JS file for the specific dashboard
+        js_filename = data_dir / "all_models.js"
+        with open(js_filename, 'w', encoding='utf-8') as f:
+            f.write("window.veniceModels = ")
+            json.dump(models_by_type, f, indent=2, ensure_ascii=False)
+            f.write(";")
+        print(f"Saved combined data to {js_filename}")
 
     except Exception as e:
         print(f"An error occurred: {e}")

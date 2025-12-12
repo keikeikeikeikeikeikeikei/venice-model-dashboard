@@ -8,4 +8,6 @@ output/
 .vscode/
 .idea/
 
+
 !output/index.html
+!output/pricing_dashboard.html
