@@ -24,4 +24,7 @@ python3 generate_model_list.py
 python3 generate_image_model_list.py
 python3 generate_video_model_list.py
 
-echo "✅ Update complete! Open ../output/index.html to view results."
+echo "📊 Generating Main Dashboard..."
+python3 generate_dashboard.py
+
+echo "✅ All data updated successfully!"
