@@ -36,8 +36,14 @@ def generate_dashboard():
     )
     
     # Render
+    import datetime
+    now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
+    
     template = env.get_template('dashboard.html')
-    html_content = template.render(models_json=json.dumps(data, indent=2))
+    html_content = template.render(
+        models_json=json.dumps(data, indent=2),
+        generated_at=now
+    )
     
     # Save
     output_file.parent.mkdir(parents=True, exist_ok=True)
