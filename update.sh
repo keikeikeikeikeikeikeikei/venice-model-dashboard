@@ -15,4 +15,4 @@ uv run python scripts/fetch.py
 echo "📊 Generating Main Dashboard..."
 uv run python scripts/build.py
 
-echo "✅ Update Complete! Open output/index.html to view."
+echo "✅ Update Complete! Open docs/index.html to view."

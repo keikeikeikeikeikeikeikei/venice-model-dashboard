@@ -11,9 +11,9 @@ __pycache__/
 .venv/
 venv/
 
-# output (Include only the main dashboard)
-output/*
-!output/index.html
+# docs (Include only the main dashboard)
+docs/*
+!docs/index.html
 
 # Generated Data & Logs (Exclude all fetched data)
 data/*

@@ -14,7 +14,7 @@ def generate_dashboard():
     
     templates_dir = base_dir / "templates"
     data_file = root_dir / "data" / "venice_data.json"
-    output_file = root_dir / "output" / "index.html"
+    output_file = root_dir / "docs" / "index.html"
     
     # Check data
     if not data_file.exists():

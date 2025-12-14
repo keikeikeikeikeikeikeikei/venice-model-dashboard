@@ -10,7 +10,7 @@ async def run():
         # Determine paths
         script_dir = os.path.dirname(os.path.abspath(__file__))
         project_root = os.path.dirname(script_dir)
-        html_path = os.path.join(project_root, "output", "index.html")
+        html_path = os.path.join(project_root, "docs", "index.html")
         output_path = os.path.join(project_root, "images", "dashboard.png")
         
         print(f"Opening: file://{html_path}")

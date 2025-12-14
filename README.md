@@ -14,7 +14,7 @@ Run the automation script to fetch the latest data and rebuild the HTML files:
 ```
 
 ### 2. View Results
-Open `output/index.html` in your web browser to navigate the generated lists:
+Open `docs/index.html` in your web browser to navigate the generated lists:
 - **Text Models**: Pricing, context window, capabilities (Reasoning, Code, etc.)
 - **Image Models**: Generation costs, upscale pricing, constraints.
 - **Video Models**: **Real-time pricing** (automatically fetched), resolution, duration, and audio support.
@@ -25,7 +25,7 @@ Open `output/index.html` in your web browser to navigate the generated lists:
 ```
 ├── update.sh           # Main automation script
 ├── data/               # Consolidated JSON data
-├── output/             # Generated Dashboard (index.html)
+├── docs/               # Generated Dashboard (index.html)
 ├── scripts/
 │   ├── fetch.py        # Data fetcher
 │   ├── build.py        # Dashboard builder
