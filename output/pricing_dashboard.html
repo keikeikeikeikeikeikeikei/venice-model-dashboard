@@ -490,9 +490,11 @@
             activeFilters.clear(); // Clear filters when switching tabs
 
             // Reset sort defaults
-            sortKey = t === 'text' ? 'price_avg' : (t === 'image' ? 'price_gen' : 'created');
-            sortAsc = t === 'text' || t === 'image';
-            if (t === 'video') sortAsc = false;
+            if (t === 'text') sortKey = 'price_avg';
+            else if (t === 'image') sortKey = 'price_gen';
+            else if (t === 'video') sortKey = 'price_video';
+
+            sortAsc = true;
 
             document.querySelectorAll('.tab-btn').forEach(b => b.classList.toggle('active', b.textContent.toLowerCase() === t));
 
