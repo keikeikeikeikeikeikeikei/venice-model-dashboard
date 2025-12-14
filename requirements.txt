@@ -1,0 +1,10 @@
+# Venice Pricing Dependencies
+
+# Template engine for HTML generation
+jinja2>=3.1.0
+
+# HTTP requests for API calls
+requests>=2.31.0
+
+# Development tools (optional)
+playwright>=1.40.0

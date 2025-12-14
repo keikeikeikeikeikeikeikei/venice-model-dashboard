@@ -1,18 +1,20 @@
+# System & Tools
 .DS_Store
-__pycache__/
-*.pyc
-.env
-.venv
-venv/
-.gemini/
-output/
 .vscode/
 .idea/
+.gemini/
+.env
 
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
 
+# output (Include only the main dashboard)
+output/*
 !output/index.html
-!output/pricing_dashboard.html
 
-# Logs
-data/network_log.json
-data/video_quote_requests.json
+# Generated Data & Logs (Exclude all fetched data)
+data/*
+!data/.keep

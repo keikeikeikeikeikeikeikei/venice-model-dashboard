@@ -1,119 +1,2856 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Venice Model Pricing & Specs</title>
+    <title>Venice Model Pricing Dashboard</title>
     <style>
         :root {
-            --bg-color: #f8f9fa;
-            --text-color: #212529;
+            --bg-body: #f8f9fa;
+            --text-main: #212529;
+            --text-muted: #6c757d;
             --card-bg: #ffffff;
             --border-color: #dee2e6;
-            --primary-color: #0d6efd;
-            --hover-bg: #e9ecef;
+            --primary: #0d6efd;
+            --primary-hover: #0b5ed7;
+            --success: #198754;
+            --bar-bg: #e9ecef;
+            --bar-fill: #0d6efd;
+            --header-bg: #e9ecef;
         }
 
         @media (prefers-color-scheme: dark) {
             :root {
-                --bg-color: #212529;
-                --text-color: #f8f9fa;
+                --bg-body: #212529;
+                --text-main: #f8f9fa;
+                --text-muted: #adb5bd;
                 --card-bg: #343a40;
                 --border-color: #495057;
-                --primary-color: #0d6efd;
-                --hover-bg: #495057;
+                --primary: #6ea8fe;
+                --primary-hover: #3d8bfd;
+                --success: #75b798;
+                --bar-bg: #495057;
+                --bar-fill: #6ea8fe;
+                --header-bg: #2c3237;
             }
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
             margin: 0;
-            padding: 40px 20px;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.5;
         }
 
         .container {
-            max-width: 800px;
-            width: 100%;
-            text-align: center;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
         h1 {
-            margin-bottom: 40px;
-            font-size: 2.5rem;
-        }
-
-        .nav-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .nav-card {
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 12px;
-            padding: 30px;
-            text-decoration: none;
-            color: var(--text-color);
-            transition: transform 0.2s, box-shadow 0.2s;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-        }
-
-        .nav-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-            border-color: var(--primary-color);
-        }
-
-        .nav-card h2 {
-            margin: 0 0 10px 0;
-            color: var(--primary-color);
-        }
-
-        .nav-card p {
             margin: 0;
-            opacity: 0.8;
+            font-size: 1.5rem;
         }
-        
-        .footer {
-            margin-top: 60px;
-            opacity: 0.6;
+
+        .controls {
+            background: var(--card-bg);
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .main-controls {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            align-items: center;
+            width: 100%;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 5px;
+        }
+
+        .tab-btn {
+            padding: 6px 16px;
+            border: 1px solid var(--border-color);
+            background: var(--card-bg);
+            color: var(--text-main);
+            cursor: pointer;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        .tab-btn.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        .filter-bar {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            padding-top: 10px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .filter-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
             font-size: 0.9em;
+            cursor: pointer;
+            user-select: none;
+            padding: 4px 8px;
+            background: var(--bg-body);
+            border-radius: 4px;
+            border: 1px solid transparent;
+        }
+
+        .filter-item:hover {
+            border-color: var(--border-color);
+        }
+
+        .search-box {
+            flex: 1;
+        }
+
+        .search-box input {
+            padding: 6px 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            background: var(--bg-body);
+            color: var(--text-main);
+            width: 100%;
+            max-width: 300px;
+        }
+
+        /* Table Styles */
+        .table-container {
+            overflow-x: auto;
+            background: var(--card-bg);
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95rem;
+            min-width: 1000px;
+        }
+
+        th,
+        td {
+            padding: 10px 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background: var(--header-bg);
+            font-weight: 600;
+            position: sticky;
+            top: 0;
+            white-space: nowrap;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        th:hover {
+            background: var(--border-color);
+        }
+
+        /* Columns */
+        .col-model {
+            min-width: 250px;
+        }
+
+        .col-price {
+            min-width: 200px;
+        }
+
+        .col-caps {
+            min-width: 150px;
+        }
+
+        .col-ctx {
+            white-space: nowrap;
+        }
+
+        .model-name {
+            font-weight: 600;
+            font-size: 1rem;
+            color: var(--text-main);
+            display: block;
+        }
+
+        .model-id {
+            font-size: 0.8em;
+            color: var(--text-muted);
+            font-family: monospace;
+        }
+
+        /* Pricing Bar */
+        .price-cell {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .price-val {
+            font-weight: 600;
+            font-size: 0.9em;
+        }
+
+        .rel-bar-container {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.75em;
+            color: var(--text-muted);
+        }
+
+        .rel-bar-bg {
+            flex: 1;
+            height: 4px;
+            background: var(--bar-bg);
+            border-radius: 2px;
+            overflow: hidden;
+            max-width: 100px;
+        }
+
+        .rel-bar-fill {
+            height: 100%;
+            width: 0%;
+            transition: width 0.3s;
+        }
+
+        .bar-low {
+            background: #198754;
+        }
+
+        .bar-med {
+            background: #ffc107;
+        }
+
+        .bar-high {
+            background: #dc3545;
+        }
+
+        /* Capability Badges/Icons */
+        .cap-icons {
+            display: flex;
+            gap: 8px;
+            font-size: 1.2em;
+        }
+
+        .cap-icon {
+            opacity: 0.2;
+            filter: grayscale(1);
+        }
+
+        .cap-active {
+            opacity: 1;
+            filter: none;
+        }
+
+        .cap-badge {
+            display: inline-block;
+            padding: 2px 6px;
+            border-radius: 4px;
+            background: var(--bg-body);
+            border: 1px solid var(--border-color);
+            font-size: 0.75em;
+            margin-right: 4px;
+        }
+
+        .tag-row {
+            margin-top: 4px;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
-<body>
-    <div class="container">
-        <h1>Venice Model Pricing</h1>
-        <p style="font-size: 1.2rem; margin-bottom: 40px; opacity: 0.8;">
-            Comparisons available for all Venice.ai model types.
-        </p>
 
-        <div class="nav-grid">
-            <a href="venice_models_text_full.html" class="nav-card">
-                <h2>Text Models</h2>
-                <p>LLMs, Chat, and Reasoning models.</p>
-            </a>
-            <a href="venice_models_image.html" class="nav-card">
-                <h2>Image Models</h2>
-                <p>Image generation and upscaling models.</p>
-            </a>
-            <a href="venice_models_video.html" class="nav-card">
-                <h2>Video Models</h2>
-                <p>Video generation models.</p>
-            </a>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Venice Model Pricing</h1>
+            <div class="meta">Generated from Live API Data</div>
+        </header>
+
+        <div class="controls">
+            <div class="main-controls">
+                <div class="tabs">
+                    <button class="tab-btn active" onclick="switchTab('text')">Text</button>
+                    <button class="tab-btn" onclick="switchTab('image')">Image</button>
+                    <button class="tab-btn" onclick="switchTab('video')">Video</button>
+                </div>
+
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search (Refine by Name, ID, Source)..."
+                        oninput="renderTable()">
+                </div>
+            </div>
+
+            <div id="filterBar" class="filter-bar">
+                <!-- Filters injected via JS -->
+            </div>
         </div>
-        
-        <div class="footer">
-            Generated from Venice API data.
+
+        <div class="table-container">
+            <table>
+                <thead id="tableHead">
+                    <!-- Headers injected via JS -->
+                </thead>
+                <tbody id="tableBody">
+                    <!-- Rows injected via JS -->
+                </tbody>
+            </table>
         </div>
     </div>
+
+    <!-- Data Injection -->
+    <script>
+        window.veniceModels = {
+  "text": [
+    {
+      "created": 1742262554,
+      "id": "venice-uncensored",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.2,
+            "diem": 0.2
+          },
+          "output": {
+            "usd": 0.9,
+            "diem": 0.9
+          }
+        },
+        "availableContextTokens": 32768,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "fp16",
+          "supportsFunctionCalling": false,
+          "supportsReasoning": false,
+          "supportsResponseSchema": true,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsLogProbs": true
+        },
+        "constraints": {
+          "temperature": {
+            "default": 0.7
+          },
+          "top_p": {
+            "default": 0.9
+          }
+        },
+        "name": "Venice Uncensored 1.1",
+        "modelSource": "https://huggingface.co/cognitivecomputations/Dolphin-Mistral-24B-Venice-Edition",
+        "offline": false,
+        "traits": [
+          "most_uncensored"
+        ]
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1745903059,
+      "id": "qwen3-4b",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.05,
+            "diem": 0.05
+          },
+          "output": {
+            "usd": 0.15,
+            "diem": 0.15
+          }
+        },
+        "availableContextTokens": 32768,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "fp8",
+          "supportsFunctionCalling": true,
+          "supportsReasoning": true,
+          "supportsResponseSchema": true,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsLogProbs": true
+        },
+        "constraints": {
+          "temperature": {
+            "default": 0.6
+          },
+          "top_p": {
+            "default": 0.95
+          }
+        },
+        "name": "Venice Small",
+        "modelSource": "https://huggingface.co/Qwen/Qwen3-4B",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1742262554,
+      "id": "mistral-31-24b",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.5,
+            "diem": 0.5
+          },
+          "output": {
+            "usd": 2,
+            "diem": 2
+          }
+        },
+        "availableContextTokens": 131072,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "fp8",
+          "supportsFunctionCalling": true,
+          "supportsReasoning": false,
+          "supportsResponseSchema": true,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsLogProbs": false
+        },
+        "constraints": {
+          "temperature": {
+            "default": 0.15
+          },
+          "top_p": {
+            "default": 1
+          }
+        },
+        "name": "Venice Medium",
+        "modelSource": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503",
+        "offline": false,
+        "traits": [
+          "default_vision"
+        ]
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1745903059,
+      "id": "qwen3-235b",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.45,
+            "diem": 0.45
+          },
+          "output": {
+            "usd": 3.5,
+            "diem": 3.5
+          }
+        },
+        "availableContextTokens": 131072,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "fp8",
+          "supportsFunctionCalling": true,
+          "supportsReasoning": true,
+          "supportsResponseSchema": true,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsLogProbs": true
+        },
+        "constraints": {
+          "temperature": {
+            "default": 0.6
+          },
+          "top_p": {
+            "default": 0.95
+          }
+        },
+        "name": "Venice Large 1.1",
+        "modelSource": "https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507-FP8",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1745903059,
+      "id": "qwen3-235b-a22b-thinking-2507",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.45,
+            "diem": 0.45
+          },
+          "output": {
+            "usd": 3.5,
+            "diem": 3.5
+          }
+        },
+        "availableContextTokens": 131072,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "fp8",
+          "supportsFunctionCalling": true,
+          "supportsReasoning": true,
+          "supportsResponseSchema": true,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsLogProbs": true
+        },
+        "constraints": {
+          "temperature": {
+            "default": 0.6
+          },
+          "top_p": {
+            "default": 0.95
+          }
+        },
+        "name": "Qwen 3 235B A22B Thinking 2507",
+        "modelSource": "https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507-FP8",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1745903059,
+      "id": "qwen3-235b-a22b-instruct-2507",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.15,
+            "diem": 0.15
+          },
+          "output": {
+            "usd": 0.75,
+            "diem": 0.75
+          }
+        },
+        "availableContextTokens": 131072,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "fp8",
+          "supportsFunctionCalling": true,
+          "supportsReasoning": false,
+          "supportsResponseSchema": true,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsLogProbs": true
+        },
+        "constraints": {
+          "temperature": {
+            "default": 0.7
+          },
+          "top_p": {
+            "default": 0.8
+          }
+        },
+        "name": "Qwen 3 235B A22B Instruct 2507",
+        "modelSource": "https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507-FP8",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1745903059,
+      "id": "qwen3-next-80b",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.35,
+            "diem": 0.35
+          },
+          "output": {
+            "usd": 1.9,
+            "diem": 1.9
+          }
+        },
+        "availableContextTokens": 262144,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "fp16",
+          "supportsFunctionCalling": true,
+          "supportsReasoning": false,
+          "supportsResponseSchema": true,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsLogProbs": true
+        },
+        "constraints": {
+          "temperature": {
+            "default": 0.7
+          },
+          "top_p": {
+            "default": 0.8
+          }
+        },
+        "name": "Qwen 3 Next 80b",
+        "modelSource": "https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1745903059,
+      "id": "qwen3-coder-480b-a35b-instruct",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.75,
+            "diem": 0.75
+          },
+          "output": {
+            "usd": 3,
+            "diem": 3
+          }
+        },
+        "availableContextTokens": 262144,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "fp8",
+          "supportsFunctionCalling": true,
+          "supportsReasoning": false,
+          "supportsResponseSchema": true,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsLogProbs": true
+        },
+        "constraints": {
+          "temperature": {
+            "default": 0.7
+          },
+          "top_p": {
+            "default": 0.8
+          }
+        },
+        "name": "Qwen 3 Coder 480b",
+        "modelSource": "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct",
+        "offline": false,
+        "traits": [
+          "default_code"
+        ]
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1711929600,
+      "id": "hermes-3-llama-3.1-405b",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 1.1,
+            "diem": 1.1
+          },
+          "output": {
+            "usd": 3,
+            "diem": 3
+          }
+        },
+        "availableContextTokens": 131072,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "fp8",
+          "supportsFunctionCalling": false,
+          "supportsReasoning": false,
+          "supportsResponseSchema": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsLogProbs": false
+        },
+        "constraints": {
+          "temperature": {
+            "default": 0.7
+          },
+          "top_p": {
+            "default": 0.9
+          }
+        },
+        "name": "Hermes 3 Llama 3.1 405b",
+        "modelSource": "https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-405B",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1711929600,
+      "id": "google-gemma-3-27b-it",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.12,
+            "diem": 0.12
+          },
+          "output": {
+            "usd": 0.2,
+            "diem": 0.2
+          }
+        },
+        "availableContextTokens": 202752,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "fp8",
+          "supportsFunctionCalling": true,
+          "supportsReasoning": false,
+          "supportsResponseSchema": true,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsLogProbs": false
+        },
+        "constraints": {
+          "temperature": {
+            "default": 0.7
+          },
+          "top_p": {
+            "default": 0.9
+          }
+        },
+        "name": "Google Gemma 3 27B Instruct",
+        "modelSource": "https://huggingface.co/google/gemma-3-27b-it",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1745903059,
+      "id": "grok-41-fast",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.5,
+            "diem": 0.5
+          },
+          "output": {
+            "usd": 1.25,
+            "diem": 1.25
+          }
+        },
+        "availableContextTokens": 262144,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "not-available",
+          "supportsFunctionCalling": true,
+          "supportsReasoning": true,
+          "supportsResponseSchema": true,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsLogProbs": true
+        },
+        "constraints": {
+          "temperature": {
+            "default": 0.7
+          },
+          "top_p": {
+            "default": 0.8
+          }
+        },
+        "name": "Grok 4.1 Fast",
+        "modelSource": "",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1717795200,
+      "id": "gemini-3-pro-preview",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 2.5,
+            "diem": 2.5
+          },
+          "output": {
+            "usd": 15,
+            "diem": 15
+          }
+        },
+        "availableContextTokens": 202752,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "not-available",
+          "supportsFunctionCalling": true,
+          "supportsReasoning": true,
+          "supportsResponseSchema": true,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsLogProbs": true
+        },
+        "constraints": {
+          "temperature": {
+            "default": 0.7
+          },
+          "top_p": {
+            "default": 0.8
+          }
+        },
+        "name": "Gemini 3 Pro Preview",
+        "modelSource": "https://deepmind.google/models/gemini/pro/",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1765673532,
+      "id": "claude-opus-45",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 6,
+            "diem": 6
+          },
+          "output": {
+            "usd": 30,
+            "diem": 30
+          }
+        },
+        "availableContextTokens": 202752,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "not-available",
+          "supportsFunctionCalling": true,
+          "supportsReasoning": true,
+          "supportsResponseSchema": true,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsLogProbs": false
+        },
+        "constraints": {
+          "temperature": {
+            "default": 0.7
+          },
+          "top_p": {
+            "default": 0.9
+          }
+        },
+        "name": "Claude Opus 4.5",
+        "modelSource": "",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1711929600,
+      "id": "openai-gpt-oss-120b",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.07,
+            "diem": 0.07
+          },
+          "output": {
+            "usd": 0.3,
+            "diem": 0.3
+          }
+        },
+        "availableContextTokens": 131072,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "not-available",
+          "supportsFunctionCalling": true,
+          "supportsReasoning": false,
+          "supportsResponseSchema": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsLogProbs": false
+        },
+        "constraints": {
+          "temperature": {
+            "default": 0.7
+          },
+          "top_p": {
+            "default": 0.9
+          }
+        },
+        "name": "OpenAI GPT OSS 120B",
+        "modelSource": "https://huggingface.co/openai/gpt-oss-120b",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1717795200,
+      "id": "kimi-k2-thinking",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.75,
+            "diem": 0.75
+          },
+          "output": {
+            "usd": 3.2,
+            "diem": 3.2
+          }
+        },
+        "availableContextTokens": 262144,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "int4",
+          "supportsFunctionCalling": true,
+          "supportsReasoning": true,
+          "supportsResponseSchema": true,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsLogProbs": true
+        },
+        "constraints": {
+          "temperature": {
+            "default": 0.7
+          },
+          "top_p": {
+            "default": 0.8
+          }
+        },
+        "name": "Kimi K2 Thinking",
+        "modelSource": "https://huggingface.co/moonshotai/Kimi-K2-Thinking",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1711929600,
+      "id": "zai-org-glm-4.6",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.85,
+            "diem": 0.85
+          },
+          "output": {
+            "usd": 2.75,
+            "diem": 2.75
+          }
+        },
+        "availableContextTokens": 202752,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "fp8",
+          "supportsFunctionCalling": true,
+          "supportsReasoning": false,
+          "supportsResponseSchema": true,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsLogProbs": false
+        },
+        "constraints": {
+          "temperature": {
+            "default": 0.7
+          },
+          "top_p": {
+            "default": 0.9
+          }
+        },
+        "name": "GLM 4.6",
+        "modelSource": "https://huggingface.co/zai-org/GLM-4.6",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1765065600,
+      "id": "deepseek-v3.2",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.4,
+            "diem": 0.4
+          },
+          "output": {
+            "usd": 1,
+            "diem": 1
+          }
+        },
+        "availableContextTokens": 163840,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "not-available",
+          "supportsFunctionCalling": false,
+          "supportsReasoning": false,
+          "supportsResponseSchema": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsLogProbs": false
+        },
+        "constraints": {
+          "temperature": {
+            "default": 1
+          },
+          "top_p": {
+            "default": 0.95
+          }
+        },
+        "name": "DeepSeek V3.2",
+        "modelSource": "https://huggingface.co/deepseek-ai/DeepSeek-V3.2",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1727966436,
+      "id": "llama-3.2-3b",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.15,
+            "diem": 0.15
+          },
+          "output": {
+            "usd": 0.6,
+            "diem": 0.6
+          }
+        },
+        "availableContextTokens": 131072,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "fp16",
+          "supportsFunctionCalling": true,
+          "supportsReasoning": false,
+          "supportsResponseSchema": true,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsLogProbs": true
+        },
+        "constraints": {
+          "temperature": {
+            "default": 0.6
+          },
+          "top_p": {
+            "default": 0.95
+          }
+        },
+        "name": "Llama 3.2 3B",
+        "modelSource": "https://huggingface.co/meta-llama/Llama-3.2-3B",
+        "offline": false,
+        "traits": [
+          "fastest"
+        ]
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1733768349,
+      "id": "llama-3.3-70b",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.7,
+            "diem": 0.7
+          },
+          "output": {
+            "usd": 2.8,
+            "diem": 2.8
+          }
+        },
+        "availableContextTokens": 131072,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "fp8",
+          "supportsFunctionCalling": true,
+          "supportsReasoning": false,
+          "supportsResponseSchema": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsLogProbs": false
+        },
+        "constraints": {
+          "temperature": {
+            "default": 0.6
+          },
+          "top_p": {
+            "default": 0.95
+          }
+        },
+        "name": "Llama 3.3 70B",
+        "modelSource": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
+        "offline": false,
+        "traits": [
+          "function_calling_default",
+          "default"
+        ]
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    }
+  ],
+  "image": [
+    {
+      "created": 1743099022,
+      "id": "venice-sd35",
+      "model_spec": {
+        "pricing": {
+          "generation": {
+            "usd": 0.01,
+            "diem": 0.01
+          },
+          "upscale": {
+            "2x": {
+              "usd": 0.02,
+              "diem": 0.02
+            },
+            "4x": {
+              "usd": 0.08,
+              "diem": 0.08
+            }
+          }
+        },
+        "constraints": {
+          "promptCharacterLimit": 1500,
+          "steps": {
+            "default": 25,
+            "max": 30
+          },
+          "widthHeightDivisor": 16
+        },
+        "supportsWebSearch": false,
+        "name": "Venice SD35",
+        "modelSource": "https://huggingface.co/stabilityai/stable-diffusion-3.5-large",
+        "offline": false,
+        "traits": [
+          "default",
+          "eliza-default"
+        ]
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "image"
+    },
+    {
+      "created": 1747080729,
+      "id": "hidream",
+      "model_spec": {
+        "pricing": {
+          "generation": {
+            "usd": 0.01,
+            "diem": 0.01
+          },
+          "upscale": {
+            "2x": {
+              "usd": 0.02,
+              "diem": 0.02
+            },
+            "4x": {
+              "usd": 0.08,
+              "diem": 0.08
+            }
+          }
+        },
+        "constraints": {
+          "promptCharacterLimit": 1500,
+          "steps": {
+            "default": 20,
+            "max": 50
+          },
+          "widthHeightDivisor": 8
+        },
+        "supportsWebSearch": false,
+        "name": "HiDream",
+        "modelSource": "https://huggingface.co/HiDream-ai/HiDream-I1-Dev",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "image"
+    },
+    {
+      "created": 1763653951,
+      "id": "nano-banana-pro",
+      "model_spec": {
+        "pricing": {
+          "generation": {
+            "usd": 0.18,
+            "diem": 0.18
+          },
+          "upscale": {
+            "2x": {
+              "usd": 0.02,
+              "diem": 0.02
+            },
+            "4x": {
+              "usd": 0.08,
+              "diem": 0.08
+            }
+          }
+        },
+        "constraints": {
+          "promptCharacterLimit": 32768,
+          "steps": {
+            "default": 20,
+            "max": 50
+          },
+          "widthHeightDivisor": 1
+        },
+        "supportsWebSearch": true,
+        "name": "Nano Banana Pro",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "image"
+    },
+    {
+      "created": 1738704152,
+      "id": "lustify-sdxl",
+      "model_spec": {
+        "pricing": {
+          "generation": {
+            "usd": 0.01,
+            "diem": 0.01
+          },
+          "upscale": {
+            "2x": {
+              "usd": 0.02,
+              "diem": 0.02
+            },
+            "4x": {
+              "usd": 0.08,
+              "diem": 0.08
+            }
+          }
+        },
+        "constraints": {
+          "promptCharacterLimit": 1500,
+          "steps": {
+            "default": 20,
+            "max": 50
+          },
+          "widthHeightDivisor": 8
+        },
+        "supportsWebSearch": false,
+        "name": "Lustify SDXL",
+        "modelSource": "https://civitai.com/models/573152/lustify-sdxl-nsfw-checkpoint",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "image"
+    },
+    {
+      "created": 1736635129,
+      "id": "lustify-v7",
+      "model_spec": {
+        "pricing": {
+          "generation": {
+            "usd": 0.01,
+            "diem": 0.01
+          },
+          "upscale": {
+            "2x": {
+              "usd": 0.02,
+              "diem": 0.02
+            },
+            "4x": {
+              "usd": 0.08,
+              "diem": 0.08
+            }
+          }
+        },
+        "constraints": {
+          "promptCharacterLimit": 1500,
+          "steps": {
+            "default": 20,
+            "max": 50
+          },
+          "widthHeightDivisor": 8
+        },
+        "supportsWebSearch": false,
+        "name": "Lustify v7",
+        "modelSource": "https://civitai.com/models/573152/lustify-sdxl-nsfw-checkpoint",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "image"
+    },
+    {
+      "created": 1736635129,
+      "id": "qwen-image",
+      "model_spec": {
+        "pricing": {
+          "generation": {
+            "usd": 0.01,
+            "diem": 0.01
+          },
+          "upscale": {
+            "2x": {
+              "usd": 0.02,
+              "diem": 0.02
+            },
+            "4x": {
+              "usd": 0.08,
+              "diem": 0.08
+            }
+          }
+        },
+        "constraints": {
+          "promptCharacterLimit": 1500,
+          "steps": {
+            "default": 8,
+            "max": 8
+          },
+          "widthHeightDivisor": 8
+        },
+        "supportsWebSearch": false,
+        "name": "Qwen Image",
+        "modelSource": "https://huggingface.co/Qwen/Qwen-Image",
+        "offline": false,
+        "traits": [
+          "highest_quality"
+        ]
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "image"
+    },
+    {
+      "created": 1736635129,
+      "id": "wai-Illustrious",
+      "model_spec": {
+        "pricing": {
+          "generation": {
+            "usd": 0.01,
+            "diem": 0.01
+          },
+          "upscale": {
+            "2x": {
+              "usd": 0.02,
+              "diem": 0.02
+            },
+            "4x": {
+              "usd": 0.08,
+              "diem": 0.08
+            }
+          }
+        },
+        "constraints": {
+          "promptCharacterLimit": 1500,
+          "steps": {
+            "default": 25,
+            "max": 30
+          },
+          "widthHeightDivisor": 16
+        },
+        "supportsWebSearch": false,
+        "name": "Anime (WAI)",
+        "modelSource": "https://civitai.com/models/827184?modelVersionId=1761560",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "image"
+    },
+    {
+      "created": 1764758779,
+      "id": "z-image-turbo",
+      "model_spec": {
+        "pricing": {
+          "generation": {
+            "usd": 0.01,
+            "diem": 0.01
+          },
+          "upscale": {
+            "2x": {
+              "usd": 0.02,
+              "diem": 0.02
+            },
+            "4x": {
+              "usd": 0.08,
+              "diem": 0.08
+            }
+          }
+        },
+        "constraints": {
+          "promptCharacterLimit": 7500,
+          "steps": {
+            "default": 8,
+            "max": 8
+          },
+          "widthHeightDivisor": 8
+        },
+        "supportsWebSearch": false,
+        "name": "Z-Image Turbo",
+        "modelSource": "https://huggingface.co/Tongyi-MAI/Z-Image-Turbo",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "image"
+    }
+  ],
+  "video": [
+    {
+      "created": 1758825748,
+      "id": "wan-2.5-preview-image-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [],
+          "resolutions": [
+            "1080p",
+            "720p",
+            "480p"
+          ],
+          "durations": [
+            "5s",
+            "10s"
+          ],
+          "audio": true,
+          "audio_configurable": false
+        },
+        "name": "Wan 2.5 Preview",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.28
+      }
+    },
+    {
+      "created": 1758825748,
+      "id": "wan-2.5-preview-text-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "text-to-video",
+          "aspect_ratios": [],
+          "resolutions": [
+            "1080p",
+            "720p",
+            "480p"
+          ],
+          "durations": [
+            "5s",
+            "10s"
+          ],
+          "audio": true,
+          "audio_configurable": false
+        },
+        "name": "Wan 2.5 Preview",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.28
+      }
+    },
+    {
+      "created": 1758825748,
+      "id": "wan-2.2-a14b-text-to-video",
+      "model_spec": {
+        "privacy": "private",
+        "constraints": {
+          "model_type": "text-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "resolutions": [
+            "720p",
+            "580p",
+            "480p"
+          ],
+          "durations": [
+            "5s"
+          ],
+          "audio": false,
+          "audio_configurable": false
+        },
+        "name": "Wan 2.2 A14B",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.06
+      }
+    },
+    {
+      "created": 1758825748,
+      "id": "wan-2.1-pro-image-to-video",
+      "model_spec": {
+        "privacy": "private",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [
+            "16:9"
+          ],
+          "resolutions": [],
+          "durations": [
+            "6s"
+          ],
+          "audio": false,
+          "audio_configurable": false
+        },
+        "name": "Wan 2.1 Pro",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.88
+      }
+    },
+    {
+      "created": 1765673532,
+      "id": "ltx-2-fast-image-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [
+            "16:9"
+          ],
+          "resolutions": [
+            "1080p",
+            "1440p",
+            "2160p"
+          ],
+          "durations": [
+            "6s",
+            "8s",
+            "10s",
+            "12s",
+            "14s",
+            "16s",
+            "18s",
+            "20s"
+          ],
+          "audio": true,
+          "audio_configurable": true
+        },
+        "name": "LTX Video 2.0 Fast",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 1.06
+      }
+    },
+    {
+      "created": 1765673532,
+      "id": "ltx-2-fast-text-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "text-to-video",
+          "aspect_ratios": [
+            "16:9"
+          ],
+          "resolutions": [
+            "1080p",
+            "1440p",
+            "2160p"
+          ],
+          "durations": [
+            "6s",
+            "8s",
+            "10s",
+            "12s",
+            "14s",
+            "16s",
+            "18s",
+            "20s"
+          ],
+          "audio": true,
+          "audio_configurable": true
+        },
+        "name": "LTX Video 2.0 Fast",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 1.06
+      }
+    },
+    {
+      "created": 1765673532,
+      "id": "ltx-2-full-image-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [
+            "16:9"
+          ],
+          "resolutions": [
+            "1080p",
+            "1440p",
+            "2160p"
+          ],
+          "durations": [
+            "6s",
+            "8s",
+            "10s"
+          ],
+          "audio": true,
+          "audio_configurable": true
+        },
+        "name": "LTX Video 2.0 Full Quality",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 1.58
+      }
+    },
+    {
+      "created": 1765673532,
+      "id": "ltx-2-full-text-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "text-to-video",
+          "aspect_ratios": [
+            "16:9"
+          ],
+          "resolutions": [
+            "1080p",
+            "1440p",
+            "2160p"
+          ],
+          "durations": [
+            "6s",
+            "8s",
+            "10s"
+          ],
+          "audio": true,
+          "audio_configurable": true
+        },
+        "name": "LTX Video 2.0 Full Quality",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 1.58
+      }
+    },
+    {
+      "created": 1758825748,
+      "id": "ovi-image-to-video",
+      "model_spec": {
+        "privacy": "private",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [],
+          "resolutions": [],
+          "durations": [
+            "5s"
+          ],
+          "audio": true,
+          "audio_configurable": false
+        },
+        "name": "Ovi",
+        "modelSource": "https://huggingface.co/chetwinlow1/Ovi",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.22
+      }
+    },
+    {
+      "created": 1765673532,
+      "id": "kling-2.6-pro-text-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "text-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "resolutions": [],
+          "durations": [
+            "5s",
+            "10s"
+          ],
+          "audio": true,
+          "audio_configurable": true
+        },
+        "name": "Kling 2.6 Pro",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.77
+      }
+    },
+    {
+      "created": 1765673532,
+      "id": "kling-2.6-pro-image-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [],
+          "resolutions": [],
+          "durations": [
+            "5s",
+            "10s"
+          ],
+          "audio": true,
+          "audio_configurable": true
+        },
+        "name": "Kling 2.6 Pro",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.77
+      }
+    },
+    {
+      "created": 1758825748,
+      "id": "kling-2.5-turbo-pro-text-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "text-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "resolutions": [],
+          "durations": [
+            "5s",
+            "10s"
+          ],
+          "audio": false,
+          "audio_configurable": false
+        },
+        "name": "Kling 2.5 Turbo Pro",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.39
+      }
+    },
+    {
+      "created": 1758825748,
+      "id": "kling-2.5-turbo-pro-image-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [],
+          "resolutions": [],
+          "durations": [
+            "5s",
+            "10s"
+          ],
+          "audio": false,
+          "audio_configurable": false
+        },
+        "name": "Kling 2.5 Turbo Pro",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.39
+      }
+    },
+    {
+      "created": 1764806400,
+      "id": "longcat-distilled-image-to-video",
+      "model_spec": {
+        "privacy": "private",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [],
+          "resolutions": [
+            "720p"
+          ],
+          "durations": [
+            "5s",
+            "10s",
+            "15s",
+            "20s",
+            "30s"
+          ],
+          "audio": false,
+          "audio_configurable": false
+        },
+        "name": "Longcat Distilled",
+        "modelSource": "https://huggingface.co/meituan-longcat/LongCat-Video",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.09
+      }
+    },
+    {
+      "created": 1764806400,
+      "id": "longcat-distilled-text-to-video",
+      "model_spec": {
+        "privacy": "private",
+        "constraints": {
+          "model_type": "text-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "resolutions": [
+            "720p"
+          ],
+          "durations": [
+            "5s",
+            "10s",
+            "15s",
+            "20s",
+            "30s"
+          ],
+          "audio": false,
+          "audio_configurable": false
+        },
+        "name": "Longcat Distilled",
+        "modelSource": "https://huggingface.co/meituan-longcat/LongCat-Video",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.09
+      }
+    },
+    {
+      "created": 1764806400,
+      "id": "longcat-image-to-video",
+      "model_spec": {
+        "privacy": "private",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [],
+          "resolutions": [
+            "720p"
+          ],
+          "durations": [
+            "5s",
+            "10s",
+            "15s",
+            "20s",
+            "30s"
+          ],
+          "audio": false,
+          "audio_configurable": false
+        },
+        "name": "Longcat Full Quality",
+        "modelSource": "https://huggingface.co/meituan-longcat/LongCat-Video",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.25
+      }
+    },
+    {
+      "created": 1764806400,
+      "id": "longcat-text-to-video",
+      "model_spec": {
+        "privacy": "private",
+        "constraints": {
+          "model_type": "text-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "resolutions": [
+            "720p"
+          ],
+          "durations": [
+            "5s",
+            "10s",
+            "15s",
+            "20s",
+            "30s"
+          ],
+          "audio": false,
+          "audio_configurable": false
+        },
+        "name": "Longcat Full Quality",
+        "modelSource": "https://huggingface.co/meituan-longcat/LongCat-Video",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.25
+      }
+    },
+    {
+      "created": 1758825748,
+      "id": "veo3-fast-text-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "text-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "resolutions": [
+            "720p",
+            "1080p"
+          ],
+          "durations": [
+            "4s",
+            "6s",
+            "8s"
+          ],
+          "audio": true,
+          "audio_configurable": false
+        },
+        "name": "Veo 3 Fast",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.44
+      }
+    },
+    {
+      "created": 1758825748,
+      "id": "veo3-fast-image-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [
+            "16:9"
+          ],
+          "resolutions": [],
+          "durations": [
+            "8s"
+          ],
+          "audio": true,
+          "audio_configurable": false
+        },
+        "name": "Veo 3 Fast",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.88
+      }
+    },
+    {
+      "created": 1758825748,
+      "id": "veo3-full-text-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "text-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "9:16"
+          ],
+          "resolutions": [
+            "720p",
+            "1080p"
+          ],
+          "durations": [
+            "4s",
+            "6s",
+            "8s"
+          ],
+          "audio": true,
+          "audio_configurable": false
+        },
+        "name": "Veo 3 Full Quality",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.88
+      }
+    },
+    {
+      "created": 1758825748,
+      "id": "veo3-full-image-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [
+            "16:9"
+          ],
+          "resolutions": [],
+          "durations": [
+            "8s"
+          ],
+          "audio": true,
+          "audio_configurable": false
+        },
+        "name": "Veo 3 Full Quality",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 1.76
+      }
+    },
+    {
+      "created": 1765673532,
+      "id": "veo3.1-fast-text-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "text-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "resolutions": [
+            "720p",
+            "1080p"
+          ],
+          "durations": [
+            "4s",
+            "6s",
+            "8s"
+          ],
+          "audio": true,
+          "audio_configurable": true
+        },
+        "name": "Veo 3.1 Fast",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.66
+      }
+    },
+    {
+      "created": 1765673532,
+      "id": "veo3.1-fast-image-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "9:16"
+          ],
+          "resolutions": [
+            "720p",
+            "1080p"
+          ],
+          "durations": [
+            "8s"
+          ],
+          "audio": true,
+          "audio_configurable": true
+        },
+        "name": "Veo 3.1 Fast",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 1.32
+      }
+    },
+    {
+      "created": 1765673532,
+      "id": "veo3.1-full-text-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "text-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "resolutions": [
+            "720p",
+            "1080p"
+          ],
+          "durations": [
+            "4s",
+            "6s",
+            "8s"
+          ],
+          "audio": true,
+          "audio_configurable": true
+        },
+        "name": "Veo 3.1 Full Quality",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 1.76
+      }
+    },
+    {
+      "created": 1765673532,
+      "id": "veo3.1-full-image-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "9:16"
+          ],
+          "resolutions": [
+            "720p",
+            "1080p"
+          ],
+          "durations": [
+            "8s"
+          ],
+          "audio": true,
+          "audio_configurable": true
+        },
+        "name": "Veo 3.1 Full Quality",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 3.52
+      }
+    },
+    {
+      "created": 1758825748,
+      "id": "sora-2-image-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "9:16"
+          ],
+          "resolutions": [
+            "720p"
+          ],
+          "durations": [
+            "4s",
+            "8s",
+            "12s"
+          ],
+          "audio": true,
+          "audio_configurable": false
+        },
+        "name": "Sora 2",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.44
+      }
+    },
+    {
+      "created": 1758825748,
+      "id": "sora-2-pro-image-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "9:16"
+          ],
+          "resolutions": [
+            "720p",
+            "1080p"
+          ],
+          "durations": [
+            "4s",
+            "8s",
+            "12s"
+          ],
+          "audio": true,
+          "audio_configurable": false
+        },
+        "name": "Sora 2 Pro",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 2.22
+      }
+    },
+    {
+      "created": 1758825748,
+      "id": "sora-2-text-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "text-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "9:16"
+          ],
+          "resolutions": [
+            "720p"
+          ],
+          "durations": [
+            "4s",
+            "8s",
+            "12s"
+          ],
+          "audio": true,
+          "audio_configurable": false
+        },
+        "name": "Sora 2",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.44
+      }
+    },
+    {
+      "created": 1758825748,
+      "id": "sora-2-pro-text-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "text-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "9:16"
+          ],
+          "resolutions": [
+            "720p",
+            "1080p"
+          ],
+          "durations": [
+            "4s",
+            "8s",
+            "12s"
+          ],
+          "audio": true,
+          "audio_configurable": false
+        },
+        "name": "Sora 2 Pro",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 2.22
+      }
+    }
+  ],
+  "other": [
+    {
+      "created": 1741924661,
+      "id": "text-embedding-bge-m3",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.15,
+            "diem": 0.15
+          },
+          "output": {
+            "usd": 0.6,
+            "diem": 0.6
+          }
+        },
+        "name": "BGE-M3",
+        "modelSource": "https://huggingface.co/BAAI/bge-m3",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "embedding"
+    },
+    {
+      "created": 1742418046,
+      "id": "tts-kokoro",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 3.5,
+            "diem": 3.5
+          }
+        },
+        "voices": [
+          "af_alloy",
+          "af_aoede",
+          "af_bella",
+          "af_heart",
+          "af_jadzia",
+          "af_jessica",
+          "af_kore",
+          "af_nicole",
+          "af_nova",
+          "af_river",
+          "af_sarah",
+          "af_sky",
+          "am_adam",
+          "am_echo",
+          "am_eric",
+          "am_fenrir",
+          "am_liam",
+          "am_michael",
+          "am_onyx",
+          "am_puck",
+          "am_santa",
+          "bf_alice",
+          "bf_emma",
+          "bf_lily",
+          "bm_daniel",
+          "bm_fable",
+          "bm_george",
+          "bm_lewis",
+          "ef_dora",
+          "em_alex",
+          "em_santa",
+          "ff_siwis",
+          "hf_alpha",
+          "hf_beta",
+          "hm_omega",
+          "hm_psi",
+          "if_sara",
+          "im_nicola",
+          "jf_alpha",
+          "jf_gongitsune",
+          "jf_nezumi",
+          "jf_tebukuro",
+          "jm_kumo",
+          "pf_dora",
+          "pm_alex",
+          "pm_santa",
+          "zf_xiaobei",
+          "zf_xiaoni",
+          "zf_xiaoxiao",
+          "zf_xiaoyi",
+          "zm_yunjian",
+          "zm_yunxi",
+          "zm_yunxia",
+          "zm_yunyang"
+        ],
+        "name": "Kokoro Text to Speech",
+        "modelSource": "https://huggingface.co/hexgrad/Kokoro-82M",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "tts"
+    },
+    {
+      "created": 1744453050,
+      "id": "upscaler",
+      "model_spec": {
+        "pricing": {
+          "generation": {
+            "usd": 0.01,
+            "diem": 0.01
+          },
+          "upscale": {
+            "2x": {
+              "usd": 0.02,
+              "diem": 0.02
+            },
+            "4x": {
+              "usd": 0.08,
+              "diem": 0.08
+            }
+          }
+        },
+        "name": "Upscaler",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "upscale"
+    }
+  ]
+};
+    </script>
+
+    <script>
+        let currentTab = 'text';
+        let sortKey = 'price_avg';
+        let sortAsc = true;
+
+        // Active filters state
+        let activeFilters = new Set();
+
+        const get = (obj, path, def = null) => path.split('.').reduce((acc, part) => acc && acc[part], obj) || def;
+
+        // --- Configuration ---
+
+        const filters = {
+            text: [
+                { id: 'supportsReasoning', label: '🧠 Reasoning' },
+                { id: 'supportsVision', label: '👁️ Vision' },
+                { id: 'supportsFunctionCalling', label: '🛠️ Func Call' },
+                { id: 'optimizedForCode', label: '💻 Code' },
+                { id: 'supportsWebSearch', label: '🌐 Web Search' }
+            ],
+            image: [
+                { id: 'hasUpscale', label: '🔍 Upscale' }
+            ],
+            video: [
+                { id: 'text-to-video', label: '📝 Text-to-Video' },
+                { id: 'image-to-video', label: '🖼️ Image-to-Video' },
+                { id: '1080p', label: '📺 1080p' },
+                { id: 'audio', label: '🎵 Audio' }
+            ]
+        };
+
+        const headers = {
+            text: [
+                { key: 'name', label: 'Model', class: 'col-model' },
+                { key: 'price_avg', label: 'Price (Avg per 1M)', class: 'col-price' },
+                { key: 'context', label: 'Context', class: 'col-ctx' },
+                { key: 'caps', label: 'Capabilities', class: 'col-caps' },
+                { key: 'created', label: 'Released', class: '' }
+            ],
+            image: [
+                { key: 'name', label: 'Model', class: 'col-model' },
+                { key: 'price_gen', label: 'Generation Price', class: 'col-price' },
+                { key: 'steps', label: 'Steps', class: '' },
+                { key: 'upscale', label: 'Upscale', class: '' },
+                { key: 'created', label: 'Released', class: '' }
+            ],
+            video: [
+                { key: 'name', label: 'Model', class: 'col-model' },
+                { key: 'price_video', label: 'Pricing', class: 'col-price' },
+                { key: 'res', label: 'Resolutions', class: '' },
+                { key: 'audio', label: 'Audio', class: '' },
+                { key: 'created', label: 'Released', class: '' }
+            ]
+        };
+
+        const strategies = {
+            text: {
+                getPrice: (m) => (get(m, 'model_spec.pricing.input.usd', 0) + get(m, 'model_spec.pricing.output.usd', 0)) / 2,
+                renderPrice: (m, max) => {
+                    const input = get(m, 'model_spec.pricing.input.usd', 'N/A');
+                    const output = get(m, 'model_spec.pricing.output.usd', 'N/A');
+                    const avg = ((input + output) / 2).toFixed(2);
+                    const pct = max > 0 ? ((input + output) / 2 / max) * 100 : 0;
+
+                    return `
+                    <div class="price-cell">
+                        <div class="price-val">$${input} (in) / $${output} (out)</div>
+                        <div class="rel-bar-container" title="Relative Cost: ${Math.round(pct)}%">
+                            <div class="rel-bar-bg"><div class="rel-bar-fill ${getBarColor(pct)}" style="width:${pct}%"></div></div>
+                            <span>Avg $${avg}</span>
+                        </div>
+                    </div>
+                `;
+                },
+                renderCaps: (m) => {
+                    const c = get(m, 'model_spec.capabilities', {});
+                    const caps = [
+                        { k: 'supportsReasoning', i: '🧠', t: 'Reasoning' },
+                        { k: 'supportsVision', i: '👁️', t: 'Vision' },
+                        { k: 'supportsFunctionCalling', i: '🛠️', t: 'Function Calling' },
+                        { k: 'optimizedForCode', i: '💻', t: 'Code Optimized' },
+                        { k: 'supportsWebSearch', i: '🌐', t: 'Web Search' }
+                    ];
+                    return `<div class="cap-icons">
+                    ${caps.map(cap => `<span class="cap-icon ${c[cap.k] ? 'cap-active' : ''}" title="${cap.t}">${cap.i}</span>`).join('')}
+                </div>`;
+                },
+                renderCtx: (m) => {
+                    const t = get(m, 'model_spec.availableContextTokens', 0);
+                    return Math.round(t / 1024) + 'k';
+                },
+                checkFilter: (m, fid) => get(m, 'model_spec.capabilities.' + fid, false)
+            },
+            image: {
+                getPrice: (m) => get(m, 'model_spec.pricing.generation.usd', 0),
+                renderPrice: (m, max) => {
+                    const p = get(m, 'model_spec.pricing.generation.usd', 0);
+                    const pct = max > 0 ? (p / max) * 100 : 0;
+                    return `
+                    <div class="price-cell">
+                        <div class="price-val">$${p} / img</div>
+                        <div class="rel-bar-container">
+                            <div class="rel-bar-bg"><div class="rel-bar-fill ${getBarColor(pct)}" style="width:${pct}%"></div></div>
+                        </div>
+                    </div>
+                `;
+                },
+                renderCaps: (m) => '',
+                checkFilter: (m, fid) => {
+                    if (fid === 'hasUpscale') return !!get(m, 'model_spec.pricing.upscale.2x.usd');
+                    return false;
+                }
+            },
+            video: {
+                getPrice: (m) => get(m, 'pricing.base_price_usd', 0),
+                renderPrice: (m, max) => {
+                    const p = get(m, 'pricing.base_price_usd');
+                    if (p === undefined) return `<span class="tag">Dynamic</span>`;
+
+                    const pct = max > 0 ? (p / max) * 100 : 0;
+                    return `
+                    <div class="price-cell">
+                        <div class="price-val">$${p.toFixed(2)}</div>
+                        <div class="rel-bar-container">
+                            <div class="rel-bar-bg"><div class="rel-bar-fill ${getBarColor(pct)}" style="width:${pct}%"></div></div>
+                        </div>
+                    </div>
+                `;
+                },
+                renderCaps: (m) => '',
+                checkFilter: (m, fid) => {
+                    if (fid === 'audio') return get(m, 'model_spec.constraints.audio', false);
+                    if (fid === 'text-to-video') return get(m, 'model_spec.constraints.model_type') === 'text-to-video';
+                    if (fid === 'image-to-video') return get(m, 'model_spec.constraints.model_type') === 'image-to-video';
+                    if (fid === '1080p') return (get(m, 'model_spec.constraints.resolutions') || []).includes('1080p');
+                    return false;
+                }
+            }
+        };
+
+        function getBarColor(p) {
+            if (p < 33) return 'bar-low';
+            if (p < 66) return 'bar-med';
+            return 'bar-high';
+        }
+
+        // --- Main Logic ---
+
+        function switchTab(t) {
+            currentTab = t;
+            activeFilters.clear(); // Clear filters when switching tabs
+
+            // Reset sort defaults
+            if (t === 'text') sortKey = 'price_avg';
+            else if (t === 'image') sortKey = 'price_gen';
+            else if (t === 'video') sortKey = 'price_video';
+
+            sortAsc = true;
+
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.toggle('active', b.textContent.toLowerCase() === t));
+
+            renderFilters();
+            renderTable();
+        }
+
+        function toggleFilter(fid) {
+            if (activeFilters.has(fid)) {
+                activeFilters.delete(fid);
+            } else {
+                activeFilters.add(fid);
+            }
+            renderTable();
+        }
+
+        function renderFilters() {
+            const bar = document.getElementById('filterBar');
+            const available = filters[currentTab] || [];
+
+            if (available.length === 0) {
+                bar.style.display = 'none';
+                bar.innerHTML = '';
+                return;
+            }
+
+            bar.style.display = 'flex';
+            bar.innerHTML = available.map(f => `
+            <label class="filter-item">
+                <input type="checkbox" onchange="toggleFilter('${f.id}')" ${activeFilters.has(f.id) ? 'checked' : ''}>
+                <span>${f.label}</span>
+            </label>
+        `).join('');
+        }
+
+        function handleSort(key) {
+            if (sortKey === key) {
+                sortAsc = !sortAsc;
+            } else {
+                sortKey = key;
+                sortAsc = true;
+                if (key === 'created') sortAsc = false;
+            }
+            renderTable();
+        }
+
+        function renderTable() {
+            const thead = document.getElementById('tableHead');
+            const tbody = document.getElementById('tableBody');
+            const cols = headers[currentTab];
+            const models = window.veniceModels[currentTab] || [];
+            const term = document.getElementById('searchInput').value.toLowerCase();
+
+            // 1. Render Headers
+            thead.innerHTML = `<tr>
+            ${cols.map(c => `<th class="${c.class}" onclick="handleSort('${c.key}')">${c.label} ${sortKey === c.key ? (sortAsc ? '▲' : '▼') : ''}</th>`).join('')}
+        </tr>`;
+
+            // 2. Filter
+            let data = models.filter(m => {
+                // Text Search
+                const n = get(m, 'model_spec.name', '').toLowerCase();
+                const i = m.id.toLowerCase();
+                const s = get(m, 'model_spec.modelSource', '').toLowerCase();
+                if (!(n.includes(term) || i.includes(term) || s.includes(term))) return false;
+
+                // Capability Filters
+                const strat = strategies[currentTab];
+                for (let fid of activeFilters) {
+                    if (!strat.checkFilter(m, fid)) return false;
+                }
+
+                return true;
+            });
+
+            // 3. Prepare Sort Data & Max Price
+            const maxPrice = Math.max(...data.map(m => strategies[currentTab].getPrice(m)));
+
+            data.forEach(m => {
+                m._sort_price = strategies[currentTab].getPrice(m);
+                m._sort_name = get(m, 'model_spec.name', '');
+                m._sort_created = m.created;
+                m._sort_context = get(m, 'model_spec.availableContextTokens', 0);
+            });
+
+            // 4. Sort
+            data.sort((a, b) => {
+                let valA, valB;
+                if (sortKey.includes('price')) { valA = a._sort_price; valB = b._sort_price; }
+                else if (sortKey === 'name') { valA = a._sort_name; valB = b._sort_name; }
+                else if (sortKey === 'created') { valA = a._sort_created; valB = b._sort_created; }
+                else if (sortKey === 'context') { valA = a._sort_context; valB = b._sort_context; }
+                else { valA = 0; valB = 0; }
+
+                if (valA < valB) return sortAsc ? -1 : 1;
+                if (valA > valB) return sortAsc ? 1 : -1;
+                return 0;
+            });
+
+            // 5. Render Rows
+            tbody.innerHTML = data.map(m => {
+                const spec = m.model_spec || {};
+
+                // Common Cells
+                const nameCell = `
+                <div>
+                    <a href="${spec.modelSource || '#'}" target="_blank" class="model-name">${spec.name || m.id}</a>
+                    <div class="model-id">${m.id}</div> 
+                    <div class="tag-row">${(spec.traits || []).map(t => `<span class="cap-badge">${t}</span>`).join('')}</div>
+                </div>
+            `;
+                const dateCell = `<span>${new Date(m.created * 1000).toLocaleDateString()}</span>`;
+
+                // Specific Cells
+                let rowHtml = '';
+
+                if (currentTab === 'text') {
+                    rowHtml = `
+                    <td>${nameCell}</td>
+                    <td>${strategies.text.renderPrice(m, maxPrice)}</td>
+                    <td>${strategies.text.renderCtx(m)}</td>
+                    <td>${strategies.text.renderCaps(m)}</td>
+                    <td>${dateCell}</td>
+                `;
+                } else if (currentTab === 'image') {
+                    const steps = get(spec, 'constraints.steps.default', '-');
+                    const upscale = get(spec, 'pricing.upscale.2x.usd', '-');
+                    rowHtml = `
+                    <td>${nameCell}</td>
+                    <td>${strategies.image.renderPrice(m, maxPrice)}</td>
+                    <td>${steps}</td>
+                    <td>$${upscale} (2x)</td>
+                    <td>${dateCell}</td>
+                `;
+                } else { // Video
+                    const res = (get(spec, 'constraints.resolutions', [])).join(', ') || '-';
+                    const audio = get(spec, 'constraints.audio') ? '✅' : '❌';
+                    rowHtml = `
+                    <td>${nameCell}</td>
+                    <td>${strategies.video.renderPrice(m, maxPrice)}</td>
+                    <td style="font-size:0.85em; max-width:200px;">${res}</td>
+                    <td>${audio}</td>
+                    <td>${dateCell}</td>
+                `;
+                }
+
+                return `<tr>${rowHtml}</tr>`;
+            }).join('');
+        }
+
+        // Init
+        switchTab('text');
+
+    </script>
 </body>
+
 </html>

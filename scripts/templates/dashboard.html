@@ -336,7 +336,11 @@
         </div>
     </div>
 
-    <script src="../data/all_models.js"></script>
+    <!-- Data Injection -->
+    <script>
+        window.veniceModels = {{ models_json | safe }};
+    </script>
+
     <script>
         let currentTab = 'text';
         let sortKey = 'price_avg';
