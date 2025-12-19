@@ -378,24 +378,66 @@
 
         /* Red */
 
-        /* Capabilities Icons */
-        .cap-icons {
+        /* Feature Badges */
+        .feature-tags {
             display: flex;
-            gap: 12px;
-            font-size: 1.25em;
+            gap: 6px;
+            flex-wrap: wrap;
         }
 
-        .cap-icon {
-            opacity: 0.15;
-            filter: grayscale(1);
-            transition: all 0.2s;
+        .feature-badge {
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+            border: 1px solid transparent;
         }
 
-        .cap-active {
-            opacity: 1;
-            filter: none;
-            transform: scale(1.1);
+        /* Feature Colors */
+        .feat-reasoning {
+            background: rgba(139, 92, 246, 0.1);
+            color: #8b5cf6;
+            border-color: rgba(139, 92, 246, 0.2);
         }
+
+        .feat-vision {
+            background: rgba(16, 185, 129, 0.1);
+            color: #10b981;
+            border-color: rgba(16, 185, 129, 0.2);
+        }
+
+        .feat-func {
+            background: rgba(245, 158, 11, 0.1);
+            color: #f59e0b;
+            border-color: rgba(245, 158, 11, 0.2);
+        }
+
+        .feat-code {
+            background: rgba(59, 130, 246, 0.1);
+            color: #3b82f6;
+            border-color: rgba(59, 130, 246, 0.2);
+        }
+
+        .feat-search {
+            background: rgba(236, 72, 153, 0.1);
+            color: #ec4899;
+            border-color: rgba(236, 72, 153, 0.2);
+        }
+
+        .feat-logprobs {
+            background: rgba(107, 114, 128, 0.1);
+            color: var(--text-muted);
+            border-color: rgba(107, 114, 128, 0.2);
+        }
+
+        .feat-json {
+            background: rgba(79, 70, 229, 0.1);
+            color: #4f46e5;
+            border-color: rgba(79, 70, 229, 0.2);
+        }
+
 
         /* Links */
         a {
@@ -489,7 +531,8 @@
                 { id: 'supportsFunctionCalling', label: '🛠️ Func Call' },
                 { id: 'optimizedForCode', label: '💻 Code' },
                 { id: 'supportsWebSearch', label: '🌐 Web Search' },
-                { id: 'supportsLogProbs', label: '📊 Logprobs' }
+                { id: 'supportsLogProbs', label: '📊 Logprobs' },
+                { id: 'supportsResponseSchema', label: '📋 JSON Mode' }
             ],
             image: [
                 { id: 'hasUpscale', label: '🔍 Upscale' }
@@ -548,15 +591,16 @@
                 renderCaps: (m) => {
                     const c = get(m, 'model_spec.capabilities', {});
                     const caps = [
-                        { k: 'supportsReasoning', i: '🧠', t: 'Reasoning' },
-                        { k: 'supportsVision', i: '👁️', t: 'Vision' },
-                        { k: 'supportsFunctionCalling', i: '🛠️', t: 'Function Calling' },
-                        { k: 'optimizedForCode', i: '💻', t: 'Code Optimized' },
-                        { k: 'supportsWebSearch', i: '🌐', t: 'Web Search' },
-                        { k: 'supportsLogProbs', i: '📊', t: 'Logprobs' }
+                        { k: 'supportsReasoning', label: 'Reasoning', cls: 'feat-reasoning' },
+                        { k: 'supportsVision', label: 'Vision', cls: 'feat-vision' },
+                        { k: 'supportsFunctionCalling', label: 'Function Call', cls: 'feat-func' },
+                        { k: 'optimizedForCode', label: 'Code', cls: 'feat-code' },
+                        { k: 'supportsWebSearch', label: 'Web Search', cls: 'feat-search' },
+                        { k: 'supportsLogProbs', label: 'Logprobs', cls: 'feat-logprobs' },
+                        { k: 'supportsResponseSchema', label: 'JSON Mode', cls: 'feat-json' }
                     ];
-                    return `<div class="cap-icons">
-                    ${caps.map(cap => `<span class="cap-icon ${c[cap.k] ? 'cap-active' : ''}" title="${cap.t}">${cap.i}</span>`).join('')}
+                    return `<div class="feature-tags">
+                    ${caps.filter(cap => c[cap.k]).map(cap => `<span class="feature-badge ${cap.cls}">${cap.label}</span>`).join('')}
                 </div>`;
                 },
                 renderCtx: (m) => {
