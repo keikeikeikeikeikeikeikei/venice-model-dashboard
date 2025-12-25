@@ -347,13 +347,20 @@
             color: var(--text-muted);
         }
 
+        /* Progress Bar */
+        .rel-bar-container {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
         .rel-bar-bg {
             flex: 1;
             height: 6px;
             background: var(--bar-bg);
             border-radius: 3px;
             overflow: hidden;
-            max-width: 120px;
         }
 
         .rel-bar-fill {
@@ -371,12 +378,75 @@
             background: #f59e0b;
         }
 
-        /* Amber */
         .bar-high {
             background: #ef4444;
         }
 
-        /* Red */
+        /* Price Bridge */
+        .price-bridge {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            min-width: 200px;
+            padding: 4px 0;
+        }
+
+        .price-bridge-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+        }
+
+        .price-value-group {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.2;
+        }
+
+        .price-value-label {
+            font-size: 0.65rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        .price-value-num {
+            font-weight: 600;
+            font-family: inherit;
+        }
+
+        .price-bridge-avg-info {
+            text-align: center;
+            flex: 1;
+            font-weight: 800;
+            color: var(--primary);
+            font-size: 0.95rem;
+        }
+
+        th.col-combined-price {
+            min-width: 220px;
+        }
+
+        .price-header-sort {
+            font-size: 0.65rem;
+            color: var(--text-muted);
+            margin-top: 4px;
+            display: flex;
+            gap: 4px;
+            justify-content: center;
+        }
+
+        .price-header-sort span {
+            cursor: pointer;
+            padding: 0 4px;
+        }
+
+        .price-header-sort span.active-sort {
+            color: var(--primary);
+            font-weight: 800;
+            text-decoration: underline;
+        }
 
         /* Feature Badges */
         .feature-tags {
@@ -438,6 +508,11 @@
             border-color: rgba(79, 70, 229, 0.2);
         }
 
+        .feat-cache {
+            background: rgba(16, 185, 129, 0.1);
+            color: #10b981;
+            border-color: rgba(16, 185, 129, 0.2);
+        }
 
         /* Links */
         a {
@@ -473,7 +548,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2025-12-25 04:40)</div>
+            <div class="meta">Generated from Live API Data (2025-12-25 12:23)</div>
         </header>
 
         <div class="controls">
@@ -2922,7 +2997,14 @@
         // Active filters state
         let activeFilters = new Set();
 
-        const get = (obj, path, def = null) => path.split('.').reduce((acc, part) => acc && acc[part], obj) || def;
+        const get = (obj, path, def = null) => {
+            try {
+                const val = path.split('.').reduce((acc, part) => acc[part], obj);
+                return (val !== undefined && val !== null) ? val : def;
+            } catch (e) {
+                return def;
+            }
+        };
 
         // --- Configuration ---
 
@@ -2934,7 +3016,8 @@
                 { id: 'optimizedForCode', label: '💻 Code' },
                 { id: 'supportsWebSearch', label: '🌐 Web Search' },
                 { id: 'supportsLogProbs', label: '📊 Logprobs' },
-                { id: 'supportsResponseSchema', label: '📋 JSON Mode' }
+                { id: 'supportsResponseSchema', label: '📋 JSON Mode' },
+                { id: 'hasCache', label: '⚡ Caching' }
             ],
             image: [
                 { id: 'hasUpscale', label: '🔍 Upscale' }
@@ -2950,66 +3033,100 @@
         const headers = {
             text: [
                 { key: 'name', label: 'Model', class: 'col-model' },
-                { key: 'price_avg', label: 'Price (Avg per 1M)', class: 'col-price' },
+                { key: 'price_combined', label: 'Pricing ($/1M) <div class="price-header-sort"><span id="sort_in">In</span> | <span id="sort_avg">Avg</span> | <span id="sort_out">Out</span></div>', class: 'col-combined-price' },
+                { key: 'cache_price', label: 'Cache ($/1M)', class: 'col-price' },
                 { key: 'context', label: 'Context', class: 'col-ctx' },
-                { key: 'caps', label: 'Capabilities', class: 'col-caps' },
-                { key: 'created', label: 'Released', class: '' }
+                { key: 'caps', label: 'Capabilities', class: 'col-caps' }
             ],
             image: [
                 { key: 'name', label: 'Model', class: 'col-model' },
                 { key: 'price_gen', label: 'Generation Price', class: 'col-price' },
                 { key: 'steps', label: 'Steps', class: '' },
-                { key: 'upscale', label: 'Upscale', class: '' },
-                { key: 'created', label: 'Released', class: '' }
+                { key: 'upscale', label: 'Upscale', class: '' }
             ],
             video: [
                 { key: 'name', label: 'Model', class: 'col-model' },
                 { key: 'price_video', label: 'Pricing', class: 'col-price' },
                 { key: 'res', label: 'Resolutions', class: '' },
-                { key: 'audio', label: 'Audio', class: '' },
-                { key: 'created', label: 'Released', class: '' }
+                { key: 'audio', label: 'Audio', class: '' }
             ]
         };
 
         const strategies = {
             text: {
                 getPrice: (m) => (get(m, 'model_spec.pricing.input.usd', 0) + get(m, 'model_spec.pricing.output.usd', 0)) / 2,
+                getCachePrice: (m) => get(m, 'model_spec.pricing.cache_input.usd', null),
                 renderPrice: (m, max) => {
-                    const input = get(m, 'model_spec.pricing.input.usd', 'N/A');
-                    const output = get(m, 'model_spec.pricing.output.usd', 'N/A');
-                    const avg = ((input + output) / 2).toFixed(2);
-                    const pct = max > 0 ? ((input + output) / 2 / max) * 100 : 0;
+                    const input = get(m, 'model_spec.pricing.input.usd', 0);
+                    const output = get(m, 'model_spec.pricing.output.usd', 0);
+                    const avg = (input + output) / 2;
+                    const pct = max > 0 ? (avg / max) * 100 : 0;
 
                     return `
+                        <div class="price-bridge" title="Avg: $${avg.toFixed(3)}/1M tokens">
+                            <div class="price-bridge-top">
+                                <div class="price-value-group">
+                                    <span class="price-value-num">$${input}</span>
+                                    <span class="price-value-label">Input</span>
+                                </div>
+                                <div class="price-bridge-avg-info">Avg $${avg.toFixed(2)}</div>
+                                <div class="price-value-group" style="text-align: right;">
+                                    <span class="price-value-num">$${output}</span>
+                                    <span class="price-value-label">Output</span>
+                                </div>
+                            </div>
+                            <div class="rel-bar-container">
+                                <div class="rel-bar-bg"><div class="rel-bar-fill ${getBarColor(pct)}" style="width:${pct}%"></div></div>
+                            </div>
+                        </div>
+                    `;
+                },
+                renderCachePrice: (m, maxCache) => {
+                    const cache = get(m, 'model_spec.pricing.cache_input.usd');
+                    if (cache === undefined || cache === null) return `<span style="color:var(--text-muted);opacity:0.5">—</span>`;
+
+                    const pct = maxCache > 0 ? (cache / maxCache) * 100 : 0;
+                    return `
                     <div class="price-cell">
-                        <div class="price-val">$${input} (in) / $${output} (out)</div>
-                        <div class="rel-bar-container" title="Relative Cost: ${Math.round(pct)}%">
+                        <div class="price-val">$${cache}</div>
+                        <div class="rel-bar-container" title="Relative Cache Cost: ${Math.round(pct)}%">
                             <div class="rel-bar-bg"><div class="rel-bar-fill ${getBarColor(pct)}" style="width:${pct}%"></div></div>
-                            <span>Avg $${avg}</span>
                         </div>
                     </div>
                 `;
                 },
                 renderCaps: (m) => {
                     const c = get(m, 'model_spec.capabilities', {});
+                    const pricing = get(m, 'model_spec.pricing', {});
                     const caps = [
                         { k: 'supportsReasoning', label: 'Reasoning', cls: 'feat-reasoning' },
                         { k: 'supportsVision', label: 'Vision', cls: 'feat-vision' },
-                        { k: 'supportsFunctionCalling', label: 'Function Call', cls: 'feat-func' },
+                        { k: 'supportsFunctionCalling', label: 'Func Call', cls: 'feat-func' },
                         { k: 'optimizedForCode', label: 'Code', cls: 'feat-code' },
                         { k: 'supportsWebSearch', label: 'Web Search', cls: 'feat-search' },
                         { k: 'supportsLogProbs', label: 'Logprobs', cls: 'feat-logprobs' },
                         { k: 'supportsResponseSchema', label: 'JSON Mode', cls: 'feat-json' }
                     ];
-                    return `<div class="feature-tags">
-                    ${caps.filter(cap => c[cap.k]).map(cap => `<span class="feature-badge ${cap.cls}">${cap.label}</span>`).join('')}
-                </div>`;
+
+                    let badges = caps
+                        .filter(cap => c[cap.k] === true)
+                        .map(cap => `<span class="feature-badge ${cap.cls}">${cap.label}</span>`);
+
+                    if (pricing.cache_input) {
+                        badges.push(`<span class="feature-badge feat-cache">Cache</span>`);
+                    }
+
+                    if (badges.length === 0) return '<span style="color:var(--text-muted);opacity:0.5">—</span>';
+                    return `<div class="feature-tags">${badges.join('')}</div>`;
                 },
                 renderCtx: (m) => {
                     const t = get(m, 'model_spec.availableContextTokens', 0);
                     return Math.round(t / 1024) + 'k';
                 },
-                checkFilter: (m, fid) => get(m, 'model_spec.capabilities.' + fid, false)
+                checkFilter: (m, fid) => {
+                    if (fid === 'hasCache') return get(m, 'model_spec.pricing.cache_input.usd') !== null;
+                    return get(m, 'model_spec.capabilities.' + fid) === true;
+                }
             },
             image: {
                 getPrice: (m) => get(m, 'model_spec.pricing.generation.usd', 0),
@@ -3112,12 +3229,24 @@
         }
 
         function handleSort(key) {
-            if (sortKey === key) {
-                sortAsc = !sortAsc;
-            } else {
-                sortKey = key;
+            // Price rotation for Text Tab
+            if (key === 'price_combined' && currentTab === 'text') {
+                if (sortKey === 'price_avg') sortKey = 'price_input';
+                else if (sortKey === 'price_input') sortKey = 'price_output';
+                else sortKey = 'price_avg';
                 sortAsc = true;
-                if (key === 'created') sortAsc = false;
+            }
+            // Fallback for Generic price sorting (Image/Video)
+            else if (key === 'price_gen' || key === 'price_video' || key === 'price_combined') {
+                sortKey = 'price_avg';
+                sortAsc = !sortAsc;
+            }
+            else {
+                if (sortKey === key) sortAsc = !sortAsc;
+                else {
+                    sortKey = key;
+                    sortAsc = true;
+                }
             }
             renderTable();
         }
@@ -3131,7 +3260,23 @@
 
             // 1. Render Headers
             thead.innerHTML = `<tr>
-            ${cols.map(c => `<th class="${c.class}" onclick="handleSort('${c.key}')">${c.label} ${sortKey === c.key ? (sortAsc ? '▲' : '▼') : ''}</th>`).join('')}
+            ${cols.map(c => {
+                let label = c.label;
+                const isPriceCombined = c.key === 'price_combined';
+                if (isPriceCombined) {
+                    const activeIn = sortKey === 'price_input' ? 'active-sort' : '';
+                    const activeAvg = sortKey === 'price_avg' ? 'active-sort' : '';
+                    const activeOut = sortKey === 'price_output' ? 'active-sort' : '';
+                    label = `Pricing ($/1M) <div class="price-header-sort">
+                        <span class="${activeIn}" onclick="event.stopPropagation(); handleSort('price_input')">In</span> | 
+                        <span class="${activeAvg}" onclick="event.stopPropagation(); handleSort('price_avg')">Avg</span> | 
+                        <span class="${activeOut}" onclick="event.stopPropagation(); handleSort('price_output')">Out</span>
+                    </div>`;
+                }
+                const isActive = sortKey === c.key || (isPriceCombined && sortKey.startsWith('price_'));
+                const icon = isActive ? (sortAsc ? '▲' : '▼') : '';
+                return `<th class="${c.class}" onclick="handleSort('${c.key}')">${label} ${icon}</th>`;
+            }).join('')}
         </tr>`;
 
             // 2. Filter
@@ -3152,23 +3297,36 @@
             });
 
             // 3. Prepare Sort Data & Max Price
-            const maxPrice = Math.max(...data.map(m => strategies[currentTab].getPrice(m)));
+            const currentStrat = strategies[currentTab];
+            const maxPrice = Math.max(0, ...data.map(m => currentStrat.getPrice(m)));
+            const maxCache = (currentTab === 'text') ? Math.max(0.00001, ...data.map(m => currentStrat.getCachePrice(m) || 0)) : 0;
 
             data.forEach(m => {
-                m._sort_price = strategies[currentTab].getPrice(m);
+                if (currentTab === 'text') {
+                    m._sort_price_input = get(m, 'model_spec.pricing.input.usd', 0);
+                    m._sort_price_output = get(m, 'model_spec.pricing.output.usd', 0);
+                    m._sort_price_avg = (m._sort_price_input + m._sort_price_output) / 2;
+                } else if (currentTab === 'image') {
+                    m._sort_price_avg = get(m, 'model_spec.pricing.generation.usd', 0);
+                } else if (currentTab === 'video') {
+                    m._sort_price_avg = get(m, 'pricing.base_price_usd', 0);
+                }
+                m._sort_cache = (currentTab === 'text') ? (currentStrat.getCachePrice(m) || 0) : 0;
                 m._sort_name = get(m, 'model_spec.name', '');
-                m._sort_created = m.created;
                 m._sort_context = get(m, 'model_spec.availableContextTokens', 0);
             });
 
             // 4. Sort
             data.sort((a, b) => {
                 let valA, valB;
-                if (sortKey.includes('price')) { valA = a._sort_price; valB = b._sort_price; }
+                if (sortKey === 'price_input') { valA = a._sort_price_input; valB = b._sort_price_input; }
+                else if (sortKey === 'price_output') { valA = a._sort_price_output; valB = b._sort_price_output; }
+                else if (sortKey === 'price_avg') { valA = a._sort_price_avg; valB = b._sort_price_avg; }
+                else if (sortKey === 'cache_price') { valA = a._sort_cache; valB = b._sort_cache; }
                 else if (sortKey === 'name') { valA = a._sort_name; valB = b._sort_name; }
                 else if (sortKey === 'created') { valA = a._sort_created; valB = b._sort_created; }
                 else if (sortKey === 'context') { valA = a._sort_context; valB = b._sort_context; }
-                else { valA = 0; valB = 0; }
+                else { valA = a._sort_price_avg; valB = b._sort_price_avg; }
 
                 if (valA < valB) return sortAsc ? -1 : 1;
                 if (valA > valB) return sortAsc ? 1 : -1;
@@ -3180,54 +3338,56 @@
                 const spec = m.model_spec || {};
 
                 // Common Cells
+                const q = get(m, 'model_spec.capabilities.quantization');
                 const nameCell = `
-                <div>
-                    <a href="${spec.modelSource || '#'}" target="_blank" class="model-name">${spec.name || m.id}</a>
-                    <div class="model-id">${m.id}</div> 
-                    <div class="tag-row">${(spec.traits || []).map(t => `<span class="cap-badge">${t}</span>`).join('')}</div>
-                </div>
-            `;
-                const dateCell = `<span>${new Date(m.created * 1000).toLocaleDateString()}</span>`;
+                    <div>
+                        <a href="${spec.modelSource || '#'}" target="_blank" class="model-name">${spec.name || m.id}</a>
+                        <div class="model-id">${m.id} ${q ? `<span class="cap-badge" style="opacity:1; background:var(--bar-bg); border:none;">${q}</span>` : ''}</div> 
+                        <div class="tag-row">${(spec.traits || []).map(t => `<span class="cap-badge">${t}</span>`).join('')}</div>
+                    </div>
+                `;
 
                 // Specific Cells
-                let rowHtml = '';
-
                 if (currentTab === 'text') {
-                    rowHtml = `
-                    <td>${nameCell}</td>
-                    <td>${strategies.text.renderPrice(m, maxPrice)}</td>
-                    <td>${strategies.text.renderCtx(m)}</td>
-                    <td>${strategies.text.renderCaps(m)}</td>
-                    <td>${dateCell}</td>
-                `;
+                    return `
+                        <tr>
+                            <td>${nameCell}</td>
+                            <td>${currentStrat.renderPrice(m, maxPrice)}</td>
+                            <td>${currentStrat.renderCachePrice(m, maxCache)}</td>
+                            <td>${currentStrat.renderCtx(m)}</td>
+                            <td>${currentStrat.renderCaps(m)}</td>
+                        </tr>
+                    `;
                 } else if (currentTab === 'image') {
-                    const steps = get(spec, 'constraints.steps.default', '-');
-                    const upscale = get(spec, 'pricing.upscale.2x.usd', '-');
-                    rowHtml = `
-                    <td>${nameCell}</td>
-                    <td>${strategies.image.renderPrice(m, maxPrice)}</td>
-                    <td>${steps}</td>
-                    <td>$${upscale} (2x)</td>
-                    <td>${dateCell}</td>
-                `;
-                } else { // Video
-                    const res = (get(spec, 'constraints.resolutions', [])).join(', ') || '-';
-                    const audio = get(spec, 'constraints.audio') ? '✅' : '❌';
-                    rowHtml = `
-                    <td>${nameCell}</td>
-                    <td>${strategies.video.renderPrice(m, maxPrice)}</td>
-                    <td style="font-size:0.85em; max-width:200px;">${res}</td>
-                    <td>${audio}</td>
-                    <td>${dateCell}</td>
-                `;
+                    const steps = get(m, 'model_spec.constraints.steps.max', 'N/A');
+                    const upscale = get(m, 'model_spec.pricing.upscale.2x.usd') ? `$${get(m, 'model_spec.pricing.upscale.2x.usd')} (2x)` : '—';
+                    return `
+                        <tr>
+                            <td>${nameCell}</td>
+                            <td>${currentStrat.renderPrice(m, maxPrice)}</td>
+                            <td>${steps}</td>
+                            <td>${upscale}</td>
+                        </tr>
+                    `;
+                } else if (currentTab === 'video') {
+                    const res = (get(m, 'model_spec.constraints.resolutions') || []).join(', ');
+                    const audio = get(m, 'model_spec.constraints.audio') ? '✅ Yes' : '❌ No';
+                    return `
+                        <tr>
+                            <td>${nameCell}</td>
+                            <td>${currentStrat.renderPrice(m, maxPrice)}</td>
+                            <td>${res}</td>
+                            <td>${audio}</td>
+                        </tr>
+                    `;
                 }
-
-                return `<tr>${rowHtml}</tr>`;
+                return '';
             }).join('');
         }
 
-        // Init
-        switchTab('text');
+        // Initialize
+        renderFilters();
+        renderTable();
 
     </script>
 </body>
