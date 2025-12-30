@@ -548,7 +548,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2025-12-28 00:00)</div>
+            <div class="meta">Generated from Live API Data (2025-12-31 00:00)</div>
         </header>
 
         <div class="controls">
@@ -635,7 +635,7 @@
       "type": "text"
     },
     {
-      "created": 1711929600,
+      "created": 1760745600,
       "id": "zai-org-glm-4.6",
       "model_spec": {
         "pricing": {
@@ -962,7 +962,7 @@
       "type": "text"
     },
     {
-      "created": 1711929600,
+      "created": 1758758400,
       "id": "hermes-3-llama-3.1-405b",
       "model_spec": {
         "betaModel": true,
@@ -1009,7 +1009,7 @@
       "type": "text"
     },
     {
-      "created": 1711929600,
+      "created": 1762214400,
       "id": "google-gemma-3-27b-it",
       "model_spec": {
         "betaModel": true,
@@ -1056,7 +1056,7 @@
       "type": "text"
     },
     {
-      "created": 1745903059,
+      "created": 1764547200,
       "id": "grok-41-fast",
       "model_spec": {
         "betaModel": true,
@@ -1107,7 +1107,7 @@
       "type": "text"
     },
     {
-      "created": 1717795200,
+      "created": 1764633600,
       "id": "gemini-3-pro-preview",
       "model_spec": {
         "betaModel": true,
@@ -1158,7 +1158,58 @@
       "type": "text"
     },
     {
-      "created": 1733369471,
+      "created": 1766102400,
+      "id": "gemini-3-flash-preview",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 0.7,
+            "diem": 0.7
+          },
+          "cache_input": {
+            "usd": 0.07,
+            "diem": 0.07
+          },
+          "output": {
+            "usd": 3.75,
+            "diem": 3.75
+          }
+        },
+        "availableContextTokens": 262144,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "not-available",
+          "supportsAudioInput": true,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": true,
+          "supportsReasoning": true,
+          "supportsResponseSchema": true,
+          "supportsVideoInput": true,
+          "supportsVision": true,
+          "supportsWebSearch": true
+        },
+        "constraints": {
+          "temperature": {
+            "default": 1
+          },
+          "top_p": {
+            "default": 0.95
+          }
+        },
+        "description": "Gemini 3 Flash Preview is a high speed, high value thinking model designed for agentic workflows, multi-turn chat, and coding assistance. It delivers near Pro level reasoning with substantially lower latency.",
+        "name": "Gemini 3 Flash Preview",
+        "modelSource": "https://deepmind.google/models/gemini/flash/",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1764979200,
       "id": "claude-opus-45",
       "model_spec": {
         "betaModel": true,
@@ -1209,7 +1260,7 @@
       "type": "text"
     },
     {
-      "created": 1711929600,
+      "created": 1762387200,
       "id": "openai-gpt-oss-120b",
       "model_spec": {
         "betaModel": true,
@@ -1256,7 +1307,7 @@
       "type": "text"
     },
     {
-      "created": 1717795200,
+      "created": 1765324800,
       "id": "kimi-k2-thinking",
       "model_spec": {
         "betaModel": true,
@@ -1266,8 +1317,8 @@
             "diem": 0.75
           },
           "cache_input": {
-            "usd": 0.1875,
-            "diem": 0.1875
+            "usd": 0.375,
+            "diem": 0.375
           },
           "output": {
             "usd": 3.2,
@@ -1307,7 +1358,7 @@
       "type": "text"
     },
     {
-      "created": 1765065600,
+      "created": 1764806400,
       "id": "deepseek-v3.2",
       "model_spec": {
         "betaModel": true,
@@ -1405,7 +1456,7 @@
       "type": "text"
     },
     {
-      "created": 1733768349,
+      "created": 1743897600,
       "id": "llama-3.3-70b",
       "model_spec": {
         "pricing": {
@@ -1453,7 +1504,7 @@
       "type": "text"
     },
     {
-      "created": 1733960791,
+      "created": 1765584000,
       "id": "openai-gpt-52",
       "model_spec": {
         "betaModel": true,
@@ -1917,7 +1968,9 @@
             "15s"
           ],
           "audio": true,
-          "audio_configurable": false
+          "audio_configurable": true,
+          "audio_input": true,
+          "video_input": false
         },
         "name": "Wan 2.6",
         "offline": false,
@@ -1954,7 +2007,9 @@
             "15s"
           ],
           "audio": true,
-          "audio_configurable": false
+          "audio_configurable": true,
+          "audio_input": true,
+          "video_input": false
         },
         "name": "Wan 2.6",
         "offline": false,
@@ -1985,7 +2040,9 @@
             "10s"
           ],
           "audio": true,
-          "audio_configurable": false
+          "audio_configurable": false,
+          "audio_input": false,
+          "video_input": false
         },
         "name": "Wan 2.5 Preview",
         "offline": false,
@@ -2016,7 +2073,9 @@
             "10s"
           ],
           "audio": true,
-          "audio_configurable": false
+          "audio_configurable": false,
+          "audio_input": false,
+          "video_input": false
         },
         "name": "Wan 2.5 Preview",
         "offline": false,
@@ -2050,7 +2109,9 @@
             "5s"
           ],
           "audio": false,
-          "audio_configurable": false
+          "audio_configurable": false,
+          "audio_input": false,
+          "video_input": false
         },
         "name": "Wan 2.2 A14B",
         "offline": false,
@@ -2078,7 +2139,9 @@
             "6s"
           ],
           "audio": false,
-          "audio_configurable": false
+          "audio_configurable": false,
+          "audio_input": false,
+          "video_input": false
         },
         "name": "Wan 2.1 Pro",
         "offline": false,
@@ -2117,7 +2180,9 @@
             "20s"
           ],
           "audio": true,
-          "audio_configurable": true
+          "audio_configurable": true,
+          "audio_input": false,
+          "video_input": false
         },
         "name": "LTX Video 2.0 Fast",
         "offline": false,
@@ -2156,7 +2221,9 @@
             "20s"
           ],
           "audio": true,
-          "audio_configurable": true
+          "audio_configurable": true,
+          "audio_input": false,
+          "video_input": false
         },
         "name": "LTX Video 2.0 Fast",
         "offline": false,
@@ -2190,7 +2257,9 @@
             "10s"
           ],
           "audio": true,
-          "audio_configurable": true
+          "audio_configurable": true,
+          "audio_input": false,
+          "video_input": false
         },
         "name": "LTX Video 2.0 Full Quality",
         "offline": false,
@@ -2224,7 +2293,9 @@
             "10s"
           ],
           "audio": true,
-          "audio_configurable": true
+          "audio_configurable": true,
+          "audio_input": false,
+          "video_input": false
         },
         "name": "LTX Video 2.0 Full Quality",
         "offline": false,
@@ -2250,7 +2321,9 @@
             "5s"
           ],
           "audio": true,
-          "audio_configurable": false
+          "audio_configurable": false,
+          "audio_input": false,
+          "video_input": false
         },
         "name": "Ovi",
         "modelSource": "https://huggingface.co/chetwinlow1/Ovi",
@@ -2282,7 +2355,9 @@
             "10s"
           ],
           "audio": true,
-          "audio_configurable": true
+          "audio_configurable": true,
+          "audio_input": false,
+          "video_input": false
         },
         "name": "Kling 2.6 Pro",
         "offline": false,
@@ -2309,7 +2384,9 @@
             "10s"
           ],
           "audio": true,
-          "audio_configurable": true
+          "audio_configurable": true,
+          "audio_input": false,
+          "video_input": false
         },
         "name": "Kling 2.6 Pro",
         "offline": false,
@@ -2340,7 +2417,9 @@
             "10s"
           ],
           "audio": false,
-          "audio_configurable": false
+          "audio_configurable": false,
+          "audio_input": false,
+          "video_input": false
         },
         "name": "Kling 2.5 Turbo Pro",
         "offline": false,
@@ -2367,7 +2446,9 @@
             "10s"
           ],
           "audio": false,
-          "audio_configurable": false
+          "audio_configurable": false,
+          "audio_input": false,
+          "video_input": false
         },
         "name": "Kling 2.5 Turbo Pro",
         "offline": false,
@@ -2399,7 +2480,9 @@
             "30s"
           ],
           "audio": false,
-          "audio_configurable": false
+          "audio_configurable": false,
+          "audio_input": false,
+          "video_input": false
         },
         "name": "Longcat Distilled",
         "modelSource": "https://huggingface.co/meituan-longcat/LongCat-Video",
@@ -2436,7 +2519,9 @@
             "30s"
           ],
           "audio": false,
-          "audio_configurable": false
+          "audio_configurable": false,
+          "audio_input": false,
+          "video_input": false
         },
         "name": "Longcat Distilled",
         "modelSource": "https://huggingface.co/meituan-longcat/LongCat-Video",
@@ -2469,7 +2554,9 @@
             "30s"
           ],
           "audio": false,
-          "audio_configurable": false
+          "audio_configurable": false,
+          "audio_input": false,
+          "video_input": false
         },
         "name": "Longcat Full Quality",
         "modelSource": "https://huggingface.co/meituan-longcat/LongCat-Video",
@@ -2506,7 +2593,9 @@
             "30s"
           ],
           "audio": false,
-          "audio_configurable": false
+          "audio_configurable": false,
+          "audio_input": false,
+          "video_input": false
         },
         "name": "Longcat Full Quality",
         "modelSource": "https://huggingface.co/meituan-longcat/LongCat-Video",
@@ -2542,7 +2631,9 @@
             "8s"
           ],
           "audio": true,
-          "audio_configurable": false
+          "audio_configurable": false,
+          "audio_input": false,
+          "video_input": false
         },
         "name": "Veo 3 Fast",
         "offline": false,
@@ -2570,7 +2661,9 @@
             "8s"
           ],
           "audio": true,
-          "audio_configurable": false
+          "audio_configurable": false,
+          "audio_input": false,
+          "video_input": false
         },
         "name": "Veo 3 Fast",
         "offline": false,
@@ -2604,7 +2697,9 @@
             "8s"
           ],
           "audio": true,
-          "audio_configurable": false
+          "audio_configurable": false,
+          "audio_input": false,
+          "video_input": false
         },
         "name": "Veo 3 Full Quality",
         "offline": false,
@@ -2632,7 +2727,9 @@
             "8s"
           ],
           "audio": true,
-          "audio_configurable": false
+          "audio_configurable": false,
+          "audio_input": false,
+          "video_input": false
         },
         "name": "Veo 3 Full Quality",
         "offline": false,
@@ -2667,7 +2764,9 @@
             "8s"
           ],
           "audio": true,
-          "audio_configurable": true
+          "audio_configurable": true,
+          "audio_input": false,
+          "video_input": false
         },
         "name": "Veo 3.1 Fast",
         "offline": false,
@@ -2699,7 +2798,9 @@
             "8s"
           ],
           "audio": true,
-          "audio_configurable": true
+          "audio_configurable": true,
+          "audio_input": false,
+          "video_input": false
         },
         "name": "Veo 3.1 Fast",
         "offline": false,
@@ -2734,7 +2835,9 @@
             "8s"
           ],
           "audio": true,
-          "audio_configurable": true
+          "audio_configurable": true,
+          "audio_input": false,
+          "video_input": false
         },
         "name": "Veo 3.1 Full Quality",
         "offline": false,
@@ -2766,7 +2869,9 @@
             "8s"
           ],
           "audio": true,
-          "audio_configurable": true
+          "audio_configurable": true,
+          "audio_input": false,
+          "video_input": false
         },
         "name": "Veo 3.1 Full Quality",
         "offline": false,
@@ -2799,7 +2904,9 @@
             "12s"
           ],
           "audio": true,
-          "audio_configurable": false
+          "audio_configurable": false,
+          "audio_input": false,
+          "video_input": false
         },
         "name": "Sora 2",
         "offline": false,
@@ -2833,7 +2940,9 @@
             "12s"
           ],
           "audio": true,
-          "audio_configurable": false
+          "audio_configurable": false,
+          "audio_input": false,
+          "video_input": false
         },
         "name": "Sora 2 Pro",
         "offline": false,
@@ -2866,7 +2975,9 @@
             "12s"
           ],
           "audio": true,
-          "audio_configurable": false
+          "audio_configurable": false,
+          "audio_input": false,
+          "video_input": false
         },
         "name": "Sora 2",
         "offline": false,
@@ -2900,7 +3011,9 @@
             "12s"
           ],
           "audio": true,
-          "audio_configurable": false
+          "audio_configurable": false,
+          "audio_input": false,
+          "video_input": false
         },
         "name": "Sora 2 Pro",
         "offline": false,
