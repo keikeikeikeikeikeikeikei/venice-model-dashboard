@@ -548,7 +548,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2025-12-31 00:00)</div>
+            <div class="meta">Generated from Live API Data (2026-01-01 00:00)</div>
         </header>
 
         <div class="controls">
@@ -1676,6 +1676,84 @@
       "type": "image"
     },
     {
+      "created": 1764086377,
+      "id": "flux-2-max",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "generation": {
+            "usd": 0.09,
+            "diem": 0.09
+          },
+          "upscale": {
+            "2x": {
+              "usd": 0.02,
+              "diem": 0.02
+            },
+            "4x": {
+              "usd": 0.08,
+              "diem": 0.08
+            }
+          }
+        },
+        "constraints": {
+          "promptCharacterLimit": 3000,
+          "steps": {
+            "default": 20,
+            "max": 50
+          },
+          "widthHeightDivisor": 1
+        },
+        "supportsWebSearch": false,
+        "name": "Flux 2 Max",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "image"
+    },
+    {
+      "created": 1765986864,
+      "id": "gpt-image-1-5",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "generation": {
+            "usd": 0.23,
+            "diem": 0.23
+          },
+          "upscale": {
+            "2x": {
+              "usd": 0.02,
+              "diem": 0.02
+            },
+            "4x": {
+              "usd": 0.08,
+              "diem": 0.08
+            }
+          }
+        },
+        "constraints": {
+          "promptCharacterLimit": 32768,
+          "steps": {
+            "default": 20,
+            "max": 50
+          },
+          "widthHeightDivisor": 1
+        },
+        "supportsWebSearch": false,
+        "name": "GPT Image 1.5",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "image"
+    },
+    {
       "created": 1763653951,
       "id": "nano-banana-pro",
       "model_spec": {
@@ -1993,9 +2071,7 @@
           "aspect_ratios": [
             "16:9",
             "9:16",
-            "1:1",
-            "4:3",
-            "3:4"
+            "1:1"
           ],
           "resolutions": [
             "1080p",
@@ -2041,7 +2117,7 @@
           ],
           "audio": true,
           "audio_configurable": false,
-          "audio_input": false,
+          "audio_input": true,
           "video_input": false
         },
         "name": "Wan 2.5 Preview",
@@ -2062,7 +2138,11 @@
         "privacy": "anonymized",
         "constraints": {
           "model_type": "text-to-video",
-          "aspect_ratios": [],
+          "aspect_ratios": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
           "resolutions": [
             "1080p",
             "720p",
@@ -2074,7 +2154,7 @@
           ],
           "audio": true,
           "audio_configurable": false,
-          "audio_input": false,
+          "audio_input": true,
           "video_input": false
         },
         "name": "Wan 2.5 Preview",
@@ -2618,8 +2698,7 @@
           "model_type": "text-to-video",
           "aspect_ratios": [
             "16:9",
-            "9:16",
-            "1:1"
+            "9:16"
           ],
           "resolutions": [
             "720p",
@@ -2751,8 +2830,7 @@
           "model_type": "text-to-video",
           "aspect_ratios": [
             "16:9",
-            "9:16",
-            "1:1"
+            "9:16"
           ],
           "resolutions": [
             "720p",
@@ -2822,8 +2900,7 @@
           "model_type": "text-to-video",
           "aspect_ratios": [
             "16:9",
-            "9:16",
-            "1:1"
+            "9:16"
           ],
           "resolutions": [
             "720p",
