@@ -548,7 +548,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-01-01 00:00)</div>
+            <div class="meta">Generated from Live API Data (2026-01-06 00:16)</div>
         </header>
 
         <div class="controls">
@@ -1758,9 +1758,19 @@
       "id": "nano-banana-pro",
       "model_spec": {
         "pricing": {
-          "generation": {
-            "usd": 0.18,
-            "diem": 0.18
+          "resolutions": {
+            "1K": {
+              "usd": 0.18,
+              "diem": 0.18
+            },
+            "2K": {
+              "usd": 0.24,
+              "diem": 0.24
+            },
+            "4K": {
+              "usd": 0.35,
+              "diem": 0.35
+            }
           },
           "upscale": {
             "2x": {
@@ -1775,6 +1785,12 @@
         },
         "constraints": {
           "promptCharacterLimit": 32768,
+          "defaultResolution": "1K",
+          "resolutions": [
+            "1K",
+            "2K",
+            "4K"
+          ],
           "steps": {
             "default": 20,
             "max": 50
@@ -1812,7 +1828,7 @@
           }
         },
         "constraints": {
-          "promptCharacterLimit": 1500,
+          "promptCharacterLimit": 10000,
           "steps": {
             "default": 20,
             "max": 50
@@ -2056,10 +2072,7 @@
       },
       "object": "model",
       "owned_by": "venice.ai",
-      "type": "video",
-      "pricing": {
-        "base_price_usd": 0.55
-      }
+      "type": "video"
     },
     {
       "created": 1765843200,
