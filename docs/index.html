@@ -548,7 +548,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-01-07 00:00)</div>
+            <div class="meta">Generated from Live API Data (2026-01-07 08:42)</div>
         </header>
 
         <div class="controls">
@@ -672,6 +672,52 @@
         "description": "GLM-4.6 is a large language model developed by Zhiyuan AI, featuring strong reasoning capabilities and support for multiple languages. Supports the largest context window for processing extensive text and detailed analysis.",
         "name": "GLM 4.6",
         "modelSource": "https://huggingface.co/zai-org/GLM-4.6",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1766534400,
+      "id": "zai-org-glm-4.7",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.55,
+            "diem": 0.55
+          },
+          "output": {
+            "usd": 2.65,
+            "diem": 2.65
+          }
+        },
+        "availableContextTokens": 202752,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "fp4",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsReasoning": true,
+          "supportsResponseSchema": true,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true
+        },
+        "constraints": {
+          "temperature": {
+            "default": 1
+          },
+          "top_p": {
+            "default": 0.95
+          }
+        },
+        "description": "GLM-4.7 is a large language model developed by Zhiyuan AI, featuring strong reasoning capabilities and support for multiple languages. Supports the largest context window for processing extensive text and detailed analysis.",
+        "name": "GLM 4.7",
+        "modelSource": "https://huggingface.co/zai-org/GLM-4.7",
         "offline": false,
         "privacy": "private",
         "traits": []
@@ -1545,6 +1591,108 @@
         },
         "description": "GPT-5.2 is the latest frontier-grade model in the GPT-5 series, offering stronger agentic and long context performance compared to GPT-5.1. It uses adaptive reasoning to allocate computation dynamically, responding quickly to simple queries while spending more depth on complex tasks.",
         "name": "GPT-5.2",
+        "modelSource": "",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1764547200,
+      "id": "minimax-m21",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 0.4,
+            "diem": 0.4
+          },
+          "cache_input": {
+            "usd": 0.04,
+            "diem": 0.04
+          },
+          "output": {
+            "usd": 1.6,
+            "diem": 1.6
+          }
+        },
+        "availableContextTokens": 202752,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": true,
+          "supportsReasoning": true,
+          "supportsResponseSchema": true,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true
+        },
+        "constraints": {
+          "temperature": {
+            "default": 0.7
+          },
+          "top_p": {
+            "default": 0.8
+          }
+        },
+        "description": "MiniMax-M2.1 is a lightweight, state-of-the-art large language model optimized for coding, agentic workflows, and modern application development.",
+        "name": "MiniMax M2.1",
+        "modelSource": "",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1764547200,
+      "id": "grok-code-fast-1",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 0.25,
+            "diem": 0.25
+          },
+          "cache_input": {
+            "usd": 0.03,
+            "diem": 0.03
+          },
+          "output": {
+            "usd": 1.87,
+            "diem": 1.87
+          }
+        },
+        "availableContextTokens": 262144,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": true,
+          "supportsReasoning": true,
+          "supportsResponseSchema": true,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true
+        },
+        "constraints": {
+          "temperature": {
+            "default": 0.7
+          },
+          "top_p": {
+            "default": 0.8
+          }
+        },
+        "description": "Grok Code Fast 1 is a speedy and economical reasoning model that excels at agentic coding",
+        "name": "Grok Code Fast 1",
         "modelSource": "",
         "offline": false,
         "privacy": "anonymized",
@@ -3249,6 +3397,19 @@
       "object": "model",
       "owned_by": "venice.ai",
       "type": "upscale"
+    },
+    {
+      "created": 1756157864,
+      "id": "qwen-edit",
+      "model_spec": {
+        "name": "Qwen Edit 2511",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "inpaint"
     }
   ]
 };
