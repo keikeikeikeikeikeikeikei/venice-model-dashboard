@@ -20,7 +20,7 @@ async def run():
         await page.wait_for_load_state("networkidle")
         
         print(f"Saving screenshot to: {output_path}")
-        await page.screenshot(path=output_path, full_page=True)
+        await page.screenshot(path=output_path, full_page=False)
         
         await browser.close()
 

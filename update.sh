@@ -15,4 +15,8 @@ uv run python scripts/fetch.py
 echo "📊 Generating Main Dashboard..."
 uv run python scripts/build.py
 
+# 3. Take Screenshot
+echo "📸 Updating Screenshot..."
+uv run python scripts/take_screenshot.py
+
 echo "✅ Update Complete! Open docs/index.html to view."

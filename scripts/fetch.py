@@ -100,7 +100,13 @@ def main():
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     
     # 3. Load existing data to merge (Load FIRST to ensure we have base)
-    final_data = load_existing_data()
+    existing_data = load_existing_data()
+    
+    # Cache old video prices to avoid re-fetching and noise
+    old_video_prices = {}
+    for v in existing_data.get('video', []):
+        if 'id' in v and 'pricing' in v:
+            old_video_prices[v['id']] = v['pricing']
 
     # 1. Fetch raw models
     fetched_models = fetch_models(args.type)
@@ -111,8 +117,10 @@ def main():
         # return 
         # Actually, let's continue so we don't break if transient error? 
         # No, if fetch fails, we shouldn't wipe data.
-        if not final_data.get('text'): # If completely empty
+        if not existing_data.get('text'): # If completely empty
              return
+    
+    final_data = existing_data # Start with existing
 
     # 2. Group by type (for the newly fetched data)
     new_grouped = {
@@ -133,39 +141,40 @@ def main():
 
         # 4. Merge logic
         if args.type == 'all':
-            # If all, we replace everything structure from new_grouped
-            # BUT we might want to keep old prices if skipping quotes?
-            # For now, simplistic replacement as per original behavior
             final_data = new_grouped
         else:
-            # If specific type, replace only that type
             final_data[args.type] = new_grouped[args.type]
-            # Special case: if we fetched 'text', we don't touch video/image.
 
     # 5. Enrich video models with pricing
     video_models = final_data.get('video', [])
     
-    # Check if we need to fetch quotes
-    # Condition: We have video models AND (We are updating video/all OR we force update?)
-    # If I ran --type text, I shouldn't re-fetch video quotes even if I have video models in `final_data`.
-    # I should only fetch quotes if I just fetched video models OR if explicitly requested?
-    # Original script always fetched quotes.
-    # New logic: Fetch quotes if:
-    #   1. We are NOT skipping quotes
-    #   2. AND (We fetched 'all' OR We fetched 'video')
-    
     should_fetch_quotes = (not args.skip_quotes) and (args.type in ['all', 'video'])
     
     if video_models and should_fetch_quotes:
-        print(f"💰 Fetching quotes for {len(video_models)} video models...")
+        print(f"💰 Checking quotes for {len(video_models)} video models...")
+        fetch_count = 0
         for i, model in enumerate(video_models, 1):
-            print(f"\r  [{i}/{len(video_models)}] Fetching quote for {model['id']}...", end="", flush=True)
+            mid = model['id']
+            # REUSE PRICE if available
+            if mid in old_video_prices:
+                model['pricing'] = old_video_prices[mid]
+                # print(f"  Using cached price for {mid}")
+                continue
+
+            # Fetch NEW price
+            print(f"\r  [{i}/{len(video_models)}] Fetching NEW quote for {mid}...", end="", flush=True)
             price = get_video_quote(model)
             if price is not None:
                 if 'pricing' not in model: model['pricing'] = {}
                 model['pricing']['base_price_usd'] = price
+            fetch_count += 1
             time.sleep(0.2)
-        print("") 
+        
+        if fetch_count > 0:
+            print(f"\n✅ Fetched {fetch_count} new quotes.")
+        else:
+            print("\n✅ All video prices reused from cache.")
+
     elif args.skip_quotes:
         print("⏩ Skipping video quote fetching.")
     else:
