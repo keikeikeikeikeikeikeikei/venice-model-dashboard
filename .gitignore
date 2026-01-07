@@ -18,3 +18,4 @@ docs/*
 # Generated Data & Logs (Exclude all fetched data)
 data/*
 !data/.keep
+!data/venice_data.json
