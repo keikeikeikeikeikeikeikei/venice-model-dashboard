@@ -50,6 +50,22 @@
             }
         }
 
+        @media (max-width: 768px) {
+            body { padding: 15px 8px; }
+            h1 { font-size: 1.6rem; }
+            .container { padding: 0; }
+            .controls { padding: 15px; gap: 15px; }
+            .main-controls { flex-direction: column; align-items: stretch; gap: 15px; }
+            .search-box { max-width: none; }
+            .filter-bar { gap: 10px; }
+            .filter-group { flex-direction: row; align-items: center; gap: 8px; }
+            .filter-group-label { min-width: 0; font-size: 0.6rem; opacity: 0.7; border-right: 1px solid var(--border-color); padding-right: 8px; margin-right: 2px; }
+            .range-controls { flex-direction: column; align-items: stretch; gap: 20px; }
+            .range-item { flex: 1; }
+            .range-group div { flex-wrap: wrap; }
+            .tab-btn { padding: 8px 12px; font-size: 0.85rem; flex: 1; text-align: center; }
+        }
+
         * {
             box-sizing: border-box;
         }
@@ -155,9 +171,25 @@
         /* Filter Bar */
         .filter-bar {
             display: flex;
+            flex-direction: column;
+            gap: 16px;
+            padding-top: 5px;
+        }
+
+        .filter-group {
+            display: flex;
+            align-items: center;
             gap: 12px;
             flex-wrap: wrap;
-            padding-top: 5px;
+        }
+
+        .filter-group-label {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            min-width: 100px;
+            letter-spacing: 0.05em;
         }
 
         .filter-item {
@@ -181,37 +213,84 @@
             background: var(--border-color);
         }
 
-        .filter-item input:checked+span {
-            color: var(--primary);
+        /* Segmented Control Styling */
+        .filter-segment {
+            display: inline-flex;
+            background: var(--bg-body);
+            padding: 2px;
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+            gap: 2px;
+        }
+
+        .filter-segment-item {
+            padding: 6px 16px;
+            font-size: 0.85rem;
             font-weight: 600;
+            cursor: pointer;
+            border-radius: 8px;
+            color: var(--text-muted);
+            transition: all 0.2s ease;
+            user-select: none;
+        }
+
+        .filter-segment-item:hover {
+            color: var(--text-main);
+        }
+
+        .filter-segment-item.active {
+            background: var(--card-bg);
+            color: var(--primary);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+            border: 1px solid var(--border-color);
+            font-weight: 800;
+        }
+
+        .filter-item:has(input:checked) {
+            background: var(--primary);
+            border-color: var(--primary);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .filter-item input:checked+span {
+            color: white;
+            font-weight: 700;
         }
 
         .range-controls {
             display: flex;
-            gap: 16px;
+            gap: 24px;
             flex-wrap: wrap;
-            align-items: flex-end;
+            align-items: flex-start;
+            padding-top: 10px;
+            border-top: 1px solid var(--border-color);
         }
 
         .range-group {
             display: flex;
             flex-direction: column;
-            gap: 6px;
-            font-size: 0.85rem;
+            gap: 8px;
+        }
+
+        .range-item {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            font-size: 0.75rem;
             color: var(--text-muted);
             font-weight: 600;
         }
 
         .range-group select,
         .range-group input {
-            padding: 10px 12px;
+            padding: 8px 12px;
             border: 1px solid var(--border-color);
             border-radius: var(--radius-md);
             background: var(--bg-body);
             color: var(--text-main);
             font-family: inherit;
-            font-size: 0.95rem;
-            min-width: 160px;
+            font-size: 0.9rem;
+            min-width: 140px;
             transition: border-color 0.2s, box-shadow 0.2s;
         }
 
@@ -354,8 +433,32 @@
             font-family: 'ui-monospace', 'SFMono-Regular', 'Menlo', monospace;
             font-size: 0.75em;
             color: var(--text-muted);
-            margin-bottom: 8px;
+            margin-bottom: 4px;
             opacity: 0.8;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .model-description {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+            max-width: 450px;
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            white-space: normal;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .model-description.expanded {
+            -webkit-line-clamp: unset;
+            max-width: 600px;
+            color: var(--text-main);
         }
 
         /* Tags */
@@ -363,6 +466,7 @@
             display: flex;
             gap: 6px;
             flex-wrap: wrap;
+            margin-top: 4px;
         }
 
         .cap-badge {
@@ -377,6 +481,46 @@
             color: var(--text-muted);
             text-transform: uppercase;
             letter-spacing: 0.03em;
+        }
+
+        .privacy-badge {
+            font-size: 0.65rem;
+            padding: 1px 6px;
+            border-radius: 4px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .privacy-private {
+            background: rgba(16, 185, 129, 0.1);
+            color: #10b981;
+            border: 1px solid rgba(16, 185, 129, 0.2);
+        }
+
+        .privacy-anonymized {
+            background: rgba(245, 158, 11, 0.1);
+            color: #f59e0b;
+            border: 1px solid rgba(245, 158, 11, 0.2);
+        }
+
+        .new-badge {
+            background: var(--secondary);
+            color: white;
+            padding: 1px 6px;
+            border-radius: 4px;
+            font-size: 0.65rem;
+            font-weight: 800;
+            margin-left: 8px;
+        }
+
+        .beta-badge {
+            background: #f59e0b; /* Amber */
+            color: white;
+            padding: 1px 6px;
+            border-radius: 4px;
+            font-size: 0.65rem;
+            font-weight: 800;
+            margin-left: 8px;
         }
 
         /* Price Bars */
@@ -601,7 +745,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-01-07 18:06)</div>
+            <div class="meta">Generated from Live API Data (2026-01-09 00:00)</div>
         </header>
 
         <div class="controls">
@@ -624,23 +768,35 @@
 
             <div id="rangeControls" class="range-controls">
                 <div class="range-group">
-                    <label for="minContext">Context min</label>
-                    <select id="minContext" onchange="renderTable()">
-                        <option value="0">Any</option>
-                        <option value="32768">32k+</option>
-                        <option value="131072">128k+</option>
-                        <option value="163840">160k+</option>
-                        <option value="202752">198k+</option>
-                        <option value="262144">256k+</option>
-                    </select>
+                    <label class="filter-group-label" style="min-width:0; margin-bottom:4px;">Constraints</label>
+                    <div style="display:flex; gap:10px; flex-wrap:wrap;">
+                        <div class="range-item">
+                            <label for="minContext">Context min</label>
+                            <select id="minContext" onchange="renderTable()">
+                                <option value="0">Any</option>
+                                <option value="32768">32k+</option>
+                                <option value="131072">128k+</option>
+                                <option value="163840">160k+</option>
+                                <option value="202752">198k+</option>
+                                <option value="262144">256k+</option>
+                            </select>
+                        </div>
+                        <div class="range-item">
+                            <label for="maxAvgPrice">Max avg ($/1M)</label>
+                            <input type="number" id="maxAvgPrice" min="0" step="0.01" placeholder="No limit"
+                                oninput="renderTable()">
+                        </div>
+                    </div>
                 </div>
+
                 <div class="range-group">
-                    <label for="maxAvgPrice">Max avg ($/1M)</label>
-                    <input type="number" id="maxAvgPrice" min="0" step="0.01" placeholder="No limit"
-                        oninput="renderTable()">
+                    <label class="filter-group-label" style="min-width:0; margin-bottom:4px;">Quick Sort</label>
+                    <div style="display:flex; gap:8px; flex-wrap:wrap;">
+                        <button class="ghost-btn" type="button" onclick="setCheapestSort()">💰 Cheapest</button>
+                        <button class="ghost-btn" type="button" onclick="setNewestSort()">✨ Newest</button>
+                        <button class="ghost-btn" type="button" onclick="setContextPriceSort()">🧠 Context/Price</button>
+                    </div>
                 </div>
-                <button class="ghost-btn" type="button" onclick="setCheapestSort()">Cheapest first</button>
-                <button class="ghost-btn" type="button" onclick="setContextPriceSort()">Big context → cheap</button>
             </div>
         </div>
 
@@ -742,6 +898,9 @@
           "top_p": {
             "default": 0.9
           }
+        },
+        "deprecation": {
+          "date": "2026-01-08T00:00:00.000Z"
         },
         "description": "GLM-4.6 is a large language model developed by Zhiyuan AI, featuring strong reasoning capabilities and support for multiple languages. Supports the largest context window for processing extensive text and detailed analysis.",
         "name": "GLM 4.6",
@@ -3522,25 +3681,78 @@
 
         // --- Configuration ---
 
+        const getProvider = (m) => {
+            const id = m.id.toLowerCase();
+            const src = get(m, 'model_spec.modelSource', '').toLowerCase();
+            const name = get(m, 'model_spec.name', '').toLowerCase();
+            
+            if (id.includes('llama') || src.includes('meta-llama')) return 'meta';
+            if (id.includes('gemma') || src.includes('google/gemma')) return 'google';
+            if (id.includes('gemini') || src.includes('deepmind')) return 'google';
+            if (id.includes('gpt') || src.includes('openai')) return 'openai';
+            if (id.includes('claude') || src.includes('anthropic')) return 'anthropic';
+            if (id.includes('deepseek')) return 'deepseek';
+            if (id.includes('mistral')) return 'mistral';
+            if (id.includes('qwen')) return 'qwen';
+            if (id.includes('glm') || src.includes('zai-org')) return 'zai-org';
+            if (id.includes('kimi') || src.includes('moonshot')) return 'moonshot';
+            if (id.includes('grok') || src.includes('xai')) return 'xai';
+            if (id.includes('hermes') || src.includes('nous')) return 'nous';
+            if (id.includes('sd') || id.includes('flux') || src.includes('stability')) return 'stability';
+            if (id.startsWith('venice-')) return 'venice';
+            return 'other';
+        };
+
         const filters = {
             text: [
-                { id: 'supportsReasoning', label: '🧠 Reasoning' },
-                { id: 'supportsVision', label: '👁️ Vision' },
-                { id: 'supportsFunctionCalling', label: '🛠️ Func Call' },
-                { id: 'optimizedForCode', label: '💻 Code' },
-                { id: 'supportsWebSearch', label: '🌐 Web Search' },
-                { id: 'supportsLogProbs', label: '📊 Logprobs' },
-                { id: 'supportsResponseSchema', label: '📋 JSON Mode' },
-                { id: 'hasCache', label: '⚡ Caching' }
+                { group: 'Capabilities', items: [
+                    { id: 'supportsReasoning', label: '🧠 Reasoning' },
+                    { id: 'supportsVision', label: '👁️ Vision' },
+                    { id: 'supportsFunctionCalling', label: '🛠️ Func Call' },
+                    { id: 'optimizedForCode', label: '💻 Code' },
+                    { id: 'hasCache', label: '⚡ Caching' },
+                    { id: 'is_beta', label: '🧪 Beta' },
+                    { id: 'trait_most_uncensored', label: '🔓 Uncensored' },
+                    { id: 'trait_fastest', label: '⚡ Fastest' }
+                ]},
+                { group: 'Privacy', items: [
+                    { id: 'is_private', label: '🔒 Private' },
+                    { id: 'is_anonymized', label: '🕵️ Anonymized' }
+                ]},
+                { group: 'Providers', items: [
+                    { id: 'prov_meta', label: 'Meta' },
+                    { id: 'prov_google', label: 'Google' },
+                    { id: 'prov_openai', label: 'OpenAI' },
+                    { id: 'prov_anthropic', label: 'Anthropic' },
+                    { id: 'prov_deepseek', label: 'DeepSeek' },
+                    { id: 'prov_qwen', label: 'Qwen' }
+                ]}
             ],
             image: [
-                { id: 'hasUpscale', label: '🔍 Upscale' }
+                { group: 'Capabilities', items: [
+                    { id: 'hasUpscale', label: '🔍 Upscale' }
+                ]},
+                { group: 'Privacy', items: [
+                    { id: 'is_private', label: '🔒 Private' },
+                    { id: 'is_anonymized', label: '🕵️ Anonymized' }
+                ]},
+                { group: 'Providers', items: [
+                    { id: 'prov_stability', label: 'Stability' },
+                    { id: 'prov_qwen', label: 'Qwen' }
+                ]}
             ],
             video: [
-                { id: 'text-to-video', label: '📝 Text-to-Video' },
-                { id: 'image-to-video', label: '🖼️ Image-to-Video' },
-                { id: '1080p', label: '📺 1080p' },
-                { id: 'audio', label: '🎵 Audio' }
+                { group: 'Type', items: [
+                    { id: 'text-to-video', label: '📝 T2V' },
+                    { id: 'image-to-video', label: '🖼️ I2V' }
+                ]},
+                { group: 'Capabilities', items: [
+                    { id: 'audio', label: '🎵 Audio' }
+                ]},
+                { group: 'Privacy', items: [
+                    { id: 'is_private', label: '🔒 Private' },
+                    { id: 'is_anonymized', label: '🕵️ Anonymized' }
+                ]}
             ]
         };
 
@@ -3621,6 +3833,8 @@
                         { k: 'supportsFunctionCalling', label: 'Func Call', cls: 'feat-func' },
                         { k: 'optimizedForCode', label: 'Code', cls: 'feat-code' },
                         { k: 'supportsWebSearch', label: 'Web Search', cls: 'feat-search' },
+                        { k: 'supportsAudioInput', label: 'Audio In', cls: 'feat-logprobs' },
+                        { k: 'supportsVideoInput', label: 'Video In', cls: 'feat-logprobs' },
                         { k: 'supportsLogProbs', label: 'Logprobs', cls: 'feat-logprobs' },
                         { k: 'supportsResponseSchema', label: 'JSON Mode', cls: 'feat-json' }
                     ];
@@ -3642,6 +3856,17 @@
                 },
                 checkFilter: (m, fid) => {
                     if (fid === 'hasCache') return get(m, 'model_spec.pricing.cache_input.usd') !== null;
+                    if (fid === 'is_beta') return get(m, 'model_spec.betaModel') === true;
+                    if (fid === 'is_private') return (get(m, 'model_spec.privacy') || m.privacy) === 'private';
+                    if (fid === 'is_anonymized') return (get(m, 'model_spec.privacy') || m.privacy) === 'anonymized';
+                    if (fid.startsWith('trait_')) {
+                        const trait = fid.replace('trait_', '');
+                        return (get(m, 'model_spec.traits') || []).includes(trait);
+                    }
+                    if (fid.startsWith('prov_')) {
+                        const prov = fid.replace('prov_', '');
+                        return getProvider(m) === prov;
+                    }
                     return get(m, 'model_spec.capabilities.' + fid) === true;
                 }
             },
@@ -3662,6 +3887,12 @@
                 renderCaps: (m) => '',
                 checkFilter: (m, fid) => {
                     if (fid === 'hasUpscale') return !!get(m, 'model_spec.pricing.upscale.2x.usd');
+                    if (fid === 'is_private') return (get(m, 'model_spec.privacy') || m.privacy) === 'private';
+                    if (fid === 'is_anonymized') return (get(m, 'model_spec.privacy') || m.privacy) === 'anonymized';
+                    if (fid.startsWith('prov_')) {
+                        const prov = fid.replace('prov_', '');
+                        return getProvider(m) === prov;
+                    }
                     return false;
                 }
             },
@@ -3687,6 +3918,12 @@
                     if (fid === 'text-to-video') return get(m, 'model_spec.constraints.model_type') === 'text-to-video';
                     if (fid === 'image-to-video') return get(m, 'model_spec.constraints.model_type') === 'image-to-video';
                     if (fid === '1080p') return (get(m, 'model_spec.constraints.resolutions') || []).includes('1080p');
+                    if (fid === 'is_private') return (get(m, 'model_spec.privacy') || m.privacy) === 'private';
+                    if (fid === 'is_anonymized') return (get(m, 'model_spec.privacy') || m.privacy) === 'anonymized';
+                    if (fid.startsWith('prov_')) {
+                        const prov = fid.replace('prov_', '');
+                        return getProvider(m) === prov;
+                    }
                     return false;
                 }
             }
@@ -3722,28 +3959,58 @@
             if (activeFilters.has(fid)) {
                 activeFilters.delete(fid);
             } else {
+                // Exclusivity logic
+                if (fid === 'is_private') activeFilters.delete('is_anonymized');
+                if (fid === 'is_anonymized') activeFilters.delete('is_private');
+                
                 activeFilters.add(fid);
             }
+            renderFilters();
             renderTable();
         }
 
         function renderFilters() {
             const bar = document.getElementById('filterBar');
-            const available = filters[currentTab] || [];
+            const groups = filters[currentTab] || [];
 
-            if (available.length === 0) {
+            if (groups.length === 0) {
                 bar.style.display = 'none';
                 bar.innerHTML = '';
                 return;
             }
 
             bar.style.display = 'flex';
-            bar.innerHTML = available.map(f => `
-            <label class="filter-item">
-                <input type="checkbox" onchange="toggleFilter('${f.id}')" ${activeFilters.has(f.id) ? 'checked' : ''}>
-                <span>${f.label}</span>
-            </label>
-        `).join('');
+            bar.innerHTML = groups.map(g => {
+                // If the group is 'Privacy', render as a Segmented Control
+                if (g.group === 'Privacy') {
+                    return `
+                        <div class="filter-group">
+                            <div class="filter-group-label">${g.group}</div>
+                            <div class="filter-segment">
+                                ${g.items.map(f => `
+                                    <div class="filter-segment-item ${activeFilters.has(f.id) ? 'active' : ''}" 
+                                         onclick="toggleFilter('${f.id}')">
+                                        ${f.label}
+                                    </div>
+                                `).join('')}
+                            </div>
+                        </div>
+                    `;
+                }
+
+                // Default rendering for other groups
+                return `
+                    <div class="filter-group">
+                        <div class="filter-group-label">${g.group}</div>
+                        ${g.items.map(f => `
+                            <label class="filter-item">
+                                <input type="checkbox" onchange="toggleFilter('${f.id}')" ${activeFilters.has(f.id) ? 'checked' : ''}>
+                                <span>${f.label}</span>
+                            </label>
+                        `).join('')}
+                    </div>
+                `;
+            }).join('');
         }
 
         function updateRangeControlsVisibility() {
@@ -3756,6 +4023,12 @@
             if (currentTab !== 'text') return;
             sortKey = 'price_avg';
             sortAsc = true;
+            renderTable();
+        }
+
+        function setNewestSort() {
+            sortKey = 'created';
+            sortAsc = false;
             renderTable();
         }
 
@@ -3825,7 +4098,8 @@
                 const n = get(m, 'model_spec.name', '').toLowerCase();
                 const i = m.id.toLowerCase();
                 const s = get(m, 'model_spec.modelSource', '').toLowerCase();
-                if (!(n.includes(term) || i.includes(term) || s.includes(term))) return false;
+                const d = get(m, 'model_spec.description', '').toLowerCase();
+                if (!(n.includes(term) || i.includes(term) || s.includes(term) || d.includes(term))) return false;
 
                 if (currentTab === 'text') {
                     const ctx = get(m, 'model_spec.availableContextTokens', 0);
@@ -3863,6 +4137,7 @@
                 m._sort_cache = (currentTab === 'text') ? (currentStrat.getCachePrice(m) || 0) : 0;
                 m._sort_name = get(m, 'model_spec.name', '');
                 m._sort_context = get(m, 'model_spec.availableContextTokens', 0);
+                m._sort_created = m.created || 0;
             });
 
             // 4. Sort
@@ -3889,13 +4164,28 @@
             // 5. Render Rows
             tbody.innerHTML = data.map(m => {
                 const spec = m.model_spec || {};
+                const created = m.created || 0;
+                const isNew = created > (Date.now() / 1000 - 30 * 24 * 60 * 60); // Last 30 days
+                const isBeta = spec.betaModel === true;
+                const privacy = spec.privacy || m.privacy || 'N/A';
+                const privacyClass = privacy === 'private' ? 'privacy-private' : 'privacy-anonymized';
 
                 // Common Cells
                 const q = get(m, 'model_spec.capabilities.quantization');
+                const showQ = q && q !== 'not-available';
                 const nameCell = `
                     <div>
-                        <a href="${spec.modelSource || '#'}" target="_blank" class="model-name">${spec.name || m.id}</a>
-                        <div class="model-id">${m.id} ${q ? `<span class="cap-badge" style="opacity:1; background:var(--bar-bg); border:none;">${q}</span>` : ''}</div> 
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <a href="${spec.modelSource || '#'}" target="_blank" class="model-name">${spec.name || m.id}</a>
+                            ${isNew ? '<span class="new-badge">NEW</span>' : ''}
+                            ${isBeta ? '<span class="beta-badge">BETA</span>' : ''}
+                            <span class="privacy-badge ${privacyClass}">${privacy}</span>
+                        </div>
+                        <div class="model-id">
+                            ${m.id} 
+                            ${showQ ? `<span class="cap-badge" style="opacity:1; background:var(--bar-bg); border:none;">${q}</span>` : ''}
+                        </div> 
+                        ${spec.description ? `<div class="model-description" title="Click to expand" onclick="this.classList.toggle('expanded')">${spec.description}</div>` : ''}
                         <div class="tag-row">${(spec.traits || []).map(t => `<span class="cap-badge">${t}</span>`).join('')}</div>
                     </div>
                 `;

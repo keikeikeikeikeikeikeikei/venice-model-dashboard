@@ -83,6 +83,9 @@
             "default": 0.9
           }
         },
+        "deprecation": {
+          "date": "2026-01-08T00:00:00.000Z"
+        },
         "description": "GLM-4.6 is a large language model developed by Zhiyuan AI, featuring strong reasoning capabilities and support for multiple languages. Supports the largest context window for processing extensive text and detailed analysis.",
         "name": "GLM 4.6",
         "modelSource": "https://huggingface.co/zai-org/GLM-4.6",
