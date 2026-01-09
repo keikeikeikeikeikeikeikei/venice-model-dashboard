@@ -745,7 +745,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-01-09 00:00)</div>
+            <div class="meta">Generated from Live API Data (2026-01-09 11:33)</div>
         </header>
 
         <div class="controls">
@@ -755,6 +755,7 @@
                     <button class="tab-btn" onclick="switchTab('image')">Image</button>
                     <button class="tab-btn" onclick="switchTab('video')">Video</button>
                 </div>
+                <button class="ghost-btn" style="font-size: 0.7rem; padding: 4px 10px; align-self: flex-start; margin-top: -10px;" onclick="clearFilters()">🧹 Clear All Filters</button>
 
                 <div class="search-box">
                     <input type="text" id="searchInput" placeholder="Search (Refine by Name, ID, Source)..."
@@ -3969,6 +3970,12 @@
             renderTable();
         }
 
+        function clearFilters() {
+            activeFilters.clear();
+            renderFilters();
+            renderTable();
+        }
+
         function renderFilters() {
             const bar = document.getElementById('filterBar');
             const groups = filters[currentTab] || [];
@@ -4118,6 +4125,13 @@
 
                 return true;
             });
+
+            // Update visible count in UI
+            const countInfo = document.querySelector('.meta');
+            if (countInfo) {
+                const baseText = countInfo.innerHTML.split(' | ')[0];
+                countInfo.innerHTML = `${baseText} | <strong>Showing ${data.length} models</strong>`;
+            }
 
             // 3. Prepare Sort Data & Max Price
             const currentStrat = strategies[currentTab];

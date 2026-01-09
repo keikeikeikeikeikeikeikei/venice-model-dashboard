@@ -755,6 +755,7 @@
                     <button class="tab-btn" onclick="switchTab('image')">Image</button>
                     <button class="tab-btn" onclick="switchTab('video')">Video</button>
                 </div>
+                <button class="ghost-btn" style="font-size: 0.7rem; padding: 4px 10px; align-self: flex-start; margin-top: -10px;" onclick="clearFilters()">🧹 Clear All Filters</button>
 
                 <div class="search-box">
                     <input type="text" id="searchInput" placeholder="Search (Refine by Name, ID, Source)..."
@@ -1135,6 +1136,12 @@
             renderTable();
         }
 
+        function clearFilters() {
+            activeFilters.clear();
+            renderFilters();
+            renderTable();
+        }
+
         function renderFilters() {
             const bar = document.getElementById('filterBar');
             const groups = filters[currentTab] || [];
@@ -1284,6 +1291,13 @@
 
                 return true;
             });
+
+            // Update visible count in UI
+            const countInfo = document.querySelector('.meta');
+            if (countInfo) {
+                const baseText = countInfo.innerHTML.split(' | ')[0];
+                countInfo.innerHTML = `${baseText} | <strong>Showing ${data.length} models</strong>`;
+            }
 
             // 3. Prepare Sort Data & Max Price
             const currentStrat = strategies[currentTab];
