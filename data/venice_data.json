@@ -88,7 +88,10 @@
         "modelSource": "https://huggingface.co/zai-org/GLM-4.7",
         "offline": false,
         "privacy": "private",
-        "traits": []
+        "traits": [
+          "default",
+          "most_intelligent"
+        ]
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -134,7 +137,9 @@
         "modelSource": "https://huggingface.co/Qwen/Qwen3-4B",
         "offline": false,
         "privacy": "private",
-        "traits": []
+        "traits": [
+          "fastest"
+        ]
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -181,7 +186,8 @@
         "offline": false,
         "privacy": "private",
         "traits": [
-          "default_vision"
+          "default_vision",
+          "function_calling_default"
         ]
       },
       "object": "model",
@@ -228,7 +234,9 @@
         "modelSource": "https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507-FP8",
         "offline": false,
         "privacy": "private",
-        "traits": []
+        "traits": [
+          "default_reasoning"
+        ]
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -848,7 +856,7 @@
           "supportsFunctionCalling": true,
           "supportsLogProbs": true,
           "supportsReasoning": false,
-          "supportsResponseSchema": true,
+          "supportsResponseSchema": false,
           "supportsVideoInput": false,
           "supportsVision": false,
           "supportsWebSearch": true
@@ -865,9 +873,7 @@
         "modelSource": "https://huggingface.co/meta-llama/Llama-3.2-3B",
         "offline": false,
         "privacy": "private",
-        "traits": [
-          "fastest"
-        ]
+        "traits": []
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -912,10 +918,7 @@
         "modelSource": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
         "offline": false,
         "privacy": "private",
-        "traits": [
-          "function_calling_default",
-          "default"
-        ]
+        "traits": []
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -1110,7 +1113,6 @@
         "offline": false,
         "privacy": "private",
         "traits": [
-          "default",
           "eliza-default"
         ]
       },
@@ -1435,7 +1437,9 @@
         "modelSource": "https://civitai.com/models/573152/lustify-sdxl-nsfw-checkpoint",
         "offline": false,
         "privacy": "private",
-        "traits": []
+        "traits": [
+          "most_uncensored"
+        ]
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -1554,7 +1558,10 @@
         "modelSource": "https://huggingface.co/Tongyi-MAI/Z-Image-Turbo",
         "offline": false,
         "privacy": "private",
-        "traits": []
+        "traits": [
+          "default",
+          "fastest"
+        ]
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -1944,7 +1951,7 @@
             "8s",
             "10s",
             "15s",
-            "19s"
+            "18s"
           ],
           "audio": true,
           "audio_configurable": true,
@@ -1984,7 +1991,7 @@
             "8s",
             "10s",
             "15s",
-            "19s"
+            "18s"
           ],
           "audio": true,
           "audio_configurable": true,
@@ -2024,7 +2031,7 @@
             "8s",
             "10s",
             "15s",
-            "19s"
+            "18s"
           ],
           "audio": true,
           "audio_configurable": true,
@@ -2064,7 +2071,7 @@
             "8s",
             "10s",
             "15s",
-            "19s"
+            "18s"
           ],
           "audio": true,
           "audio_configurable": true,
@@ -2940,6 +2947,26 @@
       "object": "model",
       "owned_by": "venice.ai",
       "type": "inpaint"
+    },
+    {
+      "created": 1760136444,
+      "id": "nvidia/parakeet-tdt-0.6b-v3",
+      "model_spec": {
+        "pricing": {
+          "per_audio_second": {
+            "usd": 0.0001,
+            "diem": 0.0001
+          }
+        },
+        "name": "Parakeet ASR",
+        "modelSource": "https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "asr"
     }
   ]
 }
