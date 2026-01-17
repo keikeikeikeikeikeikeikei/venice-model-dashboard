@@ -2641,7 +2641,8 @@
           ],
           "resolutions": [
             "720p",
-            "1080p"
+            "1080p",
+            "4k"
           ],
           "durations": [
             "4s",
@@ -2671,15 +2672,15 @@
         "privacy": "anonymized",
         "constraints": {
           "model_type": "image-to-video",
-          "aspect_ratios": [
-            "16:9",
-            "9:16"
-          ],
+          "aspect_ratios": [],
           "resolutions": [
             "720p",
-            "1080p"
+            "1080p",
+            "4k"
           ],
           "durations": [
+            "4s",
+            "6s",
             "8s"
           ],
           "audio": true,
@@ -2711,7 +2712,8 @@
           ],
           "resolutions": [
             "720p",
-            "1080p"
+            "1080p",
+            "4k"
           ],
           "durations": [
             "4s",
@@ -2741,15 +2743,15 @@
         "privacy": "anonymized",
         "constraints": {
           "model_type": "image-to-video",
-          "aspect_ratios": [
-            "16:9",
-            "9:16"
-          ],
+          "aspect_ratios": [],
           "resolutions": [
             "720p",
-            "1080p"
+            "1080p",
+            "4k"
           ],
           "durations": [
+            "4s",
+            "6s",
             "8s"
           ],
           "audio": true,
