@@ -745,7 +745,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-01-18 00:00)</div>
+            <div class="meta">Generated from Live API Data (2026-01-23 01:41)</div>
         </header>
 
         <div class="controls">
@@ -1999,6 +1999,52 @@
       "object": "model",
       "owned_by": "venice.ai",
       "type": "text"
+    },
+    {
+      "created": 1768521600,
+      "id": "qwen3-vl-235b-a22b",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.25,
+            "diem": 0.25
+          },
+          "output": {
+            "usd": 1.5,
+            "diem": 1.5
+          }
+        },
+        "availableContextTokens": 262144,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "fp8",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": true,
+          "supportsReasoning": false,
+          "supportsResponseSchema": true,
+          "supportsVideoInput": false,
+          "supportsVision": true,
+          "supportsWebSearch": true
+        },
+        "constraints": {
+          "temperature": {
+            "default": 0.7
+          },
+          "top_p": {
+            "default": 0.8
+          }
+        },
+        "description": "Qwen3-VL 235B vision-language model with MoE architecture. The most powerful VL model in the Qwen series with superior visual perception, OCR, and multimodal reasoning.",
+        "name": "Qwen3 VL 235B",
+        "modelSource": "https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
     }
   ],
   "image": [
@@ -2523,6 +2569,39 @@
       "type": "video",
       "pricing": {
         "base_price_usd": 0.55
+      }
+    },
+    {
+      "created": 1768824000,
+      "id": "wan-2.6-flash-image-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [],
+          "resolutions": [
+            "1080p",
+            "720p"
+          ],
+          "durations": [
+            "5s",
+            "10s",
+            "15s"
+          ],
+          "audio": true,
+          "audio_configurable": false,
+          "audio_input": true,
+          "video_input": false
+        },
+        "name": "Wan 2.6 Flash",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.28
       }
     },
     {
