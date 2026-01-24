@@ -1721,8 +1721,24 @@
     },
     {
       "created": 1769040000,
-      "id": "ben2",
+      "id": "bg-remover",
       "model_spec": {
+        "pricing": {
+          "generation": {
+            "usd": 0.02,
+            "diem": 0.02
+          },
+          "upscale": {
+            "2x": {
+              "usd": 0.02,
+              "diem": 0.02
+            },
+            "4x": {
+              "usd": 0.08,
+              "diem": 0.08
+            }
+          }
+        },
         "constraints": {
           "promptCharacterLimit": 1500,
           "steps": {
