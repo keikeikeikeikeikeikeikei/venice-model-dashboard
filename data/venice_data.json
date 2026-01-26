@@ -57,6 +57,10 @@
             "usd": 0.55,
             "diem": 0.55
           },
+          "cache_input": {
+            "usd": 0.11,
+            "diem": 0.11
+          },
           "output": {
             "usd": 2.65,
             "diem": 2.65
