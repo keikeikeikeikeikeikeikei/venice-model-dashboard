@@ -438,7 +438,6 @@
       "created": 1762214400,
       "id": "google-gemma-3-27b-it",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 0.12,
@@ -485,7 +484,6 @@
       "created": 1764547200,
       "id": "grok-41-fast",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 0.5,
@@ -536,7 +534,6 @@
       "created": 1764633600,
       "id": "gemini-3-pro-preview",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 2.5,
@@ -587,7 +584,6 @@
       "created": 1766102400,
       "id": "gemini-3-flash-preview",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 0.7,
@@ -638,7 +634,6 @@
       "created": 1764979200,
       "id": "claude-opus-45",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 6,
@@ -795,7 +790,6 @@
       "created": 1765324800,
       "id": "kimi-k2-thinking",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 0.75,
@@ -846,7 +840,6 @@
       "created": 1764806400,
       "id": "deepseek-v3.2",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 0.4,
@@ -987,7 +980,6 @@
       "created": 1765584000,
       "id": "openai-gpt-52",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 2.19,
@@ -1089,7 +1081,6 @@
       "created": 1764547200,
       "id": "minimax-m21",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 0.4,
@@ -1140,7 +1131,6 @@
       "created": 1764547200,
       "id": "grok-code-fast-1",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 0.25,
