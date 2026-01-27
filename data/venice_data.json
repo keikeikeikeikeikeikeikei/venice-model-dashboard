@@ -1178,6 +1178,57 @@
       "type": "text"
     },
     {
+      "created": 1769548800,
+      "id": "kimi-k2-5",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 0.75,
+            "diem": 0.75
+          },
+          "cache_input": {
+            "usd": 0.125,
+            "diem": 0.125
+          },
+          "output": {
+            "usd": 3.75,
+            "diem": 3.75
+          }
+        },
+        "availableContextTokens": 262144,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": true,
+          "supportsReasoning": true,
+          "supportsResponseSchema": true,
+          "supportsVideoInput": false,
+          "supportsVision": true,
+          "supportsWebSearch": true
+        },
+        "constraints": {
+          "temperature": {
+            "default": 0.7
+          },
+          "top_p": {
+            "default": 0.9
+          }
+        },
+        "description": "Kimi K2.5 is Moonshot AIs most advanced open reasoning model, featuring trillion-parameter Mixture-of-Experts architecture with 32B active parameters and 256K context windows.",
+        "name": "Kimi K2.5",
+        "modelSource": "",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
       "created": 1768521600,
       "id": "qwen3-vl-235b-a22b",
       "model_spec": {
