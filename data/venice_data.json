@@ -14,7 +14,7 @@
             "diem": 0.9
           }
         },
-        "availableContextTokens": 32768,
+        "availableContextTokens": 32000,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "fp16",
@@ -66,7 +66,7 @@
             "diem": 2.65
           }
         },
-        "availableContextTokens": 202752,
+        "availableContextTokens": 198000,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "fp4",
@@ -115,7 +115,7 @@
             "diem": 0.15
           }
         },
-        "availableContextTokens": 32768,
+        "availableContextTokens": 32000,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "fp8",
@@ -163,7 +163,7 @@
             "diem": 2
           }
         },
-        "availableContextTokens": 131072,
+        "availableContextTokens": 128000,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "fp8",
@@ -212,7 +212,7 @@
             "diem": 3.5
           }
         },
-        "availableContextTokens": 131072,
+        "availableContextTokens": 128000,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "fp8",
@@ -260,7 +260,7 @@
             "diem": 0.75
           }
         },
-        "availableContextTokens": 131072,
+        "availableContextTokens": 128000,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "fp8",
@@ -307,7 +307,7 @@
             "diem": 1.9
           }
         },
-        "availableContextTokens": 262144,
+        "availableContextTokens": 256000,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "fp16",
@@ -353,7 +353,7 @@
             "diem": 3
           }
         },
-        "availableContextTokens": 262144,
+        "availableContextTokens": 256000,
         "capabilities": {
           "optimizedForCode": true,
           "quantization": "fp8",
@@ -402,7 +402,7 @@
             "diem": 3
           }
         },
-        "availableContextTokens": 131072,
+        "availableContextTokens": 128000,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "fp8",
@@ -448,7 +448,7 @@
             "diem": 0.2
           }
         },
-        "availableContextTokens": 202752,
+        "availableContextTokens": 198000,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "fp8",
@@ -498,7 +498,7 @@
             "diem": 1.25
           }
         },
-        "availableContextTokens": 262144,
+        "availableContextTokens": 256000,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "not-available",
@@ -548,7 +548,7 @@
             "diem": 15
           }
         },
-        "availableContextTokens": 202752,
+        "availableContextTokens": 198000,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "not-available",
@@ -598,7 +598,7 @@
             "diem": 3.75
           }
         },
-        "availableContextTokens": 262144,
+        "availableContextTokens": 256000,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "not-available",
@@ -652,7 +652,7 @@
             "diem": 30
           }
         },
-        "availableContextTokens": 202752,
+        "availableContextTokens": 198000,
         "capabilities": {
           "optimizedForCode": true,
           "quantization": "not-available",
@@ -707,7 +707,7 @@
             "diem": 18.75
           }
         },
-        "availableContextTokens": 202752,
+        "availableContextTokens": 198000,
         "capabilities": {
           "optimizedForCode": true,
           "quantization": "not-available",
@@ -754,7 +754,7 @@
             "diem": 0.3
           }
         },
-        "availableContextTokens": 131072,
+        "availableContextTokens": 128000,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "not-available",
@@ -804,7 +804,7 @@
             "diem": 3.2
           }
         },
-        "availableContextTokens": 262144,
+        "availableContextTokens": 256000,
         "capabilities": {
           "optimizedForCode": true,
           "quantization": "int4",
@@ -829,7 +829,7 @@
         "name": "Kimi K2 Thinking",
         "modelSource": "https://huggingface.co/moonshotai/Kimi-K2-Thinking",
         "offline": false,
-        "privacy": "anonymized",
+        "privacy": "private",
         "traits": []
       },
       "object": "model",
@@ -854,7 +854,7 @@
             "diem": 1
           }
         },
-        "availableContextTokens": 163840,
+        "availableContextTokens": 160000,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "not-available",
@@ -900,7 +900,7 @@
             "diem": 0.6
           }
         },
-        "availableContextTokens": 131072,
+        "availableContextTokens": 128000,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "fp16",
@@ -945,7 +945,7 @@
             "diem": 2.8
           }
         },
-        "availableContextTokens": 131072,
+        "availableContextTokens": 128000,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "fp8",
@@ -994,7 +994,7 @@
             "diem": 17.5
           }
         },
-        "availableContextTokens": 262144,
+        "availableContextTokens": 256000,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "not-available",
@@ -1045,7 +1045,7 @@
             "diem": 17.5
           }
         },
-        "availableContextTokens": 262144,
+        "availableContextTokens": 256000,
         "capabilities": {
           "optimizedForCode": true,
           "quantization": "not-available",
@@ -1095,7 +1095,7 @@
             "diem": 1.6
           }
         },
-        "availableContextTokens": 202752,
+        "availableContextTokens": 198000,
         "capabilities": {
           "optimizedForCode": true,
           "quantization": "not-available",
@@ -1118,9 +1118,9 @@
         },
         "description": "MiniMax-M2.1 is a lightweight, state-of-the-art large language model optimized for coding, agentic workflows, and modern application development.",
         "name": "MiniMax M2.1",
-        "modelSource": "",
+        "modelSource": "https://huggingface.co/MiniMaxAI/MiniMax-M2.1",
         "offline": false,
-        "privacy": "anonymized",
+        "privacy": "private",
         "traits": []
       },
       "object": "model",
@@ -1145,7 +1145,7 @@
             "diem": 1.87
           }
         },
-        "availableContextTokens": 262144,
+        "availableContextTokens": 256000,
         "capabilities": {
           "optimizedForCode": true,
           "quantization": "not-available",
@@ -1196,7 +1196,7 @@
             "diem": 3.75
           }
         },
-        "availableContextTokens": 262144,
+        "availableContextTokens": 256000,
         "capabilities": {
           "optimizedForCode": true,
           "quantization": "not-available",
@@ -1242,7 +1242,7 @@
             "diem": 1.5
           }
         },
-        "availableContextTokens": 262144,
+        "availableContextTokens": 256000,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "fp8",
