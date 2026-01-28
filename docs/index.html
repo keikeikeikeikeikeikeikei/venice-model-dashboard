@@ -745,7 +745,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-01-28 11:07)</div>
+            <div class="meta">Generated from Live API Data (2026-01-28 23:34)</div>
         </header>
 
         <div class="controls">
@@ -2279,6 +2279,44 @@
         },
         "supportsWebSearch": false,
         "name": "GPT Image 1.5",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "image"
+    },
+    {
+      "created": 1769437800,
+      "id": "imagineart-1.5-pro",
+      "model_spec": {
+        "pricing": {
+          "generation": {
+            "usd": 0.05,
+            "diem": 0.05
+          },
+          "upscale": {
+            "2x": {
+              "usd": 0.02,
+              "diem": 0.02
+            },
+            "4x": {
+              "usd": 0.08,
+              "diem": 0.08
+            }
+          }
+        },
+        "constraints": {
+          "promptCharacterLimit": 32768,
+          "steps": {
+            "default": 20,
+            "max": 50
+          },
+          "widthHeightDivisor": 1
+        },
+        "supportsWebSearch": false,
+        "name": "ImagineArt 1.5 Pro",
         "offline": false,
         "privacy": "anonymized",
         "traits": []
