@@ -837,6 +837,57 @@
       "type": "text"
     },
     {
+      "created": 1769548800,
+      "id": "kimi-k2-5",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 0.75,
+            "diem": 0.75
+          },
+          "cache_input": {
+            "usd": 0.125,
+            "diem": 0.125
+          },
+          "output": {
+            "usd": 3.75,
+            "diem": 3.75
+          }
+        },
+        "availableContextTokens": 256000,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": true,
+          "supportsReasoning": true,
+          "supportsResponseSchema": true,
+          "supportsVideoInput": false,
+          "supportsVision": true,
+          "supportsWebSearch": true
+        },
+        "constraints": {
+          "temperature": {
+            "default": 0.7
+          },
+          "top_p": {
+            "default": 0.9
+          }
+        },
+        "description": "Kimi K2.5 is Moonshot AIs most advanced open reasoning model, featuring trillion-parameter Mixture-of-Experts architecture with 32B active parameters and 256K context windows.",
+        "name": "Kimi K2.5",
+        "modelSource": "",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
       "created": 1764806400,
       "id": "deepseek-v3.2",
       "model_spec": {
@@ -1178,57 +1229,6 @@
       "type": "text"
     },
     {
-      "created": 1769548800,
-      "id": "kimi-k2-5",
-      "model_spec": {
-        "betaModel": true,
-        "pricing": {
-          "input": {
-            "usd": 0.75,
-            "diem": 0.75
-          },
-          "cache_input": {
-            "usd": 0.125,
-            "diem": 0.125
-          },
-          "output": {
-            "usd": 3.75,
-            "diem": 3.75
-          }
-        },
-        "availableContextTokens": 256000,
-        "capabilities": {
-          "optimizedForCode": true,
-          "quantization": "not-available",
-          "supportsAudioInput": false,
-          "supportsFunctionCalling": true,
-          "supportsLogProbs": true,
-          "supportsReasoning": true,
-          "supportsResponseSchema": true,
-          "supportsVideoInput": false,
-          "supportsVision": true,
-          "supportsWebSearch": true
-        },
-        "constraints": {
-          "temperature": {
-            "default": 0.7
-          },
-          "top_p": {
-            "default": 0.9
-          }
-        },
-        "description": "Kimi K2.5 is Moonshot AIs most advanced open reasoning model, featuring trillion-parameter Mixture-of-Experts architecture with 32B active parameters and 256K context windows.",
-        "name": "Kimi K2.5",
-        "modelSource": "",
-        "offline": false,
-        "privacy": "anonymized",
-        "traits": []
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "text"
-    },
-    {
       "created": 1768521600,
       "id": "qwen3-vl-235b-a22b",
       "model_spec": {
@@ -1462,6 +1462,44 @@
         },
         "supportsWebSearch": false,
         "name": "GPT Image 1.5",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "image"
+    },
+    {
+      "created": 1769644800,
+      "id": "grok-imagine",
+      "model_spec": {
+        "pricing": {
+          "generation": {
+            "usd": 0.04,
+            "diem": 0.04
+          },
+          "upscale": {
+            "2x": {
+              "usd": 0.02,
+              "diem": 0.02
+            },
+            "4x": {
+              "usd": 0.08,
+              "diem": 0.08
+            }
+          }
+        },
+        "constraints": {
+          "promptCharacterLimit": 10000,
+          "steps": {
+            "default": 20,
+            "max": 50
+          },
+          "widthHeightDivisor": 1
+        },
+        "supportsWebSearch": false,
+        "name": "Grok Imagine",
         "offline": false,
         "privacy": "anonymized",
         "traits": []
@@ -3111,6 +3149,80 @@
       "pricing": {
         "base_price_usd": 2.22
       }
+    },
+    {
+      "created": 1769644800,
+      "id": "grok-imagine-text-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "text-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "4:3",
+            "3:2",
+            "1:1",
+            "2:3",
+            "3:4",
+            "9:16"
+          ],
+          "resolutions": [
+            "480p",
+            "720p"
+          ],
+          "durations": [
+            "5s",
+            "10s",
+            "15s"
+          ],
+          "audio": true,
+          "audio_configurable": false,
+          "audio_input": false,
+          "video_input": false
+        },
+        "name": "Grok Imagine",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.32
+      }
+    },
+    {
+      "created": 1769644800,
+      "id": "grok-imagine-image-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [],
+          "resolutions": [
+            "480p",
+            "720p"
+          ],
+          "durations": [
+            "5s",
+            "10s",
+            "15s"
+          ],
+          "audio": true,
+          "audio_configurable": false,
+          "audio_input": false,
+          "video_input": false
+        },
+        "name": "Grok Imagine",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.32
+      }
     }
   ],
   "other": [
@@ -3250,6 +3362,19 @@
         "name": "Qwen Edit 2511",
         "offline": false,
         "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "inpaint"
+    },
+    {
+      "created": 1769644800,
+      "id": "grok-imagine-edit",
+      "model_spec": {
+        "name": "Grok Imagine",
+        "offline": false,
+        "privacy": "anonymized",
         "traits": []
       },
       "object": "model",
