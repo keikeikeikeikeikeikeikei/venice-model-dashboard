@@ -3275,6 +3275,25 @@
       "object": "model",
       "owned_by": "venice.ai",
       "type": "asr"
+    },
+    {
+      "created": 1736899200,
+      "id": "openai/whisper-large-v3",
+      "model_spec": {
+        "pricing": {
+          "per_audio_second": {
+            "usd": 0.0001,
+            "diem": 0.0001
+          }
+        },
+        "name": "Whisper Large V3",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "asr"
     }
   ]
 }
