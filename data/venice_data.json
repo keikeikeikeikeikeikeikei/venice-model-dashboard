@@ -184,6 +184,9 @@
             "default": 1
           }
         },
+        "deprecation": {
+          "date": "2026-02-14T00:00:00.000Z"
+        },
         "description": "Balanced blend of speed and capability. Handles most everyday tasks with reliability, and supports image analysis. Ideal for general use with moderate complexity.",
         "name": "Venice Medium",
         "modelSource": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503",
@@ -1378,6 +1381,16 @@
         },
         "constraints": {
           "promptCharacterLimit": 3000,
+          "aspectRatios": [
+            "1:1",
+            "3:2",
+            "16:9",
+            "21:9",
+            "9:16",
+            "2:3",
+            "4:5"
+          ],
+          "defaultAspectRatio": "1:1",
           "steps": {
             "default": 20,
             "max": 50
@@ -1416,6 +1429,16 @@
         },
         "constraints": {
           "promptCharacterLimit": 3000,
+          "aspectRatios": [
+            "1:1",
+            "3:2",
+            "16:9",
+            "21:9",
+            "9:16",
+            "2:3",
+            "4:5"
+          ],
+          "defaultAspectRatio": "1:1",
           "steps": {
             "default": 20,
             "max": 50
@@ -1454,6 +1477,12 @@
         },
         "constraints": {
           "promptCharacterLimit": 32768,
+          "aspectRatios": [
+            "1:1",
+            "3:2",
+            "2:3"
+          ],
+          "defaultAspectRatio": "1:1",
           "steps": {
             "default": 20,
             "max": 50
@@ -1492,6 +1521,14 @@
         },
         "constraints": {
           "promptCharacterLimit": 10000,
+          "aspectRatios": [
+            "1:1",
+            "3:2",
+            "16:9",
+            "9:16",
+            "2:3"
+          ],
+          "defaultAspectRatio": "1:1",
           "steps": {
             "default": 20,
             "max": 50
@@ -1530,6 +1567,14 @@
         },
         "constraints": {
           "promptCharacterLimit": 32768,
+          "aspectRatios": [
+            "1:1",
+            "3:2",
+            "16:9",
+            "9:16",
+            "2:3"
+          ],
+          "defaultAspectRatio": "1:1",
           "steps": {
             "default": 20,
             "max": 50
@@ -1584,6 +1629,16 @@
             "2K",
             "4K"
           ],
+          "aspectRatios": [
+            "1:1",
+            "3:2",
+            "16:9",
+            "21:9",
+            "9:16",
+            "2:3",
+            "4:5"
+          ],
+          "defaultAspectRatio": "1:1",
           "steps": {
             "default": 20,
             "max": 50
@@ -1622,6 +1677,16 @@
         },
         "constraints": {
           "promptCharacterLimit": 10000,
+          "aspectRatios": [
+            "1:1",
+            "3:2",
+            "16:9",
+            "21:9",
+            "9:16",
+            "2:3",
+            "4:5"
+          ],
+          "defaultAspectRatio": "1:1",
           "steps": {
             "default": 20,
             "max": 50
@@ -2051,6 +2116,80 @@
       "type": "video",
       "pricing": {
         "base_price_usd": 0.28
+      }
+    },
+    {
+      "created": 1769644800,
+      "id": "grok-imagine-text-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "text-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "4:3",
+            "3:2",
+            "1:1",
+            "2:3",
+            "3:4",
+            "9:16"
+          ],
+          "resolutions": [
+            "480p",
+            "720p"
+          ],
+          "durations": [
+            "5s",
+            "10s",
+            "15s"
+          ],
+          "audio": true,
+          "audio_configurable": false,
+          "audio_input": false,
+          "video_input": false
+        },
+        "name": "Grok Imagine",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.32
+      }
+    },
+    {
+      "created": 1769644800,
+      "id": "grok-imagine-image-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [],
+          "resolutions": [
+            "480p",
+            "720p"
+          ],
+          "durations": [
+            "5s",
+            "10s",
+            "15s"
+          ],
+          "audio": true,
+          "audio_configurable": false,
+          "audio_input": false,
+          "video_input": false
+        },
+        "name": "Grok Imagine",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.32
       }
     },
     {
@@ -3151,36 +3290,40 @@
       }
     },
     {
-      "created": 1769644800,
-      "id": "grok-imagine-text-to-video",
+      "created": 1769817600,
+      "id": "vidu-q3-text-to-video",
       "model_spec": {
         "privacy": "anonymized",
         "constraints": {
           "model_type": "text-to-video",
           "aspect_ratios": [
             "16:9",
+            "9:16",
             "4:3",
-            "3:2",
-            "1:1",
-            "2:3",
             "3:4",
-            "9:16"
+            "1:1"
           ],
           "resolutions": [
-            "480p",
-            "720p"
+            "360p",
+            "540p",
+            "720p",
+            "1080p"
           ],
           "durations": [
+            "3s",
             "5s",
+            "8s",
             "10s",
-            "15s"
+            "12s",
+            "14s",
+            "16s"
           ],
           "audio": true,
-          "audio_configurable": false,
+          "audio_configurable": true,
           "audio_input": false,
           "video_input": false
         },
-        "name": "Grok Imagine",
+        "name": "Vidu Q3",
         "offline": false,
         "traits": []
       },
@@ -3188,32 +3331,38 @@
       "owned_by": "venice.ai",
       "type": "video",
       "pricing": {
-        "base_price_usd": 0.32
+        "base_price_usd": 0.58
       }
     },
     {
-      "created": 1769644800,
-      "id": "grok-imagine-image-to-video",
+      "created": 1769817600,
+      "id": "vidu-q3-image-to-video",
       "model_spec": {
         "privacy": "anonymized",
         "constraints": {
           "model_type": "image-to-video",
           "aspect_ratios": [],
           "resolutions": [
-            "480p",
-            "720p"
+            "360p",
+            "540p",
+            "720p",
+            "1080p"
           ],
           "durations": [
+            "3s",
             "5s",
+            "8s",
             "10s",
-            "15s"
+            "12s",
+            "14s",
+            "16s"
           ],
           "audio": true,
-          "audio_configurable": false,
+          "audio_configurable": true,
           "audio_input": false,
           "video_input": false
         },
-        "name": "Grok Imagine",
+        "name": "Vidu Q3",
         "offline": false,
         "traits": []
       },
@@ -3221,7 +3370,7 @@
       "owned_by": "venice.ai",
       "type": "video",
       "pricing": {
-        "base_price_usd": 0.32
+        "base_price_usd": 0.58
       }
     }
   ],
