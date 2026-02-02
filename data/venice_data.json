@@ -1906,6 +1906,45 @@
       "type": "image"
     },
     {
+      "created": 1769731200,
+      "id": "chroma",
+      "model_spec": {
+        "pricing": {
+          "generation": {
+            "usd": 0.01,
+            "diem": 0.01
+          },
+          "upscale": {
+            "2x": {
+              "usd": 0.02,
+              "diem": 0.02
+            },
+            "4x": {
+              "usd": 0.08,
+              "diem": 0.08
+            }
+          }
+        },
+        "constraints": {
+          "promptCharacterLimit": 7500,
+          "steps": {
+            "default": 10,
+            "max": 10
+          },
+          "widthHeightDivisor": 8
+        },
+        "supportsWebSearch": false,
+        "name": "Chroma",
+        "modelSource": "https://huggingface.co/lodestones/Chroma1-HD",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "image"
+    },
+    {
       "created": 1769040000,
       "id": "bg-remover",
       "model_spec": {
