@@ -94,7 +94,8 @@
         "privacy": "private",
         "traits": [
           "default",
-          "most_intelligent"
+          "most_intelligent",
+          "function_calling_default"
         ]
       },
       "object": "model",
@@ -184,18 +185,12 @@
             "default": 1
           }
         },
-        "deprecation": {
-          "date": "2026-02-14T00:00:00.000Z"
-        },
         "description": "Balanced blend of speed and capability. Handles most everyday tasks with reliability, and supports image analysis. Ideal for general use with moderate complexity.",
         "name": "Venice Medium",
         "modelSource": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503",
         "offline": false,
         "privacy": "private",
-        "traits": [
-          "default_vision",
-          "function_calling_default"
-        ]
+        "traits": []
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -883,7 +878,7 @@
         "name": "Kimi K2.5",
         "modelSource": "",
         "offline": false,
-        "privacy": "anonymized",
+        "privacy": "private",
         "traits": []
       },
       "object": "model",
@@ -1271,7 +1266,9 @@
         "modelSource": "https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct",
         "offline": false,
         "privacy": "private",
-        "traits": []
+        "traits": [
+          "default_vision"
+        ]
       },
       "object": "model",
       "owned_by": "venice.ai",
