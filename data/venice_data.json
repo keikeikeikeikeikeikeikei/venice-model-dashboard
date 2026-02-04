@@ -2179,7 +2179,8 @@
           "uncensored",
           "high_resolution",
           "audio",
-          "open_source"
+          "open_source",
+          "venice_recommendations"
         ],
         "name": "Wan 2.5 Preview",
         "offline": false,
@@ -2222,7 +2223,8 @@
           "uncensored",
           "high_resolution",
           "audio",
-          "open_source"
+          "open_source",
+          "venice_recommendations"
         ],
         "name": "Wan 2.5 Preview",
         "offline": false,
@@ -2269,7 +2271,8 @@
           "fast",
           "audio",
           "long_duration",
-          "photorealistic"
+          "photorealistic",
+          "venice_recommendations"
         ],
         "name": "Grok Imagine",
         "offline": false,
@@ -2308,7 +2311,8 @@
           "fast",
           "audio",
           "long_duration",
-          "photorealistic"
+          "photorealistic",
+          "venice_recommendations"
         ],
         "name": "Grok Imagine",
         "offline": false,
@@ -2351,6 +2355,9 @@
           "fast",
           "open_source"
         ],
+        "deprecation": {
+          "date": "2026-02-18T00:00:00.000Z"
+        },
         "name": "Wan 2.2 A14B",
         "offline": false,
         "traits": []
@@ -2939,6 +2946,90 @@
       "type": "video",
       "pricing": {
         "base_price_usd": 0.39
+      }
+    },
+    {
+      "created": 1770076800,
+      "id": "kling-o3-pro-text-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "text-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "resolutions": [],
+          "durations": [
+            "3s",
+            "5s",
+            "8s",
+            "10s",
+            "13s",
+            "15s"
+          ],
+          "audio": true,
+          "audio_configurable": true,
+          "audio_input": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "cinematic",
+          "audio",
+          "photorealistic",
+          "long_duration",
+          "venice_recommendations"
+        ],
+        "name": "Kling O3 Pro",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 1.06
+      }
+    },
+    {
+      "created": 1770076800,
+      "id": "kling-o3-pro-image-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [],
+          "resolutions": [],
+          "durations": [
+            "3s",
+            "5s",
+            "8s",
+            "10s",
+            "13s",
+            "15s"
+          ],
+          "audio": true,
+          "audio_configurable": true,
+          "audio_input": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "cinematic",
+          "audio",
+          "photorealistic",
+          "long_duration",
+          "venice_recommendations"
+        ],
+        "name": "Kling O3 Pro",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 1.06
       }
     },
     {
@@ -3640,7 +3731,8 @@
           "high_resolution",
           "audio",
           "long_duration",
-          "cinematic"
+          "cinematic",
+          "venice_recommendations"
         ],
         "name": "Vidu Q3",
         "offline": false,
@@ -3685,7 +3777,8 @@
           "high_resolution",
           "audio",
           "long_duration",
-          "cinematic"
+          "cinematic",
+          "venice_recommendations"
         ],
         "name": "Vidu Q3",
         "offline": false,
@@ -3833,6 +3926,16 @@
       "created": 1756157864,
       "id": "qwen-edit",
       "model_spec": {
+        "pricing": {
+          "inpaint": {
+            "usd": 0.04,
+            "diem": 0.04
+          }
+        },
+        "constraints": {
+          "promptCharacterLimit": 1500,
+          "combineImages": true
+        },
         "name": "Qwen Edit 2511",
         "offline": false,
         "privacy": "private",
@@ -3843,10 +3946,112 @@
       "type": "inpaint"
     },
     {
+      "created": 1767571200,
+      "id": "flux-2-max-edit",
+      "model_spec": {
+        "pricing": {
+          "inpaint": {
+            "usd": 0.09,
+            "diem": 0.09
+          }
+        },
+        "constraints": {
+          "promptCharacterLimit": 3000,
+          "combineImages": true
+        },
+        "name": "Flux 2 Max",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "inpaint"
+    },
+    {
+      "created": 1767555000,
+      "id": "gpt-image-1-5-edit",
+      "model_spec": {
+        "pricing": {
+          "inpaint": {
+            "usd": 0.23,
+            "diem": 0.23
+          }
+        },
+        "constraints": {
+          "promptCharacterLimit": 32768,
+          "combineImages": true
+        },
+        "name": "GPT Image 1.5",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "inpaint"
+    },
+    {
       "created": 1769644800,
       "id": "grok-imagine-edit",
       "model_spec": {
+        "pricing": {
+          "inpaint": {
+            "usd": 0.04,
+            "diem": 0.04
+          }
+        },
+        "constraints": {
+          "promptCharacterLimit": 7000,
+          "combineImages": false
+        },
         "name": "Grok Imagine",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "inpaint"
+    },
+    {
+      "created": 1765584000,
+      "id": "nano-banana-pro-edit",
+      "model_spec": {
+        "pricing": {
+          "inpaint": {
+            "usd": 0.18,
+            "diem": 0.18
+          }
+        },
+        "constraints": {
+          "promptCharacterLimit": 32768,
+          "combineImages": true
+        },
+        "name": "Nano Banana Pro",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "inpaint"
+    },
+    {
+      "created": 1767484800,
+      "id": "seedream-v4-edit",
+      "model_spec": {
+        "pricing": {
+          "inpaint": {
+            "usd": 0.05,
+            "diem": 0.05
+          }
+        },
+        "constraints": {
+          "promptCharacterLimit": 10000,
+          "combineImages": true
+        },
+        "name": "SeedreamV4.5",
         "offline": false,
         "privacy": "anonymized",
         "traits": []
