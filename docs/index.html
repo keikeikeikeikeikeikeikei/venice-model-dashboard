@@ -745,7 +745,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-02-04 08:39)</div>
+            <div class="meta">Generated from Live API Data (2026-02-04 14:40)</div>
         </header>
 
         <div class="controls">
@@ -2086,6 +2086,53 @@
         "traits": [
           "default_vision"
         ]
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1769644800,
+      "id": "zai-org-glm-4.7-flash",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 0.125,
+            "diem": 0.125
+          },
+          "output": {
+            "usd": 0.5,
+            "diem": 0.5
+          }
+        },
+        "availableContextTokens": 128000,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "fp8",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsReasoning": false,
+          "supportsResponseSchema": true,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true
+        },
+        "constraints": {
+          "temperature": {
+            "default": 0.7
+          },
+          "top_p": {
+            "default": 0.9
+          }
+        },
+        "description": "GLM-4.7-Flash is a fast inference variant of GLM-4.7, optimized for speed while maintaining strong reasoning capabilities. Ideal for applications requiring quick responses with good quality.",
+        "name": "GLM 4.7 Flash",
+        "modelSource": "https://huggingface.co/zai-org/GLM-4.7-Flash",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
       },
       "object": "model",
       "owned_by": "venice.ai",
