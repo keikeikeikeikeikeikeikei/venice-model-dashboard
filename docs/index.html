@@ -745,7 +745,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-02-06 01:54)</div>
+            <div class="meta">Generated from Live API Data (2026-02-06 09:39)</div>
         </header>
 
         <div class="controls">
@@ -780,6 +780,7 @@
                                 <option value="160000">156k+</option>
                                 <option value="198000">193k+</option>
                                 <option value="256000">250k+</option>
+                                <option value="1000000">977k+</option>
                             </select>
                         </div>
                         <div class="range-item">
@@ -914,6 +915,53 @@
           "most_intelligent",
           "function_calling_default"
         ]
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1769644800,
+      "id": "zai-org-glm-4.7-flash",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 0.125,
+            "diem": 0.125
+          },
+          "output": {
+            "usd": 0.5,
+            "diem": 0.5
+          }
+        },
+        "availableContextTokens": 128000,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "fp8",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsReasoning": false,
+          "supportsResponseSchema": true,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true
+        },
+        "constraints": {
+          "temperature": {
+            "default": 0.7
+          },
+          "top_p": {
+            "default": 0.9
+          }
+        },
+        "description": "GLM-4.7-Flash is a fast inference variant of GLM-4.7, optimized for speed while maintaining strong reasoning capabilities. Ideal for applications requiring quick responses with good quality.",
+        "name": "GLM 4.7 Flash",
+        "modelSource": "https://huggingface.co/zai-org/GLM-4.7-Flash",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -1446,6 +1494,61 @@
       "type": "text"
     },
     {
+      "created": 1770249600,
+      "id": "claude-opus-4-6",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 6,
+            "diem": 6
+          },
+          "cache_input": {
+            "usd": 0.6,
+            "diem": 0.6
+          },
+          "cache_write": {
+            "usd": 7.5,
+            "diem": 7.5
+          },
+          "output": {
+            "usd": 30,
+            "diem": 30
+          }
+        },
+        "availableContextTokens": 1000000,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsReasoning": true,
+          "supportsResponseSchema": true,
+          "supportsVideoInput": false,
+          "supportsVision": true,
+          "supportsWebSearch": true
+        },
+        "constraints": {
+          "temperature": {
+            "default": 0.7
+          },
+          "top_p": {
+            "default": 0.9
+          }
+        },
+        "description": "Claude Opus 4.6 is Anthropic's most capable reasoning model, building on Opus 4.5 with enhanced performance across complex software engineering, agentic workflows, and long-horizon tasks. It features a 1M token context window, improved multimodal capabilities, and stronger robustness to prompt injection.",
+        "name": "Claude Opus 4.6",
+        "modelSource": "",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
       "created": 1764979200,
       "id": "claude-opus-45",
       "model_spec": {
@@ -1634,10 +1737,10 @@
         },
         "constraints": {
           "temperature": {
-            "default": 0.7
+            "default": 1
           },
           "top_p": {
-            "default": 0.8
+            "default": 0.9
           }
         },
         "description": "Kimi K2 Thinking is Moonshot AIs most advanced open reasoning model to date, extending the K2 series into agentic, long-horizon reasoning. Built on the trillion-parameter Mixture-of-Experts (MoE) architecture introduced in Kimi K2, it activates 32 billion parameters per forward pass and supports 256 k-token context windows.",
@@ -1685,7 +1788,7 @@
         },
         "constraints": {
           "temperature": {
-            "default": 0.7
+            "default": 1
           },
           "top_p": {
             "default": 0.9
@@ -2086,53 +2189,6 @@
         "traits": [
           "default_vision"
         ]
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "text"
-    },
-    {
-      "created": 1769644800,
-      "id": "zai-org-glm-4.7-flash",
-      "model_spec": {
-        "betaModel": true,
-        "pricing": {
-          "input": {
-            "usd": 0.125,
-            "diem": 0.125
-          },
-          "output": {
-            "usd": 0.5,
-            "diem": 0.5
-          }
-        },
-        "availableContextTokens": 128000,
-        "capabilities": {
-          "optimizedForCode": false,
-          "quantization": "fp8",
-          "supportsAudioInput": false,
-          "supportsFunctionCalling": true,
-          "supportsLogProbs": false,
-          "supportsReasoning": false,
-          "supportsResponseSchema": true,
-          "supportsVideoInput": false,
-          "supportsVision": false,
-          "supportsWebSearch": true
-        },
-        "constraints": {
-          "temperature": {
-            "default": 0.7
-          },
-          "top_p": {
-            "default": 0.9
-          }
-        },
-        "description": "GLM-4.7-Flash is a fast inference variant of GLM-4.7, optimized for speed while maintaining strong reasoning capabilities. Ideal for applications requiring quick responses with good quality.",
-        "name": "GLM 4.7 Flash",
-        "modelSource": "https://huggingface.co/zai-org/GLM-4.7-Flash",
-        "offline": false,
-        "privacy": "private",
-        "traits": []
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -2872,7 +2928,8 @@
           "high_resolution",
           "audio",
           "long_duration",
-          "open_source"
+          "open_source",
+          "venice_recommendations"
         ],
         "name": "Wan 2.6",
         "offline": false,
@@ -2913,7 +2970,8 @@
           "fast",
           "audio",
           "long_duration",
-          "open_source"
+          "open_source",
+          "venice_recommendations"
         ],
         "name": "Wan 2.6 Flash",
         "offline": false,
@@ -2957,7 +3015,8 @@
           "high_resolution",
           "audio",
           "long_duration",
-          "open_source"
+          "open_source",
+          "venice_recommendations"
         ],
         "name": "Wan 2.6",
         "offline": false,
