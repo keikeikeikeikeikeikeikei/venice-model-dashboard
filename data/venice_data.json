@@ -49,6 +49,53 @@
       "type": "text"
     },
     {
+      "created": 1769644800,
+      "id": "zai-org-glm-4.7-flash",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 0.125,
+            "diem": 0.125
+          },
+          "output": {
+            "usd": 0.5,
+            "diem": 0.5
+          }
+        },
+        "availableContextTokens": 128000,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "fp8",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsReasoning": false,
+          "supportsResponseSchema": true,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true
+        },
+        "constraints": {
+          "temperature": {
+            "default": 0.7
+          },
+          "top_p": {
+            "default": 0.9
+          }
+        },
+        "description": "GLM-4.7-Flash is a fast inference variant of GLM-4.7, optimized for speed while maintaining strong reasoning capabilities. Ideal for applications requiring quick responses with good quality.",
+        "name": "GLM 4.7 Flash",
+        "modelSource": "https://huggingface.co/zai-org/GLM-4.7-Flash",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
       "created": 1766534400,
       "id": "zai-org-glm-4.7",
       "model_spec": {
@@ -97,53 +144,6 @@
           "most_intelligent",
           "function_calling_default"
         ]
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "text"
-    },
-    {
-      "created": 1769644800,
-      "id": "zai-org-glm-4.7-flash",
-      "model_spec": {
-        "betaModel": true,
-        "pricing": {
-          "input": {
-            "usd": 0.125,
-            "diem": 0.125
-          },
-          "output": {
-            "usd": 0.5,
-            "diem": 0.5
-          }
-        },
-        "availableContextTokens": 128000,
-        "capabilities": {
-          "optimizedForCode": false,
-          "quantization": "fp8",
-          "supportsAudioInput": false,
-          "supportsFunctionCalling": true,
-          "supportsLogProbs": false,
-          "supportsReasoning": false,
-          "supportsResponseSchema": true,
-          "supportsVideoInput": false,
-          "supportsVision": false,
-          "supportsWebSearch": true
-        },
-        "constraints": {
-          "temperature": {
-            "default": 0.7
-          },
-          "top_p": {
-            "default": 0.9
-          }
-        },
-        "description": "GLM-4.7-Flash is a fast inference variant of GLM-4.7, optimized for speed while maintaining strong reasoning capabilities. Ideal for applications requiring quick responses with good quality.",
-        "name": "GLM 4.7 Flash",
-        "modelSource": "https://huggingface.co/zai-org/GLM-4.7-Flash",
-        "offline": false,
-        "privacy": "private",
-        "traits": []
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -1619,7 +1619,7 @@
           }
         },
         "constraints": {
-          "promptCharacterLimit": 10000,
+          "promptCharacterLimit": 1500,
           "aspectRatios": [
             "1:1",
             "3:2",
@@ -1665,7 +1665,7 @@
           }
         },
         "constraints": {
-          "promptCharacterLimit": 32768,
+          "promptCharacterLimit": 10000,
           "aspectRatios": [
             "1:1",
             "3:2",
@@ -3752,6 +3752,135 @@
       }
     },
     {
+      "created": 1769472000,
+      "id": "pixverse-v5.6-text-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "text-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "9:16",
+            "1:1",
+            "4:3",
+            "3:4"
+          ],
+          "resolutions": [
+            "360p",
+            "540p",
+            "720p",
+            "1080p"
+          ],
+          "durations": [
+            "5s",
+            "8s"
+          ],
+          "audio": true,
+          "audio_configurable": true,
+          "audio_input": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "high_resolution",
+          "audio",
+          "cinematic"
+        ],
+        "name": "PixVerse v5.6",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 1.9
+      }
+    },
+    {
+      "created": 1769472000,
+      "id": "pixverse-v5.6-image-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [],
+          "resolutions": [
+            "360p",
+            "540p",
+            "720p",
+            "1080p"
+          ],
+          "durations": [
+            "5s",
+            "8s"
+          ],
+          "audio": true,
+          "audio_configurable": true,
+          "audio_input": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "high_resolution",
+          "audio",
+          "cinematic"
+        ],
+        "name": "PixVerse v5.6",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 1.9
+      }
+    },
+    {
+      "created": 1769472000,
+      "id": "pixverse-v5.6-transition",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "9:16",
+            "1:1",
+            "4:3",
+            "3:4"
+          ],
+          "resolutions": [
+            "360p",
+            "540p",
+            "720p",
+            "1080p"
+          ],
+          "durations": [
+            "5s",
+            "8s"
+          ],
+          "audio": true,
+          "audio_configurable": true,
+          "audio_input": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "high_resolution",
+          "audio",
+          "cinematic"
+        ],
+        "name": "PixVerse v5.6 Transition",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 1.9
+      }
+    },
+    {
       "created": 1769817600,
       "id": "vidu-q3-text-to-video",
       "model_spec": {
@@ -4096,7 +4225,7 @@
             "2:3",
             "4:5"
           ],
-          "promptCharacterLimit": 7000,
+          "promptCharacterLimit": 1500,
           "combineImages": false
         },
         "name": "Grok Imagine",
