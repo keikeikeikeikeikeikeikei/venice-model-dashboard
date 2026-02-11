@@ -184,6 +184,9 @@
             "default": 0.95
           }
         },
+        "deprecation": {
+          "date": "2026-02-24T00:00:00.000Z"
+        },
         "description": "Optimized for speed and efficiency. Best for quick answers, simple queries, and lightweight tasks on mobile or low-latency connections.",
         "name": "Venice Small",
         "modelSource": "https://huggingface.co/Qwen/Qwen3-4B",
@@ -419,6 +422,9 @@
             "default": 0.8
           }
         },
+        "deprecation": {
+          "date": "2026-02-24T00:00:00.000Z"
+        },
         "description": "Optimized for code.",
         "name": "Qwen 3 Coder 480b",
         "modelSource": "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct",
@@ -543,6 +549,9 @@
             "diem": 1.25
           }
         },
+        "model_sets": [
+          "venice_recommendations"
+        ],
         "availableContextTokens": 256000,
         "capabilities": {
           "optimizedForCode": false,
@@ -613,6 +622,9 @@
           "top_p": {
             "default": 0.8
           }
+        },
+        "deprecation": {
+          "date": "2026-02-24T00:00:00.000Z"
         },
         "description": "Gemini 3 Pro is Google flagship frontier model for high-precision multimodal reasoning with strong performance across text, image, and code.",
         "name": "Gemini 3 Pro Preview",
@@ -717,6 +729,9 @@
             }
           }
         },
+        "model_sets": [
+          "venice_recommendations"
+        ],
         "availableContextTokens": 1000000,
         "capabilities": {
           "optimizedForCode": true,
@@ -974,6 +989,9 @@
             "diem": 3.75
           }
         },
+        "model_sets": [
+          "venice_recommendations"
+        ],
         "availableContextTokens": 256000,
         "capabilities": {
           "optimizedForCode": true,
@@ -1024,6 +1042,9 @@
             "diem": 1
           }
         },
+        "model_sets": [
+          "venice_recommendations"
+        ],
         "availableContextTokens": 160000,
         "capabilities": {
           "optimizedForCode": false,
@@ -1164,6 +1185,9 @@
             "diem": 17.5
           }
         },
+        "model_sets": [
+          "venice_recommendations"
+        ],
         "availableContextTokens": 256000,
         "capabilities": {
           "optimizedForCode": false,
@@ -1235,6 +1259,9 @@
           "top_p": {
             "default": 1
           }
+        },
+        "deprecation": {
+          "date": "2026-02-24T00:00:00.000Z"
         },
         "description": "GPT-5.2 Codex is OpenAI specialized coding model built on GPT-5.2, optimized for advanced software development, code generation, and technical problem-solving.",
         "name": "GPT-5.2 Codex",
@@ -1545,6 +1572,9 @@
             }
           }
         },
+        "model_sets": [
+          "venice_recommendations"
+        ],
         "constraints": {
           "promptCharacterLimit": 3000,
           "aspectRatios": [
@@ -1637,6 +1667,9 @@
             }
           }
         },
+        "model_sets": [
+          "venice_recommendations"
+        ],
         "constraints": {
           "promptCharacterLimit": 1500,
           "aspectRatios": [
@@ -1739,6 +1772,9 @@
             }
           }
         },
+        "model_sets": [
+          "venice_recommendations"
+        ],
         "constraints": {
           "promptCharacterLimit": 32768,
           "defaultResolution": "1K",
@@ -1880,6 +1916,9 @@
             }
           }
         },
+        "model_sets": [
+          "venice_recommendations"
+        ],
         "constraints": {
           "promptCharacterLimit": 1500,
           "steps": {
@@ -1962,6 +2001,9 @@
             }
           }
         },
+        "model_sets": [
+          "venice_recommendations"
+        ],
         "constraints": {
           "promptCharacterLimit": 1500,
           "steps": {
@@ -2001,6 +2043,9 @@
             }
           }
         },
+        "model_sets": [
+          "venice_recommendations"
+        ],
         "constraints": {
           "promptCharacterLimit": 7500,
           "steps": {
@@ -2043,6 +2088,9 @@
             }
           }
         },
+        "model_sets": [
+          "venice_recommendations"
+        ],
         "constraints": {
           "promptCharacterLimit": 7500,
           "steps": {
