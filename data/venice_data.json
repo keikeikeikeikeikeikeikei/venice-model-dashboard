@@ -80,6 +80,51 @@
       "type": "text"
     },
     {
+      "created": 1770768000,
+      "id": "zai-org-glm-5",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 1,
+            "diem": 1
+          },
+          "cache_input": {
+            "usd": 0.2,
+            "diem": 0.2
+          },
+          "output": {
+            "usd": 3.2,
+            "diem": 3.2
+          }
+        },
+        "model_sets": [
+          "venice_recommendations"
+        ],
+        "availableContextTokens": 198000,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "fp8",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsReasoning": true,
+          "supportsResponseSchema": true,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true
+        },
+        "description": "GLM-5 is the next-generation large language model developed by Zhiyuan AI, featuring significantly enhanced reasoning capabilities, improved instruction following, and support for multiple languages. Supports large context windows for processing extensive text and detailed analysis.",
+        "name": "GLM 5",
+        "modelSource": "https://huggingface.co/zai-org/GLM-5",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
       "created": 1766534400,
       "id": "zai-org-glm-4.7",
       "model_spec": {
@@ -151,9 +196,6 @@
           "supportsVideoInput": false,
           "supportsVision": false,
           "supportsWebSearch": true
-        },
-        "deprecation": {
-          "date": "2026-02-24T00:00:00.000Z"
         },
         "description": "Optimized for speed and efficiency. Best for quick answers, simple queries, and lightweight tasks on mobile or low-latency connections.",
         "name": "Venice Small",
@@ -350,9 +392,6 @@
           "supportsVision": false,
           "supportsWebSearch": true
         },
-        "deprecation": {
-          "date": "2026-02-24T00:00:00.000Z"
-        },
         "description": "Optimized for code.",
         "name": "Qwen 3 Coder 480b",
         "modelSource": "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct",
@@ -518,9 +557,6 @@
           "supportsVideoInput": true,
           "supportsVision": true,
           "supportsWebSearch": true
-        },
-        "deprecation": {
-          "date": "2026-02-24T00:00:00.000Z"
         },
         "description": "Gemini 3 Pro is Google flagship frontier model for high-precision multimodal reasoning with strong performance across text, image, and code.",
         "name": "Gemini 3 Pro Preview",
@@ -1059,9 +1095,6 @@
           "supportsVideoInput": false,
           "supportsVision": true,
           "supportsWebSearch": false
-        },
-        "deprecation": {
-          "date": "2026-02-24T00:00:00.000Z"
         },
         "description": "GPT-5.2 Codex is OpenAI specialized coding model built on GPT-5.2, optimized for advanced software development, code generation, and technical problem-solving.",
         "name": "GPT-5.2 Codex",
@@ -2119,9 +2152,6 @@
           "fast",
           "open_source"
         ],
-        "deprecation": {
-          "date": "2026-02-18T00:00:00.000Z"
-        },
         "name": "Wan 2.2 A14B",
         "offline": false,
         "traits": []
