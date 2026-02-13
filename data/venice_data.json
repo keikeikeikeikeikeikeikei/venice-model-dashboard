@@ -1182,7 +1182,6 @@
         },
         "description": "MiniMax-M2.5 is a state-of-the-art large language model optimized for coding, agentic workflows, and modern application development with enhanced reasoning capabilities.",
         "name": "MiniMax M2.5",
-        "modelSource": "https://huggingface.co/MiniMaxAI/MiniMax-M2.5",
         "offline": false,
         "privacy": "anonymized",
         "traits": []
