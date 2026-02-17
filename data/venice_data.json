@@ -42,6 +42,48 @@
       "type": "text"
     },
     {
+      "created": 1770163200,
+      "id": "olafangensan-glm-4.7-flash-heretic",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.14,
+            "diem": 0.14
+          },
+          "output": {
+            "usd": 0.8,
+            "diem": 0.8
+          }
+        },
+        "model_sets": [
+          "venice_recommendations"
+        ],
+        "availableContextTokens": 128000,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "fp8",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": true,
+          "supportsResponseSchema": true,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true
+        },
+        "description": "GLM-4.7-Flash-Heretic is an uncensored experimental variant of GLM-4.7-Flash, optimized for creative freedom and unfiltered dialogue with fast inference speed.",
+        "name": "GLM 4.7 Flash Heretic",
+        "modelSource": "https://huggingface.co/Olafangensan/GLM-4.7-Flash-heretic",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
       "created": 1769644800,
       "id": "zai-org-glm-4.7-flash",
       "model_spec": {
@@ -654,7 +696,7 @@
             "diem": 30
           },
           "extended": {
-            "context_token_threshold": 200000,
+            "context_token_threshold": 256000,
             "input": {
               "usd": 11,
               "diem": 11
