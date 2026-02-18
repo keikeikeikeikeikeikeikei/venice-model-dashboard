@@ -696,7 +696,7 @@
             "diem": 30
           },
           "extended": {
-            "context_token_threshold": 256000,
+            "context_token_threshold": 200000,
             "input": {
               "usd": 11,
               "diem": 11
@@ -783,6 +783,74 @@
         },
         "description": "Claude Opus 4.5 is Anthropic's frontier reasoning model optimized for complex software engineering, agentic workflows, and long-horizon computer use. It offers strong multimodal capabilities, competitive performance across real-world coding and reasoning benchmarks, and improved robustness to prompt injection.",
         "name": "Claude Opus 4.5",
+        "modelSource": "",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1768435200,
+      "id": "claude-sonnet-4-6",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 3.75,
+            "diem": 3.75
+          },
+          "cache_input": {
+            "usd": 0.375,
+            "diem": 0.375
+          },
+          "cache_write": {
+            "usd": 4.69,
+            "diem": 4.69
+          },
+          "output": {
+            "usd": 18.75,
+            "diem": 18.75
+          },
+          "extended": {
+            "context_token_threshold": 200000,
+            "input": {
+              "usd": 6,
+              "diem": 6
+            },
+            "output": {
+              "usd": 25,
+              "diem": 25
+            },
+            "cache_input": {
+              "usd": 0.6,
+              "diem": 0.6
+            },
+            "cache_write": {
+              "usd": 7.5,
+              "diem": 7.5
+            }
+          }
+        },
+        "availableContextTokens": 1000000,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "supportsReasoning": true,
+          "supportsResponseSchema": true,
+          "supportsVideoInput": false,
+          "supportsVision": true,
+          "supportsWebSearch": true
+        },
+        "description": "Claude Sonnet 4.6 is Anthropic's best combination of speed and intelligence, offering strong performance on coding, reasoning, and general tasks with excellent speed and cost efficiency. It features a 1M token context window and 64K max output tokens.",
+        "name": "Claude Sonnet 4.6",
         "modelSource": "",
         "offline": false,
         "privacy": "anonymized",
