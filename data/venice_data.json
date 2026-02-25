@@ -1308,10 +1308,55 @@
           "supportsResponseSchema": true,
           "supportsVideoInput": false,
           "supportsVision": true,
-          "supportsWebSearch": false
+          "supportsWebSearch": true
         },
         "description": "GPT-5.2 Codex is OpenAI specialized coding model built on GPT-5.2, optimized for advanced software development, code generation, and technical problem-solving.",
         "name": "GPT-5.2 Codex",
+        "modelSource": "",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1771891200,
+      "id": "openai-gpt-53-codex",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 2.19,
+            "diem": 2.19
+          },
+          "cache_input": {
+            "usd": 0.219,
+            "diem": 0.219
+          },
+          "output": {
+            "usd": 17.5,
+            "diem": 17.5
+          }
+        },
+        "availableContextTokens": 400000,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": true,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "supportsReasoning": true,
+          "supportsResponseSchema": true,
+          "supportsVideoInput": false,
+          "supportsVision": true,
+          "supportsWebSearch": true
+        },
+        "description": "GPT-5.3 Codex is OpenAI specialized coding model built on GPT-5.3, optimized for advanced software development, code generation, and technical problem-solving.",
+        "name": "GPT-5.3 Codex",
         "modelSource": "",
         "offline": false,
         "privacy": "anonymized",
