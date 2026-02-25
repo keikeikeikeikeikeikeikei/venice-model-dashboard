@@ -867,38 +867,38 @@
         "betaModel": true,
         "pricing": {
           "input": {
-            "usd": 3.75,
-            "diem": 3.75
+            "usd": 3.6,
+            "diem": 3.6
           },
           "cache_input": {
-            "usd": 0.375,
-            "diem": 0.375
+            "usd": 0.36,
+            "diem": 0.36
           },
           "cache_write": {
-            "usd": 4.69,
-            "diem": 4.69
+            "usd": 4.5,
+            "diem": 4.5
           },
           "output": {
-            "usd": 18.75,
-            "diem": 18.75
+            "usd": 18,
+            "diem": 18
           },
           "extended": {
             "context_token_threshold": 200000,
             "input": {
-              "usd": 6,
-              "diem": 6
+              "usd": 7.2,
+              "diem": 7.2
             },
             "output": {
-              "usd": 25,
-              "diem": 25
+              "usd": 27,
+              "diem": 27
             },
             "cache_input": {
-              "usd": 0.6,
-              "diem": 0.6
+              "usd": 0.72,
+              "diem": 0.72
             },
             "cache_write": {
-              "usd": 7.5,
-              "diem": 7.5
+              "usd": 9,
+              "diem": 9
             }
           }
         },
