@@ -15,6 +15,7 @@
           }
         },
         "availableContextTokens": 32000,
+        "maxCompletionTokens": 4096,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "fp16",
@@ -23,6 +24,7 @@
           "supportsLogProbs": true,
           "supportsMultipleImages": false,
           "supportsReasoning": false,
+          "supportsReasoningEffort": false,
           "supportsResponseSchema": true,
           "supportsVideoInput": false,
           "supportsVision": false,
@@ -59,6 +61,7 @@
           "venice_recommendations"
         ],
         "availableContextTokens": 128000,
+        "maxCompletionTokens": 12288,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "fp8",
@@ -67,6 +70,7 @@
           "supportsLogProbs": false,
           "supportsMultipleImages": false,
           "supportsReasoning": true,
+          "supportsReasoningEffort": false,
           "supportsResponseSchema": true,
           "supportsVideoInput": false,
           "supportsVision": false,
@@ -99,6 +103,7 @@
           }
         },
         "availableContextTokens": 128000,
+        "maxCompletionTokens": 12288,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "fp8",
@@ -107,6 +112,7 @@
           "supportsLogProbs": false,
           "supportsMultipleImages": false,
           "supportsReasoning": true,
+          "supportsReasoningEffort": true,
           "supportsResponseSchema": true,
           "supportsVideoInput": false,
           "supportsVision": false,
@@ -145,6 +151,7 @@
           "venice_recommendations"
         ],
         "availableContextTokens": 198000,
+        "maxCompletionTokens": 32768,
         "capabilities": {
           "optimizedForCode": true,
           "quantization": "fp8",
@@ -153,6 +160,7 @@
           "supportsLogProbs": false,
           "supportsMultipleImages": false,
           "supportsReasoning": true,
+          "supportsReasoningEffort": false,
           "supportsResponseSchema": true,
           "supportsVideoInput": false,
           "supportsVision": false,
@@ -188,6 +196,7 @@
           }
         },
         "availableContextTokens": 198000,
+        "maxCompletionTokens": 12288,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "fp4",
@@ -196,6 +205,7 @@
           "supportsLogProbs": false,
           "supportsMultipleImages": false,
           "supportsReasoning": true,
+          "supportsReasoningEffort": false,
           "supportsResponseSchema": true,
           "supportsVideoInput": false,
           "supportsVision": false,
@@ -231,6 +241,7 @@
           }
         },
         "availableContextTokens": 32000,
+        "maxCompletionTokens": 4096,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "fp8",
@@ -239,6 +250,7 @@
           "supportsLogProbs": true,
           "supportsMultipleImages": false,
           "supportsReasoning": true,
+          "supportsReasoningEffort": false,
           "supportsResponseSchema": true,
           "supportsVideoInput": false,
           "supportsVision": false,
@@ -272,6 +284,7 @@
           }
         },
         "availableContextTokens": 128000,
+        "maxCompletionTokens": 4096,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "fp8",
@@ -281,6 +294,7 @@
           "supportsMultipleImages": true,
           "maxImages": 10,
           "supportsReasoning": false,
+          "supportsReasoningEffort": false,
           "supportsResponseSchema": true,
           "supportsVideoInput": false,
           "supportsVision": true,
@@ -312,6 +326,7 @@
           }
         },
         "availableContextTokens": 128000,
+        "maxCompletionTokens": 12288,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "fp8",
@@ -320,6 +335,7 @@
           "supportsLogProbs": true,
           "supportsMultipleImages": false,
           "supportsReasoning": true,
+          "supportsReasoningEffort": false,
           "supportsResponseSchema": true,
           "supportsVideoInput": false,
           "supportsVision": false,
@@ -353,6 +369,7 @@
           }
         },
         "availableContextTokens": 128000,
+        "maxCompletionTokens": 12288,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "fp8",
@@ -361,6 +378,7 @@
           "supportsLogProbs": true,
           "supportsMultipleImages": false,
           "supportsReasoning": false,
+          "supportsReasoningEffort": false,
           "supportsResponseSchema": true,
           "supportsVideoInput": false,
           "supportsVision": false,
@@ -393,6 +411,7 @@
           }
         },
         "availableContextTokens": 256000,
+        "maxCompletionTokens": 12288,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "fp16",
@@ -401,6 +420,7 @@
           "supportsLogProbs": true,
           "supportsMultipleImages": false,
           "supportsReasoning": false,
+          "supportsReasoningEffort": false,
           "supportsResponseSchema": true,
           "supportsVideoInput": false,
           "supportsVision": false,
@@ -432,6 +452,7 @@
           }
         },
         "availableContextTokens": 256000,
+        "maxCompletionTokens": 65536,
         "capabilities": {
           "optimizedForCode": true,
           "quantization": "fp8",
@@ -440,6 +461,7 @@
           "supportsLogProbs": true,
           "supportsMultipleImages": false,
           "supportsReasoning": false,
+          "supportsReasoningEffort": false,
           "supportsResponseSchema": true,
           "supportsVideoInput": false,
           "supportsVision": false,
@@ -474,6 +496,7 @@
           }
         },
         "availableContextTokens": 128000,
+        "maxCompletionTokens": 12288,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "fp8",
@@ -482,6 +505,7 @@
           "supportsLogProbs": false,
           "supportsMultipleImages": false,
           "supportsReasoning": false,
+          "supportsReasoningEffort": false,
           "supportsResponseSchema": false,
           "supportsVideoInput": false,
           "supportsVision": false,
@@ -513,6 +537,7 @@
           }
         },
         "availableContextTokens": 198000,
+        "maxCompletionTokens": 12288,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "fp8",
@@ -522,6 +547,7 @@
           "supportsMultipleImages": true,
           "maxImages": 10,
           "supportsReasoning": false,
+          "supportsReasoningEffort": false,
           "supportsResponseSchema": true,
           "supportsVideoInput": false,
           "supportsVision": true,
@@ -560,6 +586,7 @@
           "venice_recommendations"
         ],
         "availableContextTokens": 256000,
+        "maxCompletionTokens": 65536,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "not-available",
@@ -569,6 +596,7 @@
           "supportsMultipleImages": true,
           "maxImages": 10,
           "supportsReasoning": true,
+          "supportsReasoningEffort": true,
           "supportsResponseSchema": true,
           "supportsVideoInput": false,
           "supportsVision": true,
@@ -604,6 +632,7 @@
           }
         },
         "availableContextTokens": 198000,
+        "maxCompletionTokens": 32768,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "not-available",
@@ -613,6 +642,7 @@
           "supportsMultipleImages": true,
           "maxImages": 10,
           "supportsReasoning": true,
+          "supportsReasoningEffort": true,
           "supportsResponseSchema": true,
           "supportsVideoInput": true,
           "supportsVision": true,
@@ -672,6 +702,7 @@
           }
         },
         "availableContextTokens": 1000000,
+        "maxCompletionTokens": 32768,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "not-available",
@@ -681,6 +712,7 @@
           "supportsMultipleImages": true,
           "maxImages": 20,
           "supportsReasoning": true,
+          "supportsReasoningEffort": true,
           "supportsResponseSchema": true,
           "supportsVideoInput": true,
           "supportsVision": true,
@@ -716,6 +748,7 @@
           }
         },
         "availableContextTokens": 256000,
+        "maxCompletionTokens": 65536,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "not-available",
@@ -725,6 +758,7 @@
           "supportsMultipleImages": true,
           "maxImages": 10,
           "supportsReasoning": true,
+          "supportsReasoningEffort": true,
           "supportsResponseSchema": true,
           "supportsVideoInput": true,
           "supportsVision": true,
@@ -787,6 +821,7 @@
           "venice_recommendations"
         ],
         "availableContextTokens": 1000000,
+        "maxCompletionTokens": 128000,
         "capabilities": {
           "optimizedForCode": true,
           "quantization": "not-available",
@@ -796,6 +831,7 @@
           "supportsMultipleImages": true,
           "maxImages": 10,
           "supportsReasoning": true,
+          "supportsReasoningEffort": true,
           "supportsResponseSchema": true,
           "supportsVideoInput": false,
           "supportsVision": true,
@@ -835,6 +871,7 @@
           }
         },
         "availableContextTokens": 198000,
+        "maxCompletionTokens": 32768,
         "capabilities": {
           "optimizedForCode": true,
           "quantization": "not-available",
@@ -844,6 +881,7 @@
           "supportsMultipleImages": true,
           "maxImages": 10,
           "supportsReasoning": true,
+          "supportsReasoningEffort": true,
           "supportsResponseSchema": true,
           "supportsVideoInput": false,
           "supportsVision": true,
@@ -903,6 +941,7 @@
           }
         },
         "availableContextTokens": 1000000,
+        "maxCompletionTokens": 64000,
         "capabilities": {
           "optimizedForCode": true,
           "quantization": "not-available",
@@ -912,6 +951,7 @@
           "supportsMultipleImages": true,
           "maxImages": 10,
           "supportsReasoning": true,
+          "supportsReasoningEffort": true,
           "supportsResponseSchema": true,
           "supportsVideoInput": false,
           "supportsVision": true,
@@ -952,6 +992,7 @@
           }
         },
         "availableContextTokens": 198000,
+        "maxCompletionTokens": 64000,
         "capabilities": {
           "optimizedForCode": true,
           "quantization": "not-available",
@@ -961,6 +1002,7 @@
           "supportsMultipleImages": true,
           "maxImages": 10,
           "supportsReasoning": true,
+          "supportsReasoningEffort": true,
           "supportsResponseSchema": true,
           "supportsVideoInput": false,
           "supportsVision": true,
@@ -993,6 +1035,7 @@
           }
         },
         "availableContextTokens": 128000,
+        "maxCompletionTokens": 12288,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "not-available",
@@ -1001,6 +1044,7 @@
           "supportsLogProbs": false,
           "supportsMultipleImages": false,
           "supportsReasoning": false,
+          "supportsReasoningEffort": false,
           "supportsResponseSchema": false,
           "supportsVideoInput": false,
           "supportsVision": false,
@@ -1036,6 +1080,7 @@
           }
         },
         "availableContextTokens": 256000,
+        "maxCompletionTokens": 65536,
         "capabilities": {
           "optimizedForCode": true,
           "quantization": "int4",
@@ -1044,6 +1089,7 @@
           "supportsLogProbs": true,
           "supportsMultipleImages": false,
           "supportsReasoning": true,
+          "supportsReasoningEffort": true,
           "supportsResponseSchema": true,
           "supportsVideoInput": false,
           "supportsVision": false,
@@ -1083,6 +1129,7 @@
           "venice_recommendations"
         ],
         "availableContextTokens": 256000,
+        "maxCompletionTokens": 65536,
         "capabilities": {
           "optimizedForCode": true,
           "quantization": "not-available",
@@ -1092,6 +1139,7 @@
           "supportsMultipleImages": true,
           "maxImages": 10,
           "supportsReasoning": true,
+          "supportsReasoningEffort": true,
           "supportsResponseSchema": true,
           "supportsVideoInput": false,
           "supportsVision": true,
@@ -1130,6 +1178,7 @@
           "venice_recommendations"
         ],
         "availableContextTokens": 160000,
+        "maxCompletionTokens": 32768,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "not-available",
@@ -1138,6 +1187,7 @@
           "supportsLogProbs": false,
           "supportsMultipleImages": false,
           "supportsReasoning": true,
+          "supportsReasoningEffort": false,
           "supportsResponseSchema": false,
           "supportsVideoInput": false,
           "supportsVision": false,
@@ -1169,6 +1219,7 @@
           }
         },
         "availableContextTokens": 128000,
+        "maxCompletionTokens": 4096,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "fp16",
@@ -1177,6 +1228,7 @@
           "supportsLogProbs": true,
           "supportsMultipleImages": false,
           "supportsReasoning": false,
+          "supportsReasoningEffort": false,
           "supportsResponseSchema": false,
           "supportsVideoInput": false,
           "supportsVision": false,
@@ -1207,6 +1259,7 @@
           }
         },
         "availableContextTokens": 128000,
+        "maxCompletionTokens": 4096,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "fp8",
@@ -1215,6 +1268,7 @@
           "supportsLogProbs": false,
           "supportsMultipleImages": false,
           "supportsReasoning": false,
+          "supportsReasoningEffort": false,
           "supportsResponseSchema": false,
           "supportsVideoInput": false,
           "supportsVision": false,
@@ -1252,6 +1306,7 @@
           "venice_recommendations"
         ],
         "availableContextTokens": 256000,
+        "maxCompletionTokens": 65536,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "not-available",
@@ -1260,6 +1315,7 @@
           "supportsLogProbs": true,
           "supportsMultipleImages": false,
           "supportsReasoning": true,
+          "supportsReasoningEffort": true,
           "supportsResponseSchema": true,
           "supportsVideoInput": false,
           "supportsVision": false,
@@ -1296,6 +1352,7 @@
           }
         },
         "availableContextTokens": 256000,
+        "maxCompletionTokens": 65536,
         "capabilities": {
           "optimizedForCode": true,
           "quantization": "not-available",
@@ -1305,6 +1362,7 @@
           "supportsMultipleImages": true,
           "maxImages": 10,
           "supportsReasoning": true,
+          "supportsReasoningEffort": true,
           "supportsResponseSchema": true,
           "supportsVideoInput": false,
           "supportsVision": true,
@@ -1341,6 +1399,7 @@
           }
         },
         "availableContextTokens": 400000,
+        "maxCompletionTokens": 131072,
         "capabilities": {
           "optimizedForCode": true,
           "quantization": "not-available",
@@ -1350,6 +1409,7 @@
           "supportsMultipleImages": true,
           "maxImages": 10,
           "supportsReasoning": true,
+          "supportsReasoningEffort": true,
           "supportsResponseSchema": true,
           "supportsVideoInput": false,
           "supportsVision": true,
@@ -1385,6 +1445,7 @@
           }
         },
         "availableContextTokens": 198000,
+        "maxCompletionTokens": 32768,
         "capabilities": {
           "optimizedForCode": true,
           "quantization": "not-available",
@@ -1393,6 +1454,7 @@
           "supportsLogProbs": true,
           "supportsMultipleImages": false,
           "supportsReasoning": true,
+          "supportsReasoningEffort": true,
           "supportsResponseSchema": true,
           "supportsVideoInput": false,
           "supportsVision": false,
@@ -1428,6 +1490,7 @@
           }
         },
         "availableContextTokens": 198000,
+        "maxCompletionTokens": 32768,
         "capabilities": {
           "optimizedForCode": true,
           "quantization": "not-available",
@@ -1436,6 +1499,7 @@
           "supportsLogProbs": false,
           "supportsMultipleImages": false,
           "supportsReasoning": true,
+          "supportsReasoningEffort": true,
           "supportsResponseSchema": false,
           "supportsVideoInput": false,
           "supportsVision": false,
@@ -1470,6 +1534,7 @@
           }
         },
         "availableContextTokens": 256000,
+        "maxCompletionTokens": 65536,
         "capabilities": {
           "optimizedForCode": true,
           "quantization": "not-available",
@@ -1478,6 +1543,7 @@
           "supportsLogProbs": true,
           "supportsMultipleImages": false,
           "supportsReasoning": true,
+          "supportsReasoningEffort": true,
           "supportsResponseSchema": true,
           "supportsVideoInput": false,
           "supportsVision": false,
@@ -1509,6 +1575,7 @@
           }
         },
         "availableContextTokens": 256000,
+        "maxCompletionTokens": 12288,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "fp8",
@@ -1518,6 +1585,7 @@
           "supportsMultipleImages": true,
           "maxImages": 10,
           "supportsReasoning": false,
+          "supportsReasoningEffort": false,
           "supportsResponseSchema": true,
           "supportsVideoInput": false,
           "supportsVision": true,
@@ -1531,6 +1599,94 @@
         "traits": [
           "default_vision"
         ]
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1769472000,
+      "id": "qwen3-coder-480b-a35b-instruct-turbo",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 0.35,
+            "diem": 0.35
+          },
+          "cache_input": {
+            "usd": 0.04,
+            "diem": 0.04
+          },
+          "output": {
+            "usd": 1.5,
+            "diem": 1.5
+          }
+        },
+        "availableContextTokens": 256000,
+        "maxCompletionTokens": 65536,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "fp8",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": true,
+          "supportsMultipleImages": false,
+          "supportsReasoning": false,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": true,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true
+        },
+        "description": "Turbo variant of Qwen3 Coder 480B, optimized for faster inference on code tasks.",
+        "name": "Qwen 3 Coder 480B Turbo",
+        "modelSource": "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct-Turbo",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1769472000,
+      "id": "nvidia-nemotron-3-nano-30b-a3b",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 0.075,
+            "diem": 0.075
+          },
+          "output": {
+            "usd": 0.3,
+            "diem": 0.3
+          }
+        },
+        "availableContextTokens": 128000,
+        "maxCompletionTokens": 12288,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "fp8",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": false,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": true,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true
+        },
+        "description": "NVIDIA Nemotron 3 Nano 30B is a compact and efficient language model from NVIDIA, optimized for fast inference while maintaining strong performance across diverse tasks.",
+        "name": "NVIDIA Nemotron 3 Nano 30B",
+        "modelSource": "https://huggingface.co/nvidia/Nemotron-3-Nano-30B-A3B",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
       },
       "object": "model",
       "owned_by": "venice.ai",
