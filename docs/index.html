@@ -745,7 +745,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-02-27 07:02)</div>
+            <div class="meta">Generated from Live API Data (2026-02-27 20:29)</div>
         </header>
 
         <div class="controls">
@@ -2373,6 +2373,63 @@
         "modelSource": "",
         "offline": false,
         "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1771977600,
+      "id": "qwen3-5-35b-a3b",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 0.3125,
+            "diem": 0.3125
+          },
+          "cache_input": {
+            "usd": 0.0625,
+            "diem": 0.0625
+          },
+          "output": {
+            "usd": 2.5,
+            "diem": 2.5
+          }
+        },
+        "availableContextTokens": 256000,
+        "maxCompletionTokens": 65536,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": true,
+          "supportsMultipleImages": false,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": true,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true
+        },
+        "constraints": {
+          "temperature": {
+            "default": 1
+          },
+          "top_p": {
+            "default": 0.95
+          },
+          "repetition_penalty": {
+            "default": 1
+          }
+        },
+        "description": "Qwen 3.5 35B A3B is a highly efficient MoE model with 35B total parameters and only 3B active parameters. It surpasses the larger Qwen3-235B-A22B while being 6.7x smaller, excelling at reasoning, coding, and general knowledge tasks.",
+        "name": "Qwen 3.5 35B A3B",
+        "modelSource": "",
+        "offline": false,
+        "privacy": "private",
         "traits": []
       },
       "object": "model",
