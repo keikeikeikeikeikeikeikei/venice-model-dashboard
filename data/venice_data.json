@@ -44,6 +44,54 @@
       "type": "text"
     },
     {
+      "created": 1711929600,
+      "id": "zai-org-glm-4.6",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.85,
+            "diem": 0.85
+          },
+          "cache_input": {
+            "usd": 0.3,
+            "diem": 0.3
+          },
+          "output": {
+            "usd": 2.75,
+            "diem": 2.75
+          }
+        },
+        "model_sets": [
+          "venice_recommendations"
+        ],
+        "availableContextTokens": 198000,
+        "maxCompletionTokens": 12288,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "fp4",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": false,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": true,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true
+        },
+        "description": "GLM-4.6 is a large language model developed by Zhiyuan AI, featuring strong reasoning capabilities and support for multiple languages. Supports the largest context window for processing extensive text and detailed analysis.",
+        "name": "GLM 4.6",
+        "modelSource": "https://huggingface.co/zai-org/GLM-4.6",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
       "created": 1770163200,
       "id": "olafangensan-glm-4.7-flash-heretic",
       "model_spec": {
@@ -151,7 +199,7 @@
           "venice_recommendations"
         ],
         "availableContextTokens": 198000,
-        "maxCompletionTokens": 32768,
+        "maxCompletionTokens": 32000,
         "capabilities": {
           "optimizedForCode": true,
           "quantization": "fp8",
@@ -256,6 +304,9 @@
           "supportsVision": false,
           "supportsWebSearch": true
         },
+        "deprecation": {
+          "date": "2026-03-29T00:00:00.000Z"
+        },
         "description": "Optimized for speed and efficiency. Best for quick answers, simple queries, and lightweight tasks on mobile or low-latency connections.",
         "name": "Venice Small",
         "modelSource": "https://huggingface.co/Qwen/Qwen3-4B",
@@ -299,6 +350,9 @@
           "supportsVideoInput": false,
           "supportsVision": true,
           "supportsWebSearch": true
+        },
+        "deprecation": {
+          "date": "2026-03-29T00:00:00.000Z"
         },
         "description": "Balanced blend of speed and capability. Handles most everyday tasks with reliability, and supports image analysis. Ideal for general use with moderate complexity.",
         "name": "Venice Medium",
@@ -570,23 +624,23 @@
       "model_spec": {
         "pricing": {
           "input": {
-            "usd": 0.5,
-            "diem": 0.5
+            "usd": 0.25,
+            "diem": 0.25
           },
           "cache_input": {
-            "usd": 0.125,
-            "diem": 0.125
+            "usd": 0.0625,
+            "diem": 0.0625
           },
           "output": {
-            "usd": 1.25,
-            "diem": 1.25
+            "usd": 0.625,
+            "diem": 0.625
           }
         },
         "model_sets": [
           "venice_recommendations"
         ],
-        "availableContextTokens": 256000,
-        "maxCompletionTokens": 65536,
+        "availableContextTokens": 1000000,
+        "maxCompletionTokens": 30720,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "not-available",
@@ -850,7 +904,7 @@
     },
     {
       "created": 1764979200,
-      "id": "claude-opus-45",
+      "id": "claude-opus-4-5",
       "model_spec": {
         "pricing": {
           "input": {
@@ -970,7 +1024,7 @@
     },
     {
       "created": 1736899200,
-      "id": "claude-sonnet-45",
+      "id": "claude-sonnet-4-5",
       "model_spec": {
         "betaModel": true,
         "pricing": {
@@ -2715,7 +2769,6 @@
         "model_sets": [
           "uncensored",
           "high_resolution",
-          "fast",
           "audio",
           "long_duration",
           "open_source",
@@ -2888,7 +2941,6 @@
         },
         "model_sets": [
           "uncensored",
-          "fast",
           "open_source"
         ],
         "name": "Wan 2.2 A14B",
@@ -2969,7 +3021,6 @@
         "model_sets": [
           "high_resolution",
           "ultra_high_resolution",
-          "fast",
           "audio",
           "long_duration",
           "open_source"
@@ -3018,10 +3069,10 @@
         "model_sets": [
           "high_resolution",
           "ultra_high_resolution",
-          "fast",
           "audio",
           "long_duration",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 Fast",
         "offline": false,
@@ -3241,10 +3292,10 @@
         },
         "model_sets": [
           "uncensored",
-          "fast",
           "audio",
           "long_duration",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 19B Distilled",
         "offline": false,
@@ -3288,7 +3339,6 @@
         },
         "model_sets": [
           "uncensored",
-          "fast",
           "audio",
           "long_duration",
           "open_source"
@@ -3323,7 +3373,6 @@
         },
         "model_sets": [
           "uncensored",
-          "fast",
           "audio",
           "open_source"
         ],
@@ -3795,10 +3844,10 @@
           "video_input": false
         },
         "model_sets": [
-          "fast",
           "audio",
           "cinematic",
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Veo 3 Fast",
         "offline": false,
@@ -3838,10 +3887,10 @@
         },
         "model_sets": [
           "high_resolution",
-          "fast",
           "audio",
           "cinematic",
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Veo 3 Full Quality",
         "offline": false,
@@ -3874,10 +3923,10 @@
           "video_input": false
         },
         "model_sets": [
-          "fast",
           "audio",
           "cinematic",
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Veo 3 Full Quality",
         "offline": false,
@@ -3960,7 +4009,6 @@
         "model_sets": [
           "high_resolution",
           "ultra_high_resolution",
-          "fast",
           "audio",
           "cinematic",
           "photorealistic"
@@ -4005,7 +4053,6 @@
         "model_sets": [
           "high_resolution",
           "ultra_high_resolution",
-          "fast",
           "audio",
           "cinematic",
           "photorealistic"
@@ -4258,7 +4305,8 @@
         "model_sets": [
           "high_resolution",
           "audio",
-          "cinematic"
+          "cinematic",
+          "fast"
         ],
         "name": "PixVerse v5.6",
         "offline": false,
