@@ -139,7 +139,6 @@
       "created": 1769644800,
       "id": "zai-org-glm-4.7-flash",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 0.125,
@@ -453,7 +452,6 @@
       "created": 1745903059,
       "id": "qwen3-next-80b",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 0.35,
@@ -538,7 +536,6 @@
       "created": 1758758400,
       "id": "hermes-3-llama-3.1-405b",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 1.1,
@@ -717,7 +714,6 @@
       "created": 1771459200,
       "id": "gemini-3-1-pro-preview",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 2.5,
@@ -1026,7 +1022,6 @@
       "created": 1736899200,
       "id": "claude-sonnet-4-5",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 3.75,
@@ -1077,7 +1072,6 @@
       "created": 1762387200,
       "id": "openai-gpt-oss-120b",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 0.07,
@@ -1164,7 +1158,6 @@
       "created": 1769548800,
       "id": "kimi-k2-5",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 0.75,
@@ -1390,7 +1383,6 @@
       "created": 1736899200,
       "id": "openai-gpt-52-codex",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 2.19,
@@ -1471,6 +1463,94 @@
         },
         "description": "GPT-5.3 Codex is OpenAI specialized coding model built on GPT-5.3, optimized for advanced software development, code generation, and technical problem-solving.",
         "name": "GPT-5.3 Codex",
+        "modelSource": "",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1772236800,
+      "id": "openai-gpt-4o-2024-11-20",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 3.125,
+            "diem": 3.125
+          },
+          "output": {
+            "usd": 12.5,
+            "diem": 12.5
+          }
+        },
+        "availableContextTokens": 128000,
+        "maxCompletionTokens": 16384,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": true,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "supportsReasoning": false,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": true,
+          "supportsVideoInput": false,
+          "supportsVision": true,
+          "supportsWebSearch": true
+        },
+        "description": "OpenAI's multimodal flagship model with vision capabilities, strong reasoning, and broad knowledge. Popular for its balanced performance across tasks. Version: 2024-11-20.",
+        "name": "GPT-4o",
+        "modelSource": "",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1772236800,
+      "id": "openai-gpt-4o-mini-2024-07-18",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.1875,
+            "diem": 0.1875
+          },
+          "cache_input": {
+            "usd": 0.09375,
+            "diem": 0.09375
+          },
+          "output": {
+            "usd": 0.75,
+            "diem": 0.75
+          }
+        },
+        "availableContextTokens": 128000,
+        "maxCompletionTokens": 16384,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": true,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "supportsReasoning": false,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": true,
+          "supportsVideoInput": false,
+          "supportsVision": true,
+          "supportsWebSearch": true
+        },
+        "description": "OpenAI's cost-efficient small model that delivers GPT-4 level intelligence at a fraction of the cost. Ideal for high-volume applications requiring strong reasoning. Version: 2024-07-18.",
+        "name": "GPT-4o Mini",
         "modelSource": "",
         "offline": false,
         "privacy": "anonymized",
@@ -1625,12 +1705,12 @@
             "diem": 0.3125
           },
           "cache_input": {
-            "usd": 0.0625,
-            "diem": 0.0625
+            "usd": 0.15625,
+            "diem": 0.15625
           },
           "output": {
-            "usd": 2.5,
-            "diem": 2.5
+            "usd": 1.25,
+            "diem": 1.25
           }
         },
         "availableContextTokens": 256000,
@@ -3071,8 +3151,7 @@
           "ultra_high_resolution",
           "audio",
           "long_duration",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.0 Fast",
         "offline": false,
@@ -3202,7 +3281,8 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 19B",
         "offline": false,
@@ -3811,7 +3891,8 @@
           "high_resolution",
           "audio",
           "cinematic",
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Veo 3 Fast",
         "offline": false,
@@ -4305,8 +4386,7 @@
         "model_sets": [
           "high_resolution",
           "audio",
-          "cinematic",
-          "fast"
+          "cinematic"
         ],
         "name": "PixVerse v5.6",
         "offline": false,
