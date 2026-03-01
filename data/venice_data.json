@@ -26,6 +26,7 @@
           "supportsReasoning": false,
           "supportsReasoningEffort": false,
           "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
           "supportsVideoInput": false,
           "supportsVision": false,
           "supportsWebSearch": true
@@ -76,6 +77,7 @@
           "supportsReasoning": false,
           "supportsReasoningEffort": false,
           "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
           "supportsVideoInput": false,
           "supportsVision": false,
           "supportsWebSearch": true
@@ -120,6 +122,7 @@
           "supportsReasoning": true,
           "supportsReasoningEffort": false,
           "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
           "supportsVideoInput": false,
           "supportsVision": false,
           "supportsWebSearch": true
@@ -161,6 +164,7 @@
           "supportsReasoning": true,
           "supportsReasoningEffort": true,
           "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
           "supportsVideoInput": false,
           "supportsVision": false,
           "supportsWebSearch": true
@@ -209,6 +213,7 @@
           "supportsReasoning": true,
           "supportsReasoningEffort": false,
           "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
           "supportsVideoInput": false,
           "supportsVision": false,
           "supportsWebSearch": true
@@ -254,6 +259,7 @@
           "supportsReasoning": true,
           "supportsReasoningEffort": false,
           "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
           "supportsVideoInput": false,
           "supportsVision": false,
           "supportsWebSearch": true
@@ -299,6 +305,7 @@
           "supportsReasoning": true,
           "supportsReasoningEffort": false,
           "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
           "supportsVideoInput": false,
           "supportsVision": false,
           "supportsWebSearch": true
@@ -346,6 +353,7 @@
           "supportsReasoning": false,
           "supportsReasoningEffort": false,
           "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
           "supportsVideoInput": false,
           "supportsVision": true,
           "supportsWebSearch": true
@@ -390,6 +398,7 @@
           "supportsReasoning": true,
           "supportsReasoningEffort": false,
           "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
           "supportsVideoInput": false,
           "supportsVision": false,
           "supportsWebSearch": true
@@ -433,6 +442,7 @@
           "supportsReasoning": false,
           "supportsReasoningEffort": false,
           "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
           "supportsVideoInput": false,
           "supportsVision": false,
           "supportsWebSearch": true
@@ -474,6 +484,7 @@
           "supportsReasoning": false,
           "supportsReasoningEffort": false,
           "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
           "supportsVideoInput": false,
           "supportsVision": false,
           "supportsWebSearch": true
@@ -515,6 +526,7 @@
           "supportsReasoning": false,
           "supportsReasoningEffort": false,
           "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
           "supportsVideoInput": false,
           "supportsVision": false,
           "supportsWebSearch": true
@@ -558,6 +570,7 @@
           "supportsReasoning": false,
           "supportsReasoningEffort": false,
           "supportsResponseSchema": false,
+          "supportsTeeAttestation": false,
           "supportsVideoInput": false,
           "supportsVision": false,
           "supportsWebSearch": true
@@ -600,6 +613,7 @@
           "supportsReasoning": false,
           "supportsReasoningEffort": false,
           "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
           "supportsVideoInput": false,
           "supportsVision": true,
           "supportsWebSearch": true
@@ -649,6 +663,7 @@
           "supportsReasoning": true,
           "supportsReasoningEffort": true,
           "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
           "supportsVideoInput": false,
           "supportsVision": true,
           "supportsWebSearch": true
@@ -695,6 +710,7 @@
           "supportsReasoning": true,
           "supportsReasoningEffort": true,
           "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
           "supportsVideoInput": true,
           "supportsVision": true,
           "supportsWebSearch": true
@@ -764,6 +780,7 @@
           "supportsReasoning": true,
           "supportsReasoningEffort": true,
           "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
           "supportsVideoInput": true,
           "supportsVision": true,
           "supportsWebSearch": true
@@ -810,6 +827,7 @@
           "supportsReasoning": true,
           "supportsReasoningEffort": true,
           "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
           "supportsVideoInput": true,
           "supportsVision": true,
           "supportsWebSearch": true
@@ -883,6 +901,7 @@
           "supportsReasoning": true,
           "supportsReasoningEffort": true,
           "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
           "supportsVideoInput": false,
           "supportsVision": true,
           "supportsWebSearch": true
@@ -933,6 +952,7 @@
           "supportsReasoning": true,
           "supportsReasoningEffort": true,
           "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
           "supportsVideoInput": false,
           "supportsVision": true,
           "supportsWebSearch": true
@@ -1003,6 +1023,7 @@
           "supportsReasoning": true,
           "supportsReasoningEffort": true,
           "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
           "supportsVideoInput": false,
           "supportsVision": true,
           "supportsWebSearch": true
@@ -1053,6 +1074,7 @@
           "supportsReasoning": true,
           "supportsReasoningEffort": true,
           "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
           "supportsVideoInput": false,
           "supportsVision": true,
           "supportsWebSearch": true
@@ -1094,6 +1116,7 @@
           "supportsReasoning": false,
           "supportsReasoningEffort": false,
           "supportsResponseSchema": false,
+          "supportsTeeAttestation": false,
           "supportsVideoInput": false,
           "supportsVision": false,
           "supportsWebSearch": true
@@ -1139,6 +1162,7 @@
           "supportsReasoning": true,
           "supportsReasoningEffort": true,
           "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
           "supportsVideoInput": false,
           "supportsVision": false,
           "supportsWebSearch": true
@@ -1188,6 +1212,7 @@
           "supportsReasoning": true,
           "supportsReasoningEffort": true,
           "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
           "supportsVideoInput": false,
           "supportsVision": true,
           "supportsWebSearch": true
@@ -1236,6 +1261,7 @@
           "supportsReasoning": true,
           "supportsReasoningEffort": false,
           "supportsResponseSchema": false,
+          "supportsTeeAttestation": false,
           "supportsVideoInput": false,
           "supportsVision": false,
           "supportsWebSearch": true
@@ -1277,6 +1303,7 @@
           "supportsReasoning": false,
           "supportsReasoningEffort": false,
           "supportsResponseSchema": false,
+          "supportsTeeAttestation": false,
           "supportsVideoInput": false,
           "supportsVision": false,
           "supportsWebSearch": true
@@ -1317,6 +1344,7 @@
           "supportsReasoning": false,
           "supportsReasoningEffort": false,
           "supportsResponseSchema": false,
+          "supportsTeeAttestation": false,
           "supportsVideoInput": false,
           "supportsVision": false,
           "supportsWebSearch": true
@@ -1364,6 +1392,7 @@
           "supportsReasoning": true,
           "supportsReasoningEffort": true,
           "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
           "supportsVideoInput": false,
           "supportsVision": false,
           "supportsWebSearch": true
@@ -1410,6 +1439,7 @@
           "supportsReasoning": true,
           "supportsReasoningEffort": true,
           "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
           "supportsVideoInput": false,
           "supportsVision": true,
           "supportsWebSearch": true
@@ -1457,6 +1487,7 @@
           "supportsReasoning": true,
           "supportsReasoningEffort": true,
           "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
           "supportsVideoInput": false,
           "supportsVision": true,
           "supportsWebSearch": true
@@ -1499,6 +1530,7 @@
           "supportsReasoning": false,
           "supportsReasoningEffort": false,
           "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
           "supportsVideoInput": false,
           "supportsVision": true,
           "supportsWebSearch": true
@@ -1545,6 +1577,7 @@
           "supportsReasoning": false,
           "supportsReasoningEffort": false,
           "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
           "supportsVideoInput": false,
           "supportsVision": true,
           "supportsWebSearch": true
@@ -1590,6 +1623,7 @@
           "supportsReasoning": true,
           "supportsReasoningEffort": true,
           "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
           "supportsVideoInput": false,
           "supportsVision": false,
           "supportsWebSearch": true
@@ -1635,6 +1669,7 @@
           "supportsReasoning": true,
           "supportsReasoningEffort": true,
           "supportsResponseSchema": false,
+          "supportsTeeAttestation": false,
           "supportsVideoInput": false,
           "supportsVision": false,
           "supportsWebSearch": true
@@ -1679,6 +1714,7 @@
           "supportsReasoning": true,
           "supportsReasoningEffort": true,
           "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
           "supportsVideoInput": false,
           "supportsVision": false,
           "supportsWebSearch": true
@@ -1725,6 +1761,7 @@
           "supportsReasoning": true,
           "supportsReasoningEffort": false,
           "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
           "supportsVideoInput": false,
           "supportsVision": false,
           "supportsWebSearch": true
@@ -1778,6 +1815,7 @@
           "supportsReasoning": false,
           "supportsReasoningEffort": false,
           "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
           "supportsVideoInput": false,
           "supportsVision": true,
           "supportsWebSearch": true
@@ -1826,6 +1864,7 @@
           "supportsReasoning": false,
           "supportsReasoningEffort": false,
           "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
           "supportsVideoInput": false,
           "supportsVision": false,
           "supportsWebSearch": true
@@ -1868,6 +1907,7 @@
           "supportsReasoning": false,
           "supportsReasoningEffort": false,
           "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
           "supportsVideoInput": false,
           "supportsVision": false,
           "supportsWebSearch": true
@@ -2995,6 +3035,94 @@
       }
     },
     {
+      "created": 1769644800,
+      "id": "grok-imagine-text-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "text-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "4:3",
+            "3:2",
+            "1:1",
+            "2:3",
+            "3:4",
+            "9:16"
+          ],
+          "resolutions": [
+            "480p",
+            "720p"
+          ],
+          "durations": [
+            "5s",
+            "10s",
+            "15s"
+          ],
+          "audio": true,
+          "audio_configurable": false,
+          "audio_input": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "audio",
+          "long_duration",
+          "photorealistic",
+          "venice_recommendations",
+          "fast"
+        ],
+        "name": "Grok Imagine",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.32
+      }
+    },
+    {
+      "created": 1769644800,
+      "id": "grok-imagine-image-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [],
+          "resolutions": [
+            "480p",
+            "720p"
+          ],
+          "durations": [
+            "5s",
+            "10s",
+            "15s"
+          ],
+          "audio": true,
+          "audio_configurable": false,
+          "audio_input": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "audio",
+          "long_duration",
+          "photorealistic",
+          "venice_recommendations",
+          "fast"
+        ],
+        "name": "Grok Imagine",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.32
+      }
+    },
+    {
       "created": 1758825748,
       "id": "wan-2.2-a14b-text-to-video",
       "model_spec": {
@@ -3374,8 +3502,7 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.0 19B Distilled",
         "offline": false,
@@ -3970,8 +4097,7 @@
           "high_resolution",
           "audio",
           "cinematic",
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "name": "Veo 3 Full Quality",
         "offline": false,
@@ -4006,8 +4132,7 @@
         "model_sets": [
           "audio",
           "cinematic",
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "name": "Veo 3 Full Quality",
         "offline": false,
@@ -4386,7 +4511,8 @@
         "model_sets": [
           "high_resolution",
           "audio",
-          "cinematic"
+          "cinematic",
+          "fast"
         ],
         "name": "PixVerse v5.6",
         "offline": false,
