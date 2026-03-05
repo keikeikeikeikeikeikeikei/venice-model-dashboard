@@ -3346,8 +3346,7 @@
         },
         "model_sets": [
           "uncensored",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "Wan 2.2 A14B",
         "offline": false,
@@ -3412,12 +3411,7 @@
           "durations": [
             "6s",
             "8s",
-            "10s",
-            "12s",
-            "14s",
-            "16s",
-            "18s",
-            "20s"
+            "10s"
           ],
           "audio": true,
           "audio_configurable": true,
@@ -3428,8 +3422,8 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "long_duration",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 Fast",
         "offline": false,
@@ -3460,12 +3454,7 @@
           "durations": [
             "6s",
             "8s",
-            "10s",
-            "12s",
-            "14s",
-            "16s",
-            "18s",
-            "20s"
+            "10s"
           ],
           "audio": true,
           "audio_configurable": true,
@@ -3476,7 +3465,6 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "long_duration",
           "open_source"
         ],
         "name": "LTX Video 2.0 Fast",
