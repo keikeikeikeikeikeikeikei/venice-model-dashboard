@@ -745,7 +745,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-03-03 00:33)</div>
+            <div class="meta">Generated from Live API Data (2026-03-05 11:31)</div>
         </header>
 
         <div class="controls">
@@ -2576,13 +2576,14 @@
           "supportsAudioInput": false,
           "supportsFunctionCalling": true,
           "supportsLogProbs": true,
-          "supportsMultipleImages": false,
+          "supportsMultipleImages": true,
+          "maxImages": 5,
           "supportsReasoning": true,
           "supportsReasoningEffort": false,
           "supportsResponseSchema": true,
           "supportsTeeAttestation": false,
-          "supportsVideoInput": false,
-          "supportsVision": false,
+          "supportsVideoInput": true,
+          "supportsVision": true,
           "supportsWebSearch": true
         },
         "constraints": {
@@ -2970,6 +2971,57 @@
       "type": "image"
     },
     {
+      "created": 1769644800,
+      "id": "grok-imagine",
+      "model_spec": {
+        "pricing": {
+          "generation": {
+            "usd": 0.04,
+            "diem": 0.04
+          },
+          "upscale": {
+            "2x": {
+              "usd": 0.02,
+              "diem": 0.02
+            },
+            "4x": {
+              "usd": 0.08,
+              "diem": 0.08
+            }
+          }
+        },
+        "model_sets": [
+          "venice_recommendations"
+        ],
+        "constraints": {
+          "promptCharacterLimit": 1500,
+          "aspectRatios": [
+            "1:1",
+            "3:2",
+            "16:9",
+            "9:16",
+            "2:3",
+            "3:4",
+            "4:5"
+          ],
+          "defaultAspectRatio": "1:1",
+          "steps": {
+            "default": 20,
+            "max": 50
+          },
+          "widthHeightDivisor": 1
+        },
+        "supportsWebSearch": false,
+        "name": "Grok Imagine",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "image"
+    },
+    {
       "created": 1772323200,
       "id": "hunyuan-image-v3",
       "model_spec": {
@@ -3165,9 +3217,6 @@
             }
           }
         },
-        "model_sets": [
-          "venice_recommendations"
-        ],
         "constraints": {
           "promptCharacterLimit": 32768,
           "defaultResolution": "1K",
@@ -3391,6 +3440,104 @@
         },
         "supportsWebSearch": false,
         "name": "SeedreamV5 Lite",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "image"
+    },
+    {
+      "created": 1772582400,
+      "id": "qwen-image-2",
+      "model_spec": {
+        "pricing": {
+          "generation": {
+            "usd": 0.05,
+            "diem": 0.05
+          },
+          "upscale": {
+            "2x": {
+              "usd": 0.02,
+              "diem": 0.02
+            },
+            "4x": {
+              "usd": 0.08,
+              "diem": 0.08
+            }
+          }
+        },
+        "constraints": {
+          "promptCharacterLimit": 10000,
+          "aspectRatios": [
+            "1:1",
+            "3:2",
+            "16:9",
+            "21:9",
+            "9:16",
+            "2:3",
+            "3:4",
+            "4:5"
+          ],
+          "defaultAspectRatio": "1:1",
+          "steps": {
+            "default": 20,
+            "max": 50
+          },
+          "widthHeightDivisor": 1
+        },
+        "supportsWebSearch": false,
+        "name": "Qwen Image 2",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "image"
+    },
+    {
+      "created": 1772582400,
+      "id": "qwen-image-2-pro",
+      "model_spec": {
+        "pricing": {
+          "generation": {
+            "usd": 0.1,
+            "diem": 0.1
+          },
+          "upscale": {
+            "2x": {
+              "usd": 0.02,
+              "diem": 0.02
+            },
+            "4x": {
+              "usd": 0.08,
+              "diem": 0.08
+            }
+          }
+        },
+        "constraints": {
+          "promptCharacterLimit": 10000,
+          "aspectRatios": [
+            "1:1",
+            "3:2",
+            "16:9",
+            "21:9",
+            "9:16",
+            "2:3",
+            "3:4",
+            "4:5"
+          ],
+          "defaultAspectRatio": "1:1",
+          "steps": {
+            "default": 20,
+            "max": 50
+          },
+          "widthHeightDivisor": 1
+        },
+        "supportsWebSearch": false,
+        "name": "Qwen Image 2 Pro",
         "offline": false,
         "privacy": "anonymized",
         "traits": []
@@ -3761,8 +3908,7 @@
           "audio",
           "long_duration",
           "open_source",
-          "venice_recommendations",
-          "fast"
+          "venice_recommendations"
         ],
         "name": "Wan 2.6 Flash",
         "offline": false,
@@ -4371,8 +4517,7 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.0 19B Distilled",
         "offline": false,
@@ -4888,7 +5033,8 @@
           "high_resolution",
           "audio",
           "cinematic",
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Veo 3 Fast",
         "offline": false,
@@ -4966,7 +5112,8 @@
           "high_resolution",
           "audio",
           "cinematic",
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Veo 3 Full Quality",
         "offline": false,
@@ -5001,7 +5148,8 @@
         "model_sets": [
           "audio",
           "cinematic",
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Veo 3 Full Quality",
         "offline": false,
@@ -5380,8 +5528,7 @@
         "model_sets": [
           "high_resolution",
           "audio",
-          "cinematic",
-          "fast"
+          "cinematic"
         ],
         "name": "PixVerse v5.6",
         "offline": false,
@@ -5742,6 +5889,72 @@
       "type": "inpaint"
     },
     {
+      "created": 1772582400,
+      "id": "qwen-image-2-edit",
+      "model_spec": {
+        "pricing": {
+          "inpaint": {
+            "usd": 0.05,
+            "diem": 0.05
+          }
+        },
+        "constraints": {
+          "aspectRatios": [
+            "1:1",
+            "3:2",
+            "16:9",
+            "21:9",
+            "9:16",
+            "2:3",
+            "3:4",
+            "4:5"
+          ],
+          "promptCharacterLimit": 10000,
+          "combineImages": true
+        },
+        "name": "Qwen Image 2",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "inpaint"
+    },
+    {
+      "created": 1772582400,
+      "id": "qwen-image-2-pro-edit",
+      "model_spec": {
+        "pricing": {
+          "inpaint": {
+            "usd": 0.1,
+            "diem": 0.1
+          }
+        },
+        "constraints": {
+          "aspectRatios": [
+            "1:1",
+            "3:2",
+            "16:9",
+            "21:9",
+            "9:16",
+            "2:3",
+            "3:4",
+            "4:5"
+          ],
+          "promptCharacterLimit": 10000,
+          "combineImages": true
+        },
+        "name": "Qwen Image 2 Pro",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "inpaint"
+    },
+    {
       "created": 1767571200,
       "id": "flux-2-max-edit",
       "model_spec": {
@@ -5796,6 +6009,40 @@
           "combineImages": true
         },
         "name": "GPT Image 1.5",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "inpaint"
+    },
+    {
+      "created": 1769644800,
+      "id": "grok-imagine-edit",
+      "model_spec": {
+        "pricing": {
+          "inpaint": {
+            "usd": 0.04,
+            "diem": 0.04
+          }
+        },
+        "constraints": {
+          "aspectRatios": [
+            "auto",
+            "1:1",
+            "3:2",
+            "16:9",
+            "21:9",
+            "9:16",
+            "2:3",
+            "3:4",
+            "4:5"
+          ],
+          "promptCharacterLimit": 1500,
+          "combineImages": true
+        },
+        "name": "Grok Imagine",
         "offline": false,
         "privacy": "anonymized",
         "traits": []
