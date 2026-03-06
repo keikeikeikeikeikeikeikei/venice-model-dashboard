@@ -3136,8 +3136,7 @@
           "audio",
           "long_duration",
           "open_source",
-          "venice_recommendations",
-          "fast"
+          "venice_recommendations"
         ],
         "name": "Wan 2.6 Flash",
         "offline": false,
@@ -3470,8 +3469,7 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.0 Fast",
         "offline": false,
@@ -3640,7 +3638,8 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.3 Fast",
         "offline": false,
@@ -3683,7 +3682,8 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.3 Fast",
         "offline": false,
