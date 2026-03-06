@@ -1530,13 +1530,14 @@
           "supportsAudioInput": false,
           "supportsFunctionCalling": true,
           "supportsLogProbs": true,
-          "supportsMultipleImages": false,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
           "supportsReasoning": true,
           "supportsReasoningEffort": true,
           "supportsResponseSchema": true,
           "supportsTeeAttestation": false,
           "supportsVideoInput": false,
-          "supportsVision": false,
+          "supportsVision": true,
           "supportsWebSearch": true
         },
         "description": "GPT-5.4 is the latest frontier model in the GPT-5 series with a 1M+ context window, offering improved agentic and long context performance. It uses adaptive reasoning to dynamically allocate computation across tasks.",
@@ -3136,7 +3137,8 @@
           "audio",
           "long_duration",
           "open_source",
-          "venice_recommendations"
+          "venice_recommendations",
+          "fast"
         ],
         "name": "Wan 2.6 Flash",
         "offline": false,
@@ -3511,7 +3513,8 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 Fast",
         "offline": false,
@@ -4458,8 +4461,7 @@
         "model_sets": [
           "audio",
           "cinematic",
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "name": "Veo 3 Fast",
         "offline": false,
@@ -4536,8 +4538,7 @@
         "model_sets": [
           "audio",
           "cinematic",
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "name": "Veo 3 Full Quality",
         "offline": false,
