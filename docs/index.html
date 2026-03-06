@@ -745,7 +745,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-03-06 06:04)</div>
+            <div class="meta">Generated from Live API Data (2026-03-06 12:59)</div>
         </header>
 
         <div class="controls">
@@ -885,7 +885,7 @@
           "venice_recommendations"
         ],
         "availableContextTokens": 198000,
-        "maxCompletionTokens": 12288,
+        "maxCompletionTokens": 16384,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "fp4",
@@ -930,7 +930,7 @@
           "venice_recommendations"
         ],
         "availableContextTokens": 128000,
-        "maxCompletionTokens": 12288,
+        "maxCompletionTokens": 24000,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "fp8",
@@ -972,7 +972,7 @@
           }
         },
         "availableContextTokens": 128000,
-        "maxCompletionTokens": 12288,
+        "maxCompletionTokens": 16384,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "fp8",
@@ -1067,7 +1067,7 @@
           }
         },
         "availableContextTokens": 198000,
-        "maxCompletionTokens": 12288,
+        "maxCompletionTokens": 16384,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "fp4",
@@ -1206,7 +1206,7 @@
           }
         },
         "availableContextTokens": 128000,
-        "maxCompletionTokens": 12288,
+        "maxCompletionTokens": 16384,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "fp8",
@@ -1250,7 +1250,7 @@
           }
         },
         "availableContextTokens": 128000,
-        "maxCompletionTokens": 12288,
+        "maxCompletionTokens": 16384,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "fp8",
@@ -1292,7 +1292,7 @@
           }
         },
         "availableContextTokens": 256000,
-        "maxCompletionTokens": 12288,
+        "maxCompletionTokens": 16384,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "fp16",
@@ -1378,7 +1378,7 @@
           }
         },
         "availableContextTokens": 128000,
-        "maxCompletionTokens": 12288,
+        "maxCompletionTokens": 16384,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "fp8",
@@ -1420,7 +1420,7 @@
           }
         },
         "availableContextTokens": 198000,
-        "maxCompletionTokens": 12288,
+        "maxCompletionTokens": 16384,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "fp8",
@@ -1470,7 +1470,7 @@
           "venice_recommendations"
         ],
         "availableContextTokens": 1000000,
-        "maxCompletionTokens": 30720,
+        "maxCompletionTokens": 30000,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "not-available",
@@ -1924,7 +1924,7 @@
           }
         },
         "availableContextTokens": 128000,
-        "maxCompletionTokens": 12288,
+        "maxCompletionTokens": 16384,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "not-available",
@@ -2294,7 +2294,7 @@
           }
         },
         "availableContextTokens": 400000,
-        "maxCompletionTokens": 131072,
+        "maxCompletionTokens": 128000,
         "capabilities": {
           "optimizedForCode": true,
           "quantization": "not-available",
@@ -2569,7 +2569,7 @@
           }
         },
         "availableContextTokens": 256000,
-        "maxCompletionTokens": 65536,
+        "maxCompletionTokens": 10000,
         "capabilities": {
           "optimizedForCode": true,
           "quantization": "not-available",
@@ -2670,7 +2670,7 @@
           }
         },
         "availableContextTokens": 256000,
-        "maxCompletionTokens": 12288,
+        "maxCompletionTokens": 16384,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "fp8",
@@ -2763,7 +2763,7 @@
           }
         },
         "availableContextTokens": 128000,
-        "maxCompletionTokens": 12288,
+        "maxCompletionTokens": 16384,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "fp8",
@@ -3955,7 +3955,8 @@
           "audio",
           "long_duration",
           "open_source",
-          "venice_recommendations"
+          "venice_recommendations",
+          "fast"
         ],
         "name": "Wan 2.6 Flash",
         "offline": false,
@@ -4288,7 +4289,8 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 Fast",
         "offline": false,
@@ -4330,8 +4332,7 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.0 Fast",
         "offline": false,
@@ -4418,6 +4419,178 @@
           "open_source"
         ],
         "name": "LTX Video 2.0 Full Quality",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 1.58
+      }
+    },
+    {
+      "created": 1772668800,
+      "id": "ltx-2-v2-3-fast-image-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "9:16"
+          ],
+          "resolutions": [
+            "1080p",
+            "1440p",
+            "2160p"
+          ],
+          "durations": [
+            "6s",
+            "8s",
+            "10s"
+          ],
+          "audio": true,
+          "audio_configurable": true,
+          "audio_input": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "high_resolution",
+          "ultra_high_resolution",
+          "audio",
+          "open_source"
+        ],
+        "name": "LTX Video 2.3 Fast",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 1.06
+      }
+    },
+    {
+      "created": 1772668800,
+      "id": "ltx-2-v2-3-fast-text-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "text-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "9:16"
+          ],
+          "resolutions": [
+            "1080p",
+            "1440p",
+            "2160p"
+          ],
+          "durations": [
+            "6s",
+            "8s",
+            "10s"
+          ],
+          "audio": true,
+          "audio_configurable": true,
+          "audio_input": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "high_resolution",
+          "ultra_high_resolution",
+          "audio",
+          "open_source"
+        ],
+        "name": "LTX Video 2.3 Fast",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 1.06
+      }
+    },
+    {
+      "created": 1772668800,
+      "id": "ltx-2-v2-3-full-image-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "9:16"
+          ],
+          "resolutions": [
+            "1080p",
+            "1440p",
+            "2160p"
+          ],
+          "durations": [
+            "6s",
+            "8s",
+            "10s"
+          ],
+          "audio": true,
+          "audio_configurable": true,
+          "audio_input": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "high_resolution",
+          "ultra_high_resolution",
+          "audio",
+          "open_source"
+        ],
+        "name": "LTX Video 2.3 Full Quality",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 1.58
+      }
+    },
+    {
+      "created": 1772668800,
+      "id": "ltx-2-v2-3-full-text-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "text-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "9:16"
+          ],
+          "resolutions": [
+            "1080p",
+            "1440p",
+            "2160p"
+          ],
+          "durations": [
+            "6s",
+            "8s",
+            "10s"
+          ],
+          "audio": true,
+          "audio_configurable": true,
+          "audio_input": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "high_resolution",
+          "ultra_high_resolution",
+          "audio",
+          "open_source"
+        ],
+        "name": "LTX Video 2.3 Full Quality",
         "offline": false,
         "traits": []
       },
@@ -5147,8 +5320,7 @@
           "high_resolution",
           "audio",
           "cinematic",
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "name": "Veo 3 Full Quality",
         "offline": false,
