@@ -15,7 +15,7 @@
           }
         },
         "availableContextTokens": 32000,
-        "maxCompletionTokens": 4096,
+        "maxCompletionTokens": 8192,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "fp16",
