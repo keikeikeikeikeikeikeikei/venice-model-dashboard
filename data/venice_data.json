@@ -2746,6 +2746,9 @@
             }
           }
         },
+        "model_sets": [
+          "venice_recommendations"
+        ],
         "constraints": {
           "promptCharacterLimit": 10000,
           "aspectRatios": [
@@ -3513,8 +3516,7 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.0 Fast",
         "offline": false,
@@ -4461,7 +4463,8 @@
         "model_sets": [
           "audio",
           "cinematic",
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Veo 3 Fast",
         "offline": false,
