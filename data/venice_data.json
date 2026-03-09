@@ -1552,6 +1552,61 @@
       "type": "text"
     },
     {
+      "created": 1772668800,
+      "id": "openai-gpt-54-pro",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 37.5,
+            "diem": 37.5
+          },
+          "output": {
+            "usd": 225,
+            "diem": 225
+          },
+          "extended": {
+            "context_token_threshold": 272000,
+            "input": {
+              "usd": 75,
+              "diem": 75
+            },
+            "output": {
+              "usd": 337.5,
+              "diem": 337.5
+            }
+          }
+        },
+        "availableContextTokens": 1000000,
+        "maxCompletionTokens": 128000,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": true,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": true,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsVideoInput": false,
+          "supportsVision": true,
+          "supportsWebSearch": true
+        },
+        "description": "GPT-5.4 Pro is OpenAI's most advanced model, building on GPT-5.4's unified architecture with enhanced reasoning for complex, high-stakes tasks. It provides a 1M+ token context window (922K input, 128K output) and supports text and image inputs.",
+        "name": "GPT-5.4 Pro",
+        "modelSource": "",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
       "created": 1772236800,
       "id": "openai-gpt-4o-2024-11-20",
       "model_spec": {
@@ -4428,8 +4483,7 @@
           "high_resolution",
           "audio",
           "cinematic",
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "name": "Veo 3 Fast",
         "offline": false,
@@ -4464,7 +4518,8 @@
         "model_sets": [
           "audio",
           "cinematic",
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Veo 3 Fast",
         "offline": false,
