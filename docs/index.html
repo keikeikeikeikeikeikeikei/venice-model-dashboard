@@ -745,7 +745,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-03-09 07:13)</div>
+            <div class="meta">Generated from Live API Data (2026-03-09 13:32)</div>
         </header>
 
         <div class="controls">
@@ -5246,7 +5246,8 @@
           "high_resolution",
           "audio",
           "cinematic",
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Veo 3 Fast",
         "offline": false,
@@ -5281,8 +5282,7 @@
         "model_sets": [
           "audio",
           "cinematic",
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "name": "Veo 3 Fast",
         "offline": false,
@@ -5359,7 +5359,8 @@
         "model_sets": [
           "audio",
           "cinematic",
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Veo 3 Full Quality",
         "offline": false,
@@ -5738,8 +5739,7 @@
         "model_sets": [
           "high_resolution",
           "audio",
-          "cinematic",
-          "fast"
+          "cinematic"
         ],
         "name": "PixVerse v5.6",
         "offline": false,
@@ -5936,6 +5936,259 @@
     }
   ],
   "other": [
+    {
+      "created": 1771804800,
+      "id": "ace-step-15",
+      "model_spec": {
+        "pricing": {
+          "durations": {
+            "60": {
+              "usd": 0.03,
+              "diem": 0.03
+            },
+            "90": {
+              "usd": 0.04,
+              "diem": 0.04
+            },
+            "120": {
+              "usd": 0.05,
+              "diem": 0.05
+            },
+            "150": {
+              "usd": 0.06,
+              "diem": 0.06
+            },
+            "180": {
+              "usd": 0.07,
+              "diem": 0.07
+            },
+            "210": {
+              "usd": 0.08,
+              "diem": 0.08
+            }
+          }
+        },
+        "supports_lyrics": true,
+        "lyrics_required": false,
+        "supports_force_instrumental": false,
+        "duration_options": [
+          60,
+          90,
+          120,
+          150,
+          180,
+          210
+        ],
+        "min_duration": 60,
+        "max_duration": 210,
+        "default_duration": 60,
+        "supported_formats": [
+          "flac"
+        ],
+        "default_format": "flac",
+        "prompt_character_limit": 512,
+        "lyrics_character_limit": 4096,
+        "min_prompt_length": 10,
+        "supports_speed": false,
+        "description": "Feature-rich song generation with optional lyrics and detailed musical controls.",
+        "name": "ACE-Step 1.5",
+        "modelSource": "",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "music"
+    },
+    {
+      "created": 1771718400,
+      "id": "elevenlabs-music",
+      "model_spec": {
+        "pricing": {
+          "durations": {
+            "60": {
+              "usd": 0.87,
+              "diem": 0.87
+            },
+            "120": {
+              "usd": 1.73,
+              "diem": 1.73
+            },
+            "180": {
+              "usd": 2.59,
+              "diem": 2.59
+            },
+            "240": {
+              "usd": 3.45,
+              "diem": 3.45
+            }
+          }
+        },
+        "supports_lyrics": false,
+        "lyrics_required": false,
+        "supports_force_instrumental": true,
+        "duration_options": [
+          60,
+          120,
+          180,
+          240
+        ],
+        "min_duration": 60,
+        "max_duration": 240,
+        "default_duration": 60,
+        "supported_formats": [
+          "mp3"
+        ],
+        "default_format": "mp3",
+        "prompt_character_limit": 4096,
+        "min_prompt_length": 10,
+        "supports_speed": false,
+        "description": "High-quality instrumental music generation with configurable duration. Best for polished, production-ready tracks across a wide range of genres.",
+        "name": "ElevenLabs Music",
+        "modelSource": "",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "music"
+    },
+    {
+      "created": 1771718400,
+      "id": "minimax-music-v2",
+      "model_spec": {
+        "pricing": {
+          "generation": {
+            "usd": 0.04,
+            "diem": 0.04
+          }
+        },
+        "supports_lyrics": true,
+        "lyrics_required": true,
+        "supports_force_instrumental": false,
+        "supported_formats": [
+          "mp3"
+        ],
+        "default_format": "mp3",
+        "prompt_character_limit": 300,
+        "lyrics_character_limit": 3000,
+        "min_prompt_length": 10,
+        "supports_speed": false,
+        "description": "Full song generation with vocals and lyrics. Provide your own lyrics with verse/chorus structure for complete songs with singing.",
+        "name": "MiniMax Music 2.0",
+        "modelSource": "",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "music"
+    },
+    {
+      "created": 1771718400,
+      "id": "stable-audio-25",
+      "model_spec": {
+        "pricing": {
+          "generation": {
+            "usd": 0.24,
+            "diem": 0.24
+          }
+        },
+        "supports_lyrics": false,
+        "lyrics_required": false,
+        "supports_force_instrumental": false,
+        "min_duration": 5,
+        "max_duration": 190,
+        "default_duration": 30,
+        "supported_formats": [
+          "wav"
+        ],
+        "default_format": "wav",
+        "prompt_character_limit": 500,
+        "min_prompt_length": 10,
+        "supports_speed": false,
+        "description": "Fast, lightweight audio generation for sound effects, ambient textures, and short musical clips. Flexible duration from 5 seconds to over 3 minutes.",
+        "name": "Stable Audio 2.5",
+        "modelSource": "",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "music"
+    },
+    {
+      "created": 1772236800,
+      "id": "elevenlabs-sound-effects-v2",
+      "model_spec": {
+        "pricing": {
+          "per_second": {
+            "usd": 0.0023000000000000004,
+            "diem": 0.0023000000000000004
+          }
+        },
+        "supports_lyrics": false,
+        "lyrics_required": false,
+        "supports_force_instrumental": false,
+        "min_duration": 1,
+        "max_duration": 22,
+        "default_duration": 7,
+        "supported_formats": [
+          "mp3"
+        ],
+        "default_format": "mp3",
+        "prompt_character_limit": 250,
+        "min_prompt_length": 1,
+        "supports_speed": false,
+        "description": "Generate high-quality sound effects from text descriptions using ElevenLabs. Ideal for films, games, and digital content with configurable duration.",
+        "name": "ElevenLabs Sound Effects",
+        "modelSource": "",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "music"
+    },
+    {
+      "created": 1772236800,
+      "id": "mmaudio-v2-text-to-audio",
+      "model_spec": {
+        "pricing": {
+          "per_second": {
+            "usd": 0.0009200000000000001,
+            "diem": 0.0009200000000000001
+          }
+        },
+        "supports_lyrics": false,
+        "lyrics_required": false,
+        "supports_force_instrumental": false,
+        "min_duration": 1,
+        "max_duration": 30,
+        "default_duration": 5,
+        "supported_formats": [
+          "wav"
+        ],
+        "default_format": "wav",
+        "prompt_character_limit": 500,
+        "min_prompt_length": 1,
+        "supports_speed": false,
+        "description": "Generate synchronized audio and sound effects from text prompts with MMAudio V2.",
+        "name": "MMAudio V2",
+        "modelSource": "",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "music"
+    },
     {
       "created": 1741924661,
       "id": "text-embedding-bge-m3",
