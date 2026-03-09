@@ -45,6 +45,48 @@
       "type": "text"
     },
     {
+      "created": 1771545600,
+      "id": "venice-uncensored-role-play",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.5,
+            "diem": 0.5
+          },
+          "output": {
+            "usd": 2,
+            "diem": 2
+          }
+        },
+        "availableContextTokens": 128000,
+        "maxCompletionTokens": 4096,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "fp8",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": false,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true
+        },
+        "description": "Optimized for creative roleplay scenarios with maximum freedom. Designed for immersive storytelling, character interactions, and open-ended creative writing.",
+        "name": "Venice Role Play Uncensored",
+        "modelSource": "https://huggingface.co/dphnAI/24B-3.2-RP-K2-final",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
       "created": 1711929600,
       "id": "zai-org-glm-4.6",
       "model_spec": {
@@ -4518,8 +4560,7 @@
         "model_sets": [
           "audio",
           "cinematic",
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "name": "Veo 3 Fast",
         "offline": false,
@@ -5014,7 +5055,8 @@
         "model_sets": [
           "high_resolution",
           "audio",
-          "cinematic"
+          "cinematic",
+          "fast"
         ],
         "name": "PixVerse v5.6",
         "offline": false,
