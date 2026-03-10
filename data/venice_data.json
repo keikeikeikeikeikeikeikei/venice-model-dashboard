@@ -5267,6 +5267,7 @@
         "prompt_character_limit": 512,
         "lyrics_character_limit": 4096,
         "min_prompt_length": 10,
+        "supports_language_code": false,
         "supports_speed": false,
         "description": "Feature-rich song generation with optional lyrics and detailed musical controls.",
         "name": "ACE-Step 1.5",
@@ -5321,6 +5322,7 @@
         "default_format": "mp3",
         "prompt_character_limit": 4096,
         "min_prompt_length": 10,
+        "supports_language_code": false,
         "supports_speed": false,
         "description": "High-quality instrumental music generation with configurable duration. Best for polished, production-ready tracks across a wide range of genres.",
         "name": "ElevenLabs Music",
@@ -5353,6 +5355,7 @@
         "prompt_character_limit": 300,
         "lyrics_character_limit": 3000,
         "min_prompt_length": 10,
+        "supports_language_code": false,
         "supports_speed": false,
         "description": "Full song generation with vocals and lyrics. Provide your own lyrics with verse/chorus structure for complete songs with singing.",
         "name": "MiniMax Music 2.0",
@@ -5387,6 +5390,7 @@
         "default_format": "wav",
         "prompt_character_limit": 500,
         "min_prompt_length": 10,
+        "supports_language_code": false,
         "supports_speed": false,
         "description": "Fast, lightweight audio generation for sound effects, ambient textures, and short musical clips. Flexible duration from 5 seconds to over 3 minutes.",
         "name": "Stable Audio 2.5",
@@ -5421,6 +5425,7 @@
         "default_format": "mp3",
         "prompt_character_limit": 250,
         "min_prompt_length": 1,
+        "supports_language_code": false,
         "supports_speed": false,
         "description": "Generate high-quality sound effects from text descriptions using ElevenLabs. Ideal for films, games, and digital content with configurable duration.",
         "name": "ElevenLabs Sound Effects",
@@ -5455,6 +5460,7 @@
         "default_format": "wav",
         "prompt_character_limit": 500,
         "min_prompt_length": 1,
+        "supports_language_code": false,
         "supports_speed": false,
         "description": "Generate synchronized audio and sound effects from text prompts with MMAudio V2.",
         "name": "MMAudio V2",
@@ -5559,6 +5565,68 @@
         ],
         "name": "Kokoro Text to Speech",
         "modelSource": "https://huggingface.co/hexgrad/Kokoro-82M",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "tts"
+    },
+    {
+      "created": 1773100800,
+      "id": "tts-qwen3-0-6b",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 87.5,
+            "diem": 87.5
+          }
+        },
+        "voices": [
+          "Aiden",
+          "Dylan",
+          "Eric",
+          "Ono_Anna",
+          "Ryan",
+          "Serena",
+          "Sohee",
+          "Uncle_Fu",
+          "Vivian"
+        ],
+        "name": "Qwen 3 TTS 0.6B",
+        "modelSource": "https://huggingface.co/Qwen/Qwen3-TTS",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "tts"
+    },
+    {
+      "created": 1773100800,
+      "id": "tts-qwen3-1-7b",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 112.5,
+            "diem": 112.5
+          }
+        },
+        "voices": [
+          "Aiden",
+          "Dylan",
+          "Eric",
+          "Ono_Anna",
+          "Ryan",
+          "Serena",
+          "Sohee",
+          "Uncle_Fu",
+          "Vivian"
+        ],
+        "name": "Qwen 3 TTS 1.7B",
+        "modelSource": "https://huggingface.co/Qwen/Qwen3-TTS",
         "offline": false,
         "privacy": "private",
         "traits": []
