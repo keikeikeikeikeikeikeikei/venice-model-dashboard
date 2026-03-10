@@ -152,7 +152,7 @@
         "model_sets": [
           "venice_recommendations"
         ],
-        "availableContextTokens": 128000,
+        "availableContextTokens": 200000,
         "maxCompletionTokens": 24000,
         "capabilities": {
           "optimizedForCode": false,
@@ -4342,6 +4342,294 @@
       }
     },
     {
+      "created": 1770076800,
+      "id": "kling-o3-standard-text-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "text-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "resolutions": [],
+          "durations": [
+            "3s",
+            "4s",
+            "5s",
+            "6s",
+            "7s",
+            "8s",
+            "9s",
+            "10s",
+            "11s",
+            "12s",
+            "13s",
+            "14s",
+            "15s"
+          ],
+          "audio": true,
+          "audio_configurable": true,
+          "audio_input": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "cinematic",
+          "audio",
+          "photorealistic",
+          "long_duration"
+        ],
+        "name": "Kling O3 Standard",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 1.06
+      }
+    },
+    {
+      "created": 1770076800,
+      "id": "kling-o3-standard-image-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [],
+          "resolutions": [],
+          "durations": [
+            "3s",
+            "4s",
+            "5s",
+            "6s",
+            "7s",
+            "8s",
+            "9s",
+            "10s",
+            "11s",
+            "12s",
+            "13s",
+            "14s",
+            "15s"
+          ],
+          "audio": true,
+          "audio_configurable": true,
+          "audio_input": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "cinematic",
+          "audio",
+          "photorealistic",
+          "long_duration"
+        ],
+        "name": "Kling O3 Standard",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 1.06
+      }
+    },
+    {
+      "created": 1770076800,
+      "id": "kling-v3-pro-text-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "text-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "resolutions": [],
+          "durations": [
+            "3s",
+            "4s",
+            "5s",
+            "6s",
+            "7s",
+            "8s",
+            "9s",
+            "10s",
+            "11s",
+            "12s",
+            "13s",
+            "14s",
+            "15s"
+          ],
+          "audio": true,
+          "audio_configurable": true,
+          "audio_input": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "cinematic",
+          "audio",
+          "photorealistic",
+          "long_duration"
+        ],
+        "name": "Kling V3 Pro",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.64
+      }
+    },
+    {
+      "created": 1770076800,
+      "id": "kling-v3-pro-image-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [],
+          "resolutions": [],
+          "durations": [
+            "3s",
+            "4s",
+            "5s",
+            "6s",
+            "7s",
+            "8s",
+            "9s",
+            "10s",
+            "11s",
+            "12s",
+            "13s",
+            "14s",
+            "15s"
+          ],
+          "audio": true,
+          "audio_configurable": true,
+          "audio_input": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "cinematic",
+          "audio",
+          "photorealistic",
+          "long_duration"
+        ],
+        "name": "Kling V3 Pro",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.64
+      }
+    },
+    {
+      "created": 1770076800,
+      "id": "kling-v3-standard-text-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "text-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "resolutions": [],
+          "durations": [
+            "3s",
+            "4s",
+            "5s",
+            "6s",
+            "7s",
+            "8s",
+            "9s",
+            "10s",
+            "11s",
+            "12s",
+            "13s",
+            "14s",
+            "15s"
+          ],
+          "audio": true,
+          "audio_configurable": true,
+          "audio_input": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "cinematic",
+          "audio",
+          "photorealistic",
+          "long_duration"
+        ],
+        "name": "Kling V3 Standard",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.64
+      }
+    },
+    {
+      "created": 1770076800,
+      "id": "kling-v3-standard-image-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [],
+          "resolutions": [],
+          "durations": [
+            "3s",
+            "4s",
+            "5s",
+            "6s",
+            "7s",
+            "8s",
+            "9s",
+            "10s",
+            "11s",
+            "12s",
+            "13s",
+            "14s",
+            "15s"
+          ],
+          "audio": true,
+          "audio_configurable": true,
+          "audio_input": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "cinematic",
+          "audio",
+          "photorealistic",
+          "long_duration"
+        ],
+        "name": "Kling V3 Standard",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.64
+      }
+    },
+    {
       "created": 1764806400,
       "id": "longcat-distilled-image-to-video",
       "model_spec": {
@@ -4538,7 +4826,8 @@
           "high_resolution",
           "audio",
           "cinematic",
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Veo 3 Fast",
         "offline": false,
@@ -5069,8 +5358,7 @@
         "model_sets": [
           "high_resolution",
           "audio",
-          "cinematic",
-          "fast"
+          "cinematic"
         ],
         "name": "PixVerse v5.6",
         "offline": false,
