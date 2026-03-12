@@ -745,7 +745,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-03-11 20:40)</div>
+            <div class="meta">Generated from Live API Data (2026-03-12 13:36)</div>
         </header>
 
         <div class="controls">
@@ -1235,6 +1235,49 @@
         "description": "Balanced blend of speed and capability. Handles most everyday tasks with reliability, and supports image analysis. Ideal for general use with moderate complexity.",
         "name": "Venice Medium",
         "modelSource": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1768435200,
+      "id": "mistral-small-3-2-24b-instruct",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.09375,
+            "diem": 0.09375
+          },
+          "output": {
+            "usd": 0.25,
+            "diem": 0.25
+          }
+        },
+        "availableContextTokens": 256000,
+        "maxCompletionTokens": 16384,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "fp8",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": false,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true
+        },
+        "description": "Mistral Small 3.2 is a 24B parameter model optimized for efficiency and performance. Ideal for general-purpose tasks with balanced speed and capability.",
+        "name": "Mistral Small 3.2 24B Instruct",
+        "modelSource": "https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506",
         "offline": false,
         "privacy": "private",
         "traits": []
@@ -3183,7 +3226,7 @@
           "venice_recommendations"
         ],
         "constraints": {
-          "promptCharacterLimit": 1500,
+          "promptCharacterLimit": 8000,
           "aspectRatios": [
             "1:1",
             "3:2",
@@ -4356,8 +4399,7 @@
         },
         "model_sets": [
           "uncensored",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "Wan 2.2 A14B",
         "offline": false,
@@ -4475,7 +4517,8 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 Fast",
         "offline": false,
@@ -7014,7 +7057,7 @@
             "3:4",
             "4:5"
           ],
-          "promptCharacterLimit": 1500,
+          "promptCharacterLimit": 8000,
           "combineImages": true
         },
         "name": "Grok Imagine",
