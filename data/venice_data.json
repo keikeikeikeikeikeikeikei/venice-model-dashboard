@@ -781,6 +781,134 @@
       "type": "text"
     },
     {
+      "created": 1773273600,
+      "id": "grok-4-20-beta",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 2.5,
+            "diem": 2.5
+          },
+          "cache_input": {
+            "usd": 0.25,
+            "diem": 0.25
+          },
+          "output": {
+            "usd": 7.5,
+            "diem": 7.5
+          },
+          "extended": {
+            "context_token_threshold": 200000,
+            "input": {
+              "usd": 5,
+              "diem": 5
+            },
+            "output": {
+              "usd": 15,
+              "diem": 15
+            },
+            "cache_input": {
+              "usd": 0.25,
+              "diem": 0.25
+            }
+          }
+        },
+        "availableContextTokens": 2000000,
+        "maxCompletionTokens": 128000,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": true,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": true,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": true,
+          "supportsWebSearch": true
+        },
+        "description": "Grok 4.20 Beta is xAI's latest multimodal reasoning model with strong tool use, structured output support, and a 2M-token context window.",
+        "name": "Grok 4.20 Beta",
+        "modelSource": "",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1773273600,
+      "id": "grok-4-20-multi-agent-beta",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 2.5,
+            "diem": 2.5
+          },
+          "cache_input": {
+            "usd": 0.25,
+            "diem": 0.25
+          },
+          "output": {
+            "usd": 7.5,
+            "diem": 7.5
+          },
+          "extended": {
+            "context_token_threshold": 200000,
+            "input": {
+              "usd": 5,
+              "diem": 5
+            },
+            "output": {
+              "usd": 15,
+              "diem": 15
+            },
+            "cache_input": {
+              "usd": 0.25,
+              "diem": 0.25
+            }
+          }
+        },
+        "availableContextTokens": 2000000,
+        "maxCompletionTokens": 128000,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": true,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": true,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": true,
+          "supportsWebSearch": true
+        },
+        "description": "Grok 4.20 Multi-Agent Beta is a variant of xAI Grok 4.20 designed for collaborative, agent-based workflows. Multiple agents operate in parallel to conduct deep research, coordinate tool use, and synthesize information across complex tasks.",
+        "name": "Grok 4.20 Multi-Agent Beta",
+        "modelSource": "",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
       "created": 1764633600,
       "id": "gemini-3-pro-preview",
       "model_spec": {

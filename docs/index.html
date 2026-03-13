@@ -745,7 +745,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-03-13 16:39)</div>
+            <div class="meta">Generated from Live API Data (2026-03-14 00:02)</div>
         </header>
 
         <div class="controls">
@@ -783,6 +783,7 @@
                                 <option value="256000">250k+</option>
                                 <option value="400000">391k+</option>
                                 <option value="1000000">977k+</option>
+                                <option value="2000000">1.9M+</option>
                             </select>
                         </div>
                         <div class="range-item">
@@ -1591,6 +1592,134 @@
         },
         "description": "Grok 4.1 Fast is xAI's best agentic tool-calling model that shines in real-world use cases like customer support and image analysis.",
         "name": "Grok 4.1 Fast",
+        "modelSource": "",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1773273600,
+      "id": "grok-4-20-beta",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 2.5,
+            "diem": 2.5
+          },
+          "cache_input": {
+            "usd": 0.25,
+            "diem": 0.25
+          },
+          "output": {
+            "usd": 7.5,
+            "diem": 7.5
+          },
+          "extended": {
+            "context_token_threshold": 200000,
+            "input": {
+              "usd": 5,
+              "diem": 5
+            },
+            "output": {
+              "usd": 15,
+              "diem": 15
+            },
+            "cache_input": {
+              "usd": 0.25,
+              "diem": 0.25
+            }
+          }
+        },
+        "availableContextTokens": 2000000,
+        "maxCompletionTokens": 128000,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": true,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": true,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": true,
+          "supportsWebSearch": true
+        },
+        "description": "Grok 4.20 Beta is xAI's latest multimodal reasoning model with strong tool use, structured output support, and a 2M-token context window.",
+        "name": "Grok 4.20 Beta",
+        "modelSource": "",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1773273600,
+      "id": "grok-4-20-multi-agent-beta",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 2.5,
+            "diem": 2.5
+          },
+          "cache_input": {
+            "usd": 0.25,
+            "diem": 0.25
+          },
+          "output": {
+            "usd": 7.5,
+            "diem": 7.5
+          },
+          "extended": {
+            "context_token_threshold": 200000,
+            "input": {
+              "usd": 5,
+              "diem": 5
+            },
+            "output": {
+              "usd": 15,
+              "diem": 15
+            },
+            "cache_input": {
+              "usd": 0.25,
+              "diem": 0.25
+            }
+          }
+        },
+        "availableContextTokens": 2000000,
+        "maxCompletionTokens": 128000,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": true,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": true,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": true,
+          "supportsWebSearch": true
+        },
+        "description": "Grok 4.20 Multi-Agent Beta is a variant of xAI Grok 4.20 designed for collaborative, agent-based workflows. Multiple agents operate in parallel to conduct deep research, coordinate tool use, and synthesize information across complex tasks.",
+        "name": "Grok 4.20 Multi-Agent Beta",
         "modelSource": "",
         "offline": false,
         "privacy": "anonymized",
