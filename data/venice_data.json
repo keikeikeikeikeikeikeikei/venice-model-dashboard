@@ -1457,16 +1457,16 @@
       "model_spec": {
         "pricing": {
           "input": {
-            "usd": 0.75,
-            "diem": 0.75
+            "usd": 0.56,
+            "diem": 0.56
           },
           "cache_input": {
-            "usd": 0.125,
-            "diem": 0.125
+            "usd": 0.11,
+            "diem": 0.11
           },
           "output": {
-            "usd": 3.75,
-            "diem": 3.75
+            "usd": 3.5,
+            "diem": 3.5
           }
         },
         "model_sets": [
@@ -1997,16 +1997,16 @@
       "model_spec": {
         "pricing": {
           "input": {
-            "usd": 0.4,
-            "diem": 0.4
+            "usd": 0.35,
+            "diem": 0.35
           },
           "cache_input": {
             "usd": 0.04,
             "diem": 0.04
           },
           "output": {
-            "usd": 1.6,
-            "diem": 1.6
+            "usd": 1.5,
+            "diem": 1.5
           }
         },
         "availableContextTokens": 198000,
@@ -2045,16 +2045,16 @@
       "model_spec": {
         "pricing": {
           "input": {
-            "usd": 0.4,
-            "diem": 0.4
+            "usd": 0.34,
+            "diem": 0.34
           },
           "cache_input": {
             "usd": 0.04,
             "diem": 0.04
           },
           "output": {
-            "usd": 1.6,
-            "diem": 1.6
+            "usd": 1.19,
+            "diem": 1.19
           }
         },
         "availableContextTokens": 198000,
