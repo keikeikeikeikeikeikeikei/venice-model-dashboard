@@ -30,7 +30,8 @@
           "supportsE2EE": false,
           "supportsVideoInput": false,
           "supportsVision": false,
-          "supportsWebSearch": true
+          "supportsWebSearch": true,
+          "supportsXSearch": false
         },
         "description": "Designed for maximum creative freedom and authentic interaction. Ideal for open-ended exploration, roleplay, and unfiltered dialogue. Features minimal content restrictions.",
         "name": "Venice Uncensored 1.1",
@@ -75,7 +76,8 @@
           "supportsE2EE": false,
           "supportsVideoInput": false,
           "supportsVision": false,
-          "supportsWebSearch": true
+          "supportsWebSearch": true,
+          "supportsXSearch": false
         },
         "description": "Optimized for creative roleplay scenarios with maximum freedom. Designed for immersive storytelling, character interactions, and open-ended creative writing.",
         "name": "Venice Role Play Uncensored",
@@ -125,7 +127,8 @@
           "supportsE2EE": false,
           "supportsVideoInput": false,
           "supportsVision": false,
-          "supportsWebSearch": true
+          "supportsWebSearch": true,
+          "supportsXSearch": false
         },
         "description": "GLM-4.6 is a large language model developed by Zhiyuan AI, featuring strong reasoning capabilities and support for multiple languages. Supports the largest context window for processing extensive text and detailed analysis.",
         "name": "GLM 4.6",
@@ -171,7 +174,8 @@
           "supportsE2EE": false,
           "supportsVideoInput": false,
           "supportsVision": false,
-          "supportsWebSearch": true
+          "supportsWebSearch": true,
+          "supportsXSearch": false
         },
         "description": "GLM-4.7-Flash-Heretic is an uncensored experimental variant of GLM-4.7-Flash, optimized for creative freedom and unfiltered dialogue with fast inference speed.",
         "name": "GLM 4.7 Flash Heretic",
@@ -214,7 +218,8 @@
           "supportsE2EE": false,
           "supportsVideoInput": false,
           "supportsVision": false,
-          "supportsWebSearch": true
+          "supportsWebSearch": true,
+          "supportsXSearch": false
         },
         "description": "GLM-4.7-Flash is a fast inference variant of GLM-4.7, optimized for speed while maintaining strong reasoning capabilities. Ideal for applications requiring quick responses with good quality.",
         "name": "GLM 4.7 Flash",
@@ -264,7 +269,8 @@
           "supportsE2EE": false,
           "supportsVideoInput": false,
           "supportsVision": false,
-          "supportsWebSearch": true
+          "supportsWebSearch": true,
+          "supportsXSearch": false
         },
         "description": "GLM-5 is the next-generation large language model developed by Zhiyuan AI, featuring significantly enhanced reasoning capabilities, improved instruction following, and support for multiple languages. Supports large context windows for processing extensive text and detailed analysis.",
         "name": "GLM 5",
@@ -311,7 +317,8 @@
           "supportsE2EE": false,
           "supportsVideoInput": false,
           "supportsVision": false,
-          "supportsWebSearch": true
+          "supportsWebSearch": true,
+          "supportsXSearch": false
         },
         "description": "GLM-4.7 is a large language model developed by Zhiyuan AI, featuring strong reasoning capabilities and support for multiple languages. Supports the largest context window for processing extensive text and detailed analysis.",
         "name": "GLM 4.7",
@@ -358,7 +365,8 @@
           "supportsE2EE": false,
           "supportsVideoInput": false,
           "supportsVision": false,
-          "supportsWebSearch": true
+          "supportsWebSearch": true,
+          "supportsXSearch": false
         },
         "deprecation": {
           "date": "2026-03-29T00:00:00.000Z"
@@ -407,7 +415,8 @@
           "supportsE2EE": false,
           "supportsVideoInput": false,
           "supportsVision": true,
-          "supportsWebSearch": true
+          "supportsWebSearch": true,
+          "supportsXSearch": false
         },
         "description": "A 9B dense model with 262K native context window (extendable to 1M). Features Gated DeltaNet hybrid attention architecture for efficient long-context processing. Supports 201 languages, thinking/reasoning mode, and function calling.",
         "name": "Qwen 3.5 9B",
@@ -451,7 +460,8 @@
           "supportsE2EE": false,
           "supportsVideoInput": false,
           "supportsVision": true,
-          "supportsWebSearch": true
+          "supportsWebSearch": true,
+          "supportsXSearch": false
         },
         "deprecation": {
           "date": "2026-03-29T00:00:00.000Z"
@@ -497,7 +507,8 @@
           "supportsE2EE": false,
           "supportsVideoInput": false,
           "supportsVision": false,
-          "supportsWebSearch": true
+          "supportsWebSearch": true,
+          "supportsXSearch": false
         },
         "description": "Mistral Small 3.2 is a 24B parameter model optimized for efficiency and performance. Ideal for general-purpose tasks with balanced speed and capability.",
         "name": "Mistral Small 3.2 24B Instruct",
@@ -540,7 +551,8 @@
           "supportsE2EE": false,
           "supportsVideoInput": false,
           "supportsVision": false,
-          "supportsWebSearch": true
+          "supportsWebSearch": true,
+          "supportsXSearch": false
         },
         "description": "Built for in-depth research and handling long, complex documents. Ideal for technical work, multimodal input, and high-precision tasks.",
         "name": "Qwen 3 235B A22B Thinking 2507",
@@ -585,7 +597,8 @@
           "supportsE2EE": false,
           "supportsVideoInput": false,
           "supportsVision": false,
-          "supportsWebSearch": true
+          "supportsWebSearch": true,
+          "supportsXSearch": false
         },
         "description": "Built for in-depth research and handling long, complex documents. Ideal for technical work, multimodal input, and high-precision tasks.",
         "name": "Qwen 3 235B A22B Instruct 2507",
@@ -628,7 +641,8 @@
           "supportsE2EE": false,
           "supportsVideoInput": false,
           "supportsVision": false,
-          "supportsWebSearch": true
+          "supportsWebSearch": true,
+          "supportsXSearch": false
         },
         "description": "Optimized for speed and efficiency.",
         "name": "Qwen 3 Next 80b",
@@ -671,7 +685,8 @@
           "supportsE2EE": false,
           "supportsVideoInput": false,
           "supportsVision": false,
-          "supportsWebSearch": true
+          "supportsWebSearch": true,
+          "supportsXSearch": false
         },
         "description": "Optimized for code.",
         "name": "Qwen 3 Coder 480b",
@@ -716,7 +731,8 @@
           "supportsE2EE": false,
           "supportsVideoInput": false,
           "supportsVision": false,
-          "supportsWebSearch": true
+          "supportsWebSearch": true,
+          "supportsXSearch": false
         },
         "description": "Hermes 3 405B is a frontier level, full parameter finetune of the Llama-3.1 405B foundation model, focused on aligning LLMs to the user, with powerful steering capabilities and control given to the end user.",
         "name": "Hermes 3 Llama 3.1 405b",
@@ -760,7 +776,8 @@
           "supportsE2EE": false,
           "supportsVideoInput": false,
           "supportsVision": true,
-          "supportsWebSearch": true
+          "supportsWebSearch": true,
+          "supportsXSearch": false
         },
         "description": "Gemma 3 introduces multimodality, supporting vision-language input and text outputs. It handles context windows up to 128k tokens, understands over 140 languages, and offers improved math, reasoning, and chat capabilities, including structured outputs and function calling. Gemma 3 27B is Google's latest open source model, successor to Gemma 2.",
         "name": "Google Gemma 3 27B Instruct",
@@ -811,7 +828,8 @@
           "supportsE2EE": false,
           "supportsVideoInput": false,
           "supportsVision": true,
-          "supportsWebSearch": true
+          "supportsWebSearch": true,
+          "supportsXSearch": false
         },
         "description": "Grok 4.1 Fast is xAI's best agentic tool-calling model that shines in real-world use cases like customer support and image analysis.",
         "name": "Grok 4.1 Fast",
@@ -875,7 +893,8 @@
           "supportsE2EE": false,
           "supportsVideoInput": false,
           "supportsVision": true,
-          "supportsWebSearch": true
+          "supportsWebSearch": true,
+          "supportsXSearch": true
         },
         "description": "Grok 4.20 Beta is xAI's latest multimodal reasoning model with strong tool use, structured output support, and a 2M-token context window.",
         "name": "Grok 4.20 Beta",
@@ -939,7 +958,8 @@
           "supportsE2EE": false,
           "supportsVideoInput": false,
           "supportsVision": true,
-          "supportsWebSearch": true
+          "supportsWebSearch": true,
+          "supportsXSearch": true
         },
         "description": "Grok 4.20 Multi-Agent Beta is a variant of xAI Grok 4.20 designed for collaborative, agent-based workflows. Multiple agents operate in parallel to conduct deep research, coordinate tool use, and synthesize information across complex tasks.",
         "name": "Grok 4.20 Multi-Agent Beta",
@@ -987,7 +1007,8 @@
           "supportsE2EE": false,
           "supportsVideoInput": true,
           "supportsVision": true,
-          "supportsWebSearch": true
+          "supportsWebSearch": true,
+          "supportsXSearch": false
         },
         "description": "Gemini 3 Pro is Google flagship frontier model for high-precision multimodal reasoning with strong performance across text, image, and code.",
         "name": "Gemini 3 Pro Preview",
@@ -1058,7 +1079,8 @@
           "supportsE2EE": false,
           "supportsVideoInput": true,
           "supportsVision": true,
-          "supportsWebSearch": true
+          "supportsWebSearch": true,
+          "supportsXSearch": false
         },
         "description": "Gemini 3.1 Pro is the latest evolution of Google flagship frontier model with 1M context, advancing high-precision multimodal reasoning across text, image, and code.",
         "name": "Gemini 3.1 Pro Preview",
@@ -1106,7 +1128,8 @@
           "supportsE2EE": false,
           "supportsVideoInput": true,
           "supportsVision": true,
-          "supportsWebSearch": true
+          "supportsWebSearch": true,
+          "supportsXSearch": false
         },
         "description": "Gemini 3 Flash Preview is a high speed, high value thinking model designed for agentic workflows, multi-turn chat, and coding assistance. It delivers near Pro level reasoning with substantially lower latency.",
         "name": "Gemini 3 Flash Preview",
@@ -1162,7 +1185,8 @@
           "supportsE2EE": false,
           "supportsVideoInput": false,
           "supportsVision": true,
-          "supportsWebSearch": true
+          "supportsWebSearch": true,
+          "supportsXSearch": false
         },
         "description": "Claude Opus 4.6 is Anthropic's most capable reasoning model, building on Opus 4.5 with enhanced performance across complex software engineering, agentic workflows, and long-horizon tasks. It features a 1M token context window, improved multimodal capabilities, and stronger robustness to prompt injection.",
         "name": "Claude Opus 4.6",
@@ -1214,7 +1238,8 @@
           "supportsE2EE": false,
           "supportsVideoInput": false,
           "supportsVision": true,
-          "supportsWebSearch": true
+          "supportsWebSearch": true,
+          "supportsXSearch": false
         },
         "description": "Claude Opus 4.5 is Anthropic's frontier reasoning model optimized for complex software engineering, agentic workflows, and long-horizon computer use. It offers strong multimodal capabilities, competitive performance across real-world coding and reasoning benchmarks, and improved robustness to prompt injection.",
         "name": "Claude Opus 4.5",
@@ -1267,7 +1292,8 @@
           "supportsE2EE": false,
           "supportsVideoInput": false,
           "supportsVision": true,
-          "supportsWebSearch": true
+          "supportsWebSearch": true,
+          "supportsXSearch": false
         },
         "description": "Claude Sonnet 4.6 is Anthropic's best combination of speed and intelligence, offering strong performance on coding, reasoning, and general tasks with excellent speed and cost efficiency. It features a 1M token context window and 64K max output tokens.",
         "name": "Claude Sonnet 4.6",
@@ -1319,7 +1345,8 @@
           "supportsE2EE": false,
           "supportsVideoInput": false,
           "supportsVision": true,
-          "supportsWebSearch": true
+          "supportsWebSearch": true,
+          "supportsXSearch": false
         },
         "description": "Claude Sonnet 4.5 is Anthropic's balanced model offering strong performance on coding, reasoning, and general tasks with good speed and cost efficiency.",
         "name": "Claude Sonnet 4.5",
@@ -1362,7 +1389,8 @@
           "supportsE2EE": false,
           "supportsVideoInput": false,
           "supportsVision": false,
-          "supportsWebSearch": true
+          "supportsWebSearch": true,
+          "supportsXSearch": false
         },
         "description": "gpt-oss-120b is an open-weight, 117B-parameter Mixture-of-Experts (MoE) language model from OpenAI designed for high-reasoning, agentic, and general-purpose production use cases. The model supports configurable reasoning depth, full chain-of-thought access, and native tool use, including function calling, browsing, and structured output generation",
         "name": "OpenAI GPT OSS 120B",
@@ -1409,7 +1437,8 @@
           "supportsE2EE": false,
           "supportsVideoInput": false,
           "supportsVision": false,
-          "supportsWebSearch": true
+          "supportsWebSearch": true,
+          "supportsXSearch": false
         },
         "description": "Kimi K2 Thinking is Moonshot AIs most advanced open reasoning model to date, extending the K2 series into agentic, long-horizon reasoning. Built on the trillion-parameter Mixture-of-Experts (MoE) architecture introduced in Kimi K2, it activates 32 billion parameters per forward pass and supports 256 k-token context windows.",
         "name": "Kimi K2 Thinking",
@@ -1460,7 +1489,8 @@
           "supportsE2EE": false,
           "supportsVideoInput": false,
           "supportsVision": true,
-          "supportsWebSearch": true
+          "supportsWebSearch": true,
+          "supportsXSearch": false
         },
         "description": "Kimi K2.5 is Moonshot AIs most advanced open reasoning model, featuring trillion-parameter Mixture-of-Experts architecture with 32B active parameters and 256K context windows.",
         "name": "Kimi K2.5",
@@ -1510,7 +1540,8 @@
           "supportsE2EE": false,
           "supportsVideoInput": false,
           "supportsVision": false,
-          "supportsWebSearch": true
+          "supportsWebSearch": true,
+          "supportsXSearch": false
         },
         "description": "DeepSeek-V3.2 is an efficient large language model with DeepSeek Sparse Attention (DSA) for long contexts. It features strong reasoning and tool-use skills, achieving top results on the 2025 IMO and IOI.",
         "name": "DeepSeek V3.2",
@@ -1553,7 +1584,8 @@
           "supportsE2EE": false,
           "supportsVideoInput": false,
           "supportsVision": false,
-          "supportsWebSearch": true
+          "supportsWebSearch": true,
+          "supportsXSearch": false
         },
         "name": "Llama 3.2 3B",
         "modelSource": "https://huggingface.co/meta-llama/Llama-3.2-3B",
@@ -1595,7 +1627,8 @@
           "supportsE2EE": false,
           "supportsVideoInput": false,
           "supportsVision": false,
-          "supportsWebSearch": true
+          "supportsWebSearch": true,
+          "supportsXSearch": false
         },
         "name": "Llama 3.3 70B",
         "modelSource": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
@@ -1644,7 +1677,8 @@
           "supportsE2EE": false,
           "supportsVideoInput": false,
           "supportsVision": false,
-          "supportsWebSearch": true
+          "supportsWebSearch": true,
+          "supportsXSearch": false
         },
         "description": "GPT-5.2 is the latest frontier-grade model in the GPT-5 series, offering stronger agentic and long context performance compared to GPT-5.1. It uses adaptive reasoning to allocate computation dynamically, responding quickly to simple queries while spending more depth on complex tasks.",
         "name": "GPT-5.2",
@@ -1692,7 +1726,8 @@
           "supportsE2EE": false,
           "supportsVideoInput": false,
           "supportsVision": true,
-          "supportsWebSearch": true
+          "supportsWebSearch": true,
+          "supportsXSearch": false
         },
         "description": "GPT-5.2 Codex is OpenAI specialized coding model built on GPT-5.2, optimized for advanced software development, code generation, and technical problem-solving.",
         "name": "GPT-5.2 Codex",
@@ -1741,7 +1776,8 @@
           "supportsE2EE": false,
           "supportsVideoInput": false,
           "supportsVision": true,
-          "supportsWebSearch": true
+          "supportsWebSearch": true,
+          "supportsXSearch": false
         },
         "description": "GPT-5.3 Codex is OpenAI specialized coding model built on GPT-5.3, optimized for advanced software development, code generation, and technical problem-solving.",
         "name": "GPT-5.3 Codex",
@@ -1790,7 +1826,8 @@
           "supportsE2EE": false,
           "supportsVideoInput": false,
           "supportsVision": true,
-          "supportsWebSearch": true
+          "supportsWebSearch": true,
+          "supportsXSearch": false
         },
         "description": "GPT-5.4 is the latest frontier model in the GPT-5 series with a 1M+ context window, offering improved agentic and long context performance. It uses adaptive reasoning to dynamically allocate computation across tasks.",
         "name": "GPT-5.4",
@@ -1846,7 +1883,8 @@
           "supportsE2EE": false,
           "supportsVideoInput": false,
           "supportsVision": true,
-          "supportsWebSearch": true
+          "supportsWebSearch": true,
+          "supportsXSearch": false
         },
         "description": "GPT-5.4 Pro is OpenAI's most advanced model, building on GPT-5.4's unified architecture with enhanced reasoning for complex, high-stakes tasks. It provides a 1M+ token context window (922K input, 128K output) and supports text and image inputs.",
         "name": "GPT-5.4 Pro",
@@ -1890,7 +1928,8 @@
           "supportsE2EE": false,
           "supportsVideoInput": false,
           "supportsVision": true,
-          "supportsWebSearch": true
+          "supportsWebSearch": true,
+          "supportsXSearch": false
         },
         "description": "OpenAI's multimodal flagship model with vision capabilities, strong reasoning, and broad knowledge. Popular for its balanced performance across tasks. Version: 2024-11-20.",
         "name": "GPT-4o",
@@ -1938,7 +1977,8 @@
           "supportsE2EE": false,
           "supportsVideoInput": false,
           "supportsVision": true,
-          "supportsWebSearch": true
+          "supportsWebSearch": true,
+          "supportsXSearch": false
         },
         "description": "OpenAI's cost-efficient small model that delivers GPT-4 level intelligence at a fraction of the cost. Ideal for high-volume applications requiring strong reasoning. Version: 2024-07-18.",
         "name": "GPT-4o Mini",
@@ -1985,7 +2025,8 @@
           "supportsE2EE": false,
           "supportsVideoInput": false,
           "supportsVision": false,
-          "supportsWebSearch": true
+          "supportsWebSearch": true,
+          "supportsXSearch": false
         },
         "description": "MiniMax-M2.1 is a lightweight, state-of-the-art large language model optimized for coding, agentic workflows, and modern application development.",
         "name": "MiniMax M2.1",
@@ -2032,7 +2073,8 @@
           "supportsE2EE": false,
           "supportsVideoInput": false,
           "supportsVision": false,
-          "supportsWebSearch": true
+          "supportsWebSearch": true,
+          "supportsXSearch": false
         },
         "description": "MiniMax-M2.5 is a state-of-the-art large language model optimized for coding, agentic workflows, and modern application development with enhanced reasoning capabilities.",
         "name": "MiniMax M2.5",
@@ -2078,7 +2120,8 @@
           "supportsE2EE": false,
           "supportsVideoInput": false,
           "supportsVision": false,
-          "supportsWebSearch": true
+          "supportsWebSearch": true,
+          "supportsXSearch": false
         },
         "description": "Grok Code Fast 1 is a speedy and economical reasoning model that excels at agentic coding",
         "name": "Grok Code Fast 1",
@@ -2127,7 +2170,8 @@
           "supportsE2EE": false,
           "supportsVideoInput": true,
           "supportsVision": true,
-          "supportsWebSearch": true
+          "supportsWebSearch": true,
+          "supportsXSearch": false
         },
         "constraints": {
           "temperature": {
@@ -2172,7 +2216,7 @@
           "quantization": "fp8",
           "supportsAudioInput": false,
           "supportsFunctionCalling": true,
-          "supportsLogProbs": true,
+          "supportsLogProbs": false,
           "supportsMultipleImages": true,
           "maxImages": 10,
           "supportsReasoning": false,
@@ -2182,7 +2226,8 @@
           "supportsE2EE": false,
           "supportsVideoInput": false,
           "supportsVision": true,
-          "supportsWebSearch": true
+          "supportsWebSearch": true,
+          "supportsXSearch": false
         },
         "description": "Qwen3-VL 235B vision-language model with MoE architecture. The most powerful VL model in the Qwen series with superior visual perception, OCR, and multimodal reasoning.",
         "name": "Qwen3 VL 235B",
@@ -2232,7 +2277,8 @@
           "supportsE2EE": false,
           "supportsVideoInput": false,
           "supportsVision": false,
-          "supportsWebSearch": true
+          "supportsWebSearch": true,
+          "supportsXSearch": false
         },
         "description": "Turbo variant of Qwen3 Coder 480B, optimized for faster inference on code tasks.",
         "name": "Qwen 3 Coder 480B Turbo",
@@ -2276,7 +2322,8 @@
           "supportsE2EE": false,
           "supportsVideoInput": false,
           "supportsVision": false,
-          "supportsWebSearch": true
+          "supportsWebSearch": true,
+          "supportsXSearch": false
         },
         "description": "NVIDIA Nemotron 3 Nano 30B is a compact and efficient language model from NVIDIA, optimized for fast inference while maintaining strong performance across diverse tasks.",
         "name": "NVIDIA Nemotron 3 Nano 30B",
@@ -3633,7 +3680,8 @@
           "audio",
           "long_duration",
           "photorealistic",
-          "venice_recommendations"
+          "venice_recommendations",
+          "fast"
         ],
         "name": "Grok Imagine",
         "offline": false,
@@ -4090,8 +4138,7 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.3 Full Quality",
         "offline": false,
