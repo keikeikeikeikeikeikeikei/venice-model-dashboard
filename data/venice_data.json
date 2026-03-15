@@ -6043,6 +6043,119 @@
       "type": "music"
     },
     {
+      "created": 1772236800,
+      "id": "elevenlabs-tts-v3",
+      "model_spec": {
+        "pricing": {
+          "per_thousand_characters": {
+            "usd": 0.11500000000000002,
+            "diem": 0.11500000000000002
+          }
+        },
+        "supports_lyrics": false,
+        "lyrics_required": false,
+        "supports_force_instrumental": false,
+        "supported_formats": [
+          "mp3"
+        ],
+        "default_format": "mp3",
+        "prompt_character_limit": 5000,
+        "min_prompt_length": 1,
+        "voices": [
+          "Aria",
+          "Roger",
+          "Sarah",
+          "Laura",
+          "Charlie",
+          "George",
+          "Callum",
+          "River",
+          "Liam",
+          "Charlotte",
+          "Alice",
+          "Matilda",
+          "Will",
+          "Jessica",
+          "Eric",
+          "Chris",
+          "Brian",
+          "Daniel",
+          "Lily",
+          "Bill"
+        ],
+        "default_voice": "Aria",
+        "supports_language_code": false,
+        "supports_speed": false,
+        "description": "Generate natural text-to-speech audio using ElevenLabs Eleven-v3. High-quality voices with stability control and automatic text normalization.",
+        "name": "ElevenLabs TTS v3",
+        "modelSource": "",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "music"
+    },
+    {
+      "created": 1772236800,
+      "id": "elevenlabs-tts-multilingual-v2",
+      "model_spec": {
+        "pricing": {
+          "per_thousand_characters": {
+            "usd": 0.11500000000000002,
+            "diem": 0.11500000000000002
+          }
+        },
+        "supports_lyrics": false,
+        "lyrics_required": false,
+        "supports_force_instrumental": false,
+        "supported_formats": [
+          "mp3"
+        ],
+        "default_format": "mp3",
+        "prompt_character_limit": 5000,
+        "min_prompt_length": 1,
+        "voices": [
+          "Aria",
+          "Roger",
+          "Sarah",
+          "Laura",
+          "Charlie",
+          "George",
+          "Callum",
+          "River",
+          "Liam",
+          "Charlotte",
+          "Alice",
+          "Matilda",
+          "Will",
+          "Jessica",
+          "Eric",
+          "Chris",
+          "Brian",
+          "Daniel",
+          "Lily",
+          "Bill"
+        ],
+        "default_voice": "Aria",
+        "supports_language_code": false,
+        "supports_speed": true,
+        "default_speed": 1,
+        "min_speed": 0.7,
+        "max_speed": 1.2,
+        "description": "Multilingual text-to-speech using ElevenLabs. Supports 29 languages with high-quality natural-sounding voices, configurable speed, and accent accuracy.",
+        "name": "ElevenLabs Multilingual v2",
+        "modelSource": "",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "music"
+    },
+    {
       "created": 1741924661,
       "id": "text-embedding-bge-m3",
       "model_spec": {
