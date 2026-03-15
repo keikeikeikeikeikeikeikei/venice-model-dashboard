@@ -3760,7 +3760,8 @@
         },
         "model_sets": [
           "uncensored",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "Wan 2.2 A14B",
         "offline": false,
@@ -5093,8 +5094,7 @@
           "high_resolution",
           "audio",
           "cinematic",
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "name": "Veo 3 Fast",
         "offline": false,
