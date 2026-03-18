@@ -3827,7 +3827,12 @@
           "durations": [
             "6s",
             "8s",
-            "10s"
+            "10s",
+            "12s",
+            "14s",
+            "16s",
+            "18s",
+            "20s"
           ],
           "audio": true,
           "audio_configurable": true,
@@ -3869,7 +3874,12 @@
           "durations": [
             "6s",
             "8s",
-            "10s"
+            "10s",
+            "12s",
+            "14s",
+            "16s",
+            "18s",
+            "20s"
           ],
           "audio": true,
           "audio_configurable": true,
@@ -3997,7 +4007,12 @@
           "durations": [
             "6s",
             "8s",
-            "10s"
+            "10s",
+            "12s",
+            "14s",
+            "16s",
+            "18s",
+            "20s"
           ],
           "audio": true,
           "audio_configurable": true,
@@ -4041,7 +4056,12 @@
           "durations": [
             "6s",
             "8s",
-            "10s"
+            "10s",
+            "12s",
+            "14s",
+            "16s",
+            "18s",
+            "20s"
           ],
           "audio": true,
           "audio_configurable": true,
@@ -4611,6 +4631,57 @@
       }
     },
     {
+      "created": 1773014400,
+      "id": "kling-o3-pro-reference-to-video",
+      "model_spec": {
+        "betaModel": true,
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "resolutions": [],
+          "durations": [
+            "3s",
+            "4s",
+            "5s",
+            "6s",
+            "7s",
+            "8s",
+            "9s",
+            "10s",
+            "11s",
+            "12s",
+            "13s",
+            "14s",
+            "15s"
+          ],
+          "audio": true,
+          "audio_configurable": true,
+          "audio_input": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "cinematic",
+          "audio",
+          "photorealistic",
+          "long_duration"
+        ],
+        "name": "Kling O3 Pro R2V",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.53
+      }
+    },
+    {
       "created": 1770076800,
       "id": "kling-o3-standard-text-to-video",
       "model_spec": {
@@ -4704,6 +4775,57 @@
       "type": "video",
       "pricing": {
         "base_price_usd": 1.06
+      }
+    },
+    {
+      "created": 1773100800,
+      "id": "kling-o3-standard-reference-to-video",
+      "model_spec": {
+        "betaModel": true,
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "resolutions": [],
+          "durations": [
+            "3s",
+            "4s",
+            "5s",
+            "6s",
+            "7s",
+            "8s",
+            "9s",
+            "10s",
+            "11s",
+            "12s",
+            "13s",
+            "14s",
+            "15s"
+          ],
+          "audio": true,
+          "audio_configurable": true,
+          "audio_input": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "cinematic",
+          "audio",
+          "photorealistic",
+          "long_duration"
+        ],
+        "name": "Kling O3 Standard R2V",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.43
       }
     },
     {
