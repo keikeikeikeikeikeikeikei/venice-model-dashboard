@@ -1510,16 +1510,16 @@
       "model_spec": {
         "pricing": {
           "input": {
-            "usd": 0.4,
-            "diem": 0.4
+            "usd": 0.33,
+            "diem": 0.33
           },
           "cache_input": {
-            "usd": 0.2,
-            "diem": 0.2
+            "usd": 0.16,
+            "diem": 0.16
           },
           "output": {
-            "usd": 1,
-            "diem": 1
+            "usd": 0.48,
+            "diem": 0.48
           }
         },
         "model_sets": [
@@ -2088,6 +2088,53 @@
       "type": "text"
     },
     {
+      "created": 1773792000,
+      "id": "minimax-m27",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.375,
+            "diem": 0.375
+          },
+          "cache_input": {
+            "usd": 0.075,
+            "diem": 0.075
+          },
+          "output": {
+            "usd": 1.5,
+            "diem": 1.5
+          }
+        },
+        "availableContextTokens": 198000,
+        "maxCompletionTokens": 32768,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": true,
+          "supportsResponseSchema": false,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "MiniMax-M2.7 is a next-generation large language model designed for autonomous, real-world productivity with advanced agentic capabilities through multi-agent collaboration.",
+        "name": "MiniMax M2.7",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
       "created": 1764547200,
       "id": "grok-code-fast-1",
       "model_spec": {
@@ -2329,6 +2376,501 @@
         "description": "NVIDIA Nemotron 3 Nano 30B is a compact and efficient language model from NVIDIA, optimized for fast inference while maintaining strong performance across diverse tasks.",
         "name": "NVIDIA Nemotron 3 Nano 30B",
         "modelSource": "https://huggingface.co/nvidia/Nemotron-3-Nano-30B-A3B",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1773792000,
+      "id": "e2ee-venice-uncensored-24b-p",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 0.25,
+            "diem": 0.25
+          },
+          "output": {
+            "usd": 1.15,
+            "diem": 1.15
+          }
+        },
+        "availableContextTokens": 32000,
+        "maxCompletionTokens": 4096,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": false,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": false,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": false,
+          "supportsTeeAttestation": true,
+          "supportsE2EE": true,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Venice Uncensored 1.1 running in a Trusted Execution Environment (TEE). Hardware attestation evidence is available for independent verification of enclave identity and configuration.",
+        "name": "Venice Uncensored 1.1",
+        "modelSource": "https://huggingface.co/cognitivecomputations/Dolphin-Mistral-24B-Venice-Edition",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1773792000,
+      "id": "e2ee-gemma-3-27b-p",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 0.14,
+            "diem": 0.14
+          },
+          "output": {
+            "usd": 0.5,
+            "diem": 0.5
+          }
+        },
+        "availableContextTokens": 40000,
+        "maxCompletionTokens": 4096,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": false,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": false,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": false,
+          "supportsTeeAttestation": true,
+          "supportsE2EE": true,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Gemma 3 27B running in a Trusted Execution Environment (TEE). Google's multimodal model supporting vision-language input with 140+ language understanding, with hardware attestation evidence available for independent verification.",
+        "name": "Gemma 3 27B",
+        "modelSource": "https://huggingface.co/google/gemma-3-27b-it",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1773792000,
+      "id": "e2ee-glm-4-7-p",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 1.1,
+            "diem": 1.1
+          },
+          "output": {
+            "usd": 4.15,
+            "diem": 4.15
+          }
+        },
+        "availableContextTokens": 128000,
+        "maxCompletionTokens": 32768,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": false,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": false,
+          "supportsTeeAttestation": true,
+          "supportsE2EE": true,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "GLM 4.7 running in a Trusted Execution Environment (TEE). Z.AI's flagship model with enhanced programming capabilities and stable multi-step reasoning, with hardware attestation evidence available for independent verification.",
+        "name": "GLM 4.7",
+        "modelSource": "",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1773792000,
+      "id": "e2ee-glm-4-7-flash-p",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 0.13,
+            "diem": 0.13
+          },
+          "output": {
+            "usd": 0.55,
+            "diem": 0.55
+          }
+        },
+        "availableContextTokens": 198000,
+        "maxCompletionTokens": 4096,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": false,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": false,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": false,
+          "supportsTeeAttestation": true,
+          "supportsE2EE": true,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "GLM 4.7 Flash running in a Trusted Execution Environment (TEE). A 30B-class model optimized for agentic coding with strong long-horizon task planning, with hardware attestation evidence available for independent verification.",
+        "name": "GLM 4.7 Flash",
+        "modelSource": "",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1773792000,
+      "id": "e2ee-gpt-oss-20b-p",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 0.05,
+            "diem": 0.05
+          },
+          "output": {
+            "usd": 0.19,
+            "diem": 0.19
+          }
+        },
+        "availableContextTokens": 128000,
+        "maxCompletionTokens": 32768,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": false,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": false,
+          "supportsTeeAttestation": true,
+          "supportsE2EE": true,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "GPT OSS 20B running in a Trusted Execution Environment (TEE). OpenAI's compact open-weight 21B MoE model with 3.6B active parameters, optimized for lower-latency inference, with hardware attestation evidence available for independent verification.",
+        "name": "GPT OSS 20B",
+        "modelSource": "https://huggingface.co/openai/gpt-oss-20b",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1773792000,
+      "id": "e2ee-gpt-oss-120b-p",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 0.13,
+            "diem": 0.13
+          },
+          "output": {
+            "usd": 0.65,
+            "diem": 0.65
+          }
+        },
+        "availableContextTokens": 128000,
+        "maxCompletionTokens": 32768,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": false,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": false,
+          "supportsTeeAttestation": true,
+          "supportsE2EE": true,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "GPT OSS 120B running in a Trusted Execution Environment (TEE). OpenAI's open-weight 117B-parameter MoE model with configurable reasoning depth and native tool use, with hardware attestation evidence available for independent verification.",
+        "name": "GPT OSS 120B",
+        "modelSource": "https://huggingface.co/openai/gpt-oss-120b",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1773792000,
+      "id": "e2ee-qwen-2-5-7b-p",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 0.05,
+            "diem": 0.05
+          },
+          "output": {
+            "usd": 0.13,
+            "diem": 0.13
+          }
+        },
+        "availableContextTokens": 32000,
+        "maxCompletionTokens": 4096,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": false,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": false,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": false,
+          "supportsTeeAttestation": true,
+          "supportsE2EE": true,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Qwen 2.5 7B Instruct running in a Trusted Execution Environment (TEE). A compact model with strong coding, math, and multilingual capabilities supporting 29+ languages, with hardware attestation evidence available for independent verification.",
+        "name": "Qwen 2.5 7B",
+        "modelSource": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1773792000,
+      "id": "e2ee-qwen3-30b-a3b-p",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 0.19,
+            "diem": 0.19
+          },
+          "output": {
+            "usd": 0.69,
+            "diem": 0.69
+          }
+        },
+        "availableContextTokens": 256000,
+        "maxCompletionTokens": 32768,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": false,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": false,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": false,
+          "supportsTeeAttestation": true,
+          "supportsE2EE": true,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Qwen3 30B A3B running in a Trusted Execution Environment (TEE). A MoE model with 30.5B total parameters and 3.3B activated per inference, supporting ultra-long 256K context, with hardware attestation evidence available for independent verification.",
+        "name": "Qwen3 30B A3B",
+        "modelSource": "https://huggingface.co/Qwen/Qwen3-30B-A3B-Instruct-2507",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1773792000,
+      "id": "e2ee-qwen3-vl-30b-a3b-p",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 0.25,
+            "diem": 0.25
+          },
+          "output": {
+            "usd": 0.9,
+            "diem": 0.9
+          }
+        },
+        "availableContextTokens": 128000,
+        "maxCompletionTokens": 4096,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": false,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": false,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": false,
+          "supportsTeeAttestation": true,
+          "supportsE2EE": true,
+          "supportsVideoInput": false,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Qwen3 VL 30B A3B running in a Trusted Execution Environment (TEE). A multimodal model unifying text generation with visual understanding for images and videos, with hardware attestation evidence available for independent verification.",
+        "name": "Qwen3 VL 30B A3B",
+        "modelSource": "https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Instruct",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1773792000,
+      "id": "e2ee-glm-5",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 1.1,
+            "diem": 1.1
+          },
+          "output": {
+            "usd": 4.15,
+            "diem": 4.15
+          }
+        },
+        "availableContextTokens": 198000,
+        "maxCompletionTokens": 32768,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "fp8",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": false,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": false,
+          "supportsTeeAttestation": true,
+          "supportsE2EE": true,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "GLM 5 running in a Trusted Execution Environment (TEE). Hardware attestation evidence is available for independent verification of enclave identity and configuration.",
+        "name": "GLM 5",
+        "modelSource": "https://huggingface.co/zai-org/GLM-5",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1773792000,
+      "id": "e2ee-qwen3-5-122b-a10b",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 0.5,
+            "diem": 0.5
+          },
+          "output": {
+            "usd": 4,
+            "diem": 4
+          }
+        },
+        "availableContextTokens": 128000,
+        "maxCompletionTokens": 32768,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": false,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": false,
+          "supportsTeeAttestation": true,
+          "supportsE2EE": true,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Qwen3.5 122B A10B running in a Trusted Execution Environment (TEE). Hardware attestation evidence is available for independent verification of enclave identity and configuration.",
+        "name": "Qwen3.5 122B A10B",
+        "modelSource": "https://huggingface.co/Qwen/Qwen3.5-122B-A10B",
         "offline": false,
         "privacy": "private",
         "traits": []
@@ -3890,7 +4432,8 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 Fast",
         "offline": false,
@@ -4158,8 +4701,7 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.3 Full Quality",
         "offline": false,
