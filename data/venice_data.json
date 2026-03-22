@@ -4047,7 +4047,8 @@
           "audio",
           "long_duration",
           "open_source",
-          "venice_recommendations"
+          "venice_recommendations",
+          "fast"
         ],
         "name": "Wan 2.6 Flash",
         "offline": false,
@@ -4223,8 +4224,7 @@
           "audio",
           "long_duration",
           "photorealistic",
-          "venice_recommendations",
-          "fast"
+          "venice_recommendations"
         ],
         "name": "Grok Imagine",
         "offline": false,
