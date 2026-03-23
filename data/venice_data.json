@@ -4047,7 +4047,8 @@
           "audio",
           "long_duration",
           "open_source",
-          "venice_recommendations"
+          "venice_recommendations",
+          "fast"
         ],
         "name": "Wan 2.6 Flash",
         "offline": false,
@@ -6289,8 +6290,7 @@
         "model_sets": [
           "high_resolution",
           "audio",
-          "cinematic",
-          "fast"
+          "cinematic"
         ],
         "name": "PixVerse v5.6",
         "offline": false,
