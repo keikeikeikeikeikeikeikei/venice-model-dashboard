@@ -4675,8 +4675,7 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.3 Fast",
         "offline": false,
@@ -4857,8 +4856,7 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.0 19B",
         "offline": false,
@@ -4997,7 +4995,8 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 19B Distilled",
         "offline": false,
@@ -5030,7 +5029,8 @@
         "model_sets": [
           "uncensored",
           "audio",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "Ovi",
         "modelSource": "https://huggingface.co/chetwinlow1/Ovi",
