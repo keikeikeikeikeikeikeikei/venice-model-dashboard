@@ -6195,6 +6195,9 @@
           "cinematic",
           "photorealistic"
         ],
+        "deprecation": {
+          "date": "2026-04-07T00:00:00.000Z"
+        },
         "name": "Sora 2",
         "offline": false,
         "traits": []
@@ -6237,6 +6240,9 @@
           "cinematic",
           "photorealistic"
         ],
+        "deprecation": {
+          "date": "2026-04-07T00:00:00.000Z"
+        },
         "name": "Sora 2 Pro",
         "offline": false,
         "traits": []
@@ -6277,6 +6283,9 @@
           "cinematic",
           "photorealistic"
         ],
+        "deprecation": {
+          "date": "2026-04-07T00:00:00.000Z"
+        },
         "name": "Sora 2",
         "offline": false,
         "traits": []
@@ -6319,6 +6328,9 @@
           "cinematic",
           "photorealistic"
         ],
+        "deprecation": {
+          "date": "2026-04-07T00:00:00.000Z"
+        },
         "name": "Sora 2 Pro",
         "offline": false,
         "traits": []
