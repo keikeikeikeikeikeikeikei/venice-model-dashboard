@@ -745,7 +745,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-03-26 03:39)</div>
+            <div class="meta">Generated from Live API Data (2026-03-26 20:27)</div>
         </header>
 
         <div class="controls">
@@ -2371,6 +2371,54 @@
         "modelSource": "https://huggingface.co/deepseek-ai/DeepSeek-V3.2",
         "offline": false,
         "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1774310400,
+      "id": "aion-labs.aion-2-0",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 1,
+            "diem": 1
+          },
+          "cache_input": {
+            "usd": 0.25,
+            "diem": 0.25
+          },
+          "output": {
+            "usd": 2,
+            "diem": 2
+          }
+        },
+        "availableContextTokens": 128000,
+        "maxCompletionTokens": 32768,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": false,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": false,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": false,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Aion 2.0 is a DeepSeek V3.2-based model fine-tuned for immersive roleplaying and long-form storytelling. It excels at introducing tension, crises, and meaningful conflict into narratives, keeping stories unpredictable and deeply engaging. The model handles mature and darker themes with exceptional nuance, avoiding sanitized or surface-level treatment. Available as an early alpha\u2014your feedback helps shape its development.",
+        "name": "Aion 2.0",
+        "modelSource": "",
+        "offline": false,
+        "privacy": "anonymized",
         "traits": []
       },
       "object": "model",
@@ -5157,7 +5205,8 @@
           "audio",
           "long_duration",
           "photorealistic",
-          "venice_recommendations"
+          "venice_recommendations",
+          "fast"
         ],
         "name": "Grok Imagine",
         "offline": false,
@@ -5364,8 +5413,7 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.0 Fast",
         "offline": false,
@@ -5633,7 +5681,8 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.3 Full Quality",
         "offline": false,
@@ -5852,8 +5901,7 @@
         "model_sets": [
           "uncensored",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "Ovi",
         "modelSource": "https://huggingface.co/chetwinlow1/Ovi",
