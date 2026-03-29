@@ -337,55 +337,6 @@
       "type": "text"
     },
     {
-      "created": 1745903059,
-      "id": "qwen3-4b",
-      "model_spec": {
-        "pricing": {
-          "input": {
-            "usd": 0.05,
-            "diem": 0.05
-          },
-          "output": {
-            "usd": 0.15,
-            "diem": 0.15
-          }
-        },
-        "availableContextTokens": 32000,
-        "maxCompletionTokens": 4096,
-        "capabilities": {
-          "optimizedForCode": false,
-          "quantization": "fp8",
-          "supportsAudioInput": false,
-          "supportsFunctionCalling": true,
-          "supportsLogProbs": true,
-          "supportsMultipleImages": false,
-          "supportsReasoning": true,
-          "supportsReasoningEffort": false,
-          "supportsResponseSchema": true,
-          "supportsTeeAttestation": false,
-          "supportsE2EE": false,
-          "supportsVideoInput": false,
-          "supportsVision": false,
-          "supportsWebSearch": true,
-          "supportsXSearch": false
-        },
-        "deprecation": {
-          "date": "2026-03-29T00:00:00.000Z"
-        },
-        "description": "Optimized for speed and efficiency. Best for quick answers, simple queries, and lightweight tasks on mobile or low-latency connections.",
-        "name": "Venice Small",
-        "modelSource": "https://huggingface.co/Qwen/Qwen3-4B",
-        "offline": false,
-        "privacy": "private",
-        "traits": [
-          "fastest"
-        ]
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "text"
-    },
-    {
       "created": 1772668800,
       "id": "qwen3-5-9b",
       "model_spec": {
@@ -422,54 +373,6 @@
         "description": "A 9B dense model with 262K native context window (extendable to 1M). Features Gated DeltaNet hybrid attention architecture for efficient long-context processing. Supports 201 languages, thinking/reasoning mode, and function calling.",
         "name": "Qwen 3.5 9B",
         "modelSource": "https://huggingface.co/Qwen/Qwen3.5-9B",
-        "offline": false,
-        "privacy": "private",
-        "traits": []
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "text"
-    },
-    {
-      "created": 1742262554,
-      "id": "mistral-31-24b",
-      "model_spec": {
-        "pricing": {
-          "input": {
-            "usd": 0.5,
-            "diem": 0.5
-          },
-          "output": {
-            "usd": 2,
-            "diem": 2
-          }
-        },
-        "availableContextTokens": 128000,
-        "maxCompletionTokens": 4096,
-        "capabilities": {
-          "optimizedForCode": false,
-          "quantization": "fp8",
-          "supportsAudioInput": false,
-          "supportsFunctionCalling": true,
-          "supportsLogProbs": false,
-          "supportsMultipleImages": true,
-          "maxImages": 10,
-          "supportsReasoning": false,
-          "supportsReasoningEffort": false,
-          "supportsResponseSchema": true,
-          "supportsTeeAttestation": false,
-          "supportsE2EE": false,
-          "supportsVideoInput": false,
-          "supportsVision": true,
-          "supportsWebSearch": true,
-          "supportsXSearch": false
-        },
-        "deprecation": {
-          "date": "2026-03-29T00:00:00.000Z"
-        },
-        "description": "Balanced blend of speed and capability. Handles most everyday tasks with reliability, and supports image analysis. Ideal for general use with moderate complexity.",
-        "name": "Venice Medium",
-        "modelSource": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503",
         "offline": false,
         "privacy": "private",
         "traits": []
@@ -4384,8 +4287,7 @@
           "audio",
           "long_duration",
           "photorealistic",
-          "venice_recommendations",
-          "fast"
+          "venice_recommendations"
         ],
         "name": "Grok Imagine",
         "offline": false,
@@ -4726,7 +4628,8 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.3 Fast",
         "offline": false,
@@ -4999,7 +4902,8 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 19B Distilled",
         "offline": false,
@@ -5079,8 +4983,7 @@
         "model_sets": [
           "uncensored",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "Ovi",
         "modelSource": "https://huggingface.co/chetwinlow1/Ovi",
