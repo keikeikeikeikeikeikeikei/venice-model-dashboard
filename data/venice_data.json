@@ -4496,7 +4496,8 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 Fast",
         "offline": false,
@@ -4949,8 +4950,7 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.0 19B Distilled",
         "offline": false,
@@ -7163,6 +7163,40 @@
           "combineImages": true
         },
         "name": "Qwen Edit 2511",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "inpaint"
+    },
+    {
+      "created": 1774396800,
+      "id": "firered-image-edit",
+      "model_spec": {
+        "pricing": {
+          "inpaint": {
+            "usd": 0.04,
+            "diem": 0.04
+          }
+        },
+        "constraints": {
+          "aspectRatios": [
+            "auto",
+            "1:1",
+            "3:2",
+            "16:9",
+            "21:9",
+            "9:16",
+            "2:3",
+            "3:4",
+            "4:5"
+          ],
+          "promptCharacterLimit": 5000,
+          "combineImages": true
+        },
+        "name": "FireRed Image Edit 1.1",
         "offline": false,
         "privacy": "private",
         "traits": []
