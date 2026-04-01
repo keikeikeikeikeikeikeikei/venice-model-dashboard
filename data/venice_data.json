@@ -92,57 +92,6 @@
       "type": "text"
     },
     {
-      "created": 1711929600,
-      "id": "zai-org-glm-4.6",
-      "model_spec": {
-        "pricing": {
-          "input": {
-            "usd": 0.85,
-            "diem": 0.85
-          },
-          "cache_input": {
-            "usd": 0.3,
-            "diem": 0.3
-          },
-          "output": {
-            "usd": 2.75,
-            "diem": 2.75
-          }
-        },
-        "model_sets": [
-          "venice_recommendations"
-        ],
-        "availableContextTokens": 198000,
-        "maxCompletionTokens": 16384,
-        "capabilities": {
-          "optimizedForCode": false,
-          "quantization": "fp4",
-          "supportsAudioInput": false,
-          "supportsFunctionCalling": true,
-          "supportsLogProbs": false,
-          "supportsMultipleImages": false,
-          "supportsReasoning": false,
-          "supportsReasoningEffort": false,
-          "supportsResponseSchema": true,
-          "supportsTeeAttestation": false,
-          "supportsE2EE": false,
-          "supportsVideoInput": false,
-          "supportsVision": false,
-          "supportsWebSearch": true,
-          "supportsXSearch": false
-        },
-        "description": "GLM-4.6 is a large language model developed by Zhiyuan AI, featuring strong reasoning capabilities and support for multiple languages. Supports the largest context window for processing extensive text and detailed analysis.",
-        "name": "GLM 4.6",
-        "modelSource": "https://huggingface.co/zai-org/GLM-4.6",
-        "offline": false,
-        "privacy": "private",
-        "traits": []
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "text"
-    },
-    {
       "created": 1770163200,
       "id": "olafangensan-glm-4.7-flash-heretic",
       "model_spec": {
@@ -285,6 +234,54 @@
       "type": "text"
     },
     {
+      "created": 1711929600,
+      "id": "zai-org-glm-4.6",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.85,
+            "diem": 0.85
+          },
+          "cache_input": {
+            "usd": 0.3,
+            "diem": 0.3
+          },
+          "output": {
+            "usd": 2.75,
+            "diem": 2.75
+          }
+        },
+        "availableContextTokens": 198000,
+        "maxCompletionTokens": 16384,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "fp4",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "GLM-4.6 is a large language model developed by Zhiyuan AI, featuring strong reasoning capabilities and support for multiple languages. Supports the largest context window for processing extensive text and detailed analysis.",
+        "name": "GLM 4.6",
+        "modelSource": "https://huggingface.co/zai-org/GLM-4.6",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
       "created": 1766534400,
       "id": "zai-org-glm-4.7",
       "model_spec": {
@@ -351,7 +348,7 @@
           }
         },
         "availableContextTokens": 256000,
-        "maxCompletionTokens": 65536,
+        "maxCompletionTokens": 32768,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "fp8",
@@ -4287,8 +4284,7 @@
           "audio",
           "long_duration",
           "photorealistic",
-          "venice_recommendations",
-          "fast"
+          "venice_recommendations"
         ],
         "name": "Grok Imagine",
         "offline": false,
@@ -4327,7 +4323,8 @@
           "audio",
           "long_duration",
           "photorealistic",
-          "venice_recommendations"
+          "venice_recommendations",
+          "fast"
         ],
         "name": "Grok Imagine",
         "offline": false,
@@ -4496,8 +4493,7 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.0 Fast",
         "offline": false,
@@ -4950,7 +4946,8 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 19B Distilled",
         "offline": false,
