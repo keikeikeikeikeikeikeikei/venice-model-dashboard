@@ -33,6 +33,9 @@
           "supportsWebSearch": true,
           "supportsXSearch": false
         },
+        "deprecation": {
+          "date": "2026-04-15T00:00:00.000Z"
+        },
         "description": "Designed for maximum creative freedom and authentic interaction. Ideal for open-ended exploration, roleplay, and unfiltered dialogue. Features minimal content restrictions.",
         "name": "Venice Uncensored 1.1",
         "modelSource": "https://huggingface.co/cognitivecomputations/Dolphin-Mistral-24B-Venice-Edition",
@@ -2806,14 +2809,15 @@
           "supportsAudioInput": false,
           "supportsFunctionCalling": false,
           "supportsLogProbs": false,
-          "supportsMultipleImages": false,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
           "supportsReasoning": true,
           "supportsReasoningEffort": false,
           "supportsResponseSchema": false,
           "supportsTeeAttestation": true,
           "supportsE2EE": true,
-          "supportsVideoInput": false,
-          "supportsVision": false,
+          "supportsVideoInput": true,
+          "supportsVision": true,
           "supportsWebSearch": true,
           "supportsXSearch": false
         },
@@ -4625,8 +4629,7 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.3 Fast",
         "offline": false,
@@ -4807,7 +4810,8 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 19B",
         "offline": false,
