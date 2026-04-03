@@ -745,7 +745,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-04-03 10:32)</div>
+            <div class="meta">Generated from Live API Data (2026-04-03 16:50)</div>
         </header>
 
         <div class="controls">
@@ -1553,6 +1553,51 @@
         "description": "Gemma 4 26B A4B is a Mixture-of-Experts model from Google DeepMind with 26B total parameters and only 4B active per token, offering fast inference at high quality. It handles text and image input, supports 256K context, function calling, and reasoning with configurable thinking modes.",
         "name": "Google Gemma 4 26B A4B Instruct",
         "modelSource": "https://huggingface.co/google/gemma-4-26B-A4B-it",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1775174400,
+      "id": "google.gemma-4-31b-it",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.175,
+            "diem": 0.175
+          },
+          "output": {
+            "usd": 0.5,
+            "diem": 0.5
+          }
+        },
+        "availableContextTokens": 256000,
+        "maxCompletionTokens": 12288,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "bf16",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Gemma 4 31B is a dense model from Google DeepMind with 31B parameters, delivering frontier-level reasoning performance. It handles text and image input, supports 256K context, function calling, and configurable thinking modes.",
+        "name": "Google Gemma 4 31B Instruct",
+        "modelSource": "https://huggingface.co/google/gemma-4-31B-it",
         "offline": false,
         "privacy": "private",
         "traits": []
@@ -5202,8 +5247,7 @@
           "audio",
           "long_duration",
           "photorealistic",
-          "venice_recommendations",
-          "fast"
+          "venice_recommendations"
         ],
         "name": "Grok Imagine",
         "offline": false,
@@ -5819,7 +5863,8 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 19B Distilled",
         "offline": false,
