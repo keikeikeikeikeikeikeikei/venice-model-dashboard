@@ -745,7 +745,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-04-03 04:31)</div>
+            <div class="meta">Generated from Live API Data (2026-04-03 10:32)</div>
         </header>
 
         <div class="controls">
@@ -1508,6 +1508,51 @@
         "description": "Gemma 3 introduces multimodality, supporting vision-language input and text outputs. It handles context windows up to 128k tokens, understands over 140 languages, and offers improved math, reasoning, and chat capabilities, including structured outputs and function calling. Gemma 3 27B is Google's latest open source model, successor to Gemma 2.",
         "name": "Google Gemma 3 27B Instruct",
         "modelSource": "https://huggingface.co/google/gemma-3-27b-it",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1775088000,
+      "id": "google.gemma-4-26b-a4b-it",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.1625,
+            "diem": 0.1625
+          },
+          "output": {
+            "usd": 0.5,
+            "diem": 0.5
+          }
+        },
+        "availableContextTokens": 256000,
+        "maxCompletionTokens": 12288,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "bf16",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Gemma 4 26B A4B is a Mixture-of-Experts model from Google DeepMind with 26B total parameters and only 4B active per token, offering fast inference at high quality. It handles text and image input, supports 256K context, function calling, and reasoning with configurable thinking modes.",
+        "name": "Google Gemma 4 26B A4B Instruct",
+        "modelSource": "https://huggingface.co/google/gemma-4-26B-A4B-it",
         "offline": false,
         "privacy": "private",
         "traits": []
@@ -4531,7 +4576,54 @@
           "widthHeightDivisor": 8
         },
         "supportsWebSearch": false,
+        "deprecation": {
+          "date": "2026-04-16T00:00:00.000Z"
+        },
         "name": "Lustify v7",
+        "modelSource": "https://civitai.com/models/573152/lustify-sdxl-nsfw-checkpoint",
+        "offline": false,
+        "privacy": "private",
+        "traits": [
+          "most_uncensored"
+        ]
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "image"
+    },
+    {
+      "created": 1774828800,
+      "id": "lustify-v8",
+      "model_spec": {
+        "pricing": {
+          "generation": {
+            "usd": 0.01,
+            "diem": 0.01
+          },
+          "upscale": {
+            "2x": {
+              "usd": 0.02,
+              "diem": 0.02
+            },
+            "4x": {
+              "usd": 0.08,
+              "diem": 0.08
+            }
+          }
+        },
+        "model_sets": [
+          "venice_recommendations"
+        ],
+        "constraints": {
+          "promptCharacterLimit": 1500,
+          "steps": {
+            "default": 20,
+            "max": 50
+          },
+          "widthHeightDivisor": 8
+        },
+        "supportsWebSearch": false,
+        "name": "Lustify v8",
         "modelSource": "https://civitai.com/models/573152/lustify-sdxl-nsfw-checkpoint",
         "offline": false,
         "privacy": "private",
