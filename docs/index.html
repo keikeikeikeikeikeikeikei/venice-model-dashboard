@@ -745,7 +745,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-04-03 16:50)</div>
+            <div class="meta">Generated from Live API Data (2026-04-05 06:57)</div>
         </header>
 
         <div class="controls">
@@ -1537,7 +1537,7 @@
           "quantization": "bf16",
           "supportsAudioInput": false,
           "supportsFunctionCalling": true,
-          "supportsLogProbs": false,
+          "supportsLogProbs": true,
           "supportsMultipleImages": true,
           "maxImages": 10,
           "supportsReasoning": true,
@@ -1545,12 +1545,12 @@
           "supportsResponseSchema": true,
           "supportsTeeAttestation": false,
           "supportsE2EE": false,
-          "supportsVideoInput": false,
+          "supportsVideoInput": true,
           "supportsVision": true,
           "supportsWebSearch": true,
           "supportsXSearch": false
         },
-        "description": "Gemma 4 26B A4B is a Mixture-of-Experts model from Google DeepMind with 26B total parameters and only 4B active per token, offering fast inference at high quality. It handles text and image input, supports 256K context, function calling, and reasoning with configurable thinking modes.",
+        "description": "Gemma 4 26B A4B is a Mixture-of-Experts model from Google DeepMind with 26B total parameters and only 4B active per token, offering fast inference at high quality. It handles text, image, and video input, supports 256K context, function calling, and reasoning with configurable thinking modes.",
         "name": "Google Gemma 4 26B A4B Instruct",
         "modelSource": "https://huggingface.co/google/gemma-4-26B-A4B-it",
         "offline": false,
@@ -1582,7 +1582,7 @@
           "quantization": "bf16",
           "supportsAudioInput": false,
           "supportsFunctionCalling": true,
-          "supportsLogProbs": false,
+          "supportsLogProbs": true,
           "supportsMultipleImages": true,
           "maxImages": 10,
           "supportsReasoning": true,
@@ -1590,12 +1590,12 @@
           "supportsResponseSchema": true,
           "supportsTeeAttestation": false,
           "supportsE2EE": false,
-          "supportsVideoInput": false,
+          "supportsVideoInput": true,
           "supportsVision": true,
           "supportsWebSearch": true,
           "supportsXSearch": false
         },
-        "description": "Gemma 4 31B is a dense model from Google DeepMind with 31B parameters, delivering frontier-level reasoning performance. It handles text and image input, supports 256K context, function calling, and configurable thinking modes.",
+        "description": "Gemma 4 31B is a dense model from Google DeepMind with 31B parameters, delivering frontier-level reasoning performance. It handles text, image, and video input, supports 256K context, function calling, and configurable thinking modes.",
         "name": "Google Gemma 4 31B Instruct",
         "modelSource": "https://huggingface.co/google/gemma-4-31B-it",
         "offline": false,
@@ -2210,6 +2210,54 @@
         "description": "Kimi K2 Thinking is Moonshot AIs most advanced open reasoning model to date, extending the K2 series into agentic, long-horizon reasoning. Built on the trillion-parameter Mixture-of-Experts (MoE) architecture introduced in Kimi K2, it activates 32 billion parameters per forward pass and supports 256 k-token context windows.",
         "name": "Kimi K2 Thinking",
         "modelSource": "https://huggingface.co/moonshotai/Kimi-K2-Thinking",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1775088000,
+      "id": "arcee-trinity-large-thinking",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.3125,
+            "diem": 0.3125
+          },
+          "cache_input": {
+            "usd": 0.075,
+            "diem": 0.075
+          },
+          "output": {
+            "usd": 1.125,
+            "diem": 1.125
+          }
+        },
+        "availableContextTokens": 256000,
+        "maxCompletionTokens": 65536,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "fp8",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": true,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Trinity Large Thinking is a reasoning-optimized variant of Arcee AI's Trinity-Large family, a 398B-parameter sparse Mixture-of-Experts model with approximately 13B active parameters per token, post-trained with extended chain-of-thought reasoning and agentic RL. It supports tool calling, multilingual input, and 256K context windows.",
+        "name": "Trinity Large Thinking",
+        "modelSource": "https://huggingface.co/arcee-ai/Trinity-Large-Thinking-FP8-Block",
         "offline": false,
         "privacy": "private",
         "traits": []
@@ -3972,57 +4020,6 @@
       "type": "image"
     },
     {
-      "created": 1769644800,
-      "id": "grok-imagine",
-      "model_spec": {
-        "pricing": {
-          "generation": {
-            "usd": 0.04,
-            "diem": 0.04
-          },
-          "upscale": {
-            "2x": {
-              "usd": 0.02,
-              "diem": 0.02
-            },
-            "4x": {
-              "usd": 0.08,
-              "diem": 0.08
-            }
-          }
-        },
-        "model_sets": [
-          "venice_recommendations"
-        ],
-        "constraints": {
-          "promptCharacterLimit": 7500,
-          "aspectRatios": [
-            "1:1",
-            "3:2",
-            "16:9",
-            "9:16",
-            "2:3",
-            "3:4",
-            "4:5"
-          ],
-          "defaultAspectRatio": "1:1",
-          "steps": {
-            "default": 20,
-            "max": 50
-          },
-          "widthHeightDivisor": 1
-        },
-        "supportsWebSearch": false,
-        "name": "Grok Imagine",
-        "offline": false,
-        "privacy": "anonymized",
-        "traits": []
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "image"
-    },
-    {
       "created": 1772323200,
       "id": "hunyuan-image-v3",
       "model_spec": {
@@ -4551,6 +4548,230 @@
       "type": "image"
     },
     {
+      "created": 1775001600,
+      "id": "wan-2-7-text-to-image",
+      "model_spec": {
+        "pricing": {
+          "generation": {
+            "usd": 0.0375,
+            "diem": 0.0375
+          },
+          "upscale": {
+            "2x": {
+              "usd": 0.02,
+              "diem": 0.02
+            },
+            "4x": {
+              "usd": 0.08,
+              "diem": 0.08
+            }
+          }
+        },
+        "constraints": {
+          "promptCharacterLimit": 3000,
+          "aspectRatios": [
+            "1:1",
+            "3:2",
+            "16:9",
+            "21:9",
+            "9:16",
+            "2:3",
+            "3:4",
+            "4:5"
+          ],
+          "defaultAspectRatio": "1:1",
+          "steps": {
+            "default": 20,
+            "max": 50
+          },
+          "widthHeightDivisor": 1
+        },
+        "supportsWebSearch": false,
+        "name": "Wan 2.7",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "image"
+    },
+    {
+      "created": 1775001600,
+      "id": "wan-2-7-pro-text-to-image",
+      "model_spec": {
+        "pricing": {
+          "generation": {
+            "usd": 0.09375,
+            "diem": 0.09375
+          },
+          "upscale": {
+            "2x": {
+              "usd": 0.02,
+              "diem": 0.02
+            },
+            "4x": {
+              "usd": 0.08,
+              "diem": 0.08
+            }
+          }
+        },
+        "constraints": {
+          "promptCharacterLimit": 3000,
+          "aspectRatios": [
+            "1:1",
+            "3:2",
+            "16:9",
+            "21:9",
+            "9:16",
+            "2:3",
+            "3:4",
+            "4:5"
+          ],
+          "defaultAspectRatio": "1:1",
+          "steps": {
+            "default": 20,
+            "max": 50
+          },
+          "widthHeightDivisor": 1
+        },
+        "supportsWebSearch": false,
+        "name": "Wan 2.7 Pro",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "image"
+    },
+    {
+      "created": 1769644800,
+      "id": "grok-imagine-image",
+      "model_spec": {
+        "pricing": {
+          "generation": {
+            "usd": 0.0325,
+            "diem": 0.0325
+          },
+          "upscale": {
+            "2x": {
+              "usd": 0.02,
+              "diem": 0.02
+            },
+            "4x": {
+              "usd": 0.08,
+              "diem": 0.08
+            }
+          }
+        },
+        "model_sets": [
+          "venice_recommendations"
+        ],
+        "constraints": {
+          "promptCharacterLimit": 7500,
+          "defaultResolution": "1k",
+          "resolutions": [
+            "1k",
+            "2k"
+          ],
+          "aspectRatios": [
+            "1:1",
+            "16:9",
+            "9:16",
+            "4:3",
+            "3:4",
+            "3:2",
+            "2:3",
+            "2:1",
+            "1:2",
+            "19.5:9",
+            "9:19.5",
+            "20:9",
+            "9:20",
+            "auto"
+          ],
+          "defaultAspectRatio": "1:1",
+          "steps": {
+            "default": 20,
+            "max": 50
+          },
+          "widthHeightDivisor": 1
+        },
+        "supportsWebSearch": false,
+        "name": "Grok Imagine",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "image"
+    },
+    {
+      "created": 1775260800,
+      "id": "grok-imagine-image-pro",
+      "model_spec": {
+        "pricing": {
+          "generation": {
+            "usd": 0.085,
+            "diem": 0.085
+          },
+          "upscale": {
+            "2x": {
+              "usd": 0.02,
+              "diem": 0.02
+            },
+            "4x": {
+              "usd": 0.08,
+              "diem": 0.08
+            }
+          }
+        },
+        "model_sets": [
+          "venice_recommendations"
+        ],
+        "constraints": {
+          "promptCharacterLimit": 7500,
+          "defaultResolution": "1k",
+          "resolutions": [
+            "1k",
+            "2k"
+          ],
+          "aspectRatios": [
+            "1:1",
+            "16:9",
+            "9:16",
+            "4:3",
+            "3:4",
+            "3:2",
+            "2:3",
+            "2:1",
+            "1:2",
+            "19.5:9",
+            "9:19.5",
+            "20:9",
+            "9:20",
+            "auto"
+          ],
+          "defaultAspectRatio": "1:1",
+          "steps": {
+            "default": 20,
+            "max": 50
+          },
+          "widthHeightDivisor": 1
+        },
+        "supportsWebSearch": false,
+        "name": "Grok Imagine Pro",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "image"
+    },
+    {
       "created": 1738704152,
       "id": "lustify-sdxl",
       "model_spec": {
@@ -4953,14 +5174,7 @@
         "privacy": "anonymized",
         "constraints": {
           "model_type": "image-to-video",
-          "aspect_ratios": [
-            "21:9",
-            "16:9",
-            "4:3",
-            "1:1",
-            "3:4",
-            "9:16"
-          ],
+          "aspect_ratios": [],
           "resolutions": [
             "1080p",
             "720p",
@@ -5000,6 +5214,130 @@
       "type": "video",
       "pricing": {
         "base_price_usd": 0.11
+      }
+    },
+    {
+      "created": 1775088000,
+      "id": "wan-2-7-text-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "text-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "resolutions": [
+            "1080p",
+            "720p"
+          ],
+          "durations": [
+            "5s",
+            "10s",
+            "15s"
+          ],
+          "audio": false,
+          "audio_configurable": false,
+          "audio_input": true,
+          "video_input": false
+        },
+        "model_sets": [
+          "uncensored",
+          "high_resolution",
+          "audio",
+          "long_duration",
+          "open_source",
+          "venice_recommendations"
+        ],
+        "name": "Wan 2.7",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.39
+      }
+    },
+    {
+      "created": 1775088000,
+      "id": "wan-2-7-image-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [],
+          "resolutions": [
+            "1080p",
+            "720p"
+          ],
+          "durations": [
+            "5s",
+            "10s",
+            "15s"
+          ],
+          "audio": false,
+          "audio_configurable": false,
+          "audio_input": true,
+          "video_input": false
+        },
+        "model_sets": [
+          "uncensored",
+          "high_resolution",
+          "audio",
+          "long_duration",
+          "open_source",
+          "venice_recommendations"
+        ],
+        "name": "Wan 2.7",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.39
+      }
+    },
+    {
+      "created": 1775088000,
+      "id": "wan-2-7-reference-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [],
+          "resolutions": [
+            "1080p",
+            "720p"
+          ],
+          "durations": [
+            "5s",
+            "10s"
+          ],
+          "audio": false,
+          "audio_configurable": false,
+          "audio_input": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "uncensored",
+          "high_resolution",
+          "open_source",
+          "venice_recommendations"
+        ],
+        "name": "Wan 2.7 Reference",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.65
       }
     },
     {
@@ -5638,8 +5976,7 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.3 Fast",
         "offline": false,
@@ -5910,7 +6247,8 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 19B Distilled",
         "offline": false,
@@ -8166,6 +8504,45 @@
       "type": "inpaint"
     },
     {
+      "created": 1769644800,
+      "id": "grok-imagine-edit",
+      "model_spec": {
+        "pricing": {
+          "inpaint": {
+            "usd": 0.03,
+            "diem": 0.03
+          }
+        },
+        "constraints": {
+          "aspectRatios": [
+            "1:1",
+            "16:9",
+            "9:16",
+            "4:3",
+            "3:4",
+            "3:2",
+            "2:3",
+            "2:1",
+            "1:2",
+            "19.5:9",
+            "9:19.5",
+            "20:9",
+            "9:20",
+            "auto"
+          ],
+          "promptCharacterLimit": 7500,
+          "combineImages": true
+        },
+        "name": "Grok Imagine",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "inpaint"
+    },
+    {
       "created": 1772582400,
       "id": "qwen-image-2-edit",
       "model_spec": {
@@ -8286,40 +8663,6 @@
           "combineImages": true
         },
         "name": "GPT Image 1.5",
-        "offline": false,
-        "privacy": "anonymized",
-        "traits": []
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "inpaint"
-    },
-    {
-      "created": 1769644800,
-      "id": "grok-imagine-edit",
-      "model_spec": {
-        "pricing": {
-          "inpaint": {
-            "usd": 0.04,
-            "diem": 0.04
-          }
-        },
-        "constraints": {
-          "aspectRatios": [
-            "auto",
-            "1:1",
-            "3:2",
-            "16:9",
-            "21:9",
-            "9:16",
-            "2:3",
-            "3:4",
-            "4:5"
-          ],
-          "promptCharacterLimit": 7500,
-          "combineImages": true
-        },
-        "name": "Grok Imagine",
         "offline": false,
         "privacy": "anonymized",
         "traits": []
