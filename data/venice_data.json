@@ -4395,6 +4395,286 @@
       }
     },
     {
+      "created": 1774915200,
+      "id": "seedance-2-0-text-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "regionRestrictions": [
+          "US"
+        ],
+        "constraints": {
+          "model_type": "text-to-video",
+          "aspect_ratios": [
+            "21:9",
+            "16:9",
+            "4:3",
+            "1:1",
+            "3:4",
+            "9:16"
+          ],
+          "resolutions": [
+            "720p",
+            "480p"
+          ],
+          "durations": [
+            "4s",
+            "5s",
+            "8s",
+            "10s",
+            "12s",
+            "15s"
+          ],
+          "audio": true,
+          "audio_configurable": true,
+          "audio_input": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "audio",
+          "long_duration",
+          "cinematic",
+          "photorealistic"
+        ],
+        "name": "Seedance 2.0",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video"
+    },
+    {
+      "created": 1774915200,
+      "id": "seedance-2-0-image-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "regionRestrictions": [
+          "US"
+        ],
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [],
+          "resolutions": [
+            "720p",
+            "480p"
+          ],
+          "durations": [
+            "4s",
+            "5s",
+            "8s",
+            "10s",
+            "12s",
+            "15s"
+          ],
+          "audio": true,
+          "audio_configurable": true,
+          "audio_input": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "audio",
+          "long_duration",
+          "cinematic",
+          "photorealistic"
+        ],
+        "name": "Seedance 2.0",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video"
+    },
+    {
+      "created": 1774915200,
+      "id": "seedance-2-0-reference-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "regionRestrictions": [
+          "US"
+        ],
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [
+            "21:9",
+            "16:9",
+            "4:3",
+            "1:1",
+            "3:4",
+            "9:16"
+          ],
+          "resolutions": [
+            "720p",
+            "480p"
+          ],
+          "durations": [
+            "4s",
+            "5s",
+            "8s",
+            "10s",
+            "12s",
+            "15s"
+          ],
+          "audio": true,
+          "audio_configurable": true,
+          "audio_input": true,
+          "video_input": false
+        },
+        "model_sets": [
+          "audio",
+          "long_duration",
+          "cinematic",
+          "photorealistic"
+        ],
+        "name": "Seedance 2.0 R2V",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video"
+    },
+    {
+      "created": 1775001600,
+      "id": "seedance-2-0-fast-text-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "regionRestrictions": [
+          "US"
+        ],
+        "constraints": {
+          "model_type": "text-to-video",
+          "aspect_ratios": [
+            "21:9",
+            "16:9",
+            "4:3",
+            "1:1",
+            "3:4",
+            "9:16"
+          ],
+          "resolutions": [
+            "720p",
+            "480p"
+          ],
+          "durations": [
+            "4s",
+            "5s",
+            "8s",
+            "10s",
+            "12s",
+            "15s"
+          ],
+          "audio": true,
+          "audio_configurable": true,
+          "audio_input": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "audio",
+          "long_duration",
+          "cinematic",
+          "photorealistic"
+        ],
+        "name": "Seedance 2.0 Fast",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video"
+    },
+    {
+      "created": 1775001600,
+      "id": "seedance-2-0-fast-image-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "regionRestrictions": [
+          "US"
+        ],
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [],
+          "resolutions": [
+            "720p",
+            "480p"
+          ],
+          "durations": [
+            "4s",
+            "5s",
+            "8s",
+            "10s",
+            "12s",
+            "15s"
+          ],
+          "audio": true,
+          "audio_configurable": true,
+          "audio_input": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "audio",
+          "long_duration",
+          "cinematic",
+          "photorealistic"
+        ],
+        "name": "Seedance 2.0 Fast",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video"
+    },
+    {
+      "created": 1775001600,
+      "id": "seedance-2-0-fast-reference-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "regionRestrictions": [
+          "US"
+        ],
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [
+            "21:9",
+            "16:9",
+            "4:3",
+            "1:1",
+            "3:4",
+            "9:16"
+          ],
+          "resolutions": [
+            "720p",
+            "480p"
+          ],
+          "durations": [
+            "4s",
+            "5s",
+            "8s",
+            "10s",
+            "12s",
+            "15s"
+          ],
+          "audio": true,
+          "audio_configurable": true,
+          "audio_input": true,
+          "video_input": false
+        },
+        "model_sets": [
+          "audio",
+          "long_duration",
+          "cinematic",
+          "photorealistic"
+        ],
+        "name": "Seedance 2.0 Fast R2V",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video"
+    },
+    {
       "created": 1775088000,
       "id": "wan-2-7-text-to-video",
       "model_spec": {
@@ -4843,8 +5123,7 @@
         },
         "model_sets": [
           "uncensored",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "Wan 2.2 A14B",
         "offline": false,
@@ -5378,8 +5657,7 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.0 19B Distilled",
         "offline": false,
@@ -6043,7 +6321,8 @@
           "cinematic",
           "audio",
           "photorealistic",
-          "long_duration"
+          "long_duration",
+          "fast"
         ],
         "name": "Kling V3 Standard",
         "offline": false,
@@ -6299,7 +6578,8 @@
           "high_resolution",
           "audio",
           "cinematic",
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Veo 3 Fast",
         "offline": false,
