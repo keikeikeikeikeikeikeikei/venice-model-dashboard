@@ -51,19 +51,52 @@
         }
 
         @media (max-width: 768px) {
-            body { padding: 15px 8px; }
-            h1 { font-size: 1.6rem; }
-            .container { padding: 0; }
-            .controls { padding: 15px; gap: 15px; }
-            .main-controls { flex-direction: column; align-items: stretch; gap: 15px; }
+            body { padding: 10px 4px; }
+            .container { width: 100%; padding: 0; }
+            header { margin-bottom: 15px; text-align: center; gap: 4px; }
+            h1 { font-size: 1.4rem; }
+            .meta { font-size: 0.75rem; }
+            .controls { padding: 12px; gap: 12px; margin-bottom: 15px; border-radius: 8px; }
+            .main-controls { flex-direction: column; align-items: stretch; gap: 12px; }
+            .tabs { width: 100%; display: flex; }
+            .tab-btn { padding: 8px 4px; font-size: 0.8rem; flex: 1; text-align: center; }
             .search-box { max-width: none; }
-            .filter-bar { gap: 10px; }
-            .filter-group { flex-direction: row; align-items: center; gap: 8px; }
-            .filter-group-label { min-width: 0; font-size: 0.6rem; opacity: 0.7; border-right: 1px solid var(--border-color); padding-right: 8px; margin-right: 2px; }
-            .range-controls { flex-direction: column; align-items: stretch; gap: 20px; }
-            .range-item { flex: 1; }
-            .range-group div { flex-wrap: wrap; }
-            .tab-btn { padding: 8px 12px; font-size: 0.85rem; flex: 1; text-align: center; }
+            .search-box input { padding: 10px 12px 10px 36px; font-size: 0.9rem; }
+            .ghost-btn { padding: 8px 10px; font-size: 0.75rem; }
+            
+            .filter-bar { gap: 8px; }
+            .filter-group { gap: 6px; }
+            .filter-group-label { font-size: 0.6rem; min-width: 60px; padding-right: 4px; border-right: 1px solid var(--border-color); }
+            .filter-item { padding: 4px 10px; font-size: 0.75rem; }
+            .filter-segment-item { padding: 4px 10px; font-size: 0.75rem; }
+            
+            .range-controls { gap: 15px; padding-top: 12px; }
+            .range-group select, .range-group input { min-width: 0; flex: 1; font-size: 0.85rem; padding: 6px 10px; }
+            
+            .table-container { border-radius: 0; border-left: none; border-right: none; }
+            table { min-width: 500px; table-layout: auto; }
+            th, td { padding: 10px 6px; }
+            th { font-size: 0.6rem; }
+            
+            .col-model { width: 45%; }
+            .col-combined-price { width: 35%; }
+            .col-price { display: none; } /* Hide cache price on mobile */
+            .col-ctx { width: 20%; }
+            .col-caps { display: none; } /* Hide caps on mobile */
+            
+            .model-name { font-size: 0.85rem; white-space: normal; line-height: 1.2; word-break: break-word; }
+            .model-id { font-size: 0.55rem; white-space: normal; }
+            .model-description { font-size: 0.75rem; -webkit-line-clamp: 1; max-width: 100%; }
+            .tag-row { gap: 2px; }
+            .cap-badge { font-size: 0.6rem; padding: 1px 4px; }
+            .privacy-badge { font-size: 0.55rem; padding: 1px 3px; }
+            
+            .price-bridge { min-width: 90px; gap: 4px; }
+            .price-bridge-avg-info { font-size: 0.75rem; font-weight: 700; }
+            .price-value-num { font-size: 0.7rem; }
+            .price-value-label { font-size: 0.5rem; }
+            .rel-bar-container { gap: 4px; }
+            .rel-bar-bg { height: 4px; }
         }
 
         * {
@@ -745,7 +778,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-04-06 19:25)</div>
+            <div class="meta">Generated from Live API Data (2026-04-07 05:27)</div>
         </header>
 
         <div class="controls">
@@ -5905,8 +5938,7 @@
           "audio",
           "long_duration",
           "photorealistic",
-          "venice_recommendations",
-          "fast"
+          "venice_recommendations"
         ],
         "name": "Grok Imagine",
         "offline": false,
@@ -6027,7 +6059,8 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 Fast",
         "offline": false,
@@ -6480,7 +6513,8 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 19B Distilled",
         "offline": false,
@@ -7400,8 +7434,7 @@
           "high_resolution",
           "audio",
           "cinematic",
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "name": "Veo 3 Fast",
         "offline": false,
@@ -8099,6 +8132,38 @@
       "pricing": {
         "base_price_usd": 0.58
       }
+    },
+    {
+      "created": 1775174400,
+      "id": "topaz-video-upscale",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "video",
+          "aspect_ratios": [],
+          "resolutions": [
+            "2x",
+            "4x"
+          ],
+          "durations": [
+            "Auto"
+          ],
+          "audio": false,
+          "audio_configurable": false,
+          "audio_input": false,
+          "video_input": true
+        },
+        "model_sets": [
+          "high_resolution",
+          "ultra_high_resolution"
+        ],
+        "name": "Topaz Video Upscale",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video"
     }
   ],
   "other": [
