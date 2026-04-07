@@ -2334,6 +2334,68 @@
       "type": "text"
     },
     {
+      "created": 1775433600,
+      "id": "qwen-3-6-plus",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 0.625,
+            "diem": 0.625
+          },
+          "cache_input": {
+            "usd": 0.0625,
+            "diem": 0.0625
+          },
+          "cache_write": {
+            "usd": 0.78,
+            "diem": 0.78
+          },
+          "output": {
+            "usd": 3.75,
+            "diem": 3.75
+          }
+        },
+        "availableContextTokens": 1000000,
+        "maxCompletionTokens": 65536,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": true,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "constraints": {
+          "temperature": {
+            "default": 0.7
+          },
+          "top_p": {
+            "default": 0.8
+          }
+        },
+        "description": "Qwen 3.6 Plus is Alibaba's latest flagship reasoning model with exceptional performance across coding, reasoning, and general knowledge tasks. Features mixed reasoning, function calling, and multimodal input support.",
+        "name": "Qwen 3.6 Plus",
+        "modelSource": "",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
       "created": 1768521600,
       "id": "qwen3-vl-235b-a22b",
       "model_spec": {
@@ -5043,8 +5105,7 @@
           "audio",
           "long_duration",
           "photorealistic",
-          "venice_recommendations",
-          "fast"
+          "venice_recommendations"
         ],
         "name": "Grok Imagine",
         "offline": false,
@@ -5083,7 +5144,8 @@
           "audio",
           "long_duration",
           "photorealistic",
-          "venice_recommendations"
+          "venice_recommendations",
+          "fast"
         ],
         "name": "Grok Imagine",
         "offline": false,
@@ -5433,8 +5495,7 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.3 Fast",
         "offline": false,
@@ -6579,7 +6640,8 @@
           "high_resolution",
           "audio",
           "cinematic",
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Veo 3 Fast",
         "offline": false,
@@ -6614,8 +6676,7 @@
         "model_sets": [
           "audio",
           "cinematic",
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "name": "Veo 3 Fast",
         "offline": false,
@@ -7167,7 +7228,8 @@
         "model_sets": [
           "high_resolution",
           "audio",
-          "cinematic"
+          "cinematic",
+          "fast"
         ],
         "name": "PixVerse v5.6 Transition",
         "offline": false,
