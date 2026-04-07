@@ -51,52 +51,86 @@
         }
 
         @media (max-width: 768px) {
-            body { padding: 10px 4px; }
+            body { padding: 8px 4px; }
             .container { width: 100%; padding: 0; }
-            header { margin-bottom: 15px; text-align: center; gap: 4px; }
-            h1 { font-size: 1.4rem; }
-            .meta { font-size: 0.75rem; }
-            .controls { padding: 12px; gap: 12px; margin-bottom: 15px; border-radius: 8px; }
-            .main-controls { flex-direction: column; align-items: stretch; gap: 12px; }
+            header { margin-bottom: 12px; text-align: center; gap: 2px; }
+            h1 { font-size: 1.2rem; }
+            .meta { font-size: 0.7rem; }
+            
+            .controls { padding: 10px; gap: 10px; margin-bottom: 12px; border-radius: 6px; }
+            .main-controls { flex-direction: column; align-items: stretch; gap: 8px; }
             .tabs { width: 100%; display: flex; }
-            .tab-btn { padding: 8px 4px; font-size: 0.8rem; flex: 1; text-align: center; }
-            .search-box { max-width: none; }
-            .search-box input { padding: 10px 12px 10px 36px; font-size: 0.9rem; }
-            .ghost-btn { padding: 8px 10px; font-size: 0.75rem; }
+            .tab-btn { padding: 6px 2px; font-size: 0.75rem; flex: 1; text-align: center; }
+            .search-box input { padding: 8px 10px 8px 32px; font-size: 0.85rem; }
+            .ghost-btn { padding: 6px 8px; font-size: 0.7rem; }
             
-            .filter-bar { gap: 8px; }
-            .filter-group { gap: 6px; }
-            .filter-group-label { font-size: 0.6rem; min-width: 60px; padding-right: 4px; border-right: 1px solid var(--border-color); }
-            .filter-item { padding: 4px 10px; font-size: 0.75rem; }
-            .filter-segment-item { padding: 4px 10px; font-size: 0.75rem; }
+            .filter-group-label { display: none; }
+            .filter-item, .filter-segment-item { padding: 4px 8px; font-size: 0.7rem; }
+            .range-controls { border: none; padding-top: 5px; gap: 10px; }
+            .range-group select, .range-group input { font-size: 0.8rem; padding: 4px 8px; height: 32px; }
+
+            /* リスト形式への変換 */
+            .table-container { border: none; box-shadow: none; background: transparent; }
+            table, thead, tbody, th, td, tr { display: block; width: 100%; min-width: 0 !important; }
+            thead { display: none; }
             
-            .range-controls { gap: 15px; padding-top: 12px; }
-            .range-group select, .range-group input { min-width: 0; flex: 1; font-size: 0.85rem; padding: 6px 10px; }
+            tbody tr:not(.details-row) { 
+                background: var(--card-bg); 
+                margin-bottom: 10px; 
+                border-radius: 8px; 
+                border: 1px solid var(--border-color);
+                padding: 12px;
+                position: relative;
+                box-shadow: var(--shadow-sm);
+            }
             
-            .table-container { border-radius: 0; border-left: none; border-right: none; }
-            table { min-width: 500px; table-layout: auto; }
-            th, td { padding: 10px 6px; }
-            th { font-size: 0.6rem; }
+            td { 
+                padding: 0 !important; 
+                border: none !important; 
+                margin-bottom: 6px;
+            }
             
-            .col-model { width: 45%; }
-            .col-combined-price { width: 35%; }
-            .col-price { display: none; } /* Hide cache price on mobile */
-            .col-ctx { width: 20%; }
-            .col-caps { display: none; } /* Hide caps on mobile */
+            .model-name { 
+                font-size: 1.1rem; 
+                white-space: normal; 
+                word-break: break-all;
+                color: var(--primary);
+                margin-bottom: 4px;
+            }
+            .model-id { font-size: 0.65rem; margin-bottom: 6px; }
+            .model-description { font-size: 0.75rem; -webkit-line-clamp: 2; margin-bottom: 6px; }
+            .tag-row { gap: 4px; }
+            .cap-badge, .privacy-badge { font-size: 0.6rem; padding: 1px 4px; }
             
-            .model-name { font-size: 0.85rem; white-space: normal; line-height: 1.2; word-break: break-word; }
-            .model-id { font-size: 0.55rem; white-space: normal; }
-            .model-description { font-size: 0.75rem; -webkit-line-clamp: 1; max-width: 100%; }
-            .tag-row { gap: 2px; }
-            .cap-badge { font-size: 0.6rem; padding: 1px 4px; }
-            .privacy-badge { font-size: 0.55rem; padding: 1px 3px; }
-            
-            .price-bridge { min-width: 90px; gap: 4px; }
-            .price-bridge-avg-info { font-size: 0.75rem; font-weight: 700; }
+            /* 価格セクションを横並びに */
+            td:has(.price-bridge) { 
+                background: var(--bg-body);
+                padding: 8px !important;
+                border-radius: 6px;
+                margin-top: 8px;
+            }
+            .price-bridge { min-width: 0; width: 100%; padding: 0; gap: 4px; }
+            .price-bridge-avg-info { text-align: left; font-size: 0.9rem; flex: none; }
+            .price-value-group { flex-direction: row; gap: 4px; align-items: baseline; opacity: 0.7; }
             .price-value-num { font-size: 0.7rem; }
             .price-value-label { font-size: 0.5rem; }
-            .rel-bar-container { gap: 4px; }
-            .rel-bar-bg { height: 4px; }
+            
+            /* Ctxを右上に配置 */
+            td:has(.price-cell):not(:has(.price-bridge)) {
+                position: absolute;
+                top: 12px;
+                right: 12px;
+                background: var(--primary);
+                color: white;
+                padding: 2px 6px !important;
+                border-radius: 4px;
+                font-size: 0.7rem;
+                font-weight: 700;
+                width: auto;
+            }
+            
+            /* 不要なセクションを隠す */
+            .col-caps, td:has(.feature-tags) { display: none; }
         }
 
         * {
@@ -778,7 +812,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-04-07 17:28)</div>
+            <div class="meta">Generated from Live API Data (2026-04-07 23:28)</div>
         </header>
 
         <div class="controls">
@@ -6000,8 +6034,7 @@
           "audio",
           "long_duration",
           "photorealistic",
-          "venice_recommendations",
-          "fast"
+          "venice_recommendations"
         ],
         "name": "Grok Imagine",
         "offline": false,
@@ -6351,7 +6384,8 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.3 Fast",
         "offline": false,
@@ -6621,7 +6655,8 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 19B Distilled",
         "offline": false,
@@ -8083,8 +8118,7 @@
         "model_sets": [
           "high_resolution",
           "audio",
-          "cinematic",
-          "fast"
+          "cinematic"
         ],
         "name": "PixVerse v5.6 Transition",
         "offline": false,
