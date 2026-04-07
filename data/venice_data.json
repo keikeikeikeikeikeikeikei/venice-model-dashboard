@@ -1,29 +1,34 @@
 {
   "text": [
     {
-      "created": 1742262554,
-      "id": "venice-uncensored",
+      "created": 1775520000,
+      "id": "zai-org-glm-5-1",
       "model_spec": {
+        "betaModel": true,
         "pricing": {
           "input": {
-            "usd": 0.2,
-            "diem": 0.2
+            "usd": 1.75,
+            "diem": 1.75
+          },
+          "cache_input": {
+            "usd": 0.325,
+            "diem": 0.325
           },
           "output": {
-            "usd": 0.9,
-            "diem": 0.9
+            "usd": 5.5,
+            "diem": 5.5
           }
         },
-        "availableContextTokens": 32000,
-        "maxCompletionTokens": 8192,
+        "availableContextTokens": 200000,
+        "maxCompletionTokens": 24000,
         "capabilities": {
           "optimizedForCode": false,
-          "quantization": "fp16",
+          "quantization": "fp8",
           "supportsAudioInput": false,
-          "supportsFunctionCalling": false,
+          "supportsFunctionCalling": true,
           "supportsLogProbs": false,
           "supportsMultipleImages": false,
-          "supportsReasoning": false,
+          "supportsReasoning": true,
           "supportsReasoningEffort": false,
           "supportsResponseSchema": true,
           "supportsTeeAttestation": false,
@@ -33,59 +38,60 @@
           "supportsWebSearch": true,
           "supportsXSearch": false
         },
-        "deprecation": {
-          "date": "2026-04-15T00:00:00.000Z"
-        },
-        "description": "Designed for maximum creative freedom and authentic interaction. Ideal for open-ended exploration, roleplay, and unfiltered dialogue. Features minimal content restrictions.",
-        "name": "Venice Uncensored 1.1",
-        "modelSource": "https://huggingface.co/cognitivecomputations/Dolphin-Mistral-24B-Venice-Edition",
+        "description": "GLM-5.1 is the next-generation large language model developed by Zhiyuan AI, featuring significantly enhanced reasoning capabilities, improved instruction following, and support for multiple languages. Supports large context windows for processing extensive text and detailed analysis with fast inference speed.",
+        "name": "GLM 5.1",
+        "modelSource": "https://huggingface.co/zai-org/GLM-5.1",
         "offline": false,
         "privacy": "private",
-        "traits": [
-          "most_uncensored"
-        ]
+        "traits": []
       },
       "object": "model",
       "owned_by": "venice.ai",
       "type": "text"
     },
     {
-      "created": 1771545600,
-      "id": "venice-uncensored-role-play",
+      "created": 1770768000,
+      "id": "zai-org-glm-5",
       "model_spec": {
         "pricing": {
           "input": {
-            "usd": 0.5,
-            "diem": 0.5
+            "usd": 1,
+            "diem": 1
+          },
+          "cache_input": {
+            "usd": 0.2,
+            "diem": 0.2
           },
           "output": {
-            "usd": 2,
-            "diem": 2
+            "usd": 3.2,
+            "diem": 3.2
           }
         },
-        "availableContextTokens": 128000,
-        "maxCompletionTokens": 4096,
+        "model_sets": [
+          "venice_recommendations"
+        ],
+        "availableContextTokens": 198000,
+        "maxCompletionTokens": 32000,
         "capabilities": {
-          "optimizedForCode": false,
+          "optimizedForCode": true,
           "quantization": "fp8",
           "supportsAudioInput": false,
           "supportsFunctionCalling": true,
           "supportsLogProbs": false,
-          "supportsMultipleImages": true,
-          "maxImages": 10,
-          "supportsReasoning": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": true,
           "supportsReasoningEffort": false,
           "supportsResponseSchema": true,
           "supportsTeeAttestation": false,
           "supportsE2EE": false,
           "supportsVideoInput": false,
-          "supportsVision": true,
+          "supportsVision": false,
           "supportsWebSearch": true,
           "supportsXSearch": false
         },
-        "description": "Optimized for creative roleplay scenarios with maximum freedom. Designed for immersive storytelling, character interactions, and open-ended creative writing.",
-        "name": "Venice Role Play Uncensored",
-        "modelSource": "https://huggingface.co/dphnAI/24B-3.2-RP-K2-final",
+        "description": "GLM-5 is the next-generation large language model developed by Zhiyuan AI, featuring significantly enhanced reasoning capabilities, improved instruction following, and support for multiple languages. Supports large context windows for processing extensive text and detailed analysis.",
+        "name": "GLM 5",
+        "modelSource": "https://huggingface.co/zai-org/GLM-5",
         "offline": false,
         "privacy": "private",
         "traits": []
@@ -177,57 +183,6 @@
         "description": "GLM-4.7-Flash is a fast inference variant of GLM-4.7, optimized for speed while maintaining strong reasoning capabilities. Ideal for applications requiring quick responses with good quality.",
         "name": "GLM 4.7 Flash",
         "modelSource": "https://huggingface.co/zai-org/GLM-4.7-Flash",
-        "offline": false,
-        "privacy": "private",
-        "traits": []
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "text"
-    },
-    {
-      "created": 1770768000,
-      "id": "zai-org-glm-5",
-      "model_spec": {
-        "pricing": {
-          "input": {
-            "usd": 1,
-            "diem": 1
-          },
-          "cache_input": {
-            "usd": 0.2,
-            "diem": 0.2
-          },
-          "output": {
-            "usd": 3.2,
-            "diem": 3.2
-          }
-        },
-        "model_sets": [
-          "venice_recommendations"
-        ],
-        "availableContextTokens": 198000,
-        "maxCompletionTokens": 32000,
-        "capabilities": {
-          "optimizedForCode": true,
-          "quantization": "fp8",
-          "supportsAudioInput": false,
-          "supportsFunctionCalling": true,
-          "supportsLogProbs": false,
-          "supportsMultipleImages": false,
-          "supportsReasoning": true,
-          "supportsReasoningEffort": false,
-          "supportsResponseSchema": true,
-          "supportsTeeAttestation": false,
-          "supportsE2EE": false,
-          "supportsVideoInput": false,
-          "supportsVision": false,
-          "supportsWebSearch": true,
-          "supportsXSearch": false
-        },
-        "description": "GLM-5 is the next-generation large language model developed by Zhiyuan AI, featuring significantly enhanced reasoning capabilities, improved instruction following, and support for multiple languages. Supports large context windows for processing extensive text and detailed analysis.",
-        "name": "GLM 5",
-        "modelSource": "https://huggingface.co/zai-org/GLM-5",
         "offline": false,
         "privacy": "private",
         "traits": []
@@ -337,6 +292,162 @@
       "type": "text"
     },
     {
+      "created": 1742262554,
+      "id": "venice-uncensored",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.2,
+            "diem": 0.2
+          },
+          "output": {
+            "usd": 0.9,
+            "diem": 0.9
+          }
+        },
+        "availableContextTokens": 32000,
+        "maxCompletionTokens": 8192,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "fp16",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": false,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": false,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "deprecation": {
+          "date": "2026-04-15T00:00:00.000Z"
+        },
+        "description": "Designed for maximum creative freedom and authentic interaction. Ideal for open-ended exploration, roleplay, and unfiltered dialogue. Features minimal content restrictions.",
+        "name": "Venice Uncensored 1.1",
+        "modelSource": "https://huggingface.co/cognitivecomputations/Dolphin-Mistral-24B-Venice-Edition",
+        "offline": false,
+        "privacy": "private",
+        "traits": [
+          "most_uncensored"
+        ]
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1771545600,
+      "id": "venice-uncensored-role-play",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.5,
+            "diem": 0.5
+          },
+          "output": {
+            "usd": 2,
+            "diem": 2
+          }
+        },
+        "availableContextTokens": 128000,
+        "maxCompletionTokens": 4096,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "fp8",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "supportsReasoning": false,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Optimized for creative roleplay scenarios with maximum freedom. Designed for immersive storytelling, character interactions, and open-ended creative writing.",
+        "name": "Venice Role Play Uncensored",
+        "modelSource": "https://huggingface.co/dphnAI/24B-3.2-RP-K2-final",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1775433600,
+      "id": "qwen-3-6-plus",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 0.625,
+            "diem": 0.625
+          },
+          "cache_input": {
+            "usd": 0.0625,
+            "diem": 0.0625
+          },
+          "cache_write": {
+            "usd": 0.78,
+            "diem": 0.78
+          },
+          "output": {
+            "usd": 3.75,
+            "diem": 3.75
+          }
+        },
+        "availableContextTokens": 1000000,
+        "maxCompletionTokens": 65536,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": true,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "constraints": {
+          "temperature": {
+            "default": 0.7
+          },
+          "top_p": {
+            "default": 0.8
+          }
+        },
+        "description": "Qwen 3.6 Plus is Alibaba's latest flagship reasoning model with exceptional performance across coding, reasoning, and general knowledge tasks. Features mixed reasoning, function calling, and multimodal input support.",
+        "name": "Qwen 3.6 Plus",
+        "modelSource": "",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
       "created": 1772668800,
       "id": "qwen3-5-9b",
       "model_spec": {
@@ -382,41 +493,58 @@
       "type": "text"
     },
     {
-      "created": 1768435200,
-      "id": "mistral-small-3-2-24b-instruct",
+      "created": 1771977600,
+      "id": "qwen3-5-35b-a3b",
       "model_spec": {
+        "betaModel": true,
         "pricing": {
           "input": {
-            "usd": 0.09375,
-            "diem": 0.09375
+            "usd": 0.3125,
+            "diem": 0.3125
+          },
+          "cache_input": {
+            "usd": 0.15625,
+            "diem": 0.15625
           },
           "output": {
-            "usd": 0.25,
-            "diem": 0.25
+            "usd": 1.25,
+            "diem": 1.25
           }
         },
         "availableContextTokens": 256000,
-        "maxCompletionTokens": 16384,
+        "maxCompletionTokens": 65536,
         "capabilities": {
-          "optimizedForCode": false,
-          "quantization": "fp8",
+          "optimizedForCode": true,
+          "quantization": "not-available",
           "supportsAudioInput": false,
           "supportsFunctionCalling": true,
-          "supportsLogProbs": false,
-          "supportsMultipleImages": false,
-          "supportsReasoning": false,
+          "supportsLogProbs": true,
+          "supportsMultipleImages": true,
+          "maxImages": 5,
+          "supportsReasoning": true,
           "supportsReasoningEffort": false,
           "supportsResponseSchema": true,
           "supportsTeeAttestation": false,
           "supportsE2EE": false,
-          "supportsVideoInput": false,
-          "supportsVision": false,
+          "supportsVideoInput": true,
+          "supportsVision": true,
           "supportsWebSearch": true,
           "supportsXSearch": false
         },
-        "description": "Mistral Small 3.2 is a 24B parameter model optimized for efficiency and performance. Ideal for general-purpose tasks with balanced speed and capability.",
-        "name": "Mistral Small 3.2 24B Instruct",
-        "modelSource": "https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+        "constraints": {
+          "temperature": {
+            "default": 1
+          },
+          "top_p": {
+            "default": 0.95
+          },
+          "repetition_penalty": {
+            "default": 1
+          }
+        },
+        "description": "Qwen 3.5 35B A3B is a highly efficient MoE model with 35B total parameters and only 3B active parameters. It surpasses the larger Qwen3-235B-A22B while being 6.7x smaller, excelling at reasoning, coding, and general knowledge tasks.",
+        "name": "Qwen 3.5 35B A3B",
+        "modelSource": "",
         "offline": false,
         "privacy": "private",
         "traits": []
@@ -606,64 +734,20 @@
       "type": "text"
     },
     {
-      "created": 1758758400,
-      "id": "hermes-3-llama-3.1-405b",
+      "created": 1768521600,
+      "id": "qwen3-vl-235b-a22b",
       "model_spec": {
         "pricing": {
           "input": {
-            "usd": 1.1,
-            "diem": 1.1
+            "usd": 0.25,
+            "diem": 0.25
           },
           "output": {
-            "usd": 3,
-            "diem": 3
+            "usd": 1.5,
+            "diem": 1.5
           }
         },
-        "availableContextTokens": 128000,
-        "maxCompletionTokens": 16384,
-        "capabilities": {
-          "optimizedForCode": false,
-          "quantization": "fp8",
-          "supportsAudioInput": false,
-          "supportsFunctionCalling": false,
-          "supportsLogProbs": false,
-          "supportsMultipleImages": false,
-          "supportsReasoning": false,
-          "supportsReasoningEffort": false,
-          "supportsResponseSchema": false,
-          "supportsTeeAttestation": false,
-          "supportsE2EE": false,
-          "supportsVideoInput": false,
-          "supportsVision": false,
-          "supportsWebSearch": true,
-          "supportsXSearch": false
-        },
-        "description": "Hermes 3 405B is a frontier level, full parameter finetune of the Llama-3.1 405B foundation model, focused on aligning LLMs to the user, with powerful steering capabilities and control given to the end user.",
-        "name": "Hermes 3 Llama 3.1 405b",
-        "modelSource": "https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-405B",
-        "offline": false,
-        "privacy": "private",
-        "traits": []
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "text"
-    },
-    {
-      "created": 1762214400,
-      "id": "google-gemma-3-27b-it",
-      "model_spec": {
-        "pricing": {
-          "input": {
-            "usd": 0.12,
-            "diem": 0.12
-          },
-          "output": {
-            "usd": 0.2,
-            "diem": 0.2
-          }
-        },
-        "availableContextTokens": 198000,
+        "availableContextTokens": 256000,
         "maxCompletionTokens": 16384,
         "capabilities": {
           "optimizedForCode": false,
@@ -683,9 +767,60 @@
           "supportsWebSearch": true,
           "supportsXSearch": false
         },
-        "description": "Gemma 3 introduces multimodality, supporting vision-language input and text outputs. It handles context windows up to 128k tokens, understands over 140 languages, and offers improved math, reasoning, and chat capabilities, including structured outputs and function calling. Gemma 3 27B is Google's latest open source model, successor to Gemma 2.",
-        "name": "Google Gemma 3 27B Instruct",
-        "modelSource": "https://huggingface.co/google/gemma-3-27b-it",
+        "description": "Qwen3-VL 235B vision-language model with MoE architecture. The most powerful VL model in the Qwen series with superior visual perception, OCR, and multimodal reasoning.",
+        "name": "Qwen3 VL 235B",
+        "modelSource": "https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct",
+        "offline": false,
+        "privacy": "private",
+        "traits": [
+          "default_vision"
+        ]
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1769472000,
+      "id": "qwen3-coder-480b-a35b-instruct-turbo",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 0.35,
+            "diem": 0.35
+          },
+          "cache_input": {
+            "usd": 0.04,
+            "diem": 0.04
+          },
+          "output": {
+            "usd": 1.5,
+            "diem": 1.5
+          }
+        },
+        "availableContextTokens": 256000,
+        "maxCompletionTokens": 65536,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "fp8",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": true,
+          "supportsMultipleImages": false,
+          "supportsReasoning": false,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Turbo variant of Qwen3 Coder 480B, optimized for faster inference on code tasks.",
+        "name": "Qwen 3 Coder 480B Turbo",
+        "modelSource": "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct-Turbo",
         "offline": false,
         "privacy": "private",
         "traits": []
@@ -776,6 +911,99 @@
         "description": "Gemma 4 31B is a dense model from Google DeepMind with 31B parameters, delivering frontier-level reasoning performance. It handles text, image, and video input, supports 256K context, function calling, and configurable thinking modes.",
         "name": "Google Gemma 4 31B Instruct",
         "modelSource": "https://huggingface.co/google/gemma-4-31B-it",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1762214400,
+      "id": "google-gemma-3-27b-it",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.12,
+            "diem": 0.12
+          },
+          "output": {
+            "usd": 0.2,
+            "diem": 0.2
+          }
+        },
+        "availableContextTokens": 198000,
+        "maxCompletionTokens": 16384,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "fp8",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "supportsReasoning": false,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Gemma 3 introduces multimodality, supporting vision-language input and text outputs. It handles context windows up to 128k tokens, understands over 140 languages, and offers improved math, reasoning, and chat capabilities, including structured outputs and function calling. Gemma 3 27B is Google's latest open source model, successor to Gemma 2.",
+        "name": "Google Gemma 3 27B Instruct",
+        "modelSource": "https://huggingface.co/google/gemma-3-27b-it",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1775088000,
+      "id": "arcee-trinity-large-thinking",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.3125,
+            "diem": 0.3125
+          },
+          "cache_input": {
+            "usd": 0.075,
+            "diem": 0.075
+          },
+          "output": {
+            "usd": 1.125,
+            "diem": 1.125
+          }
+        },
+        "availableContextTokens": 256000,
+        "maxCompletionTokens": 65536,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "fp8",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": true,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Trinity Large Thinking is a reasoning-optimized variant of Arcee AI's Trinity-Large family, a 398B-parameter sparse Mixture-of-Experts model with approximately 13B active parameters per token, post-trained with extended chain-of-thought reasoning and agentic RL. It supports tool calling, multilingual input, and 256K context windows.",
+        "name": "Trinity Large Thinking",
+        "modelSource": "https://huggingface.co/arcee-ai/Trinity-Large-Thinking-FP8-Block",
         "offline": false,
         "privacy": "private",
         "traits": []
@@ -960,6 +1188,142 @@
         "modelSource": "",
         "offline": false,
         "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1764547200,
+      "id": "grok-code-fast-1",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.25,
+            "diem": 0.25
+          },
+          "cache_input": {
+            "usd": 0.03,
+            "diem": 0.03
+          },
+          "output": {
+            "usd": 1.87,
+            "diem": 1.87
+          }
+        },
+        "availableContextTokens": 256000,
+        "maxCompletionTokens": 10000,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": true,
+          "supportsMultipleImages": false,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": true,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Grok Code Fast 1 is a speedy and economical reasoning model that excels at agentic coding",
+        "name": "Grok Code Fast 1",
+        "modelSource": "",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1768435200,
+      "id": "mistral-small-3-2-24b-instruct",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.09375,
+            "diem": 0.09375
+          },
+          "output": {
+            "usd": 0.25,
+            "diem": 0.25
+          }
+        },
+        "availableContextTokens": 256000,
+        "maxCompletionTokens": 16384,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "fp8",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": false,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Mistral Small 3.2 is a 24B parameter model optimized for efficiency and performance. Ideal for general-purpose tasks with balanced speed and capability.",
+        "name": "Mistral Small 3.2 24B Instruct",
+        "modelSource": "https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1758758400,
+      "id": "hermes-3-llama-3.1-405b",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 1.1,
+            "diem": 1.1
+          },
+          "output": {
+            "usd": 3,
+            "diem": 3
+          }
+        },
+        "availableContextTokens": 128000,
+        "maxCompletionTokens": 16384,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "fp8",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": false,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": false,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": false,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Hermes 3 405B is a frontier level, full parameter finetune of the Llama-3.1 405B foundation model, focused on aligning LLMs to the user, with powerful steering capabilities and control given to the end user.",
+        "name": "Hermes 3 Llama 3.1 405b",
+        "modelSource": "https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-405B",
+        "offline": false,
+        "privacy": "private",
         "traits": []
       },
       "object": "model",
@@ -1388,54 +1752,6 @@
         "description": "Kimi K2 Thinking is Moonshot AIs most advanced open reasoning model to date, extending the K2 series into agentic, long-horizon reasoning. Built on the trillion-parameter Mixture-of-Experts (MoE) architecture introduced in Kimi K2, it activates 32 billion parameters per forward pass and supports 256 k-token context windows.",
         "name": "Kimi K2 Thinking",
         "modelSource": "https://huggingface.co/moonshotai/Kimi-K2-Thinking",
-        "offline": false,
-        "privacy": "private",
-        "traits": []
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "text"
-    },
-    {
-      "created": 1775088000,
-      "id": "arcee-trinity-large-thinking",
-      "model_spec": {
-        "pricing": {
-          "input": {
-            "usd": 0.3125,
-            "diem": 0.3125
-          },
-          "cache_input": {
-            "usd": 0.075,
-            "diem": 0.075
-          },
-          "output": {
-            "usd": 1.125,
-            "diem": 1.125
-          }
-        },
-        "availableContextTokens": 256000,
-        "maxCompletionTokens": 65536,
-        "capabilities": {
-          "optimizedForCode": true,
-          "quantization": "fp8",
-          "supportsAudioInput": false,
-          "supportsFunctionCalling": true,
-          "supportsLogProbs": false,
-          "supportsMultipleImages": false,
-          "supportsReasoning": true,
-          "supportsReasoningEffort": true,
-          "supportsResponseSchema": true,
-          "supportsTeeAttestation": false,
-          "supportsE2EE": false,
-          "supportsVideoInput": false,
-          "supportsVision": false,
-          "supportsWebSearch": true,
-          "supportsXSearch": false
-        },
-        "description": "Trinity Large Thinking is a reasoning-optimized variant of Arcee AI's Trinity-Large family, a 398B-parameter sparse Mixture-of-Experts model with approximately 13B active parameters per token, post-trained with extended chain-of-thought reasoning and agentic RL. It supports tool calling, multilingual input, and 256K context windows.",
-        "name": "Trinity Large Thinking",
-        "modelSource": "https://huggingface.co/arcee-ai/Trinity-Large-Thinking-FP8-Block",
         "offline": false,
         "privacy": "private",
         "traits": []
@@ -2218,273 +2534,6 @@
         "name": "MiniMax M2.7",
         "offline": false,
         "privacy": "anonymized",
-        "traits": []
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "text"
-    },
-    {
-      "created": 1764547200,
-      "id": "grok-code-fast-1",
-      "model_spec": {
-        "pricing": {
-          "input": {
-            "usd": 0.25,
-            "diem": 0.25
-          },
-          "cache_input": {
-            "usd": 0.03,
-            "diem": 0.03
-          },
-          "output": {
-            "usd": 1.87,
-            "diem": 1.87
-          }
-        },
-        "availableContextTokens": 256000,
-        "maxCompletionTokens": 10000,
-        "capabilities": {
-          "optimizedForCode": true,
-          "quantization": "not-available",
-          "supportsAudioInput": false,
-          "supportsFunctionCalling": true,
-          "supportsLogProbs": true,
-          "supportsMultipleImages": false,
-          "supportsReasoning": true,
-          "supportsReasoningEffort": true,
-          "supportsResponseSchema": true,
-          "supportsTeeAttestation": false,
-          "supportsE2EE": false,
-          "supportsVideoInput": false,
-          "supportsVision": false,
-          "supportsWebSearch": true,
-          "supportsXSearch": false
-        },
-        "description": "Grok Code Fast 1 is a speedy and economical reasoning model that excels at agentic coding",
-        "name": "Grok Code Fast 1",
-        "modelSource": "",
-        "offline": false,
-        "privacy": "anonymized",
-        "traits": []
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "text"
-    },
-    {
-      "created": 1771977600,
-      "id": "qwen3-5-35b-a3b",
-      "model_spec": {
-        "betaModel": true,
-        "pricing": {
-          "input": {
-            "usd": 0.3125,
-            "diem": 0.3125
-          },
-          "cache_input": {
-            "usd": 0.15625,
-            "diem": 0.15625
-          },
-          "output": {
-            "usd": 1.25,
-            "diem": 1.25
-          }
-        },
-        "availableContextTokens": 256000,
-        "maxCompletionTokens": 65536,
-        "capabilities": {
-          "optimizedForCode": true,
-          "quantization": "not-available",
-          "supportsAudioInput": false,
-          "supportsFunctionCalling": true,
-          "supportsLogProbs": true,
-          "supportsMultipleImages": true,
-          "maxImages": 5,
-          "supportsReasoning": true,
-          "supportsReasoningEffort": false,
-          "supportsResponseSchema": true,
-          "supportsTeeAttestation": false,
-          "supportsE2EE": false,
-          "supportsVideoInput": true,
-          "supportsVision": true,
-          "supportsWebSearch": true,
-          "supportsXSearch": false
-        },
-        "constraints": {
-          "temperature": {
-            "default": 1
-          },
-          "top_p": {
-            "default": 0.95
-          },
-          "repetition_penalty": {
-            "default": 1
-          }
-        },
-        "description": "Qwen 3.5 35B A3B is a highly efficient MoE model with 35B total parameters and only 3B active parameters. It surpasses the larger Qwen3-235B-A22B while being 6.7x smaller, excelling at reasoning, coding, and general knowledge tasks.",
-        "name": "Qwen 3.5 35B A3B",
-        "modelSource": "",
-        "offline": false,
-        "privacy": "private",
-        "traits": []
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "text"
-    },
-    {
-      "created": 1775433600,
-      "id": "qwen-3-6-plus",
-      "model_spec": {
-        "betaModel": true,
-        "pricing": {
-          "input": {
-            "usd": 0.625,
-            "diem": 0.625
-          },
-          "cache_input": {
-            "usd": 0.0625,
-            "diem": 0.0625
-          },
-          "cache_write": {
-            "usd": 0.78,
-            "diem": 0.78
-          },
-          "output": {
-            "usd": 3.75,
-            "diem": 3.75
-          }
-        },
-        "availableContextTokens": 1000000,
-        "maxCompletionTokens": 65536,
-        "capabilities": {
-          "optimizedForCode": true,
-          "quantization": "not-available",
-          "supportsAudioInput": false,
-          "supportsFunctionCalling": true,
-          "supportsLogProbs": false,
-          "supportsMultipleImages": true,
-          "maxImages": 10,
-          "supportsReasoning": true,
-          "supportsReasoningEffort": false,
-          "supportsResponseSchema": true,
-          "supportsTeeAttestation": false,
-          "supportsE2EE": false,
-          "supportsVideoInput": true,
-          "supportsVision": true,
-          "supportsWebSearch": true,
-          "supportsXSearch": false
-        },
-        "constraints": {
-          "temperature": {
-            "default": 0.7
-          },
-          "top_p": {
-            "default": 0.8
-          }
-        },
-        "description": "Qwen 3.6 Plus is Alibaba's latest flagship reasoning model with exceptional performance across coding, reasoning, and general knowledge tasks. Features mixed reasoning, function calling, and multimodal input support.",
-        "name": "Qwen 3.6 Plus",
-        "modelSource": "",
-        "offline": false,
-        "privacy": "anonymized",
-        "traits": []
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "text"
-    },
-    {
-      "created": 1768521600,
-      "id": "qwen3-vl-235b-a22b",
-      "model_spec": {
-        "pricing": {
-          "input": {
-            "usd": 0.25,
-            "diem": 0.25
-          },
-          "output": {
-            "usd": 1.5,
-            "diem": 1.5
-          }
-        },
-        "availableContextTokens": 256000,
-        "maxCompletionTokens": 16384,
-        "capabilities": {
-          "optimizedForCode": false,
-          "quantization": "fp8",
-          "supportsAudioInput": false,
-          "supportsFunctionCalling": true,
-          "supportsLogProbs": false,
-          "supportsMultipleImages": true,
-          "maxImages": 10,
-          "supportsReasoning": false,
-          "supportsReasoningEffort": false,
-          "supportsResponseSchema": true,
-          "supportsTeeAttestation": false,
-          "supportsE2EE": false,
-          "supportsVideoInput": false,
-          "supportsVision": true,
-          "supportsWebSearch": true,
-          "supportsXSearch": false
-        },
-        "description": "Qwen3-VL 235B vision-language model with MoE architecture. The most powerful VL model in the Qwen series with superior visual perception, OCR, and multimodal reasoning.",
-        "name": "Qwen3 VL 235B",
-        "modelSource": "https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct",
-        "offline": false,
-        "privacy": "private",
-        "traits": [
-          "default_vision"
-        ]
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "text"
-    },
-    {
-      "created": 1769472000,
-      "id": "qwen3-coder-480b-a35b-instruct-turbo",
-      "model_spec": {
-        "betaModel": true,
-        "pricing": {
-          "input": {
-            "usd": 0.35,
-            "diem": 0.35
-          },
-          "cache_input": {
-            "usd": 0.04,
-            "diem": 0.04
-          },
-          "output": {
-            "usd": 1.5,
-            "diem": 1.5
-          }
-        },
-        "availableContextTokens": 256000,
-        "maxCompletionTokens": 65536,
-        "capabilities": {
-          "optimizedForCode": true,
-          "quantization": "fp8",
-          "supportsAudioInput": false,
-          "supportsFunctionCalling": true,
-          "supportsLogProbs": true,
-          "supportsMultipleImages": false,
-          "supportsReasoning": false,
-          "supportsReasoningEffort": false,
-          "supportsResponseSchema": true,
-          "supportsTeeAttestation": false,
-          "supportsE2EE": false,
-          "supportsVideoInput": false,
-          "supportsVision": false,
-          "supportsWebSearch": true,
-          "supportsXSearch": false
-        },
-        "description": "Turbo variant of Qwen3 Coder 480B, optimized for faster inference on code tasks.",
-        "name": "Qwen 3 Coder 480B Turbo",
-        "modelSource": "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct-Turbo",
-        "offline": false,
-        "privacy": "private",
         "traits": []
       },
       "object": "model",
@@ -5495,8 +5544,7 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.3 Fast",
         "offline": false,
@@ -5720,7 +5768,8 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 19B Distilled",
         "offline": false,
@@ -5766,8 +5815,7 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.0 19B Distilled",
         "offline": false,
@@ -6142,7 +6190,8 @@
           "cinematic",
           "audio",
           "photorealistic",
-          "long_duration"
+          "long_duration",
+          "fast"
         ],
         "name": "Kling O3 Standard",
         "offline": false,
@@ -6385,8 +6434,7 @@
           "cinematic",
           "audio",
           "photorealistic",
-          "long_duration",
-          "fast"
+          "long_duration"
         ],
         "name": "Kling V3 Standard",
         "offline": false,
@@ -6677,7 +6725,8 @@
         "model_sets": [
           "audio",
           "cinematic",
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Veo 3 Fast",
         "offline": false,
