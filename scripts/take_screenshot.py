@@ -5,7 +5,7 @@ from playwright.async_api import async_playwright
 async def run():
     async with async_playwright() as p:
         browser = await p.chromium.launch()
-        page = await browser.new_page(viewport={"width": 1280, "height": 800})
+        page = await browser.new_page(viewport={"width": 390, "height": 844})
         
         # Determine paths
         script_dir = os.path.dirname(os.path.abspath(__file__))
