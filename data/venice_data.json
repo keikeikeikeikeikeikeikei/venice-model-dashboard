@@ -1509,6 +1509,60 @@
       "type": "text"
     },
     {
+      "created": 1775606400,
+      "id": "claude-opus-4-6-fast",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 36,
+            "diem": 36
+          },
+          "cache_input": {
+            "usd": 3.6,
+            "diem": 3.6
+          },
+          "cache_write": {
+            "usd": 45,
+            "diem": 45
+          },
+          "output": {
+            "usd": 180,
+            "diem": 180
+          }
+        },
+        "availableContextTokens": 1000000,
+        "maxCompletionTokens": 128000,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": true,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Claude Opus 4.6 (Fast) is a speed-optimized variant of Anthropic's most capable reasoning model, offering the same 1M token context window and strong performance across complex software engineering, agentic workflows, and long-horizon tasks — with lower latency via OpenRouter's optimized routing.",
+        "name": "Claude Opus 4.6 Fast",
+        "modelSource": "",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
       "created": 1764979200,
       "id": "claude-opus-4-5",
       "model_spec": {
@@ -1748,6 +1802,9 @@
           "supportsVision": false,
           "supportsWebSearch": true,
           "supportsXSearch": false
+        },
+        "deprecation": {
+          "date": "2026-05-06T00:00:00.000Z"
         },
         "description": "Kimi K2 Thinking is Moonshot AIs most advanced open reasoning model to date, extending the K2 series into agentic, long-horizon reasoning. Built on the trillion-parameter Mixture-of-Experts (MoE) architecture introduced in Kimi K2, it activates 32 billion parameters per forward pass and supports 256 k-token context windows.",
         "name": "Kimi K2 Thinking",
@@ -5154,8 +5211,7 @@
           "audio",
           "long_duration",
           "photorealistic",
-          "venice_recommendations",
-          "fast"
+          "venice_recommendations"
         ],
         "name": "Grok Imagine",
         "offline": false,
@@ -5315,8 +5371,7 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.0 Fast",
         "offline": false,
@@ -5544,7 +5599,8 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.3 Fast",
         "offline": false,
@@ -5768,8 +5824,7 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.0 19B Distilled",
         "offline": false,
@@ -6190,8 +6245,7 @@
           "cinematic",
           "audio",
           "photorealistic",
-          "long_duration",
-          "fast"
+          "long_duration"
         ],
         "name": "Kling O3 Standard",
         "offline": false,
@@ -7194,7 +7248,8 @@
         "model_sets": [
           "high_resolution",
           "audio",
-          "cinematic"
+          "cinematic",
+          "fast"
         ],
         "name": "PixVerse v5.6",
         "offline": false,
@@ -7233,7 +7288,8 @@
         "model_sets": [
           "high_resolution",
           "audio",
-          "cinematic"
+          "cinematic",
+          "fast"
         ],
         "name": "PixVerse v5.6",
         "offline": false,
@@ -7278,7 +7334,8 @@
         "model_sets": [
           "high_resolution",
           "audio",
-          "cinematic"
+          "cinematic",
+          "fast"
         ],
         "name": "PixVerse v5.6 Transition",
         "offline": false,
