@@ -4238,7 +4238,7 @@
       "type": "image"
     },
     {
-      "created": 1769644800,
+      "created": 1775692800,
       "id": "grok-imagine-image",
       "model_spec": {
         "pricing": {
@@ -4291,7 +4291,7 @@
           "widthHeightDivisor": 1
         },
         "supportsWebSearch": false,
-        "name": "Grok Imagine",
+        "name": "Grok Imagine (SOTA)",
         "offline": false,
         "privacy": "private",
         "traits": []
@@ -4354,7 +4354,7 @@
           "widthHeightDivisor": 1
         },
         "supportsWebSearch": false,
-        "name": "Grok Imagine Pro",
+        "name": "Grok Imagine Pro (20260207)",
         "offline": false,
         "privacy": "private",
         "traits": []
@@ -4813,9 +4813,6 @@
       "id": "seedance-2-0-text-to-video",
       "model_spec": {
         "privacy": "anonymized",
-        "regionRestrictions": [
-          "US"
-        ],
         "constraints": {
           "model_type": "text-to-video",
           "aspect_ratios": [
@@ -4855,16 +4852,16 @@
       },
       "object": "model",
       "owned_by": "venice.ai",
-      "type": "video"
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.33
+      }
     },
     {
       "created": 1774915200,
       "id": "seedance-2-0-image-to-video",
       "model_spec": {
         "privacy": "anonymized",
-        "regionRestrictions": [
-          "US"
-        ],
         "constraints": {
           "model_type": "image-to-video",
           "aspect_ratios": [],
@@ -4897,16 +4894,16 @@
       },
       "object": "model",
       "owned_by": "venice.ai",
-      "type": "video"
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.34
+      }
     },
     {
       "created": 1774915200,
       "id": "seedance-2-0-reference-to-video",
       "model_spec": {
         "privacy": "anonymized",
-        "regionRestrictions": [
-          "US"
-        ],
         "constraints": {
           "model_type": "image-to-video",
           "aspect_ratios": [
@@ -4946,16 +4943,16 @@
       },
       "object": "model",
       "owned_by": "venice.ai",
-      "type": "video"
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.33
+      }
     },
     {
       "created": 1775001600,
       "id": "seedance-2-0-fast-text-to-video",
       "model_spec": {
         "privacy": "anonymized",
-        "regionRestrictions": [
-          "US"
-        ],
         "constraints": {
           "model_type": "text-to-video",
           "aspect_ratios": [
@@ -4995,16 +4992,16 @@
       },
       "object": "model",
       "owned_by": "venice.ai",
-      "type": "video"
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.26
+      }
     },
     {
       "created": 1775001600,
       "id": "seedance-2-0-fast-image-to-video",
       "model_spec": {
         "privacy": "anonymized",
-        "regionRestrictions": [
-          "US"
-        ],
         "constraints": {
           "model_type": "image-to-video",
           "aspect_ratios": [],
@@ -5037,16 +5034,16 @@
       },
       "object": "model",
       "owned_by": "venice.ai",
-      "type": "video"
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.27
+      }
     },
     {
       "created": 1775001600,
       "id": "seedance-2-0-fast-reference-to-video",
       "model_spec": {
         "privacy": "anonymized",
-        "regionRestrictions": [
-          "US"
-        ],
         "constraints": {
           "model_type": "image-to-video",
           "aspect_ratios": [
@@ -5086,7 +5083,10 @@
       },
       "object": "model",
       "owned_by": "venice.ai",
-      "type": "video"
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.26
+      }
     },
     {
       "created": 1775088000,
@@ -5663,7 +5663,8 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 Fast",
         "offline": false,
@@ -5710,8 +5711,7 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.0 Fast",
         "offline": false,
@@ -7114,7 +7114,8 @@
           "high_resolution",
           "audio",
           "cinematic",
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Veo 3 Full Quality",
         "offline": false,
@@ -7579,8 +7580,7 @@
         "model_sets": [
           "high_resolution",
           "audio",
-          "cinematic",
-          "fast"
+          "cinematic"
         ],
         "name": "PixVerse v5.6",
         "offline": false,
