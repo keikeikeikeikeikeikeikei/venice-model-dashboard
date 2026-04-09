@@ -812,7 +812,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-04-09 05:46)</div>
+            <div class="meta">Generated from Live API Data (2026-04-09 11:54)</div>
         </header>
 
         <div class="controls">
@@ -983,6 +983,104 @@
         "modelSource": "https://huggingface.co/zai-org/GLM-5",
         "offline": false,
         "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1773532800,
+      "id": "z-ai-glm-5-turbo",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 1.2,
+            "diem": 1.2
+          },
+          "cache_input": {
+            "usd": 0.24,
+            "diem": 0.24
+          },
+          "output": {
+            "usd": 4,
+            "diem": 4
+          }
+        },
+        "availableContextTokens": 200000,
+        "maxCompletionTokens": 32768,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": true,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "GLM-5 Turbo is a fast inference model from Z.ai tuned for strong performance in agent-driven environments and production coding workflows.",
+        "name": "GLM 5 Turbo",
+        "modelSource": "https://huggingface.co/zai-org/GLM-5",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1775001600,
+      "id": "z-ai-glm-5v-turbo",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 1.5,
+            "diem": 1.5
+          },
+          "cache_input": {
+            "usd": 0.3,
+            "diem": 0.3
+          },
+          "output": {
+            "usd": 5,
+            "diem": 5
+          }
+        },
+        "availableContextTokens": 200000,
+        "maxCompletionTokens": 32768,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": true,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "GLM-5V-Turbo is Z.ai's first native multimodal agent foundation model, built for vision-based coding and agent-driven tasks with image, video, and text inputs.",
+        "name": "GLM 5V Turbo",
+        "modelSource": "",
+        "offline": false,
+        "privacy": "anonymized",
         "traits": []
       },
       "object": "model",
@@ -1295,6 +1393,17 @@
           "output": {
             "usd": 3.75,
             "diem": 3.75
+          },
+          "extended": {
+            "context_token_threshold": 256000,
+            "input": {
+              "usd": 2.5,
+              "diem": 2.5
+            },
+            "output": {
+              "usd": 7.5,
+              "diem": 7.5
+            }
           }
         },
         "availableContextTokens": 1000000,
@@ -1375,6 +1484,51 @@
         "modelSource": "https://huggingface.co/Qwen/Qwen3.5-9B",
         "offline": false,
         "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1771200000,
+      "id": "qwen3-5-397b-a17b",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.75,
+            "diem": 0.75
+          },
+          "output": {
+            "usd": 4.5,
+            "diem": 4.5
+          }
+        },
+        "availableContextTokens": 128000,
+        "maxCompletionTokens": 32768,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": true,
+          "supportsMultipleImages": true,
+          "maxImages": 5,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": true,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": true,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Qwen 3.5 is Alibaba flagship reasoning model featuring a 397B parameter Mixture-of-Experts architecture with 17B active parameters. It excels at complex reasoning, coding, and general knowledge tasks.",
+        "name": "Qwen 3.5 397B",
+        "modelSource": "",
+        "offline": false,
+        "privacy": "anonymized",
         "traits": []
       },
       "object": "model",
@@ -1733,7 +1887,7 @@
           }
         },
         "availableContextTokens": 256000,
-        "maxCompletionTokens": 12288,
+        "maxCompletionTokens": 8192,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "bf16",
@@ -1778,7 +1932,7 @@
           }
         },
         "availableContextTokens": 256000,
-        "maxCompletionTokens": 12288,
+        "maxCompletionTokens": 8192,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "bf16",
@@ -2167,6 +2321,52 @@
         "description": "Mistral Small 3.2 is a 24B parameter model optimized for efficiency and performance. Ideal for general-purpose tasks with balanced speed and capability.",
         "name": "Mistral Small 3.2 24B Instruct",
         "modelSource": "https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1773619200,
+      "id": "mistral-small-2603",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 0.1875,
+            "diem": 0.1875
+          },
+          "output": {
+            "usd": 0.75,
+            "diem": 0.75
+          }
+        },
+        "availableContextTokens": 256000,
+        "maxCompletionTokens": 65536,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "fp8",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": true,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Mistral Small 4 unifies instruction following, reasoning, coding, and vision in a single 119B MoE model with 256K context and configurable reasoning effort.",
+        "name": "Mistral Small 4",
+        "modelSource": "https://huggingface.co/mistralai/Mistral-Small-4-119B-2603",
         "offline": false,
         "privacy": "private",
         "traits": []
@@ -3487,6 +3687,55 @@
       "type": "text"
     },
     {
+      "created": 1771545600,
+      "id": "mercury-2",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 0.3125,
+            "diem": 0.3125
+          },
+          "cache_input": {
+            "usd": 0.03125,
+            "diem": 0.03125
+          },
+          "output": {
+            "usd": 0.9375,
+            "diem": 0.9375
+          }
+        },
+        "availableContextTokens": 128000,
+        "maxCompletionTokens": 50000,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": true,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Mercury 2 is a diffusion-based reasoning LLM from Inception, delivering over 1,000 tokens per second \u2014 5x faster than leading speed-optimized models \u2014 with strong reasoning, tool use, and structured output capabilities.",
+        "name": "Mercury 2",
+        "modelSource": "",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
       "created": 1769472000,
       "id": "nvidia-nemotron-3-nano-30b-a3b",
       "model_spec": {
@@ -3523,6 +3772,51 @@
         "description": "NVIDIA Nemotron 3 Nano 30B is a compact and efficient language model from NVIDIA, optimized for fast inference while maintaining strong performance across diverse tasks.",
         "name": "NVIDIA Nemotron 3 Nano 30B",
         "modelSource": "https://huggingface.co/nvidia/Nemotron-3-Nano-30B-A3B",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1774310400,
+      "id": "nvidia-nemotron-cascade-2-30b-a3b",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 0.14,
+            "diem": 0.14
+          },
+          "output": {
+            "usd": 0.8,
+            "diem": 0.8
+          }
+        },
+        "availableContextTokens": 256000,
+        "maxCompletionTokens": 32768,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "fp8",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Nemotron Cascade 2 30B A3B is a reasoning-optimized language model from NVIDIA, designed for efficient inference with strong reasoning capabilities across complex tasks.",
+        "name": "Nemotron Cascade 2 30B A3B",
+        "modelSource": "https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B",
         "offline": false,
         "privacy": "private",
         "traits": []
@@ -6153,6 +6447,51 @@
       }
     },
     {
+      "created": 1774396800,
+      "id": "grok-imagine-reference-to-video",
+      "model_spec": {
+        "betaModel": true,
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "4:3",
+            "3:2",
+            "1:1",
+            "2:3",
+            "3:4",
+            "9:16"
+          ],
+          "resolutions": [
+            "480p",
+            "720p"
+          ],
+          "durations": [
+            "5s",
+            "8s",
+            "10s"
+          ],
+          "audio": false,
+          "audio_configurable": false,
+          "audio_input": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "photorealistic"
+        ],
+        "name": "Grok Imagine R2V",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.44
+      }
+    },
+    {
       "created": 1758825748,
       "id": "wan-2.2-a14b-text-to-video",
       "model_spec": {
@@ -6307,7 +6646,8 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 Fast",
         "offline": false,
@@ -8137,8 +8477,7 @@
         "model_sets": [
           "high_resolution",
           "audio",
-          "cinematic",
-          "fast"
+          "cinematic"
         ],
         "name": "PixVerse v5.6",
         "offline": false,
