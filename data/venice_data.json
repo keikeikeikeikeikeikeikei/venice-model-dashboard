@@ -514,6 +514,14 @@
             "output": {
               "usd": 7.5,
               "diem": 7.5
+            },
+            "cache_input": {
+              "usd": 0.0625,
+              "diem": 0.0625
+            },
+            "cache_write": {
+              "usd": 0.78,
+              "diem": 0.78
             }
           }
         },
@@ -985,7 +993,7 @@
     },
     {
       "created": 1775088000,
-      "id": "google.gemma-4-26b-a4b-it",
+      "id": "google-gemma-4-26b-a4b-it",
       "model_spec": {
         "pricing": {
           "input": {
@@ -1030,7 +1038,7 @@
     },
     {
       "created": 1775174400,
-      "id": "google.gemma-4-31b-it",
+      "id": "google-gemma-4-31b-it",
       "model_spec": {
         "pricing": {
           "input": {
@@ -1220,7 +1228,7 @@
     },
     {
       "created": 1773273600,
-      "id": "grok-4-20-beta",
+      "id": "grok-4-20",
       "model_spec": {
         "betaModel": true,
         "pricing": {
@@ -1272,8 +1280,8 @@
           "supportsWebSearch": true,
           "supportsXSearch": true
         },
-        "description": "Grok 4.20 Beta is xAI's latest multimodal reasoning model with strong tool use, structured output support, and a 2M-token context window.",
-        "name": "Grok 4.20 Beta",
+        "description": "Grok 4.20 is xAI's latest multimodal reasoning model with strong tool use, structured output support, and a 2M-token context window.",
+        "name": "Grok 4.20",
         "modelSource": "",
         "offline": false,
         "privacy": "private",
@@ -1285,7 +1293,7 @@
     },
     {
       "created": 1773273600,
-      "id": "grok-4-20-multi-agent-beta",
+      "id": "grok-4-20-multi-agent",
       "model_spec": {
         "betaModel": true,
         "pricing": {
@@ -1337,8 +1345,8 @@
           "supportsWebSearch": true,
           "supportsXSearch": true
         },
-        "description": "Grok 4.20 Multi-Agent Beta is a variant of xAI Grok 4.20 designed for collaborative, agent-based workflows. Multiple agents operate in parallel to conduct deep research, coordinate tool use, and synthesize information across complex tasks.",
-        "name": "Grok 4.20 Multi-Agent Beta",
+        "description": "Grok 4.20 Multi-Agent is a variant of xAI Grok 4.20 designed for collaborative, agent-based workflows. Multiple agents operate in parallel to conduct deep research, coordinate tool use, and synthesize information across complex tasks.",
+        "name": "Grok 4.20 Multi-Agent",
         "modelSource": "",
         "offline": false,
         "privacy": "private",
@@ -2074,7 +2082,7 @@
     },
     {
       "created": 1774310400,
-      "id": "aion-labs.aion-2-0",
+      "id": "aion-labs-aion-2-0",
       "model_spec": {
         "pricing": {
           "input": {
@@ -4475,7 +4483,7 @@
         "constraints": {
           "promptCharacterLimit": 1500,
           "steps": {
-            "default": 20,
+            "default": 30,
             "max": 50
           },
           "widthHeightDivisor": 8
@@ -5457,8 +5465,7 @@
           "audio",
           "long_duration",
           "photorealistic",
-          "venice_recommendations",
-          "fast"
+          "venice_recommendations"
         ],
         "name": "Grok Imagine",
         "offline": false,
@@ -5497,8 +5504,7 @@
           "audio",
           "long_duration",
           "photorealistic",
-          "venice_recommendations",
-          "fast"
+          "venice_recommendations"
         ],
         "name": "Grok Imagine",
         "offline": false,
@@ -5583,8 +5589,7 @@
         },
         "model_sets": [
           "uncensored",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "Wan 2.2 A14B",
         "offline": false,
@@ -5665,8 +5670,7 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.0 Fast",
         "offline": false,
@@ -5981,7 +5985,8 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.3 Full Quality",
         "offline": false,
@@ -6165,7 +6170,8 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 19B Distilled",
         "offline": false,
@@ -7074,7 +7080,8 @@
         "model_sets": [
           "audio",
           "cinematic",
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Veo 3 Fast",
         "offline": false,
@@ -7581,7 +7588,8 @@
         "model_sets": [
           "high_resolution",
           "audio",
-          "cinematic"
+          "cinematic",
+          "fast"
         ],
         "name": "PixVerse v5.6",
         "offline": false,
@@ -7818,6 +7826,7 @@
         "supports_lyrics": true,
         "lyrics_required": false,
         "supports_force_instrumental": false,
+        "supports_lyrics_optimizer": false,
         "duration_options": [
           60,
           90,
@@ -7920,6 +7929,7 @@
         "supports_lyrics": false,
         "lyrics_required": false,
         "supports_force_instrumental": true,
+        "supports_lyrics_optimizer": false,
         "min_duration": 3,
         "max_duration": 600,
         "default_duration": 60,
@@ -7955,6 +7965,7 @@
         "supports_lyrics": true,
         "lyrics_required": true,
         "supports_force_instrumental": false,
+        "supports_lyrics_optimizer": false,
         "supported_formats": [
           "mp3"
         ],
@@ -7988,6 +7999,7 @@
         "supports_lyrics": false,
         "lyrics_required": false,
         "supports_force_instrumental": false,
+        "supports_lyrics_optimizer": false,
         "min_duration": 5,
         "max_duration": 190,
         "default_duration": 30,
@@ -8023,6 +8035,7 @@
         "supports_lyrics": false,
         "lyrics_required": false,
         "supports_force_instrumental": false,
+        "supports_lyrics_optimizer": false,
         "min_duration": 1,
         "max_duration": 22,
         "default_duration": 7,
@@ -8058,6 +8071,7 @@
         "supports_lyrics": false,
         "lyrics_required": false,
         "supports_force_instrumental": false,
+        "supports_lyrics_optimizer": false,
         "min_duration": 1,
         "max_duration": 30,
         "default_duration": 5,
@@ -8093,6 +8107,7 @@
         "supports_lyrics": false,
         "lyrics_required": false,
         "supports_force_instrumental": false,
+        "supports_lyrics_optimizer": false,
         "supported_formats": [
           "mp3"
         ],
@@ -8148,6 +8163,7 @@
         "supports_lyrics": false,
         "lyrics_required": false,
         "supports_force_instrumental": false,
+        "supports_lyrics_optimizer": false,
         "supported_formats": [
           "mp3"
         ],
