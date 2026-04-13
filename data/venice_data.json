@@ -5986,8 +5986,7 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.3 Full Quality",
         "offline": false,
@@ -6125,7 +6124,8 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 19B Distilled",
         "offline": false,
@@ -7081,8 +7081,7 @@
         "model_sets": [
           "audio",
           "cinematic",
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "name": "Veo 3 Fast",
         "offline": false,
@@ -7159,7 +7158,8 @@
         "model_sets": [
           "audio",
           "cinematic",
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Veo 3 Full Quality",
         "offline": false,
@@ -7977,6 +7977,74 @@
         "supports_speed": false,
         "description": "Full song generation with vocals and lyrics. Provide your own lyrics with verse/chorus structure for complete songs with singing.",
         "name": "MiniMax Music 2.0",
+        "modelSource": "",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "music"
+    },
+    {
+      "created": 1775952000,
+      "id": "minimax-music-v25",
+      "model_spec": {
+        "pricing": {
+          "generation": {
+            "usd": 0.24,
+            "diem": 0.24
+          }
+        },
+        "supports_lyrics": true,
+        "lyrics_required": false,
+        "supports_force_instrumental": true,
+        "supports_lyrics_optimizer": true,
+        "supported_formats": [
+          "mp3"
+        ],
+        "default_format": "mp3",
+        "prompt_character_limit": 2000,
+        "lyrics_character_limit": 3500,
+        "min_prompt_length": 10,
+        "supports_language_code": false,
+        "supports_speed": false,
+        "description": "Advanced song generation with vocals, lyrics optimizer, and instrumental mode. Supports structure tags and up to 3500 character lyrics.",
+        "name": "MiniMax Music 2.5",
+        "modelSource": "",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "music"
+    },
+    {
+      "created": 1775952000,
+      "id": "minimax-music-v26",
+      "model_spec": {
+        "pricing": {
+          "generation": {
+            "usd": 0.24,
+            "diem": 0.24
+          }
+        },
+        "supports_lyrics": true,
+        "lyrics_required": false,
+        "supports_force_instrumental": true,
+        "supports_lyrics_optimizer": false,
+        "supported_formats": [
+          "mp3"
+        ],
+        "default_format": "mp3",
+        "prompt_character_limit": 300,
+        "lyrics_character_limit": 1000,
+        "min_prompt_length": 10,
+        "supports_language_code": false,
+        "supports_speed": false,
+        "description": "Latest MiniMax song generation with vocals, instrumental mode, and support for rich structure tags in lyrics.",
+        "name": "MiniMax Music 2.6",
         "modelSource": "",
         "offline": false,
         "privacy": "anonymized",
