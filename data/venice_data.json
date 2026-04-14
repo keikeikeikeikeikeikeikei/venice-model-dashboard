@@ -4846,7 +4846,8 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
-          "video_input": false
+          "video_input": false,
+          "prompt_character_limit": 3500
         },
         "model_sets": [
           "audio",
@@ -4888,7 +4889,8 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
-          "video_input": false
+          "video_input": false,
+          "prompt_character_limit": 3500
         },
         "model_sets": [
           "audio",
@@ -4937,7 +4939,8 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": true,
-          "video_input": false
+          "video_input": false,
+          "prompt_character_limit": 3500
         },
         "model_sets": [
           "audio",
@@ -4986,7 +4989,8 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
-          "video_input": false
+          "video_input": false,
+          "prompt_character_limit": 3500
         },
         "model_sets": [
           "audio",
@@ -5028,7 +5032,8 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
-          "video_input": false
+          "video_input": false,
+          "prompt_character_limit": 3500
         },
         "model_sets": [
           "audio",
@@ -5077,7 +5082,8 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": true,
-          "video_input": false
+          "video_input": false,
+          "prompt_character_limit": 3500
         },
         "model_sets": [
           "audio",
@@ -6125,7 +6131,8 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 19B Distilled",
         "offline": false,
@@ -6171,7 +6178,8 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 19B Distilled",
         "offline": false,
@@ -7045,8 +7053,7 @@
           "high_resolution",
           "audio",
           "cinematic",
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "name": "Veo 3 Fast",
         "offline": false,
@@ -7588,8 +7595,7 @@
         "model_sets": [
           "high_resolution",
           "audio",
-          "cinematic",
-          "fast"
+          "cinematic"
         ],
         "name": "PixVerse v5.6",
         "offline": false,
@@ -7775,7 +7781,8 @@
           "audio": false,
           "audio_configurable": false,
           "audio_input": false,
-          "video_input": false
+          "video_input": false,
+          "prompt_character_limit": 1000
         },
         "model_sets": [
           "cinematic",
@@ -7818,7 +7825,8 @@
           "audio": false,
           "audio_configurable": false,
           "audio_input": false,
-          "video_input": false
+          "video_input": false,
+          "prompt_character_limit": 1000
         },
         "model_sets": [
           "cinematic",
@@ -7865,7 +7873,8 @@
           "audio": false,
           "audio_configurable": false,
           "audio_input": false,
-          "video_input": false
+          "video_input": false,
+          "prompt_character_limit": 1000
         },
         "model_sets": [
           "fast",
@@ -7913,7 +7922,8 @@
           "audio": false,
           "audio_configurable": false,
           "audio_input": false,
-          "video_input": true
+          "video_input": true,
+          "prompt_character_limit": 1000
         },
         "model_sets": [
           "fast",
