@@ -812,7 +812,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-04-14 12:02)</div>
+            <div class="meta">Generated from Live API Data (2026-04-14 18:02)</div>
         </header>
 
         <div class="controls">
@@ -6354,8 +6354,7 @@
           "audio",
           "long_duration",
           "photorealistic",
-          "venice_recommendations",
-          "fast"
+          "venice_recommendations"
         ],
         "name": "Grok Imagine",
         "offline": false,
@@ -6439,7 +6438,8 @@
           "video_input": false
         },
         "model_sets": [
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Grok Imagine R2V",
         "offline": false,
@@ -7014,8 +7014,7 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.0 19B Distilled",
         "offline": false,
@@ -8478,7 +8477,8 @@
         "model_sets": [
           "high_resolution",
           "audio",
-          "cinematic"
+          "cinematic",
+          "fast"
         ],
         "name": "PixVerse v5.6",
         "offline": false,
@@ -8633,6 +8633,189 @@
       "pricing": {
         "base_price_usd": 0.58
       }
+    },
+    {
+      "created": 1775952000,
+      "id": "runway-gen4-5",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "9:16",
+            "1:1",
+            "4:3",
+            "3:4",
+            "21:9"
+          ],
+          "resolutions": [],
+          "durations": [
+            "2s",
+            "3s",
+            "4s",
+            "5s",
+            "6s",
+            "7s",
+            "8s",
+            "9s",
+            "10s"
+          ],
+          "audio": false,
+          "audio_configurable": false,
+          "audio_input": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "cinematic",
+          "photorealistic"
+        ],
+        "name": "Runway Gen-4.5",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.32
+      }
+    },
+    {
+      "created": 1775952000,
+      "id": "runway-gen4-5-text",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "text-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "9:16"
+          ],
+          "resolutions": [],
+          "durations": [
+            "2s",
+            "3s",
+            "4s",
+            "5s",
+            "6s",
+            "7s",
+            "8s",
+            "9s",
+            "10s"
+          ],
+          "audio": false,
+          "audio_configurable": false,
+          "audio_input": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "cinematic",
+          "photorealistic"
+        ],
+        "name": "Runway Gen-4.5",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.32
+      }
+    },
+    {
+      "created": 1769040000,
+      "id": "runway-gen4-turbo",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "9:16",
+            "1:1",
+            "4:3",
+            "3:4",
+            "21:9"
+          ],
+          "resolutions": [],
+          "durations": [
+            "2s",
+            "3s",
+            "4s",
+            "5s",
+            "6s",
+            "7s",
+            "8s",
+            "9s",
+            "10s"
+          ],
+          "audio": false,
+          "audio_configurable": false,
+          "audio_input": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "fast",
+          "cinematic",
+          "photorealistic"
+        ],
+        "name": "Runway Gen-4 Turbo",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.14
+      }
+    },
+    {
+      "created": 1769040000,
+      "id": "runway-gen4-aleph",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "video",
+          "aspect_ratios": [
+            "16:9",
+            "9:16",
+            "1:1",
+            "4:3",
+            "3:4",
+            "21:9"
+          ],
+          "resolutions": [],
+          "durations": [
+            "2s",
+            "3s",
+            "4s",
+            "5s",
+            "6s",
+            "7s",
+            "8s",
+            "9s",
+            "10s"
+          ],
+          "audio": false,
+          "audio_configurable": false,
+          "audio_input": false,
+          "video_input": true
+        },
+        "model_sets": [
+          "fast",
+          "cinematic",
+          "photorealistic"
+        ],
+        "name": "Runway Gen-4 Aleph",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video"
     },
     {
       "created": 1775174400,
