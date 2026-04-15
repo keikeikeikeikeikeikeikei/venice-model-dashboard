@@ -1711,7 +1711,7 @@
           "supportsWebSearch": true,
           "supportsXSearch": false
         },
-        "description": "Claude Opus 4.6 (Fast) is a speed-optimized variant of Anthropic's most capable reasoning model, offering the same 1M token context window and strong performance across complex software engineering, agentic workflows, and long-horizon tasks — with lower latency via OpenRouter's optimized routing.",
+        "description": "Claude Opus 4.6 (Fast) is a speed-optimized variant of Anthropic's most capable reasoning model, offering the same 1M token context window and strong performance across complex software engineering, agentic workflows, and long-horizon tasks — with lower latency.",
         "name": "Claude Opus 4.6 Fast",
         "modelSource": "",
         "offline": false,
@@ -2609,54 +2609,6 @@
         "modelSource": "",
         "offline": false,
         "privacy": "anonymized",
-        "traits": []
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "text"
-    },
-    {
-      "created": 1764547200,
-      "id": "minimax-m21",
-      "model_spec": {
-        "pricing": {
-          "input": {
-            "usd": 0.35,
-            "diem": 0.35
-          },
-          "cache_input": {
-            "usd": 0.04,
-            "diem": 0.04
-          },
-          "output": {
-            "usd": 1.5,
-            "diem": 1.5
-          }
-        },
-        "availableContextTokens": 198000,
-        "maxCompletionTokens": 32768,
-        "capabilities": {
-          "optimizedForCode": true,
-          "quantization": "not-available",
-          "supportsAudioInput": false,
-          "supportsFunctionCalling": true,
-          "supportsLogProbs": true,
-          "supportsMultipleImages": false,
-          "supportsReasoning": true,
-          "supportsReasoningEffort": true,
-          "supportsResponseSchema": true,
-          "supportsTeeAttestation": false,
-          "supportsE2EE": false,
-          "supportsVideoInput": false,
-          "supportsVision": false,
-          "supportsWebSearch": true,
-          "supportsXSearch": false
-        },
-        "description": "MiniMax-M2.1 is a lightweight, state-of-the-art large language model optimized for coding, agentic workflows, and modern application development.",
-        "name": "MiniMax M2.1",
-        "modelSource": "https://huggingface.co/MiniMaxAI/MiniMax-M2.1",
-        "offline": false,
-        "privacy": "private",
         "traits": []
       },
       "object": "model",
@@ -5510,7 +5462,8 @@
           "audio",
           "long_duration",
           "photorealistic",
-          "venice_recommendations"
+          "venice_recommendations",
+          "fast"
         ],
         "name": "Grok Imagine",
         "offline": false,
@@ -5724,8 +5677,7 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.0 Fast",
         "offline": false,
@@ -5857,8 +5809,7 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.3 Fast",
         "offline": false,
@@ -6178,8 +6129,7 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.0 19B Distilled",
         "offline": false,
@@ -7053,7 +7003,8 @@
           "high_resolution",
           "audio",
           "cinematic",
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Veo 3 Fast",
         "offline": false,
@@ -7879,7 +7830,8 @@
         "model_sets": [
           "fast",
           "cinematic",
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Runway Gen-4 Turbo",
         "offline": false,
