@@ -682,7 +682,7 @@
           "supportsFunctionCalling": true,
           "supportsLogProbs": true,
           "supportsMultipleImages": true,
-          "maxImages": 5,
+          "maxImages": 10,
           "supportsReasoning": true,
           "supportsReasoningEffort": false,
           "supportsResponseSchema": true,
@@ -5462,8 +5462,7 @@
           "audio",
           "long_duration",
           "photorealistic",
-          "venice_recommendations",
-          "fast"
+          "venice_recommendations"
         ],
         "name": "Grok Imagine",
         "offline": false,
@@ -5809,7 +5808,8 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.3 Fast",
         "offline": false,
