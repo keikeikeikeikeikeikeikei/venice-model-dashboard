@@ -439,6 +439,53 @@
       "type": "text"
     },
     {
+      "created": 1775001600,
+      "id": "venice-uncensored-1-2",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.2,
+            "diem": 0.2
+          },
+          "output": {
+            "usd": 0.9,
+            "diem": 0.9
+          }
+        },
+        "availableContextTokens": 128000,
+        "maxCompletionTokens": 8192,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "fp16",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "supportsReasoning": false,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Venice Uncensored 1.2 is designed for maximum creative freedom and authentic interaction. Built for open-ended exploration, roleplay, and unfiltered dialogue with improved capabilities over 1.1.",
+        "name": "Venice Uncensored 1.2",
+        "modelSource": "https://huggingface.co/cognitivecomputations/Dolphin-Mistral-24B-Venice-Edition",
+        "offline": false,
+        "privacy": "private",
+        "traits": [
+          "most_uncensored"
+        ]
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
       "created": 1771545600,
       "id": "venice-uncensored-role-play",
       "model_spec": {
@@ -1603,6 +1650,62 @@
         "description": "Gemini 3 Flash Preview is a high speed, high value thinking model designed for agentic workflows, multi-turn chat, and coding assistance. It delivers near Pro level reasoning with substantially lower latency.",
         "name": "Gemini 3 Flash Preview",
         "modelSource": "https://deepmind.google/models/gemini/flash/",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1776297600,
+      "id": "claude-opus-4-7",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 6,
+            "diem": 6
+          },
+          "cache_input": {
+            "usd": 0.6,
+            "diem": 0.6
+          },
+          "cache_write": {
+            "usd": 7.5,
+            "diem": 7.5
+          },
+          "output": {
+            "usd": 30,
+            "diem": 30
+          }
+        },
+        "model_sets": [
+          "venice_recommendations"
+        ],
+        "availableContextTokens": 1000000,
+        "maxCompletionTokens": 128000,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": true,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Claude Opus 4.7 is Anthropic's most capable generally available model for complex reasoning and agentic coding. It features a 1M token context window, 128K max output tokens, adaptive thinking, and strong multimodal capabilities.",
+        "name": "Claude Opus 4.7",
+        "modelSource": "",
         "offline": false,
         "privacy": "anonymized",
         "traits": []
@@ -6118,7 +6221,8 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 19B Distilled",
         "offline": false,
@@ -6783,8 +6887,7 @@
           "cinematic",
           "audio",
           "photorealistic",
-          "long_duration",
-          "fast"
+          "long_duration"
         ],
         "name": "Kling V3 Standard",
         "offline": false,
@@ -7365,7 +7468,7 @@
           "photorealistic"
         ],
         "deprecation": {
-          "date": "2026-04-07T00:00:00.000Z"
+          "date": "2026-09-24T00:00:00.000Z"
         },
         "name": "Sora 2",
         "offline": false,
@@ -7391,12 +7494,15 @@
           ],
           "resolutions": [
             "720p",
-            "1080p"
+            "1080p",
+            "true_1080p"
           ],
           "durations": [
             "4s",
             "8s",
-            "12s"
+            "12s",
+            "16s",
+            "20s"
           ],
           "audio": true,
           "audio_configurable": false,
@@ -7410,7 +7516,7 @@
           "photorealistic"
         ],
         "deprecation": {
-          "date": "2026-04-07T00:00:00.000Z"
+          "date": "2026-09-24T00:00:00.000Z"
         },
         "name": "Sora 2 Pro",
         "offline": false,
@@ -7453,7 +7559,7 @@
           "photorealistic"
         ],
         "deprecation": {
-          "date": "2026-04-07T00:00:00.000Z"
+          "date": "2026-09-24T00:00:00.000Z"
         },
         "name": "Sora 2",
         "offline": false,
@@ -7479,12 +7585,15 @@
           ],
           "resolutions": [
             "720p",
-            "1080p"
+            "1080p",
+            "true_1080p"
           ],
           "durations": [
             "4s",
             "8s",
-            "12s"
+            "12s",
+            "16s",
+            "20s"
           ],
           "audio": true,
           "audio_configurable": false,
@@ -7498,7 +7607,7 @@
           "photorealistic"
         ],
         "deprecation": {
-          "date": "2026-04-07T00:00:00.000Z"
+          "date": "2026-09-24T00:00:00.000Z"
         },
         "name": "Sora 2 Pro",
         "offline": false,
