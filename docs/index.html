@@ -812,7 +812,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-04-17 22:54)</div>
+            <div class="meta">Generated from Live API Data (2026-04-18 12:54)</div>
         </header>
 
         <div class="controls">
@@ -1506,8 +1506,8 @@
       "model_spec": {
         "pricing": {
           "input": {
-            "usd": 0.05,
-            "diem": 0.05
+            "usd": 0.1,
+            "diem": 0.1
           },
           "output": {
             "usd": 0.15,
@@ -2009,6 +2009,50 @@
         "description": "Gemma 4 31B is a dense model from Google DeepMind with 31B parameters, delivering frontier-level reasoning performance. It handles text, image, and video input, supports 256K context, function calling, and configurable thinking modes.",
         "name": "Google Gemma 4 31B Instruct",
         "modelSource": "https://huggingface.co/google/gemma-4-31B-it",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1776038400,
+      "id": "gemma-4-uncensored",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.1625,
+            "diem": 0.1625
+          },
+          "output": {
+            "usd": 0.5,
+            "diem": 0.5
+          }
+        },
+        "availableContextTokens": 256000,
+        "maxCompletionTokens": 8192,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "int4",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": true,
+          "supportsMultipleImages": false,
+          "supportsReasoning": false,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Gemma 4 Uncensored is an uncensored variant of Google Gemma 4 26B, a Mixture-of-Experts model with 26B total parameters and only 4B active per token. Fine-tuned for uncensored chat without content filtering, it supports 256K context, coding, and general-purpose conversation.",
+        "name": "Gemma 4 Uncensored",
+        "modelSource": "https://huggingface.co/Jiunsong/supergemma4-26b-uncensored-gguf-v2",
         "offline": false,
         "privacy": "private",
         "traits": []
@@ -4408,6 +4452,9 @@
           "widthHeightDivisor": 8
         },
         "supportsWebSearch": false,
+        "deprecation": {
+          "date": "2026-05-01T00:00:00.000Z"
+        },
         "name": "HiDream",
         "modelSource": "https://huggingface.co/HiDream-ai/HiDream-I1-Dev",
         "offline": false,
@@ -4932,7 +4979,7 @@
           "widthHeightDivisor": 1
         },
         "supportsWebSearch": false,
-        "name": "SeedreamV4.5",
+        "name": "Seedream V4.5",
         "offline": false,
         "privacy": "anonymized",
         "traits": []
@@ -4981,7 +5028,7 @@
           "widthHeightDivisor": 1
         },
         "supportsWebSearch": false,
-        "name": "SeedreamV5 Lite",
+        "name": "Seedream V5 Lite",
         "offline": false,
         "privacy": "anonymized",
         "traits": []
@@ -6451,8 +6498,7 @@
           "audio",
           "long_duration",
           "photorealistic",
-          "venice_recommendations",
-          "fast"
+          "venice_recommendations"
         ],
         "name": "Grok Imagine",
         "offline": false,
@@ -6491,7 +6537,8 @@
           "audio",
           "long_duration",
           "photorealistic",
-          "venice_recommendations"
+          "venice_recommendations",
+          "fast"
         ],
         "name": "Grok Imagine",
         "offline": false,
@@ -6551,6 +6598,170 @@
       }
     },
     {
+      "created": 1776038400,
+      "id": "grok-imagine-text-to-video-private",
+      "model_spec": {
+        "privacy": "private",
+        "constraints": {
+          "model_type": "text-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "4:3",
+            "3:2",
+            "1:1",
+            "2:3",
+            "3:4",
+            "9:16"
+          ],
+          "resolutions": [
+            "480p",
+            "720p"
+          ],
+          "durations": [
+            "5s",
+            "10s",
+            "15s"
+          ],
+          "audio": true,
+          "audio_configurable": false,
+          "audio_input": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "audio",
+          "long_duration",
+          "photorealistic"
+        ],
+        "name": "Grok Imagine Private",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.44
+      }
+    },
+    {
+      "created": 1776211200,
+      "id": "grok-imagine-image-to-video-private",
+      "model_spec": {
+        "privacy": "private",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [],
+          "resolutions": [
+            "480p",
+            "720p"
+          ],
+          "durations": [
+            "5s",
+            "10s",
+            "15s"
+          ],
+          "audio": true,
+          "audio_configurable": false,
+          "audio_input": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "audio",
+          "long_duration",
+          "photorealistic",
+          "fast"
+        ],
+        "name": "Grok Imagine Private",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.44
+      }
+    },
+    {
+      "created": 1776211200,
+      "id": "grok-imagine-reference-to-video-private",
+      "model_spec": {
+        "privacy": "private",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "4:3",
+            "3:2",
+            "1:1",
+            "2:3",
+            "3:4",
+            "9:16"
+          ],
+          "resolutions": [
+            "480p",
+            "720p"
+          ],
+          "durations": [
+            "5s",
+            "8s",
+            "10s"
+          ],
+          "audio": false,
+          "audio_configurable": false,
+          "audio_input": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "photorealistic"
+        ],
+        "name": "Grok Imagine R2V Private",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.44
+      }
+    },
+    {
+      "created": 1776211200,
+      "id": "grok-imagine-video-to-video-private",
+      "model_spec": {
+        "privacy": "private",
+        "constraints": {
+          "model_type": "video",
+          "aspect_ratios": [],
+          "resolutions": [
+            "480p",
+            "720p"
+          ],
+          "durations": [
+            "5s",
+            "10s",
+            "15s"
+          ],
+          "audio": true,
+          "audio_configurable": false,
+          "audio_input": false,
+          "video_input": true
+        },
+        "model_sets": [
+          "audio",
+          "long_duration",
+          "photorealistic"
+        ],
+        "name": "Grok Imagine Private",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video"
+    },
+    {
       "created": 1758825748,
       "id": "wan-2.2-a14b-text-to-video",
       "model_spec": {
@@ -6577,8 +6788,7 @@
         },
         "model_sets": [
           "uncensored",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "Wan 2.2 A14B",
         "offline": false,
@@ -6838,8 +7048,7 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.3 Fast",
         "offline": false,
@@ -7158,7 +7367,8 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 19B Distilled",
         "offline": false,
@@ -9470,8 +9680,220 @@
             "diem": 0.6
           }
         },
+        "embeddingDimensions": 1024,
+        "maxInputTokens": 8192,
         "name": "BGE-M3",
         "modelSource": "https://huggingface.co/BAAI/bge-m3",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "embedding"
+    },
+    {
+      "created": 1776384000,
+      "id": "text-embedding-bge-en-icl",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.0125,
+            "diem": 0.0125
+          },
+          "output": {
+            "usd": 0.0125,
+            "diem": 0.0125
+          }
+        },
+        "embeddingDimensions": 4096,
+        "maxInputTokens": 8192,
+        "name": "BGE-EN-ICL",
+        "modelSource": "https://huggingface.co/BAAI/bge-en-icl",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "embedding"
+    },
+    {
+      "created": 1776384000,
+      "id": "text-embedding-qwen3-8b",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.0125,
+            "diem": 0.0125
+          },
+          "output": {
+            "usd": 0.0125,
+            "diem": 0.0125
+          }
+        },
+        "embeddingDimensions": 4096,
+        "maxInputTokens": 32768,
+        "supportsCustomDimensions": true,
+        "name": "Qwen3 Embedding 8B",
+        "modelSource": "https://huggingface.co/Qwen/Qwen3-Embedding-8B",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "embedding"
+    },
+    {
+      "created": 1776384000,
+      "id": "text-embedding-qwen3-0-6b",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.0125,
+            "diem": 0.0125
+          },
+          "output": {
+            "usd": 0.0125,
+            "diem": 0.0125
+          }
+        },
+        "embeddingDimensions": 1024,
+        "maxInputTokens": 32768,
+        "supportsCustomDimensions": true,
+        "name": "Qwen3 Embedding 0.6B",
+        "modelSource": "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "embedding"
+    },
+    {
+      "created": 1776384000,
+      "id": "text-embedding-multilingual-e5-large-instruct",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.0125,
+            "diem": 0.0125
+          },
+          "output": {
+            "usd": 0.0125,
+            "diem": 0.0125
+          }
+        },
+        "embeddingDimensions": 1024,
+        "maxInputTokens": 512,
+        "name": "Multilingual E5 Large Instruct",
+        "modelSource": "https://huggingface.co/intfloat/multilingual-e5-large-instruct",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "embedding"
+    },
+    {
+      "created": 1776384000,
+      "id": "text-embedding-3-small",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.025,
+            "diem": 0.025
+          },
+          "output": {
+            "usd": 0.025,
+            "diem": 0.025
+          }
+        },
+        "embeddingDimensions": 1536,
+        "maxInputTokens": 8191,
+        "supportsCustomDimensions": true,
+        "name": "Text Embedding 3 Small",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "embedding"
+    },
+    {
+      "created": 1776384000,
+      "id": "text-embedding-3-large",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.1625,
+            "diem": 0.1625
+          },
+          "output": {
+            "usd": 0.1625,
+            "diem": 0.1625
+          }
+        },
+        "embeddingDimensions": 3072,
+        "maxInputTokens": 8191,
+        "supportsCustomDimensions": true,
+        "name": "Text Embedding 3 Large",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "embedding"
+    },
+    {
+      "created": 1776384000,
+      "id": "gemini-embedding-2-preview",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.25,
+            "diem": 0.25
+          },
+          "output": {
+            "usd": 0.25,
+            "diem": 0.25
+          }
+        },
+        "embeddingDimensions": 3072,
+        "maxInputTokens": 2048,
+        "supportsCustomDimensions": true,
+        "name": "Gemini Embedding 2 Preview",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "embedding"
+    },
+    {
+      "created": 1776384000,
+      "id": "text-embedding-nemotron-embed-vl-1b-v2",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.0125,
+            "diem": 0.0125
+          },
+          "output": {
+            "usd": 0.0125,
+            "diem": 0.0125
+          }
+        },
+        "embeddingDimensions": 2048,
+        "maxInputTokens": 32768,
+        "name": "Nemotron Embed VL 1B v2",
+        "modelSource": "https://huggingface.co/nvidia/llama-nemotron-embed-vl-1b-v2",
         "offline": false,
         "privacy": "private",
         "traits": []
@@ -9612,6 +10034,205 @@
         "modelSource": "https://huggingface.co/Qwen/Qwen3-TTS",
         "offline": false,
         "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "tts"
+    },
+    {
+      "created": 1776384000,
+      "id": "tts-xai-v1",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 5.25,
+            "diem": 5.25
+          }
+        },
+        "voices": [
+          "ara",
+          "eve",
+          "leo",
+          "rex",
+          "sal"
+        ],
+        "name": "xAI TTS v1",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "tts"
+    },
+    {
+      "created": 1776384000,
+      "id": "tts-inworld-1-5-max",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 12.5,
+            "diem": 12.5
+          }
+        },
+        "voices": [
+          "Alex",
+          "Ashley",
+          "Craig",
+          "Edward",
+          "Elizabeth",
+          "Hades",
+          "Luna",
+          "Mark",
+          "Olivia",
+          "Pixie",
+          "Priya",
+          "Ronald",
+          "Sarah",
+          "Theodore"
+        ],
+        "name": "Inworld TTS-1.5 Max",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "tts"
+    },
+    {
+      "created": 1776384000,
+      "id": "tts-chatterbox-hd",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 50,
+            "diem": 50
+          }
+        },
+        "voices": [
+          "Aurora",
+          "Blade",
+          "Britney",
+          "Carl",
+          "Cliff",
+          "Richard",
+          "Rico",
+          "Siobhan",
+          "Vicky"
+        ],
+        "name": "Chatterbox HD (Resemble AI)",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "tts"
+    },
+    {
+      "created": 1776384000,
+      "id": "tts-orpheus",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 62.5,
+            "diem": 62.5
+          }
+        },
+        "voices": [
+          "dan",
+          "jess",
+          "leah",
+          "leo",
+          "mia",
+          "tara",
+          "zac",
+          "zoe"
+        ],
+        "name": "Orpheus TTS",
+        "modelSource": "https://huggingface.co/canopylabs/orpheus-3b-0.1-ft",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "tts"
+    },
+    {
+      "created": 1776384000,
+      "id": "tts-elevenlabs-turbo-v2-5",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 62.5,
+            "diem": 62.5
+          }
+        },
+        "voices": [
+          "Alice",
+          "Aria",
+          "Bill",
+          "Brian",
+          "Callum",
+          "Charlie",
+          "Charlotte",
+          "Chris",
+          "Daniel",
+          "Eric",
+          "George",
+          "Jessica",
+          "Laura",
+          "Liam",
+          "Lily",
+          "Matilda",
+          "Rachel",
+          "River",
+          "Roger",
+          "Sarah",
+          "Will"
+        ],
+        "name": "ElevenLabs Turbo v2.5",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "tts"
+    },
+    {
+      "created": 1776384000,
+      "id": "tts-minimax-speech-02-hd",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 125,
+            "diem": 125
+          }
+        },
+        "voices": [
+          "CalmWoman",
+          "CasualGuy",
+          "DeepVoiceMan",
+          "DeterminedMan",
+          "ElegantMan",
+          "ExuberantGirl",
+          "FriendlyPerson",
+          "ImposingManner",
+          "InspirationalGirl",
+          "LivelyGirl",
+          "LovelyGirl",
+          "PatientMan",
+          "SweetGirl",
+          "WiseWoman",
+          "YoungKnight"
+        ],
+        "name": "MiniMax Speech-02 HD",
+        "offline": false,
+        "privacy": "anonymized",
         "traits": []
       },
       "object": "model",
@@ -9975,7 +10596,7 @@
           "promptCharacterLimit": 10000,
           "combineImages": true
         },
-        "name": "SeedreamV5 Lite",
+        "name": "Seedream V5 Lite",
         "offline": false,
         "privacy": "anonymized",
         "traits": []
@@ -10008,7 +10629,7 @@
           "promptCharacterLimit": 10000,
           "combineImages": true
         },
-        "name": "SeedreamV4.5",
+        "name": "Seedream V4.5",
         "offline": false,
         "privacy": "anonymized",
         "traits": []
@@ -10050,6 +10671,44 @@
         "name": "Whisper Large V3",
         "offline": false,
         "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "asr"
+    },
+    {
+      "created": 1776384000,
+      "id": "fal-ai/wizper",
+      "model_spec": {
+        "pricing": {
+          "per_audio_second": {
+            "usd": 0.0001,
+            "diem": 0.0001
+          }
+        },
+        "name": "Wizper (Whisper v3)",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "asr"
+    },
+    {
+      "created": 1776384000,
+      "id": "elevenlabs/scribe-v2",
+      "model_spec": {
+        "pricing": {
+          "per_audio_second": {
+            "usd": 0.000167,
+            "diem": 0.000167
+          }
+        },
+        "name": "ElevenLabs Scribe V2",
+        "offline": false,
+        "privacy": "anonymized",
         "traits": []
       },
       "object": "model",
