@@ -2074,6 +2074,58 @@
       "type": "text"
     },
     {
+      "created": 1776643200,
+      "id": "kimi-k2-6",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.56,
+            "diem": 0.56
+          },
+          "cache_input": {
+            "usd": 0.11,
+            "diem": 0.11
+          },
+          "output": {
+            "usd": 3.5,
+            "diem": 3.5
+          }
+        },
+        "model_sets": [
+          "venice_recommendations"
+        ],
+        "availableContextTokens": 256000,
+        "maxCompletionTokens": 65536,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "int4",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": true,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Kimi K2.6 is an open-source, native multimodal agentic model from Moonshot AI with 1T total parameters and 32B active parameters. It excels at long-horizon coding, coding-driven design, agent swarm orchestration, and proactive autonomous execution with 256K context windows.",
+        "name": "Kimi K2.6",
+        "modelSource": "https://huggingface.co/moonshotai/Kimi-K2.6",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
       "created": 1765324800,
       "id": "kimi-k2-thinking",
       "model_spec": {
@@ -4936,6 +4988,7 @@
             "9:16"
           ],
           "resolutions": [
+            "1080p",
             "720p",
             "480p"
           ],
@@ -4954,6 +5007,7 @@
           "prompt_character_limit": 3500
         },
         "model_sets": [
+          "high_resolution",
           "audio",
           "long_duration",
           "cinematic",
@@ -4979,6 +5033,7 @@
           "model_type": "image-to-video",
           "aspect_ratios": [],
           "resolutions": [
+            "1080p",
             "720p",
             "480p"
           ],
@@ -4997,6 +5052,7 @@
           "prompt_character_limit": 3500
         },
         "model_sets": [
+          "high_resolution",
           "audio",
           "long_duration",
           "cinematic",
@@ -5029,6 +5085,7 @@
             "9:16"
           ],
           "resolutions": [
+            "1080p",
             "720p",
             "480p"
           ],
@@ -5047,6 +5104,7 @@
           "prompt_character_limit": 3500
         },
         "model_sets": [
+          "high_resolution",
           "audio",
           "long_duration",
           "cinematic",
@@ -5897,8 +5955,7 @@
         },
         "model_sets": [
           "uncensored",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "Wan 2.2 A14B",
         "offline": false,
@@ -6158,7 +6215,8 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.3 Fast",
         "offline": false,
@@ -6339,7 +6397,8 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 19B",
         "offline": false,
@@ -6431,8 +6490,7 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.0 19B Distilled",
         "offline": false,
@@ -7960,6 +8018,205 @@
       }
     },
     {
+      "created": 1775865600,
+      "id": "pixverse-c1-text-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "text-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "4:3",
+            "1:1",
+            "3:4",
+            "9:16",
+            "2:3",
+            "3:2",
+            "21:9"
+          ],
+          "resolutions": [
+            "360p",
+            "540p",
+            "720p",
+            "1080p"
+          ],
+          "durations": [
+            "3s",
+            "5s",
+            "8s",
+            "10s",
+            "15s"
+          ],
+          "audio": true,
+          "audio_configurable": true,
+          "audio_input": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "high_resolution",
+          "audio",
+          "cinematic",
+          "long_duration"
+        ],
+        "name": "PixVerse C1",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.4
+      }
+    },
+    {
+      "created": 1775865600,
+      "id": "pixverse-c1-image-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [],
+          "resolutions": [
+            "360p",
+            "540p",
+            "720p",
+            "1080p"
+          ],
+          "durations": [
+            "3s",
+            "5s",
+            "8s",
+            "10s",
+            "15s"
+          ],
+          "audio": true,
+          "audio_configurable": true,
+          "audio_input": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "high_resolution",
+          "audio",
+          "cinematic",
+          "long_duration"
+        ],
+        "name": "PixVerse C1",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.4
+      }
+    },
+    {
+      "created": 1775865600,
+      "id": "pixverse-c1-reference-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "4:3",
+            "1:1",
+            "3:4",
+            "9:16",
+            "2:3",
+            "3:2",
+            "21:9"
+          ],
+          "resolutions": [
+            "360p",
+            "540p",
+            "720p",
+            "1080p"
+          ],
+          "durations": [
+            "3s",
+            "5s",
+            "8s",
+            "10s",
+            "15s"
+          ],
+          "audio": true,
+          "audio_configurable": true,
+          "audio_input": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "high_resolution",
+          "audio",
+          "cinematic",
+          "long_duration"
+        ],
+        "name": "PixVerse C1 R2V",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.4
+      }
+    },
+    {
+      "created": 1775865600,
+      "id": "pixverse-c1-transition",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "4:3",
+            "1:1",
+            "3:4",
+            "9:16",
+            "2:3",
+            "3:2",
+            "21:9"
+          ],
+          "resolutions": [
+            "360p",
+            "540p",
+            "720p",
+            "1080p"
+          ],
+          "durations": [
+            "3s",
+            "5s",
+            "8s",
+            "10s",
+            "15s"
+          ],
+          "audio": true,
+          "audio_configurable": true,
+          "audio_input": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "high_resolution",
+          "audio",
+          "cinematic",
+          "long_duration"
+        ],
+        "name": "PixVerse C1 Transition",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.4
+      }
+    },
+    {
       "created": 1769817600,
       "id": "vidu-q3-text-to-video",
       "model_spec": {
@@ -9342,6 +9599,57 @@
           "YoungKnight"
         ],
         "name": "MiniMax Speech-02 HD",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "tts"
+    },
+    {
+      "created": 1776643200,
+      "id": "tts-gemini-3-1-flash",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 187.5,
+            "diem": 187.5
+          }
+        },
+        "voices": [
+          "Achernar",
+          "Achird",
+          "Algenib",
+          "Algieba",
+          "Alnilam",
+          "Aoede",
+          "Autonoe",
+          "Callirrhoe",
+          "Charon",
+          "Despina",
+          "Enceladus",
+          "Erinome",
+          "Fenrir",
+          "Gacrux",
+          "Iapetus",
+          "Kore",
+          "Laomedeia",
+          "Leda",
+          "Orus",
+          "Puck",
+          "Pulcherrima",
+          "Rasalgethi",
+          "Sadachbia",
+          "Sadaltager",
+          "Schedar",
+          "Sulafat",
+          "Umbriel",
+          "Vindemiatrix",
+          "Zephyr",
+          "Zubenelgenubi"
+        ],
+        "name": "Gemini 3.1 Flash TTS",
         "offline": false,
         "privacy": "anonymized",
         "traits": []
