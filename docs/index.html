@@ -812,7 +812,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-04-23 06:08)</div>
+            <div class="meta">Generated from Live API Data (2026-04-23 17:57)</div>
         </header>
 
         <div class="controls">
@@ -6660,7 +6660,8 @@
           "audio",
           "long_duration",
           "photorealistic",
-          "venice_recommendations"
+          "venice_recommendations",
+          "fast"
         ],
         "name": "Grok Imagine",
         "offline": false,
@@ -7170,8 +7171,7 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.3 Fast",
         "offline": false,
@@ -7219,7 +7219,8 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.3 Fast",
         "offline": false,
@@ -7490,8 +7491,7 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.0 19B Distilled",
         "offline": false,
@@ -10806,6 +10806,32 @@
           "combineImages": true
         },
         "name": "Qwen Image 2 Pro",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "inpaint"
+    },
+    {
+      "created": 1776902400,
+      "id": "wan-2-7-pro-edit",
+      "model_spec": {
+        "pricing": {
+          "inpaint": {
+            "usd": 0.094,
+            "diem": 0.094
+          }
+        },
+        "constraints": {
+          "aspectRatios": [
+            "auto"
+          ],
+          "promptCharacterLimit": 5000,
+          "combineImages": true
+        },
+        "name": "Wan 2.7 Pro Edit",
         "offline": false,
         "privacy": "anonymized",
         "traits": []
