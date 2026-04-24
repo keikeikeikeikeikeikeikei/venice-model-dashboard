@@ -812,7 +812,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-04-24 05:58)</div>
+            <div class="meta">Generated from Live API Data (2026-04-24 16:34)</div>
         </header>
 
         <div class="controls">
@@ -3114,6 +3114,94 @@
         "modelSource": "https://github.com/MoonshotAI/Kimi-K2.5",
         "offline": false,
         "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1776988800,
+      "id": "deepseek-v4-pro",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 2.175,
+            "diem": 2.175
+          },
+          "output": {
+            "usd": 4.35,
+            "diem": 4.35
+          }
+        },
+        "availableContextTokens": 1000000,
+        "maxCompletionTokens": 32768,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": true,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "DeepSeek V4 Pro is a 1.6T-parameter Mixture-of-Experts model with 49B active parameters and a 1M-token context window. Built for advanced reasoning, coding, and long-horizon agentic workflows with a hybrid attention system for efficient long-context processing. Note: This model is hosted in China and your prompts may be used for training.",
+        "name": "DeepSeek V4 Pro",
+        "modelSource": "https://openrouter.ai/deepseek/deepseek-v4-pro",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "created": 1776988800,
+      "id": "deepseek-v4-flash",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.175,
+            "diem": 0.175
+          },
+          "output": {
+            "usd": 0.35,
+            "diem": 0.35
+          }
+        },
+        "availableContextTokens": 1000000,
+        "maxCompletionTokens": 32768,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": true,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "DeepSeek V4 Flash is an efficiency-optimized 284B-parameter Mixture-of-Experts model with 13B active parameters and a 1M-token context window. Tuned for fast inference and high-throughput workloads while maintaining strong reasoning and coding performance. Note: This model is hosted in China and your prompts may be used for training.",
+        "name": "DeepSeek V4 Flash",
+        "modelSource": "https://openrouter.ai/deepseek/deepseek-v4-flash",
+        "offline": false,
+        "privacy": "anonymized",
         "traits": []
       },
       "object": "model",
@@ -6993,8 +7081,7 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.0 Fast",
         "offline": false,
@@ -7041,8 +7128,7 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.0 Fast",
         "offline": false,
@@ -7174,7 +7260,8 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.3 Fast",
         "offline": false,
@@ -7447,7 +7534,8 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 19B Distilled",
         "offline": false,
@@ -7493,8 +7581,7 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.0 19B Distilled",
         "offline": false,
@@ -9160,7 +9247,8 @@
         "model_sets": [
           "high_resolution",
           "audio",
-          "cinematic"
+          "cinematic",
+          "fast"
         ],
         "name": "PixVerse v5.6",
         "offline": false,
@@ -10945,7 +11033,7 @@
             "4:5"
           ],
           "promptCharacterLimit": 5000,
-          "combineImages": true
+          "combineImages": false
         },
         "name": "FireRed Image Edit 1.1",
         "offline": false,
@@ -11099,7 +11187,6 @@
         },
         "constraints": {
           "aspectRatios": [
-            "auto",
             "1:1",
             "3:2",
             "16:9",
