@@ -4140,7 +4140,7 @@
           }
         },
         "constraints": {
-          "promptCharacterLimit": 5000,
+          "promptCharacterLimit": 32000,
           "defaultResolution": "1K",
           "resolutions": [
             "1K",
@@ -6466,8 +6466,7 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.0 Fast",
         "offline": false,
@@ -6828,7 +6827,8 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 19B",
         "offline": false,
@@ -10609,7 +10609,7 @@
             "3:4",
             "4:5"
           ],
-          "promptCharacterLimit": 5000,
+          "promptCharacterLimit": 32000,
           "combineImages": true
         },
         "name": "GPT Image 2",
