@@ -5854,6 +5854,185 @@
       "type": "video"
     },
     {
+      "created": 1776988800,
+      "id": "happyhorse-1-0-text-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "text-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "resolutions": [
+            "1080p",
+            "720p"
+          ],
+          "durations": [
+            "3s",
+            "4s",
+            "5s",
+            "6s",
+            "7s",
+            "8s",
+            "9s",
+            "10s",
+            "11s",
+            "12s",
+            "13s",
+            "14s",
+            "15s"
+          ],
+          "audio": true,
+          "audio_configurable": false,
+          "audio_input": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "high_resolution"
+        ],
+        "name": "HappyHorse 1.0",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.42
+      }
+    },
+    {
+      "created": 1777075200,
+      "id": "happyhorse-1-0-image-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [],
+          "resolutions": [
+            "1080p",
+            "720p"
+          ],
+          "durations": [
+            "3s",
+            "4s",
+            "5s",
+            "6s",
+            "7s",
+            "8s",
+            "9s",
+            "10s",
+            "11s",
+            "12s",
+            "13s",
+            "14s",
+            "15s"
+          ],
+          "audio": true,
+          "audio_configurable": false,
+          "audio_input": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "high_resolution"
+        ],
+        "name": "HappyHorse 1.0",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.42
+      }
+    },
+    {
+      "created": 1777248000,
+      "id": "happyhorse-1-0-reference-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "9:16",
+            "1:1",
+            "4:3",
+            "3:4"
+          ],
+          "resolutions": [
+            "1080p",
+            "720p"
+          ],
+          "durations": [
+            "3s",
+            "4s",
+            "5s",
+            "6s",
+            "7s",
+            "8s",
+            "9s",
+            "10s",
+            "11s",
+            "12s",
+            "13s",
+            "14s",
+            "15s"
+          ],
+          "audio": true,
+          "audio_configurable": false,
+          "audio_input": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "high_resolution"
+        ],
+        "name": "HappyHorse 1.0 Reference",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.42
+      }
+    },
+    {
+      "created": 1777248000,
+      "id": "happyhorse-1-0-video-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "video",
+          "aspect_ratios": [],
+          "resolutions": [
+            "1080p",
+            "720p"
+          ],
+          "durations": [
+            "Auto"
+          ],
+          "audio": true,
+          "audio_configurable": false,
+          "audio_input": false,
+          "video_input": true
+        },
+        "model_sets": [
+          "high_resolution"
+        ],
+        "name": "HappyHorse 1.0 Edit",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video"
+    },
+    {
       "created": 1765843200,
       "id": "wan-2.6-image-to-video",
       "model_spec": {
