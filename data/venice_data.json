@@ -2336,12 +2336,16 @@
       "model_spec": {
         "pricing": {
           "input": {
-            "usd": 2.175,
-            "diem": 2.175
+            "usd": 1.73,
+            "diem": 1.73
+          },
+          "cache_input": {
+            "usd": 0.33,
+            "diem": 0.33
           },
           "output": {
-            "usd": 4.35,
-            "diem": 4.35
+            "usd": 3.796,
+            "diem": 3.796
           }
         },
         "availableContextTokens": 1000000,
@@ -2363,9 +2367,9 @@
           "supportsWebSearch": true,
           "supportsXSearch": false
         },
-        "description": "DeepSeek V4 Pro is a 1.6T-parameter Mixture-of-Experts model with 49B active parameters and a 1M-token context window. Built for advanced reasoning, coding, and long-horizon agentic workflows with a hybrid attention system for efficient long-context processing. Note: This model is hosted in China and your prompts may be used for training.",
+        "description": "DeepSeek V4 Pro is a 1.6T-parameter Mixture-of-Experts model with 49B active parameters and a 1M-token context window. Built for advanced reasoning, coding, and long-horizon agentic workflows with a hybrid attention system for efficient long-context processing.",
         "name": "DeepSeek V4 Pro",
-        "modelSource": "https://openrouter.ai/deepseek/deepseek-v4-pro",
+        "modelSource": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
         "offline": false,
         "privacy": "anonymized",
         "traits": []
@@ -2381,8 +2385,12 @@
       "model_spec": {
         "pricing": {
           "input": {
-            "usd": 0.175,
-            "diem": 0.175
+            "usd": 0.17,
+            "diem": 0.17
+          },
+          "cache_input": {
+            "usd": 0.028,
+            "diem": 0.028
           },
           "output": {
             "usd": 0.35,
@@ -2408,9 +2416,9 @@
           "supportsWebSearch": true,
           "supportsXSearch": false
         },
-        "description": "DeepSeek V4 Flash is an efficiency-optimized 284B-parameter Mixture-of-Experts model with 13B active parameters and a 1M-token context window. Tuned for fast inference and high-throughput workloads while maintaining strong reasoning and coding performance. Note: This model is hosted in China and your prompts may be used for training.",
+        "description": "DeepSeek V4 Flash is an efficiency-optimized 284B-parameter Mixture-of-Experts model with 13B active parameters and a 1M-token context window. Tuned for fast inference and high-throughput workloads while maintaining strong reasoning and coding performance.",
         "name": "DeepSeek V4 Flash",
-        "modelSource": "https://openrouter.ai/deepseek/deepseek-v4-flash",
+        "modelSource": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
         "offline": false,
         "privacy": "anonymized",
         "traits": []
@@ -3863,6 +3871,9 @@
           "supportsWebSearch": true,
           "supportsXSearch": false
         },
+        "deprecation": {
+          "date": "2026-05-01T00:00:00.000Z"
+        },
         "description": "GLM 5 running in a Trusted Execution Environment (TEE). Hardware attestation evidence is available for independent verification of enclave identity and configuration.",
         "name": "GLM 5",
         "modelSource": "https://huggingface.co/zai-org/GLM-5",
@@ -4871,10 +4882,10 @@
         ],
         "constraints": {
           "promptCharacterLimit": 7500,
-          "defaultResolution": "1k",
+          "defaultResolution": "1K",
           "resolutions": [
-            "1k",
-            "2k"
+            "1K",
+            "2K"
           ],
           "aspectRatios": [
             "1:1",
@@ -4927,10 +4938,10 @@
         ],
         "constraints": {
           "promptCharacterLimit": 7500,
-          "defaultResolution": "1k",
+          "defaultResolution": "1K",
           "resolutions": [
-            "1k",
-            "2k"
+            "1K",
+            "2K"
           ],
           "aspectRatios": [
             "1:1",
