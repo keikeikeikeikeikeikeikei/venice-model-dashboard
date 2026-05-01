@@ -1405,6 +1405,71 @@
       "type": "text"
     },
     {
+      "context_length": 1000000,
+      "created": 1776470400,
+      "id": "grok-4-3",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 1.42,
+            "diem": 1.42
+          },
+          "cache_input": {
+            "usd": 0.23,
+            "diem": 0.23
+          },
+          "output": {
+            "usd": 2.83,
+            "diem": 2.83
+          },
+          "extended": {
+            "context_token_threshold": 200000,
+            "input": {
+              "usd": 2.83,
+              "diem": 2.83
+            },
+            "output": {
+              "usd": 5.67,
+              "diem": 5.67
+            },
+            "cache_input": {
+              "usd": 0.45,
+              "diem": 0.45
+            }
+          }
+        },
+        "availableContextTokens": 1000000,
+        "maxCompletionTokens": 32000,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": true
+        },
+        "description": "Grok 4.3 is xAI's most intelligent and fastest reasoning model with function calling, structured outputs, and a 1M-token context window. Suited for agentic workflows, instruction-following tasks, and applications requiring high factual accuracy.",
+        "name": "Grok 4.3",
+        "modelSource": "https://docs.x.ai/developers/models",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
       "context_length": 2000000,
       "created": 1773273600,
       "id": "grok-4-20",
@@ -6666,7 +6731,8 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 Fast",
         "offline": false,
@@ -6713,8 +6779,7 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.0 Fast",
         "offline": false,
@@ -6846,8 +6911,7 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.3 Fast",
         "offline": false,
@@ -6895,7 +6959,8 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.3 Fast",
         "offline": false,
