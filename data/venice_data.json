@@ -10365,6 +10365,17 @@
           "Siobhan",
           "Vicky"
         ],
+        "voice_cloning": {
+          "mode": "zero_shot",
+          "accepted_formats": [
+            "mp3",
+            "wav",
+            "flac",
+            "mp4"
+          ],
+          "min_sample_seconds": 5,
+          "retention_days": 7
+        },
         "name": "Chatterbox HD (Resemble AI)",
         "offline": false,
         "privacy": "private",
