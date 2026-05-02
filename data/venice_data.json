@@ -6648,7 +6648,8 @@
         },
         "model_sets": [
           "uncensored",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "Wan 2.2 A14B",
         "offline": false,
@@ -6908,8 +6909,7 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.3 Fast",
         "offline": false,
