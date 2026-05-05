@@ -401,56 +401,6 @@
       "type": "text"
     },
     {
-      "context_length": 32000,
-      "created": 1742262554,
-      "id": "venice-uncensored",
-      "model_spec": {
-        "pricing": {
-          "input": {
-            "usd": 0.2,
-            "diem": 0.2
-          },
-          "output": {
-            "usd": 0.9,
-            "diem": 0.9
-          }
-        },
-        "availableContextTokens": 32000,
-        "maxCompletionTokens": 8192,
-        "capabilities": {
-          "optimizedForCode": false,
-          "quantization": "fp16",
-          "supportsAudioInput": false,
-          "supportsFunctionCalling": false,
-          "supportsLogProbs": false,
-          "supportsMultipleImages": false,
-          "supportsReasoning": false,
-          "supportsReasoningEffort": false,
-          "supportsResponseSchema": true,
-          "supportsTeeAttestation": false,
-          "supportsE2EE": false,
-          "supportsVideoInput": false,
-          "supportsVision": false,
-          "supportsWebSearch": true,
-          "supportsXSearch": false
-        },
-        "deprecation": {
-          "date": "2026-04-15T00:00:00.000Z"
-        },
-        "description": "Designed for maximum creative freedom and authentic interaction. Ideal for open-ended exploration, roleplay, and unfiltered dialogue. Features minimal content restrictions.",
-        "name": "Venice Uncensored 1.1",
-        "modelSource": "https://huggingface.co/cognitivecomputations/Dolphin-Mistral-24B-Venice-Edition",
-        "offline": false,
-        "privacy": "private",
-        "traits": [
-          "most_uncensored"
-        ]
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "text"
-    },
-    {
       "context_length": 128000,
       "created": 1775001600,
       "id": "venice-uncensored-1-2",
@@ -973,56 +923,6 @@
     },
     {
       "context_length": 256000,
-      "created": 1745903059,
-      "id": "qwen3-coder-480b-a35b-instruct",
-      "model_spec": {
-        "pricing": {
-          "input": {
-            "usd": 0.75,
-            "diem": 0.75
-          },
-          "output": {
-            "usd": 3,
-            "diem": 3
-          }
-        },
-        "availableContextTokens": 256000,
-        "maxCompletionTokens": 65536,
-        "capabilities": {
-          "optimizedForCode": true,
-          "quantization": "fp8",
-          "supportsAudioInput": false,
-          "supportsFunctionCalling": true,
-          "supportsLogProbs": false,
-          "supportsMultipleImages": false,
-          "supportsReasoning": false,
-          "supportsReasoningEffort": false,
-          "supportsResponseSchema": true,
-          "supportsTeeAttestation": false,
-          "supportsE2EE": false,
-          "supportsVideoInput": false,
-          "supportsVision": false,
-          "supportsWebSearch": true,
-          "supportsXSearch": false
-        },
-        "deprecation": {
-          "date": "2026-04-30T00:00:00.000Z"
-        },
-        "description": "Optimized for code.",
-        "name": "Qwen 3 Coder 480b",
-        "modelSource": "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct",
-        "offline": false,
-        "privacy": "private",
-        "traits": [
-          "default_code"
-        ]
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "text"
-    },
-    {
-      "context_length": 256000,
       "created": 1768521600,
       "id": "qwen3-vl-235b-a22b",
       "model_spec": {
@@ -1113,7 +1013,9 @@
         "modelSource": "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct-Turbo",
         "offline": false,
         "privacy": "private",
-        "traits": []
+        "traits": [
+          "default_code"
+        ]
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -2216,7 +2118,7 @@
           "supportsFunctionCalling": true,
           "supportsLogProbs": false,
           "supportsMultipleImages": false,
-          "supportsReasoning": false,
+          "supportsReasoning": true,
           "supportsReasoningEffort": false,
           "supportsResponseSchema": false,
           "supportsTeeAttestation": false,
@@ -4071,7 +3973,7 @@
         },
         "supportsWebSearch": false,
         "deprecation": {
-          "date": "2026-05-01T00:00:00.000Z"
+          "date": "2026-05-07T00:00:00.000Z"
         },
         "name": "HiDream",
         "modelSource": "https://huggingface.co/HiDream-ai/HiDream-I1-Dev",
@@ -5104,9 +5006,6 @@
           "widthHeightDivisor": 8
         },
         "supportsWebSearch": false,
-        "deprecation": {
-          "date": "2026-04-16T00:00:00.000Z"
-        },
         "name": "Lustify v7",
         "modelSource": "https://civitai.com/models/573152/lustify-sdxl-nsfw-checkpoint",
         "offline": false,
@@ -6395,7 +6294,8 @@
           "audio",
           "long_duration",
           "photorealistic",
-          "venice_recommendations"
+          "venice_recommendations",
+          "fast"
         ],
         "name": "Grok Imagine",
         "offline": false,
@@ -9088,8 +8988,7 @@
           "high_resolution",
           "audio",
           "cinematic",
-          "long_duration",
-          "fast"
+          "long_duration"
         ],
         "name": "PixVerse C1 R2V",
         "offline": false,
@@ -10648,7 +10547,8 @@
             "4:5"
           ],
           "promptCharacterLimit": 5000,
-          "combineImages": true
+          "combineImages": true,
+          "singleImageAspectRatio": true
         },
         "name": "FireRed Image Edit 1.1",
         "offline": false,
@@ -10682,7 +10582,8 @@
             "4:5"
           ],
           "promptCharacterLimit": 1500,
-          "combineImages": true
+          "combineImages": true,
+          "singleImageAspectRatio": true
         },
         "name": "Qwen Edit 2511",
         "offline": false,
@@ -10713,7 +10614,8 @@
             "2:3"
           ],
           "promptCharacterLimit": 7500,
-          "combineImages": true
+          "combineImages": true,
+          "singleImageAspectRatio": false
         },
         "name": "Grok Imagine",
         "offline": false,
@@ -10746,7 +10648,8 @@
             "4:5"
           ],
           "promptCharacterLimit": 10000,
-          "combineImages": true
+          "combineImages": true,
+          "singleImageAspectRatio": true
         },
         "name": "Qwen Image 2",
         "offline": false,
@@ -10779,7 +10682,8 @@
             "4:5"
           ],
           "promptCharacterLimit": 10000,
-          "combineImages": true
+          "combineImages": true,
+          "singleImageAspectRatio": true
         },
         "name": "Qwen Image 2 Pro",
         "offline": false,
@@ -10805,7 +10709,8 @@
             "auto"
           ],
           "promptCharacterLimit": 5000,
-          "combineImages": true
+          "combineImages": true,
+          "singleImageAspectRatio": true
         },
         "name": "Wan 2.7 Pro Edit",
         "offline": false,
@@ -10839,7 +10744,8 @@
             "4:5"
           ],
           "promptCharacterLimit": 3000,
-          "combineImages": true
+          "combineImages": true,
+          "singleImageAspectRatio": true
         },
         "name": "Flux 2 Max",
         "offline": false,
@@ -10872,7 +10778,8 @@
             "4:5"
           ],
           "promptCharacterLimit": 10000,
-          "combineImages": true
+          "combineImages": true,
+          "singleImageAspectRatio": true
         },
         "name": "GPT Image 2",
         "offline": false,
@@ -10901,7 +10808,8 @@
             "2:3"
           ],
           "promptCharacterLimit": 5000,
-          "combineImages": true
+          "combineImages": true,
+          "singleImageAspectRatio": true
         },
         "name": "GPT Image 1.5",
         "offline": false,
@@ -10935,7 +10843,8 @@
             "4:5"
           ],
           "promptCharacterLimit": 32768,
-          "combineImages": true
+          "combineImages": true,
+          "singleImageAspectRatio": true
         },
         "name": "Nano Banana 2",
         "offline": false,
@@ -10969,7 +10878,8 @@
             "4:5"
           ],
           "promptCharacterLimit": 32768,
-          "combineImages": true
+          "combineImages": true,
+          "singleImageAspectRatio": true
         },
         "name": "Nano Banana Pro",
         "offline": false,
@@ -11002,7 +10912,8 @@
             "4:5"
           ],
           "promptCharacterLimit": 10000,
-          "combineImages": true
+          "combineImages": true,
+          "singleImageAspectRatio": true
         },
         "name": "Seedream V5 Lite",
         "offline": false,
@@ -11035,7 +10946,8 @@
             "4:5"
           ],
           "promptCharacterLimit": 10000,
-          "combineImages": true
+          "combineImages": true,
+          "singleImageAspectRatio": true
         },
         "name": "Seedream V4.5",
         "offline": false,
