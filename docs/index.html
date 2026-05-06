@@ -812,7 +812,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-05-06 13:34)</div>
+            <div class="meta">Generated from Live API Data (2026-05-07 02:09)</div>
         </header>
 
         <div class="controls">
@@ -961,9 +961,6 @@
             "diem": 3.2
           }
         },
-        "model_sets": [
-          "venice_recommendations"
-        ],
         "availableContextTokens": 198000,
         "maxCompletionTokens": 32000,
         "capabilities": {
@@ -1304,6 +1301,9 @@
             "diem": 0.9
           }
         },
+        "model_sets": [
+          "venice_recommendations"
+        ],
         "availableContextTokens": 128000,
         "maxCompletionTokens": 8192,
         "capabilities": {
@@ -1426,6 +1426,9 @@
             }
           }
         },
+        "model_sets": [
+          "venice_recommendations"
+        ],
         "availableContextTokens": 1000000,
         "maxCompletionTokens": 65536,
         "capabilities": {
@@ -2161,9 +2164,6 @@
             "diem": 0.57
           }
         },
-        "model_sets": [
-          "venice_recommendations"
-        ],
         "availableContextTokens": 1000000,
         "maxCompletionTokens": 30000,
         "capabilities": {
@@ -2183,6 +2183,9 @@
           "supportsVision": true,
           "supportsWebSearch": true,
           "supportsXSearch": false
+        },
+        "deprecation": {
+          "date": "2026-05-15T00:00:00.000Z"
         },
         "description": "Grok 4.1 Fast is xAI's best agentic tool-calling model that shines in real-world use cases like customer support and image analysis.",
         "name": "Grok 4.1 Fast",
@@ -2229,6 +2232,9 @@
             }
           }
         },
+        "model_sets": [
+          "venice_recommendations"
+        ],
         "availableContextTokens": 1000000,
         "maxCompletionTokens": 32000,
         "capabilities": {
@@ -2267,26 +2273,26 @@
       "model_spec": {
         "pricing": {
           "input": {
-            "usd": 2.27,
-            "diem": 2.27
+            "usd": 1.42,
+            "diem": 1.42
           },
           "cache_input": {
             "usd": 0.23,
             "diem": 0.23
           },
           "output": {
-            "usd": 6.8,
-            "diem": 6.8
+            "usd": 2.83,
+            "diem": 2.83
           },
           "extended": {
             "context_token_threshold": 200000,
             "input": {
-              "usd": 4.53,
-              "diem": 4.53
+              "usd": 2.83,
+              "diem": 2.83
             },
             "output": {
-              "usd": 13.6,
-              "diem": 13.6
+              "usd": 5.67,
+              "diem": 5.67
             },
             "cache_input": {
               "usd": 0.45,
@@ -2332,26 +2338,26 @@
       "model_spec": {
         "pricing": {
           "input": {
-            "usd": 2.27,
-            "diem": 2.27
+            "usd": 1.42,
+            "diem": 1.42
           },
           "cache_input": {
             "usd": 0.23,
             "diem": 0.23
           },
           "output": {
-            "usd": 6.8,
-            "diem": 6.8
+            "usd": 2.83,
+            "diem": 2.83
           },
           "extended": {
             "context_token_threshold": 200000,
             "input": {
-              "usd": 4.53,
-              "diem": 4.53
+              "usd": 2.83,
+              "diem": 2.83
             },
             "output": {
-              "usd": 13.6,
-              "diem": 13.6
+              "usd": 5.67,
+              "diem": 5.67
             },
             "cache_input": {
               "usd": 0.45,
@@ -2731,9 +2737,6 @@
             "diem": 30
           }
         },
-        "model_sets": [
-          "venice_recommendations"
-        ],
         "availableContextTokens": 1000000,
         "maxCompletionTokens": 128000,
         "capabilities": {
@@ -2898,6 +2901,9 @@
             "diem": 18
           }
         },
+        "model_sets": [
+          "venice_recommendations"
+        ],
         "availableContextTokens": 1000000,
         "maxCompletionTokens": 64000,
         "capabilities": {
@@ -3100,9 +3106,6 @@
             "diem": 3.5
           }
         },
-        "model_sets": [
-          "venice_recommendations"
-        ],
         "availableContextTokens": 256000,
         "maxCompletionTokens": 65536,
         "capabilities": {
@@ -3440,9 +3443,6 @@
             "diem": 17.5
           }
         },
-        "model_sets": [
-          "venice_recommendations"
-        ],
         "availableContextTokens": 256000,
         "maxCompletionTokens": 65536,
         "capabilities": {
@@ -3769,6 +3769,9 @@
             }
           }
         },
+        "model_sets": [
+          "venice_recommendations"
+        ],
         "availableContextTokens": 1000000,
         "maxCompletionTokens": 131072,
         "capabilities": {
@@ -4010,6 +4013,9 @@
             "diem": 1.5
           }
         },
+        "model_sets": [
+          "venice_recommendations"
+        ],
         "availableContextTokens": 198000,
         "maxCompletionTokens": 32768,
         "capabilities": {
@@ -4611,6 +4617,9 @@
             "diem": 4.15
           }
         },
+        "model_sets": [
+          "venice_recommendations"
+        ],
         "availableContextTokens": 200000,
         "maxCompletionTokens": 32768,
         "capabilities": {
@@ -5667,9 +5676,15 @@
       "id": "grok-imagine-image",
       "model_spec": {
         "pricing": {
-          "generation": {
-            "usd": 0.0325,
-            "diem": 0.0325
+          "resolutions": {
+            "1K": {
+              "usd": 0.04,
+              "diem": 0.04
+            },
+            "2K": {
+              "usd": 0.06,
+              "diem": 0.06
+            }
           },
           "upscale": {
             "2x": {
@@ -6146,6 +6161,7 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false,
           "prompt_character_limit": 3500
         },
@@ -6196,6 +6212,7 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false,
           "prompt_character_limit": 3500
         },
@@ -6250,6 +6267,7 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false,
           "prompt_character_limit": 3500
         },
@@ -6295,6 +6313,7 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false,
           "prompt_character_limit": 3500
         },
@@ -6347,6 +6366,7 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": true,
+          "per_reference_audio": false,
           "video_input": false,
           "prompt_character_limit": 3500
         },
@@ -6398,6 +6418,7 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false,
           "prompt_character_limit": 3500
         },
@@ -6441,6 +6462,7 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false,
           "prompt_character_limit": 3500
         },
@@ -6491,6 +6513,7 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": true,
+          "per_reference_audio": false,
           "video_input": false,
           "prompt_character_limit": 3500
         },
@@ -6535,6 +6558,7 @@
           "audio": false,
           "audio_configurable": false,
           "audio_input": true,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -6576,6 +6600,7 @@
           "audio": false,
           "audio_configurable": false,
           "audio_input": true,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -6613,14 +6638,16 @@
             "5s",
             "10s"
           ],
-          "audio": false,
+          "audio": true,
           "audio_configurable": false,
           "audio_input": false,
+          "per_reference_audio": true,
           "video_input": false
         },
         "model_sets": [
           "uncensored",
           "high_resolution",
+          "audio",
           "open_source",
           "venice_recommendations"
         ],
@@ -6653,6 +6680,7 @@
           "audio": false,
           "audio_configurable": false,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": true
         },
         "model_sets": [
@@ -6703,6 +6731,7 @@
           "audio": true,
           "audio_configurable": false,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -6749,6 +6778,7 @@
           "audio": true,
           "audio_configurable": false,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -6801,6 +6831,7 @@
           "audio": true,
           "audio_configurable": false,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -6835,6 +6866,7 @@
           "audio": true,
           "audio_configurable": false,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": true
         },
         "model_sets": [
@@ -6868,6 +6900,7 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": true,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -6909,6 +6942,7 @@
           "audio": true,
           "audio_configurable": false,
           "audio_input": true,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -6954,6 +6988,7 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": true,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -6995,6 +7030,7 @@
           "audio": true,
           "audio_configurable": false,
           "audio_input": true,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -7039,6 +7075,7 @@
           "audio": true,
           "audio_configurable": false,
           "audio_input": true,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -7087,6 +7124,7 @@
           "audio": true,
           "audio_configurable": false,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false,
           "prompt_character_limit": 4096
         },
@@ -7127,6 +7165,7 @@
           "audio": true,
           "audio_configurable": false,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false,
           "prompt_character_limit": 4096
         },
@@ -7176,11 +7215,13 @@
           "audio": false,
           "audio_configurable": false,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false,
           "prompt_character_limit": 4096
         },
         "model_sets": [
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Grok Imagine R2V",
         "offline": false,
@@ -7221,6 +7262,7 @@
           "audio": true,
           "audio_configurable": false,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false,
           "prompt_character_limit": 4096
         },
@@ -7260,6 +7302,7 @@
           "audio": true,
           "audio_configurable": false,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false,
           "prompt_character_limit": 4096
         },
@@ -7307,6 +7350,7 @@
           "audio": false,
           "audio_configurable": false,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false,
           "prompt_character_limit": 4096
         },
@@ -7344,6 +7388,7 @@
           "audio": true,
           "audio_configurable": false,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": true,
           "prompt_character_limit": 4096
         },
@@ -7383,12 +7428,12 @@
           "audio": false,
           "audio_configurable": false,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
           "uncensored",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "Wan 2.2 A14B",
         "offline": false,
@@ -7418,6 +7463,7 @@
           "audio": false,
           "audio_configurable": false,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -7463,6 +7509,7 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -7510,6 +7557,7 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -7552,6 +7600,7 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -7594,6 +7643,7 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -7642,14 +7692,14 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.3 Fast",
         "offline": false,
@@ -7691,6 +7741,7 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -7735,6 +7786,7 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -7778,6 +7830,7 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -7824,14 +7877,14 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
           "uncensored",
           "audio",
           "long_duration",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.0 19B",
         "offline": false,
@@ -7871,6 +7924,7 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -7917,6 +7971,7 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -7964,6 +8019,7 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -7999,6 +8055,7 @@
           "audio": true,
           "audio_configurable": false,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -8038,6 +8095,7 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -8072,6 +8130,7 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -8110,6 +8169,7 @@
           "audio": false,
           "audio_configurable": false,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -8143,6 +8203,7 @@
           "audio": false,
           "audio_configurable": false,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -8191,6 +8252,7 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -8238,6 +8300,7 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -8289,6 +8352,7 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -8335,6 +8399,7 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -8385,6 +8450,7 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -8435,6 +8501,7 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -8482,6 +8549,7 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -8534,6 +8602,7 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -8584,13 +8653,15 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
           "cinematic",
           "audio",
           "photorealistic",
-          "long_duration"
+          "long_duration",
+          "fast"
         ],
         "name": "Kling O3 Standard",
         "offline": false,
@@ -8630,6 +8701,7 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -8681,6 +8753,7 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -8731,6 +8804,7 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -8777,6 +8851,7 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -8827,6 +8902,7 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -8873,6 +8949,7 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -8913,6 +8990,7 @@
           "audio": false,
           "audio_configurable": false,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -8957,6 +9035,7 @@
           "audio": false,
           "audio_configurable": false,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -8997,6 +9076,7 @@
           "audio": false,
           "audio_configurable": false,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -9041,6 +9121,7 @@
           "audio": false,
           "audio_configurable": false,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -9083,6 +9164,7 @@
           "audio": true,
           "audio_configurable": false,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -9119,6 +9201,7 @@
           "audio": true,
           "audio_configurable": false,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -9160,6 +9243,7 @@
           "audio": true,
           "audio_configurable": false,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -9196,6 +9280,7 @@
           "audio": true,
           "audio_configurable": false,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -9238,6 +9323,7 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -9279,6 +9365,7 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -9323,6 +9410,7 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -9364,6 +9452,7 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -9406,6 +9495,7 @@
           "audio": true,
           "audio_configurable": false,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -9453,6 +9543,7 @@
           "audio": true,
           "audio_configurable": false,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -9497,6 +9588,7 @@
           "audio": true,
           "audio_configurable": false,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -9544,6 +9636,7 @@
           "audio": true,
           "audio_configurable": false,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -9593,6 +9686,7 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -9632,6 +9726,7 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -9677,6 +9772,7 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -9728,6 +9824,7 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -9771,6 +9868,7 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -9823,6 +9921,7 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -9875,6 +9974,7 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -9926,6 +10026,7 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -9972,6 +10073,7 @@
           "audio": true,
           "audio_configurable": true,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false
         },
         "model_sets": [
@@ -10022,6 +10124,7 @@
           "audio": false,
           "audio_configurable": false,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false,
           "prompt_character_limit": 1000
         },
@@ -10066,6 +10169,7 @@
           "audio": false,
           "audio_configurable": false,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false,
           "prompt_character_limit": 1000
         },
@@ -10114,13 +10218,15 @@
           "audio": false,
           "audio_configurable": false,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": false,
           "prompt_character_limit": 1000
         },
         "model_sets": [
           "fast",
           "cinematic",
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Runway Gen-4 Turbo",
         "offline": false,
@@ -10163,6 +10269,7 @@
           "audio": false,
           "audio_configurable": false,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": true,
           "prompt_character_limit": 1000
         },
@@ -10197,6 +10304,7 @@
           "audio": false,
           "audio_configurable": false,
           "audio_input": false,
+          "per_reference_audio": false,
           "video_input": true
         },
         "model_sets": [
@@ -11440,8 +11548,8 @@
       "model_spec": {
         "pricing": {
           "inpaint": {
-            "usd": 0.03,
-            "diem": 0.03
+            "usd": 0.04,
+            "diem": 0.04
           }
         },
         "constraints": {
