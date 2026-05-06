@@ -2194,58 +2194,6 @@
     },
     {
       "context_length": 256000,
-      "created": 1765324800,
-      "id": "kimi-k2-thinking",
-      "model_spec": {
-        "pricing": {
-          "input": {
-            "usd": 0.75,
-            "diem": 0.75
-          },
-          "cache_input": {
-            "usd": 0.375,
-            "diem": 0.375
-          },
-          "output": {
-            "usd": 3.2,
-            "diem": 3.2
-          }
-        },
-        "availableContextTokens": 256000,
-        "maxCompletionTokens": 65536,
-        "capabilities": {
-          "optimizedForCode": true,
-          "quantization": "int4",
-          "supportsAudioInput": false,
-          "supportsFunctionCalling": true,
-          "supportsLogProbs": false,
-          "supportsMultipleImages": false,
-          "supportsReasoning": true,
-          "supportsReasoningEffort": true,
-          "supportsResponseSchema": true,
-          "supportsTeeAttestation": false,
-          "supportsE2EE": false,
-          "supportsVideoInput": false,
-          "supportsVision": false,
-          "supportsWebSearch": true,
-          "supportsXSearch": false
-        },
-        "deprecation": {
-          "date": "2026-05-06T00:00:00.000Z"
-        },
-        "description": "Kimi K2 Thinking is Moonshot AIs most advanced open reasoning model to date, extending the K2 series into agentic, long-horizon reasoning. Built on the trillion-parameter Mixture-of-Experts (MoE) architecture introduced in Kimi K2, it activates 32 billion parameters per forward pass and supports 256 k-token context windows.",
-        "name": "Kimi K2 Thinking",
-        "modelSource": "https://huggingface.co/moonshotai/Kimi-K2-Thinking",
-        "offline": false,
-        "privacy": "private",
-        "traits": []
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "text"
-    },
-    {
-      "context_length": 256000,
       "created": 1769548800,
       "id": "kimi-k2-5",
       "model_spec": {
@@ -5091,6 +5039,9 @@
           "widthHeightDivisor": 8
         },
         "supportsWebSearch": false,
+        "deprecation": {
+          "date": "2026-05-18T00:00:00.000Z"
+        },
         "name": "Qwen Image",
         "modelSource": "https://huggingface.co/Qwen/Qwen-Image",
         "offline": false,
@@ -6340,8 +6291,7 @@
           "prompt_character_limit": 4096
         },
         "model_sets": [
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "name": "Grok Imagine R2V",
         "offline": false,
@@ -6548,7 +6498,8 @@
         },
         "model_sets": [
           "uncensored",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "Wan 2.2 A14B",
         "offline": false,
@@ -6990,7 +6941,8 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 19B",
         "offline": false,
@@ -7129,7 +7081,8 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 19B Distilled",
         "offline": false,
@@ -8892,8 +8845,7 @@
           "high_resolution",
           "audio",
           "cinematic",
-          "long_duration",
-          "fast"
+          "long_duration"
         ],
         "name": "PixVerse C1",
         "offline": false,
@@ -9279,8 +9231,7 @@
         "model_sets": [
           "fast",
           "cinematic",
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "name": "Runway Gen-4 Turbo",
         "offline": false,
