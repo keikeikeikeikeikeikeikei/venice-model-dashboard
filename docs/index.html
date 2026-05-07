@@ -812,7 +812,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-05-07 02:09)</div>
+            <div class="meta">Generated from Live API Data (2026-05-07 11:09)</div>
         </header>
 
         <div class="controls">
@@ -4651,55 +4651,6 @@
       "type": "text"
     },
     {
-      "context_length": 198000,
-      "created": 1773792000,
-      "id": "e2ee-glm-5",
-      "model_spec": {
-        "betaModel": true,
-        "pricing": {
-          "input": {
-            "usd": 1.1,
-            "diem": 1.1
-          },
-          "output": {
-            "usd": 4.15,
-            "diem": 4.15
-          }
-        },
-        "availableContextTokens": 198000,
-        "maxCompletionTokens": 32768,
-        "capabilities": {
-          "optimizedForCode": false,
-          "quantization": "fp8",
-          "supportsAudioInput": false,
-          "supportsFunctionCalling": false,
-          "supportsLogProbs": false,
-          "supportsMultipleImages": false,
-          "supportsReasoning": true,
-          "supportsReasoningEffort": false,
-          "supportsResponseSchema": false,
-          "supportsTeeAttestation": true,
-          "supportsE2EE": true,
-          "supportsVideoInput": false,
-          "supportsVision": false,
-          "supportsWebSearch": true,
-          "supportsXSearch": false
-        },
-        "deprecation": {
-          "date": "2026-05-01T00:00:00.000Z"
-        },
-        "description": "GLM 5 running in a Trusted Execution Environment (TEE). Hardware attestation evidence is available for independent verification of enclave identity and configuration.",
-        "name": "GLM 5",
-        "modelSource": "https://huggingface.co/zai-org/GLM-5",
-        "offline": false,
-        "privacy": "private",
-        "traits": []
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "text"
-    },
-    {
       "context_length": 128000,
       "created": 1773792000,
       "id": "e2ee-qwen3-5-122b-a10b",
@@ -6269,7 +6220,7 @@
           "audio_input": false,
           "per_reference_audio": false,
           "video_input": false,
-          "prompt_character_limit": 3500
+          "prompt_character_limit": 10000
         },
         "model_sets": [
           "high_resolution",
@@ -6315,7 +6266,7 @@
           "audio_input": false,
           "per_reference_audio": false,
           "video_input": false,
-          "prompt_character_limit": 3500
+          "prompt_character_limit": 10000
         },
         "model_sets": [
           "high_resolution",
@@ -6368,7 +6319,7 @@
           "audio_input": true,
           "per_reference_audio": false,
           "video_input": false,
-          "prompt_character_limit": 3500
+          "prompt_character_limit": 10000
         },
         "model_sets": [
           "high_resolution",
@@ -8660,8 +8611,7 @@
           "cinematic",
           "audio",
           "photorealistic",
-          "long_duration",
-          "fast"
+          "long_duration"
         ],
         "name": "Kling O3 Standard",
         "offline": false,
@@ -9692,7 +9642,8 @@
         "model_sets": [
           "high_resolution",
           "audio",
-          "cinematic"
+          "cinematic",
+          "fast"
         ],
         "name": "PixVerse v5.6",
         "offline": false,
