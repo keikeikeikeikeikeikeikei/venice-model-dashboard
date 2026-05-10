@@ -8573,8 +8573,7 @@
           "high_resolution",
           "audio",
           "cinematic",
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "name": "Veo 3 Fast",
         "offline": false,
@@ -9278,7 +9277,8 @@
           "high_resolution",
           "audio",
           "cinematic",
-          "long_duration"
+          "long_duration",
+          "fast"
         ],
         "name": "PixVerse C1",
         "offline": false,
