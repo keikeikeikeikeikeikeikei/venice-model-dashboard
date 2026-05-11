@@ -1404,7 +1404,9 @@
           "supportsXSearch": false
         },
         "deprecation": {
-          "date": "2026-05-15T00:00:00.000Z"
+          "autoRemap": false,
+          "date": "2026-05-15T00:00:00.000Z",
+          "removesAt": "2026-05-15T00:00:00.000Z"
         },
         "description": "Grok 4.1 Fast is xAI's best agentic tool-calling model that shines in real-world use cases like customer support and image analysis.",
         "name": "Grok 4.1 Fast",
@@ -4219,7 +4221,9 @@
         },
         "supportsWebSearch": false,
         "deprecation": {
-          "date": "2026-05-07T00:00:00.000Z"
+          "autoRemap": false,
+          "date": "2026-05-07T00:00:00.000Z",
+          "removesAt": "2026-05-07T00:00:00.000Z"
         },
         "name": "HiDream",
         "modelSource": "https://huggingface.co/HiDream-ai/HiDream-I1-Dev",
@@ -5179,7 +5183,9 @@
         },
         "supportsWebSearch": false,
         "deprecation": {
-          "date": "2026-05-15T00:00:00.000Z"
+          "autoRemap": false,
+          "date": "2026-05-15T00:00:00.000Z",
+          "removesAt": "2026-05-15T00:00:00.000Z"
         },
         "name": "Grok Imagine Pro",
         "offline": false,
@@ -5347,7 +5353,9 @@
         },
         "supportsWebSearch": false,
         "deprecation": {
-          "date": "2026-05-18T00:00:00.000Z"
+          "autoRemap": false,
+          "date": "2026-05-18T00:00:00.000Z",
+          "removesAt": "2026-05-18T00:00:00.000Z"
         },
         "name": "Qwen Image",
         "modelSource": "https://huggingface.co/Qwen/Qwen-Image",
@@ -6311,8 +6319,7 @@
           "high_resolution",
           "audio",
           "long_duration",
-          "open_source",
-          "venice_recommendations"
+          "open_source"
         ],
         "name": "Wan 2.6",
         "offline": false,
@@ -6353,8 +6360,7 @@
           "high_resolution",
           "audio",
           "long_duration",
-          "open_source",
-          "venice_recommendations"
+          "open_source"
         ],
         "name": "Wan 2.6 Flash",
         "offline": false,
@@ -6399,8 +6405,7 @@
           "high_resolution",
           "audio",
           "long_duration",
-          "open_source",
-          "venice_recommendations"
+          "open_source"
         ],
         "name": "Wan 2.6",
         "offline": false,
@@ -6440,8 +6445,7 @@
           "uncensored",
           "high_resolution",
           "audio",
-          "open_source",
-          "venice_recommendations"
+          "open_source"
         ],
         "name": "Wan 2.5 Preview",
         "offline": false,
@@ -6485,8 +6489,7 @@
           "uncensored",
           "high_resolution",
           "audio",
-          "open_source",
-          "venice_recommendations"
+          "open_source"
         ],
         "name": "Wan 2.5 Preview",
         "offline": false,
@@ -6535,7 +6538,8 @@
           "audio",
           "long_duration",
           "photorealistic",
-          "venice_recommendations"
+          "venice_recommendations",
+          "fast"
         ],
         "name": "Grok Imagine",
         "offline": false,
@@ -6671,7 +6675,8 @@
         "model_sets": [
           "audio",
           "long_duration",
-          "photorealistic"
+          "photorealistic",
+          "venice_recommendations"
         ],
         "name": "Grok Imagine Private",
         "offline": false,
@@ -6711,7 +6716,8 @@
         "model_sets": [
           "audio",
           "long_duration",
-          "photorealistic"
+          "photorealistic",
+          "venice_recommendations"
         ],
         "name": "Grok Imagine Private",
         "offline": false,
@@ -6797,7 +6803,8 @@
         "model_sets": [
           "audio",
           "long_duration",
-          "photorealistic"
+          "photorealistic",
+          "venice_recommendations"
         ],
         "name": "Grok Imagine Private",
         "offline": false,
@@ -8906,7 +8913,9 @@
           "photorealistic"
         ],
         "deprecation": {
-          "date": "2026-09-24T00:00:00.000Z"
+          "autoRemap": false,
+          "date": "2026-09-24T00:00:00.000Z",
+          "removesAt": "2026-09-24T00:00:00.000Z"
         },
         "name": "Sora 2",
         "offline": false,
@@ -8955,7 +8964,9 @@
           "photorealistic"
         ],
         "deprecation": {
-          "date": "2026-09-24T00:00:00.000Z"
+          "autoRemap": false,
+          "date": "2026-09-24T00:00:00.000Z",
+          "removesAt": "2026-09-24T00:00:00.000Z"
         },
         "name": "Sora 2 Pro",
         "offline": false,
@@ -8999,7 +9010,9 @@
           "photorealistic"
         ],
         "deprecation": {
-          "date": "2026-09-24T00:00:00.000Z"
+          "autoRemap": false,
+          "date": "2026-09-24T00:00:00.000Z",
+          "removesAt": "2026-09-24T00:00:00.000Z"
         },
         "name": "Sora 2",
         "offline": false,
@@ -9048,7 +9061,9 @@
           "photorealistic"
         ],
         "deprecation": {
-          "date": "2026-09-24T00:00:00.000Z"
+          "autoRemap": false,
+          "date": "2026-09-24T00:00:00.000Z",
+          "removesAt": "2026-09-24T00:00:00.000Z"
         },
         "name": "Sora 2 Pro",
         "offline": false,
@@ -9277,8 +9292,7 @@
           "high_resolution",
           "audio",
           "cinematic",
-          "long_duration",
-          "fast"
+          "long_duration"
         ],
         "name": "PixVerse C1",
         "offline": false,
