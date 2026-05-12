@@ -812,7 +812,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-05-11 23:41)</div>
+            <div class="meta">Generated from Live API Data (2026-05-12 14:19)</div>
         </header>
 
         <div class="controls">
@@ -2295,7 +2295,8 @@
         "deprecation": {
           "autoRemap": false,
           "date": "2026-05-15T00:00:00.000Z",
-          "removesAt": "2026-05-15T00:00:00.000Z"
+          "removesAt": "2026-05-15T00:00:00.000Z",
+          "replacementModelId": "grok-4-3"
         },
         "description": "Grok 4.1 Fast is xAI's best agentic tool-calling model that shines in real-world use cases like customer support and image analysis.",
         "name": "Grok 4.1 Fast",
@@ -5081,50 +5082,6 @@
       "type": "image"
     },
     {
-      "created": 1747080729,
-      "id": "hidream",
-      "model_spec": {
-        "pricing": {
-          "generation": {
-            "usd": 0.01,
-            "diem": 0.01
-          },
-          "upscale": {
-            "2x": {
-              "usd": 0.02,
-              "diem": 0.02
-            },
-            "4x": {
-              "usd": 0.08,
-              "diem": 0.08
-            }
-          }
-        },
-        "constraints": {
-          "promptCharacterLimit": 1500,
-          "steps": {
-            "default": 20,
-            "max": 50
-          },
-          "widthHeightDivisor": 8
-        },
-        "supportsWebSearch": false,
-        "deprecation": {
-          "autoRemap": false,
-          "date": "2026-05-07T00:00:00.000Z",
-          "removesAt": "2026-05-07T00:00:00.000Z"
-        },
-        "name": "HiDream",
-        "modelSource": "https://huggingface.co/HiDream-ai/HiDream-I1-Dev",
-        "offline": false,
-        "privacy": "private",
-        "traits": []
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "image"
-    },
-    {
       "created": 1764086377,
       "id": "flux-2-pro",
       "model_spec": {
@@ -6074,7 +6031,8 @@
         "deprecation": {
           "autoRemap": false,
           "date": "2026-05-15T00:00:00.000Z",
-          "removesAt": "2026-05-15T00:00:00.000Z"
+          "removesAt": "2026-05-15T00:00:00.000Z",
+          "replacementModelId": "grok-imagine-image-quality"
         },
         "name": "Grok Imagine Pro",
         "offline": false,
@@ -6514,7 +6472,10 @@
           "audio_input": false,
           "per_reference_audio": false,
           "video_input": false,
-          "prompt_character_limit": 3500
+          "prompt_character_limit": 3500,
+          "reference_image_min_short_side_pixels": 300,
+          "reference_image_min_aspect_ratio": 0.4,
+          "reference_image_max_aspect_ratio": 2.5
         },
         "model_sets": [
           "uncensored",
@@ -6615,7 +6576,10 @@
           "audio_input": false,
           "per_reference_audio": false,
           "video_input": false,
-          "prompt_character_limit": 10000
+          "prompt_character_limit": 10000,
+          "reference_image_min_short_side_pixels": 300,
+          "reference_image_min_aspect_ratio": 0.4,
+          "reference_image_max_aspect_ratio": 2.5
         },
         "model_sets": [
           "high_resolution",
@@ -6668,7 +6632,10 @@
           "audio_input": true,
           "per_reference_audio": false,
           "video_input": false,
-          "prompt_character_limit": 10000
+          "prompt_character_limit": 10000,
+          "reference_image_min_short_side_pixels": 300,
+          "reference_image_min_aspect_ratio": 0.4,
+          "reference_image_max_aspect_ratio": 2.5
         },
         "model_sets": [
           "high_resolution",
@@ -6764,7 +6731,10 @@
           "audio_input": false,
           "per_reference_audio": false,
           "video_input": false,
-          "prompt_character_limit": 3500
+          "prompt_character_limit": 3500,
+          "reference_image_min_short_side_pixels": 300,
+          "reference_image_min_aspect_ratio": 0.4,
+          "reference_image_max_aspect_ratio": 2.5
         },
         "model_sets": [
           "audio",
@@ -6815,7 +6785,10 @@
           "audio_input": true,
           "per_reference_audio": false,
           "video_input": false,
-          "prompt_character_limit": 3500
+          "prompt_character_limit": 3500,
+          "reference_image_min_short_side_pixels": 300,
+          "reference_image_min_aspect_ratio": 0.4,
+          "reference_image_max_aspect_ratio": 2.5
         },
         "model_sets": [
           "audio",
@@ -7079,7 +7052,8 @@
           "audio_configurable": false,
           "audio_input": false,
           "per_reference_audio": false,
-          "video_input": false
+          "video_input": false,
+          "reference_image_min_short_side_pixels": 300
         },
         "model_sets": [
           "high_resolution"
@@ -7132,7 +7106,8 @@
           "audio_configurable": false,
           "audio_input": false,
           "per_reference_audio": false,
-          "video_input": false
+          "video_input": false,
+          "reference_image_min_short_side_pixels": 400
         },
         "model_sets": [
           "high_resolution"
@@ -7167,7 +7142,8 @@
           "audio_configurable": false,
           "audio_input": false,
           "per_reference_audio": false,
-          "video_input": true
+          "video_input": true,
+          "reference_image_min_short_side_pixels": 300
         },
         "model_sets": [
           "high_resolution"
@@ -7427,8 +7403,7 @@
           "audio",
           "long_duration",
           "photorealistic",
-          "venice_recommendations",
-          "fast"
+          "venice_recommendations"
         ],
         "name": "Grok Imagine",
         "offline": false,
@@ -8136,7 +8111,8 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.3 Full Quality",
         "offline": false,
@@ -11505,8 +11481,8 @@
       "model_spec": {
         "pricing": {
           "input": {
-            "usd": 5.25,
-            "diem": 5.25
+            "usd": 18.75,
+            "diem": 18.75
           }
         },
         "voices": [
