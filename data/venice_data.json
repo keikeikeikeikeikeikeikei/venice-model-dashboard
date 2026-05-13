@@ -4158,7 +4158,8 @@
           }
         },
         "model_sets": [
-          "venice_recommendations"
+          "venice_recommendations",
+          "featured"
         ],
         "constraints": {
           "promptCharacterLimit": 7500,
@@ -4325,7 +4326,8 @@
           }
         },
         "model_sets": [
-          "venice_recommendations"
+          "venice_recommendations",
+          "featured"
         ],
         "constraints": {
           "promptCharacterLimit": 10000,
@@ -4602,6 +4604,9 @@
             }
           }
         },
+        "model_sets": [
+          "featured"
+        ],
         "constraints": {
           "promptCharacterLimit": 32768,
           "defaultResolution": "1K",
@@ -5435,7 +5440,8 @@
           }
         },
         "model_sets": [
-          "venice_recommendations"
+          "venice_recommendations",
+          "featured"
         ],
         "constraints": {
           "promptCharacterLimit": 7500,
@@ -5648,7 +5654,8 @@
           "audio",
           "long_duration",
           "cinematic",
-          "photorealistic"
+          "photorealistic",
+          "featured"
         ],
         "name": "Seedance 2.0",
         "offline": false,
@@ -5951,7 +5958,8 @@
           "audio",
           "long_duration",
           "open_source",
-          "venice_recommendations"
+          "venice_recommendations",
+          "featured"
         ],
         "name": "Wan 2.7",
         "offline": false,
@@ -6119,7 +6127,8 @@
           "video_input": false
         },
         "model_sets": [
-          "high_resolution"
+          "high_resolution",
+          "featured"
         ],
         "name": "HappyHorse 1.0",
         "offline": false,
@@ -6514,8 +6523,7 @@
           "audio",
           "long_duration",
           "photorealistic",
-          "venice_recommendations",
-          "fast"
+          "venice_recommendations"
         ],
         "name": "Grok Imagine",
         "offline": false,
@@ -6652,7 +6660,8 @@
           "audio",
           "long_duration",
           "photorealistic",
-          "venice_recommendations"
+          "venice_recommendations",
+          "featured"
         ],
         "name": "Grok Imagine Private",
         "offline": false,
@@ -6901,7 +6910,8 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 Fast",
         "offline": false,
