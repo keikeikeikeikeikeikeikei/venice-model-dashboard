@@ -1954,6 +1954,61 @@
     },
     {
       "context_length": 1000000,
+      "created": 1778716800,
+      "id": "claude-opus-4-7-fast",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 36,
+            "diem": 36
+          },
+          "cache_input": {
+            "usd": 3.6,
+            "diem": 3.6
+          },
+          "cache_write": {
+            "usd": 45,
+            "diem": 45
+          },
+          "output": {
+            "usd": 180,
+            "diem": 180
+          }
+        },
+        "availableContextTokens": 1000000,
+        "maxCompletionTokens": 128000,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Claude Opus 4.7 (Fast) is a speed-optimized variant of Anthropic's most capable generally available model, offering the same 1M token context window and strong performance across complex reasoning and agentic coding — with lower latency.",
+        "name": "Claude Opus 4.7 Fast",
+        "modelSource": "",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 1000000,
       "created": 1770249600,
       "id": "claude-opus-4-6",
       "model_spec": {
