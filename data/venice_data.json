@@ -5226,52 +5226,6 @@
     },
     {
       "created": 1736635129,
-      "id": "qwen-image",
-      "model_spec": {
-        "pricing": {
-          "generation": {
-            "usd": 0.01,
-            "diem": 0.01
-          },
-          "upscale": {
-            "2x": {
-              "usd": 0.02,
-              "diem": 0.02
-            },
-            "4x": {
-              "usd": 0.08,
-              "diem": 0.08
-            }
-          }
-        },
-        "constraints": {
-          "promptCharacterLimit": 1500,
-          "steps": {
-            "default": 8,
-            "max": 8
-          },
-          "widthHeightDivisor": 8
-        },
-        "supportsWebSearch": false,
-        "deprecation": {
-          "autoRemap": false,
-          "date": "2026-05-18T00:00:00.000Z",
-          "removesAt": "2026-05-18T00:00:00.000Z"
-        },
-        "name": "Qwen Image",
-        "modelSource": "https://huggingface.co/Qwen/Qwen-Image",
-        "offline": false,
-        "privacy": "private",
-        "traits": [
-          "highest_quality"
-        ]
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "image"
-    },
-    {
-      "created": 1736635129,
       "id": "wai-Illustrious",
       "model_spec": {
         "pricing": {
@@ -7254,7 +7208,8 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 19B",
         "offline": false,
@@ -7396,8 +7351,7 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.0 19B Distilled",
         "offline": false,
