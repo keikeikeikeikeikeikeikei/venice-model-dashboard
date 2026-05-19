@@ -71,19 +71,6 @@ process_repo() {
             log "  📸 Taking screenshot..."
             uv run python scripts/take_screenshot.py >> "$LOG_FILE" 2>&1
         fi
-
-        # Fetch model cards if we are in the root or have specific scripts
-        if [[ "$repo_name" == "Venice Pricing" ]]; then
-            log "  🃏 Fetching Venice model cards..."
-            uv run --with requests python "$BASE_DIR/scripts/fetch_venice_model_cards.py" >> "$LOG_FILE" 2>&1
-        elif [[ "$repo_name" == "OpenRouter Dashboard" ]]; then
-            log "  🃏 Fetching Free model cards..."
-            uv run --with requests python "$BASE_DIR/scripts/fetch_free_model_cards.py" >> "$LOG_FILE" 2>&1
-        fi
-        
-        # Clean up empty model card directories
-        log "  🧹 Cleaning up empty model cards..."
-        python3 "$BASE_DIR/scripts/clean_empty_model_cards.py" >> "$LOG_FILE" 2>&1
         
         # Check if build actually modified anything tracked by git
         if [[ -n $(git status --porcelain) ]]; then
