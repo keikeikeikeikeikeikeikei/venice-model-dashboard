@@ -1564,6 +1564,72 @@
     },
     {
       "context_length": 256000,
+      "created": 1779321600,
+      "id": "grok-build-0-1",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 1,
+            "diem": 1
+          },
+          "cache_input": {
+            "usd": 0.2,
+            "diem": 0.2
+          },
+          "output": {
+            "usd": 2,
+            "diem": 2
+          },
+          "extended": {
+            "context_token_threshold": 200000,
+            "input": {
+              "usd": 2,
+              "diem": 2
+            },
+            "output": {
+              "usd": 4,
+              "diem": 4
+            },
+            "cache_input": {
+              "usd": 0.4,
+              "diem": 0.4
+            }
+          }
+        },
+        "availableContextTokens": 256000,
+        "maxCompletionTokens": 65536,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "xAI's fast coding model trained specifically for agentic coding, currently in early access.",
+        "name": "Grok Build 0.1",
+        "modelSource": "https://docs.x.ai/developers/models/grok-build-0.1",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 256000,
       "created": 1768435200,
       "id": "mistral-small-3-2-24b-instruct",
       "model_spec": {
@@ -4041,6 +4107,56 @@
       "type": "text"
     },
     {
+      "context_length": 32000,
+      "created": 1779235200,
+      "id": "e2ee-qwen3-6-35b-a3b",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 0.2125,
+            "diem": 0.2125
+          },
+          "cache_input": {
+            "usd": 0.07,
+            "diem": 0.07
+          },
+          "output": {
+            "usd": 1.375,
+            "diem": 1.375
+          }
+        },
+        "availableContextTokens": 32000,
+        "maxCompletionTokens": 4096,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "fp8",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": false,
+          "supportsTeeAttestation": true,
+          "supportsE2EE": true,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Qwen 3.6 35B A3B FP8 running in a Trusted Execution Environment (TEE). A fast mixture-of-experts model with ~3B active parameters per token. Hardware attestation evidence is available for independent verification of enclave identity and configuration.",
+        "name": "Qwen 3.6 35B A3B FP8",
+        "modelSource": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B-FP8",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
       "context_length": 128000,
       "created": 1773792000,
       "id": "e2ee-qwen3-5-122b-a10b",
@@ -4076,9 +4192,64 @@
           "supportsWebSearch": true,
           "supportsXSearch": false
         },
+        "deprecation": {
+          "autoRemap": false,
+          "date": "2026-06-03T00:00:00.000Z",
+          "removesAt": "2026-06-03T00:00:00.000Z"
+        },
         "description": "Qwen3.5 122B A10B running in a Trusted Execution Environment (TEE). Hardware attestation evidence is available for independent verification of enclave identity and configuration.",
         "name": "Qwen3.5 122B A10B",
         "modelSource": "https://huggingface.co/Qwen/Qwen3.5-122B-A10B",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 32000,
+      "created": 1779235200,
+      "id": "e2ee-gemma-4-31b",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 0.1625,
+            "diem": 0.1625
+          },
+          "cache_input": {
+            "usd": 0.0325,
+            "diem": 0.0325
+          },
+          "output": {
+            "usd": 0.5,
+            "diem": 0.5
+          }
+        },
+        "availableContextTokens": 32000,
+        "maxCompletionTokens": 4096,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": false,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": false,
+          "supportsTeeAttestation": true,
+          "supportsE2EE": true,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Gemma 4 31B Instruct running in a Trusted Execution Environment (TEE). Hardware attestation evidence is available for independent verification of enclave identity and configuration.",
+        "name": "Gemma 4 31B Instruct",
+        "modelSource": "https://huggingface.co/google/gemma-4-31B-it",
         "offline": false,
         "privacy": "private",
         "traits": []
@@ -6451,8 +6622,7 @@
           "audio",
           "long_duration",
           "photorealistic",
-          "venice_recommendations",
-          "fast"
+          "venice_recommendations"
         ],
         "name": "Grok Imagine",
         "offline": false,
@@ -7073,8 +7243,7 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.3 Fast",
         "offline": false,
@@ -7351,7 +7520,8 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 19B Distilled",
         "offline": false,
@@ -9063,7 +9233,8 @@
         "model_sets": [
           "high_resolution",
           "audio",
-          "cinematic"
+          "cinematic",
+          "fast"
         ],
         "name": "PixVerse v5.6",
         "offline": false,
