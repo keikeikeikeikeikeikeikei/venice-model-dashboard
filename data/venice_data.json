@@ -556,20 +556,20 @@
         "betaModel": true,
         "pricing": {
           "input": {
-            "usd": 3.125,
-            "diem": 3.125
+            "usd": 2.7,
+            "diem": 2.7
           },
           "cache_input": {
-            "usd": 0.3125,
-            "diem": 0.3125
+            "usd": 0.27,
+            "diem": 0.27
           },
           "cache_write": {
-            "usd": 3.90625,
-            "diem": 3.90625
+            "usd": 3.35,
+            "diem": 3.35
           },
           "output": {
-            "usd": 9.375,
-            "diem": 9.375
+            "usd": 8.05,
+            "diem": 8.05
           }
         },
         "availableContextTokens": 1000000,
@@ -1226,12 +1226,12 @@
       "model_spec": {
         "pricing": {
           "input": {
-            "usd": 0.175,
-            "diem": 0.175
+            "usd": 0.155,
+            "diem": 0.155
           },
           "output": {
-            "usd": 0.5,
-            "diem": 0.5
+            "usd": 0.44,
+            "diem": 0.44
           }
         },
         "availableContextTokens": 256000,
@@ -1910,20 +1910,20 @@
       "model_spec": {
         "pricing": {
           "input": {
-            "usd": 1.8,
-            "diem": 1.8
+            "usd": 1.55,
+            "diem": 1.55
           },
           "cache_input": {
-            "usd": 0.18,
-            "diem": 0.18
+            "usd": 0.155,
+            "diem": 0.155
           },
           "cache_write": {
-            "usd": 0.1,
-            "diem": 0.1
+            "usd": 0.086,
+            "diem": 0.086
           },
           "output": {
-            "usd": 11,
-            "diem": 11
+            "usd": 9.45,
+            "diem": 9.45
           }
         },
         "availableContextTokens": 1000000,
@@ -4228,16 +4228,16 @@
         "betaModel": true,
         "pricing": {
           "input": {
-            "usd": 0.2125,
-            "diem": 0.2125
+            "usd": 0.182,
+            "diem": 0.182
           },
           "cache_input": {
-            "usd": 0.07,
-            "diem": 0.07
+            "usd": 0.06,
+            "diem": 0.06
           },
           "output": {
-            "usd": 1.375,
-            "diem": 1.375
+            "usd": 1.18,
+            "diem": 1.18
           }
         },
         "availableContextTokens": 32000,
@@ -4331,16 +4331,16 @@
         "betaModel": true,
         "pricing": {
           "input": {
-            "usd": 0.1625,
-            "diem": 0.1625
+            "usd": 0.139,
+            "diem": 0.139
           },
           "cache_input": {
-            "usd": 0.0325,
-            "diem": 0.0325
+            "usd": 0.028,
+            "diem": 0.028
           },
           "output": {
-            "usd": 0.5,
-            "diem": 0.5
+            "usd": 0.43,
+            "diem": 0.43
           }
         },
         "availableContextTokens": 32000,
@@ -7415,7 +7415,8 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.3 Fast",
         "offline": false,
@@ -7692,8 +7693,7 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.0 19B Distilled",
         "offline": false,
