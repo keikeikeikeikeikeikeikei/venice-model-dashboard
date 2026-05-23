@@ -6793,8 +6793,7 @@
           "audio",
           "long_duration",
           "photorealistic",
-          "venice_recommendations",
-          "fast"
+          "venice_recommendations"
         ],
         "name": "Grok Imagine",
         "offline": false,
@@ -7182,7 +7181,8 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 Fast",
         "offline": false,
@@ -10260,6 +10260,39 @@
         "supports_speed": false,
         "description": "Latest MiniMax song generation with vocals, instrumental mode, and support for rich structure tags in lyrics.",
         "name": "MiniMax Music 2.6",
+        "modelSource": "",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "music"
+    },
+    {
+      "created": 1779408000,
+      "id": "lyria-3-pro",
+      "model_spec": {
+        "pricing": {
+          "generation": {
+            "usd": 0.1,
+            "diem": 0.1
+          }
+        },
+        "supports_lyrics": false,
+        "lyrics_required": false,
+        "supports_force_instrumental": false,
+        "supports_lyrics_optimizer": false,
+        "supported_formats": [
+          "mp3"
+        ],
+        "default_format": "mp3",
+        "prompt_character_limit": 5000,
+        "min_prompt_length": 1,
+        "supports_language_code": false,
+        "supports_speed": false,
+        "description": "Google's Lyria 3 Pro generates full-length, structured songs up to 3 minutes long from a single text prompt. Supports vocals, lyrics, and multi-language generation across genres.",
+        "name": "Lyria 3 Pro",
         "modelSource": "",
         "offline": false,
         "privacy": "anonymized",
