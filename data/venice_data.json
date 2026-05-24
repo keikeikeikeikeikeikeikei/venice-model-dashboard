@@ -875,7 +875,7 @@
           }
         },
         "availableContextTokens": 256000,
-        "maxCompletionTokens": 65536,
+        "maxCompletionTokens": 16384,
         "capabilities": {
           "optimizedForCode": true,
           "quantization": "not-available",
@@ -3822,6 +3822,52 @@
       "type": "text"
     },
     {
+      "context_length": 64000,
+      "created": 1779580800,
+      "id": "e2ee-gemma-4-26b-a4b-uncensored-p",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 0.19,
+            "diem": 0.19
+          },
+          "output": {
+            "usd": 0.88,
+            "diem": 0.88
+          }
+        },
+        "availableContextTokens": 64000,
+        "maxCompletionTokens": 4096,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "fp8",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": false,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": false,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": false,
+          "supportsTeeAttestation": true,
+          "supportsE2EE": true,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Gemma 4 26B A4B Uncensored running in a Trusted Execution Environment (TEE). An uncensored variant of Google's Gemma 4 MoE model with 25.2B total / 3.8B active parameters, supporting multimodal input across text and images, with hardware attestation evidence available for independent verification.",
+        "name": "Gemma 4 26B A4B Uncensored",
+        "modelSource": "https://www.redpill.ai/models/phala/gemma-4-26b-a4b-uncensored",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
       "context_length": 128000,
       "created": 1773792000,
       "id": "e2ee-glm-4-7-p",
@@ -4071,6 +4117,52 @@
         "description": "Qwen 2.5 7B Instruct running in a Trusted Execution Environment (TEE). A compact model with strong coding, math, and multilingual capabilities supporting 29+ languages, with hardware attestation evidence available for independent verification.",
         "name": "Qwen 2.5 7B",
         "modelSource": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 128000,
+      "created": 1779580800,
+      "id": "e2ee-qwen3-6-35b-a3b-uncensored-p",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 0.38,
+            "diem": 0.38
+          },
+          "output": {
+            "usd": 1.88,
+            "diem": 1.88
+          }
+        },
+        "availableContextTokens": 128000,
+        "maxCompletionTokens": 4096,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "fp8",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": false,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": false,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": false,
+          "supportsTeeAttestation": true,
+          "supportsE2EE": true,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Qwen3.6 35B A3B Uncensored running in a Trusted Execution Environment (TEE). An uncensored variant of Alibaba's Qwen3.6 MoE model with 35B total parameters and ~3B active, supporting 262K context and multimodal input across text, images, and video, with hardware attestation evidence available for independent verification.",
+        "name": "Qwen3.6 35B A3B Uncensored",
+        "modelSource": "https://www.redpill.ai/models/phala/qwen3.6-35b-a3b-uncensored",
         "offline": false,
         "privacy": "private",
         "traits": []
@@ -7181,8 +7273,7 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.0 Fast",
         "offline": false,
@@ -7415,8 +7506,7 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.3 Fast",
         "offline": false,
@@ -7693,7 +7783,8 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 19B Distilled",
         "offline": false,
@@ -9982,7 +10073,8 @@
         },
         "model_sets": [
           "high_resolution",
-          "ultra_high_resolution"
+          "ultra_high_resolution",
+          "fast"
         ],
         "name": "Topaz Video Upscale",
         "offline": false,
