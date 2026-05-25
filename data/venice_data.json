@@ -6973,8 +6973,7 @@
           "prompt_character_limit": 4096
         },
         "model_sets": [
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "name": "Grok Imagine R2V",
         "offline": false,
@@ -8531,6 +8530,37 @@
       }
     },
     {
+      "created": 1779667200,
+      "id": "kling-v3-pro-motion-control",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "video",
+          "aspect_ratios": [],
+          "resolutions": [],
+          "durations": [
+            "Auto"
+          ],
+          "audio": false,
+          "audio_configurable": false,
+          "audio_input": false,
+          "per_reference_audio": false,
+          "video_input": true
+        },
+        "model_sets": [
+          "cinematic",
+          "photorealistic",
+          "long_duration"
+        ],
+        "name": "Kling V3 Pro Motion Control",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video"
+    },
+    {
       "created": 1770076800,
       "id": "kling-v3-pro-text-to-video",
       "model_spec": {
@@ -8627,6 +8657,37 @@
       "pricing": {
         "base_price_usd": 0.64
       }
+    },
+    {
+      "created": 1779667200,
+      "id": "kling-v3-standard-motion-control",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "video",
+          "aspect_ratios": [],
+          "resolutions": [],
+          "durations": [
+            "Auto"
+          ],
+          "audio": false,
+          "audio_configurable": false,
+          "audio_input": false,
+          "per_reference_audio": false,
+          "video_input": true
+        },
+        "model_sets": [
+          "cinematic",
+          "photorealistic",
+          "long_duration"
+        ],
+        "name": "Kling V3 Standard Motion Control",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video"
     },
     {
       "created": 1770076800,
@@ -9175,7 +9236,8 @@
           "ultra_high_resolution",
           "audio",
           "cinematic",
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Veo 3.1 Full Quality",
         "offline": false,
