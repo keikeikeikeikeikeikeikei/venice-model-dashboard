@@ -7506,8 +7506,7 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.3 Fast",
         "offline": false,
@@ -10136,7 +10135,8 @@
         },
         "model_sets": [
           "high_resolution",
-          "ultra_high_resolution"
+          "ultra_high_resolution",
+          "fast"
         ],
         "name": "Topaz Video Upscale",
         "offline": false,
