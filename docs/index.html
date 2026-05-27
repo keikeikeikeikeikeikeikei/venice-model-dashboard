@@ -812,7 +812,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-05-27 07:09)</div>
+            <div class="meta">Generated from Live API Data (2026-05-28 00:54)</div>
         </header>
 
         <div class="controls">
@@ -6538,6 +6538,58 @@
     },
     {
       "created": 1736635129,
+      "id": "qwen-image",
+      "model_spec": {
+        "pricing": {
+          "generation": {
+            "usd": 0.03,
+            "diem": 0.03
+          },
+          "upscale": {
+            "2x": {
+              "usd": 0.02,
+              "diem": 0.02
+            },
+            "4x": {
+              "usd": 0.08,
+              "diem": 0.08
+            }
+          }
+        },
+        "constraints": {
+          "promptCharacterLimit": 2048,
+          "aspectRatios": [
+            "1:1",
+            "3:2",
+            "16:9",
+            "21:9",
+            "9:16",
+            "2:3",
+            "3:4",
+            "4:5"
+          ],
+          "defaultAspectRatio": "1:1",
+          "steps": {
+            "default": 20,
+            "max": 50
+          },
+          "widthHeightDivisor": 1
+        },
+        "supportsWebSearch": false,
+        "name": "Qwen Image",
+        "modelSource": "https://huggingface.co/Qwen/Qwen-Image",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": [
+          "highest_quality"
+        ]
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "image"
+    },
+    {
+      "created": 1736635129,
       "id": "wai-Illustrious",
       "model_spec": {
         "pricing": {
@@ -7769,7 +7821,8 @@
           "audio",
           "long_duration",
           "photorealistic",
-          "venice_recommendations"
+          "venice_recommendations",
+          "fast"
         ],
         "name": "Grok Imagine",
         "offline": false,
@@ -7810,7 +7863,8 @@
           "audio",
           "long_duration",
           "photorealistic",
-          "venice_recommendations"
+          "venice_recommendations",
+          "fast"
         ],
         "name": "Grok Imagine",
         "offline": false,
@@ -8339,8 +8393,7 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.3 Fast",
         "offline": false,
@@ -8389,7 +8442,8 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.3 Fast",
         "offline": false,
@@ -8618,8 +8672,7 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.0 19B Distilled",
         "offline": false,
@@ -10487,8 +10540,7 @@
         "model_sets": [
           "high_resolution",
           "audio",
-          "cinematic",
-          "fast"
+          "cinematic"
         ],
         "name": "PixVerse v5.6 Transition",
         "offline": false,
