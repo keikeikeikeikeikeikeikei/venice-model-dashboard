@@ -812,7 +812,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-06-01 03:11)</div>
+            <div class="meta">Generated from Live API Data (2026-06-01 09:12)</div>
         </header>
 
         <div class="controls">
@@ -8304,6 +8304,46 @@
       "type": "video"
     },
     {
+      "created": 1780185600,
+      "id": "grok-imagine-1-5-image-to-video-private",
+      "model_spec": {
+        "privacy": "private",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [],
+          "resolutions": [
+            "480p",
+            "720p"
+          ],
+          "durations": [
+            "5s",
+            "10s",
+            "15s"
+          ],
+          "audio": true,
+          "audio_configurable": false,
+          "audio_input": false,
+          "per_reference_audio": false,
+          "video_input": false,
+          "prompt_character_limit": 4096
+        },
+        "model_sets": [
+          "audio",
+          "long_duration",
+          "photorealistic"
+        ],
+        "name": "Grok Imagine 1.5 Private",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.77
+      }
+    },
+    {
       "created": 1758825748,
       "id": "wan-2.2-a14b-text-to-video",
       "model_spec": {
@@ -8414,8 +8454,7 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.0 Fast",
         "offline": false,
@@ -8783,7 +8822,8 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 19B",
         "offline": false,
