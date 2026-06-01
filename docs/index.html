@@ -812,7 +812,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-06-01 09:12)</div>
+            <div class="meta">Generated from Live API Data (2026-06-02 01:01)</div>
         </header>
 
         <div class="controls">
@@ -4450,6 +4450,57 @@
         "description": "OpenAI's cost-efficient small model that delivers GPT-4 level intelligence at a fraction of the cost. Ideal for high-volume applications requiring strong reasoning. Version: 2024-07-18.",
         "name": "GPT-4o Mini",
         "modelSource": "https://developers.openai.com/api/docs/models/gpt-4o-mini",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 500000,
+      "created": 1780272000,
+      "id": "minimax-m3",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.3,
+            "diem": 0.3
+          },
+          "cache_input": {
+            "usd": 0.06,
+            "diem": 0.06
+          },
+          "output": {
+            "usd": 1.2,
+            "diem": 1.2
+          }
+        },
+        "model_sets": [
+          "venice_recommendations"
+        ],
+        "availableContextTokens": 500000,
+        "maxCompletionTokens": 32768,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": false,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "MiniMax-M3 is MiniMax's latest frontier model for coding, agentic workflows, and complex reasoning tasks.",
+        "name": "MiniMax M3",
         "offline": false,
         "privacy": "anonymized",
         "traits": []
