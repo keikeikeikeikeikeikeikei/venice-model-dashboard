@@ -812,7 +812,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-06-02 13:07)</div>
+            <div class="meta">Generated from Live API Data (2026-06-03 01:25)</div>
         </header>
 
         <div class="controls">
@@ -844,7 +844,7 @@
                                 <option value="0">Any</option>
                                 <option value="128000">125k+</option>
                                 <option value="256000">250k+</option>
-                                <option value="400384">391k+</option>
+                                <option value="499712">488k+</option>
                                 <option value="1000448">977k+</option>
                                 <option value="1999872">1.9M+</option>
                             </select>
@@ -1488,6 +1488,91 @@
     },
     {
       "context_length": 1000000,
+      "created": 1780358400,
+      "id": "qwen-3-7-plus",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 0.5,
+            "diem": 0.5
+          },
+          "cache_input": {
+            "usd": 0.05,
+            "diem": 0.05
+          },
+          "cache_write": {
+            "usd": 0.625,
+            "diem": 0.625
+          },
+          "output": {
+            "usd": 2,
+            "diem": 2
+          },
+          "extended": {
+            "context_token_threshold": 256000,
+            "input": {
+              "usd": 1.5,
+              "diem": 1.5
+            },
+            "output": {
+              "usd": 6,
+              "diem": 6
+            },
+            "cache_input": {
+              "usd": 0.15,
+              "diem": 0.15
+            },
+            "cache_write": {
+              "usd": 1.875,
+              "diem": 1.875
+            }
+          }
+        },
+        "model_sets": [
+          "venice_recommendations"
+        ],
+        "availableContextTokens": 1000000,
+        "maxCompletionTokens": 65536,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": true,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "constraints": {
+          "temperature": {
+            "default": 0.7
+          },
+          "top_p": {
+            "default": 0.8
+          }
+        },
+        "description": "Qwen 3.7 Plus is Alibaba's latest flagship reasoning model with exceptional performance across coding, reasoning, and general knowledge tasks. Features mixed reasoning, function calling, and multimodal input support.",
+        "name": "Qwen 3.7 Plus",
+        "modelSource": "https://www.alibabacloud.com/help/en/model-studio/models",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 1000000,
       "created": 1775433600,
       "id": "qwen-3-6-plus",
       "model_spec": {
@@ -2112,6 +2197,10 @@
           "input": {
             "usd": 0.155,
             "diem": 0.155
+          },
+          "cache_input": {
+            "usd": 0.12,
+            "diem": 0.12
           },
           "output": {
             "usd": 0.44,
@@ -4481,7 +4570,7 @@
           "venice_recommendations"
         ],
         "availableContextTokens": 500000,
-        "maxCompletionTokens": 32768,
+        "maxCompletionTokens": 131072,
         "capabilities": {
           "optimizedForCode": true,
           "quantization": "not-available",
@@ -8554,7 +8643,8 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 Fast",
         "offline": false,
@@ -9016,8 +9106,7 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.0 19B Distilled",
         "offline": false,
