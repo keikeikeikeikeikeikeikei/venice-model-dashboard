@@ -3610,7 +3610,7 @@
           "supportsResponseSchema": false,
           "supportsTeeAttestation": false,
           "supportsE2EE": false,
-          "supportsVideoInput": false,
+          "supportsVideoInput": true,
           "supportsVision": true,
           "supportsWebSearch": true,
           "supportsXSearch": false
@@ -7990,8 +7990,7 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.0 19B",
         "offline": false,
@@ -9339,7 +9338,8 @@
           "high_resolution",
           "audio",
           "cinematic",
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Veo 3 Fast",
         "offline": false,
