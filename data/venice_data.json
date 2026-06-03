@@ -6211,8 +6211,7 @@
           "audio",
           "long_duration",
           "cinematic",
-          "photorealistic",
-          "venice_recommendations"
+          "photorealistic"
         ],
         "name": "Seedance 1.5 Pro",
         "offline": false,
@@ -6265,8 +6264,7 @@
           "audio",
           "long_duration",
           "cinematic",
-          "photorealistic",
-          "venice_recommendations"
+          "photorealistic"
         ],
         "name": "Seedance 1.5 Pro",
         "offline": false,
@@ -6503,8 +6501,7 @@
           "audio",
           "long_duration",
           "cinematic",
-          "photorealistic",
-          "venice_recommendations"
+          "photorealistic"
         ],
         "name": "Seedance 2.0 Fast",
         "offline": false,
@@ -6557,8 +6554,7 @@
           "audio",
           "long_duration",
           "cinematic",
-          "photorealistic",
-          "venice_recommendations"
+          "photorealistic"
         ],
         "name": "Seedance 2.0 Fast",
         "offline": false,
@@ -6618,8 +6614,7 @@
           "audio",
           "long_duration",
           "cinematic",
-          "photorealistic",
-          "venice_recommendations"
+          "photorealistic"
         ],
         "name": "Seedance 2.0 Fast R2V",
         "offline": false,
@@ -6795,6 +6790,48 @@
       "object": "model",
       "owned_by": "venice.ai",
       "type": "video"
+    },
+    {
+      "created": 1778284800,
+      "id": "wan-2-7-uncensored-image-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [],
+          "resolutions": [
+            "1080p",
+            "720p"
+          ],
+          "durations": [
+            "5s",
+            "10s",
+            "15s"
+          ],
+          "audio": true,
+          "audio_configurable": false,
+          "audio_input": false,
+          "per_reference_audio": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "uncensored",
+          "high_resolution",
+          "audio",
+          "long_duration",
+          "open_source",
+          "venice_recommendations"
+        ],
+        "name": "Wan 2.7 Uncensored",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.57
+      }
     },
     {
       "created": 1776988800,
@@ -7657,7 +7694,8 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 Fast",
         "offline": false,
@@ -9410,8 +9448,7 @@
         "model_sets": [
           "audio",
           "cinematic",
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "name": "Veo 3 Fast",
         "offline": false,
@@ -11743,7 +11780,7 @@
           "combineImages": true,
           "singleImageAspectRatio": true
         },
-        "name": "FireRed Image Edit 1.1",
+        "name": "FireRed Edit",
         "offline": false,
         "privacy": "private",
         "traits": []
