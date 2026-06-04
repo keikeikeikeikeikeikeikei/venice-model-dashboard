@@ -1323,6 +1323,9 @@
             "diem": 0.44
           }
         },
+        "model_sets": [
+          "venice_recommendations"
+        ],
         "availableContextTokens": 256000,
         "maxCompletionTokens": 8192,
         "capabilities": {
@@ -7743,8 +7746,7 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.0 Fast",
         "offline": false,
@@ -9497,7 +9499,8 @@
         "model_sets": [
           "audio",
           "cinematic",
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Veo 3 Fast",
         "offline": false,
