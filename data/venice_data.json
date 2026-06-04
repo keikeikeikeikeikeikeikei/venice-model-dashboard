@@ -1311,16 +1311,16 @@
       "model_spec": {
         "pricing": {
           "input": {
-            "usd": 0.155,
-            "diem": 0.155
+            "usd": 0.126,
+            "diem": 0.126
           },
           "cache_input": {
-            "usd": 0.12,
-            "diem": 0.12
+            "usd": 0.09,
+            "diem": 0.09
           },
           "output": {
-            "usd": 0.44,
-            "diem": 0.44
+            "usd": 0.36,
+            "diem": 0.36
           }
         },
         "model_sets": [
@@ -6886,6 +6886,53 @@
       }
     },
     {
+      "created": 1780444800,
+      "id": "wan-2-7-uncensored-text-to-video",
+      "model_spec": {
+        "betaModel": true,
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "text-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "resolutions": [
+            "1080p",
+            "720p"
+          ],
+          "durations": [
+            "5s",
+            "10s",
+            "15s"
+          ],
+          "audio": true,
+          "audio_configurable": false,
+          "audio_input": false,
+          "per_reference_audio": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "uncensored",
+          "high_resolution",
+          "audio",
+          "long_duration",
+          "open_source",
+          "venice_recommendations"
+        ],
+        "name": "Wan 2.7 Uncensored",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.57
+      }
+    },
+    {
       "created": 1776988800,
       "id": "happyhorse-1-0-text-to-video",
       "model_spec": {
@@ -8209,7 +8256,8 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 19B Distilled",
         "offline": false,
@@ -9499,8 +9547,7 @@
         "model_sets": [
           "audio",
           "cinematic",
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "name": "Veo 3 Fast",
         "offline": false,
