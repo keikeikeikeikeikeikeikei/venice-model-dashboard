@@ -1311,8 +1311,8 @@
       "model_spec": {
         "pricing": {
           "input": {
-            "usd": 0.126,
-            "diem": 0.126
+            "usd": 0.12,
+            "diem": 0.12
           },
           "cache_input": {
             "usd": 0.09,
@@ -3978,7 +3978,7 @@
           "supportsXSearch": false
         },
         "description": "NVIDIA Nemotron 3 Ultra is built for frontier reasoning, orchestration, coding agents, deep research, and complex enterprise workflows. It delivers up to 5x faster inference and up to 30% lower cost for agentic workloads while supporting up to 1M token context.",
-        "name": "NVIDIA Nemotron 3 Ultra 550B",
+        "name": "NVIDIA Nemotron 3 Ultra",
         "modelSource": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
         "offline": false,
         "privacy": "private",
@@ -7767,7 +7767,8 @@
         },
         "model_sets": [
           "uncensored",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "Wan 2.2 A14B",
         "offline": false,
@@ -7898,8 +7899,7 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.0 Fast",
         "offline": false,
@@ -8219,7 +8219,8 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 19B",
         "offline": false,
@@ -8361,8 +8362,7 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.0 19B Distilled",
         "offline": false,
@@ -11882,6 +11882,39 @@
       "type": "tts"
     },
     {
+      "created": 1780617600,
+      "id": "tts-gradium-v1",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 47.5,
+            "diem": 47.5
+          }
+        },
+        "voices": [
+          "-uP9MuGtBqAvEyxI",
+          "0y1VZjPabOBU3rWy",
+          "B36pbz5_UoWn4BDl",
+          "LFZvm12tW_z0xfGo",
+          "M-FvVo9c-jGR4PgP",
+          "YTpq7expH9539ERJ",
+          "axlOaUiFyOZhy4nv",
+          "b35yykvVppLXyw_l",
+          "m86j6D7UZpGzHsNu",
+          "pYcGZz9VOo4n2ynh",
+          "ubuXFxVQwVYnZQhy",
+          "xu7iJ_fn2ElcWp2s"
+        ],
+        "name": "Gradium TTS",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "tts"
+    },
+    {
       "created": 1744453050,
       "id": "upscaler",
       "model_spec": {
@@ -12004,7 +12037,7 @@
             "4:5"
           ],
           "promptCharacterLimit": 1500,
-          "combineImages": false,
+          "combineImages": true,
           "singleImageAspectRatio": true
         },
         "name": "Qwen Edit Uncensored",
