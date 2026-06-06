@@ -7648,7 +7648,8 @@
           "prompt_character_limit": 4096
         },
         "model_sets": [
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Grok Imagine R2V Private",
         "offline": false,
@@ -7767,8 +7768,7 @@
         },
         "model_sets": [
           "uncensored",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "Wan 2.2 A14B",
         "offline": false,
@@ -8362,7 +8362,8 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 19B Distilled",
         "offline": false,
@@ -10136,8 +10137,7 @@
         "model_sets": [
           "high_resolution",
           "audio",
-          "cinematic",
-          "fast"
+          "cinematic"
         ],
         "name": "PixVerse v5.6",
         "offline": false,
@@ -11892,18 +11892,18 @@
           }
         },
         "voices": [
-          "-uP9MuGtBqAvEyxI",
-          "0y1VZjPabOBU3rWy",
-          "B36pbz5_UoWn4BDl",
-          "LFZvm12tW_z0xfGo",
-          "M-FvVo9c-jGR4PgP",
-          "YTpq7expH9539ERJ",
-          "axlOaUiFyOZhy4nv",
-          "b35yykvVppLXyw_l",
-          "m86j6D7UZpGzHsNu",
-          "pYcGZz9VOo4n2ynh",
-          "ubuXFxVQwVYnZQhy",
-          "xu7iJ_fn2ElcWp2s"
+          "Alice",
+          "Davi",
+          "Elise",
+          "Emma",
+          "Eva",
+          "Jack",
+          "Kent",
+          "Leo",
+          "Maximilian",
+          "Mia",
+          "Sergio",
+          "Valentina"
         ],
         "name": "Gradium TTS",
         "offline": false,
