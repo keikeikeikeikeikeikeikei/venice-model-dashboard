@@ -3782,8 +3782,8 @@
             "diem": 0.375
           },
           "cache_input": {
-            "usd": 0.075,
-            "diem": 0.075
+            "usd": 0.06875,
+            "diem": 0.06875
           },
           "output": {
             "usd": 1.5,
@@ -3821,7 +3821,7 @@
         "description": "MiniMax-M2.7 is a next-generation large language model designed for autonomous, real-world productivity with advanced agentic capabilities through multi-agent collaboration.",
         "name": "MiniMax M2.7",
         "offline": false,
-        "privacy": "anonymized",
+        "privacy": "private",
         "traits": []
       },
       "object": "model",
@@ -12003,6 +12003,11 @@
           "promptCharacterLimit": 1500,
           "combineImages": true,
           "singleImageAspectRatio": true
+        },
+        "deprecation": {
+          "autoRemap": false,
+          "date": "2026-06-22T00:00:00.000Z",
+          "removesAt": "2026-06-22T00:00:00.000Z"
         },
         "name": "Qwen Edit 2511",
         "offline": false,
