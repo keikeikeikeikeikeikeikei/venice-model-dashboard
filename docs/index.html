@@ -812,7 +812,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-06-09 01:19)</div>
+            <div class="meta">Generated from Live API Data (2026-06-09 11:24)</div>
         </header>
 
         <div class="controls">
@@ -844,7 +844,7 @@
                                 <option value="0">Any</option>
                                 <option value="128000">125k+</option>
                                 <option value="256000">250k+</option>
-                                <option value="499712">488k+</option>
+                                <option value="400384">391k+</option>
                                 <option value="1000448">977k+</option>
                                 <option value="1999872">1.9M+</option>
                             </select>
@@ -3539,6 +3539,62 @@
         "description": "gpt-oss-120b is an open-weight, 117B-parameter Mixture-of-Experts (MoE) language model from OpenAI designed for high-reasoning, agentic, and general-purpose production use cases. The model supports configurable reasoning depth, full chain-of-thought access, and native tool use, including function calling, browsing, and structured output generation",
         "name": "OpenAI GPT OSS 120B",
         "modelSource": "https://huggingface.co/openai/gpt-oss-120b",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 256000,
+      "created": 1780876800,
+      "id": "tencent-hy3-preview",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 0.063,
+            "diem": 0.063
+          },
+          "cache_input": {
+            "usd": 0.021,
+            "diem": 0.021
+          },
+          "output": {
+            "usd": 0.21,
+            "diem": 0.21
+          }
+        },
+        "availableContextTokens": 256000,
+        "maxCompletionTokens": 32768,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "int4",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": true,
+          "reasoningEffortOptions": [
+            "none",
+            "low",
+            "high"
+          ],
+          "defaultReasoningEffort": "high",
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Hy3 preview is a 295B-parameter Mixture-of-Experts model with 21B active parameters from Tencent Hy Team. It excels at complex reasoning, instruction following, context learning, coding, and agent tasks with 256K context.",
+        "name": "Hy3 Preview",
+        "modelSource": "https://huggingface.co/tencent/Hy3-preview",
         "offline": false,
         "privacy": "private",
         "traits": []
