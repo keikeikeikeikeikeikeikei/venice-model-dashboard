@@ -2113,6 +2113,63 @@
     },
     {
       "context_length": 1000000,
+      "created": 1781049600,
+      "id": "claude-fable-5",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 12,
+            "diem": 12
+          },
+          "cache_input": {
+            "usd": 1.2,
+            "diem": 1.2
+          },
+          "cache_write": {
+            "usd": 15,
+            "diem": 15
+          },
+          "output": {
+            "usd": 60,
+            "diem": 60
+          }
+        },
+        "model_sets": [
+          "venice_recommendations"
+        ],
+        "availableContextTokens": 1000000,
+        "maxCompletionTokens": 128000,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Claude Fable 5 is Anthropic's most capable widely released model, designed for demanding reasoning and long-horizon agentic work. It features a 1M token context window, 128K max output tokens, always-on adaptive thinking, and strong multimodal capabilities.",
+        "name": "Claude Fable 5",
+        "modelSource": "",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 1000000,
       "created": 1779926400,
       "id": "claude-opus-4-8",
       "model_spec": {
@@ -7704,7 +7761,8 @@
           "prompt_character_limit": 4096
         },
         "model_sets": [
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Grok Imagine R2V Private",
         "offline": false,
@@ -7907,8 +7965,7 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.0 Fast",
         "offline": false,
@@ -8370,7 +8427,8 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 19B Distilled",
         "offline": false,
@@ -8417,7 +8475,8 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 19B Distilled",
         "offline": false,
@@ -9658,8 +9717,7 @@
         "model_sets": [
           "audio",
           "cinematic",
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "name": "Veo 3 Fast",
         "offline": false,
@@ -10192,8 +10250,7 @@
         "model_sets": [
           "high_resolution",
           "audio",
-          "cinematic",
-          "fast"
+          "cinematic"
         ],
         "name": "PixVerse v5.6",
         "offline": false,
@@ -12059,11 +12116,6 @@
           "promptCharacterLimit": 1500,
           "combineImages": true,
           "singleImageAspectRatio": true
-        },
-        "deprecation": {
-          "autoRemap": false,
-          "date": "2026-06-22T00:00:00.000Z",
-          "removesAt": "2026-06-22T00:00:00.000Z"
         },
         "name": "Qwen Edit 2511",
         "offline": false,
