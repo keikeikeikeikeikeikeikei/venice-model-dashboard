@@ -7761,8 +7761,7 @@
           "prompt_character_limit": 4096
         },
         "model_sets": [
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "name": "Grok Imagine R2V Private",
         "offline": false,
@@ -9717,7 +9716,8 @@
         "model_sets": [
           "audio",
           "cinematic",
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Veo 3 Fast",
         "offline": false,
