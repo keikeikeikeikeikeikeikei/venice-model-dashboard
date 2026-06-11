@@ -812,7 +812,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-06-11 18:16)</div>
+            <div class="meta">Generated from Live API Data (2026-06-12 00:36)</div>
         </header>
 
         <div class="controls">
@@ -844,7 +844,6 @@
                                 <option value="0">Any</option>
                                 <option value="128000">125k+</option>
                                 <option value="256000">250k+</option>
-                                <option value="499712">488k+</option>
                                 <option value="1000448">977k+</option>
                                 <option value="1999872">1.9M+</option>
                             </select>
@@ -3769,6 +3768,63 @@
         "description": "Kimi K2.5 is Moonshot AIs most advanced open reasoning model, featuring trillion-parameter Mixture-of-Experts architecture with 32B active parameters and 256K context windows.",
         "name": "Kimi K2.5",
         "modelSource": "https://github.com/MoonshotAI/Kimi-K2.5",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 1000000,
+      "created": 1781136000,
+      "id": "xiaomi-mimo-v2-5",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.175,
+            "diem": 0.175
+          },
+          "cache_input": {
+            "usd": 0.0625,
+            "diem": 0.0625
+          },
+          "output": {
+            "usd": 0.35,
+            "diem": 0.35
+          }
+        },
+        "availableContextTokens": 1000000,
+        "maxCompletionTokens": 65536,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "fp8",
+          "supportsAudioInput": true,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": true,
+          "reasoningEffortOptions": [
+            "none",
+            "low",
+            "medium",
+            "high"
+          ],
+          "defaultReasoningEffort": "high",
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": true,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "MiMo-V2.5 is Xiaomi's native omnimodal model with strong agentic capabilities, supporting text, image, video, and audio understanding in a unified architecture. Built on a sparse Mixture-of-Experts backbone with 310B total and 15B active parameters, it delivers long-context reasoning up to 1M tokens, function calling, and multimodal perception.",
+        "name": "MiMo-V2.5",
+        "modelSource": "https://huggingface.co/XiaomiMiMo/MiMo-V2.5",
         "offline": false,
         "privacy": "private",
         "traits": []
@@ -8891,7 +8947,8 @@
         },
         "model_sets": [
           "uncensored",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "Wan 2.2 A14B",
         "offline": false,
@@ -9207,8 +9264,7 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.3 Fast",
         "offline": false,
