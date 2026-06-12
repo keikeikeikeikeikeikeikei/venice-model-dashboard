@@ -3888,6 +3888,63 @@
       "type": "text"
     },
     {
+      "context_length": 524288,
+      "created": 1781222400,
+      "id": "minimax-m3-preview",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 0.3,
+            "diem": 0.3
+          },
+          "cache_input": {
+            "usd": 0.06,
+            "diem": 0.06
+          },
+          "output": {
+            "usd": 1.2,
+            "diem": 1.2
+          }
+        },
+        "availableContextTokens": 524288,
+        "maxCompletionTokens": 65536,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "fp8",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": true,
+          "reasoningEffortOptions": [
+            "none",
+            "low",
+            "medium",
+            "high"
+          ],
+          "defaultReasoningEffort": "low",
+          "supportsResponseSchema": false,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "MiniMax-M3 preview is a 1.4T-parameter frontier model from MiniMax for coding, agentic workflows, and complex reasoning, served at fp8 with a 512K context window.",
+        "name": "MiniMax M3 Preview",
+        "modelSource": "https://huggingface.co/MiniMaxAI/Minimax-M3-preview",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
       "context_length": 198000,
       "created": 1770854400,
       "id": "minimax-m25",
@@ -4442,6 +4499,12 @@
           "supportsVision": false,
           "supportsWebSearch": true,
           "supportsXSearch": false
+        },
+        "deprecation": {
+          "autoRemap": false,
+          "date": "2026-06-15T00:00:00.000Z",
+          "removesAt": "2026-06-15T00:00:00.000Z",
+          "replacementModelId": "e2ee-glm-4-7-p"
         },
         "description": "GLM 4.7 Flash running in a Trusted Execution Environment (TEE). A 30B-class model optimized for agentic coding with strong long-horizon task planning, with hardware attestation evidence available for independent verification.",
         "name": "GLM 4.7 Flash",
@@ -7945,8 +8008,7 @@
           "prompt_character_limit": 4096
         },
         "model_sets": [
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "name": "Grok Imagine R2V Private",
         "offline": false,
@@ -7987,8 +8049,7 @@
           "audio",
           "long_duration",
           "photorealistic",
-          "venice_recommendations",
-          "fast"
+          "venice_recommendations"
         ],
         "name": "Grok Imagine Private",
         "offline": false,
@@ -8149,7 +8210,8 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 Fast",
         "offline": false,
@@ -8611,7 +8673,8 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 19B Distilled",
         "offline": false,
