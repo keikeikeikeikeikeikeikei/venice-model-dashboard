@@ -7990,8 +7990,7 @@
           "audio",
           "long_duration",
           "photorealistic",
-          "venice_recommendations",
-          "fast"
+          "venice_recommendations"
         ],
         "name": "Grok Imagine Private",
         "offline": false,
@@ -8663,7 +8662,8 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 19B Distilled",
         "offline": false,
