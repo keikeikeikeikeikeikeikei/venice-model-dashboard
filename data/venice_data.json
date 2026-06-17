@@ -1,9 +1,9 @@
 {
   "text": [
     {
-      "context_length": 200000,
-      "created": 1775520000,
-      "id": "zai-org-glm-5-1",
+      "context_length": 1000000,
+      "created": 1781568000,
+      "id": "zai-org-glm-5-2",
       "model_spec": {
         "betaModel": true,
         "pricing": {
@@ -23,6 +23,63 @@
         "model_sets": [
           "venice_recommendations"
         ],
+        "availableContextTokens": 1000000,
+        "maxCompletionTokens": 24000,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "fp8",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": true,
+          "reasoningEffortOptions": [
+            "none",
+            "low",
+            "medium",
+            "high"
+          ],
+          "defaultReasoningEffort": "low",
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "GLM-5.2 is the next-generation large language model developed by Zhiyuan AI, featuring significantly enhanced reasoning capabilities, improved instruction following, and support for multiple languages. Supports large context windows for processing extensive text and detailed analysis with fast inference speed.",
+        "name": "GLM 5.2",
+        "modelSource": "https://huggingface.co/zai-org/GLM-5.2",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 200000,
+      "created": 1775520000,
+      "id": "zai-org-glm-5-1",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 1.75,
+            "diem": 1.75
+          },
+          "cache_input": {
+            "usd": 0.325,
+            "diem": 0.325
+          },
+          "output": {
+            "usd": 5.5,
+            "diem": 5.5
+          }
+        },
         "availableContextTokens": 200000,
         "maxCompletionTokens": 24000,
         "capabilities": {
@@ -4463,6 +4520,59 @@
       "type": "text"
     },
     {
+      "context_length": 1000000,
+      "created": 1781568000,
+      "id": "e2ee-glm-5-2-p",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 1.75,
+            "diem": 1.75
+          },
+          "output": {
+            "usd": 5.75,
+            "diem": 5.75
+          }
+        },
+        "availableContextTokens": 1000000,
+        "maxCompletionTokens": 32768,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": false,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": true,
+          "reasoningEffortOptions": [
+            "none",
+            "low",
+            "medium",
+            "high"
+          ],
+          "defaultReasoningEffort": "low",
+          "supportsResponseSchema": false,
+          "supportsTeeAttestation": true,
+          "supportsE2EE": true,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "GLM 5.2 running in a Trusted Execution Environment (TEE). Z.AI's flagship model for long-horizon tasks with enhanced reasoning and project-level engineering context, with hardware attestation evidence available for independent verification.",
+        "name": "GLM 5.2",
+        "modelSource": "https://huggingface.co/zai-org/GLM-5.2",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
       "context_length": 128000,
       "created": 1773792000,
       "id": "e2ee-glm-4-7-p",
@@ -8005,7 +8115,8 @@
           "prompt_character_limit": 4096
         },
         "model_sets": [
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Grok Imagine R2V Private",
         "offline": false,
@@ -8256,7 +8367,8 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 Fast",
         "offline": false,
@@ -8670,8 +8782,7 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.0 19B Distilled",
         "offline": false,
@@ -9924,8 +10035,7 @@
           "high_resolution",
           "audio",
           "cinematic",
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "name": "Veo 3 Fast",
         "offline": false,
