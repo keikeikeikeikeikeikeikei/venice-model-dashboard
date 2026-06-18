@@ -787,9 +787,6 @@
             }
           }
         },
-        "model_sets": [
-          "venice_recommendations"
-        ],
         "availableContextTokens": 1000000,
         "maxCompletionTokens": 65536,
         "capabilities": {
@@ -2360,9 +2357,6 @@
             "diem": 30
           }
         },
-        "model_sets": [
-          "venice_recommendations"
-        ],
         "availableContextTokens": 1000000,
         "maxCompletionTokens": 128000,
         "capabilities": {
@@ -2769,62 +2763,6 @@
         "description": "gpt-oss-120b is an open-weight, 117B-parameter Mixture-of-Experts (MoE) language model from OpenAI designed for high-reasoning, agentic, and general-purpose production use cases. The model supports configurable reasoning depth, full chain-of-thought access, and native tool use, including function calling, browsing, and structured output generation",
         "name": "OpenAI GPT OSS 120B",
         "modelSource": "https://huggingface.co/openai/gpt-oss-120b",
-        "offline": false,
-        "privacy": "private",
-        "traits": []
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "text"
-    },
-    {
-      "context_length": 256000,
-      "created": 1780876800,
-      "id": "tencent-hy3-preview",
-      "model_spec": {
-        "betaModel": true,
-        "pricing": {
-          "input": {
-            "usd": 0.063,
-            "diem": 0.063
-          },
-          "cache_input": {
-            "usd": 0.021,
-            "diem": 0.021
-          },
-          "output": {
-            "usd": 0.21,
-            "diem": 0.21
-          }
-        },
-        "availableContextTokens": 256000,
-        "maxCompletionTokens": 32768,
-        "capabilities": {
-          "optimizedForCode": true,
-          "quantization": "int4",
-          "supportsAudioInput": false,
-          "supportsFunctionCalling": true,
-          "supportsLogProbs": false,
-          "supportsMultipleImages": false,
-          "supportsReasoning": true,
-          "supportsReasoningEffort": true,
-          "reasoningEffortOptions": [
-            "none",
-            "low",
-            "high"
-          ],
-          "defaultReasoningEffort": "high",
-          "supportsResponseSchema": true,
-          "supportsTeeAttestation": false,
-          "supportsE2EE": false,
-          "supportsVideoInput": false,
-          "supportsVision": false,
-          "supportsWebSearch": true,
-          "supportsXSearch": false
-        },
-        "description": "Hy3 preview is a 295B-parameter Mixture-of-Experts model with 21B active parameters from Tencent Hy Team. It excels at complex reasoning, instruction following, context learning, coding, and agent tasks with 256K context.",
-        "name": "Hy3 Preview",
-        "modelSource": "https://huggingface.co/tencent/Hy3-preview",
         "offline": false,
         "privacy": "private",
         "traits": []
@@ -4131,9 +4069,6 @@
             "diem": 1.5
           }
         },
-        "model_sets": [
-          "venice_recommendations"
-        ],
         "availableContextTokens": 198000,
         "maxCompletionTokens": 32768,
         "capabilities": {
@@ -7855,143 +7790,6 @@
       }
     },
     {
-      "created": 1769644800,
-      "id": "grok-imagine-text-to-video",
-      "model_spec": {
-        "privacy": "anonymized",
-        "constraints": {
-          "model_type": "text-to-video",
-          "aspect_ratios": [
-            "16:9",
-            "4:3",
-            "3:2",
-            "1:1",
-            "2:3",
-            "3:4",
-            "9:16"
-          ],
-          "resolutions": [
-            "480p",
-            "720p"
-          ],
-          "durations": [
-            "5s",
-            "10s",
-            "15s"
-          ],
-          "audio": true,
-          "audio_configurable": false,
-          "audio_input": false,
-          "per_reference_audio": false,
-          "video_input": false,
-          "prompt_character_limit": 4096
-        },
-        "model_sets": [
-          "audio",
-          "long_duration",
-          "photorealistic",
-          "venice_recommendations"
-        ],
-        "name": "Grok Imagine",
-        "offline": false,
-        "traits": []
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "video",
-      "pricing": {
-        "base_price_usd": 0.32
-      }
-    },
-    {
-      "created": 1769644800,
-      "id": "grok-imagine-image-to-video",
-      "model_spec": {
-        "privacy": "anonymized",
-        "constraints": {
-          "model_type": "image-to-video",
-          "aspect_ratios": [],
-          "resolutions": [
-            "480p",
-            "720p"
-          ],
-          "durations": [
-            "5s",
-            "10s",
-            "15s"
-          ],
-          "audio": true,
-          "audio_configurable": false,
-          "audio_input": false,
-          "per_reference_audio": false,
-          "video_input": false,
-          "prompt_character_limit": 4096
-        },
-        "model_sets": [
-          "audio",
-          "long_duration",
-          "photorealistic",
-          "venice_recommendations"
-        ],
-        "name": "Grok Imagine",
-        "offline": false,
-        "traits": []
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "video",
-      "pricing": {
-        "base_price_usd": 0.32
-      }
-    },
-    {
-      "created": 1774396800,
-      "id": "grok-imagine-reference-to-video",
-      "model_spec": {
-        "betaModel": true,
-        "privacy": "anonymized",
-        "constraints": {
-          "model_type": "image-to-video",
-          "aspect_ratios": [
-            "16:9",
-            "4:3",
-            "3:2",
-            "1:1",
-            "2:3",
-            "3:4",
-            "9:16"
-          ],
-          "resolutions": [
-            "480p",
-            "720p"
-          ],
-          "durations": [
-            "5s",
-            "8s",
-            "10s"
-          ],
-          "audio": false,
-          "audio_configurable": false,
-          "audio_input": false,
-          "per_reference_audio": false,
-          "video_input": false,
-          "prompt_character_limit": 4096
-        },
-        "model_sets": [
-          "photorealistic"
-        ],
-        "name": "Grok Imagine R2V",
-        "offline": false,
-        "traits": []
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "video",
-      "pricing": {
-        "base_price_usd": 0.44
-      }
-    },
-    {
       "created": 1776038400,
       "id": "grok-imagine-text-to-video-private",
       "model_spec": {
@@ -8115,8 +7913,7 @@
           "prompt_character_limit": 4096
         },
         "model_sets": [
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "name": "Grok Imagine R2V Private",
         "offline": false,
@@ -8319,7 +8116,8 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 Fast",
         "offline": false,
@@ -8781,7 +8579,8 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 19B Distilled",
         "offline": false,
@@ -10230,8 +10029,7 @@
           "high_resolution",
           "audio",
           "cinematic",
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "name": "Veo 3 Fast",
         "offline": false,
