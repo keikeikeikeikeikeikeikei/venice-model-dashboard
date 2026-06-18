@@ -8,16 +8,16 @@
         "betaModel": true,
         "pricing": {
           "input": {
-            "usd": 1.75,
-            "diem": 1.75
+            "usd": 1.4,
+            "diem": 1.4
           },
           "cache_input": {
-            "usd": 0.325,
-            "diem": 0.325
+            "usd": 0.26,
+            "diem": 0.26
           },
           "output": {
-            "usd": 5.5,
-            "diem": 5.5
+            "usd": 4.4,
+            "diem": 4.4
           }
         },
         "model_sets": [
@@ -33,13 +33,7 @@
           "supportsLogProbs": false,
           "supportsMultipleImages": false,
           "supportsReasoning": true,
-          "supportsReasoningEffort": true,
-          "reasoningEffortOptions": [
-            "none",
-            "high",
-            "max"
-          ],
-          "defaultReasoningEffort": "max",
+          "supportsReasoningEffort": false,
           "supportsResponseSchema": true,
           "supportsTeeAttestation": false,
           "supportsE2EE": false,
@@ -8115,8 +8109,7 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.0 Fast",
         "offline": false,
@@ -9307,7 +9300,8 @@
           "cinematic",
           "audio",
           "photorealistic",
-          "long_duration"
+          "long_duration",
+          "fast"
         ],
         "name": "Kling O3 Standard",
         "offline": false,
