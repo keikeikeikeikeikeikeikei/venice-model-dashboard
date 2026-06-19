@@ -24,7 +24,7 @@
           "venice_recommendations"
         ],
         "availableContextTokens": 1000000,
-        "maxCompletionTokens": 24000,
+        "maxCompletionTokens": 131072,
         "capabilities": {
           "optimizedForCode": false,
           "quantization": "fp8",
@@ -7685,7 +7685,8 @@
           "high_resolution",
           "audio",
           "long_duration",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "Wan 2.6",
         "offline": false,
@@ -7947,8 +7948,7 @@
           "audio",
           "long_duration",
           "photorealistic",
-          "venice_recommendations",
-          "fast"
+          "venice_recommendations"
         ],
         "name": "Grok Imagine Private",
         "offline": false,
