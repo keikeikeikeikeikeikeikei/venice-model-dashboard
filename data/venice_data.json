@@ -7685,8 +7685,7 @@
           "high_resolution",
           "audio",
           "long_duration",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "Wan 2.6",
         "offline": false,
@@ -10787,7 +10786,8 @@
           "high_resolution",
           "audio",
           "cinematic",
-          "long_duration"
+          "long_duration",
+          "fast"
         ],
         "name": "PixVerse C1 R2V",
         "offline": false,
