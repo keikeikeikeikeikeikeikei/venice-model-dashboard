@@ -6671,6 +6671,7 @@
             "9:16"
           ],
           "resolutions": [
+            "4k",
             "1080p",
             "720p",
             "480p"
@@ -6698,6 +6699,7 @@
         },
         "model_sets": [
           "high_resolution",
+          "ultra_high_resolution",
           "audio",
           "long_duration",
           "cinematic",
@@ -6733,6 +6735,7 @@
             "9:16"
           ],
           "resolutions": [
+            "4k",
             "1080p",
             "720p",
             "480p"
@@ -6763,6 +6766,7 @@
         },
         "model_sets": [
           "high_resolution",
+          "ultra_high_resolution",
           "audio",
           "long_duration",
           "cinematic",
@@ -6797,6 +6801,7 @@
             "9:16"
           ],
           "resolutions": [
+            "4k",
             "1080p",
             "720p",
             "480p"
@@ -6824,6 +6829,7 @@
         },
         "model_sets": [
           "high_resolution",
+          "ultra_high_resolution",
           "audio",
           "long_duration",
           "cinematic",
@@ -6851,6 +6857,7 @@
           "model_type": "image-to-video",
           "aspect_ratios": [],
           "resolutions": [
+            "4k",
             "1080p",
             "720p",
             "480p"
@@ -6881,6 +6888,7 @@
         },
         "model_sets": [
           "high_resolution",
+          "ultra_high_resolution",
           "audio",
           "long_duration",
           "cinematic",
@@ -6914,6 +6922,7 @@
             "9:16"
           ],
           "resolutions": [
+            "4k",
             "1080p",
             "720p",
             "480p"
@@ -6944,6 +6953,7 @@
         },
         "model_sets": [
           "high_resolution",
+          "ultra_high_resolution",
           "audio",
           "long_duration",
           "cinematic",
@@ -8069,8 +8079,7 @@
           "prompt_character_limit": 4096
         },
         "model_sets": [
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "name": "Grok Imagine R2V Private",
         "offline": false,
@@ -8189,8 +8198,7 @@
         },
         "model_sets": [
           "uncensored",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "Wan 2.2 A14B",
         "offline": false,
@@ -8688,7 +8696,8 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 19B",
         "offline": false,
@@ -10853,7 +10862,8 @@
           "high_resolution",
           "audio",
           "cinematic",
-          "long_duration"
+          "long_duration",
+          "fast"
         ],
         "name": "PixVerse C1",
         "offline": false,
