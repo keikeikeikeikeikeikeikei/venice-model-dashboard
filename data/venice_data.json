@@ -2535,6 +2535,11 @@
           "supportsWebSearch": true,
           "supportsXSearch": false
         },
+        "deprecation": {
+          "autoRemap": false,
+          "date": "2026-06-29T00:00:00.000Z",
+          "removesAt": "2026-06-29T00:00:00.000Z"
+        },
         "description": "Claude Opus 4.6 (Fast) is a speed-optimized variant of Anthropic's most capable reasoning model, offering the same 1M token context window and strong performance across complex software engineering, agentic workflows, and long-horizon tasks — with lower latency.",
         "name": "Claude Opus 4.6 Fast",
         "modelSource": "",
@@ -3873,57 +3878,6 @@
         "description": "OpenAI's cost-efficient small model that delivers GPT-4 level intelligence at a fraction of the cost. Ideal for high-volume applications requiring strong reasoning. Version: 2024-07-18.",
         "name": "GPT-4o Mini",
         "modelSource": "https://developers.openai.com/api/docs/models/gpt-4o-mini",
-        "offline": false,
-        "privacy": "anonymized",
-        "traits": []
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "text"
-    },
-    {
-      "context_length": 500000,
-      "created": 1780272000,
-      "id": "minimax-m3",
-      "model_spec": {
-        "pricing": {
-          "input": {
-            "usd": 0.3,
-            "diem": 0.3
-          },
-          "cache_input": {
-            "usd": 0.06,
-            "diem": 0.06
-          },
-          "output": {
-            "usd": 1.2,
-            "diem": 1.2
-          }
-        },
-        "model_sets": [
-          "venice_recommendations"
-        ],
-        "availableContextTokens": 500000,
-        "maxCompletionTokens": 131072,
-        "capabilities": {
-          "optimizedForCode": true,
-          "quantization": "not-available",
-          "supportsAudioInput": false,
-          "supportsFunctionCalling": true,
-          "supportsLogProbs": false,
-          "supportsMultipleImages": false,
-          "supportsReasoning": true,
-          "supportsReasoningEffort": false,
-          "supportsResponseSchema": false,
-          "supportsTeeAttestation": false,
-          "supportsE2EE": false,
-          "supportsVideoInput": true,
-          "supportsVision": true,
-          "supportsWebSearch": true,
-          "supportsXSearch": false
-        },
-        "description": "MiniMax-M3 is MiniMax's latest frontier model for coding, agentic workflows, and complex reasoning tasks.",
-        "name": "MiniMax M3",
         "offline": false,
         "privacy": "anonymized",
         "traits": []
@@ -5595,6 +5549,101 @@
         },
         "supportsWebSearch": false,
         "name": "Krea v2 Medium",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "image"
+    },
+    {
+      "created": 1781654400,
+      "id": "luma-uni-1",
+      "model_spec": {
+        "pricing": {
+          "generation": {
+            "usd": 0.05,
+            "diem": 0.05
+          },
+          "upscale": {
+            "2x": {
+              "usd": 0.02,
+              "diem": 0.02
+            },
+            "4x": {
+              "usd": 0.08,
+              "diem": 0.08
+            }
+          }
+        },
+        "constraints": {
+          "promptCharacterLimit": 6000,
+          "aspectRatios": [
+            "1:1",
+            "3:2",
+            "16:9",
+            "9:16",
+            "2:3"
+          ],
+          "defaultAspectRatio": "1:1",
+          "steps": {
+            "default": 20,
+            "max": 50
+          },
+          "widthHeightDivisor": 1
+        },
+        "supportsWebSearch": false,
+        "name": "Luma Uni-1",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "image"
+    },
+    {
+      "created": 1781654400,
+      "id": "luma-uni-1-max",
+      "model_spec": {
+        "pricing": {
+          "generation": {
+            "usd": 0.12,
+            "diem": 0.12
+          },
+          "upscale": {
+            "2x": {
+              "usd": 0.02,
+              "diem": 0.02
+            },
+            "4x": {
+              "usd": 0.08,
+              "diem": 0.08
+            }
+          }
+        },
+        "model_sets": [
+          "venice_recommendations"
+        ],
+        "constraints": {
+          "promptCharacterLimit": 6000,
+          "aspectRatios": [
+            "1:1",
+            "3:2",
+            "16:9",
+            "9:16",
+            "2:3"
+          ],
+          "defaultAspectRatio": "1:1",
+          "steps": {
+            "default": 20,
+            "max": 50
+          },
+          "widthHeightDivisor": 1
+        },
+        "supportsWebSearch": false,
+        "name": "Luma Uni-1 Max",
         "offline": false,
         "privacy": "anonymized",
         "traits": []
@@ -8198,7 +8247,8 @@
         },
         "model_sets": [
           "uncensored",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "Wan 2.2 A14B",
         "offline": false,
@@ -8696,8 +8746,7 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.0 19B",
         "offline": false,
@@ -8744,8 +8793,7 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.0 19B Distilled",
         "offline": false,
@@ -10809,7 +10857,8 @@
         "model_sets": [
           "high_resolution",
           "audio",
-          "cinematic"
+          "cinematic",
+          "fast"
         ],
         "name": "PixVerse v5.6 Transition",
         "offline": false,
@@ -13141,6 +13190,76 @@
           ]
         },
         "name": "Nano Banana Pro",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "inpaint"
+    },
+    {
+      "created": 1781654400,
+      "id": "luma-uni-1-edit",
+      "model_spec": {
+        "pricing": {
+          "inpaint": {
+            "usd": 0.06,
+            "diem": 0.06
+          }
+        },
+        "constraints": {
+          "aspectRatios": [
+            "auto",
+            "1:1",
+            "3:2",
+            "16:9",
+            "21:9",
+            "9:16",
+            "2:3",
+            "3:4",
+            "4:5"
+          ],
+          "promptCharacterLimit": 6000,
+          "combineImages": false,
+          "singleImageAspectRatio": false
+        },
+        "name": "Luma Uni-1",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "inpaint"
+    },
+    {
+      "created": 1781654400,
+      "id": "luma-uni-1-max-edit",
+      "model_spec": {
+        "pricing": {
+          "inpaint": {
+            "usd": 0.13,
+            "diem": 0.13
+          }
+        },
+        "constraints": {
+          "aspectRatios": [
+            "auto",
+            "1:1",
+            "3:2",
+            "16:9",
+            "21:9",
+            "9:16",
+            "2:3",
+            "3:4",
+            "4:5"
+          ],
+          "promptCharacterLimit": 6000,
+          "combineImages": false,
+          "singleImageAspectRatio": false
+        },
+        "name": "Luma Uni-1 Max",
         "offline": false,
         "privacy": "anonymized",
         "traits": []
