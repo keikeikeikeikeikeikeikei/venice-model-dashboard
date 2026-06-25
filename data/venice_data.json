@@ -394,16 +394,16 @@
       "model_spec": {
         "pricing": {
           "input": {
-            "usd": 0.85,
-            "diem": 0.85
+            "usd": 0.43,
+            "diem": 0.43
           },
           "cache_input": {
-            "usd": 0.3,
-            "diem": 0.3
+            "usd": 0.08,
+            "diem": 0.08
           },
           "output": {
-            "usd": 2.75,
-            "diem": 2.75
+            "usd": 1.75,
+            "diem": 1.75
           }
         },
         "availableContextTokens": 198000,
@@ -1549,6 +1549,11 @@
           "supportsVision": false,
           "supportsWebSearch": true,
           "supportsXSearch": false
+        },
+        "deprecation": {
+          "autoRemap": false,
+          "date": "2026-07-01T00:00:00.000Z",
+          "removesAt": "2026-07-01T00:00:00.000Z"
         },
         "description": "Trinity Large Thinking is a reasoning-optimized variant of Arcee AI's Trinity-Large family, a 398B-parameter sparse Mixture-of-Experts model with approximately 13B active parameters per token, post-trained with extended chain-of-thought reasoning and agentic RL. It supports tool calling, multilingual input, and 256K context windows.",
         "name": "Trinity Large Thinking",
