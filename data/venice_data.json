@@ -2785,16 +2785,16 @@
       "model_spec": {
         "pricing": {
           "input": {
-            "usd": 0.85,
-            "diem": 0.85
+            "usd": 0.75,
+            "diem": 0.75
           },
           "cache_input": {
-            "usd": 0.22,
-            "diem": 0.22
+            "usd": 0.16,
+            "diem": 0.16
           },
           "output": {
-            "usd": 4.655,
-            "diem": 4.655
+            "usd": 3.5,
+            "diem": 3.5
           }
         },
         "model_sets": [
@@ -3918,14 +3918,7 @@
           "supportsLogProbs": false,
           "supportsMultipleImages": false,
           "supportsReasoning": true,
-          "supportsReasoningEffort": true,
-          "reasoningEffortOptions": [
-            "none",
-            "low",
-            "medium",
-            "high"
-          ],
-          "defaultReasoningEffort": "low",
+          "supportsReasoningEffort": false,
           "supportsResponseSchema": false,
           "supportsTeeAttestation": false,
           "supportsE2EE": false,
@@ -8341,7 +8334,8 @@
           "audio",
           "long_duration",
           "photorealistic",
-          "venice_recommendations"
+          "venice_recommendations",
+          "fast"
         ],
         "name": "Grok Imagine Private",
         "offline": false,
@@ -8870,8 +8864,7 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.0 19B",
         "offline": false,
