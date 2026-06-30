@@ -812,7 +812,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-06-30 18:47)</div>
+            <div class="meta">Generated from Live API Data (2026-07-01 03:21)</div>
         </header>
 
         <div class="controls">
@@ -5884,6 +5884,69 @@
       "type": "image"
     },
     {
+      "created": 1782777600,
+      "id": "krea-2-turbo",
+      "model_spec": {
+        "pricing": {
+          "resolutions": {
+            "1K": {
+              "usd": 0.04,
+              "diem": 0.04
+            },
+            "2K": {
+              "usd": 0.06,
+              "diem": 0.06
+            }
+          },
+          "upscale": {
+            "2x": {
+              "usd": 0.02,
+              "diem": 0.02
+            },
+            "4x": {
+              "usd": 0.08,
+              "diem": 0.08
+            }
+          }
+        },
+        "model_sets": [
+          "venice_recommendations"
+        ],
+        "constraints": {
+          "promptCharacterLimit": 5000,
+          "defaultResolution": "1K",
+          "resolutions": [
+            "1K",
+            "2K"
+          ],
+          "aspectRatios": [
+            "1:1",
+            "3:2",
+            "16:9",
+            "21:9",
+            "9:16",
+            "2:3",
+            "3:4",
+            "4:5"
+          ],
+          "defaultAspectRatio": "1:1",
+          "steps": {
+            "default": 20,
+            "max": 50
+          },
+          "widthHeightDivisor": 1
+        },
+        "supportsWebSearch": false,
+        "name": "Krea 2 Turbo",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "image"
+    },
+    {
       "created": 1764086377,
       "id": "flux-2-pro",
       "model_spec": {
@@ -9171,7 +9234,8 @@
           "audio",
           "long_duration",
           "photorealistic",
-          "venice_recommendations"
+          "venice_recommendations",
+          "fast"
         ],
         "name": "Grok Imagine Private",
         "offline": false,
@@ -9701,8 +9765,7 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.0 19B",
         "offline": false,
@@ -9749,7 +9812,8 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 19B",
         "offline": false,
@@ -12308,8 +12372,7 @@
         "model_sets": [
           "fast",
           "cinematic",
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "name": "Runway Gen-4 Turbo",
         "offline": false,
