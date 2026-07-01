@@ -1507,66 +1507,6 @@
       "type": "text"
     },
     {
-      "context_length": 256000,
-      "created": 1775088000,
-      "id": "arcee-trinity-large-thinking",
-      "model_spec": {
-        "pricing": {
-          "input": {
-            "usd": 0.3125,
-            "diem": 0.3125
-          },
-          "cache_input": {
-            "usd": 0.075,
-            "diem": 0.075
-          },
-          "output": {
-            "usd": 1.125,
-            "diem": 1.125
-          }
-        },
-        "availableContextTokens": 256000,
-        "maxCompletionTokens": 65536,
-        "capabilities": {
-          "optimizedForCode": true,
-          "quantization": "fp8",
-          "supportsAudioInput": false,
-          "supportsFunctionCalling": true,
-          "supportsLogProbs": false,
-          "supportsMultipleImages": false,
-          "supportsReasoning": true,
-          "supportsReasoningEffort": true,
-          "reasoningEffortOptions": [
-            "low",
-            "medium",
-            "high"
-          ],
-          "defaultReasoningEffort": "high",
-          "supportsResponseSchema": true,
-          "supportsTeeAttestation": false,
-          "supportsE2EE": false,
-          "supportsVideoInput": false,
-          "supportsVision": false,
-          "supportsWebSearch": true,
-          "supportsXSearch": false
-        },
-        "deprecation": {
-          "autoRemap": false,
-          "date": "2026-07-01T00:00:00.000Z",
-          "removesAt": "2026-07-01T00:00:00.000Z"
-        },
-        "description": "Trinity Large Thinking is a reasoning-optimized variant of Arcee AI's Trinity-Large family, a 398B-parameter sparse Mixture-of-Experts model with approximately 13B active parameters per token, post-trained with extended chain-of-thought reasoning and agentic RL. It supports tool calling, multilingual input, and 256K context windows.",
-        "name": "Trinity Large Thinking",
-        "modelSource": "https://huggingface.co/arcee-ai/Trinity-Large-Thinking-FP8-Block",
-        "offline": false,
-        "privacy": "private",
-        "traits": []
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "text"
-    },
-    {
       "context_length": 1000000,
       "created": 1776470400,
       "id": "grok-4-3",
@@ -5801,6 +5741,58 @@
       "type": "image"
     },
     {
+      "created": 1782777600,
+      "id": "nano-banana-2-lite",
+      "model_spec": {
+        "pricing": {
+          "generation": {
+            "usd": 0.06,
+            "diem": 0.06
+          },
+          "upscale": {
+            "2x": {
+              "usd": 0.02,
+              "diem": 0.02
+            },
+            "4x": {
+              "usd": 0.08,
+              "diem": 0.08
+            }
+          }
+        },
+        "model_sets": [
+          "venice_recommendations"
+        ],
+        "constraints": {
+          "promptCharacterLimit": 10000,
+          "aspectRatios": [
+            "1:1",
+            "3:2",
+            "16:9",
+            "21:9",
+            "9:16",
+            "2:3",
+            "3:4",
+            "4:5"
+          ],
+          "defaultAspectRatio": "1:1",
+          "steps": {
+            "default": 20,
+            "max": 50
+          },
+          "widthHeightDivisor": 1
+        },
+        "supportsWebSearch": false,
+        "name": "Nano Banana 2 Lite",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "image"
+    },
+    {
       "created": 1770854400,
       "id": "recraft-v4",
       "model_spec": {
@@ -6835,7 +6827,7 @@
           "venice_recommendations",
           "uncensored"
         ],
-        "name": "Seedance 2.0 Enhanced R2V",
+        "name": "Seedance 2.0 R2V Enhanced",
         "offline": false,
         "traits": []
       },
@@ -7200,6 +7192,127 @@
       "type": "video",
       "pricing": {
         "base_price_usd": 0.26
+      }
+    },
+    {
+      "created": 1782518400,
+      "id": "seedance-2-0-mini-enhanced-text-to-video",
+      "model_spec": {
+        "betaModel": true,
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "text-to-video",
+          "aspect_ratios": [
+            "21:9",
+            "16:9",
+            "4:3",
+            "1:1",
+            "3:4",
+            "9:16"
+          ],
+          "resolutions": [
+            "720p",
+            "480p"
+          ],
+          "durations": [
+            "4s",
+            "5s",
+            "6s",
+            "7s",
+            "8s",
+            "9s",
+            "10s",
+            "11s",
+            "12s",
+            "13s",
+            "14s",
+            "15s"
+          ],
+          "audio": true,
+          "audio_configurable": true,
+          "audio_input": false,
+          "per_reference_audio": false,
+          "video_input": false,
+          "prompt_character_limit": 10000
+        },
+        "model_sets": [
+          "audio",
+          "long_duration",
+          "cinematic",
+          "photorealistic",
+          "uncensored"
+        ],
+        "name": "Seedance 2.0 Mini Enhanced",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.18
+      }
+    },
+    {
+      "created": 1782518400,
+      "id": "seedance-2-0-mini-enhanced-reference-to-video",
+      "model_spec": {
+        "betaModel": true,
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [
+            "21:9",
+            "16:9",
+            "4:3",
+            "1:1",
+            "3:4",
+            "9:16"
+          ],
+          "resolutions": [
+            "720p",
+            "480p"
+          ],
+          "durations": [
+            "4s",
+            "5s",
+            "6s",
+            "7s",
+            "8s",
+            "9s",
+            "10s",
+            "11s",
+            "12s",
+            "13s",
+            "14s",
+            "15s"
+          ],
+          "audio": true,
+          "audio_configurable": true,
+          "audio_input": true,
+          "per_reference_audio": false,
+          "video_input": false,
+          "prompt_character_limit": 10000,
+          "reference_image_min_short_side_pixels": 300,
+          "reference_image_min_aspect_ratio": 0.4,
+          "reference_image_max_aspect_ratio": 2.5
+        },
+        "model_sets": [
+          "audio",
+          "long_duration",
+          "cinematic",
+          "photorealistic",
+          "uncensored"
+        ],
+        "name": "Seedance 2.0 Mini R2V Enhanced",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.18
       }
     },
     {
@@ -8351,8 +8464,7 @@
           "audio",
           "long_duration",
           "photorealistic",
-          "venice_recommendations",
-          "fast"
+          "venice_recommendations"
         ],
         "name": "Grok Imagine Private",
         "offline": false,
@@ -8929,8 +9041,7 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.0 19B",
         "offline": false,
@@ -10727,6 +10838,131 @@
       "type": "video",
       "pricing": {
         "base_price_usd": 3.52
+      }
+    },
+    {
+      "created": 1782777600,
+      "id": "gemini-omni-flash-text-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "text-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "9:16"
+          ],
+          "resolutions": [],
+          "durations": [
+            "4s",
+            "6s",
+            "8s",
+            "10s"
+          ],
+          "audio": false,
+          "audio_configurable": false,
+          "audio_input": false,
+          "per_reference_audio": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "audio",
+          "long_duration",
+          "cinematic",
+          "photorealistic",
+          "fast"
+        ],
+        "name": "Gemini Omni Flash",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.55
+      }
+    },
+    {
+      "created": 1782777600,
+      "id": "gemini-omni-flash-image-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "9:16"
+          ],
+          "resolutions": [],
+          "durations": [
+            "4s",
+            "6s",
+            "8s",
+            "10s"
+          ],
+          "audio": false,
+          "audio_configurable": false,
+          "audio_input": false,
+          "per_reference_audio": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "audio",
+          "long_duration",
+          "cinematic",
+          "photorealistic",
+          "fast"
+        ],
+        "name": "Gemini Omni Flash",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.57
+      }
+    },
+    {
+      "created": 1782777600,
+      "id": "gemini-omni-flash-reference-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "9:16"
+          ],
+          "resolutions": [],
+          "durations": [
+            "4s",
+            "6s",
+            "8s",
+            "10s"
+          ],
+          "audio": false,
+          "audio_configurable": false,
+          "audio_input": false,
+          "per_reference_audio": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "audio",
+          "long_duration",
+          "cinematic",
+          "photorealistic"
+        ],
+        "name": "Gemini Omni Flash R2V",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.57
       }
     },
     {
@@ -13348,6 +13584,41 @@
           ]
         },
         "name": "Nano Banana Pro",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "inpaint"
+    },
+    {
+      "created": 1782777600,
+      "id": "nano-banana-2-lite-edit",
+      "model_spec": {
+        "pricing": {
+          "inpaint": {
+            "usd": 0.06,
+            "diem": 0.06
+          }
+        },
+        "constraints": {
+          "aspectRatios": [
+            "auto",
+            "1:1",
+            "3:2",
+            "16:9",
+            "21:9",
+            "9:16",
+            "2:3",
+            "3:4",
+            "4:5"
+          ],
+          "promptCharacterLimit": 10000,
+          "combineImages": true,
+          "singleImageAspectRatio": true
+        },
+        "name": "Nano Banana 2 Lite",
         "offline": false,
         "privacy": "anonymized",
         "traits": []
