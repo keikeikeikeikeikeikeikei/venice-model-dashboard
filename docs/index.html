@@ -812,7 +812,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-07-01 17:43)</div>
+            <div class="meta">Generated from Live API Data (2026-07-01 23:44)</div>
         </header>
 
         <div class="controls">
@@ -3381,6 +3381,61 @@
         },
         "description": "Claude Opus 4.5 is Anthropic's frontier reasoning model optimized for complex software engineering, agentic workflows, and long-horizon computer use. It offers strong multimodal capabilities, competitive performance across real-world coding and reasoning benchmarks, and improved robustness to prompt injection.",
         "name": "Claude Opus 4.5",
+        "modelSource": "",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 1000000,
+      "created": 1782691200,
+      "id": "claude-sonnet-5",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 3,
+            "diem": 3
+          },
+          "cache_input": {
+            "usd": 0.3,
+            "diem": 0.3
+          },
+          "cache_write": {
+            "usd": 3.75,
+            "diem": 3.75
+          },
+          "output": {
+            "usd": 15,
+            "diem": 15
+          }
+        },
+        "availableContextTokens": 1000000,
+        "maxCompletionTokens": 64000,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Claude Sonnet 5 is Anthropic's latest Sonnet model, substantially improving on Sonnet 4.6 in coding and agentic work and reaching near-Opus quality on many tasks. It features a 1M token context window, adaptive thinking, and strong document and vision understanding.",
+        "name": "Claude Sonnet 5",
         "modelSource": "",
         "offline": false,
         "privacy": "anonymized",

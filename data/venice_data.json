@@ -2509,6 +2509,61 @@
     },
     {
       "context_length": 1000000,
+      "created": 1782691200,
+      "id": "claude-sonnet-5",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 3,
+            "diem": 3
+          },
+          "cache_input": {
+            "usd": 0.3,
+            "diem": 0.3
+          },
+          "cache_write": {
+            "usd": 3.75,
+            "diem": 3.75
+          },
+          "output": {
+            "usd": 15,
+            "diem": 15
+          }
+        },
+        "availableContextTokens": 1000000,
+        "maxCompletionTokens": 64000,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Claude Sonnet 5 is Anthropic's latest Sonnet model, substantially improving on Sonnet 4.6 in coding and agentic work and reaching near-Opus quality on many tasks. It features a 1M token context window, adaptive thinking, and strong document and vision understanding.",
+        "name": "Claude Sonnet 5",
+        "modelSource": "",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 1000000,
       "created": 1771286400,
       "id": "claude-sonnet-4-6",
       "model_spec": {
