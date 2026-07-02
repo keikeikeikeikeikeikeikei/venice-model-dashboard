@@ -8519,7 +8519,8 @@
           "audio",
           "long_duration",
           "photorealistic",
-          "venice_recommendations"
+          "venice_recommendations",
+          "fast"
         ],
         "name": "Grok Imagine Private",
         "offline": false,
@@ -9049,7 +9050,8 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 19B",
         "offline": false,
@@ -10964,8 +10966,7 @@
           "audio",
           "long_duration",
           "cinematic",
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "name": "Gemini Omni Flash",
         "offline": false,
@@ -11006,8 +11007,7 @@
           "audio",
           "long_duration",
           "cinematic",
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "name": "Gemini Omni Flash R2V",
         "offline": false,
