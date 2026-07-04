@@ -3873,14 +3873,15 @@
           "supportsAudioInput": false,
           "supportsFunctionCalling": true,
           "supportsLogProbs": false,
-          "supportsMultipleImages": false,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
           "supportsReasoning": true,
           "supportsReasoningEffort": false,
           "supportsResponseSchema": false,
           "supportsTeeAttestation": false,
           "supportsE2EE": false,
-          "supportsVideoInput": false,
-          "supportsVision": false,
+          "supportsVideoInput": true,
+          "supportsVision": true,
           "supportsWebSearch": true,
           "supportsXSearch": false
         },
@@ -8782,7 +8783,8 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 Fast",
         "offline": false,
@@ -8917,8 +8919,7 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.3 Fast",
         "offline": false,
@@ -9102,8 +9103,7 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.0 19B",
         "offline": false,
@@ -9245,8 +9245,7 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.0 19B Distilled",
         "offline": false,
@@ -10977,7 +10976,8 @@
           "audio",
           "long_duration",
           "cinematic",
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Gemini Omni Flash",
         "offline": false,
@@ -11059,7 +11059,8 @@
           "audio",
           "long_duration",
           "cinematic",
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Gemini Omni Flash R2V",
         "offline": false,
