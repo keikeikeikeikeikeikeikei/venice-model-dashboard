@@ -7631,8 +7631,7 @@
           "prompt_character_limit": 4096
         },
         "model_sets": [
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "name": "Grok Imagine R2V Private",
         "offline": false,
@@ -7673,8 +7672,7 @@
           "audio",
           "long_duration",
           "photorealistic",
-          "venice_recommendations",
-          "fast"
+          "venice_recommendations"
         ],
         "name": "Grok Imagine Private",
         "offline": false,
@@ -8031,7 +8029,8 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.3 Fast",
         "offline": false,
@@ -10090,7 +10089,8 @@
           "audio",
           "long_duration",
           "cinematic",
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Gemini Omni Flash",
         "offline": false,
