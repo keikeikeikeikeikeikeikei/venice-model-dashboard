@@ -812,7 +812,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-07-07 17:53)</div>
+            <div class="meta">Generated from Live API Data (2026-07-08 04:26)</div>
         </header>
 
         <div class="controls">
@@ -5734,6 +5734,56 @@
       "type": "text"
     },
     {
+      "context_length": 256000,
+      "created": 1783382400,
+      "id": "e2ee-qwen3-6-27b",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 0.346,
+            "diem": 0.346
+          },
+          "cache_input": {
+            "usd": 0.171,
+            "diem": 0.171
+          },
+          "output": {
+            "usd": 3.46,
+            "diem": 3.46
+          }
+        },
+        "availableContextTokens": 256000,
+        "maxCompletionTokens": 32768,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "fp8",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": false,
+          "supportsTeeAttestation": true,
+          "supportsE2EE": true,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Qwen 3.6 27B FP8 running in a Trusted Execution Environment (TEE). Hardware attestation evidence is available for independent verification of enclave identity and configuration.",
+        "name": "Qwen 3.6 27B FP8",
+        "modelSource": "https://huggingface.co/Qwen/Qwen3.6-27B-FP8",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
       "context_length": 32000,
       "created": 1779235200,
       "id": "e2ee-gemma-4-31b",
@@ -5775,6 +5825,56 @@
         "description": "Gemma 4 31B Instruct running in a Trusted Execution Environment (TEE). Hardware attestation evidence is available for independent verification of enclave identity and configuration.",
         "name": "Gemma 4 31B Instruct",
         "modelSource": "https://huggingface.co/google/gemma-4-31B-it",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 1000000,
+      "created": 1783382400,
+      "id": "e2ee-deepseek-v4-flash",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 0.182,
+            "diem": 0.182
+          },
+          "cache_input": {
+            "usd": 0.038,
+            "diem": 0.038
+          },
+          "output": {
+            "usd": 0.373,
+            "diem": 0.373
+          }
+        },
+        "availableContextTokens": 1000000,
+        "maxCompletionTokens": 8192,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "fp8",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": false,
+          "supportsTeeAttestation": true,
+          "supportsE2EE": true,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "DeepSeek V4 Flash running in a Trusted Execution Environment (TEE). Hardware attestation evidence is available for independent verification of enclave identity and configuration.",
+        "name": "DeepSeek V4 Flash",
+        "modelSource": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
         "offline": false,
         "privacy": "private",
         "traits": []
@@ -8777,7 +8877,8 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 Fast",
         "offline": false,
@@ -9191,8 +9292,7 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.0 19B Distilled",
         "offline": false,
@@ -10379,8 +10479,7 @@
           "cinematic",
           "audio",
           "photorealistic",
-          "long_duration",
-          "fast"
+          "long_duration"
         ],
         "name": "Kling V3 Turbo Standard",
         "offline": false,
@@ -11014,7 +11113,8 @@
           "audio",
           "long_duration",
           "cinematic",
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Gemini Omni Flash",
         "offline": false,
@@ -13029,6 +13129,7 @@
           "WiseWoman",
           "YoungKnight"
         ],
+        "description": "Clone your voice from a short recording and generate natural speech in it across 30+ languages.",
         "name": "MiniMax Speech-02 HD",
         "offline": false,
         "privacy": "anonymized",
