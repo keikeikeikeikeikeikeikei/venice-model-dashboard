@@ -812,7 +812,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-07-09 01:02)</div>
+            <div class="meta">Generated from Live API Data (2026-07-09 07:02)</div>
         </header>
 
         <div class="controls">
@@ -2464,6 +2464,103 @@
         },
         "description": "Grok 4.3 is xAI's most intelligent and fastest reasoning model with function calling, structured outputs, and a 1M-token context window. Suited for agentic workflows, instruction-following tasks, and applications requiring high factual accuracy.",
         "name": "Grok 4.3",
+        "modelSource": "https://docs.x.ai/developers/models",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 500000,
+      "created": 1783382400,
+      "id": "grok-4-5",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 2.27,
+            "diem": 2.27
+          },
+          "cache_input": {
+            "usd": 0.57,
+            "diem": 0.57
+          },
+          "output": {
+            "usd": 6.8,
+            "diem": 6.8
+          },
+          "extended": {
+            "context_token_threshold": 200000,
+            "input": {
+              "usd": 4.53,
+              "diem": 4.53
+            },
+            "output": {
+              "usd": 13.6,
+              "diem": 13.6
+            },
+            "cache_input": {
+              "usd": 1.13,
+              "diem": 1.13
+            }
+          }
+        },
+        "regionRestrictions": [
+          "AT",
+          "BE",
+          "BG",
+          "CY",
+          "CZ",
+          "DE",
+          "DK",
+          "EE",
+          "ES",
+          "FI",
+          "FR",
+          "GR",
+          "HR",
+          "HU",
+          "IE",
+          "IS",
+          "IT",
+          "LI",
+          "LT",
+          "LU",
+          "LV",
+          "MT",
+          "NL",
+          "NO",
+          "PL",
+          "PT",
+          "RO",
+          "SE",
+          "SI",
+          "SK"
+        ],
+        "availableContextTokens": 500000,
+        "maxCompletionTokens": 32000,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": true
+        },
+        "description": "Grok 4.5 is xAI's intelligent coding model for agentic software engineering and workflow tasks, with function calling, structured outputs, and a 500K-token context window.",
+        "name": "Grok 4.5",
         "modelSource": "https://docs.x.ai/developers/models",
         "offline": false,
         "privacy": "private",
@@ -7155,6 +7252,64 @@
       "type": "image"
     },
     {
+      "created": 1783468800,
+      "id": "seedream-v5-pro",
+      "model_spec": {
+        "pricing": {
+          "resolutions": {
+            "1K": {
+              "usd": 0.06,
+              "diem": 0.06
+            },
+            "2K": {
+              "usd": 0.11,
+              "diem": 0.11
+            }
+          },
+          "upscale": {
+            "2x": {
+              "usd": 0.02,
+              "diem": 0.02
+            },
+            "4x": {
+              "usd": 0.08,
+              "diem": 0.08
+            }
+          }
+        },
+        "constraints": {
+          "promptCharacterLimit": 10000,
+          "defaultResolution": "2K",
+          "resolutions": [
+            "1K",
+            "2K"
+          ],
+          "aspectRatios": [
+            "1:1",
+            "3:2",
+            "16:9",
+            "9:16",
+            "2:3",
+            "3:4"
+          ],
+          "defaultAspectRatio": "1:1",
+          "steps": {
+            "default": 20,
+            "max": 50
+          },
+          "widthHeightDivisor": 1
+        },
+        "supportsWebSearch": false,
+        "name": "Seedream V5 Pro",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "image"
+    },
+    {
       "created": 1772582400,
       "id": "qwen-image-2",
       "model_spec": {
@@ -8773,7 +8928,8 @@
           "audio",
           "long_duration",
           "photorealistic",
-          "venice_recommendations"
+          "venice_recommendations",
+          "fast"
         ],
         "name": "Grok Imagine Private",
         "offline": false,
@@ -8863,8 +9019,7 @@
         },
         "model_sets": [
           "uncensored",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "Wan 2.2 A14B",
         "offline": false,
@@ -8947,7 +9102,8 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 Fast",
         "offline": false,
@@ -10597,7 +10753,8 @@
           "cinematic",
           "audio",
           "photorealistic",
-          "long_duration"
+          "long_duration",
+          "fast"
         ],
         "name": "Kling V3 Turbo Standard",
         "offline": false,
@@ -11189,8 +11346,7 @@
           "audio",
           "long_duration",
           "cinematic",
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "name": "Gemini Omni Flash",
         "offline": false,
@@ -11801,8 +11957,7 @@
           "high_resolution",
           "audio",
           "cinematic",
-          "long_duration",
-          "fast"
+          "long_duration"
         ],
         "name": "PixVerse C1 Transition",
         "offline": false,
@@ -14045,6 +14200,53 @@
           "singleImageAspectRatio": true
         },
         "name": "Seedream V5 Lite",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "inpaint"
+    },
+    {
+      "created": 1783468800,
+      "id": "seedream-v5-pro-edit",
+      "model_spec": {
+        "pricing": {
+          "inpaint": {
+            "usd": 0.11,
+            "diem": 0.11
+          },
+          "resolutions": {
+            "1K": {
+              "usd": 0.06,
+              "diem": 0.06
+            },
+            "2K": {
+              "usd": 0.11,
+              "diem": 0.11
+            }
+          }
+        },
+        "constraints": {
+          "aspectRatios": [
+            "1:1",
+            "3:2",
+            "16:9",
+            "9:16",
+            "2:3",
+            "3:4"
+          ],
+          "promptCharacterLimit": 10000,
+          "combineImages": true,
+          "singleImageAspectRatio": true,
+          "defaultResolution": "2K",
+          "resolutions": [
+            "1K",
+            "2K"
+          ]
+        },
+        "name": "Seedream V5 Pro",
         "offline": false,
         "privacy": "anonymized",
         "traits": []
