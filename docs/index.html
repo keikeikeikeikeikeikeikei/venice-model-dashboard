@@ -812,7 +812,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-07-08 04:26)</div>
+            <div class="meta">Generated from Live API Data (2026-07-09 01:02)</div>
         </header>
 
         <div class="controls">
@@ -4043,9 +4043,127 @@
           "supportsWebSearch": true,
           "supportsXSearch": false
         },
+        "deprecation": {
+          "autoRemap": false,
+          "date": "2026-07-15T00:00:00.000Z",
+          "removesAt": "2026-07-15T00:00:00.000Z",
+          "replacementModelId": "aion-labs-aion-3-0"
+        },
         "description": "Aion 2.0 is a DeepSeek V3.2-based model fine-tuned for immersive roleplaying and long-form storytelling. It excels at introducing tension, crises, and meaningful conflict into narratives, keeping stories unpredictable and deeply engaging. The model handles mature and darker themes with exceptional nuance, avoiding sanitized or surface-level treatment. Available as an early alpha\u2014your feedback helps shape its development.",
         "name": "Aion 2.0",
         "modelSource": "https://www.aionlabs.ai/documentation/",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 128000,
+      "created": 1783468800,
+      "id": "aion-labs-aion-3-0",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 3.75,
+            "diem": 3.75
+          },
+          "cache_input": {
+            "usd": 0.9375,
+            "diem": 0.9375
+          },
+          "output": {
+            "usd": 7.5,
+            "diem": 7.5
+          }
+        },
+        "availableContextTokens": 128000,
+        "maxCompletionTokens": 32768,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": true,
+          "reasoningEffortOptions": [
+            "none",
+            "low",
+            "medium",
+            "high"
+          ],
+          "defaultReasoningEffort": "low",
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Aion 3.0 is a multi-model roleplaying and storytelling system from AionLabs, built on the GLM family of models. Multiple specialized models collaborate on each response to produce stronger narrative structure and more compelling tension and conflict. It handles mature and darker themes with nuance and supports tool calling for richer interactive fiction.",
+        "name": "Aion 3.0",
+        "modelSource": "https://openrouter.ai/aion-labs/aion-3.0",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 128000,
+      "created": 1783468800,
+      "id": "aion-labs-aion-3-0-mini",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.875,
+            "diem": 0.875
+          },
+          "cache_input": {
+            "usd": 0.225,
+            "diem": 0.225
+          },
+          "output": {
+            "usd": 1.75,
+            "diem": 1.75
+          }
+        },
+        "availableContextTokens": 128000,
+        "maxCompletionTokens": 32768,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": true,
+          "reasoningEffortOptions": [
+            "none",
+            "low",
+            "medium",
+            "high"
+          ],
+          "defaultReasoningEffort": "low",
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Aion 3.0 Mini is a multi-model roleplaying and storytelling system from AionLabs, built on the DeepSeek family of models. Multiple specialized models collaborate on each response to produce stronger narrative structure and more compelling tension and conflict at lower cost. It handles mature and darker themes with nuance and supports tool calling for richer interactive fiction.",
+        "name": "Aion 3.0 Mini",
+        "modelSource": "https://openrouter.ai/aion-labs/aion-3.0-mini",
         "offline": false,
         "privacy": "anonymized",
         "traits": []
@@ -8877,8 +8995,7 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.0 Fast",
         "offline": false,
@@ -9292,7 +9409,8 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 19B Distilled",
         "offline": false,
@@ -11113,8 +11231,7 @@
           "audio",
           "long_duration",
           "cinematic",
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "name": "Gemini Omni Flash",
         "offline": false,
@@ -11684,7 +11801,8 @@
           "high_resolution",
           "audio",
           "cinematic",
-          "long_duration"
+          "long_duration",
+          "fast"
         ],
         "name": "PixVerse C1 Transition",
         "offline": false,
