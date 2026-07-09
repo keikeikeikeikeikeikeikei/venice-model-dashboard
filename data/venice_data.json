@@ -8219,8 +8219,7 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.0 Fast",
         "offline": false,
@@ -11318,7 +11317,8 @@
         "model_sets": [
           "fast",
           "cinematic",
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Runway Gen-4 Turbo",
         "offline": false,
@@ -13331,8 +13331,8 @@
       "model_spec": {
         "pricing": {
           "inpaint": {
-            "usd": 0.11,
-            "diem": 0.11
+            "usd": 0.12,
+            "diem": 0.12
           },
           "resolutions": {
             "1K": {
@@ -13340,13 +13340,14 @@
               "diem": 0.06
             },
             "2K": {
-              "usd": 0.11,
-              "diem": 0.11
+              "usd": 0.12,
+              "diem": 0.12
             }
           }
         },
         "constraints": {
           "aspectRatios": [
+            "auto",
             "1:1",
             "3:2",
             "16:9",
