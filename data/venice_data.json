@@ -8793,8 +8793,7 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.3 Fast",
         "offline": false,
@@ -11464,7 +11463,8 @@
           "high_resolution",
           "audio",
           "cinematic",
-          "long_duration"
+          "long_duration",
+          "fast"
         ],
         "name": "PixVerse C1 Transition",
         "offline": false,
