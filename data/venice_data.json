@@ -3972,6 +3972,10 @@
             "usd": 0.125,
             "diem": 0.125
           },
+          "cache_write": {
+            "usd": 1.5625,
+            "diem": 1.5625
+          },
           "output": {
             "usd": 7.5,
             "diem": 7.5
@@ -4031,6 +4035,10 @@
           "cache_input": {
             "usd": 0.125,
             "diem": 0.125
+          },
+          "cache_write": {
+            "usd": 1.5625,
+            "diem": 1.5625
           },
           "output": {
             "usd": 7.5,
@@ -4092,6 +4100,10 @@
             "usd": 0.3125,
             "diem": 0.3125
           },
+          "cache_write": {
+            "usd": 3.90625,
+            "diem": 3.90625
+          },
           "output": {
             "usd": 18.75,
             "diem": 18.75
@@ -4152,6 +4164,10 @@
             "usd": 0.3125,
             "diem": 0.3125
           },
+          "cache_write": {
+            "usd": 3.90625,
+            "diem": 3.90625
+          },
           "output": {
             "usd": 18.75,
             "diem": 18.75
@@ -4211,6 +4227,10 @@
           "cache_input": {
             "usd": 0.625,
             "diem": 0.625
+          },
+          "cache_write": {
+            "usd": 7.8125,
+            "diem": 7.8125
           },
           "output": {
             "usd": 37.5,
@@ -4274,6 +4294,10 @@
           "cache_input": {
             "usd": 0.625,
             "diem": 0.625
+          },
+          "cache_write": {
+            "usd": 7.8125,
+            "diem": 7.8125
           },
           "output": {
             "usd": 37.5,
