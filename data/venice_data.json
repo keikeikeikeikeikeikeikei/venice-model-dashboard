@@ -3305,7 +3305,6 @@
           "supportsReasoning": true,
           "supportsReasoningEffort": true,
           "reasoningEffortOptions": [
-            "none",
             "low",
             "medium",
             "high"
@@ -3361,7 +3360,6 @@
           "supportsReasoning": true,
           "supportsReasoningEffort": true,
           "reasoningEffortOptions": [
-            "none",
             "low",
             "medium",
             "high"
@@ -3881,10 +3879,10 @@
           "supportsReasoningEffort": true,
           "reasoningEffortOptions": [
             "none",
-            "minimal",
             "low",
             "medium",
-            "high"
+            "high",
+            "xhigh"
           ],
           "defaultReasoningEffort": "high",
           "supportsResponseSchema": true,
@@ -3935,11 +3933,9 @@
           "supportsReasoning": true,
           "supportsReasoningEffort": true,
           "reasoningEffortOptions": [
-            "none",
-            "minimal",
-            "low",
             "medium",
-            "high"
+            "high",
+            "xhigh"
           ],
           "defaultReasoningEffort": "medium",
           "supportsResponseSchema": true,
@@ -3995,10 +3991,11 @@
           "supportsReasoningEffort": true,
           "reasoningEffortOptions": [
             "none",
-            "minimal",
             "low",
             "medium",
-            "high"
+            "high",
+            "xhigh",
+            "max"
           ],
           "defaultReasoningEffort": "high",
           "supportsResponseSchema": true,
@@ -4054,10 +4051,11 @@
           "supportsReasoningEffort": true,
           "reasoningEffortOptions": [
             "none",
-            "minimal",
             "low",
             "medium",
-            "high"
+            "high",
+            "xhigh",
+            "max"
           ],
           "defaultReasoningEffort": "medium",
           "supportsResponseSchema": true,
@@ -4113,10 +4111,11 @@
           "supportsReasoningEffort": true,
           "reasoningEffortOptions": [
             "none",
-            "minimal",
             "low",
             "medium",
-            "high"
+            "high",
+            "xhigh",
+            "max"
           ],
           "defaultReasoningEffort": "high",
           "supportsResponseSchema": true,
@@ -4172,10 +4171,11 @@
           "supportsReasoningEffort": true,
           "reasoningEffortOptions": [
             "none",
-            "minimal",
             "low",
             "medium",
-            "high"
+            "high",
+            "xhigh",
+            "max"
           ],
           "defaultReasoningEffort": "medium",
           "supportsResponseSchema": true,
@@ -4234,10 +4234,11 @@
           "supportsReasoningEffort": true,
           "reasoningEffortOptions": [
             "none",
-            "minimal",
             "low",
             "medium",
-            "high"
+            "high",
+            "xhigh",
+            "max"
           ],
           "defaultReasoningEffort": "high",
           "supportsResponseSchema": true,
@@ -4293,10 +4294,11 @@
           "supportsReasoningEffort": true,
           "reasoningEffortOptions": [
             "none",
-            "minimal",
             "low",
             "medium",
-            "high"
+            "high",
+            "xhigh",
+            "max"
           ],
           "defaultReasoningEffort": "medium",
           "supportsResponseSchema": true,
@@ -4456,7 +4458,7 @@
         },
         "description": "MiniMax-M3 preview is a 1.4T-parameter frontier model from MiniMax for coding, agentic workflows, and complex reasoning, served at fp8 with a 512K context window.",
         "name": "MiniMax M3 Preview",
-        "modelSource": "https://huggingface.co/MiniMaxAI/Minimax-M3-preview",
+        "modelSource": "https://huggingface.co/MiniMaxAI/MiniMax-M3",
         "offline": false,
         "privacy": "private",
         "traits": []
@@ -5600,6 +5602,7 @@
           "widthHeightDivisor": 16
         },
         "supportsWebSearch": false,
+        "supportsOptimizePromptThinking": false,
         "name": "Venice SD35",
         "modelSource": "https://huggingface.co/stabilityai/stable-diffusion-3.5-large",
         "offline": false,
@@ -5665,6 +5668,7 @@
           "widthHeightDivisor": 1
         },
         "supportsWebSearch": false,
+        "supportsOptimizePromptThinking": false,
         "name": "Grok Imagine High Quality (SOTA)",
         "offline": false,
         "privacy": "private",
@@ -5728,6 +5732,7 @@
           "widthHeightDivisor": 1
         },
         "supportsWebSearch": false,
+        "supportsOptimizePromptThinking": false,
         "name": "Krea 2 Turbo",
         "offline": false,
         "privacy": "private",
@@ -5777,6 +5782,7 @@
           "widthHeightDivisor": 1
         },
         "supportsWebSearch": false,
+        "supportsOptimizePromptThinking": false,
         "name": "Flux 2 Pro",
         "offline": false,
         "privacy": "anonymized",
@@ -5830,6 +5836,7 @@
           "widthHeightDivisor": 1
         },
         "supportsWebSearch": false,
+        "supportsOptimizePromptThinking": false,
         "name": "Flux 2 Max",
         "offline": false,
         "privacy": "anonymized",
@@ -5949,6 +5956,7 @@
           "widthHeightDivisor": 1
         },
         "supportsWebSearch": false,
+        "supportsOptimizePromptThinking": false,
         "name": "GPT Image 2",
         "offline": false,
         "privacy": "anonymized",
@@ -5993,6 +6001,7 @@
           "widthHeightDivisor": 1
         },
         "supportsWebSearch": false,
+        "supportsOptimizePromptThinking": false,
         "name": "GPT Image 1.5",
         "offline": false,
         "privacy": "anonymized",
@@ -6043,6 +6052,7 @@
           "widthHeightDivisor": 1
         },
         "supportsWebSearch": false,
+        "supportsOptimizePromptThinking": false,
         "name": "Hunyuan Image 3.0",
         "offline": false,
         "privacy": "private",
@@ -6092,6 +6102,7 @@
           "widthHeightDivisor": 1
         },
         "supportsWebSearch": false,
+        "supportsOptimizePromptThinking": false,
         "name": "Ideogram V4",
         "offline": false,
         "privacy": "anonymized",
@@ -6140,6 +6151,7 @@
           "widthHeightDivisor": 1
         },
         "supportsWebSearch": false,
+        "supportsOptimizePromptThinking": false,
         "name": "ImagineArt 1.5 Pro",
         "offline": false,
         "privacy": "anonymized",
@@ -6187,6 +6199,7 @@
           "widthHeightDivisor": 1
         },
         "supportsWebSearch": false,
+        "supportsOptimizePromptThinking": false,
         "name": "Krea v2 Large",
         "offline": false,
         "privacy": "anonymized",
@@ -6234,6 +6247,7 @@
           "widthHeightDivisor": 1
         },
         "supportsWebSearch": false,
+        "supportsOptimizePromptThinking": false,
         "name": "Krea v2 Medium",
         "offline": false,
         "privacy": "anonymized",
@@ -6280,6 +6294,7 @@
           "widthHeightDivisor": 1
         },
         "supportsWebSearch": false,
+        "supportsOptimizePromptThinking": false,
         "name": "Luma Uni-1",
         "offline": false,
         "privacy": "anonymized",
@@ -6329,6 +6344,7 @@
           "widthHeightDivisor": 1
         },
         "supportsWebSearch": false,
+        "supportsOptimizePromptThinking": false,
         "name": "Luma Uni-1 Max",
         "offline": false,
         "privacy": "anonymized",
@@ -6397,6 +6413,7 @@
           "widthHeightDivisor": 1
         },
         "supportsWebSearch": true,
+        "supportsOptimizePromptThinking": false,
         "name": "Nano Banana 2",
         "offline": false,
         "privacy": "anonymized",
@@ -6465,6 +6482,7 @@
           "widthHeightDivisor": 1
         },
         "supportsWebSearch": true,
+        "supportsOptimizePromptThinking": false,
         "name": "Nano Banana Pro",
         "offline": false,
         "privacy": "anonymized",
@@ -6517,6 +6535,7 @@
           "widthHeightDivisor": 1
         },
         "supportsWebSearch": false,
+        "supportsOptimizePromptThinking": false,
         "name": "Nano Banana 2 Lite",
         "offline": false,
         "privacy": "anonymized",
@@ -6566,6 +6585,7 @@
           "widthHeightDivisor": 1
         },
         "supportsWebSearch": false,
+        "supportsOptimizePromptThinking": false,
         "name": "Recraft V4",
         "offline": false,
         "privacy": "anonymized",
@@ -6615,6 +6635,7 @@
           "widthHeightDivisor": 1
         },
         "supportsWebSearch": false,
+        "supportsOptimizePromptThinking": false,
         "name": "Recraft V4 Pro",
         "offline": false,
         "privacy": "anonymized",
@@ -6664,6 +6685,7 @@
           "widthHeightDivisor": 1
         },
         "supportsWebSearch": false,
+        "supportsOptimizePromptThinking": false,
         "name": "Seedream V4.5",
         "offline": false,
         "privacy": "anonymized",
@@ -6713,6 +6735,7 @@
           "widthHeightDivisor": 1
         },
         "supportsWebSearch": false,
+        "supportsOptimizePromptThinking": false,
         "name": "Seedream V5 Lite",
         "offline": false,
         "privacy": "anonymized",
@@ -6774,6 +6797,7 @@
           "widthHeightDivisor": 1
         },
         "supportsWebSearch": false,
+        "supportsOptimizePromptThinking": true,
         "name": "Seedream V5 Pro",
         "offline": false,
         "privacy": "anonymized",
@@ -6823,6 +6847,7 @@
           "widthHeightDivisor": 1
         },
         "supportsWebSearch": false,
+        "supportsOptimizePromptThinking": false,
         "name": "Qwen Image 2",
         "offline": false,
         "privacy": "anonymized",
@@ -6875,6 +6900,7 @@
           "widthHeightDivisor": 1
         },
         "supportsWebSearch": false,
+        "supportsOptimizePromptThinking": false,
         "name": "Qwen Image 2 Pro",
         "offline": false,
         "privacy": "anonymized",
@@ -6924,6 +6950,7 @@
           "widthHeightDivisor": 1
         },
         "supportsWebSearch": false,
+        "supportsOptimizePromptThinking": false,
         "name": "Wan 2.7",
         "offline": false,
         "privacy": "anonymized",
@@ -6973,6 +7000,7 @@
           "widthHeightDivisor": 1
         },
         "supportsWebSearch": false,
+        "supportsOptimizePromptThinking": false,
         "name": "Wan 2.7 Pro",
         "offline": false,
         "privacy": "anonymized",
@@ -7031,6 +7059,7 @@
           "widthHeightDivisor": 1
         },
         "supportsWebSearch": false,
+        "supportsOptimizePromptThinking": false,
         "name": "Grok Imagine",
         "offline": false,
         "privacy": "private",
@@ -7069,6 +7098,7 @@
           "widthHeightDivisor": 8
         },
         "supportsWebSearch": false,
+        "supportsOptimizePromptThinking": false,
         "name": "Lustify SDXL",
         "modelSource": "https://civitai.com/models/573152/lustify-sdxl-nsfw-checkpoint",
         "offline": false,
@@ -7111,6 +7141,7 @@
           "widthHeightDivisor": 8
         },
         "supportsWebSearch": false,
+        "supportsOptimizePromptThinking": false,
         "name": "Lustify v7",
         "modelSource": "https://civitai.com/models/573152/lustify-sdxl-nsfw-checkpoint",
         "offline": false,
@@ -7155,6 +7186,7 @@
           "widthHeightDivisor": 8
         },
         "supportsWebSearch": false,
+        "supportsOptimizePromptThinking": false,
         "name": "Lustify v8",
         "modelSource": "https://civitai.com/models/573152/lustify-sdxl-nsfw-checkpoint",
         "offline": false,
@@ -7207,6 +7239,7 @@
           "widthHeightDivisor": 1
         },
         "supportsWebSearch": false,
+        "supportsOptimizePromptThinking": false,
         "name": "Qwen Image",
         "modelSource": "https://huggingface.co/Qwen/Qwen-Image",
         "offline": false,
@@ -7251,6 +7284,7 @@
           "widthHeightDivisor": 16
         },
         "supportsWebSearch": false,
+        "supportsOptimizePromptThinking": false,
         "name": "Anime (WAI)",
         "modelSource": "https://civitai.com/models/827184?modelVersionId=1761560",
         "offline": false,
@@ -7293,6 +7327,7 @@
           "widthHeightDivisor": 8
         },
         "supportsWebSearch": false,
+        "supportsOptimizePromptThinking": false,
         "name": "Z-Image Turbo",
         "modelSource": "https://huggingface.co/Tongyi-MAI/Z-Image-Turbo",
         "offline": false,
@@ -7339,6 +7374,7 @@
           "widthHeightDivisor": 8
         },
         "supportsWebSearch": false,
+        "supportsOptimizePromptThinking": false,
         "name": "Chroma",
         "modelSource": "https://huggingface.co/lodestones/Chroma1-HD",
         "offline": false,
@@ -7378,6 +7414,7 @@
           "widthHeightDivisor": 1
         },
         "supportsWebSearch": false,
+        "supportsOptimizePromptThinking": false,
         "name": "Background Remover",
         "offline": false,
         "privacy": "anonymized",
@@ -8489,7 +8526,8 @@
         },
         "model_sets": [
           "uncensored",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "Wan 2.2 A14B",
         "offline": false,
@@ -8805,8 +8843,7 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.3 Fast",
         "offline": false,
@@ -13022,6 +13059,7 @@
           "combineImages": true,
           "singleImageAspectRatio": true
         },
+        "supportsOptimizePromptThinking": false,
         "name": "FireRed Edit",
         "offline": false,
         "privacy": "private",
@@ -13058,6 +13096,7 @@
           "combineImages": true,
           "singleImageAspectRatio": true
         },
+        "supportsOptimizePromptThinking": false,
         "name": "Qwen Edit Uncensored",
         "offline": false,
         "privacy": "private",
@@ -13105,6 +13144,7 @@
             "2K"
           ]
         },
+        "supportsOptimizePromptThinking": false,
         "name": "Grok Imagine",
         "offline": false,
         "privacy": "private",
@@ -13152,6 +13192,7 @@
             "2K"
           ]
         },
+        "supportsOptimizePromptThinking": false,
         "name": "Grok Imagine High Quality",
         "offline": false,
         "privacy": "private",
@@ -13186,6 +13227,7 @@
           "combineImages": true,
           "singleImageAspectRatio": true
         },
+        "supportsOptimizePromptThinking": false,
         "name": "Qwen Image 2",
         "offline": false,
         "privacy": "anonymized",
@@ -13220,6 +13262,7 @@
           "combineImages": true,
           "singleImageAspectRatio": true
         },
+        "supportsOptimizePromptThinking": false,
         "name": "Qwen Image 2 Pro",
         "offline": false,
         "privacy": "anonymized",
@@ -13252,6 +13295,7 @@
             "2K"
           ]
         },
+        "supportsOptimizePromptThinking": false,
         "name": "Wan 2.7 Pro Edit",
         "offline": false,
         "privacy": "anonymized",
@@ -13287,6 +13331,7 @@
           "combineImages": true,
           "singleImageAspectRatio": true
         },
+        "supportsOptimizePromptThinking": false,
         "name": "Flux 2 Max",
         "offline": false,
         "privacy": "anonymized",
@@ -13391,6 +13436,7 @@
             "high"
           ]
         },
+        "supportsOptimizePromptThinking": false,
         "name": "GPT Image 2",
         "offline": false,
         "privacy": "anonymized",
@@ -13421,6 +13467,7 @@
           "combineImages": true,
           "singleImageAspectRatio": true
         },
+        "supportsOptimizePromptThinking": false,
         "name": "GPT Image 1.5",
         "offline": false,
         "privacy": "anonymized",
@@ -13476,6 +13523,7 @@
             "4K"
           ]
         },
+        "supportsOptimizePromptThinking": false,
         "name": "Nano Banana 2",
         "offline": false,
         "privacy": "anonymized",
@@ -13531,6 +13579,7 @@
             "4K"
           ]
         },
+        "supportsOptimizePromptThinking": false,
         "name": "Nano Banana Pro",
         "offline": false,
         "privacy": "anonymized",
@@ -13566,6 +13615,7 @@
           "combineImages": true,
           "singleImageAspectRatio": true
         },
+        "supportsOptimizePromptThinking": false,
         "name": "Nano Banana 2 Lite",
         "offline": false,
         "privacy": "anonymized",
@@ -13601,6 +13651,7 @@
           "combineImages": false,
           "singleImageAspectRatio": false
         },
+        "supportsOptimizePromptThinking": false,
         "name": "Luma Uni-1",
         "offline": false,
         "privacy": "anonymized",
@@ -13636,6 +13687,7 @@
           "combineImages": false,
           "singleImageAspectRatio": false
         },
+        "supportsOptimizePromptThinking": false,
         "name": "Luma Uni-1 Max",
         "offline": false,
         "privacy": "anonymized",
@@ -13670,6 +13722,7 @@
           "combineImages": true,
           "singleImageAspectRatio": true
         },
+        "supportsOptimizePromptThinking": false,
         "name": "Seedream V5 Lite",
         "offline": false,
         "privacy": "anonymized",
@@ -13725,6 +13778,7 @@
             "2K"
           ]
         },
+        "supportsOptimizePromptThinking": true,
         "name": "Seedream V5 Pro",
         "offline": false,
         "privacy": "anonymized",
@@ -13759,6 +13813,7 @@
           "combineImages": true,
           "singleImageAspectRatio": true
         },
+        "supportsOptimizePromptThinking": false,
         "name": "Seedream V4.5",
         "offline": false,
         "privacy": "anonymized",
