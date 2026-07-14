@@ -812,7 +812,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-07-13 19:58)</div>
+            <div class="meta">Generated from Live API Data (2026-07-14 10:07)</div>
         </header>
 
         <div class="controls">
@@ -6528,12 +6528,12 @@
         "pricing": {
           "resolutions": {
             "1K": {
-              "usd": 0.08,
-              "diem": 0.08
+              "usd": 0.06,
+              "diem": 0.06
             },
             "2K": {
-              "usd": 0.1,
-              "diem": 0.1
+              "usd": 0.09,
+              "diem": 0.09
             }
           },
           "upscale": {
@@ -7923,12 +7923,12 @@
         "pricing": {
           "resolutions": {
             "1K": {
-              "usd": 0.04,
-              "diem": 0.04
+              "usd": 0.03,
+              "diem": 0.03
             },
             "2K": {
-              "usd": 0.06,
-              "diem": 0.06
+              "usd": 0.04,
+              "diem": 0.04
             }
           },
           "upscale": {
@@ -9883,7 +9883,8 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.0 19B",
         "offline": false,
@@ -11799,8 +11800,7 @@
           "audio",
           "long_duration",
           "cinematic",
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "name": "Gemini Omni Flash",
         "offline": false,
@@ -13242,6 +13242,72 @@
       "type": "music"
     },
     {
+      "created": 1782691200,
+      "id": "seed-audio-1-0",
+      "model_spec": {
+        "pricing": {
+          "per_second": {
+            "usd": 0.0028750000000000004,
+            "diem": 0.0028750000000000004
+          }
+        },
+        "supports_lyrics": false,
+        "lyrics_required": false,
+        "supports_force_instrumental": false,
+        "supports_lyrics_optimizer": false,
+        "default_duration": 120,
+        "supported_formats": [
+          "mp3",
+          "wav"
+        ],
+        "default_format": "mp3",
+        "prompt_character_limit": 2048,
+        "min_prompt_length": 1,
+        "voices": [
+          "Describe in prompt",
+          "Tim",
+          "Stokie",
+          "Dacey",
+          "Vivi",
+          "Mindy",
+          "Kian",
+          "Jess",
+          "Vienna",
+          "Cedric",
+          "Magnus",
+          "Quentin",
+          "Wukong",
+          "Gigi",
+          "Celeste",
+          "Esther",
+          "Tracy",
+          "Sven",
+          "Felipe",
+          "Usseau",
+          "Enzo",
+          "Minimi",
+          "Jihoon",
+          "Martins",
+          "Han"
+        ],
+        "default_voice": "Describe in prompt",
+        "supports_language_code": false,
+        "supports_speed": true,
+        "default_speed": 1,
+        "min_speed": 0.5,
+        "max_speed": 2,
+        "description": "Generate expressive speech and audio from a text prompt with BytePlus Seed Audio 1.0.",
+        "name": "Seed Audio 1.0",
+        "modelSource": "",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "music"
+    },
+    {
       "created": 1741924661,
       "id": "text-embedding-bge-m3",
       "model_spec": {
@@ -14018,17 +14084,24 @@
       "model_spec": {
         "pricing": {
           "inpaint": {
-            "usd": 0.04,
-            "diem": 0.04
+            "usd": 0.03,
+            "diem": 0.03
           },
           "resolutions": {
             "1K": {
-              "usd": 0.04,
-              "diem": 0.04
+              "usd": 0.03,
+              "diem": 0.03
             },
             "2K": {
-              "usd": 0.06,
-              "diem": 0.06
+              "usd": 0.04,
+              "diem": 0.04
+            }
+          },
+          "inputImages": {
+            "included": 0,
+            "additional": {
+              "usd": 0.0023000000000000004,
+              "diem": 0.0023000000000000004
             }
           }
         },
@@ -14066,17 +14139,24 @@
       "model_spec": {
         "pricing": {
           "inpaint": {
-            "usd": 0.1,
-            "diem": 0.1
+            "usd": 0.06,
+            "diem": 0.06
           },
           "resolutions": {
             "1K": {
-              "usd": 0.1,
-              "diem": 0.1
+              "usd": 0.06,
+              "diem": 0.06
             },
             "2K": {
-              "usd": 0.12,
-              "diem": 0.12
+              "usd": 0.09,
+              "diem": 0.09
+            }
+          },
+          "inputImages": {
+            "included": 0,
+            "additional": {
+              "usd": 0.011500000000000002,
+              "diem": 0.011500000000000002
             }
           }
         },
@@ -14217,8 +14297,15 @@
       "model_spec": {
         "pricing": {
           "inpaint": {
-            "usd": 0.19,
-            "diem": 0.19
+            "usd": 0.12,
+            "diem": 0.12
+          },
+          "inputImages": {
+            "included": 1,
+            "additional": {
+              "usd": 0.0345,
+              "diem": 0.0345
+            }
           }
         },
         "constraints": {
@@ -14253,60 +14340,67 @@
       "model_spec": {
         "pricing": {
           "inpaint": {
-            "usd": 0.36,
-            "diem": 0.36
+            "usd": 0.34,
+            "diem": 0.34
           },
           "resolutions": {
             "1K": {
-              "usd": 0.36,
-              "diem": 0.36
+              "usd": 0.34,
+              "diem": 0.34
             },
             "2K": {
-              "usd": 0.53,
-              "diem": 0.53
+              "usd": 0.52,
+              "diem": 0.52
             },
             "4K": {
-              "usd": 0.85,
-              "diem": 0.85
+              "usd": 0.84,
+              "diem": 0.84
+            }
+          },
+          "inputImages": {
+            "included": 1,
+            "additional": {
+              "usd": 0.009200000000000002,
+              "diem": 0.009200000000000002
             }
           },
           "quality": {
             "1K": {
               "high": {
-                "usd": 0.36,
-                "diem": 0.36
+                "usd": 0.34,
+                "diem": 0.34
               },
               "low": {
                 "usd": 0.03,
                 "diem": 0.03
               },
               "medium": {
-                "usd": 0.1,
-                "diem": 0.1
+                "usd": 0.08,
+                "diem": 0.08
               }
             },
             "2K": {
               "high": {
-                "usd": 0.53,
-                "diem": 0.53
+                "usd": 0.52,
+                "diem": 0.52
               },
               "low": {
-                "usd": 0.04,
-                "diem": 0.04
+                "usd": 0.03,
+                "diem": 0.03
               },
               "medium": {
-                "usd": 0.15,
-                "diem": 0.15
+                "usd": 0.14,
+                "diem": 0.14
               }
             },
             "4K": {
               "high": {
-                "usd": 0.86,
-                "diem": 0.86
+                "usd": 0.84,
+                "diem": 0.84
               },
               "low": {
-                "usd": 0.06,
-                "diem": 0.06
+                "usd": 0.04,
+                "diem": 0.04
               },
               "medium": {
                 "usd": 0.22,
@@ -14358,8 +14452,15 @@
       "model_spec": {
         "pricing": {
           "inpaint": {
-            "usd": 0.36,
-            "diem": 0.36
+            "usd": 0.31,
+            "diem": 0.31
+          },
+          "inputImages": {
+            "included": 1,
+            "additional": {
+              "usd": 0.028060000000000005,
+              "diem": 0.028060000000000005
+            }
           }
         },
         "constraints": {
