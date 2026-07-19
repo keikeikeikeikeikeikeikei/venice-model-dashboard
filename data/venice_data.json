@@ -8703,7 +8703,8 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "deprecation": {
           "autoRemap": true,
@@ -9201,8 +9202,7 @@
           "uncensored",
           "audio",
           "long_duration",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "deprecation": {
           "autoRemap": true,
