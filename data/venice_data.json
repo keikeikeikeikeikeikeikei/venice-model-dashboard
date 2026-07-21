@@ -8489,8 +8489,7 @@
           "prompt_character_limit": 4096
         },
         "model_sets": [
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "name": "Grok Imagine R2V Private",
         "offline": false,
@@ -11076,7 +11075,8 @@
           "audio",
           "long_duration",
           "cinematic",
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Gemini Omni Flash R2V",
         "offline": false,
@@ -12497,7 +12497,7 @@
           "wav"
         ],
         "default_format": "mp3",
-        "prompt_character_limit": 2048,
+        "prompt_character_limit": 3000,
         "min_prompt_length": 1,
         "voices": [
           "Describe in prompt",
@@ -12532,7 +12532,7 @@
         "default_speed": 1,
         "min_speed": 0.5,
         "max_speed": 2,
-        "description": "Generate expressive speech and audio from a text prompt with BytePlus Seed Audio 1.0.",
+        "description": "Generate expressive multilingual speech and audio from a text prompt with BytePlus Seed Audio 1.0 (20 languages, timestamp length control).",
         "name": "Seed Audio 1.0",
         "modelSource": "",
         "offline": false,
