@@ -2,6 +2,102 @@
   "text": [
     {
       "context_length": 1000000,
+      "created": 1783555200,
+      "id": "gemini-3-6-flash",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 1.875,
+            "diem": 1.875
+          },
+          "cache_input": {
+            "usd": 0.1875,
+            "diem": 0.1875
+          },
+          "output": {
+            "usd": 9.375,
+            "diem": 9.375
+          }
+        },
+        "availableContextTokens": 1000000,
+        "maxCompletionTokens": 65536,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "not-available",
+          "supportsAudioInput": true,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": true,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Gemini 3.6 Flash is a high speed, high value thinking model with 1M context, designed for agentic workflows, multi-turn chat, and coding assistance. It delivers near Pro level reasoning with substantially lower latency.",
+        "name": "Gemini 3.6 Flash",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 1000000,
+      "created": 1783555200,
+      "id": "gemini-3-5-flash-lite",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.375,
+            "diem": 0.375
+          },
+          "cache_input": {
+            "usd": 0.0375,
+            "diem": 0.0375
+          },
+          "output": {
+            "usd": 3.125,
+            "diem": 3.125
+          }
+        },
+        "availableContextTokens": 1000000,
+        "maxCompletionTokens": 65536,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "not-available",
+          "supportsAudioInput": true,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": true,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Gemini 3.5 Flash-Lite is the fastest, most cost-efficient Gemini 3.5 model with 1M context, ideal for everyday questions, summarization, and lightweight coding tasks.",
+        "name": "Gemini 3.5 Flash-Lite",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 1000000,
       "created": 1781568000,
       "id": "zai-org-glm-5-2",
       "model_spec": {
@@ -870,6 +966,64 @@
         "description": "The Qwen 3.6 27B native vision-language dense model builds upon the 3.5-27B version, with key improvements in agentic coding capabilities and enhanced STEM reasoning and inference skills. In the vision modality, it demonstrates significant advances in spatial intelligence, object localization, and detection, while video understanding, document OCR, and visual agent capabilities continue to improve steadily.",
         "name": "Qwen 3.6 27B",
         "modelSource": "https://qwen.ai/blog?id=qwen3.6-27b",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 256000,
+      "created": 1784505600,
+      "id": "qwen3-6-35b-a3b",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 0.15,
+            "diem": 0.15
+          },
+          "cache_input": {
+            "usd": 0.05,
+            "diem": 0.05
+          },
+          "output": {
+            "usd": 1,
+            "diem": 1
+          }
+        },
+        "availableContextTokens": 256000,
+        "maxCompletionTokens": 65536,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "fp8",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "constraints": {
+          "temperature": {
+            "default": 1
+          },
+          "top_p": {
+            "default": 0.95
+          }
+        },
+        "description": "Qwen 3.6 35B A3B is a fast mixture-of-experts model with 35B total parameters and ~3B active per token. Strong at agentic coding, STEM reasoning, and tool use, with a native 256K context window.",
+        "name": "Qwen 3.6 35B A3B",
+        "modelSource": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B-FP8",
         "offline": false,
         "privacy": "private",
         "traits": []
@@ -8489,7 +8643,8 @@
           "prompt_character_limit": 4096
         },
         "model_sets": [
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Grok Imagine R2V Private",
         "offline": false,
@@ -8620,8 +8775,7 @@
         },
         "model_sets": [
           "uncensored",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "Wan 2.2 A14B",
         "offline": false,
@@ -8667,212 +8821,6 @@
       "type": "video",
       "pricing": {
         "base_price_usd": 0.88
-      }
-    },
-    {
-      "created": 1732684002,
-      "id": "ltx-2-fast-image-to-video",
-      "model_spec": {
-        "privacy": "anonymized",
-        "constraints": {
-          "model_type": "image-to-video",
-          "aspect_ratios": [
-            "16:9"
-          ],
-          "resolutions": [
-            "1080p",
-            "1440p",
-            "2160p"
-          ],
-          "durations": [
-            "6s",
-            "8s",
-            "10s",
-            "12s",
-            "14s",
-            "16s",
-            "18s",
-            "20s"
-          ],
-          "audio": true,
-          "audio_configurable": true,
-          "audio_input": false,
-          "per_reference_audio": false,
-          "video_input": false
-        },
-        "model_sets": [
-          "high_resolution",
-          "ultra_high_resolution",
-          "audio",
-          "open_source"
-        ],
-        "deprecation": {
-          "autoRemap": true,
-          "date": "2026-07-22T00:00:00.000Z",
-          "removesAt": "2026-07-22T00:00:00.000Z",
-          "replacementModelId": "ltx-2-v2-3-fast-image-to-video"
-        },
-        "name": "LTX Video 2.0 Fast",
-        "offline": false,
-        "traits": []
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "video",
-      "pricing": {
-        "base_price_usd": 1.06
-      }
-    },
-    {
-      "created": 1732684002,
-      "id": "ltx-2-fast-text-to-video",
-      "model_spec": {
-        "privacy": "anonymized",
-        "constraints": {
-          "model_type": "text-to-video",
-          "aspect_ratios": [
-            "16:9"
-          ],
-          "resolutions": [
-            "1080p",
-            "1440p",
-            "2160p"
-          ],
-          "durations": [
-            "6s",
-            "8s",
-            "10s",
-            "12s",
-            "14s",
-            "16s",
-            "18s",
-            "20s"
-          ],
-          "audio": true,
-          "audio_configurable": true,
-          "audio_input": false,
-          "per_reference_audio": false,
-          "video_input": false
-        },
-        "model_sets": [
-          "high_resolution",
-          "ultra_high_resolution",
-          "audio",
-          "open_source"
-        ],
-        "deprecation": {
-          "autoRemap": true,
-          "date": "2026-07-22T00:00:00.000Z",
-          "removesAt": "2026-07-22T00:00:00.000Z",
-          "replacementModelId": "ltx-2-v2-3-fast-text-to-video"
-        },
-        "name": "LTX Video 2.0 Fast",
-        "offline": false,
-        "traits": []
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "video",
-      "pricing": {
-        "base_price_usd": 1.06
-      }
-    },
-    {
-      "created": 1732684002,
-      "id": "ltx-2-full-image-to-video",
-      "model_spec": {
-        "privacy": "anonymized",
-        "constraints": {
-          "model_type": "image-to-video",
-          "aspect_ratios": [
-            "16:9"
-          ],
-          "resolutions": [
-            "1080p",
-            "1440p",
-            "2160p"
-          ],
-          "durations": [
-            "6s",
-            "8s",
-            "10s"
-          ],
-          "audio": true,
-          "audio_configurable": true,
-          "audio_input": false,
-          "per_reference_audio": false,
-          "video_input": false
-        },
-        "model_sets": [
-          "high_resolution",
-          "ultra_high_resolution",
-          "audio",
-          "open_source"
-        ],
-        "deprecation": {
-          "autoRemap": true,
-          "date": "2026-07-22T00:00:00.000Z",
-          "removesAt": "2026-07-22T00:00:00.000Z",
-          "replacementModelId": "ltx-2-v2-3-full-image-to-video"
-        },
-        "name": "LTX Video 2.0 Full Quality",
-        "offline": false,
-        "traits": []
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "video",
-      "pricing": {
-        "base_price_usd": 1.58
-      }
-    },
-    {
-      "created": 1732684002,
-      "id": "ltx-2-full-text-to-video",
-      "model_spec": {
-        "privacy": "anonymized",
-        "constraints": {
-          "model_type": "text-to-video",
-          "aspect_ratios": [
-            "16:9"
-          ],
-          "resolutions": [
-            "1080p",
-            "1440p",
-            "2160p"
-          ],
-          "durations": [
-            "6s",
-            "8s",
-            "10s"
-          ],
-          "audio": true,
-          "audio_configurable": true,
-          "audio_input": false,
-          "per_reference_audio": false,
-          "video_input": false
-        },
-        "model_sets": [
-          "high_resolution",
-          "ultra_high_resolution",
-          "audio",
-          "open_source"
-        ],
-        "deprecation": {
-          "autoRemap": true,
-          "date": "2026-07-22T00:00:00.000Z",
-          "removesAt": "2026-07-22T00:00:00.000Z",
-          "replacementModelId": "ltx-2-v2-3-full-text-to-video"
-        },
-        "name": "LTX Video 2.0 Full Quality",
-        "offline": false,
-        "traits": []
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "video",
-      "pricing": {
-        "base_price_usd": 1.58
       }
     },
     {
@@ -9060,219 +9008,6 @@
       "type": "video",
       "pricing": {
         "base_price_usd": 2.11
-      }
-    },
-    {
-      "created": 1767830400,
-      "id": "ltx-2-19b-full-text-to-video",
-      "model_spec": {
-        "privacy": "private",
-        "constraints": {
-          "model_type": "text-to-video",
-          "aspect_ratios": [
-            "16:9",
-            "4:3",
-            "1:1",
-            "3:4",
-            "9:16"
-          ],
-          "resolutions": [
-            "720p"
-          ],
-          "durations": [
-            "5s",
-            "8s",
-            "10s",
-            "15s",
-            "18s"
-          ],
-          "audio": true,
-          "audio_configurable": true,
-          "audio_input": false,
-          "per_reference_audio": false,
-          "video_input": false
-        },
-        "model_sets": [
-          "uncensored",
-          "audio",
-          "long_duration",
-          "open_source"
-        ],
-        "deprecation": {
-          "autoRemap": true,
-          "date": "2026-07-22T00:00:00.000Z",
-          "removesAt": "2026-07-22T00:00:00.000Z",
-          "replacementModelId": "ltx-2-v2-3-full-text-to-video"
-        },
-        "name": "LTX Video 2.0 19B",
-        "offline": false,
-        "traits": []
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "video",
-      "pricing": {
-        "base_price_usd": 0.23
-      }
-    },
-    {
-      "created": 1767830400,
-      "id": "ltx-2-19b-full-image-to-video",
-      "model_spec": {
-        "privacy": "private",
-        "constraints": {
-          "model_type": "image-to-video",
-          "aspect_ratios": [
-            "16:9",
-            "4:3",
-            "1:1",
-            "3:4",
-            "9:16"
-          ],
-          "resolutions": [
-            "720p"
-          ],
-          "durations": [
-            "5s",
-            "8s",
-            "10s",
-            "15s",
-            "18s"
-          ],
-          "audio": true,
-          "audio_configurable": true,
-          "audio_input": false,
-          "per_reference_audio": false,
-          "video_input": false
-        },
-        "model_sets": [
-          "uncensored",
-          "audio",
-          "long_duration",
-          "open_source"
-        ],
-        "deprecation": {
-          "autoRemap": true,
-          "date": "2026-07-22T00:00:00.000Z",
-          "removesAt": "2026-07-22T00:00:00.000Z",
-          "replacementModelId": "ltx-2-v2-3-full-image-to-video"
-        },
-        "name": "LTX Video 2.0 19B",
-        "offline": false,
-        "traits": []
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "video",
-      "pricing": {
-        "base_price_usd": 0.23
-      }
-    },
-    {
-      "created": 1767830400,
-      "id": "ltx-2-19b-distilled-text-to-video",
-      "model_spec": {
-        "privacy": "private",
-        "constraints": {
-          "model_type": "text-to-video",
-          "aspect_ratios": [
-            "16:9",
-            "4:3",
-            "1:1",
-            "3:4",
-            "9:16"
-          ],
-          "resolutions": [
-            "720p"
-          ],
-          "durations": [
-            "5s",
-            "8s",
-            "10s",
-            "15s",
-            "18s"
-          ],
-          "audio": true,
-          "audio_configurable": true,
-          "audio_input": false,
-          "per_reference_audio": false,
-          "video_input": false
-        },
-        "model_sets": [
-          "uncensored",
-          "audio",
-          "long_duration",
-          "open_source"
-        ],
-        "deprecation": {
-          "autoRemap": true,
-          "date": "2026-07-22T00:00:00.000Z",
-          "removesAt": "2026-07-22T00:00:00.000Z",
-          "replacementModelId": "ltx-2-v2-3-fast-text-to-video"
-        },
-        "name": "LTX Video 2.0 19B Distilled",
-        "offline": false,
-        "traits": []
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "video",
-      "pricing": {
-        "base_price_usd": 0.1
-      }
-    },
-    {
-      "created": 1767830400,
-      "id": "ltx-2-19b-distilled-image-to-video",
-      "model_spec": {
-        "privacy": "private",
-        "constraints": {
-          "model_type": "image-to-video",
-          "aspect_ratios": [
-            "16:9",
-            "4:3",
-            "1:1",
-            "3:4",
-            "9:16"
-          ],
-          "resolutions": [
-            "720p"
-          ],
-          "durations": [
-            "5s",
-            "8s",
-            "10s",
-            "15s",
-            "18s"
-          ],
-          "audio": true,
-          "audio_configurable": true,
-          "audio_input": false,
-          "per_reference_audio": false,
-          "video_input": false
-        },
-        "model_sets": [
-          "uncensored",
-          "audio",
-          "long_duration",
-          "open_source",
-          "fast"
-        ],
-        "deprecation": {
-          "autoRemap": true,
-          "date": "2026-07-22T00:00:00.000Z",
-          "removesAt": "2026-07-22T00:00:00.000Z",
-          "replacementModelId": "ltx-2-v2-3-fast-image-to-video"
-        },
-        "name": "LTX Video 2.0 19B Distilled",
-        "offline": false,
-        "traits": []
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "video",
-      "pricing": {
-        "base_price_usd": 0.1
       }
     },
     {
@@ -10993,7 +10728,8 @@
           "audio",
           "long_duration",
           "cinematic",
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Gemini Omni Flash",
         "offline": false,
