@@ -812,7 +812,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-07-23 01:11)</div>
+            <div class="meta">Generated from Live API Data (2026-07-23 07:11)</div>
         </header>
 
         <div class="controls">
@@ -1885,14 +1885,15 @@
           "supportsAudioInput": false,
           "supportsFunctionCalling": true,
           "supportsLogProbs": false,
-          "supportsMultipleImages": false,
+          "supportsMultipleImages": true,
+          "maxImages": 3,
           "supportsReasoning": true,
           "supportsReasoningEffort": false,
           "supportsResponseSchema": true,
           "supportsTeeAttestation": false,
           "supportsE2EE": false,
           "supportsVideoInput": false,
-          "supportsVision": false,
+          "supportsVision": true,
           "supportsWebSearch": true,
           "supportsXSearch": false
         },
@@ -9526,8 +9527,7 @@
           "prompt_character_limit": 4096
         },
         "model_sets": [
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "name": "Grok Imagine R2V Private",
         "offline": false,
@@ -9742,7 +9742,8 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.3 Fast",
         "offline": false,
@@ -12900,6 +12901,78 @@
         "supports_speed": false,
         "description": "Fast, lightweight audio generation for sound effects, ambient textures, and short musical clips. Flexible duration from 5 seconds to over 3 minutes.",
         "name": "Stable Audio 2.5",
+        "modelSource": "",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "music"
+    },
+    {
+      "created": 1784592000,
+      "id": "sonilo-v1-1-music",
+      "model_spec": {
+        "pricing": {
+          "per_second": {
+            "usd": 0.0028750000000000004,
+            "diem": 0.0028750000000000004
+          }
+        },
+        "supports_lyrics": false,
+        "lyrics_required": false,
+        "supports_force_instrumental": false,
+        "supports_lyrics_optimizer": false,
+        "min_duration": 1,
+        "max_duration": 600,
+        "default_duration": 90,
+        "supported_formats": [
+          "m4a"
+        ],
+        "default_format": "m4a",
+        "prompt_character_limit": 4096,
+        "min_prompt_length": 1,
+        "supports_language_code": false,
+        "supports_speed": false,
+        "description": "Generate licensed, commercial-use-safe music with precise control over style, mood, instrumentation, and duration.",
+        "name": "Sonilo V1.1 Music",
+        "modelSource": "",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "music"
+    },
+    {
+      "created": 1784592000,
+      "id": "sonilo-v1-1-sound-effects",
+      "model_spec": {
+        "pricing": {
+          "per_second": {
+            "usd": 0.0020700000000000002,
+            "diem": 0.0020700000000000002
+          }
+        },
+        "supports_lyrics": false,
+        "lyrics_required": false,
+        "supports_force_instrumental": false,
+        "supports_lyrics_optimizer": false,
+        "min_duration": 1,
+        "max_duration": 180,
+        "default_duration": 8,
+        "supported_formats": [
+          "mp3"
+        ],
+        "default_format": "mp3",
+        "prompt_character_limit": 4096,
+        "min_prompt_length": 1,
+        "supports_language_code": false,
+        "supports_speed": false,
+        "description": "Generate licensed, commercial-use-safe sound effects with precise control over type, texture, intensity, and duration.",
+        "name": "Sonilo V1.1 Sound Effects",
         "modelSource": "",
         "offline": false,
         "privacy": "anonymized",
