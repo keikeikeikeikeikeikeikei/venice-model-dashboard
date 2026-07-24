@@ -812,7 +812,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-07-23 17:02)</div>
+            <div class="meta">Generated from Live API Data (2026-07-24 13:44)</div>
         </header>
 
         <div class="controls">
@@ -3459,66 +3459,6 @@
     },
     {
       "context_length": 1000000,
-      "created": 1778716800,
-      "id": "claude-opus-4-7-fast",
-      "model_spec": {
-        "betaModel": true,
-        "pricing": {
-          "input": {
-            "usd": 36,
-            "diem": 36
-          },
-          "cache_input": {
-            "usd": 3.6,
-            "diem": 3.6
-          },
-          "cache_write": {
-            "usd": 45,
-            "diem": 45
-          },
-          "output": {
-            "usd": 180,
-            "diem": 180
-          }
-        },
-        "availableContextTokens": 1000000,
-        "maxCompletionTokens": 128000,
-        "capabilities": {
-          "optimizedForCode": true,
-          "quantization": "not-available",
-          "supportsAudioInput": false,
-          "supportsFunctionCalling": true,
-          "supportsLogProbs": false,
-          "supportsMultipleImages": true,
-          "maxImages": 10,
-          "supportsReasoning": true,
-          "supportsReasoningEffort": false,
-          "supportsResponseSchema": true,
-          "supportsTeeAttestation": false,
-          "supportsE2EE": false,
-          "supportsVideoInput": false,
-          "supportsVision": true,
-          "supportsWebSearch": true,
-          "supportsXSearch": false
-        },
-        "deprecation": {
-          "autoRemap": false,
-          "date": "2026-07-24T00:00:00.000Z",
-          "removesAt": "2026-07-24T00:00:00.000Z"
-        },
-        "description": "Claude Opus 4.7 (Fast) is a speed-optimized variant of Anthropic's most capable generally available model, offering the same 1M token context window and strong performance across complex reasoning and agentic coding \u2014 with lower latency.",
-        "name": "Claude Opus 4.7 Fast",
-        "modelSource": "",
-        "offline": false,
-        "privacy": "anonymized",
-        "traits": []
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "text"
-    },
-    {
-      "context_length": 1000000,
       "created": 1770249600,
       "id": "claude-opus-4-6",
       "model_spec": {
@@ -4333,6 +4273,58 @@
         "modelSource": "https://huggingface.co/deepseek-ai/DeepSeek-V3.2",
         "offline": false,
         "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 256000,
+      "created": 1782604800,
+      "id": "seed-2-1-turbo",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 0.625,
+            "diem": 0.625
+          },
+          "cache_input": {
+            "usd": 0.125,
+            "diem": 0.125
+          },
+          "output": {
+            "usd": 3.125,
+            "diem": 3.125
+          }
+        },
+        "availableContextTokens": 256000,
+        "maxCompletionTokens": 65536,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "maxVideos": 4,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": true,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Seed 2.1 Turbo (Dola-Seed-2.1) is ByteDance\u2019s next-generation multimodal model for the coding and agent era, with engineering-grade code delivery, long-horizon agent execution, and upgraded GUI and video understanding. Supports text, image, and video inputs with a 256K context window.",
+        "name": "Seed 2.1 Turbo",
+        "modelSource": "https://console.byteplus.com/ark/region:ark+ap-southeast-1/model/detail?Id=dola-seed-2-1-turbo",
+        "offline": false,
+        "privacy": "anonymized",
         "traits": []
       },
       "object": "model",
