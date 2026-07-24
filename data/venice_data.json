@@ -2410,8 +2410,8 @@
     },
     {
       "context_length": 1000000,
-      "created": 1779926400,
-      "id": "claude-opus-4-8",
+      "created": 1784764800,
+      "id": "claude-opus-5",
       "model_spec": {
         "pricing": {
           "input": {
@@ -2434,6 +2434,115 @@
         "model_sets": [
           "venice_recommendations"
         ],
+        "availableContextTokens": 1000000,
+        "maxCompletionTokens": 128000,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Claude Opus 5 is Anthropic's most capable model in the Opus family. It delivers major gains over Opus 4.8 in agentic coding, professional knowledge work, and long-horizon reasoning, with a 1M token context window, 128K max output tokens, adaptive thinking, and strong multimodal capabilities.",
+        "name": "Claude Opus 5",
+        "modelSource": "",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 1000000,
+      "created": 1784764800,
+      "id": "claude-opus-5-fast",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 12,
+            "diem": 12
+          },
+          "cache_input": {
+            "usd": 1.2,
+            "diem": 1.2
+          },
+          "cache_write": {
+            "usd": 15,
+            "diem": 15
+          },
+          "output": {
+            "usd": 60,
+            "diem": 60
+          }
+        },
+        "availableContextTokens": 1000000,
+        "maxCompletionTokens": 128000,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Claude Opus 5 (Fast) is a speed-optimized variant of Anthropic's most capable Opus model, offering the same 1M token context window and strong performance across agentic coding, professional knowledge work, and long-horizon reasoning — with lower latency.",
+        "name": "Claude Opus 5 Fast",
+        "modelSource": "",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 1000000,
+      "created": 1779926400,
+      "id": "claude-opus-4-8",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 6,
+            "diem": 6
+          },
+          "cache_input": {
+            "usd": 0.6,
+            "diem": 0.6
+          },
+          "cache_write": {
+            "usd": 7.5,
+            "diem": 7.5
+          },
+          "output": {
+            "usd": 30,
+            "diem": 30
+          }
+        },
         "availableContextTokens": 1000000,
         "maxCompletionTokens": 128000,
         "capabilities": {
@@ -7003,7 +7112,7 @@
         ],
         "constraints": {
           "promptCharacterLimit": 10000,
-          "defaultResolution": "2K",
+          "defaultResolution": "1K",
           "resolutions": [
             "1K",
             "2K"
@@ -13312,7 +13421,7 @@
           "promptCharacterLimit": 5000,
           "combineImages": true,
           "singleImageAspectRatio": true,
-          "defaultResolution": "2K",
+          "defaultResolution": "1K",
           "resolutions": [
             "1K",
             "2K"
@@ -13782,8 +13891,8 @@
       "model_spec": {
         "pricing": {
           "inpaint": {
-            "usd": 0.11,
-            "diem": 0.11
+            "usd": 0.06,
+            "diem": 0.06
           },
           "resolutions": {
             "1K": {
@@ -13816,7 +13925,7 @@
           "promptCharacterLimit": 10000,
           "combineImages": true,
           "singleImageAspectRatio": true,
-          "defaultResolution": "2K",
+          "defaultResolution": "1K",
           "resolutions": [
             "1K",
             "2K"
