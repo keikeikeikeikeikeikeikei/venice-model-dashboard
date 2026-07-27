@@ -13420,6 +13420,7 @@
           ],
           "promptCharacterLimit": 5000,
           "combineImages": true,
+          "maxInputImages": 6,
           "singleImageAspectRatio": true,
           "defaultResolution": "1K",
           "resolutions": [
@@ -13468,6 +13469,7 @@
           ],
           "promptCharacterLimit": 3000,
           "combineImages": true,
+          "maxInputImages": 6,
           "singleImageAspectRatio": true
         },
         "supportsOptimizePromptThinking": false,
@@ -13568,6 +13570,7 @@
           ],
           "promptCharacterLimit": 10000,
           "combineImages": true,
+          "maxInputImages": 6,
           "singleImageAspectRatio": true,
           "defaultResolution": "1K",
           "resolutions": [
@@ -13618,6 +13621,7 @@
           ],
           "promptCharacterLimit": 5000,
           "combineImages": true,
+          "maxInputImages": 6,
           "singleImageAspectRatio": true
         },
         "supportsOptimizePromptThinking": false,
@@ -13668,6 +13672,7 @@
           ],
           "promptCharacterLimit": 32768,
           "combineImages": true,
+          "maxInputImages": 6,
           "singleImageAspectRatio": true,
           "defaultResolution": "1K",
           "resolutions": [
@@ -13724,6 +13729,7 @@
           ],
           "promptCharacterLimit": 32768,
           "combineImages": true,
+          "maxInputImages": 6,
           "singleImageAspectRatio": true,
           "defaultResolution": "1K",
           "resolutions": [
@@ -13766,6 +13772,7 @@
           ],
           "promptCharacterLimit": 10000,
           "combineImages": true,
+          "maxInputImages": 6,
           "singleImageAspectRatio": true
         },
         "supportsOptimizePromptThinking": false,
@@ -13873,6 +13880,7 @@
           ],
           "promptCharacterLimit": 10000,
           "combineImages": true,
+          "maxInputImages": 6,
           "singleImageAspectRatio": true
         },
         "supportsOptimizePromptThinking": false,
@@ -13924,6 +13932,7 @@
           ],
           "promptCharacterLimit": 10000,
           "combineImages": true,
+          "maxInputImages": 6,
           "singleImageAspectRatio": true,
           "defaultResolution": "1K",
           "resolutions": [
@@ -13964,6 +13973,7 @@
           ],
           "promptCharacterLimit": 10000,
           "combineImages": true,
+          "maxInputImages": 6,
           "singleImageAspectRatio": true
         },
         "supportsOptimizePromptThinking": false,
