@@ -11850,6 +11850,7 @@
         "prompt_character_limit": 512,
         "lyrics_character_limit": 4096,
         "min_prompt_length": 10,
+        "supports_custom_voice_id": false,
         "supports_language_code": false,
         "supports_speed": false,
         "description": "Feature-rich song generation with optional lyrics and detailed musical controls.",
@@ -11944,6 +11945,7 @@
         "default_format": "mp3",
         "prompt_character_limit": 4096,
         "min_prompt_length": 10,
+        "supports_custom_voice_id": false,
         "supports_language_code": false,
         "supports_speed": false,
         "description": "High-quality instrumental music generation with configurable duration. Best for polished, production-ready tracks across a wide range of genres.",
@@ -11978,6 +11980,7 @@
         "prompt_character_limit": 300,
         "lyrics_character_limit": 3000,
         "min_prompt_length": 10,
+        "supports_custom_voice_id": false,
         "supports_language_code": false,
         "supports_speed": false,
         "description": "Full song generation with vocals and lyrics. Provide your own lyrics with verse/chorus structure for complete songs with singing.",
@@ -12012,6 +12015,7 @@
         "prompt_character_limit": 2000,
         "lyrics_character_limit": 3500,
         "min_prompt_length": 10,
+        "supports_custom_voice_id": false,
         "supports_language_code": false,
         "supports_speed": false,
         "description": "Advanced song generation with vocals, lyrics optimizer, and instrumental mode. Supports structure tags and up to 3500 character lyrics.",
@@ -12046,6 +12050,7 @@
         "prompt_character_limit": 300,
         "lyrics_character_limit": 1000,
         "min_prompt_length": 10,
+        "supports_custom_voice_id": false,
         "supports_language_code": false,
         "supports_speed": false,
         "description": "Latest MiniMax song generation with vocals, instrumental mode, and support for rich structure tags in lyrics.",
@@ -12079,6 +12084,7 @@
         "default_format": "mp3",
         "prompt_character_limit": 5000,
         "min_prompt_length": 1,
+        "supports_custom_voice_id": false,
         "supports_language_code": false,
         "supports_speed": false,
         "description": "Google's Lyria 3 Pro generates full-length, structured songs up to 3 minutes long from a single text prompt. Supports vocals, lyrics, and multi-language generation across genres.",
@@ -12115,6 +12121,7 @@
         "default_format": "wav",
         "prompt_character_limit": 500,
         "min_prompt_length": 10,
+        "supports_custom_voice_id": false,
         "supports_language_code": false,
         "supports_speed": false,
         "description": "Fast, lightweight audio generation for sound effects, ambient textures, and short musical clips. Flexible duration from 5 seconds to over 3 minutes.",
@@ -12151,6 +12158,7 @@
         "default_format": "m4a",
         "prompt_character_limit": 4096,
         "min_prompt_length": 1,
+        "supports_custom_voice_id": false,
         "supports_language_code": false,
         "supports_speed": false,
         "description": "Generate licensed, commercial-use-safe music with precise control over style, mood, instrumentation, and duration.",
@@ -12187,6 +12195,7 @@
         "default_format": "mp3",
         "prompt_character_limit": 4096,
         "min_prompt_length": 1,
+        "supports_custom_voice_id": false,
         "supports_language_code": false,
         "supports_speed": false,
         "description": "Generate licensed, commercial-use-safe sound effects with precise control over type, texture, intensity, and duration.",
@@ -12223,6 +12232,7 @@
         "default_format": "mp3",
         "prompt_character_limit": 250,
         "min_prompt_length": 1,
+        "supports_custom_voice_id": false,
         "supports_language_code": false,
         "supports_speed": false,
         "description": "Generate high-quality sound effects from text descriptions using ElevenLabs. Ideal for films, games, and digital content with configurable duration.",
@@ -12259,6 +12269,7 @@
         "default_format": "wav",
         "prompt_character_limit": 500,
         "min_prompt_length": 1,
+        "supports_custom_voice_id": false,
         "supports_language_code": false,
         "supports_speed": false,
         "description": "Generate synchronized audio and sound effects from text prompts with MMAudio V2.",
@@ -12315,6 +12326,7 @@
           "Bill"
         ],
         "default_voice": "Aria",
+        "supports_custom_voice_id": true,
         "supports_language_code": false,
         "supports_speed": false,
         "description": "Generate natural text-to-speech audio using ElevenLabs Eleven-v3. High-quality voices with stability control and automatic text normalization.",
@@ -12371,6 +12383,7 @@
           "Bill"
         ],
         "default_voice": "Aria",
+        "supports_custom_voice_id": true,
         "supports_language_code": false,
         "supports_speed": true,
         "default_speed": 1,
@@ -12437,6 +12450,7 @@
           "Han"
         ],
         "default_voice": "Describe in prompt",
+        "supports_custom_voice_id": false,
         "supports_language_code": false,
         "supports_speed": true,
         "default_speed": 1,
@@ -12755,6 +12769,7 @@
           "zm_yunxia",
           "zm_yunyang"
         ],
+        "supports_custom_voice_id": false,
         "name": "Kokoro Text to Speech",
         "modelSource": "https://huggingface.co/hexgrad/Kokoro-82M",
         "offline": false,
@@ -12786,6 +12801,7 @@
           "Uncle_Fu",
           "Vivian"
         ],
+        "supports_custom_voice_id": false,
         "name": "Qwen 3 TTS 0.6B",
         "modelSource": "https://huggingface.co/Qwen/Qwen3-TTS",
         "offline": false,
@@ -12817,6 +12833,7 @@
           "Uncle_Fu",
           "Vivian"
         ],
+        "supports_custom_voice_id": false,
         "name": "Qwen 3 TTS 1.7B",
         "modelSource": "https://huggingface.co/Qwen/Qwen3-TTS",
         "offline": false,
@@ -12844,6 +12861,7 @@
           "rex",
           "sal"
         ],
+        "supports_custom_voice_id": false,
         "name": "xAI TTS v1",
         "offline": false,
         "privacy": "anonymized",
@@ -12879,6 +12897,7 @@
           "Sarah",
           "Theodore"
         ],
+        "supports_custom_voice_id": false,
         "name": "Inworld TTS-1.5 Max",
         "offline": false,
         "privacy": "anonymized",
@@ -12909,6 +12928,7 @@
           "Siobhan",
           "Vicky"
         ],
+        "supports_custom_voice_id": false,
         "voice_cloning": {
           "mode": "zero_shot",
           "accepted_formats": [
@@ -12949,6 +12969,7 @@
           "zac",
           "zoe"
         ],
+        "supports_custom_voice_id": false,
         "name": "Orpheus TTS",
         "modelSource": "https://huggingface.co/canopylabs/orpheus-3b-0.1-ft",
         "offline": false,
@@ -12992,6 +13013,7 @@
           "Sarah",
           "Will"
         ],
+        "supports_custom_voice_id": true,
         "name": "ElevenLabs Turbo v2.5",
         "offline": false,
         "privacy": "anonymized",
@@ -13028,6 +13050,7 @@
           "WiseWoman",
           "YoungKnight"
         ],
+        "supports_custom_voice_id": false,
         "description": "Clone your voice from a short recording and generate natural speech in it across 30+ languages.",
         "name": "MiniMax Speech-02 HD",
         "offline": false,
@@ -13080,6 +13103,7 @@
           "Zephyr",
           "Zubenelgenubi"
         ],
+        "supports_custom_voice_id": false,
         "name": "Gemini 3.1 Flash TTS",
         "offline": false,
         "privacy": "anonymized",
@@ -13113,6 +13137,7 @@
           "Sergio",
           "Valentina"
         ],
+        "supports_custom_voice_id": false,
         "name": "Gradium TTS",
         "offline": false,
         "privacy": "anonymized",
