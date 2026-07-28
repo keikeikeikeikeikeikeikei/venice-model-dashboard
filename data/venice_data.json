@@ -5053,59 +5053,6 @@
       "type": "text"
     },
     {
-      "context_length": 256000,
-      "created": 1774310400,
-      "id": "nvidia-nemotron-cascade-2-30b-a3b",
-      "model_spec": {
-        "betaModel": true,
-        "pricing": {
-          "input": {
-            "usd": 0.14,
-            "diem": 0.14
-          },
-          "output": {
-            "usd": 0.8,
-            "diem": 0.8
-          }
-        },
-        "availableContextTokens": 256000,
-        "maxCompletionTokens": 32768,
-        "capabilities": {
-          "optimizedForCode": false,
-          "quantization": "fp8",
-          "supportsAudioInput": false,
-          "supportsFunctionCalling": true,
-          "supportsLogProbs": false,
-          "supportsMultipleImages": false,
-          "supportsReasoning": true,
-          "supportsReasoningEffort": true,
-          "reasoningEffortOptions": [
-            "none",
-            "low",
-            "medium",
-            "high"
-          ],
-          "defaultReasoningEffort": "low",
-          "supportsResponseSchema": true,
-          "supportsTeeAttestation": false,
-          "supportsE2EE": false,
-          "supportsVideoInput": false,
-          "supportsVision": false,
-          "supportsWebSearch": true,
-          "supportsXSearch": false
-        },
-        "description": "Nemotron Cascade 2 30B A3B is a reasoning-optimized language model from NVIDIA, designed for efficient inference with strong reasoning capabilities across complex tasks.",
-        "name": "Nemotron Cascade 2 30B A3B",
-        "modelSource": "https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B",
-        "offline": false,
-        "privacy": "private",
-        "traits": []
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "text"
-    },
-    {
       "context_length": 32000,
       "created": 1773792000,
       "id": "e2ee-venice-uncensored-24b-p",
