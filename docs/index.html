@@ -812,7 +812,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-07-27 23:45)</div>
+            <div class="meta">Generated from Live API Data (2026-07-28 13:58)</div>
         </header>
 
         <div class="controls">
@@ -1062,7 +1062,14 @@
           "supportsLogProbs": false,
           "supportsMultipleImages": false,
           "supportsReasoning": true,
-          "supportsReasoningEffort": false,
+          "supportsReasoningEffort": true,
+          "reasoningEffortOptions": [
+            "none",
+            "low",
+            "medium",
+            "high"
+          ],
+          "defaultReasoningEffort": "low",
           "supportsResponseSchema": true,
           "supportsTeeAttestation": false,
           "supportsE2EE": false,
@@ -1865,8 +1872,8 @@
         "betaModel": true,
         "pricing": {
           "input": {
-            "usd": 0.15,
-            "diem": 0.15
+            "usd": 0.1,
+            "diem": 0.1
           },
           "cache_input": {
             "usd": 0.05,
@@ -3913,9 +3920,6 @@
             "diem": 3.5
           }
         },
-        "model_sets": [
-          "venice_recommendations"
-        ],
         "availableContextTokens": 256000,
         "maxCompletionTokens": 65536,
         "capabilities": {
@@ -3927,7 +3931,14 @@
           "supportsMultipleImages": true,
           "maxImages": 10,
           "supportsReasoning": true,
-          "supportsReasoningEffort": false,
+          "supportsReasoningEffort": true,
+          "reasoningEffortOptions": [
+            "none",
+            "low",
+            "medium",
+            "high"
+          ],
+          "defaultReasoningEffort": "high",
           "supportsResponseSchema": true,
           "supportsTeeAttestation": false,
           "supportsE2EE": false,
@@ -4069,18 +4080,21 @@
         "betaModel": true,
         "pricing": {
           "input": {
-            "usd": 3.75,
-            "diem": 3.75
+            "usd": 4.6875,
+            "diem": 4.6875
           },
           "cache_input": {
-            "usd": 0.375,
-            "diem": 0.375
+            "usd": 0.46875,
+            "diem": 0.46875
           },
           "output": {
-            "usd": 18.75,
-            "diem": 18.75
+            "usd": 23.4375,
+            "diem": 23.4375
           }
         },
+        "model_sets": [
+          "venice_recommendations"
+        ],
         "availableContextTokens": 1000000,
         "maxCompletionTokens": 131072,
         "capabilities": {
@@ -4092,11 +4106,7 @@
           "supportsMultipleImages": true,
           "maxImages": 10,
           "supportsReasoning": true,
-          "supportsReasoningEffort": true,
-          "reasoningEffortOptions": [
-            "max"
-          ],
-          "defaultReasoningEffort": "max",
+          "supportsReasoningEffort": false,
           "supportsResponseSchema": true,
           "supportsTeeAttestation": false,
           "supportsE2EE": false,
@@ -4107,9 +4117,9 @@
         },
         "description": "Kimi K3 is an ultra-large-scale, open-weight multimodal reasoning model from Moonshot AI. It is suited for complex coding, knowledge work, and long-horizon agentic workflows, and is particularly strong at navigating large repositories, using tools, debugging, and iterating against images, logs, tests, and runtime feedback.",
         "name": "Kimi K3",
-        "modelSource": "https://openrouter.ai/moonshotai/kimi-k3",
+        "modelSource": "https://huggingface.co/moonshotai/Kimi-K3",
         "offline": false,
-        "privacy": "anonymized",
+        "privacy": "private",
         "traits": []
       },
       "object": "model",
