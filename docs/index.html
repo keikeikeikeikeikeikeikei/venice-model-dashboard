@@ -812,7 +812,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-07-29 01:58)</div>
+            <div class="meta">Generated from Live API Data (2026-07-29 14:35)</div>
         </header>
 
         <div class="controls">
@@ -4080,16 +4080,16 @@
         "betaModel": true,
         "pricing": {
           "input": {
-            "usd": 4.6875,
-            "diem": 4.6875
+            "usd": 3.75,
+            "diem": 3.75
           },
           "cache_input": {
-            "usd": 0.46875,
-            "diem": 0.46875
+            "usd": 0.375,
+            "diem": 0.375
           },
           "output": {
-            "usd": 23.4375,
-            "diem": 23.4375
+            "usd": 18.75,
+            "diem": 18.75
           }
         },
         "model_sets": [
@@ -9800,7 +9800,8 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.3 Fast",
         "offline": false,
@@ -9849,8 +9850,7 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.3 Fast",
         "offline": false,
@@ -11669,8 +11669,7 @@
           "audio",
           "long_duration",
           "cinematic",
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "name": "Gemini Omni Flash",
         "offline": false,
@@ -11753,8 +11752,7 @@
           "audio",
           "long_duration",
           "cinematic",
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "name": "Gemini Omni Flash R2V",
         "offline": false,
@@ -12284,7 +12282,8 @@
           "high_resolution",
           "audio",
           "cinematic",
-          "long_duration"
+          "long_duration",
+          "fast"
         ],
         "name": "PixVerse C1 Transition",
         "offline": false,
@@ -12581,6 +12580,13 @@
           "cinematic",
           "photorealistic"
         ],
+        "deprecation": {
+          "autoRemap": false,
+          "date": "2026-08-05T00:00:00.000Z",
+          "removesAt": "2026-08-05T00:00:00.000Z",
+          "replacementModelId": "wan-2-7-video-to-video",
+          "startsAt": "2026-07-29T00:00:00.000Z"
+        },
         "name": "Runway Gen-4 Aleph",
         "offline": false,
         "traits": []
@@ -12612,7 +12618,8 @@
         },
         "model_sets": [
           "high_resolution",
-          "ultra_high_resolution"
+          "ultra_high_resolution",
+          "fast"
         ],
         "name": "Topaz Video Upscale",
         "offline": false,
@@ -13695,11 +13702,32 @@
           }
         },
         "voices": [
+          "altair",
           "ara",
+          "atlas",
+          "carina",
+          "castor",
+          "celeste",
+          "cosmo",
           "eve",
+          "helios",
+          "helix",
+          "iris",
+          "kepler",
           "leo",
+          "lumen",
+          "luna",
+          "lux",
+          "naksh",
+          "orion",
+          "perseus",
           "rex",
-          "sal"
+          "rigel",
+          "sal",
+          "sirius",
+          "ursa",
+          "zagan",
+          "zenith"
         ],
         "supports_custom_voice_id": false,
         "name": "xAI TTS v1",
