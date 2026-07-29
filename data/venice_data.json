@@ -8917,8 +8917,7 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.3 Fast",
         "offline": false,
@@ -10786,7 +10785,8 @@
           "audio",
           "long_duration",
           "cinematic",
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Gemini Omni Flash",
         "offline": false,
@@ -10869,7 +10869,8 @@
           "audio",
           "long_duration",
           "cinematic",
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Gemini Omni Flash R2V",
         "offline": false,
@@ -11735,8 +11736,7 @@
         },
         "model_sets": [
           "high_resolution",
-          "ultra_high_resolution",
-          "fast"
+          "ultra_high_resolution"
         ],
         "name": "Topaz Video Upscale",
         "offline": false,
