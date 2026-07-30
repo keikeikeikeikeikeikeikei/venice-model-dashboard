@@ -8917,7 +8917,8 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.3 Fast",
         "offline": false,
@@ -9735,8 +9736,7 @@
           "cinematic",
           "audio",
           "photorealistic",
-          "long_duration",
-          "fast"
+          "long_duration"
         ],
         "name": "Kling O3 Standard",
         "offline": false,
