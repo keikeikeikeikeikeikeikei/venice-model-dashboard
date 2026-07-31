@@ -3453,6 +3453,62 @@
       "type": "text"
     },
     {
+      "context_length": 1000000,
+      "created": 1785456000,
+      "id": "deepseek-v4-flash-0731",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.072,
+            "diem": 0.072
+          },
+          "cache_input": {
+            "usd": 0.0144,
+            "diem": 0.0144
+          },
+          "output": {
+            "usd": 0.144,
+            "diem": 0.144
+          }
+        },
+        "availableContextTokens": 1000000,
+        "maxCompletionTokens": 32768,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": true,
+          "reasoningEffortOptions": [
+            "none",
+            "low",
+            "medium",
+            "high"
+          ],
+          "defaultReasoningEffort": "low",
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "DeepSeek V4 Flash is an efficiency-optimized 284B-parameter Mixture-of-Experts model with 13B active parameters and a 1M-token context window. Tuned for fast inference and high-throughput workloads while maintaining strong reasoning and coding performance.",
+        "name": "DeepSeek V4 Flash 0731",
+        "modelSource": "https://deepinfra.com/deepseek-ai/DeepSeek-V4-Flash-0731/api",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
       "context_length": 160000,
       "created": 1764806400,
       "id": "deepseek-v3.2",
@@ -8829,8 +8885,7 @@
         },
         "model_sets": [
           "uncensored",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "Wan 2.2 A14B",
         "offline": false,
@@ -11397,7 +11452,8 @@
           "high_resolution",
           "audio",
           "cinematic",
-          "long_duration"
+          "long_duration",
+          "fast"
         ],
         "name": "PixVerse C1 Transition",
         "offline": false,
