@@ -812,7 +812,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-08-01 05:31)</div>
+            <div class="meta">Generated from Live API Data (2026-08-02 00:55)</div>
         </header>
 
         <div class="controls">
@@ -1322,12 +1322,16 @@
       "model_spec": {
         "pricing": {
           "input": {
-            "usd": 0.125,
-            "diem": 0.125
+            "usd": 0.06,
+            "diem": 0.06
+          },
+          "cache_input": {
+            "usd": 0.01,
+            "diem": 0.01
           },
           "output": {
-            "usd": 0.5,
-            "diem": 0.5
+            "usd": 0.4,
+            "diem": 0.4
           }
         },
         "availableContextTokens": 128000,
@@ -4324,6 +4328,12 @@
           "supportsWebSearch": true,
           "supportsXSearch": false
         },
+        "deprecation": {
+          "autoRemap": false,
+          "date": "2026-08-14T00:00:00.000Z",
+          "removesAt": "2026-08-14T00:00:00.000Z",
+          "replacementModelId": "deepseek-v4-flash-0731"
+        },
         "description": "DeepSeek V4 Flash is an efficiency-optimized 284B-parameter Mixture-of-Experts model with 13B active parameters and a 1M-token context window. Tuned for fast inference and high-throughput workloads while maintaining strong reasoning and coding performance.",
         "name": "DeepSeek V4 Flash",
         "modelSource": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
@@ -4342,18 +4352,21 @@
       "model_spec": {
         "pricing": {
           "input": {
-            "usd": 0.072,
-            "diem": 0.072
+            "usd": 0.175,
+            "diem": 0.175
           },
           "cache_input": {
-            "usd": 0.0144,
-            "diem": 0.0144
+            "usd": 0.035,
+            "diem": 0.035
           },
           "output": {
-            "usd": 0.144,
-            "diem": 0.144
+            "usd": 0.35,
+            "diem": 0.35
           }
         },
+        "model_sets": [
+          "venice_recommendations"
+        ],
         "availableContextTokens": 1000000,
         "maxCompletionTokens": 32768,
         "capabilities": {
@@ -4364,14 +4377,7 @@
           "supportsLogProbs": false,
           "supportsMultipleImages": false,
           "supportsReasoning": true,
-          "supportsReasoningEffort": true,
-          "reasoningEffortOptions": [
-            "none",
-            "low",
-            "medium",
-            "high"
-          ],
-          "defaultReasoningEffort": "low",
+          "supportsReasoningEffort": false,
           "supportsResponseSchema": true,
           "supportsTeeAttestation": false,
           "supportsE2EE": false,
@@ -4384,7 +4390,7 @@
         "name": "DeepSeek V4 Flash 0731",
         "modelSource": "https://deepinfra.com/deepseek-ai/DeepSeek-V4-Flash-0731/api",
         "offline": false,
-        "privacy": "anonymized",
+        "privacy": "private",
         "traits": []
       },
       "object": "model",
@@ -4410,9 +4416,6 @@
             "diem": 0.48
           }
         },
-        "model_sets": [
-          "venice_recommendations"
-        ],
         "availableContextTokens": 160000,
         "maxCompletionTokens": 32768,
         "capabilities": {
@@ -9529,11 +9532,9 @@
         "model_sets": [
           "audio",
           "long_duration",
-          "photorealistic",
-          "venice_recommendations",
-          "featured"
+          "photorealistic"
         ],
-        "name": "Grok Imagine Private",
+        "name": "Grok Imagine",
         "offline": false,
         "traits": []
       },
@@ -9583,10 +9584,9 @@
         "model_sets": [
           "audio",
           "long_duration",
-          "photorealistic",
-          "venice_recommendations"
+          "photorealistic"
         ],
-        "name": "Grok Imagine Private",
+        "name": "Grok Imagine",
         "offline": false,
         "traits": []
       },
@@ -9639,7 +9639,7 @@
         "model_sets": [
           "photorealistic"
         ],
-        "name": "Grok Imagine R2V Private",
+        "name": "Grok Imagine R2V",
         "offline": false,
         "traits": []
       },
@@ -9680,7 +9680,7 @@
           "photorealistic",
           "venice_recommendations"
         ],
-        "name": "Grok Imagine Private",
+        "name": "Grok Imagine",
         "offline": false,
         "traits": []
       },
@@ -9690,15 +9690,24 @@
     },
     {
       "created": 1780185600,
-      "id": "grok-imagine-1-5-image-to-video-private",
+      "id": "grok-imagine-1-5-text-to-video-private",
       "model_spec": {
         "privacy": "private",
         "constraints": {
-          "model_type": "image-to-video",
-          "aspect_ratios": [],
+          "model_type": "text-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "4:3",
+            "3:2",
+            "1:1",
+            "2:3",
+            "3:4",
+            "9:16"
+          ],
           "resolutions": [
             "480p",
-            "720p"
+            "720p",
+            "1080p"
           ],
           "durations": [
             "1s",
@@ -9727,9 +9736,68 @@
         "model_sets": [
           "audio",
           "long_duration",
-          "photorealistic"
+          "photorealistic",
+          "high_resolution",
+          "venice_recommendations",
+          "featured",
+          "fast"
         ],
-        "name": "Grok Imagine 1.5 Private",
+        "name": "Grok Imagine 1.5",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.29
+      }
+    },
+    {
+      "created": 1780185600,
+      "id": "grok-imagine-1-5-image-to-video-private",
+      "model_spec": {
+        "privacy": "private",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [],
+          "resolutions": [
+            "480p",
+            "720p",
+            "1080p"
+          ],
+          "durations": [
+            "1s",
+            "2s",
+            "3s",
+            "4s",
+            "5s",
+            "6s",
+            "7s",
+            "8s",
+            "9s",
+            "10s",
+            "11s",
+            "12s",
+            "13s",
+            "14s",
+            "15s"
+          ],
+          "audio": true,
+          "audio_configurable": false,
+          "audio_input": false,
+          "per_reference_audio": false,
+          "video_input": false,
+          "prompt_character_limit": 4096
+        },
+        "model_sets": [
+          "audio",
+          "long_duration",
+          "photorealistic",
+          "high_resolution",
+          "venice_recommendations"
+        ],
+        "name": "Grok Imagine 1.5",
         "offline": false,
         "traits": []
       },
@@ -9738,6 +9806,67 @@
       "type": "video",
       "pricing": {
         "base_price_usd": 0.15
+      }
+    },
+    {
+      "created": 1785283200,
+      "id": "grok-imagine-1-5-reference-to-video-private",
+      "model_spec": {
+        "privacy": "private",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "4:3",
+            "3:2",
+            "1:1",
+            "2:3",
+            "3:4",
+            "9:16"
+          ],
+          "resolutions": [
+            "480p",
+            "720p"
+          ],
+          "durations": [
+            "1s",
+            "2s",
+            "3s",
+            "4s",
+            "5s",
+            "6s",
+            "7s",
+            "8s",
+            "9s",
+            "10s",
+            "11s",
+            "12s",
+            "13s",
+            "14s",
+            "15s"
+          ],
+          "audio": true,
+          "audio_configurable": false,
+          "audio_input": true,
+          "per_reference_audio": false,
+          "video_input": false,
+          "prompt_character_limit": 4096
+        },
+        "model_sets": [
+          "audio",
+          "long_duration",
+          "photorealistic",
+          "venice_recommendations"
+        ],
+        "name": "Grok Imagine 1.5 R2V",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.17
       }
     },
     {
@@ -11805,8 +11934,7 @@
           "audio",
           "long_duration",
           "cinematic",
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "name": "Gemini Omni Flash R2V",
         "offline": false,
@@ -12229,7 +12357,8 @@
           "high_resolution",
           "audio",
           "cinematic",
-          "long_duration"
+          "long_duration",
+          "fast"
         ],
         "name": "PixVerse C1",
         "offline": false,
@@ -12335,8 +12464,7 @@
           "high_resolution",
           "audio",
           "cinematic",
-          "long_duration",
-          "fast"
+          "long_duration"
         ],
         "name": "PixVerse C1 Transition",
         "offline": false,
