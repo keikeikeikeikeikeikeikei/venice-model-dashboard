@@ -8856,8 +8856,7 @@
           "photorealistic",
           "high_resolution",
           "venice_recommendations",
-          "featured",
-          "fast"
+          "featured"
         ],
         "name": "Grok Imagine 1.5",
         "offline": false,
@@ -11581,7 +11580,8 @@
           "high_resolution",
           "audio",
           "cinematic",
-          "long_duration"
+          "long_duration",
+          "fast"
         ],
         "name": "PixVerse C1 Transition",
         "offline": false,
