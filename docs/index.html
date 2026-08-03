@@ -812,7 +812,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-08-03 21:29)</div>
+            <div class="meta">Generated from Live API Data (2026-08-04 04:29)</div>
         </header>
 
         <div class="controls">
@@ -4554,6 +4554,57 @@
         "modelSource": "https://console.byteplus.com/ark/region:ark+ap-southeast-1/model/detail?Id=dola-seed-2-1-turbo",
         "offline": false,
         "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 1000000,
+      "created": 1785715200,
+      "id": "kimi-k3-fast-api",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 4.5,
+            "diem": 4.5
+          },
+          "cache_input": {
+            "usd": 0.45,
+            "diem": 0.45
+          },
+          "output": {
+            "usd": 22.5,
+            "diem": 22.5
+          }
+        },
+        "availableContextTokens": 1000000,
+        "maxCompletionTokens": 131072,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Kimi K3 is an ultra-large-scale, open-weight multimodal reasoning model from Moonshot AI. It is suited for complex coding, knowledge work, and long-horizon agentic workflows, and is particularly strong at navigating large repositories, using tools, debugging, and iterating against images, logs, tests, and runtime feedback.",
+        "name": "Kimi K3 Fast",
+        "modelSource": "https://huggingface.co/moonshotai/Kimi-K3",
+        "offline": false,
+        "privacy": "private",
         "traits": []
       },
       "object": "model",
@@ -9733,8 +9784,7 @@
           "audio",
           "long_duration",
           "photorealistic",
-          "venice_recommendations",
-          "fast"
+          "venice_recommendations"
         ],
         "name": "Grok Imagine",
         "offline": false,
@@ -9795,7 +9845,8 @@
           "photorealistic",
           "high_resolution",
           "venice_recommendations",
-          "featured"
+          "featured",
+          "fast"
         ],
         "name": "Grok Imagine 1.5",
         "offline": false,
