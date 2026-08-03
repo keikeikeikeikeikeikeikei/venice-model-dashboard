@@ -8850,7 +8850,8 @@
           "audio",
           "long_duration",
           "photorealistic",
-          "venice_recommendations"
+          "venice_recommendations",
+          "fast"
         ],
         "name": "Grok Imagine",
         "offline": false,
@@ -8911,8 +8912,7 @@
           "photorealistic",
           "high_resolution",
           "venice_recommendations",
-          "featured",
-          "fast"
+          "featured"
         ],
         "name": "Grok Imagine 1.5",
         "offline": false,
