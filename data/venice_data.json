@@ -9014,7 +9014,8 @@
         },
         "model_sets": [
           "uncensored",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "Wan 2.2 A14B",
         "offline": false,
@@ -11474,8 +11475,7 @@
           "high_resolution",
           "audio",
           "cinematic",
-          "long_duration",
-          "fast"
+          "long_duration"
         ],
         "name": "PixVerse C1",
         "offline": false,
