@@ -812,7 +812,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-08-03 09:06)</div>
+            <div class="meta">Generated from Live API Data (2026-08-03 15:06)</div>
         </header>
 
         <div class="controls">
@@ -1584,6 +1584,64 @@
     },
     {
       "context_length": 1000000,
+      "created": 1784678400,
+      "id": "qwen-3-8-max",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 2.5,
+            "diem": 2.5
+          },
+          "cache_input": {
+            "usd": 0.3125,
+            "diem": 0.3125
+          },
+          "cache_write": {
+            "usd": 3.125,
+            "diem": 3.125
+          },
+          "output": {
+            "usd": 7.5,
+            "diem": 7.5
+          }
+        },
+        "model_sets": [
+          "venice_recommendations"
+        ],
+        "availableContextTokens": 1000000,
+        "maxCompletionTokens": 131072,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": false,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": true,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Qwen 3.8 Max is Alibaba's flagship 2.4-trillion-parameter MoE model, with major gains over Qwen 3.7 Max in software engineering and office-productivity workflows and strong long-horizon, multi-agent performance. It accepts both text and vision-language input (images and video), operates in thinking mode only, and supports a 1M-token context window.",
+        "name": "Qwen 3.8 Max",
+        "modelSource": "https://www.alibabacloud.com/help/en/model-studio/models",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 1000000,
       "created": 1779408000,
       "id": "qwen-3-7-max",
       "model_spec": {
@@ -1606,9 +1664,6 @@
             "diem": 8.05
           }
         },
-        "model_sets": [
-          "venice_recommendations"
-        ],
         "availableContextTokens": 1000000,
         "maxCompletionTokens": 65536,
         "capabilities": {
