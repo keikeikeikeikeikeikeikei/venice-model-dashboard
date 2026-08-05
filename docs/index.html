@@ -812,7 +812,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-08-05 20:41)</div>
+            <div class="meta">Generated from Live API Data (2026-08-06 04:55)</div>
         </header>
 
         <div class="controls">
@@ -4388,12 +4388,6 @@
           "supportsVision": false,
           "supportsWebSearch": true,
           "supportsXSearch": false
-        },
-        "deprecation": {
-          "autoRemap": false,
-          "date": "2026-08-14T00:00:00.000Z",
-          "removesAt": "2026-08-14T00:00:00.000Z",
-          "replacementModelId": "deepseek-v4-flash-0731"
         },
         "description": "DeepSeek V4 Flash is an efficiency-optimized 284B-parameter Mixture-of-Experts model with 13B active parameters and a 1M-token context window. Tuned for fast inference and high-throughput workloads while maintaining strong reasoning and coding performance.",
         "name": "DeepSeek V4 Flash 0423",
@@ -8755,12 +8749,12 @@
         "pricing": {
           "resolutions": {
             "1K": {
-              "usd": 0.04,
-              "diem": 0.04
+              "usd": 0.036000000000000004,
+              "diem": 0.036000000000000004
             },
             "2K": {
-              "usd": 0.04,
-              "diem": 0.04
+              "usd": 0.036000000000000004,
+              "diem": 0.036000000000000004
             }
           },
           "upscale": {
@@ -9929,7 +9923,8 @@
           "audio",
           "long_duration",
           "photorealistic",
-          "venice_recommendations"
+          "venice_recommendations",
+          "fast"
         ],
         "name": "Grok Imagine",
         "offline": false,
@@ -9990,7 +9985,8 @@
           "photorealistic",
           "high_resolution",
           "venice_recommendations",
-          "featured"
+          "featured",
+          "fast"
         ],
         "name": "Grok Imagine 1.5",
         "offline": false,
@@ -10281,8 +10277,7 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.3 Fast",
         "offline": false,
@@ -13106,8 +13101,7 @@
         "model_sets": [
           "fast",
           "cinematic",
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "name": "Runway Gen-4 Turbo",
         "offline": false,
@@ -14387,6 +14381,16 @@
             "diem": 3.5
           }
         },
+        "default_format": "mp3",
+        "supported_formats": [
+          "mp3",
+          "opus",
+          "aac",
+          "flac",
+          "wav",
+          "pcm"
+        ],
+        "supports_custom_voice_id": false,
         "voices": [
           "af_alloy",
           "af_aoede",
@@ -14443,7 +14447,6 @@
           "zm_yunxia",
           "zm_yunyang"
         ],
-        "supports_custom_voice_id": false,
         "name": "Kokoro Text to Speech",
         "modelSource": "https://huggingface.co/hexgrad/Kokoro-82M",
         "offline": false,
@@ -14464,6 +14467,11 @@
             "diem": 87.5
           }
         },
+        "default_format": "mp3",
+        "supported_formats": [
+          "mp3"
+        ],
+        "supports_custom_voice_id": false,
         "voices": [
           "Aiden",
           "Dylan",
@@ -14475,7 +14483,6 @@
           "Uncle_Fu",
           "Vivian"
         ],
-        "supports_custom_voice_id": false,
         "name": "Qwen 3 TTS 0.6B",
         "modelSource": "https://huggingface.co/Qwen/Qwen3-TTS",
         "offline": false,
@@ -14496,6 +14503,11 @@
             "diem": 112.5
           }
         },
+        "default_format": "mp3",
+        "supported_formats": [
+          "mp3"
+        ],
+        "supports_custom_voice_id": false,
         "voices": [
           "Aiden",
           "Dylan",
@@ -14507,7 +14519,6 @@
           "Uncle_Fu",
           "Vivian"
         ],
-        "supports_custom_voice_id": false,
         "name": "Qwen 3 TTS 1.7B",
         "modelSource": "https://huggingface.co/Qwen/Qwen3-TTS",
         "offline": false,
@@ -14528,6 +14539,13 @@
             "diem": 18.75
           }
         },
+        "default_format": "mp3",
+        "supported_formats": [
+          "mp3",
+          "wav",
+          "pcm"
+        ],
+        "supports_custom_voice_id": false,
         "voices": [
           "altair",
           "ara",
@@ -14556,7 +14574,6 @@
           "zagan",
           "zenith"
         ],
-        "supports_custom_voice_id": false,
         "name": "xAI TTS v1",
         "offline": false,
         "privacy": "anonymized",
@@ -14576,6 +14593,11 @@
             "diem": 12.5
           }
         },
+        "default_format": "wav",
+        "supported_formats": [
+          "wav"
+        ],
+        "supports_custom_voice_id": false,
         "voices": [
           "Alex",
           "Ashley",
@@ -14592,7 +14614,6 @@
           "Sarah",
           "Theodore"
         ],
-        "supports_custom_voice_id": false,
         "name": "Inworld TTS-1.5 Max",
         "offline": false,
         "privacy": "anonymized",
@@ -14612,6 +14633,11 @@
             "diem": 50
           }
         },
+        "default_format": "wav",
+        "supported_formats": [
+          "wav"
+        ],
+        "supports_custom_voice_id": false,
         "voices": [
           "Aurora",
           "Blade",
@@ -14623,7 +14649,6 @@
           "Siobhan",
           "Vicky"
         ],
-        "supports_custom_voice_id": false,
         "voice_cloning": {
           "mode": "zero_shot",
           "accepted_formats": [
@@ -14654,6 +14679,11 @@
             "diem": 62.5
           }
         },
+        "default_format": "wav",
+        "supported_formats": [
+          "wav"
+        ],
+        "supports_custom_voice_id": false,
         "voices": [
           "dan",
           "jess",
@@ -14664,7 +14694,6 @@
           "zac",
           "zoe"
         ],
-        "supports_custom_voice_id": false,
         "name": "Orpheus TTS",
         "modelSource": "https://huggingface.co/canopylabs/orpheus-3b-0.1-ft",
         "offline": false,
@@ -14685,6 +14714,11 @@
             "diem": 62.5
           }
         },
+        "default_format": "mp3",
+        "supported_formats": [
+          "mp3"
+        ],
+        "supports_custom_voice_id": true,
         "voices": [
           "Alice",
           "Aria",
@@ -14708,7 +14742,6 @@
           "Sarah",
           "Will"
         ],
-        "supports_custom_voice_id": true,
         "name": "ElevenLabs Turbo v2.5",
         "offline": false,
         "privacy": "anonymized",
@@ -14728,6 +14761,13 @@
             "diem": 125
           }
         },
+        "default_format": "mp3",
+        "supported_formats": [
+          "mp3",
+          "pcm",
+          "flac"
+        ],
+        "supports_custom_voice_id": false,
         "voices": [
           "CalmWoman",
           "CasualGuy",
@@ -14745,7 +14785,6 @@
           "WiseWoman",
           "YoungKnight"
         ],
-        "supports_custom_voice_id": false,
         "description": "Clone your voice from a short recording and generate natural speech in it across 30+ languages.",
         "name": "MiniMax Speech-02 HD",
         "offline": false,
@@ -14766,6 +14805,13 @@
             "diem": 187.5
           }
         },
+        "default_format": "mp3",
+        "supported_formats": [
+          "mp3",
+          "opus",
+          "wav"
+        ],
+        "supports_custom_voice_id": false,
         "voices": [
           "Achernar",
           "Achird",
@@ -14798,7 +14844,6 @@
           "Zephyr",
           "Zubenelgenubi"
         ],
-        "supports_custom_voice_id": false,
         "name": "Gemini 3.1 Flash TTS",
         "offline": false,
         "privacy": "anonymized",
@@ -14818,6 +14863,13 @@
             "diem": 47.5
           }
         },
+        "default_format": "wav",
+        "supported_formats": [
+          "wav",
+          "pcm",
+          "opus"
+        ],
+        "supports_custom_voice_id": false,
         "voices": [
           "Alice",
           "Davi",
@@ -14832,7 +14884,6 @@
           "Sergio",
           "Valentina"
         ],
-        "supports_custom_voice_id": false,
         "name": "Gradium TTS",
         "offline": false,
         "privacy": "anonymized",
