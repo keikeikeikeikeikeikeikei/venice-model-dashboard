@@ -8999,7 +8999,8 @@
           "prompt_character_limit": 4096
         },
         "model_sets": [
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Grok Imagine R2V",
         "offline": false,
@@ -9102,8 +9103,7 @@
           "photorealistic",
           "high_resolution",
           "venice_recommendations",
-          "featured",
-          "fast"
+          "featured"
         ],
         "name": "Grok Imagine 1.5",
         "offline": false,
