@@ -812,7 +812,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-08-07 11:53)</div>
+            <div class="meta">Generated from Live API Data (2026-08-08 02:45)</div>
         </header>
 
         <div class="controls">
@@ -843,6 +843,7 @@
                             <select id="minContext" onchange="renderTable()">
                                 <option value="0">Any</option>
                                 <option value="128000">125k+</option>
+                                <option value="159744">156k+</option>
                                 <option value="256000">250k+</option>
                                 <option value="1000448">977k+</option>
                                 <option value="1999872">1.9M+</option>
@@ -6104,52 +6105,6 @@
       "type": "text"
     },
     {
-      "context_length": 32000,
-      "created": 1773792000,
-      "id": "e2ee-venice-uncensored-24b-p",
-      "model_spec": {
-        "betaModel": true,
-        "pricing": {
-          "input": {
-            "usd": 0.25,
-            "diem": 0.25
-          },
-          "output": {
-            "usd": 1.15,
-            "diem": 1.15
-          }
-        },
-        "availableContextTokens": 32000,
-        "maxCompletionTokens": 4096,
-        "capabilities": {
-          "optimizedForCode": false,
-          "quantization": "not-available",
-          "supportsAudioInput": false,
-          "supportsFunctionCalling": false,
-          "supportsLogProbs": false,
-          "supportsMultipleImages": false,
-          "supportsReasoning": false,
-          "supportsReasoningEffort": false,
-          "supportsResponseSchema": false,
-          "supportsTeeAttestation": true,
-          "supportsE2EE": true,
-          "supportsVideoInput": false,
-          "supportsVision": false,
-          "supportsWebSearch": true,
-          "supportsXSearch": false
-        },
-        "description": "Venice Uncensored 1.1 running in a Trusted Execution Environment (TEE). Hardware attestation evidence is available for independent verification of enclave identity and configuration.",
-        "name": "Venice Uncensored 1.1",
-        "modelSource": "https://huggingface.co/cognitivecomputations/Dolphin-Mistral-24B-Venice-Edition",
-        "offline": false,
-        "privacy": "private",
-        "traits": []
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "text"
-    },
-    {
       "context_length": 40000,
       "created": 1773792000,
       "id": "e2ee-gemma-3-27b-p",
@@ -6286,59 +6241,6 @@
         "description": "GLM 5.2 running in a Trusted Execution Environment (TEE). Z.AI's flagship model for long-horizon tasks with enhanced reasoning and project-level engineering context, with hardware attestation evidence available for independent verification.",
         "name": "GLM 5.2",
         "modelSource": "https://huggingface.co/zai-org/GLM-5.2",
-        "offline": false,
-        "privacy": "private",
-        "traits": []
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "text"
-    },
-    {
-      "context_length": 128000,
-      "created": 1773792000,
-      "id": "e2ee-glm-4-7-p",
-      "model_spec": {
-        "betaModel": true,
-        "pricing": {
-          "input": {
-            "usd": 1.1,
-            "diem": 1.1
-          },
-          "output": {
-            "usd": 4.15,
-            "diem": 4.15
-          }
-        },
-        "availableContextTokens": 128000,
-        "maxCompletionTokens": 32768,
-        "capabilities": {
-          "optimizedForCode": true,
-          "quantization": "not-available",
-          "supportsAudioInput": false,
-          "supportsFunctionCalling": false,
-          "supportsLogProbs": false,
-          "supportsMultipleImages": false,
-          "supportsReasoning": true,
-          "supportsReasoningEffort": true,
-          "reasoningEffortOptions": [
-            "none",
-            "low",
-            "medium",
-            "high"
-          ],
-          "defaultReasoningEffort": "low",
-          "supportsResponseSchema": false,
-          "supportsTeeAttestation": true,
-          "supportsE2EE": true,
-          "supportsVideoInput": false,
-          "supportsVision": false,
-          "supportsWebSearch": true,
-          "supportsXSearch": false
-        },
-        "description": "GLM 4.7 running in a Trusted Execution Environment (TEE). Z.AI's flagship model with enhanced programming capabilities and stable multi-step reasoning, with hardware attestation evidence available for independent verification.",
-        "name": "GLM 4.7",
-        "modelSource": "https://huggingface.co/zai-org/GLM-4.7",
         "offline": false,
         "privacy": "private",
         "traits": []
@@ -6537,52 +6439,6 @@
         "description": "Qwen3.6 35B A3B Uncensored running in a Trusted Execution Environment (TEE). An uncensored variant of Alibaba's Qwen3.6 MoE model with 35B total parameters and ~3B active, supporting 262K context and multimodal input across text, images, and video, with hardware attestation evidence available for independent verification.",
         "name": "Qwen3.6 35B A3B Uncensored",
         "modelSource": "https://www.redpill.ai/models/phala/qwen3.6-35b-a3b-uncensored",
-        "offline": false,
-        "privacy": "private",
-        "traits": []
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "text"
-    },
-    {
-      "context_length": 256000,
-      "created": 1773792000,
-      "id": "e2ee-qwen3-30b-a3b-p",
-      "model_spec": {
-        "betaModel": true,
-        "pricing": {
-          "input": {
-            "usd": 0.19,
-            "diem": 0.19
-          },
-          "output": {
-            "usd": 0.69,
-            "diem": 0.69
-          }
-        },
-        "availableContextTokens": 256000,
-        "maxCompletionTokens": 32768,
-        "capabilities": {
-          "optimizedForCode": false,
-          "quantization": "not-available",
-          "supportsAudioInput": false,
-          "supportsFunctionCalling": true,
-          "supportsLogProbs": false,
-          "supportsMultipleImages": false,
-          "supportsReasoning": false,
-          "supportsReasoningEffort": false,
-          "supportsResponseSchema": false,
-          "supportsTeeAttestation": true,
-          "supportsE2EE": true,
-          "supportsVideoInput": false,
-          "supportsVision": false,
-          "supportsWebSearch": true,
-          "supportsXSearch": false
-        },
-        "description": "Qwen3 30B A3B running in a Trusted Execution Environment (TEE). A MoE model with 30.5B total parameters and 3.3B activated per inference, supporting ultra-long 256K context, with hardware attestation evidence available for independent verification.",
-        "name": "Qwen3 30B A3B",
-        "modelSource": "https://huggingface.co/Qwen/Qwen3-30B-A3B-Instruct-2507",
         "offline": false,
         "privacy": "private",
         "traits": []
@@ -9588,8 +9444,7 @@
           "high_resolution",
           "audio",
           "long_duration",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "Wan 2.6 Flash",
         "offline": false,
@@ -9985,8 +9840,7 @@
           "photorealistic",
           "high_resolution",
           "venice_recommendations",
-          "featured",
-          "fast"
+          "featured"
         ],
         "name": "Grok Imagine 1.5",
         "offline": false,
@@ -11766,7 +11620,8 @@
           "high_resolution",
           "audio",
           "cinematic",
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Veo 3 Fast",
         "offline": false,
@@ -12568,7 +12423,8 @@
         "model_sets": [
           "high_resolution",
           "audio",
-          "cinematic"
+          "cinematic",
+          "fast"
         ],
         "name": "PixVerse v5.6",
         "offline": false,
