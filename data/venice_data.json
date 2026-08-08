@@ -4426,20 +4426,20 @@
         "betaModel": true,
         "pricing": {
           "input": {
-            "usd": 1.25,
-            "diem": 1.25
+            "usd": 0.26666667,
+            "diem": 0.26666667
           },
           "cache_input": {
-            "usd": 0.125,
-            "diem": 0.125
+            "usd": 0.02666667,
+            "diem": 0.02666667
           },
           "cache_write": {
-            "usd": 1.5625,
-            "diem": 1.5625
+            "usd": 0.33333334,
+            "diem": 0.33333334
           },
           "output": {
-            "usd": 7.5,
-            "diem": 7.5
+            "usd": 1.6,
+            "diem": 1.6
           }
         },
         "availableContextTokens": 1000000,
@@ -4490,20 +4490,20 @@
         "betaModel": true,
         "pricing": {
           "input": {
-            "usd": 1.25,
-            "diem": 1.25
+            "usd": 0.26666667,
+            "diem": 0.26666667
           },
           "cache_input": {
-            "usd": 0.125,
-            "diem": 0.125
+            "usd": 0.02666667,
+            "diem": 0.02666667
           },
           "cache_write": {
-            "usd": 1.5625,
-            "diem": 1.5625
+            "usd": 0.33333334,
+            "diem": 0.33333334
           },
           "output": {
-            "usd": 7.5,
-            "diem": 7.5
+            "usd": 1.6,
+            "diem": 1.6
           }
         },
         "availableContextTokens": 1000000,
@@ -9012,7 +9012,8 @@
           "long_duration",
           "photorealistic",
           "high_resolution",
-          "venice_recommendations"
+          "venice_recommendations",
+          "fast"
         ],
         "name": "Grok Imagine 1.5",
         "offline": false,
@@ -11538,8 +11539,7 @@
         "model_sets": [
           "high_resolution",
           "audio",
-          "cinematic",
-          "fast"
+          "cinematic"
         ],
         "name": "PixVerse v5.6",
         "offline": false,
@@ -13996,6 +13996,7 @@
         },
         "constraints": {
           "aspectRatios": [
+            "auto",
             "1:1",
             "16:9",
             "9:16",
@@ -14005,7 +14006,7 @@
           ],
           "promptCharacterLimit": 7500,
           "combineImages": true,
-          "singleImageAspectRatio": false,
+          "singleImageAspectRatio": true,
           "defaultResolution": "1K",
           "resolutions": [
             "1K",
@@ -14051,6 +14052,7 @@
         },
         "constraints": {
           "aspectRatios": [
+            "auto",
             "1:1",
             "16:9",
             "9:16",
@@ -14060,7 +14062,7 @@
           ],
           "promptCharacterLimit": 7500,
           "combineImages": true,
-          "singleImageAspectRatio": false,
+          "singleImageAspectRatio": true,
           "defaultResolution": "1K",
           "resolutions": [
             "1K",
