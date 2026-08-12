@@ -3369,16 +3369,16 @@
       "model_spec": {
         "pricing": {
           "input": {
-            "usd": 0.14,
-            "diem": 0.14
+            "usd": 0.4,
+            "diem": 0.4
           },
           "cache_input": {
-            "usd": 0.05,
-            "diem": 0.05
+            "usd": 0.08,
+            "diem": 0.08
           },
           "output": {
-            "usd": 0.28,
-            "diem": 0.28
+            "usd": 2,
+            "diem": 2
           }
         },
         "availableContextTokens": 1000000,
@@ -3567,7 +3567,7 @@
         },
         "description": "DeepSeek V4 Flash is an efficiency-optimized 284B-parameter Mixture-of-Experts model with 13B active parameters and a 1M-token context window. Tuned for fast inference and high-throughput workloads while maintaining strong reasoning and coding performance.",
         "name": "DeepSeek V4 Flash 0731",
-        "modelSource": "https://deepinfra.com/deepseek-ai/DeepSeek-V4-Flash-0731/api",
+        "modelSource": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
         "offline": false,
         "privacy": "private",
         "traits": []
@@ -6012,6 +6012,97 @@
         "traits": [
           "eliza-default"
         ]
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "image"
+    },
+    {
+      "created": 1786406400,
+      "id": "grok-imagine-image-2-0",
+      "model_spec": {
+        "pricing": {
+          "resolutions": {
+            "1K": {
+              "usd": 0.07,
+              "diem": 0.07
+            },
+            "2K": {
+              "usd": 0.1,
+              "diem": 0.1
+            }
+          },
+          "quality": {
+            "1K": {
+              "low": {
+                "usd": 0.05,
+                "diem": 0.05
+              },
+              "medium": {
+                "usd": 0.07,
+                "diem": 0.07
+              }
+            },
+            "2K": {
+              "low": {
+                "usd": 0.07,
+                "diem": 0.07
+              },
+              "medium": {
+                "usd": 0.1,
+                "diem": 0.1
+              }
+            }
+          },
+          "upscale": {
+            "2x": {
+              "usd": 0.02,
+              "diem": 0.02
+            },
+            "4x": {
+              "usd": 0.08,
+              "diem": 0.08
+            }
+          }
+        },
+        "model_sets": [
+          "venice_recommendations",
+          "featured"
+        ],
+        "constraints": {
+          "promptCharacterLimit": 7500,
+          "defaultResolution": "1K",
+          "resolutions": [
+            "1K",
+            "2K"
+          ],
+          "defaultQuality": "medium",
+          "qualities": [
+            "low",
+            "medium"
+          ],
+          "aspectRatios": [
+            "1:1",
+            "16:9",
+            "9:16",
+            "3:4",
+            "3:2",
+            "2:3"
+          ],
+          "defaultAspectRatio": "1:1",
+          "steps": {
+            "default": 20,
+            "max": 50
+          },
+          "widthHeightDivisor": 1
+        },
+        "supportsWebSearch": false,
+        "supportsOptimizePromptThinking": false,
+        "supportsStyleReferences": false,
+        "name": "Grok Imagine 2.0",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -9918,8 +10009,7 @@
           "photorealistic",
           "high_resolution",
           "venice_recommendations",
-          "featured",
-          "fast"
+          "featured"
         ],
         "name": "Grok Imagine 1.5",
         "offline": false,
@@ -10308,6 +10398,195 @@
       "type": "video",
       "pricing": {
         "base_price_usd": 2.11
+      }
+    },
+    {
+      "created": 1786406400,
+      "id": "ltx-2-5-fast-image-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [
+            "auto",
+            "16:9",
+            "9:16"
+          ],
+          "resolutions": [
+            "720p",
+            "1080p",
+            "1440p",
+            "2160p"
+          ],
+          "durations": [
+            "6s",
+            "8s",
+            "10s",
+            "12s",
+            "14s",
+            "16s",
+            "18s",
+            "20s"
+          ],
+          "audio": true,
+          "audio_configurable": true,
+          "audio_input": false,
+          "per_reference_audio": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "high_resolution",
+          "ultra_high_resolution",
+          "audio",
+          "long_duration",
+          "open_source"
+        ],
+        "name": "LTX Video 2.5 Fast",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 1.98
+      }
+    },
+    {
+      "created": 1786406400,
+      "id": "ltx-2-5-fast-text-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "text-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "9:16"
+          ],
+          "resolutions": [
+            "720p",
+            "1080p",
+            "1440p",
+            "2160p"
+          ],
+          "durations": [
+            "6s",
+            "8s",
+            "10s",
+            "12s",
+            "14s",
+            "16s",
+            "18s",
+            "20s"
+          ],
+          "audio": true,
+          "audio_configurable": true,
+          "audio_input": false,
+          "per_reference_audio": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "high_resolution",
+          "ultra_high_resolution",
+          "audio",
+          "long_duration",
+          "open_source"
+        ],
+        "name": "LTX Video 2.5 Fast",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 1.98
+      }
+    },
+    {
+      "created": 1786406400,
+      "id": "ltx-2-5-pro-image-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [
+            "auto",
+            "16:9",
+            "9:16"
+          ],
+          "resolutions": [
+            "720p",
+            "1080p"
+          ],
+          "durations": [
+            "6s",
+            "8s",
+            "10s"
+          ],
+          "audio": true,
+          "audio_configurable": true,
+          "audio_input": false,
+          "per_reference_audio": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "high_resolution",
+          "audio",
+          "open_source",
+          "fast"
+        ],
+        "name": "LTX Video 2.5 Pro",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 1.12
+      }
+    },
+    {
+      "created": 1786406400,
+      "id": "ltx-2-5-pro-text-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "text-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "9:16"
+          ],
+          "resolutions": [
+            "720p",
+            "1080p"
+          ],
+          "durations": [
+            "6s",
+            "8s",
+            "10s"
+          ],
+          "audio": true,
+          "audio_configurable": true,
+          "audio_input": false,
+          "per_reference_audio": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "high_resolution",
+          "audio",
+          "open_source"
+        ],
+        "name": "LTX Video 2.5 Pro",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 1.12
       }
     },
     {
@@ -15032,6 +15311,89 @@
         },
         "supportsOptimizePromptThinking": false,
         "name": "Grok Imagine High Quality",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "inpaint"
+    },
+    {
+      "created": 1786406400,
+      "id": "grok-imagine-image-2-0-edit",
+      "model_spec": {
+        "pricing": {
+          "inpaint": {
+            "usd": 0.07,
+            "diem": 0.07
+          },
+          "resolutions": {
+            "1K": {
+              "usd": 0.07,
+              "diem": 0.07
+            },
+            "2K": {
+              "usd": 0.1,
+              "diem": 0.1
+            }
+          },
+          "inputImages": {
+            "included": 0,
+            "additional": {
+              "usd": 0.011500000000000002,
+              "diem": 0.011500000000000002
+            }
+          },
+          "quality": {
+            "1K": {
+              "low": {
+                "usd": 0.05,
+                "diem": 0.05
+              },
+              "medium": {
+                "usd": 0.07,
+                "diem": 0.07
+              }
+            },
+            "2K": {
+              "low": {
+                "usd": 0.07,
+                "diem": 0.07
+              },
+              "medium": {
+                "usd": 0.1,
+                "diem": 0.1
+              }
+            }
+          }
+        },
+        "constraints": {
+          "aspectRatios": [
+            "auto",
+            "1:1",
+            "16:9",
+            "9:16",
+            "3:4",
+            "3:2",
+            "2:3"
+          ],
+          "promptCharacterLimit": 7500,
+          "combineImages": true,
+          "singleImageAspectRatio": true,
+          "defaultResolution": "1K",
+          "resolutions": [
+            "1K",
+            "2K"
+          ],
+          "defaultQuality": "medium",
+          "qualities": [
+            "low",
+            "medium"
+          ]
+        },
+        "supportsOptimizePromptThinking": false,
+        "name": "Grok Imagine 2.0",
         "offline": false,
         "privacy": "private",
         "traits": []
