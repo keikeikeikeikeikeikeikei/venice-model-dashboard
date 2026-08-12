@@ -812,7 +812,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-08-12 14:34)</div>
+            <div class="meta">Generated from Live API Data (2026-08-13 04:05)</div>
         </header>
 
         <div class="controls">
@@ -2752,6 +2752,78 @@
         },
         "description": "Grok 4.5 is xAI's intelligent coding model for agentic software engineering and workflow tasks, with function calling, structured outputs, and a 500K-token context window.",
         "name": "Grok 4.5",
+        "modelSource": "https://docs.x.ai/developers/models",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 500000,
+      "created": 1786320000,
+      "id": "grok-4-6",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 2.27,
+            "diem": 2.27
+          },
+          "cache_input": {
+            "usd": 0.57,
+            "diem": 0.57
+          },
+          "output": {
+            "usd": 6.8,
+            "diem": 6.8
+          },
+          "extended": {
+            "context_token_threshold": 200000,
+            "input": {
+              "usd": 4.53,
+              "diem": 4.53
+            },
+            "output": {
+              "usd": 13.6,
+              "diem": 13.6
+            },
+            "cache_input": {
+              "usd": 1.13,
+              "diem": 1.13
+            }
+          }
+        },
+        "availableContextTokens": 500000,
+        "maxCompletionTokens": 200000,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": true,
+          "reasoningEffortOptions": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "defaultReasoningEffort": "high",
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": true
+        },
+        "description": "Grok 4.6 is xAI's multimodal chat and reasoning model with function calling, structured outputs, adjustable reasoning effort (low/medium/high/xhigh), and a 500K-token context window.",
+        "name": "Grok 4.6",
         "modelSource": "https://docs.x.ai/developers/models",
         "offline": false,
         "privacy": "private",
@@ -9074,8 +9146,7 @@
           "audio",
           "long_duration",
           "cinematic",
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "name": "Seedance 1.5 Pro",
         "offline": false,
@@ -13191,7 +13262,8 @@
           "audio",
           "long_duration",
           "cinematic",
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Gemini Omni Flash",
         "offline": false,
