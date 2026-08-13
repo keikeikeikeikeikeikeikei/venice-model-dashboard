@@ -706,6 +706,56 @@
       "type": "text"
     },
     {
+      "context_length": 262144,
+      "created": 1786492800,
+      "id": "qwen-3-8-2-4t-a95b",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 2.5,
+            "diem": 2.5
+          },
+          "cache_input": {
+            "usd": 0.3125,
+            "diem": 0.3125
+          },
+          "output": {
+            "usd": 7.5,
+            "diem": 7.5
+          }
+        },
+        "availableContextTokens": 262144,
+        "maxCompletionTokens": 65536,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": false,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": false,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Qwen 3.8 2.4T is Alibaba's open-weight 2.4-trillion-parameter MoE model (95B active), with major gains in software engineering, research, and long-horizon agentic tasks. It is text-only, requires thinking mode, and supports a 262K-token context window.",
+        "name": "Qwen 3.8 2.4T",
+        "modelSource": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
       "context_length": 1000000,
       "created": 1784678400,
       "id": "qwen-3-8-max",
@@ -5342,6 +5392,52 @@
         "description": "NVIDIA Nemotron 3 Nano 30B is a compact and efficient language model from NVIDIA, optimized for fast inference while maintaining strong performance across diverse tasks.",
         "name": "NVIDIA Nemotron 3 Nano 30B",
         "modelSource": "https://huggingface.co/nvidia/Nemotron-3-Nano-30B-A3B",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 1000000,
+      "created": 1786492800,
+      "id": "nvidia-nemotron-3-5-lightning-30b-a3b",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 0.1,
+            "diem": 0.1
+          },
+          "output": {
+            "usd": 0.25,
+            "diem": 0.25
+          }
+        },
+        "availableContextTokens": 1000000,
+        "maxCompletionTokens": 32768,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "fp4",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "NVIDIA Nemotron 3.5 Lightning is a hybrid Mixture-of-Experts model with 30B total and 3B active parameters, optimized for fast inference, agentic workflows, and coding with up to 1M token context.",
+        "name": "NVIDIA Nemotron 3.5 Lightning 30B",
+        "modelSource": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
         "offline": false,
         "privacy": "private",
         "traits": []
@@ -10370,7 +10466,8 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.3 Fast",
         "offline": false,
@@ -12420,8 +12517,7 @@
           "audio",
           "long_duration",
           "cinematic",
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "name": "Gemini Omni Flash",
         "offline": false,

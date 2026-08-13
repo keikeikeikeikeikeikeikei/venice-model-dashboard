@@ -812,7 +812,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-08-13 04:05)</div>
+            <div class="meta">Generated from Live API Data (2026-08-13 11:19)</div>
         </header>
 
         <div class="controls">
@@ -843,7 +843,7 @@
                             <select id="minContext" onchange="renderTable()">
                                 <option value="0">Any</option>
                                 <option value="128000">125k+</option>
-                                <option value="159744">156k+</option>
+                                <option value="197632">193k+</option>
                                 <option value="256000">250k+</option>
                                 <option value="1000448">977k+</option>
                                 <option value="1999872">1.9M+</option>
@@ -1581,6 +1581,56 @@
         "description": "Optimized for creative roleplay scenarios with maximum freedom. Designed for immersive storytelling, character interactions, and open-ended creative writing.",
         "name": "Venice Role Play Uncensored",
         "modelSource": "https://huggingface.co/dphnAI/24B-3.2-RP-K2-final",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 262144,
+      "created": 1786492800,
+      "id": "qwen-3-8-2-4t-a95b",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 2.5,
+            "diem": 2.5
+          },
+          "cache_input": {
+            "usd": 0.3125,
+            "diem": 0.3125
+          },
+          "output": {
+            "usd": 7.5,
+            "diem": 7.5
+          }
+        },
+        "availableContextTokens": 262144,
+        "maxCompletionTokens": 65536,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": false,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": false,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Qwen 3.8 2.4T is Alibaba's open-weight 2.4-trillion-parameter MoE model (95B active), with major gains in software engineering, research, and long-horizon agentic tasks. It is text-only, requires thinking mode, and supports a 262K-token context window.",
+        "name": "Qwen 3.8 2.4T",
+        "modelSource": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
         "offline": false,
         "privacy": "private",
         "traits": []
@@ -6226,6 +6276,52 @@
         "description": "NVIDIA Nemotron 3 Nano 30B is a compact and efficient language model from NVIDIA, optimized for fast inference while maintaining strong performance across diverse tasks.",
         "name": "NVIDIA Nemotron 3 Nano 30B",
         "modelSource": "https://huggingface.co/nvidia/Nemotron-3-Nano-30B-A3B",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 1000000,
+      "created": 1786492800,
+      "id": "nvidia-nemotron-3-5-lightning-30b-a3b",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 0.1,
+            "diem": 0.1
+          },
+          "output": {
+            "usd": 0.25,
+            "diem": 0.25
+          }
+        },
+        "availableContextTokens": 1000000,
+        "maxCompletionTokens": 32768,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "fp4",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "NVIDIA Nemotron 3.5 Lightning is a hybrid Mixture-of-Experts model with 30B total and 3B active parameters, optimized for fast inference, agentic workflows, and coding with up to 1M token context.",
+        "name": "NVIDIA Nemotron 3.5 Lightning 30B",
+        "modelSource": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
         "offline": false,
         "privacy": "private",
         "traits": []
@@ -11254,7 +11350,8 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.3 Fast",
         "offline": false,
@@ -13304,8 +13401,7 @@
           "audio",
           "long_duration",
           "cinematic",
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "name": "Gemini Omni Flash",
         "offline": false,
