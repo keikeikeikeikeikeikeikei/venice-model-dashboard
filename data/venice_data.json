@@ -50,6 +50,57 @@
     },
     {
       "context_length": 1000000,
+      "created": 1786665600,
+      "id": "gemini-3-7-flash",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 1.875,
+            "diem": 1.875
+          },
+          "cache_input": {
+            "usd": 0.1875,
+            "diem": 0.1875
+          },
+          "output": {
+            "usd": 9.375,
+            "diem": 9.375
+          }
+        },
+        "model_sets": [
+          "venice_recommendations"
+        ],
+        "availableContextTokens": 1000000,
+        "maxCompletionTokens": 65536,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "not-available",
+          "supportsAudioInput": true,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": true,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Gemini 3.7 Flash is Google's most capable Flash model, built for complex coding, agentic workflows, and reliable multi-step execution, with 1M context and tunable thinking.",
+        "name": "Gemini 3.7 Flash",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 1000000,
       "created": 1783555200,
       "id": "gemini-3-5-flash-lite",
       "model_spec": {
@@ -731,7 +782,7 @@
           "optimizedForCode": true,
           "quantization": "not-available",
           "supportsAudioInput": false,
-          "supportsFunctionCalling": false,
+          "supportsFunctionCalling": true,
           "supportsLogProbs": false,
           "supportsMultipleImages": false,
           "supportsReasoning": true,
@@ -3345,14 +3396,7 @@
           "supportsMultipleImages": true,
           "maxImages": 10,
           "supportsReasoning": true,
-          "supportsReasoningEffort": true,
-          "reasoningEffortOptions": [
-            "none",
-            "low",
-            "medium",
-            "high"
-          ],
-          "defaultReasoningEffort": "high",
+          "supportsReasoningEffort": false,
           "supportsResponseSchema": true,
           "supportsTeeAttestation": false,
           "supportsE2EE": false,
@@ -10231,7 +10275,8 @@
           "long_duration",
           "photorealistic",
           "high_resolution",
-          "venice_recommendations"
+          "venice_recommendations",
+          "fast"
         ],
         "name": "Grok Imagine 1.5",
         "offline": false,
@@ -12516,7 +12561,8 @@
           "audio",
           "long_duration",
           "cinematic",
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Gemini Omni Flash",
         "offline": false,
@@ -12945,8 +12991,7 @@
         "model_sets": [
           "high_resolution",
           "audio",
-          "cinematic",
-          "fast"
+          "cinematic"
         ],
         "name": "PixVerse v5.6",
         "offline": false,
@@ -13480,8 +13525,7 @@
         "model_sets": [
           "fast",
           "cinematic",
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "name": "Runway Gen-4 Turbo",
         "offline": false,
