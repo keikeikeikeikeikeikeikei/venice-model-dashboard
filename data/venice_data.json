@@ -483,7 +483,8 @@
         "modelSource": "https://huggingface.co/Olafangensan/GLM-4.7-Flash-heretic",
         "offline": false,
         "privacy": "private",
-        "traits": []
+        "traits": [],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -704,7 +705,8 @@
         "privacy": "private",
         "traits": [
           "most_uncensored"
-        ]
+        ],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -750,7 +752,8 @@
         "modelSource": "https://huggingface.co/dphnAI/24B-3.2-RP-K2-final",
         "offline": false,
         "privacy": "private",
-        "traits": []
+        "traits": [],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -1080,7 +1083,8 @@
         "modelSource": "https://www.alibabacloud.com/blog/qwen3-6-plus-towards-real-world-agents_603005",
         "offline": false,
         "privacy": "anonymized",
-        "traits": []
+        "traits": [],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -1780,7 +1784,8 @@
         "modelSource": "https://huggingface.co/Jiunsong/supergemma4-26b-uncensored-gguf-v2",
         "offline": false,
         "privacy": "private",
-        "traits": []
+        "traits": [],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -4057,7 +4062,8 @@
         "modelSource": "https://openrouter.ai/aion-labs/aion-3.0",
         "offline": false,
         "privacy": "anonymized",
-        "traits": []
+        "traits": [],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -4112,7 +4118,8 @@
         "modelSource": "https://openrouter.ai/aion-labs/aion-3.0-mini",
         "offline": false,
         "privacy": "anonymized",
-        "traits": []
+        "traits": [],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -5682,7 +5689,8 @@
         "modelSource": "https://www.redpill.ai/models/phala/gemma-4-26b-a4b-uncensored",
         "offline": false,
         "privacy": "private",
-        "traits": []
+        "traits": [],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -5933,7 +5941,8 @@
         "modelSource": "https://www.redpill.ai/models/phala/qwen3.6-35b-a3b-uncensored",
         "offline": false,
         "privacy": "private",
-        "traits": []
+        "traits": [],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -6493,7 +6502,8 @@
         "name": "Krea 2 Turbo",
         "offline": false,
         "privacy": "private",
-        "traits": []
+        "traits": [],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -7471,7 +7481,8 @@
         "name": "Seedream V4.5",
         "offline": false,
         "privacy": "anonymized",
-        "traits": []
+        "traits": [],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -7522,7 +7533,8 @@
         "name": "Seedream V5 Lite",
         "offline": false,
         "privacy": "anonymized",
-        "traits": []
+        "traits": [],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -7585,7 +7597,8 @@
         "name": "Seedream V5 Pro",
         "offline": false,
         "privacy": "anonymized",
-        "traits": []
+        "traits": [],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -7893,7 +7906,8 @@
         "modelSource": "https://civitai.com/models/573152/lustify-sdxl-nsfw-checkpoint",
         "offline": false,
         "privacy": "private",
-        "traits": []
+        "traits": [],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -7939,7 +7953,8 @@
         "privacy": "private",
         "traits": [
           "most_uncensored"
-        ]
+        ],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -7985,7 +8000,8 @@
         "privacy": "private",
         "traits": [
           "most_uncensored"
-        ]
+        ],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -8083,7 +8099,8 @@
         "modelSource": "https://civitai.com/models/827184?modelVersionId=1761560",
         "offline": false,
         "privacy": "private",
-        "traits": []
+        "traits": [],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -8175,7 +8192,8 @@
         "modelSource": "https://huggingface.co/lodestones/Chroma1-HD",
         "offline": false,
         "privacy": "private",
-        "traits": []
+        "traits": [],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -8241,7 +8259,8 @@
         "modelSource": "https://www.alibabacloud.com/help/en/model-studio/models",
         "offline": false,
         "privacy": "anonymized",
-        "traits": []
+        "traits": [],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -8307,7 +8326,8 @@
         "modelSource": "https://www.alibabacloud.com/help/en/model-studio/models",
         "offline": false,
         "privacy": "anonymized",
-        "traits": []
+        "traits": [],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -8403,7 +8423,8 @@
         ],
         "name": "Seedance 1.5 Pro",
         "offline": false,
-        "traits": []
+        "traits": [],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -8456,7 +8477,8 @@
         ],
         "name": "Seedance 1.5 Pro",
         "offline": false,
-        "traits": []
+        "traits": [],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -9240,7 +9262,8 @@
         ],
         "name": "Wan 2.7",
         "offline": false,
-        "traits": []
+        "traits": [],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -9282,7 +9305,8 @@
         ],
         "name": "Wan 2.7",
         "offline": false,
-        "traits": []
+        "traits": [],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -9322,7 +9346,8 @@
         ],
         "name": "Wan 2.7 Reference",
         "offline": false,
-        "traits": []
+        "traits": [],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -9360,7 +9385,8 @@
         ],
         "name": "Wan 2.7 Edit",
         "offline": false,
-        "traits": []
+        "traits": [],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -9399,7 +9425,8 @@
         ],
         "name": "Wan 2.7 Enhanced",
         "offline": false,
-        "traits": []
+        "traits": [],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -9446,7 +9473,8 @@
         ],
         "name": "Wan 2.7 Enhanced",
         "offline": false,
-        "traits": []
+        "traits": [],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -9837,7 +9865,8 @@
         ],
         "name": "Wan 2.6",
         "offline": false,
-        "traits": []
+        "traits": [],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -9878,7 +9907,8 @@
         ],
         "name": "Wan 2.6 Flash",
         "offline": false,
-        "traits": []
+        "traits": [],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -9923,7 +9953,8 @@
         ],
         "name": "Wan 2.6",
         "offline": false,
-        "traits": []
+        "traits": [],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -9963,7 +9994,8 @@
         ],
         "name": "Wan 2.5 Preview",
         "offline": false,
-        "traits": []
+        "traits": [],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -10007,7 +10039,8 @@
         ],
         "name": "Wan 2.5 Preview",
         "offline": false,
-        "traits": []
+        "traits": [],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -10432,7 +10465,8 @@
         ],
         "name": "Wan 2.2 A14B",
         "offline": false,
-        "traits": []
+        "traits": [],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -10467,7 +10501,8 @@
         ],
         "name": "Wan 2.1 Pro",
         "offline": false,
-        "traits": []
+        "traits": [],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -10701,7 +10736,8 @@
           "ultra_high_resolution",
           "audio",
           "long_duration",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.5 Fast",
         "offline": false,
@@ -10876,7 +10912,8 @@
         "name": "Ovi",
         "modelSource": "https://huggingface.co/chetwinlow1/Ovi",
         "offline": false,
-        "traits": []
+        "traits": [],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -12068,7 +12105,8 @@
         "name": "Longcat Distilled",
         "modelSource": "https://huggingface.co/meituan-longcat/LongCat-Video",
         "offline": false,
-        "traits": []
+        "traits": [],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -12113,7 +12151,8 @@
         "name": "Longcat Distilled",
         "modelSource": "https://huggingface.co/meituan-longcat/LongCat-Video",
         "offline": false,
-        "traits": []
+        "traits": [],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -12154,7 +12193,8 @@
         "name": "Longcat Full Quality",
         "modelSource": "https://huggingface.co/meituan-longcat/LongCat-Video",
         "offline": false,
-        "traits": []
+        "traits": [],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -12199,7 +12239,8 @@
         "name": "Longcat Full Quality",
         "modelSource": "https://huggingface.co/meituan-longcat/LongCat-Video",
         "offline": false,
-        "traits": []
+        "traits": [],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -13179,8 +13220,7 @@
           "high_resolution",
           "audio",
           "cinematic",
-          "long_duration",
-          "fast"
+          "long_duration"
         ],
         "name": "PixVerse C1",
         "offline": false,
@@ -13670,7 +13710,8 @@
         ],
         "name": "MiniMax H3 Enhanced",
         "offline": false,
-        "traits": []
+        "traits": [],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -13731,7 +13772,8 @@
         ],
         "name": "MiniMax H3 R2V Enhanced",
         "offline": false,
-        "traits": []
+        "traits": [],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -13788,7 +13830,8 @@
         ],
         "name": "MiniMax H3",
         "offline": false,
-        "traits": []
+        "traits": [],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -13841,7 +13884,8 @@
         ],
         "name": "MiniMax H3",
         "offline": false,
-        "traits": []
+        "traits": [],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -13901,7 +13945,8 @@
         ],
         "name": "MiniMax H3 R2V",
         "offline": false,
-        "traits": []
+        "traits": [],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -13987,7 +14032,8 @@
         "modelSource": "",
         "offline": false,
         "privacy": "anonymized",
-        "traits": []
+        "traits": [],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -14083,7 +14129,8 @@
         "modelSource": "",
         "offline": false,
         "privacy": "anonymized",
-        "traits": []
+        "traits": [],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -15463,7 +15510,8 @@
         "name": "Qwen Edit Uncensored",
         "offline": false,
         "privacy": "private",
-        "traits": []
+        "traits": [],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -16217,7 +16265,8 @@
         "name": "Seedream V5 Lite",
         "offline": false,
         "privacy": "anonymized",
-        "traits": []
+        "traits": [],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -16274,7 +16323,8 @@
         "name": "Seedream V5 Pro",
         "offline": false,
         "privacy": "anonymized",
-        "traits": []
+        "traits": [],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -16310,7 +16360,8 @@
         "name": "Seedream V4.5",
         "offline": false,
         "privacy": "anonymized",
-        "traits": []
+        "traits": [],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -16369,7 +16420,8 @@
         "name": "Qwen Image 3 Edit",
         "offline": false,
         "privacy": "anonymized",
-        "traits": []
+        "traits": [],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -16428,7 +16480,8 @@
         "name": "Qwen Image 3 Pro Edit",
         "offline": false,
         "privacy": "anonymized",
-        "traits": []
+        "traits": [],
+        "uncensored": true
       },
       "object": "model",
       "owned_by": "venice.ai",
