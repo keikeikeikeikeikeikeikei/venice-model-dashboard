@@ -812,7 +812,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-08-14 08:46)</div>
+            <div class="meta">Generated from Live API Data (2026-08-14 20:48)</div>
         </header>
 
         <div class="controls">
@@ -4728,6 +4728,56 @@
         "modelSource": "https://console.byteplus.com/ark/region:ark+ap-southeast-1/model/detail?Id=dola-seed-2-1-turbo",
         "offline": false,
         "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 1000000,
+      "created": 1786665600,
+      "id": "deepseek-v4-pro-0813",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 1.73,
+            "diem": 1.73
+          },
+          "cache_input": {
+            "usd": 0.33,
+            "diem": 0.33
+          },
+          "output": {
+            "usd": 4.95,
+            "diem": 4.95
+          }
+        },
+        "availableContextTokens": 1000000,
+        "maxCompletionTokens": 32768,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "DeepSeek V4 Pro is a 1.6T-parameter Mixture-of-Experts model with 49B active parameters and a 1M-token context window. Built for advanced reasoning, coding, and long-horizon agentic workflows with a hybrid attention system for efficient long-context processing.",
+        "name": "DeepSeek V4 Pro 0813",
+        "modelSource": "https://app.baseten.co/model-apis/deepseek-ai/DeepSeek-V4-Pro-0813",
+        "offline": false,
+        "privacy": "private",
         "traits": []
       },
       "object": "model",
@@ -11104,7 +11154,8 @@
           "photorealistic",
           "high_resolution",
           "venice_recommendations",
-          "featured"
+          "featured",
+          "fast"
         ],
         "name": "Grok Imagine 1.5",
         "offline": false,
@@ -11159,8 +11210,7 @@
           "long_duration",
           "photorealistic",
           "high_resolution",
-          "venice_recommendations",
-          "fast"
+          "venice_recommendations"
         ],
         "name": "Grok Imagine 1.5",
         "offline": false,
@@ -11629,8 +11679,7 @@
         "model_sets": [
           "high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.5 Pro",
         "offline": false,
@@ -14409,7 +14458,8 @@
         "model_sets": [
           "fast",
           "cinematic",
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Runway Gen-4 Turbo",
         "offline": false,
