@@ -812,7 +812,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-08-15 06:33)</div>
+            <div class="meta">Generated from Live API Data (2026-08-15 13:09)</div>
         </header>
 
         <div class="controls">
@@ -10368,6 +10368,45 @@
       }
     },
     {
+      "created": 1786665600,
+      "id": "wan-2-2-enhanced-image-to-video",
+      "model_spec": {
+        "betaModel": true,
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [],
+          "resolutions": [
+            "720p",
+            "480p"
+          ],
+          "durations": [
+            "5s",
+            "8s"
+          ],
+          "audio": false,
+          "audio_configurable": false,
+          "audio_input": false,
+          "per_reference_audio": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "uncensored",
+          "open_source"
+        ],
+        "name": "Wan 2.2 Enhanced",
+        "offline": false,
+        "traits": [],
+        "uncensored": true
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.2
+      }
+    },
+    {
       "created": 1782086400,
       "id": "happyhorse-1-1-text-to-video",
       "model_spec": {
@@ -10833,7 +10872,8 @@
           "high_resolution",
           "audio",
           "long_duration",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "Wan 2.6",
         "offline": false,
@@ -11187,8 +11227,7 @@
           "photorealistic",
           "high_resolution",
           "venice_recommendations",
-          "featured",
-          "fast"
+          "featured"
         ],
         "name": "Grok Imagine 1.5",
         "offline": false,
@@ -11620,8 +11659,7 @@
           "ultra_high_resolution",
           "audio",
           "long_duration",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.5 Fast",
         "offline": false,
@@ -14104,7 +14142,8 @@
           "high_resolution",
           "audio",
           "cinematic",
-          "long_duration"
+          "long_duration",
+          "fast"
         ],
         "name": "PixVerse C1",
         "offline": false,
