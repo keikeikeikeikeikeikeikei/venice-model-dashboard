@@ -9025,6 +9025,7 @@
             "9:16"
           ],
           "resolutions": [
+            "1080p",
             "720p",
             "480p"
           ],
@@ -9065,6 +9066,7 @@
           "prompt_character_limit": 15000
         },
         "model_sets": [
+          "high_resolution",
           "audio",
           "long_duration",
           "cinematic",
@@ -9090,6 +9092,7 @@
           "model_type": "image-to-video",
           "aspect_ratios": [],
           "resolutions": [
+            "1080p",
             "720p",
             "480p"
           ],
@@ -9133,6 +9136,7 @@
           "reference_image_max_aspect_ratio": 2.5
         },
         "model_sets": [
+          "high_resolution",
           "audio",
           "long_duration",
           "cinematic",
@@ -9165,6 +9169,7 @@
             "9:16"
           ],
           "resolutions": [
+            "1080p",
             "720p",
             "480p"
           ],
@@ -9208,6 +9213,7 @@
           "reference_image_max_aspect_ratio": 2.5
         },
         "model_sets": [
+          "high_resolution",
           "audio",
           "long_duration",
           "cinematic",
@@ -10342,7 +10348,8 @@
           "photorealistic",
           "high_resolution",
           "venice_recommendations",
-          "featured"
+          "featured",
+          "fast"
         ],
         "name": "Grok Imagine 1.5",
         "offline": false,
@@ -10775,8 +10782,7 @@
           "ultra_high_resolution",
           "audio",
           "long_duration",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.5 Fast",
         "offline": false,
