@@ -5884,7 +5884,6 @@
           "supportsReasoning": true,
           "supportsReasoningEffort": true,
           "reasoningEffortOptions": [
-            "none",
             "low",
             "medium",
             "high"
