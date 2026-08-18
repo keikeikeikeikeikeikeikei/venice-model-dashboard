@@ -812,7 +812,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-08-17 23:35)</div>
+            <div class="meta">Generated from Live API Data (2026-08-18 12:43)</div>
         </header>
 
         <div class="controls">
@@ -1745,6 +1745,60 @@
         "modelSource": "https://www.alibabacloud.com/help/en/model-studio/models",
         "offline": false,
         "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 262144,
+      "created": 1786924800,
+      "id": "qwen-3-8-27b",
+      "model_spec": {
+        "betaModel": true,
+        "pricing": {
+          "input": {
+            "usd": 0.45,
+            "diem": 0.45
+          },
+          "output": {
+            "usd": 3.2,
+            "diem": 3.2
+          }
+        },
+        "availableContextTokens": 262144,
+        "maxCompletionTokens": 65536,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "fp8",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": true,
+          "reasoningEffortOptions": [
+            "none",
+            "low",
+            "medium",
+            "xhigh"
+          ],
+          "defaultReasoningEffort": "xhigh",
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": true,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Qwen 3.8 27B is a native vision-language dense model with 27B parameters. It improves coding, professional work, research, and long-horizon agentic tasks, with flexible thinking control and image and video understanding. It supports a native 262K-token context window.",
+        "name": "Qwen 3.8 27B",
+        "modelSource": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8",
+        "offline": false,
+        "privacy": "private",
         "traits": []
       },
       "object": "model",
@@ -13538,8 +13592,7 @@
           "audio",
           "long_duration",
           "cinematic",
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "name": "Gemini Omni Flash",
         "offline": false,
@@ -13622,7 +13675,8 @@
           "audio",
           "long_duration",
           "cinematic",
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Gemini Omni Flash R2V",
         "offline": false,
