@@ -149,10 +149,64 @@
     },
     {
       "context_length": 1000000,
+      "created": 1787011200,
+      "id": "z-ai-glm-5-3",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 1.75,
+            "diem": 1.75
+          },
+          "cache_input": {
+            "usd": 0.325,
+            "diem": 0.325
+          },
+          "output": {
+            "usd": 5.5,
+            "diem": 5.5
+          }
+        },
+        "availableContextTokens": 1000000,
+        "maxCompletionTokens": 131072,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": true,
+          "reasoningEffortOptions": [
+            "low",
+            "high",
+            "max"
+          ],
+          "defaultReasoningEffort": "max",
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "GLM-5.3 is a large-scale reasoning model from Z.ai, built for complex software engineering and long-horizon agent tasks. It supports text input and output with a 1M-token context window, and improves on GLM-5.2 in coding and in the balance between performance and token efficiency.",
+        "name": "GLM 5.3",
+        "modelSource": "https://openrouter.ai/z-ai/glm-5.3",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 1000000,
       "created": 1781568000,
       "id": "zai-org-glm-5-2",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 1.4,
@@ -211,7 +265,6 @@
       "created": 1775520000,
       "id": "zai-org-glm-5-1",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 1.54,
@@ -380,7 +433,6 @@
       "created": 1775001600,
       "id": "z-ai-glm-5v-turbo",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 1.5,
@@ -764,7 +816,6 @@
       "created": 1786492800,
       "id": "qwen-3-8-2-4t-a95b",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 2.5,
@@ -814,7 +865,6 @@
       "created": 1784678400,
       "id": "qwen-3-8-max",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 2.5,
@@ -926,7 +976,6 @@
       "created": 1779408000,
       "id": "qwen-3-7-max",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 2.7,
@@ -981,7 +1030,6 @@
       "created": 1780358400,
       "id": "qwen-3-7-plus",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 0.5,
@@ -1066,7 +1114,6 @@
       "created": 1775433600,
       "id": "qwen-3-6-plus",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 0.625,
@@ -1371,7 +1418,6 @@
       "created": 1771977600,
       "id": "qwen3-5-35b-a3b",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 0.3125,
@@ -1635,7 +1681,6 @@
       "created": 1769472000,
       "id": "qwen3-coder-480b-a35b-instruct-turbo",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 0.35,
@@ -2244,7 +2289,6 @@
       "created": 1779321600,
       "id": "grok-build-0-1",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 1,
@@ -2355,7 +2399,6 @@
       "created": 1773619200,
       "id": "mistral-small-2603",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 0.1875,
@@ -2770,7 +2813,6 @@
       "created": 1784764800,
       "id": "claude-opus-5-fast",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 12,
@@ -2879,7 +2921,6 @@
       "created": 1779926400,
       "id": "claude-opus-4-8-fast",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 12,
@@ -2988,7 +3029,6 @@
       "created": 1770249600,
       "id": "claude-opus-4-6",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 6,
@@ -3097,7 +3137,6 @@
       "created": 1782691200,
       "id": "claude-sonnet-5",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 3,
@@ -3152,7 +3191,6 @@
       "created": 1771286400,
       "id": "claude-sonnet-4-6",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 3.6,
@@ -3373,7 +3411,6 @@
       "created": 1781308800,
       "id": "kimi-k2-7-code",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 0.75,
@@ -3480,7 +3517,6 @@
       "created": 1784160000,
       "id": "kimi-k3",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 3.75,
@@ -3534,7 +3570,6 @@
       "created": 1784160000,
       "id": "inkling",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 1.25,
@@ -3862,7 +3897,6 @@
       "created": 1782604800,
       "id": "seed-2-1-turbo",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 0.625,
@@ -3914,7 +3948,6 @@
       "created": 1786665600,
       "id": "deepseek-v4-pro-0813",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 1.73,
@@ -3964,7 +3997,6 @@
       "created": 1785715200,
       "id": "kimi-k3-fast-api",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 4.5,
@@ -4015,7 +4047,6 @@
       "created": 1786233600,
       "id": "deepseek-v4-flash-0731-fast",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 0.35,
@@ -4387,7 +4418,6 @@
       "created": 1771891200,
       "id": "openai-gpt-53-codex",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 2.19,
@@ -4446,7 +4476,6 @@
       "created": 1772668800,
       "id": "openai-gpt-54",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 3.13,
@@ -4505,7 +4534,6 @@
       "created": 1772668800,
       "id": "openai-gpt-54-pro",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 37.5,
@@ -4571,7 +4599,6 @@
       "created": 1774569600,
       "id": "openai-gpt-54-mini",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 0.9375,
@@ -4630,7 +4657,6 @@
       "created": 1776902400,
       "id": "openai-gpt-55",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 6.25,
@@ -4704,7 +4730,6 @@
       "created": 1776988800,
       "id": "openai-gpt-55-pro",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 37.5,
@@ -4757,7 +4782,6 @@
       "created": 1783555200,
       "id": "openai-gpt-56-luna",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 0.26666667,
@@ -4821,7 +4845,6 @@
       "created": 1783555200,
       "id": "openai-gpt-56-luna-pro",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 1.25,
@@ -4904,7 +4927,6 @@
       "created": 1783555200,
       "id": "openai-gpt-56-terra",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 3.125,
@@ -4968,7 +4990,6 @@
       "created": 1783555200,
       "id": "openai-gpt-56-terra-pro",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 3.125,
@@ -5051,7 +5072,6 @@
       "created": 1783555200,
       "id": "openai-gpt-56-sol",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 6.25,
@@ -5118,7 +5138,6 @@
       "created": 1783555200,
       "id": "openai-gpt-56-sol-pro",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 6.25,
@@ -5297,7 +5316,6 @@
       "created": 1781222400,
       "id": "minimax-m3-preview",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 0.3,
@@ -5457,7 +5475,6 @@
       "created": 1771545600,
       "id": "mercury-2",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 0.3125,
@@ -5514,7 +5531,6 @@
       "created": 1769472000,
       "id": "nvidia-nemotron-3-nano-30b-a3b",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 0.075,
@@ -5662,7 +5678,6 @@
       "created": 1773792000,
       "id": "e2ee-gemma-3-27b-p",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 0.14,
@@ -5708,7 +5723,6 @@
       "created": 1779580800,
       "id": "e2ee-gemma-4-26b-a4b-uncensored-p",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 0.19,
@@ -5755,7 +5769,6 @@
       "created": 1781568000,
       "id": "e2ee-glm-5-2-p",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 1.75,
@@ -5808,7 +5821,6 @@
       "created": 1773792000,
       "id": "e2ee-gpt-oss-20b-p",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 0.05,
@@ -5861,7 +5873,6 @@
       "created": 1773792000,
       "id": "e2ee-gpt-oss-120b-p",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 0.13,
@@ -5913,7 +5924,6 @@
       "created": 1773792000,
       "id": "e2ee-qwen-2-5-7b-p",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 0.05,
@@ -5959,7 +5969,6 @@
       "created": 1779580800,
       "id": "e2ee-qwen3-6-35b-a3b-uncensored-p",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 0.38,
@@ -6006,7 +6015,6 @@
       "created": 1773792000,
       "id": "e2ee-qwen3-vl-30b-a3b-p",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 0.25,
@@ -6052,7 +6060,6 @@
       "created": 1776988800,
       "id": "e2ee-glm-5-1",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 1.1,
@@ -6101,7 +6108,6 @@
       "created": 1779235200,
       "id": "e2ee-qwen3-6-35b-a3b",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 0.182,
@@ -6151,7 +6157,6 @@
       "created": 1783382400,
       "id": "e2ee-qwen3-6-27b",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 0.346,
@@ -6201,7 +6206,6 @@
       "created": 1779235200,
       "id": "e2ee-gemma-4-31b",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 0.139,
@@ -6251,7 +6255,6 @@
       "created": 1783382400,
       "id": "e2ee-deepseek-v4-flash",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "input": {
             "usd": 0.182,
@@ -6839,7 +6842,6 @@
       "created": 1772323200,
       "id": "hunyuan-image-v3",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "generation": {
             "usd": 0.09,
@@ -6992,7 +6994,6 @@
       "created": 1779408000,
       "id": "krea-v2-large",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "generation": {
             "usd": 0.07,
@@ -7043,7 +7044,6 @@
       "created": 1779408000,
       "id": "krea-v2-medium",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "generation": {
             "usd": 0.04,
@@ -9498,7 +9498,6 @@
       "created": 1780444800,
       "id": "wan-2-7-enhanced-text-to-video",
       "model_spec": {
-        "betaModel": true,
         "privacy": "anonymized",
         "constraints": {
           "model_type": "text-to-video",
@@ -9546,7 +9545,6 @@
       "created": 1786665600,
       "id": "wan-2-2-enhanced-image-to-video",
       "model_spec": {
-        "betaModel": true,
         "privacy": "anonymized",
         "constraints": {
           "model_type": "image-to-video",
@@ -11519,7 +11517,6 @@
       "created": 1773014400,
       "id": "kling-o3-pro-reference-to-video",
       "model_spec": {
-        "betaModel": true,
         "privacy": "anonymized",
         "constraints": {
           "model_type": "image-to-video",
@@ -11669,7 +11666,6 @@
       "created": 1773100800,
       "id": "kling-o3-standard-reference-to-video",
       "model_spec": {
-        "betaModel": true,
         "privacy": "anonymized",
         "constraints": {
           "model_type": "image-to-video",
@@ -12707,7 +12703,8 @@
           "audio",
           "long_duration",
           "cinematic",
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Gemini Omni Flash",
         "offline": false,
@@ -12790,8 +12787,7 @@
           "audio",
           "long_duration",
           "cinematic",
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "name": "Gemini Omni Flash R2V",
         "offline": false,
@@ -13763,7 +13759,6 @@
       "created": 1785888000,
       "id": "minimax-h3-enhanced-text-to-video",
       "model_spec": {
-        "betaModel": true,
         "privacy": "anonymized",
         "constraints": {
           "model_type": "text-to-video",
@@ -13822,7 +13817,6 @@
       "created": 1785888000,
       "id": "minimax-h3-enhanced-reference-to-video",
       "model_spec": {
-        "betaModel": true,
         "privacy": "anonymized",
         "constraints": {
           "model_type": "image-to-video",
@@ -15581,7 +15575,6 @@
       "created": 1780531200,
       "id": "qwen-edit-uncensored",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "inpaint": {
             "usd": 0.04,
@@ -16469,7 +16462,6 @@
       "created": 1785888000,
       "id": "qwen-image-3-edit",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "inpaint": {
             "usd": 0.04,
@@ -16529,7 +16521,6 @@
       "created": 1784160000,
       "id": "qwen-image-3-pro-edit",
       "model_spec": {
-        "betaModel": true,
         "pricing": {
           "inpaint": {
             "usd": 0.05,
