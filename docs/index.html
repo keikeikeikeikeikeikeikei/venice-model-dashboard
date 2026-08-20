@@ -812,7 +812,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-08-20 16:51)</div>
+            <div class="meta">Generated from Live API Data (2026-08-21 02:36)</div>
         </header>
 
         <div class="controls">
@@ -6457,52 +6457,6 @@
       "type": "text"
     },
     {
-      "context_length": 1000000,
-      "created": 1786492800,
-      "id": "nvidia-nemotron-3-5-lightning-30b-a3b",
-      "model_spec": {
-        "betaModel": true,
-        "pricing": {
-          "input": {
-            "usd": 0.1,
-            "diem": 0.1
-          },
-          "output": {
-            "usd": 0.25,
-            "diem": 0.25
-          }
-        },
-        "availableContextTokens": 1000000,
-        "maxCompletionTokens": 32768,
-        "capabilities": {
-          "optimizedForCode": true,
-          "quantization": "fp4",
-          "supportsAudioInput": false,
-          "supportsFunctionCalling": true,
-          "supportsLogProbs": false,
-          "supportsMultipleImages": false,
-          "supportsReasoning": true,
-          "supportsReasoningEffort": false,
-          "supportsResponseSchema": true,
-          "supportsTeeAttestation": false,
-          "supportsE2EE": false,
-          "supportsVideoInput": false,
-          "supportsVision": false,
-          "supportsWebSearch": true,
-          "supportsXSearch": false
-        },
-        "description": "NVIDIA Nemotron 3.5 Lightning is a hybrid Mixture-of-Experts model with 30B total and 3B active parameters, optimized for fast inference, agentic workflows, and coding with up to 1M token context.",
-        "name": "NVIDIA Nemotron 3.5 Lightning 30B",
-        "modelSource": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
-        "offline": false,
-        "privacy": "private",
-        "traits": []
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "text"
-    },
-    {
       "context_length": 256000,
       "created": 1780531200,
       "id": "nvidia-nemotron-3-ultra-550b-a55b",
@@ -11077,8 +11031,7 @@
         "model_sets": [
           "audio",
           "long_duration",
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "name": "Grok Imagine",
         "offline": false,
@@ -13673,7 +13626,8 @@
           "audio",
           "long_duration",
           "cinematic",
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Gemini Omni Flash R2V",
         "offline": false,
@@ -16442,7 +16396,7 @@
             "3:4",
             "4:5"
           ],
-          "promptCharacterLimit": 5000,
+          "promptCharacterLimit": 1500,
           "combineImages": true,
           "singleImageAspectRatio": true
         },
