@@ -166,6 +166,9 @@
             "diem": 5.5
           }
         },
+        "model_sets": [
+          "venice_recommendations"
+        ],
         "availableContextTokens": 1000000,
         "maxCompletionTokens": 131072,
         "capabilities": {
@@ -221,9 +224,6 @@
             "diem": 4.4
           }
         },
-        "model_sets": [
-          "venice_recommendations"
-        ],
         "availableContextTokens": 1000000,
         "maxCompletionTokens": 131072,
         "capabilities": {
@@ -254,7 +254,10 @@
         "modelSource": "https://huggingface.co/zai-org/GLM-5.2",
         "offline": false,
         "privacy": "private",
-        "traits": []
+        "traits": [
+          "default",
+          "function_calling_default"
+        ]
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -702,11 +705,7 @@
         "modelSource": "https://huggingface.co/zai-org/GLM-4.7",
         "offline": false,
         "privacy": "private",
-        "traits": [
-          "default",
-          "most_intelligent",
-          "function_calling_default"
-        ]
+        "traits": []
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -965,7 +964,9 @@
         "modelSource": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8",
         "offline": false,
         "privacy": "private",
-        "traits": []
+        "traits": [
+          "default_vision"
+        ]
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -1526,9 +1527,7 @@
         "modelSource": "https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507-FP8",
         "offline": false,
         "privacy": "private",
-        "traits": [
-          "default_reasoning"
-        ]
+        "traits": []
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -1668,9 +1667,7 @@
         "modelSource": "https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct",
         "offline": false,
         "privacy": "private",
-        "traits": [
-          "default_vision"
-        ]
+        "traits": []
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -1719,9 +1716,7 @@
         "modelSource": "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct-Turbo",
         "offline": false,
         "privacy": "private",
-        "traits": [
-          "default_code"
-        ]
+        "traits": []
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -2148,7 +2143,9 @@
         "modelSource": "https://docs.x.ai/developers/models",
         "offline": false,
         "privacy": "private",
-        "traits": []
+        "traits": [
+          "most_intelligent"
+        ]
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -3559,7 +3556,9 @@
         "modelSource": "https://huggingface.co/moonshotai/Kimi-K3",
         "offline": false,
         "privacy": "private",
-        "traits": []
+        "traits": [
+          "default_reasoning"
+        ]
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -3986,7 +3985,9 @@
         "modelSource": "https://app.baseten.co/model-apis/deepseek-ai/DeepSeek-V4-Pro-0813",
         "offline": false,
         "privacy": "private",
-        "traits": []
+        "traits": [
+          "default_code"
+        ]
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -10297,7 +10298,8 @@
           "prompt_character_limit": 4096
         },
         "model_sets": [
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Grok Imagine R2V",
         "offline": false,
@@ -10399,8 +10401,7 @@
           "photorealistic",
           "high_resolution",
           "venice_recommendations",
-          "featured",
-          "fast"
+          "featured"
         ],
         "name": "Grok Imagine 1.5",
         "offline": false,
@@ -12107,7 +12108,8 @@
           "cinematic",
           "audio",
           "photorealistic",
-          "long_duration"
+          "long_duration",
+          "fast"
         ],
         "name": "Kling V3 Turbo Standard",
         "offline": false,
@@ -12787,8 +12789,7 @@
           "audio",
           "long_duration",
           "cinematic",
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "name": "Gemini Omni Flash R2V",
         "offline": false,
