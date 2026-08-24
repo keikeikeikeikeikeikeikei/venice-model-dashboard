@@ -9308,6 +9308,169 @@
       }
     },
     {
+      "created": 1785542400,
+      "id": "wan-3-0-text-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "text-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "9:16",
+            "1:1",
+            "4:3",
+            "3:4"
+          ],
+          "resolutions": [
+            "1080p",
+            "720p",
+            "480p"
+          ],
+          "durations": [
+            "2s",
+            "5s",
+            "10s",
+            "15s",
+            "20s",
+            "25s",
+            "30s"
+          ],
+          "audio": true,
+          "audio_configurable": true,
+          "audio_input": false,
+          "per_reference_audio": false,
+          "video_input": false,
+          "prompt_character_limit": 20000
+        },
+        "model_sets": [
+          "uncensored",
+          "high_resolution",
+          "audio",
+          "long_duration"
+        ],
+        "name": "Wan 3.0",
+        "offline": false,
+        "traits": [],
+        "uncensored": true
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.11
+      }
+    },
+    {
+      "created": 1785542400,
+      "id": "wan-3-0-image-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [
+            "adaptive",
+            "16:9",
+            "9:16",
+            "1:1",
+            "4:3",
+            "3:4"
+          ],
+          "resolutions": [
+            "1080p",
+            "720p",
+            "480p"
+          ],
+          "durations": [
+            "2s",
+            "5s",
+            "10s",
+            "15s",
+            "20s",
+            "25s",
+            "30s"
+          ],
+          "audio": true,
+          "audio_configurable": true,
+          "audio_input": false,
+          "per_reference_audio": false,
+          "video_input": false,
+          "prompt_character_limit": 20000,
+          "reference_image_min_short_side_pixels": 240
+        },
+        "model_sets": [
+          "uncensored",
+          "high_resolution",
+          "audio",
+          "long_duration"
+        ],
+        "name": "Wan 3.0",
+        "offline": false,
+        "traits": [],
+        "uncensored": true
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.11
+      }
+    },
+    {
+      "created": 1785542400,
+      "id": "wan-3-0-reference-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [
+            "adaptive",
+            "16:9",
+            "9:16",
+            "1:1",
+            "4:3",
+            "3:4"
+          ],
+          "resolutions": [
+            "1080p",
+            "720p",
+            "480p"
+          ],
+          "durations": [
+            "2s",
+            "5s",
+            "10s",
+            "15s",
+            "20s",
+            "25s",
+            "30s"
+          ],
+          "audio": true,
+          "audio_configurable": true,
+          "audio_input": false,
+          "per_reference_audio": false,
+          "video_input": false,
+          "prompt_character_limit": 20000,
+          "reference_image_min_short_side_pixels": 240
+        },
+        "model_sets": [
+          "uncensored",
+          "high_resolution",
+          "audio",
+          "long_duration"
+        ],
+        "name": "Wan 3.0 Reference",
+        "offline": false,
+        "traits": [],
+        "uncensored": true
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.11
+      }
+    },
+    {
       "created": 1775088000,
       "id": "wan-2-7-text-to-video",
       "model_spec": {
@@ -10716,7 +10879,8 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.3 Fast",
         "offline": false,
@@ -12770,8 +12934,7 @@
           "audio",
           "long_duration",
           "cinematic",
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "name": "Gemini Omni Flash",
         "offline": false,
