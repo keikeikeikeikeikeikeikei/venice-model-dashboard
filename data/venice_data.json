@@ -3543,7 +3543,14 @@
           "supportsMultipleImages": true,
           "maxImages": 10,
           "supportsReasoning": true,
-          "supportsReasoningEffort": false,
+          "supportsReasoningEffort": true,
+          "reasoningEffortOptions": [
+            "none",
+            "low",
+            "high",
+            "max"
+          ],
+          "defaultReasoningEffort": "max",
           "supportsResponseSchema": true,
           "supportsTeeAttestation": false,
           "supportsE2EE": false,
@@ -4024,7 +4031,14 @@
           "supportsMultipleImages": true,
           "maxImages": 10,
           "supportsReasoning": true,
-          "supportsReasoningEffort": false,
+          "supportsReasoningEffort": true,
+          "reasoningEffortOptions": [
+            "none",
+            "low",
+            "high",
+            "max"
+          ],
+          "defaultReasoningEffort": "max",
           "supportsResponseSchema": true,
           "supportsTeeAttestation": false,
           "supportsE2EE": false,
@@ -10647,7 +10661,8 @@
           "prompt_character_limit": 4096
         },
         "model_sets": [
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Grok Imagine R2V",
         "offline": false,
@@ -11235,8 +11250,7 @@
           "ultra_high_resolution",
           "audio",
           "long_duration",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.5 Fast",
         "offline": false,
