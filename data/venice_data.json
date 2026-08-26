@@ -7,16 +7,16 @@
       "model_spec": {
         "pricing": {
           "input": {
-            "usd": 1.875,
-            "diem": 1.875
+            "usd": 0.9375,
+            "diem": 0.9375
           },
           "cache_input": {
-            "usd": 0.1875,
-            "diem": 0.1875
+            "usd": 0.09375,
+            "diem": 0.09375
           },
           "output": {
-            "usd": 9.375,
-            "diem": 9.375
+            "usd": 4.6875,
+            "diem": 4.6875
           }
         },
         "availableContextTokens": 1000000,
@@ -55,16 +55,16 @@
       "model_spec": {
         "pricing": {
           "input": {
-            "usd": 1.875,
-            "diem": 1.875
+            "usd": 0.9375,
+            "diem": 0.9375
           },
           "cache_input": {
-            "usd": 0.1875,
-            "diem": 0.1875
+            "usd": 0.09375,
+            "diem": 0.09375
           },
           "output": {
-            "usd": 9.375,
-            "diem": 9.375
+            "usd": 4.6875,
+            "diem": 4.6875
           }
         },
         "model_sets": [
@@ -3137,20 +3137,20 @@
       "model_spec": {
         "pricing": {
           "input": {
-            "usd": 3,
-            "diem": 3
+            "usd": 2,
+            "diem": 2
           },
           "cache_input": {
-            "usd": 0.3,
-            "diem": 0.3
+            "usd": 0.2,
+            "diem": 0.2
           },
           "cache_write": {
-            "usd": 3.75,
-            "diem": 3.75
+            "usd": 2.5000000000000004,
+            "diem": 2.5000000000000004
           },
           "output": {
-            "usd": 15,
-            "diem": 15
+            "usd": 10.000000000000002,
+            "diem": 10.000000000000002
           }
         },
         "availableContextTokens": 1000000,
@@ -6025,6 +6025,11 @@
           "supportsVision": false,
           "supportsWebSearch": true,
           "supportsXSearch": false
+        },
+        "deprecation": {
+          "autoRemap": false,
+          "date": "2026-09-09T09:00:00.000Z",
+          "removesAt": "2026-09-09T09:00:00.000Z"
         },
         "description": "Qwen3.6 35B A3B Uncensored running in a Trusted Execution Environment (TEE). An uncensored variant of Alibaba's Qwen3.6 MoE model with 35B total parameters and ~3B active, supporting 262K context and multimodal input across text, images, and video, with hardware attestation evidence available for independent verification.",
         "name": "Qwen3.6 35B A3B Uncensored",
@@ -10921,8 +10926,7 @@
         },
         "model_sets": [
           "uncensored",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "Wan 2.2 A14B",
         "offline": false,
@@ -11334,7 +11338,8 @@
         "model_sets": [
           "high_resolution",
           "audio",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.5 Pro",
         "offline": false,
@@ -12898,8 +12903,7 @@
           "ultra_high_resolution",
           "audio",
           "cinematic",
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "name": "Veo 3.1 Fast",
         "offline": false,
@@ -13153,7 +13157,8 @@
           "audio",
           "long_duration",
           "cinematic",
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Gemini Omni Flash R2V",
         "offline": false,
