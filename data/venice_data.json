@@ -209,16 +209,16 @@
       "model_spec": {
         "pricing": {
           "input": {
-            "usd": 0.09375,
-            "diem": 0.09375
+            "usd": 0.15,
+            "diem": 0.15
           },
           "cache_input": {
-            "usd": 0.01875,
-            "diem": 0.01875
+            "usd": 0.03,
+            "diem": 0.03
           },
           "output": {
-            "usd": 0.3125,
-            "diem": 0.3125
+            "usd": 0.5,
+            "diem": 0.5
           }
         },
         "model_sets": [
@@ -235,7 +235,14 @@
           "supportsMultipleImages": true,
           "maxImages": 10,
           "supportsReasoning": true,
-          "supportsReasoningEffort": false,
+          "supportsReasoningEffort": true,
+          "reasoningEffortOptions": [
+            "none",
+            "low",
+            "medium",
+            "high"
+          ],
+          "defaultReasoningEffort": "high",
           "supportsResponseSchema": true,
           "supportsTeeAttestation": false,
           "supportsE2EE": false,
@@ -6178,114 +6185,6 @@
       "type": "text"
     },
     {
-      "context_length": 256000,
-      "created": 1783382400,
-      "id": "e2ee-qwen3-6-27b",
-      "model_spec": {
-        "pricing": {
-          "input": {
-            "usd": 0.346,
-            "diem": 0.346
-          },
-          "cache_input": {
-            "usd": 0.171,
-            "diem": 0.171
-          },
-          "output": {
-            "usd": 3.46,
-            "diem": 3.46
-          }
-        },
-        "availableContextTokens": 256000,
-        "maxCompletionTokens": 32768,
-        "capabilities": {
-          "optimizedForCode": true,
-          "quantization": "fp8",
-          "supportsAudioInput": false,
-          "supportsFunctionCalling": true,
-          "supportsLogProbs": false,
-          "supportsMultipleImages": false,
-          "supportsReasoning": true,
-          "supportsReasoningEffort": false,
-          "supportsResponseSchema": false,
-          "supportsTeeAttestation": true,
-          "supportsE2EE": true,
-          "supportsVideoInput": false,
-          "supportsVision": false,
-          "supportsWebSearch": true,
-          "supportsXSearch": false
-        },
-        "deprecation": {
-          "autoRemap": false,
-          "date": "2026-08-27T13:00:00.000Z",
-          "removesAt": "2026-08-27T13:00:00.000Z"
-        },
-        "description": "Qwen 3.6 27B FP8 running in a Trusted Execution Environment (TEE). Hardware attestation evidence is available for independent verification of enclave identity and configuration.",
-        "name": "Qwen 3.6 27B FP8",
-        "modelSource": "https://huggingface.co/Qwen/Qwen3.6-27B-FP8",
-        "offline": false,
-        "privacy": "private",
-        "traits": []
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "text"
-    },
-    {
-      "context_length": 32000,
-      "created": 1779235200,
-      "id": "e2ee-gemma-4-31b",
-      "model_spec": {
-        "pricing": {
-          "input": {
-            "usd": 0.139,
-            "diem": 0.139
-          },
-          "cache_input": {
-            "usd": 0.028,
-            "diem": 0.028
-          },
-          "output": {
-            "usd": 0.43,
-            "diem": 0.43
-          }
-        },
-        "availableContextTokens": 32000,
-        "maxCompletionTokens": 4096,
-        "capabilities": {
-          "optimizedForCode": false,
-          "quantization": "not-available",
-          "supportsAudioInput": false,
-          "supportsFunctionCalling": false,
-          "supportsLogProbs": false,
-          "supportsMultipleImages": false,
-          "supportsReasoning": true,
-          "supportsReasoningEffort": false,
-          "supportsResponseSchema": false,
-          "supportsTeeAttestation": true,
-          "supportsE2EE": true,
-          "supportsVideoInput": false,
-          "supportsVision": false,
-          "supportsWebSearch": true,
-          "supportsXSearch": false
-        },
-        "deprecation": {
-          "autoRemap": false,
-          "date": "2026-08-27T13:00:00.000Z",
-          "removesAt": "2026-08-27T13:00:00.000Z"
-        },
-        "description": "Gemma 4 31B Instruct running in a Trusted Execution Environment (TEE). Hardware attestation evidence is available for independent verification of enclave identity and configuration.",
-        "name": "Gemma 4 31B Instruct",
-        "modelSource": "https://huggingface.co/google/gemma-4-31B-it",
-        "offline": false,
-        "privacy": "private",
-        "traits": []
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "text"
-    },
-    {
       "context_length": 1000000,
       "created": 1783382400,
       "id": "e2ee-deepseek-v4-flash",
@@ -11004,7 +10903,8 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.3 Fast",
         "offline": false,
@@ -11330,8 +11230,7 @@
         "model_sets": [
           "high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.5 Pro",
         "offline": false,
