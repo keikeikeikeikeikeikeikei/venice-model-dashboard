@@ -812,7 +812,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-08-26 23:08)</div>
+            <div class="meta">Generated from Live API Data (2026-08-27 13:33)</div>
         </header>
 
         <div class="controls">
@@ -1050,9 +1050,6 @@
             "diem": 5.5
           }
         },
-        "model_sets": [
-          "venice_recommendations"
-        ],
         "availableContextTokens": 1000000,
         "maxCompletionTokens": 131072,
         "capabilities": {
@@ -1083,6 +1080,59 @@
         "modelSource": "https://openrouter.ai/z-ai/glm-5.3",
         "offline": false,
         "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 1048576,
+      "created": 1787270400,
+      "id": "z-ai-glm-5-3-flash",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.09375,
+            "diem": 0.09375
+          },
+          "cache_input": {
+            "usd": 0.01875,
+            "diem": 0.01875
+          },
+          "output": {
+            "usd": 0.3125,
+            "diem": 0.3125
+          }
+        },
+        "model_sets": [
+          "venice_recommendations"
+        ],
+        "availableContextTokens": 1048576,
+        "maxCompletionTokens": 131072,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": true,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "GLM-5.3 Flash is a reasoning model designed for coding, sustained agentic work, and production workloads. It is suited for long-horizon software engineering, complex reasoning, and workflows that combine text with visual context.",
+        "name": "GLM 5.3 Flash",
+        "modelSource": "https://huggingface.co/zai-org/GLM-5.3-Flash",
+        "offline": false,
+        "privacy": "private",
         "traits": []
       },
       "object": "model",
@@ -2922,9 +2972,6 @@
             }
           }
         },
-        "model_sets": [
-          "venice_recommendations"
-        ],
         "availableContextTokens": 500000,
         "maxCompletionTokens": 32000,
         "capabilities": {
@@ -2996,6 +3043,9 @@
             }
           }
         },
+        "model_sets": [
+          "venice_recommendations"
+        ],
         "availableContextTokens": 500000,
         "maxCompletionTokens": 200000,
         "capabilities": {
@@ -6418,64 +6468,6 @@
         "description": "Mercury 2 is a diffusion-based reasoning LLM from Inception, delivering over 1,000 tokens per second \u2014 5x faster than leading speed-optimized models \u2014 with strong reasoning, tool use, and structured output capabilities.",
         "name": "Mercury 2",
         "modelSource": "https://www.inceptionlabs.ai/models",
-        "offline": false,
-        "privacy": "anonymized",
-        "traits": []
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "text"
-    },
-    {
-      "context_length": 1048576,
-      "created": 1787270400,
-      "id": "stealth-ox-alpha",
-      "model_spec": {
-        "betaModel": true,
-        "pricing": {
-          "input": {
-            "usd": 0,
-            "diem": 0
-          },
-          "cache_input": {
-            "usd": 0,
-            "diem": 0
-          },
-          "output": {
-            "usd": 0,
-            "diem": 0
-          }
-        },
-        "availableContextTokens": 1048576,
-        "maxCompletionTokens": 131072,
-        "capabilities": {
-          "optimizedForCode": true,
-          "quantization": "not-available",
-          "supportsAudioInput": false,
-          "supportsFunctionCalling": true,
-          "supportsLogProbs": false,
-          "supportsMultipleImages": true,
-          "maxImages": 10,
-          "supportsReasoning": true,
-          "supportsReasoningEffort": true,
-          "reasoningEffortOptions": [
-            "none",
-            "low",
-            "medium",
-            "high"
-          ],
-          "defaultReasoningEffort": "high",
-          "supportsResponseSchema": true,
-          "supportsTeeAttestation": false,
-          "supportsE2EE": false,
-          "supportsVideoInput": true,
-          "supportsVision": true,
-          "supportsWebSearch": true,
-          "supportsXSearch": false
-        },
-        "description": "Ox Alpha is a reasoning model designed for coding, sustained agentic work, and production workloads. It is suited for long-horizon software engineering, complex reasoning, and workflows that combine text with visual context.",
-        "name": "Ox Alpha",
-        "modelSource": "https://openrouter.ai/stealth/ox-alpha",
         "offline": false,
         "privacy": "anonymized",
         "traits": []
@@ -12222,8 +12214,7 @@
         "model_sets": [
           "high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.5 Pro",
         "offline": false,
@@ -12270,6 +12261,119 @@
       "type": "video",
       "pricing": {
         "base_price_usd": 0.22
+      }
+    },
+    {
+      "created": 1787788800,
+      "id": "minimax-h3-max-text-to-video",
+      "model_spec": {
+        "privacy": "private",
+        "constraints": {
+          "model_type": "text-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "21:9",
+            "4:3",
+            "1:1",
+            "3:4",
+            "9:16"
+          ],
+          "resolutions": [
+            "480P",
+            "768P"
+          ],
+          "durations": [
+            "5s",
+            "6s",
+            "7s",
+            "8s",
+            "9s",
+            "10s",
+            "11s",
+            "12s",
+            "13s",
+            "14s",
+            "15s"
+          ],
+          "audio": false,
+          "audio_configurable": false,
+          "audio_input": false,
+          "per_reference_audio": false,
+          "video_input": false,
+          "prompt_character_limit": 10000
+        },
+        "model_sets": [
+          "uncensored",
+          "audio",
+          "long_duration",
+          "cinematic",
+          "photorealistic",
+          "venice_recommendations",
+          "fast"
+        ],
+        "name": "MiniMax H3 Max",
+        "offline": false,
+        "traits": [],
+        "uncensored": true
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.24
+      }
+    },
+    {
+      "created": 1787788800,
+      "id": "minimax-h3-max-image-to-video",
+      "model_spec": {
+        "privacy": "private",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [],
+          "resolutions": [
+            "480P",
+            "768P"
+          ],
+          "durations": [
+            "5s",
+            "6s",
+            "7s",
+            "8s",
+            "9s",
+            "10s",
+            "11s",
+            "12s",
+            "13s",
+            "14s",
+            "15s"
+          ],
+          "audio": false,
+          "audio_configurable": false,
+          "audio_input": false,
+          "per_reference_audio": false,
+          "video_input": false,
+          "prompt_character_limit": 10000
+        },
+        "model_sets": [
+          "uncensored",
+          "audio",
+          "long_duration",
+          "cinematic",
+          "photorealistic",
+          "venice_recommendations",
+          "fast"
+        ],
+        "name": "MiniMax H3 Max",
+        "offline": false,
+        "traits": [],
+        "uncensored": true
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.24
       }
     },
     {
@@ -13999,8 +14103,7 @@
           "audio",
           "long_duration",
           "cinematic",
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "name": "Gemini Omni Flash",
         "offline": false,
@@ -15051,8 +15154,7 @@
           "uncensored",
           "audio",
           "high_resolution",
-          "photorealistic",
-          "venice_recommendations"
+          "photorealistic"
         ],
         "name": "MiniMax H3 Enhanced",
         "offline": false,
@@ -15112,8 +15214,7 @@
           "uncensored",
           "audio",
           "high_resolution",
-          "photorealistic",
-          "venice_recommendations"
+          "photorealistic"
         ],
         "name": "MiniMax H3 R2V Enhanced",
         "offline": false,
@@ -15170,8 +15271,7 @@
           "uncensored",
           "audio",
           "high_resolution",
-          "photorealistic",
-          "venice_recommendations"
+          "photorealistic"
         ],
         "name": "MiniMax H3",
         "offline": false,
@@ -15224,8 +15324,7 @@
           "uncensored",
           "audio",
           "high_resolution",
-          "photorealistic",
-          "venice_recommendations"
+          "photorealistic"
         ],
         "name": "MiniMax H3",
         "offline": false,
@@ -15285,8 +15384,7 @@
           "uncensored",
           "audio",
           "high_resolution",
-          "photorealistic",
-          "venice_recommendations"
+          "photorealistic"
         ],
         "name": "MiniMax H3 R2V",
         "offline": false,
