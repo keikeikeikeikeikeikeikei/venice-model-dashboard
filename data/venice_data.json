@@ -8363,6 +8363,186 @@
   ],
   "video": [
     {
+      "created": 1787788800,
+      "id": "gemini-omni-flash-1-1-text-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "text-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "9:16"
+          ],
+          "resolutions": [
+            "360p",
+            "720p",
+            "1080p",
+            "4k"
+          ],
+          "durations": [
+            "4s",
+            "6s",
+            "8s",
+            "10s"
+          ],
+          "audio": false,
+          "audio_configurable": false,
+          "audio_input": false,
+          "per_reference_audio": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "audio",
+          "long_duration",
+          "cinematic",
+          "photorealistic",
+          "high_resolution",
+          "ultra_high_resolution"
+        ],
+        "name": "Gemini Omni Flash 1.1",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 1.4
+      }
+    },
+    {
+      "created": 1787788800,
+      "id": "gemini-omni-flash-1-1-image-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [],
+          "resolutions": [
+            "360p",
+            "720p",
+            "1080p",
+            "4k"
+          ],
+          "durations": [
+            "4s",
+            "6s",
+            "8s",
+            "10s"
+          ],
+          "audio": false,
+          "audio_configurable": false,
+          "audio_input": false,
+          "per_reference_audio": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "audio",
+          "long_duration",
+          "cinematic",
+          "photorealistic",
+          "high_resolution",
+          "ultra_high_resolution"
+        ],
+        "name": "Gemini Omni Flash 1.1",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 1.4
+      }
+    },
+    {
+      "created": 1787788800,
+      "id": "gemini-omni-flash-1-1-reference-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "9:16"
+          ],
+          "resolutions": [
+            "360p",
+            "720p",
+            "1080p",
+            "4k"
+          ],
+          "durations": [
+            "4s",
+            "6s",
+            "8s",
+            "10s"
+          ],
+          "audio": false,
+          "audio_configurable": false,
+          "audio_input": false,
+          "per_reference_audio": false,
+          "video_input": false
+        },
+        "model_sets": [
+          "audio",
+          "long_duration",
+          "cinematic",
+          "photorealistic",
+          "high_resolution",
+          "ultra_high_resolution"
+        ],
+        "name": "Gemini Omni Flash 1.1 R2V",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 1.4
+      }
+    },
+    {
+      "created": 1787788800,
+      "id": "gemini-omni-flash-1-1-video-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "video",
+          "aspect_ratios": [],
+          "resolutions": [
+            "360p",
+            "720p",
+            "1080p",
+            "4k"
+          ],
+          "durations": [
+            "Auto"
+          ],
+          "audio": false,
+          "audio_configurable": false,
+          "audio_input": false,
+          "per_reference_audio": false,
+          "video_input": true
+        },
+        "model_sets": [
+          "audio",
+          "long_duration",
+          "cinematic",
+          "photorealistic",
+          "high_resolution",
+          "ultra_high_resolution"
+        ],
+        "name": "Gemini Omni Flash 1.1 Edit",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video"
+    },
+    {
       "created": 1773964800,
       "id": "seedance-1-5-pro-text-to-video-basic",
       "model_spec": {
