@@ -176,13 +176,7 @@
           "supportsLogProbs": false,
           "supportsMultipleImages": false,
           "supportsReasoning": true,
-          "supportsReasoningEffort": true,
-          "reasoningEffortOptions": [
-            "low",
-            "high",
-            "max"
-          ],
-          "defaultReasoningEffort": "max",
+          "supportsReasoningEffort": false,
           "supportsResponseSchema": true,
           "supportsTeeAttestation": false,
           "supportsE2EE": false,
@@ -195,7 +189,7 @@
         "name": "GLM 5.3",
         "modelSource": "https://openrouter.ai/z-ai/glm-5.3",
         "offline": false,
-        "privacy": "anonymized",
+        "privacy": "private",
         "traits": []
       },
       "object": "model",
@@ -8442,7 +8436,8 @@
           "cinematic",
           "photorealistic",
           "high_resolution",
-          "ultra_high_resolution"
+          "ultra_high_resolution",
+          "fast"
         ],
         "name": "Gemini Omni Flash 1.1",
         "offline": false,
@@ -8490,7 +8485,8 @@
           "cinematic",
           "photorealistic",
           "high_resolution",
-          "ultra_high_resolution"
+          "ultra_high_resolution",
+          "fast"
         ],
         "name": "Gemini Omni Flash 1.1 R2V",
         "offline": false,
@@ -11083,8 +11079,7 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.3 Fast",
         "offline": false,
@@ -11133,8 +11128,7 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.3 Fast",
         "offline": false,
