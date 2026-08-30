@@ -8485,8 +8485,7 @@
           "cinematic",
           "photorealistic",
           "high_resolution",
-          "ultra_high_resolution",
-          "fast"
+          "ultra_high_resolution"
         ],
         "name": "Gemini Omni Flash 1.1 R2V",
         "offline": false,
@@ -14254,7 +14253,8 @@
         "model_sets": [
           "fast",
           "cinematic",
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Runway Gen-4 Turbo",
         "offline": false,
