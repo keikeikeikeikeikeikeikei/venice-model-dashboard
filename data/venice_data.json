@@ -187,7 +187,7 @@
         },
         "description": "GLM-5.3 is a large-scale reasoning model from Z.ai, built for complex software engineering and long-horizon agent tasks. It supports text input and output with a 1M-token context window, and improves on GLM-5.2 in coding and in the balance between performance and token efficiency.",
         "name": "GLM 5.3",
-        "modelSource": "https://openrouter.ai/z-ai/glm-5.3",
+        "modelSource": "https://huggingface.co/zai-org/GLM-5.3",
         "offline": false,
         "privacy": "private",
         "traits": []
@@ -1296,7 +1296,7 @@
         },
         "description": "The Qwen 3.6 27B native vision-language dense model builds upon the 3.5-27B version, with key improvements in agentic coding capabilities and enhanced STEM reasoning and inference skills. In the vision modality, it demonstrates significant advances in spatial intelligence, object localization, and detection, while video understanding, document OCR, and visual agent capabilities continue to improve steadily.",
         "name": "Qwen 3.6 27B",
-        "modelSource": "https://qwen.ai/blog?id=qwen3.6-27b",
+        "modelSource": "https://huggingface.co/Qwen/Qwen3.6-27B-FP8",
         "offline": false,
         "privacy": "private",
         "traits": []
@@ -3552,7 +3552,7 @@
         },
         "description": "Kimi K2.5 is Moonshot AIs most advanced open reasoning model, featuring trillion-parameter Mixture-of-Experts architecture with 32B active parameters and 256K context windows.",
         "name": "Kimi K2.5",
-        "modelSource": "https://github.com/MoonshotAI/Kimi-K2.5",
+        "modelSource": "https://huggingface.co/moonshotai/Kimi-K2.5",
         "offline": false,
         "privacy": "private",
         "traits": []
@@ -4041,7 +4041,7 @@
         },
         "description": "DeepSeek V4 Pro is a 1.6T-parameter Mixture-of-Experts model with 49B active parameters and a 1M-token context window. Built for advanced reasoning, coding, and long-horizon agentic workflows with a hybrid attention system for efficient long-context processing.",
         "name": "DeepSeek V4 Pro 0813",
-        "modelSource": "https://app.baseten.co/model-apis/deepseek-ai/DeepSeek-V4-Pro-0813",
+        "modelSource": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813",
         "offline": false,
         "privacy": "private",
         "traits": [
@@ -8391,8 +8391,7 @@
           "cinematic",
           "photorealistic",
           "high_resolution",
-          "ultra_high_resolution",
-          "fast"
+          "ultra_high_resolution"
         ],
         "name": "Gemini Omni Flash 1.1",
         "offline": false,
@@ -10733,7 +10732,8 @@
           "prompt_character_limit": 4096
         },
         "model_sets": [
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Grok Imagine R2V",
         "offline": false,
@@ -11127,8 +11127,7 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.3 Fast",
         "offline": false,
@@ -11319,7 +11318,8 @@
           "ultra_high_resolution",
           "audio",
           "long_duration",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.5 Fast",
         "offline": false,
