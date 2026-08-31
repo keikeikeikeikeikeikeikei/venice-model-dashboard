@@ -8484,7 +8484,8 @@
           "cinematic",
           "photorealistic",
           "high_resolution",
-          "ultra_high_resolution"
+          "ultra_high_resolution",
+          "fast"
         ],
         "name": "Gemini Omni Flash 1.1 R2V",
         "offline": false,
@@ -10731,7 +10732,8 @@
           "prompt_character_limit": 4096
         },
         "model_sets": [
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Grok Imagine R2V",
         "offline": false,
@@ -11125,8 +11127,7 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.3 Fast",
         "offline": false,
@@ -11317,8 +11318,7 @@
           "ultra_high_resolution",
           "audio",
           "long_duration",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.5 Fast",
         "offline": false,
