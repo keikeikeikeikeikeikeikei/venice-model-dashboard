@@ -8485,8 +8485,7 @@
           "cinematic",
           "photorealistic",
           "high_resolution",
-          "ultra_high_resolution",
-          "fast"
+          "ultra_high_resolution"
         ],
         "name": "Gemini Omni Flash 1.1 R2V",
         "offline": false,
@@ -11127,7 +11126,8 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source"
+          "open_source",
+          "fast"
         ],
         "name": "LTX Video 2.3 Fast",
         "offline": false,
