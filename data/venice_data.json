@@ -2806,9 +2806,6 @@
             "diem": 60
           }
         },
-        "model_sets": [
-          "venice_recommendations"
-        ],
         "availableContextTokens": 1000000,
         "maxCompletionTokens": 128000,
         "capabilities": {
@@ -2871,6 +2868,9 @@
             "diem": 60
           }
         },
+        "model_sets": [
+          "venice_recommendations"
+        ],
         "availableContextTokens": 1000000,
         "maxCompletionTokens": 128000,
         "capabilities": {
