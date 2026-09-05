@@ -812,7 +812,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-09-05 02:47)</div>
+            <div class="meta">Generated from Live API Data (2026-09-05 14:42)</div>
         </header>
 
         <div class="controls">
@@ -6220,9 +6220,6 @@
             "diem": 37.5
           }
         },
-        "model_sets": [
-          "venice_recommendations"
-        ],
         "availableContextTokens": 1000000,
         "maxCompletionTokens": 128000,
         "capabilities": {
@@ -6337,6 +6334,168 @@
         "description": "GPT-5.6 Sol Pro is the same underlying model as GPT-5.6 Sol, served with reasoning.mode set to pro for higher-quality responses on complex tasks.",
         "name": "GPT-5.6 Sol Pro",
         "modelSource": "https://openrouter.ai/openai/gpt-5.6-sol-pro",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 1050000,
+      "created": 1788566400,
+      "id": "openai-gpt-6-astra",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 10,
+            "diem": 10
+          },
+          "cache_input": {
+            "usd": 1,
+            "diem": 1
+          },
+          "cache_write": {
+            "usd": 12.5,
+            "diem": 12.5
+          },
+          "output": {
+            "usd": 50,
+            "diem": 50
+          },
+          "extended": {
+            "context_token_threshold": 272000,
+            "input": {
+              "usd": 20,
+              "diem": 20
+            },
+            "output": {
+              "usd": 75,
+              "diem": 75
+            },
+            "cache_input": {
+              "usd": 2,
+              "diem": 2
+            },
+            "cache_write": {
+              "usd": 25,
+              "diem": 25
+            }
+          }
+        },
+        "availableContextTokens": 1050000,
+        "maxCompletionTokens": 128000,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": true,
+          "reasoningEffortOptions": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "defaultReasoningEffort": "high",
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "GPT-6 Astra is OpenAI's most capable model, built for the hardest end-to-end work. It is suited for complex reasoning, coding, computer use, research, and document creation, with a 1.05M token context window (922K input, 128K output) and support for text and image inputs.",
+        "name": "GPT-6 Astra",
+        "modelSource": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 1050000,
+      "created": 1788566400,
+      "id": "openai-gpt-6-astra-pro",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 12.5,
+            "diem": 12.5
+          },
+          "cache_input": {
+            "usd": 1.25,
+            "diem": 1.25
+          },
+          "cache_write": {
+            "usd": 15.625,
+            "diem": 15.625
+          },
+          "output": {
+            "usd": 62.5,
+            "diem": 62.5
+          },
+          "extended": {
+            "context_token_threshold": 272000,
+            "input": {
+              "usd": 25,
+              "diem": 25
+            },
+            "output": {
+              "usd": 93.75,
+              "diem": 93.75
+            },
+            "cache_input": {
+              "usd": 2.5,
+              "diem": 2.5
+            },
+            "cache_write": {
+              "usd": 31.25,
+              "diem": 31.25
+            }
+          }
+        },
+        "availableContextTokens": 1050000,
+        "maxCompletionTokens": 128000,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": true,
+          "reasoningEffortOptions": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "defaultReasoningEffort": "high",
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "GPT-6 Astra with pro reasoning mode for difficult tasks that benefit from more model work. Supports text and image inputs with a 1.05M token context window. Pro mode can use more tokens and take longer than standard Astra.",
+        "name": "GPT-6 Astra Pro",
+        "modelSource": "https://developers.openai.com/api/docs/models/gpt-6-astra",
         "offline": false,
         "privacy": "anonymized",
         "traits": []
@@ -6945,6 +7104,11 @@
           "supportsWebSearch": true,
           "supportsXSearch": false
         },
+        "deprecation": {
+          "autoRemap": false,
+          "date": "2026-09-17T00:00:00.000Z",
+          "removesAt": "2026-09-17T00:00:00.000Z"
+        },
         "description": "GPT OSS 20B running in a Trusted Execution Environment (TEE). OpenAI's compact open-weight 21B MoE model with 3.6B active parameters, optimized for lower-latency inference, with hardware attestation evidence available for independent verification.",
         "name": "GPT OSS 20B",
         "modelSource": "https://huggingface.co/openai/gpt-oss-20b",
@@ -7140,54 +7304,6 @@
         "description": "Qwen3 VL 30B A3B running in a Trusted Execution Environment (TEE). A multimodal model unifying text generation with visual understanding for images and videos, with hardware attestation evidence available for independent verification.",
         "name": "Qwen3 VL 30B A3B",
         "modelSource": "https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Instruct",
-        "offline": false,
-        "privacy": "private",
-        "traits": []
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "text"
-    },
-    {
-      "context_length": 200000,
-      "created": 1776988800,
-      "id": "e2ee-glm-5-1",
-      "model_spec": {
-        "pricing": {
-          "input": {
-            "usd": 1.1,
-            "diem": 1.1
-          },
-          "output": {
-            "usd": 4.15,
-            "diem": 4.15
-          }
-        },
-        "model_sets": [
-          "venice_recommendations"
-        ],
-        "availableContextTokens": 200000,
-        "maxCompletionTokens": 32768,
-        "capabilities": {
-          "optimizedForCode": false,
-          "quantization": "fp8",
-          "supportsAudioInput": false,
-          "supportsFunctionCalling": false,
-          "supportsLogProbs": false,
-          "supportsMultipleImages": false,
-          "supportsReasoning": true,
-          "supportsReasoningEffort": false,
-          "supportsResponseSchema": false,
-          "supportsTeeAttestation": true,
-          "supportsE2EE": true,
-          "supportsVideoInput": false,
-          "supportsVision": false,
-          "supportsWebSearch": true,
-          "supportsXSearch": false
-        },
-        "description": "GLM 5.1 running in a Trusted Execution Environment (TEE). Hardware attestation evidence is available for independent verification of enclave identity and configuration.",
-        "name": "GLM 5.1",
-        "modelSource": "https://huggingface.co/zai-org/GLM-5.1",
         "offline": false,
         "privacy": "private",
         "traits": []
