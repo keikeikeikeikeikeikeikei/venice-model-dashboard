@@ -11922,7 +11922,8 @@
           ],
           "resolutions": [
             "480P",
-            "768P"
+            "768P",
+            "1080P"
           ],
           "durations": [
             "5s",
@@ -11947,6 +11948,7 @@
         "model_sets": [
           "uncensored",
           "audio",
+          "high_resolution",
           "long_duration",
           "cinematic",
           "photorealistic",
@@ -11975,7 +11977,8 @@
           "aspect_ratios": [],
           "resolutions": [
             "480P",
-            "768P"
+            "768P",
+            "1080P"
           ],
           "durations": [
             "5s",
@@ -12000,6 +12003,7 @@
         "model_sets": [
           "uncensored",
           "audio",
+          "high_resolution",
           "long_duration",
           "cinematic",
           "photorealistic",
@@ -12036,7 +12040,8 @@
           ],
           "resolutions": [
             "480P",
-            "768P"
+            "768P",
+            "1080P"
           ],
           "durations": [
             "5s",
@@ -12064,6 +12069,7 @@
         "model_sets": [
           "uncensored",
           "audio",
+          "high_resolution",
           "long_duration",
           "cinematic",
           "photorealistic",
@@ -12099,7 +12105,8 @@
           ],
           "resolutions": [
             "480P",
-            "768P"
+            "768P",
+            "1080P"
           ],
           "durations": [
             "5s",
@@ -12124,6 +12131,7 @@
         "model_sets": [
           "uncensored",
           "audio",
+          "high_resolution",
           "long_duration",
           "cinematic",
           "photorealistic",
@@ -12151,7 +12159,8 @@
           "aspect_ratios": [],
           "resolutions": [
             "480P",
-            "768P"
+            "768P",
+            "1080P"
           ],
           "durations": [
             "5s",
@@ -12176,6 +12185,7 @@
         "model_sets": [
           "uncensored",
           "audio",
+          "high_resolution",
           "long_duration",
           "cinematic",
           "photorealistic",
