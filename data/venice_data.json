@@ -1074,6 +1074,56 @@
     },
     {
       "context_length": 1000000,
+      "created": 1788998400,
+      "id": "qwen-3-8-flash",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.14,
+            "diem": 0.14
+          },
+          "cache_input": {
+            "usd": 0.014,
+            "diem": 0.014
+          },
+          "output": {
+            "usd": 0.49,
+            "diem": 0.49
+          }
+        },
+        "availableContextTokens": 1000000,
+        "maxCompletionTokens": 131072,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": true,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Qwen 3.8 Flash is the latest multimodal model in the Qwen family, pairing strong reasoning and generation with remarkable speed. It natively supports a 1M-token context window, so it can process long documents, entire codebases, and complex conversations in a single pass. It excels at coding assistance, agentic workflows, and visual understanding, accepting text, image, and video input, and its thinking mode can be turned on or off per request.",
+        "name": "Qwen 3.8 Flash",
+        "modelSource": "https://www.alibabacloud.com/help/en/model-studio/models",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 1000000,
       "created": 1779408000,
       "id": "qwen-3-7-max",
       "model_spec": {
@@ -1905,7 +1955,7 @@
         "maxCompletionTokens": 8192,
         "capabilities": {
           "optimizedForCode": false,
-          "quantization": "bf16",
+          "quantization": "fp4",
           "supportsAudioInput": false,
           "supportsFunctionCalling": true,
           "supportsLogProbs": true,
@@ -2469,14 +2519,15 @@
           "supportsAudioInput": false,
           "supportsFunctionCalling": true,
           "supportsLogProbs": false,
-          "supportsMultipleImages": false,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
           "supportsReasoning": false,
           "supportsReasoningEffort": false,
           "supportsResponseSchema": true,
           "supportsTeeAttestation": false,
           "supportsE2EE": false,
           "supportsVideoInput": false,
-          "supportsVision": false,
+          "supportsVision": true,
           "supportsWebSearch": true,
           "supportsXSearch": false
         },
@@ -2530,6 +2581,12 @@
           "supportsVision": true,
           "supportsWebSearch": true,
           "supportsXSearch": false
+        },
+        "deprecation": {
+          "autoRemap": false,
+          "date": "2026-09-18T00:00:00.000Z",
+          "removesAt": "2026-09-18T00:00:00.000Z",
+          "replacementModelId": "mistral-small-3-2-24b-instruct"
         },
         "description": "Mistral Small 4 unifies instruction following, reasoning, coding, and vision in a single 119B MoE model with 256K context and configurable reasoning effort.",
         "name": "Mistral Small 4",
@@ -3938,7 +3995,14 @@
           "supportsLogProbs": false,
           "supportsMultipleImages": false,
           "supportsReasoning": true,
-          "supportsReasoningEffort": false,
+          "supportsReasoningEffort": true,
+          "reasoningEffortOptions": [
+            "none",
+            "low",
+            "medium",
+            "high"
+          ],
+          "defaultReasoningEffort": "low",
           "supportsResponseSchema": true,
           "supportsTeeAttestation": false,
           "supportsE2EE": false,
@@ -3951,7 +4015,7 @@
         "name": "DeepSeek V4 Pro",
         "modelSource": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
         "offline": false,
-        "privacy": "anonymized",
+        "privacy": "private",
         "traits": []
       },
       "object": "model",
@@ -4033,9 +4097,6 @@
             "diem": 0.35
           }
         },
-        "model_sets": [
-          "venice_recommendations"
-        ],
         "availableContextTokens": 1000000,
         "maxCompletionTokens": 32768,
         "capabilities": {
@@ -4065,6 +4126,66 @@
         "description": "DeepSeek V4 Flash is an efficiency-optimized 284B-parameter Mixture-of-Experts model with 13B active parameters and a 1M-token context window. Tuned for fast inference and high-throughput workloads while maintaining strong reasoning and coding performance.",
         "name": "DeepSeek V4 Flash 0731",
         "modelSource": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 1000000,
+      "created": 1788998400,
+      "id": "deepseek-v4-1-flash",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.375,
+            "diem": 0.375
+          },
+          "cache_input": {
+            "usd": 0.0075,
+            "diem": 0.0075
+          },
+          "output": {
+            "usd": 1.5,
+            "diem": 1.5
+          }
+        },
+        "model_sets": [
+          "venice_recommendations"
+        ],
+        "availableContextTokens": 1000000,
+        "maxCompletionTokens": 131072,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "fp8",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": true,
+          "reasoningEffortOptions": [
+            "none",
+            "low",
+            "high",
+            "max"
+          ],
+          "defaultReasoningEffort": "high",
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "DeepSeek V4.1 Flash is a multimodal Mixture-of-Experts model with 552B backbone parameters (8B active on input, 16B on output) and a 1M-token context window. It natively processes images and text, with strong reasoning, coding, and agentic performance.",
+        "name": "DeepSeek V4.1 Flash",
+        "modelSource": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
         "offline": false,
         "privacy": "private",
         "traits": []
@@ -4209,7 +4330,14 @@
           "supportsLogProbs": false,
           "supportsMultipleImages": false,
           "supportsReasoning": true,
-          "supportsReasoningEffort": false,
+          "supportsReasoningEffort": true,
+          "reasoningEffortOptions": [
+            "none",
+            "low",
+            "high",
+            "max"
+          ],
+          "defaultReasoningEffort": "high",
           "supportsResponseSchema": true,
           "supportsTeeAttestation": false,
           "supportsE2EE": false,
@@ -4576,10 +4704,10 @@
           "supportsReasoningEffort": true,
           "reasoningEffortOptions": [
             "none",
-            "minimal",
             "low",
             "medium",
-            "high"
+            "high",
+            "xhigh"
           ],
           "defaultReasoningEffort": "high",
           "supportsResponseSchema": true,
@@ -4593,64 +4721,6 @@
         "description": "GPT-5.2 is the latest frontier-grade model in the GPT-5 series, offering stronger agentic and long context performance compared to GPT-5.1. It uses adaptive reasoning to allocate computation dynamically, responding quickly to simple queries while spending more depth on complex tasks.",
         "name": "GPT-5.2",
         "modelSource": "https://developers.openai.com/api/docs/models/gpt-5.2",
-        "offline": false,
-        "privacy": "anonymized",
-        "traits": []
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "text"
-    },
-    {
-      "context_length": 256000,
-      "created": 1736899200,
-      "id": "openai-gpt-52-codex",
-      "model_spec": {
-        "pricing": {
-          "input": {
-            "usd": 2.19,
-            "diem": 2.19
-          },
-          "cache_input": {
-            "usd": 0.219,
-            "diem": 0.219
-          },
-          "output": {
-            "usd": 17.5,
-            "diem": 17.5
-          }
-        },
-        "availableContextTokens": 256000,
-        "maxCompletionTokens": 65536,
-        "capabilities": {
-          "optimizedForCode": true,
-          "quantization": "not-available",
-          "supportsAudioInput": false,
-          "supportsFunctionCalling": true,
-          "supportsLogProbs": false,
-          "supportsMultipleImages": true,
-          "maxImages": 10,
-          "supportsReasoning": true,
-          "supportsReasoningEffort": true,
-          "reasoningEffortOptions": [
-            "none",
-            "minimal",
-            "low",
-            "medium",
-            "high"
-          ],
-          "defaultReasoningEffort": "high",
-          "supportsResponseSchema": true,
-          "supportsTeeAttestation": false,
-          "supportsE2EE": false,
-          "supportsVideoInput": false,
-          "supportsVision": true,
-          "supportsWebSearch": true,
-          "supportsXSearch": false
-        },
-        "description": "GPT-5.2 Codex is OpenAI specialized coding model built on GPT-5.2, optimized for advanced software development, code generation, and technical problem-solving.",
-        "name": "GPT-5.2 Codex",
-        "modelSource": "https://developers.openai.com/api/docs/models/gpt-5.2-codex",
         "offline": false,
         "privacy": "anonymized",
         "traits": []
@@ -4692,10 +4762,10 @@
           "supportsReasoningEffort": true,
           "reasoningEffortOptions": [
             "none",
-            "minimal",
             "low",
             "medium",
-            "high"
+            "high",
+            "xhigh"
           ],
           "defaultReasoningEffort": "high",
           "supportsResponseSchema": true,
@@ -4750,10 +4820,10 @@
           "supportsReasoningEffort": true,
           "reasoningEffortOptions": [
             "none",
-            "minimal",
             "low",
             "medium",
-            "high"
+            "high",
+            "xhigh"
           ],
           "defaultReasoningEffort": "high",
           "supportsResponseSchema": true,
@@ -4815,10 +4885,9 @@
           "supportsReasoningEffort": true,
           "reasoningEffortOptions": [
             "none",
-            "minimal",
-            "low",
             "medium",
-            "high"
+            "high",
+            "xhigh"
           ],
           "defaultReasoningEffort": "medium",
           "supportsResponseSchema": true,
@@ -4873,10 +4942,10 @@
           "supportsReasoningEffort": true,
           "reasoningEffortOptions": [
             "none",
-            "minimal",
             "low",
             "medium",
-            "high"
+            "high",
+            "xhigh"
           ],
           "defaultReasoningEffort": "high",
           "supportsResponseSchema": true,
@@ -5987,6 +6056,62 @@
       "type": "text"
     },
     {
+      "context_length": 260000,
+      "created": 1788825600,
+      "id": "mercury-2-5",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.04999999999999999,
+            "diem": 0.04999999999999999
+          },
+          "cache_input": {
+            "usd": 0.004999999999999999,
+            "diem": 0.004999999999999999
+          },
+          "output": {
+            "usd": 0.18749999999999994,
+            "diem": 0.18749999999999994
+          }
+        },
+        "availableContextTokens": 260000,
+        "maxCompletionTokens": 65536,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": true,
+          "reasoningEffortOptions": [
+            "none",
+            "low",
+            "medium",
+            "high"
+          ],
+          "defaultReasoningEffort": "high",
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Mercury 2.5 is a diffusion-based reasoning model from Inception with fast parallel token generation, tunable reasoning, tool calling, and structured output support.",
+        "name": "Mercury 2.5",
+        "modelSource": "https://www.inceptionlabs.ai/models",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
       "context_length": 128000,
       "created": 1769472000,
       "id": "nvidia-nemotron-3-nano-30b-a3b",
@@ -6288,6 +6413,61 @@
         "description": "GPT OSS 120B running in a Trusted Execution Environment (TEE). OpenAI's open-weight 117B-parameter MoE model with configurable reasoning depth and native tool use, with hardware attestation evidence available for independent verification.",
         "name": "GPT OSS 120B",
         "modelSource": "https://huggingface.co/openai/gpt-oss-120b",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 1000000,
+      "created": 1788825600,
+      "id": "e2ee-kimi-k3-p",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 3.75,
+            "diem": 3.75
+          },
+          "cache_input": {
+            "usd": 0.375,
+            "diem": 0.375
+          },
+          "output": {
+            "usd": 18.75,
+            "diem": 18.75
+          }
+        },
+        "availableContextTokens": 1000000,
+        "maxCompletionTokens": 131072,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": true,
+          "reasoningEffortOptions": [
+            "none",
+            "max"
+          ],
+          "defaultReasoningEffort": "max",
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": true,
+          "supportsE2EE": true,
+          "supportsVideoInput": false,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Kimi K3 is a 2.8T parameter open-weight multimodal reasoning model from Moonshot AI. It is suited for complex coding, knowledge work, and long-horizon agentic workflows.",
+        "name": "Kimi K3",
+        "modelSource": "https://huggingface.co/moonshotai/Kimi-K3",
         "offline": false,
         "privacy": "private",
         "traits": []
@@ -7004,6 +7184,247 @@
       "type": "image"
     },
     {
+      "created": 1788825600,
+      "id": "gpt-image-2-5-flare",
+      "model_spec": {
+        "pricing": {
+          "resolutions": {
+            "1K": {
+              "usd": 0.07,
+              "diem": 0.07
+            },
+            "2K": {
+              "usd": 0.15,
+              "diem": 0.15
+            },
+            "4K": {
+              "usd": 0.23,
+              "diem": 0.23
+            }
+          },
+          "quality": {
+            "1K": {
+              "high": {
+                "usd": 0.07,
+                "diem": 0.07
+              },
+              "low": {
+                "usd": 0.03,
+                "diem": 0.03
+              },
+              "medium": {
+                "usd": 0.04,
+                "diem": 0.04
+              }
+            },
+            "2K": {
+              "high": {
+                "usd": 0.15,
+                "diem": 0.15
+              },
+              "low": {
+                "usd": 0.04,
+                "diem": 0.04
+              },
+              "medium": {
+                "usd": 0.05,
+                "diem": 0.05
+              }
+            },
+            "4K": {
+              "high": {
+                "usd": 0.23,
+                "diem": 0.23
+              },
+              "low": {
+                "usd": 0.05,
+                "diem": 0.05
+              },
+              "medium": {
+                "usd": 0.07,
+                "diem": 0.07
+              }
+            }
+          },
+          "upscale": {
+            "2x": {
+              "usd": 0.02,
+              "diem": 0.02
+            },
+            "4x": {
+              "usd": 0.08,
+              "diem": 0.08
+            }
+          }
+        },
+        "model_sets": [
+          "venice_recommendations",
+          "featured"
+        ],
+        "constraints": {
+          "promptCharacterLimit": 10000,
+          "defaultResolution": "1K",
+          "resolutions": [
+            "1K",
+            "2K",
+            "4K"
+          ],
+          "defaultQuality": "high",
+          "qualities": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "aspectRatios": [
+            "1:1",
+            "3:2",
+            "16:9",
+            "21:9",
+            "9:16",
+            "2:3",
+            "3:4",
+            "4:5"
+          ],
+          "defaultAspectRatio": "1:1",
+          "steps": {
+            "default": 20,
+            "max": 50
+          },
+          "widthHeightDivisor": 1
+        },
+        "supportsWebSearch": false,
+        "supportsOptimizePromptThinking": false,
+        "supportsStyleReferences": false,
+        "name": "GPT Image 2.5 Flare",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "image"
+    },
+    {
+      "created": 1788825600,
+      "id": "gpt-image-2-5-sunburst",
+      "model_spec": {
+        "pricing": {
+          "resolutions": {
+            "1K": {
+              "usd": 0.07,
+              "diem": 0.07
+            },
+            "2K": {
+              "usd": 0.15,
+              "diem": 0.15
+            },
+            "4K": {
+              "usd": 0.23,
+              "diem": 0.23
+            }
+          },
+          "quality": {
+            "1K": {
+              "high": {
+                "usd": 0.07,
+                "diem": 0.07
+              },
+              "low": {
+                "usd": 0.03,
+                "diem": 0.03
+              },
+              "medium": {
+                "usd": 0.04,
+                "diem": 0.04
+              }
+            },
+            "2K": {
+              "high": {
+                "usd": 0.15,
+                "diem": 0.15
+              },
+              "low": {
+                "usd": 0.04,
+                "diem": 0.04
+              },
+              "medium": {
+                "usd": 0.05,
+                "diem": 0.05
+              }
+            },
+            "4K": {
+              "high": {
+                "usd": 0.23,
+                "diem": 0.23
+              },
+              "low": {
+                "usd": 0.05,
+                "diem": 0.05
+              },
+              "medium": {
+                "usd": 0.07,
+                "diem": 0.07
+              }
+            }
+          },
+          "upscale": {
+            "2x": {
+              "usd": 0.02,
+              "diem": 0.02
+            },
+            "4x": {
+              "usd": 0.08,
+              "diem": 0.08
+            }
+          }
+        },
+        "model_sets": [
+          "venice_recommendations"
+        ],
+        "constraints": {
+          "promptCharacterLimit": 10000,
+          "defaultResolution": "1K",
+          "resolutions": [
+            "1K",
+            "2K",
+            "4K"
+          ],
+          "defaultQuality": "high",
+          "qualities": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "aspectRatios": [
+            "1:1",
+            "3:2",
+            "16:9",
+            "21:9",
+            "9:16",
+            "2:3",
+            "3:4",
+            "4:5"
+          ],
+          "defaultAspectRatio": "1:1",
+          "steps": {
+            "default": 20,
+            "max": 50
+          },
+          "widthHeightDivisor": 1
+        },
+        "supportsWebSearch": false,
+        "supportsOptimizePromptThinking": false,
+        "supportsStyleReferences": false,
+        "name": "GPT Image 2.5 Sunburst",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "image"
+    },
+    {
       "created": 1776729600,
       "id": "gpt-image-2",
       "model_spec": {
@@ -7078,8 +7499,7 @@
           }
         },
         "model_sets": [
-          "venice_recommendations",
-          "featured"
+          "venice_recommendations"
         ],
         "constraints": {
           "promptCharacterLimit": 10000,
@@ -7953,7 +8373,8 @@
             "9:16",
             "2:3",
             "3:4",
-            "4:5"
+            "4:5",
+            "4:3"
           ],
           "defaultAspectRatio": "1:1",
           "steps": {
@@ -8017,7 +8438,8 @@
             "16:9",
             "9:16",
             "2:3",
-            "3:4"
+            "3:4",
+            "4:3"
           ],
           "defaultAspectRatio": "1:1",
           "steps": {
@@ -10172,6 +10594,332 @@
       }
     },
     {
+      "created": 1788825600,
+      "id": "wan-3-0-pro-text-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "text-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "9:16",
+            "1:1",
+            "4:3",
+            "3:4"
+          ],
+          "resolutions": [
+            "1080p",
+            "2k",
+            "4k"
+          ],
+          "durations": [
+            "2s",
+            "5s",
+            "10s",
+            "15s",
+            "20s",
+            "25s",
+            "30s"
+          ],
+          "audio": true,
+          "audio_configurable": true,
+          "audio_input": false,
+          "per_reference_audio": false,
+          "video_input": false,
+          "prompt_character_limit": 20000
+        },
+        "model_sets": [
+          "uncensored",
+          "high_resolution",
+          "audio",
+          "long_duration"
+        ],
+        "name": "Wan 3.0 Pro",
+        "offline": false,
+        "traits": [],
+        "uncensored": true
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.85
+      }
+    },
+    {
+      "created": 1788825600,
+      "id": "wan-3-0-pro-image-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [
+            "adaptive",
+            "16:9",
+            "9:16",
+            "1:1",
+            "4:3",
+            "3:4"
+          ],
+          "resolutions": [
+            "1080p",
+            "2k",
+            "4k"
+          ],
+          "durations": [
+            "2s",
+            "5s",
+            "10s",
+            "15s",
+            "20s",
+            "25s",
+            "30s"
+          ],
+          "audio": true,
+          "audio_configurable": true,
+          "audio_input": false,
+          "per_reference_audio": false,
+          "video_input": false,
+          "prompt_character_limit": 20000,
+          "reference_image_min_short_side_pixels": 240
+        },
+        "model_sets": [
+          "uncensored",
+          "high_resolution",
+          "audio",
+          "long_duration"
+        ],
+        "name": "Wan 3.0 Pro",
+        "offline": false,
+        "traits": [],
+        "uncensored": true
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.85
+      }
+    },
+    {
+      "created": 1788825600,
+      "id": "wan-3-0-pro-reference-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [
+            "adaptive",
+            "16:9",
+            "9:16",
+            "1:1",
+            "4:3",
+            "3:4"
+          ],
+          "resolutions": [
+            "1080p",
+            "2k",
+            "4k"
+          ],
+          "durations": [
+            "2s",
+            "5s",
+            "10s",
+            "15s",
+            "20s",
+            "25s",
+            "30s"
+          ],
+          "audio": true,
+          "audio_configurable": true,
+          "audio_input": false,
+          "per_reference_audio": false,
+          "video_input": false,
+          "prompt_character_limit": 20000,
+          "reference_image_min_short_side_pixels": 240
+        },
+        "model_sets": [
+          "uncensored",
+          "high_resolution",
+          "audio",
+          "long_duration"
+        ],
+        "name": "Wan 3.0 Pro Reference",
+        "offline": false,
+        "traits": [],
+        "uncensored": true
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.85
+      }
+    },
+    {
+      "created": 1788825600,
+      "id": "wan-3-0-prime-pro-text-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "text-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "9:16",
+            "1:1",
+            "4:3",
+            "3:4"
+          ],
+          "resolutions": [
+            "1080p",
+            "2k",
+            "4k"
+          ],
+          "durations": [
+            "2s",
+            "5s",
+            "10s",
+            "15s",
+            "20s",
+            "25s",
+            "30s"
+          ],
+          "audio": true,
+          "audio_configurable": true,
+          "audio_input": false,
+          "per_reference_audio": false,
+          "video_input": false,
+          "prompt_character_limit": 20000
+        },
+        "model_sets": [
+          "uncensored",
+          "high_resolution",
+          "audio",
+          "long_duration"
+        ],
+        "name": "Wan 3.0 Prime Pro",
+        "offline": false,
+        "traits": [],
+        "uncensored": true
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 1.08
+      }
+    },
+    {
+      "created": 1788825600,
+      "id": "wan-3-0-prime-pro-image-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [
+            "adaptive",
+            "16:9",
+            "9:16",
+            "1:1",
+            "4:3",
+            "3:4"
+          ],
+          "resolutions": [
+            "1080p",
+            "2k",
+            "4k"
+          ],
+          "durations": [
+            "2s",
+            "5s",
+            "10s",
+            "15s",
+            "20s",
+            "25s",
+            "30s"
+          ],
+          "audio": true,
+          "audio_configurable": true,
+          "audio_input": false,
+          "per_reference_audio": false,
+          "video_input": false,
+          "prompt_character_limit": 20000,
+          "reference_image_min_short_side_pixels": 240
+        },
+        "model_sets": [
+          "uncensored",
+          "high_resolution",
+          "audio",
+          "long_duration"
+        ],
+        "name": "Wan 3.0 Prime Pro",
+        "offline": false,
+        "traits": [],
+        "uncensored": true
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 1.08
+      }
+    },
+    {
+      "created": 1788825600,
+      "id": "wan-3-0-prime-pro-reference-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [
+            "adaptive",
+            "16:9",
+            "9:16",
+            "1:1",
+            "4:3",
+            "3:4"
+          ],
+          "resolutions": [
+            "1080p",
+            "2k",
+            "4k"
+          ],
+          "durations": [
+            "2s",
+            "5s",
+            "10s",
+            "15s",
+            "20s",
+            "25s",
+            "30s"
+          ],
+          "audio": true,
+          "audio_configurable": true,
+          "audio_input": false,
+          "per_reference_audio": false,
+          "video_input": false,
+          "prompt_character_limit": 20000,
+          "reference_image_min_short_side_pixels": 240
+        },
+        "model_sets": [
+          "uncensored",
+          "high_resolution",
+          "audio",
+          "long_duration"
+        ],
+        "name": "Wan 3.0 Prime Pro Reference",
+        "offline": false,
+        "traits": [],
+        "uncensored": true
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 1.08
+      }
+    },
+    {
       "created": 1775088000,
       "id": "wan-2-7-text-to-video",
       "model_spec": {
@@ -11446,6 +12194,13 @@
           "uncensored",
           "open_source"
         ],
+        "deprecation": {
+          "autoRemap": false,
+          "date": "2026-09-29T00:00:00.000Z",
+          "removesAt": "2026-09-29T00:00:00.000Z",
+          "replacementModelId": "minimax-h3-max-text-to-video",
+          "startsAt": "2026-09-14T00:00:00.000Z"
+        },
         "name": "Wan 2.2 A14B",
         "offline": false,
         "traits": [],
@@ -11482,6 +12237,13 @@
           "uncensored",
           "open_source"
         ],
+        "deprecation": {
+          "autoRemap": false,
+          "date": "2026-09-29T00:00:00.000Z",
+          "removesAt": "2026-09-29T00:00:00.000Z",
+          "replacementModelId": "minimax-h3-max-image-to-video",
+          "startsAt": "2026-09-14T00:00:00.000Z"
+        },
         "name": "Wan 2.1 Pro",
         "offline": false,
         "traits": [],
@@ -11530,8 +12292,7 @@
           "high_resolution",
           "ultra_high_resolution",
           "audio",
-          "open_source",
-          "fast"
+          "open_source"
         ],
         "name": "LTX Video 2.3 Fast",
         "offline": false,
@@ -12023,6 +12784,59 @@
       }
     },
     {
+      "created": 1789171200,
+      "id": "minimax-h3-max-multi-angle",
+      "model_spec": {
+        "privacy": "private",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [],
+          "resolutions": [
+            "480P",
+            "768P",
+            "1080P"
+          ],
+          "durations": [
+            "5s",
+            "6s",
+            "7s",
+            "8s",
+            "9s",
+            "10s",
+            "11s",
+            "12s",
+            "13s",
+            "14s",
+            "15s"
+          ],
+          "audio": true,
+          "audio_configurable": false,
+          "audio_input": false,
+          "per_reference_audio": false,
+          "video_input": false,
+          "prompt_character_limit": 10000
+        },
+        "model_sets": [
+          "uncensored",
+          "high_resolution",
+          "long_duration",
+          "cinematic",
+          "audio",
+          "fast"
+        ],
+        "name": "MiniMax H3 Max Multi-Angle",
+        "offline": false,
+        "traits": [],
+        "uncensored": true
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.96
+      }
+    },
+    {
       "created": 1787788800,
       "id": "minimax-h3-max-reference-to-video",
       "model_spec": {
@@ -12073,8 +12887,7 @@
           "long_duration",
           "cinematic",
           "photorealistic",
-          "venice_recommendations",
-          "fast"
+          "venice_recommendations"
         ],
         "name": "MiniMax H3 Max R2V",
         "offline": false,
@@ -14890,7 +15703,8 @@
         "model_sets": [
           "fast",
           "cinematic",
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "name": "Runway Gen-4 Turbo",
         "offline": false,
@@ -15405,6 +16219,198 @@
       "type": "music"
     },
     {
+      "created": 1789430400,
+      "id": "elevenlabs-music-v2",
+      "model_spec": {
+        "pricing": {
+          "durations": {
+            "60": {
+              "usd": 0.69,
+              "diem": 0.69,
+              "min_seconds": 3,
+              "max_seconds": 60
+            },
+            "120": {
+              "usd": 1.38,
+              "diem": 1.38,
+              "min_seconds": 61,
+              "max_seconds": 120
+            },
+            "180": {
+              "usd": 2.08,
+              "diem": 2.08,
+              "min_seconds": 121,
+              "max_seconds": 180
+            },
+            "240": {
+              "usd": 2.76,
+              "diem": 2.76,
+              "min_seconds": 181,
+              "max_seconds": 240
+            },
+            "300": {
+              "usd": 3.45,
+              "diem": 3.45,
+              "min_seconds": 241,
+              "max_seconds": 300
+            },
+            "360": {
+              "usd": 4.15,
+              "diem": 4.15,
+              "min_seconds": 301,
+              "max_seconds": 360
+            },
+            "420": {
+              "usd": 4.84,
+              "diem": 4.84,
+              "min_seconds": 361,
+              "max_seconds": 420
+            },
+            "480": {
+              "usd": 5.52,
+              "diem": 5.52,
+              "min_seconds": 421,
+              "max_seconds": 480
+            },
+            "540": {
+              "usd": 6.22,
+              "diem": 6.22,
+              "min_seconds": 481,
+              "max_seconds": 540
+            },
+            "600": {
+              "usd": 6.9,
+              "diem": 6.9,
+              "min_seconds": 541,
+              "max_seconds": 600
+            }
+          }
+        },
+        "supports_lyrics": false,
+        "lyrics_required": false,
+        "supports_force_instrumental": true,
+        "supports_lyrics_optimizer": false,
+        "supports_loop": false,
+        "min_duration": 3,
+        "max_duration": 600,
+        "default_duration": 60,
+        "supported_formats": [
+          "mp3"
+        ],
+        "default_format": "mp3",
+        "prompt_character_limit": 4096,
+        "min_prompt_length": 10,
+        "supports_custom_voice_id": false,
+        "supports_language_code": false,
+        "supports_speed": false,
+        "description": "High-quality realistic music generation with optional vocals and configurable duration. Best for polished, production-ready tracks across a wide range of genres.",
+        "name": "ElevenLabs Music v2",
+        "modelSource": "",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "music"
+    },
+    {
+      "created": 1789430400,
+      "id": "elevenlabs-music-v2-5",
+      "model_spec": {
+        "pricing": {
+          "durations": {
+            "60": {
+              "usd": 0.69,
+              "diem": 0.69,
+              "min_seconds": 3,
+              "max_seconds": 60
+            },
+            "120": {
+              "usd": 1.38,
+              "diem": 1.38,
+              "min_seconds": 61,
+              "max_seconds": 120
+            },
+            "180": {
+              "usd": 2.08,
+              "diem": 2.08,
+              "min_seconds": 121,
+              "max_seconds": 180
+            },
+            "240": {
+              "usd": 2.76,
+              "diem": 2.76,
+              "min_seconds": 181,
+              "max_seconds": 240
+            },
+            "300": {
+              "usd": 3.45,
+              "diem": 3.45,
+              "min_seconds": 241,
+              "max_seconds": 300
+            },
+            "360": {
+              "usd": 4.15,
+              "diem": 4.15,
+              "min_seconds": 301,
+              "max_seconds": 360
+            },
+            "420": {
+              "usd": 4.84,
+              "diem": 4.84,
+              "min_seconds": 361,
+              "max_seconds": 420
+            },
+            "480": {
+              "usd": 5.52,
+              "diem": 5.52,
+              "min_seconds": 421,
+              "max_seconds": 480
+            },
+            "540": {
+              "usd": 6.22,
+              "diem": 6.22,
+              "min_seconds": 481,
+              "max_seconds": 540
+            },
+            "600": {
+              "usd": 6.9,
+              "diem": 6.9,
+              "min_seconds": 541,
+              "max_seconds": 600
+            }
+          }
+        },
+        "supports_lyrics": false,
+        "lyrics_required": false,
+        "supports_force_instrumental": true,
+        "supports_lyrics_optimizer": false,
+        "supports_loop": false,
+        "min_duration": 3,
+        "max_duration": 600,
+        "default_duration": 60,
+        "supported_formats": [
+          "mp3"
+        ],
+        "default_format": "mp3",
+        "prompt_character_limit": 4096,
+        "min_prompt_length": 10,
+        "supports_custom_voice_id": false,
+        "supports_language_code": false,
+        "supports_speed": false,
+        "description": "Latest ElevenLabs music generation with higher-quality realistic tracks, optional vocals, and configurable duration. Best for polished, production-ready songs across a wide range of genres.",
+        "name": "ElevenLabs Music v2.5",
+        "modelSource": "",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "music"
+    },
+    {
       "created": 1771718400,
       "id": "minimax-music-v2",
       "model_spec": {
@@ -15871,7 +16877,6 @@
         "supports_force_instrumental": false,
         "supports_lyrics_optimizer": false,
         "supports_loop": false,
-        "default_duration": 120,
         "supported_formats": [
           "mp3",
           "wav"
@@ -16738,7 +17743,7 @@
           "singleImageAspectRatio": true
         },
         "supportsOptimizePromptThinking": false,
-        "name": "FireRed Edit",
+        "name": "FireRed",
         "offline": false,
         "privacy": "private",
         "traits": []
@@ -17074,7 +18079,7 @@
           ]
         },
         "supportsOptimizePromptThinking": false,
-        "name": "Wan 2.7 Pro Edit",
+        "name": "Wan 2.7 Pro",
         "offline": false,
         "privacy": "anonymized",
         "traits": []
@@ -17119,6 +18124,234 @@
         },
         "supportsOptimizePromptThinking": false,
         "name": "Flux 2 Max",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "inpaint"
+    },
+    {
+      "created": 1788825600,
+      "id": "gpt-image-2-5-flare-edit",
+      "model_spec": {
+        "pricing": {
+          "inpaint": {
+            "usd": 0.08,
+            "diem": 0.08
+          },
+          "resolutions": {
+            "1K": {
+              "usd": 0.08,
+              "diem": 0.08
+            },
+            "2K": {
+              "usd": 0.15,
+              "diem": 0.15
+            },
+            "4K": {
+              "usd": 0.24,
+              "diem": 0.24
+            }
+          },
+          "inputImages": {
+            "included": 1,
+            "additional": {
+              "usd": 0.00966,
+              "diem": 0.00966
+            }
+          },
+          "quality": {
+            "1K": {
+              "high": {
+                "usd": 0.08,
+                "diem": 0.08
+              },
+              "low": {
+                "usd": 0.04,
+                "diem": 0.04
+              },
+              "medium": {
+                "usd": 0.04,
+                "diem": 0.04
+              }
+            },
+            "2K": {
+              "high": {
+                "usd": 0.15,
+                "diem": 0.15
+              },
+              "low": {
+                "usd": 0.04,
+                "diem": 0.04
+              },
+              "medium": {
+                "usd": 0.06,
+                "diem": 0.06
+              }
+            },
+            "4K": {
+              "high": {
+                "usd": 0.24,
+                "diem": 0.24
+              },
+              "low": {
+                "usd": 0.05,
+                "diem": 0.05
+              },
+              "medium": {
+                "usd": 0.08,
+                "diem": 0.08
+              }
+            }
+          }
+        },
+        "constraints": {
+          "aspectRatios": [
+            "auto",
+            "1:1",
+            "3:2",
+            "16:9",
+            "21:9",
+            "9:16",
+            "2:3",
+            "3:4",
+            "4:5"
+          ],
+          "promptCharacterLimit": 10000,
+          "combineImages": true,
+          "maxInputImages": 6,
+          "singleImageAspectRatio": true,
+          "defaultResolution": "1K",
+          "resolutions": [
+            "1K",
+            "2K",
+            "4K"
+          ],
+          "defaultQuality": "high",
+          "qualities": [
+            "low",
+            "medium",
+            "high"
+          ]
+        },
+        "supportsOptimizePromptThinking": false,
+        "name": "GPT Image 2.5 Flare",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "inpaint"
+    },
+    {
+      "created": 1788825600,
+      "id": "gpt-image-2-5-sunburst-edit",
+      "model_spec": {
+        "pricing": {
+          "inpaint": {
+            "usd": 0.08,
+            "diem": 0.08
+          },
+          "resolutions": {
+            "1K": {
+              "usd": 0.08,
+              "diem": 0.08
+            },
+            "2K": {
+              "usd": 0.15,
+              "diem": 0.15
+            },
+            "4K": {
+              "usd": 0.24,
+              "diem": 0.24
+            }
+          },
+          "inputImages": {
+            "included": 1,
+            "additional": {
+              "usd": 0.00966,
+              "diem": 0.00966
+            }
+          },
+          "quality": {
+            "1K": {
+              "high": {
+                "usd": 0.08,
+                "diem": 0.08
+              },
+              "low": {
+                "usd": 0.04,
+                "diem": 0.04
+              },
+              "medium": {
+                "usd": 0.04,
+                "diem": 0.04
+              }
+            },
+            "2K": {
+              "high": {
+                "usd": 0.15,
+                "diem": 0.15
+              },
+              "low": {
+                "usd": 0.04,
+                "diem": 0.04
+              },
+              "medium": {
+                "usd": 0.06,
+                "diem": 0.06
+              }
+            },
+            "4K": {
+              "high": {
+                "usd": 0.24,
+                "diem": 0.24
+              },
+              "low": {
+                "usd": 0.05,
+                "diem": 0.05
+              },
+              "medium": {
+                "usd": 0.08,
+                "diem": 0.08
+              }
+            }
+          }
+        },
+        "constraints": {
+          "aspectRatios": [
+            "auto",
+            "1:1",
+            "3:2",
+            "16:9",
+            "21:9",
+            "9:16",
+            "2:3",
+            "3:4",
+            "4:5"
+          ],
+          "promptCharacterLimit": 10000,
+          "combineImages": true,
+          "maxInputImages": 6,
+          "singleImageAspectRatio": true,
+          "defaultResolution": "1K",
+          "resolutions": [
+            "1K",
+            "2K",
+            "4K"
+          ],
+          "defaultQuality": "high",
+          "qualities": [
+            "low",
+            "medium",
+            "high"
+          ]
+        },
+        "supportsOptimizePromptThinking": false,
+        "name": "GPT Image 2.5 Sunburst",
         "offline": false,
         "privacy": "anonymized",
         "traits": []
@@ -17450,6 +18683,7 @@
             "9:16",
             "2:3",
             "3:4",
+            "4:3",
             "4:5"
           ],
           "promptCharacterLimit": 6000,
@@ -17486,6 +18720,7 @@
             "9:16",
             "2:3",
             "3:4",
+            "4:3",
             "4:5"
           ],
           "promptCharacterLimit": 6000,
@@ -17557,7 +18792,8 @@
             "9:16",
             "2:3",
             "3:4",
-            "4:5"
+            "4:5",
+            "4:3"
           ],
           "promptCharacterLimit": 10000,
           "combineImages": true,
@@ -17610,7 +18846,8 @@
             "16:9",
             "9:16",
             "2:3",
-            "3:4"
+            "3:4",
+            "4:3"
           ],
           "promptCharacterLimit": 10000,
           "combineImages": true,
@@ -17719,7 +18956,7 @@
           ]
         },
         "supportsOptimizePromptThinking": true,
-        "name": "Qwen Image 3 Edit",
+        "name": "Qwen Image 3",
         "offline": false,
         "privacy": "anonymized",
         "traits": [],
@@ -17778,7 +19015,7 @@
           ]
         },
         "supportsOptimizePromptThinking": true,
-        "name": "Qwen Image 3 Pro Edit",
+        "name": "Qwen Image 3 Pro",
         "offline": false,
         "privacy": "anonymized",
         "traits": [],
