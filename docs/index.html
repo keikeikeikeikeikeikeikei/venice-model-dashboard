@@ -812,7 +812,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-11-07 19:35)</div>
+            <div class="meta">Generated from Live API Data (2026-11-08 08:06)</div>
         </header>
 
         <div class="controls">
@@ -5574,7 +5574,8 @@
           "supportsAudioInput": false,
           "supportsFunctionCalling": true,
           "supportsLogProbs": false,
-          "supportsMultipleImages": false,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
           "supportsReasoning": true,
           "supportsReasoningEffort": true,
           "reasoningEffortOptions": [
@@ -5588,7 +5589,7 @@
           "supportsTeeAttestation": false,
           "supportsE2EE": false,
           "supportsVideoInput": false,
-          "supportsVision": false,
+          "supportsVision": true,
           "supportsWebSearch": true,
           "supportsXSearch": false
         },
@@ -9790,6 +9791,242 @@
         "supportsOptimizePromptThinking": false,
         "supportsStyleReferences": false,
         "name": "GPT Image 2.5 Sunburst",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "image"
+    },
+    {
+      "created": 1793836800,
+      "id": "gpt-image-2-6-sunburst",
+      "model_spec": {
+        "pricing": {
+          "resolutions": {
+            "1K": {
+              "usd": 0.09,
+              "diem": 0.09
+            },
+            "2K": {
+              "usd": 0.15,
+              "diem": 0.15
+            },
+            "4K": {
+              "usd": 0.24,
+              "diem": 0.24
+            }
+          },
+          "quality": {
+            "1K": {
+              "high": {
+                "usd": 0.09,
+                "diem": 0.09
+              },
+              "low": {
+                "usd": 0.05,
+                "diem": 0.05
+              },
+              "medium": {
+                "usd": 0.07,
+                "diem": 0.07
+              }
+            },
+            "2K": {
+              "high": {
+                "usd": 0.15,
+                "diem": 0.15
+              },
+              "low": {
+                "usd": 0.08,
+                "diem": 0.08
+              },
+              "medium": {
+                "usd": 0.13,
+                "diem": 0.13
+              }
+            },
+            "4K": {
+              "high": {
+                "usd": 0.24,
+                "diem": 0.24
+              },
+              "low": {
+                "usd": 0.12,
+                "diem": 0.12
+              },
+              "medium": {
+                "usd": 0.2,
+                "diem": 0.2
+              }
+            }
+          },
+          "upscale": {
+            "2x": {
+              "usd": 0.02,
+              "diem": 0.02
+            },
+            "4x": {
+              "usd": 0.08,
+              "diem": 0.08
+            }
+          }
+        },
+        "constraints": {
+          "promptCharacterLimit": 10000,
+          "defaultResolution": "1K",
+          "resolutions": [
+            "1K",
+            "2K",
+            "4K"
+          ],
+          "defaultQuality": "high",
+          "qualities": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "supportsTransparentBackground": true,
+          "aspectRatios": [
+            "1:1",
+            "3:2",
+            "16:9",
+            "21:9",
+            "9:16",
+            "2:3",
+            "3:4",
+            "4:5"
+          ],
+          "defaultAspectRatio": "1:1",
+          "steps": {
+            "default": 20,
+            "max": 50
+          },
+          "widthHeightDivisor": 1
+        },
+        "supportsWebSearch": false,
+        "supportsOptimizePromptThinking": false,
+        "supportsStyleReferences": false,
+        "name": "GPT Image 2.6 Sunburst",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "image"
+    },
+    {
+      "created": 1793836800,
+      "id": "gpt-image-2-6-flare",
+      "model_spec": {
+        "pricing": {
+          "resolutions": {
+            "1K": {
+              "usd": 0.09,
+              "diem": 0.09
+            },
+            "2K": {
+              "usd": 0.15,
+              "diem": 0.15
+            },
+            "4K": {
+              "usd": 0.24,
+              "diem": 0.24
+            }
+          },
+          "quality": {
+            "1K": {
+              "high": {
+                "usd": 0.09,
+                "diem": 0.09
+              },
+              "low": {
+                "usd": 0.05,
+                "diem": 0.05
+              },
+              "medium": {
+                "usd": 0.07,
+                "diem": 0.07
+              }
+            },
+            "2K": {
+              "high": {
+                "usd": 0.15,
+                "diem": 0.15
+              },
+              "low": {
+                "usd": 0.08,
+                "diem": 0.08
+              },
+              "medium": {
+                "usd": 0.13,
+                "diem": 0.13
+              }
+            },
+            "4K": {
+              "high": {
+                "usd": 0.24,
+                "diem": 0.24
+              },
+              "low": {
+                "usd": 0.12,
+                "diem": 0.12
+              },
+              "medium": {
+                "usd": 0.2,
+                "diem": 0.2
+              }
+            }
+          },
+          "upscale": {
+            "2x": {
+              "usd": 0.02,
+              "diem": 0.02
+            },
+            "4x": {
+              "usd": 0.08,
+              "diem": 0.08
+            }
+          }
+        },
+        "constraints": {
+          "promptCharacterLimit": 10000,
+          "defaultResolution": "1K",
+          "resolutions": [
+            "1K",
+            "2K",
+            "4K"
+          ],
+          "defaultQuality": "high",
+          "qualities": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "supportsTransparentBackground": true,
+          "aspectRatios": [
+            "1:1",
+            "3:2",
+            "16:9",
+            "21:9",
+            "9:16",
+            "2:3",
+            "3:4",
+            "4:5"
+          ],
+          "defaultAspectRatio": "1:1",
+          "steps": {
+            "default": 20,
+            "max": 50
+          },
+          "widthHeightDivisor": 1
+        },
+        "supportsWebSearch": false,
+        "supportsOptimizePromptThinking": false,
+        "supportsStyleReferences": false,
+        "name": "GPT Image 2.6 Flare",
         "offline": false,
         "privacy": "anonymized",
         "traits": []
@@ -21539,6 +21776,236 @@
         },
         "supportsOptimizePromptThinking": false,
         "name": "GPT Image 2.5 Sunburst",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "inpaint"
+    },
+    {
+      "created": 1793836800,
+      "id": "gpt-image-2-6-sunburst-edit",
+      "model_spec": {
+        "pricing": {
+          "inpaint": {
+            "usd": 0.1,
+            "diem": 0.1
+          },
+          "resolutions": {
+            "1K": {
+              "usd": 0.1,
+              "diem": 0.1
+            },
+            "2K": {
+              "usd": 0.16,
+              "diem": 0.16
+            },
+            "4K": {
+              "usd": 0.25,
+              "diem": 0.25
+            }
+          },
+          "inputImages": {
+            "included": 1,
+            "additional": {
+              "usd": 0.010500000000000002,
+              "diem": 0.010500000000000002
+            }
+          },
+          "quality": {
+            "1K": {
+              "high": {
+                "usd": 0.1,
+                "diem": 0.1
+              },
+              "low": {
+                "usd": 0.06,
+                "diem": 0.06
+              },
+              "medium": {
+                "usd": 0.09,
+                "diem": 0.09
+              }
+            },
+            "2K": {
+              "high": {
+                "usd": 0.16,
+                "diem": 0.16
+              },
+              "low": {
+                "usd": 0.09,
+                "diem": 0.09
+              },
+              "medium": {
+                "usd": 0.14,
+                "diem": 0.14
+              }
+            },
+            "4K": {
+              "high": {
+                "usd": 0.25,
+                "diem": 0.25
+              },
+              "low": {
+                "usd": 0.13,
+                "diem": 0.13
+              },
+              "medium": {
+                "usd": 0.21,
+                "diem": 0.21
+              }
+            }
+          }
+        },
+        "constraints": {
+          "aspectRatios": [
+            "auto",
+            "1:1",
+            "3:2",
+            "16:9",
+            "21:9",
+            "9:16",
+            "2:3",
+            "3:4",
+            "4:5"
+          ],
+          "promptCharacterLimit": 10000,
+          "combineImages": true,
+          "maxInputImages": 6,
+          "singleImageAspectRatio": true,
+          "defaultResolution": "1K",
+          "resolutions": [
+            "1K",
+            "2K",
+            "4K"
+          ],
+          "defaultQuality": "high",
+          "qualities": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "supportsTransparentBackground": true
+        },
+        "supportsOptimizePromptThinking": false,
+        "name": "GPT Image 2.6 Sunburst Edit",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "inpaint"
+    },
+    {
+      "created": 1793836800,
+      "id": "gpt-image-2-6-flare-edit",
+      "model_spec": {
+        "pricing": {
+          "inpaint": {
+            "usd": 0.1,
+            "diem": 0.1
+          },
+          "resolutions": {
+            "1K": {
+              "usd": 0.1,
+              "diem": 0.1
+            },
+            "2K": {
+              "usd": 0.16,
+              "diem": 0.16
+            },
+            "4K": {
+              "usd": 0.25,
+              "diem": 0.25
+            }
+          },
+          "inputImages": {
+            "included": 1,
+            "additional": {
+              "usd": 0.010500000000000002,
+              "diem": 0.010500000000000002
+            }
+          },
+          "quality": {
+            "1K": {
+              "high": {
+                "usd": 0.1,
+                "diem": 0.1
+              },
+              "low": {
+                "usd": 0.06,
+                "diem": 0.06
+              },
+              "medium": {
+                "usd": 0.09,
+                "diem": 0.09
+              }
+            },
+            "2K": {
+              "high": {
+                "usd": 0.16,
+                "diem": 0.16
+              },
+              "low": {
+                "usd": 0.09,
+                "diem": 0.09
+              },
+              "medium": {
+                "usd": 0.14,
+                "diem": 0.14
+              }
+            },
+            "4K": {
+              "high": {
+                "usd": 0.25,
+                "diem": 0.25
+              },
+              "low": {
+                "usd": 0.13,
+                "diem": 0.13
+              },
+              "medium": {
+                "usd": 0.21,
+                "diem": 0.21
+              }
+            }
+          }
+        },
+        "constraints": {
+          "aspectRatios": [
+            "auto",
+            "1:1",
+            "3:2",
+            "16:9",
+            "21:9",
+            "9:16",
+            "2:3",
+            "3:4",
+            "4:5"
+          ],
+          "promptCharacterLimit": 10000,
+          "combineImages": true,
+          "maxInputImages": 6,
+          "singleImageAspectRatio": true,
+          "defaultResolution": "1K",
+          "resolutions": [
+            "1K",
+            "2K",
+            "4K"
+          ],
+          "defaultQuality": "high",
+          "qualities": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "supportsTransparentBackground": true
+        },
+        "supportsOptimizePromptThinking": false,
+        "name": "GPT Image 2.6 Flare Edit",
         "offline": false,
         "privacy": "anonymized",
         "traits": []
