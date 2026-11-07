@@ -4471,7 +4471,7 @@
           "supportsXSearch": false
         },
         "deprecation": {
-          "autoRemap": false,
+          "autoRemap": true,
           "date": "2026-11-15T00:00:00.000Z",
           "removesAt": "2026-11-15T00:00:00.000Z",
           "replacementModelId": "deepseek-v4-1-flash-1017"
@@ -16204,6 +16204,224 @@
       }
     },
     {
+      "created": 1793836800,
+      "id": "kling-v4-flash-text-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "text-to-video",
+          "aspect_ratios": [
+            "16:9",
+            "9:16",
+            "1:1",
+            "21:9"
+          ],
+          "resolutions": [
+            "720p"
+          ],
+          "durations": [
+            "3s",
+            "4s",
+            "5s",
+            "6s",
+            "7s",
+            "8s",
+            "9s",
+            "10s",
+            "11s",
+            "12s",
+            "13s",
+            "14s",
+            "15s",
+            "16s",
+            "17s",
+            "18s",
+            "19s",
+            "20s"
+          ],
+          "audio": true,
+          "audio_configurable": false,
+          "audio_input": false,
+          "per_reference_audio": false,
+          "video_input": false,
+          "prompt_character_limit": 26000
+        },
+        "model_sets": [
+          "audio",
+          "long_duration",
+          "cinematic",
+          "photorealistic"
+        ],
+        "name": "Kling 4.0 Flash",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.35
+      }
+    },
+    {
+      "created": 1793836800,
+      "id": "kling-v4-flash-image-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [],
+          "resolutions": [
+            "720p"
+          ],
+          "durations": [
+            "3s",
+            "4s",
+            "5s",
+            "6s",
+            "7s",
+            "8s",
+            "9s",
+            "10s",
+            "11s",
+            "12s",
+            "13s",
+            "14s",
+            "15s",
+            "16s",
+            "17s",
+            "18s",
+            "19s",
+            "20s"
+          ],
+          "audio": true,
+          "audio_configurable": false,
+          "audio_input": false,
+          "per_reference_audio": false,
+          "video_input": false,
+          "prompt_character_limit": 26000,
+          "reference_image_min_short_side_pixels": 300,
+          "reference_image_min_aspect_ratio": 0.4,
+          "reference_image_max_aspect_ratio": 2.5
+        },
+        "model_sets": [
+          "audio",
+          "long_duration",
+          "cinematic",
+          "photorealistic"
+        ],
+        "name": "Kling 4.0 Flash",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.35
+      }
+    },
+    {
+      "created": 1793836800,
+      "id": "kling-v4-flash-reference-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [
+            "auto",
+            "16:9",
+            "9:16",
+            "1:1",
+            "21:9"
+          ],
+          "resolutions": [
+            "720p"
+          ],
+          "durations": [
+            "3s",
+            "4s",
+            "5s",
+            "6s",
+            "7s",
+            "8s",
+            "9s",
+            "10s",
+            "11s",
+            "12s",
+            "13s",
+            "14s",
+            "15s",
+            "16s",
+            "17s",
+            "18s",
+            "19s",
+            "20s"
+          ],
+          "audio": true,
+          "audio_configurable": false,
+          "audio_input": false,
+          "per_reference_audio": false,
+          "video_input": false,
+          "prompt_character_limit": 26000,
+          "reference_image_min_short_side_pixels": 300,
+          "reference_image_min_aspect_ratio": 0.4,
+          "reference_image_max_aspect_ratio": 2.5
+        },
+        "model_sets": [
+          "audio",
+          "long_duration",
+          "cinematic",
+          "photorealistic"
+        ],
+        "name": "Kling 4.0 Flash R2V",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.35
+      }
+    },
+    {
+      "created": 1793836800,
+      "id": "kling-v4-flash-video-to-video",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "video",
+          "aspect_ratios": [],
+          "resolutions": [
+            "720p"
+          ],
+          "durations": [
+            "Auto"
+          ],
+          "audio": true,
+          "audio_configurable": false,
+          "audio_input": false,
+          "per_reference_audio": false,
+          "video_input": true,
+          "prompt_character_limit": 26000,
+          "reference_image_min_short_side_pixels": 300
+        },
+        "model_sets": [
+          "audio",
+          "long_duration",
+          "cinematic",
+          "photorealistic"
+        ],
+        "name": "Kling 4.0 Flash Edit",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video"
+    },
+    {
       "created": 1764806400,
       "id": "longcat-distilled-image-to-video",
       "model_spec": {
@@ -19451,7 +19669,7 @@
         ],
         "name": "xAI TTS v1",
         "offline": false,
-        "privacy": "anonymized",
+        "privacy": "private",
         "traits": []
       },
       "object": "model",
@@ -21456,7 +21674,7 @@
         },
         "name": "xAI Speech to Text v1",
         "offline": false,
-        "privacy": "anonymized",
+        "privacy": "private",
         "traits": []
       },
       "object": "model",
