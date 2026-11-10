@@ -1952,6 +1952,12 @@
           "supportsWebSearch": true,
           "supportsXSearch": false
         },
+        "deprecation": {
+          "autoRemap": true,
+          "date": "2026-11-18T00:00:00.000Z",
+          "removesAt": "2026-11-18T00:00:00.000Z",
+          "replacementModelId": "google-gemma-4-26b-a4b-it"
+        },
         "description": "Gemma 4 Uncensored is an uncensored variant of Google Gemma 4 26B, a Mixture-of-Experts model with 26B total parameters and only 4B active per token. Fine-tuned for uncensored chat without content filtering, it supports 256K context, coding, and general-purpose conversation.",
         "name": "Gemma 4 Uncensored",
         "modelSource": "https://huggingface.co/Jiunsong/supergemma4-26b-uncensored-gguf-v2",
