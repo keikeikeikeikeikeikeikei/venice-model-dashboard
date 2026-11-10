@@ -812,7 +812,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-11-09 10:15)</div>
+            <div class="meta">Generated from Live API Data (2026-11-10 13:46)</div>
         </header>
 
         <div class="controls">
@@ -3749,6 +3749,68 @@
     },
     {
       "context_length": 1000000,
+      "created": 1794182400,
+      "id": "claude-fable-5-2",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 8,
+            "diem": 8
+          },
+          "cache_input": {
+            "usd": 0.2,
+            "diem": 0.2
+          },
+          "cache_write": {
+            "usd": 10,
+            "diem": 10
+          },
+          "output": {
+            "usd": 40,
+            "diem": 40
+          }
+        },
+        "availableContextTokens": 1000000,
+        "maxCompletionTokens": 128000,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": true,
+          "reasoningEffortOptions": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "defaultReasoningEffort": "high",
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Claude Fable 5.2 improves on Claude Fable 5.1 across the board, with the biggest gains in agentic coding, long-running agentic workflows, and knowledge work such as long code refactors, front-end development, and finance and analysis tasks. It features a 1M token context window, 128K max output tokens, always-on adaptive thinking, and strong multimodal capabilities, and tends to be more concise in its plans and summaries.",
+        "name": "Claude Fable 5.2",
+        "modelSource": "",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 1000000,
       "created": 1784764800,
       "id": "claude-opus-5",
       "model_spec": {
@@ -6160,6 +6222,7 @@
           "supportsWebSearch": true,
           "supportsXSearch": false
         },
+        "description": "Llama 3.2 3B is a lightweight model from Meta's Llama 3.2 family, sized for fast, low-cost tasks such as summarization, classification and rewriting. It supports text input and output with a 128K-token context window and handles several languages.",
         "name": "Llama 3.2 3B",
         "modelSource": "https://huggingface.co/meta-llama/Llama-3.2-3B",
         "offline": false,
@@ -6204,6 +6267,7 @@
           "supportsWebSearch": true,
           "supportsXSearch": false
         },
+        "description": "Llama 3.3 70B is Meta's instruction-tuned 70-billion-parameter Llama model, which Meta reports performs close to its much larger Llama 3.1 405B on many tasks. It supports text input and output with a 128K-token context window, for chat, writing and code.",
         "name": "Llama 3.3 70B",
         "modelSource": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
         "offline": false,
@@ -9041,6 +9105,7 @@
         "supportsWebSearch": false,
         "supportsOptimizePromptThinking": false,
         "supportsStyleReferences": false,
+        "description": "Venice SD35 is Venice's deployment of Stable Diffusion 3.5 Large, Stability AI's open-weight text-to-image model. It favors artistic and painterly styles over strict photorealism and accepts prompts of up to 1,500 characters.",
         "name": "Venice SD35",
         "modelSource": "https://huggingface.co/stabilityai/stable-diffusion-3.5-large",
         "offline": false,
@@ -9119,11 +9184,20 @@
           ],
           "aspectRatios": [
             "1:1",
-            "16:9",
-            "9:16",
-            "3:4",
+            "4:3",
             "3:2",
-            "2:3"
+            "16:9",
+            "2:1",
+            "19.5:9",
+            "20:9",
+            "21:9",
+            "5:2",
+            "3:4",
+            "2:3",
+            "9:16",
+            "1:2",
+            "9:19.5",
+            "9:20"
           ],
           "defaultAspectRatio": "1:1",
           "steps": {
@@ -9135,6 +9209,7 @@
         "supportsWebSearch": false,
         "supportsOptimizePromptThinking": false,
         "supportsStyleReferences": false,
+        "description": "Grok Imagine 2.0 is the second generation of xAI's Grok Imagine image model, generating images at 1K or 2K from text, with low and medium quality settings. It pairs with Grok Imagine 2.0 Edit for changing existing images.",
         "name": "Grok Imagine 2.0",
         "offline": false,
         "privacy": "private",
@@ -9239,6 +9314,7 @@
         "supportsWebSearch": false,
         "supportsOptimizePromptThinking": false,
         "supportsStyleReferences": false,
+        "description": "Krea 3 is the third generation of Krea's image model, rendering at up to 4K with built-in prompt expansion that fills in detail from short prompts. It offers medium and high quality settings and pairs with Krea 3 Edit for changing and combining images.",
         "name": "Krea 3",
         "offline": false,
         "privacy": "anonymized",
@@ -9286,13 +9362,16 @@
           ],
           "aspectRatios": [
             "1:1",
+            "5:4",
+            "4:3",
             "3:2",
             "16:9",
             "21:9",
-            "9:16",
-            "2:3",
+            "4:5",
             "3:4",
-            "4:5"
+            "2:3",
+            "9:16",
+            "9:21"
           ],
           "defaultAspectRatio": "1:1",
           "steps": {
@@ -9304,6 +9383,7 @@
         "supportsWebSearch": false,
         "supportsOptimizePromptThinking": false,
         "supportsStyleReferences": false,
+        "description": "Krea 2 Turbo is the speed-optimized, open-weight version of Krea's Krea 2 image model, generating high-fidelity images at 1K or 2K in seconds. It suits rapid ideation and iteration.",
         "name": "Krea 2 Turbo",
         "modelSource": "https://huggingface.co/krea/Krea-2-Turbo",
         "offline": false,
@@ -9357,6 +9437,7 @@
         "supportsWebSearch": false,
         "supportsOptimizePromptThinking": false,
         "supportsStyleReferences": false,
+        "description": "Flux 2 Pro is the Pro tier of Black Forest Labs' FLUX.2 image family, built for high-quality, prompt-faithful generation at speed. It handles detailed prompts of up to 3,000 characters.",
         "name": "Flux 2 Pro",
         "offline": false,
         "privacy": "anonymized",
@@ -9412,6 +9493,7 @@
         "supportsWebSearch": false,
         "supportsOptimizePromptThinking": false,
         "supportsStyleReferences": false,
+        "description": "Flux 2 Max is the top tier of Black Forest Labs' FLUX.2 image family, aimed at realism, precision and consistency. It pairs with Flux 2 Max Edit for editing with up to 6 input images.",
         "name": "Flux 2 Max",
         "offline": false,
         "privacy": "anonymized",
@@ -9483,6 +9565,7 @@
         "supportsWebSearch": false,
         "supportsOptimizePromptThinking": false,
         "supportsStyleReferences": false,
+        "description": "Flux 3 is Black Forest Labs' flagship image model, with native 2K and 4K output, precise layout control and strong text rendering. It accepts prompts of up to 32,000 characters and pairs with Flux 3 Edit for local edits and multi-reference composition.",
         "name": "Flux 3",
         "offline": false,
         "privacy": "anonymized",
@@ -9587,13 +9670,16 @@
           "supportsTransparentBackground": true,
           "aspectRatios": [
             "1:1",
+            "5:4",
+            "4:3",
             "3:2",
             "16:9",
             "21:9",
-            "9:16",
-            "2:3",
+            "4:5",
             "3:4",
-            "4:5"
+            "2:3",
+            "9:16",
+            "9:21"
           ],
           "defaultAspectRatio": "1:1",
           "steps": {
@@ -9605,6 +9691,7 @@
         "supportsWebSearch": false,
         "supportsOptimizePromptThinking": false,
         "supportsStyleReferences": false,
+        "description": "GPT Image 2.5 Flare is the faster tier of OpenAI's GPT Image 2.5, built for quick, high-quality generation in creator and high-volume work. It renders at up to 4K and pairs with GPT Image 2.5 Flare Edit for scoped edits.",
         "name": "GPT Image 2.5 Flare",
         "offline": false,
         "privacy": "anonymized",
@@ -9708,13 +9795,16 @@
           "supportsTransparentBackground": true,
           "aspectRatios": [
             "1:1",
+            "5:4",
+            "4:3",
             "3:2",
             "16:9",
             "21:9",
-            "9:16",
-            "2:3",
+            "4:5",
             "3:4",
-            "4:5"
+            "2:3",
+            "9:16",
+            "9:21"
           ],
           "defaultAspectRatio": "1:1",
           "steps": {
@@ -9726,6 +9816,7 @@
         "supportsWebSearch": false,
         "supportsOptimizePromptThinking": false,
         "supportsStyleReferences": false,
+        "description": "GPT Image 2.5 Sunburst is the premium tier of OpenAI's GPT Image 2.5, built for precise, production-ready campaign and product imagery. It renders at up to 4K and pairs with GPT Image 2.5 Sunburst Edit for tightly controlled revisions.",
         "name": "GPT Image 2.5 Sunburst",
         "offline": false,
         "privacy": "anonymized",
@@ -9826,13 +9917,16 @@
           "supportsTransparentBackground": true,
           "aspectRatios": [
             "1:1",
+            "5:4",
+            "4:3",
             "3:2",
             "16:9",
             "21:9",
-            "9:16",
-            "2:3",
+            "4:5",
             "3:4",
-            "4:5"
+            "2:3",
+            "9:16",
+            "9:21"
           ],
           "defaultAspectRatio": "1:1",
           "steps": {
@@ -9844,6 +9938,7 @@
         "supportsWebSearch": false,
         "supportsOptimizePromptThinking": false,
         "supportsStyleReferences": false,
+        "description": "GPT Image 2.6 Sunburst is the high-fidelity tier of OpenAI's GPT Image 2.6, made for campaign and product work where detail matters. It renders at up to 4K and pairs with GPT Image 2.6 Sunburst Edit.",
         "name": "GPT Image 2.6 Sunburst",
         "offline": false,
         "privacy": "anonymized",
@@ -9944,13 +10039,16 @@
           "supportsTransparentBackground": true,
           "aspectRatios": [
             "1:1",
+            "5:4",
+            "4:3",
             "3:2",
             "16:9",
             "21:9",
-            "9:16",
-            "2:3",
+            "4:5",
             "3:4",
-            "4:5"
+            "2:3",
+            "9:16",
+            "9:21"
           ],
           "defaultAspectRatio": "1:1",
           "steps": {
@@ -9962,6 +10060,7 @@
         "supportsWebSearch": false,
         "supportsOptimizePromptThinking": false,
         "supportsStyleReferences": false,
+        "description": "GPT Image 2.6 Flare is the faster tier of OpenAI's GPT Image 2.6, giving high-fidelity results for campaign and product work at lower latency. It renders at up to 4K and pairs with GPT Image 2.6 Flare Edit.",
         "name": "GPT Image 2.6 Flare",
         "offline": false,
         "privacy": "anonymized",
@@ -10064,13 +10163,16 @@
           ],
           "aspectRatios": [
             "1:1",
+            "5:4",
+            "4:3",
             "3:2",
             "16:9",
             "21:9",
-            "9:16",
-            "2:3",
+            "4:5",
             "3:4",
-            "4:5"
+            "2:3",
+            "9:16",
+            "9:21"
           ],
           "defaultAspectRatio": "1:1",
           "steps": {
@@ -10082,6 +10184,7 @@
         "supportsWebSearch": false,
         "supportsOptimizePromptThinking": false,
         "supportsStyleReferences": false,
+        "description": "GPT Image 2 is OpenAI's image generation model, known for fine typography and high detail. It renders at up to 4K, offers low, medium and high quality settings, and pairs with GPT Image 2 Edit for edits that preserve composition.",
         "name": "GPT Image 2",
         "offline": false,
         "privacy": "anonymized",
@@ -10129,6 +10232,7 @@
         "supportsWebSearch": false,
         "supportsOptimizePromptThinking": false,
         "supportsStyleReferences": false,
+        "description": "GPT Image 1.5 is an earlier generation of OpenAI's GPT Image model, producing high-quality images in three aspect ratios. It pairs with GPT Image 1.5 Edit, which preserves composition, lighting and detail.",
         "name": "GPT Image 1.5",
         "offline": false,
         "privacy": "anonymized",
@@ -10180,6 +10284,7 @@
         "supportsWebSearch": false,
         "supportsOptimizePromptThinking": false,
         "supportsStyleReferences": false,
+        "description": "Hunyuan Image 3.0 is Tencent's open-weight text-to-image model, served here as the Instruct version, which reasons about a prompt before generating. It suits detailed, instruction-heavy prompts of up to 3,000 characters.",
         "name": "Hunyuan Image 3.0",
         "modelSource": "https://huggingface.co/tencent/HunyuanImage-3.0-Instruct",
         "offline": false,
@@ -10232,6 +10337,7 @@
         "supportsWebSearch": false,
         "supportsOptimizePromptThinking": false,
         "supportsStyleReferences": false,
+        "description": "Ideogram V4 is Ideogram's image model, known for legible, accurate text inside images. It suits posters, logos and marketing graphics.",
         "name": "Ideogram V4",
         "offline": false,
         "privacy": "anonymized",
@@ -10329,6 +10435,7 @@
         "supportsWebSearch": false,
         "supportsOptimizePromptThinking": false,
         "supportsStyleReferences": false,
+        "description": "Ideogram V4.5 is Ideogram's typography-focused image model, rendering accurate text for posters, logos and designs at 1K or 2K. It offers low, medium and high quality settings and pairs with Ideogram V4.5 Edit.",
         "name": "Ideogram V4.5",
         "offline": false,
         "privacy": "anonymized",
@@ -10379,6 +10486,7 @@
         "supportsWebSearch": false,
         "supportsOptimizePromptThinking": false,
         "supportsStyleReferences": true,
+        "description": "Krea v2 Large is Krea's high-fidelity text-to-image model, tuned for refined aesthetics and lifelike detail. It's the larger, higher-quality sibling of Krea v2 Medium.",
         "name": "Krea v2 Large",
         "offline": false,
         "privacy": "anonymized",
@@ -10429,6 +10537,7 @@
         "supportsWebSearch": false,
         "supportsOptimizePromptThinking": false,
         "supportsStyleReferences": true,
+        "description": "Krea v2 Medium is Krea's cost-effective text-to-image model, balancing speed and quality. It's the lighter sibling of Krea v2 Large.",
         "name": "Krea v2 Medium",
         "offline": false,
         "privacy": "anonymized",
@@ -10479,6 +10588,7 @@
         "supportsWebSearch": false,
         "supportsOptimizePromptThinking": false,
         "supportsStyleReferences": true,
+        "description": "Luma Uni-1 is Luma AI's image model, which grounds prompts in web knowledge for faithful, high-fidelity results. It pairs with Luma Uni-1 Edit for text-guided edits that keep the source structure.",
         "name": "Luma Uni-1",
         "offline": false,
         "privacy": "anonymized",
@@ -10532,6 +10642,7 @@
         "supportsWebSearch": false,
         "supportsOptimizePromptThinking": false,
         "supportsStyleReferences": true,
+        "description": "Luma Uni-1 Max runs Luma AI's Uni-1 at maximum fidelity, for hero-quality stills with web-grounded prompt adherence. It pairs with Luma Uni-1 Max Edit.",
         "name": "Luma Uni-1 Max",
         "offline": false,
         "privacy": "anonymized",
@@ -10582,6 +10693,7 @@
         "supportsWebSearch": false,
         "supportsOptimizePromptThinking": false,
         "supportsStyleReferences": false,
+        "description": "Muse Image is Meta's image model, known for faithful instruction following, accurate text and fine detail. It pairs with Muse Image Edit, which changes only what you ask and can compose from several reference images.",
         "name": "Muse Image",
         "offline": false,
         "privacy": "anonymized",
@@ -10634,13 +10746,19 @@
           ],
           "aspectRatios": [
             "1:1",
+            "5:4",
+            "4:3",
             "3:2",
             "16:9",
             "21:9",
-            "9:16",
-            "2:3",
+            "4:1",
+            "8:1",
+            "4:5",
             "3:4",
-            "4:5"
+            "2:3",
+            "9:16",
+            "1:4",
+            "1:8"
           ],
           "defaultAspectRatio": "1:1",
           "steps": {
@@ -10652,6 +10770,7 @@
         "supportsWebSearch": true,
         "supportsOptimizePromptThinking": false,
         "supportsStyleReferences": false,
+        "description": "Nano Banana 2 is Google's Gemini-based image model, generating at up to 4K from prompts of up to 32,768 characters. It pairs with Nano Banana 2 Edit for fast, high-quality edits.",
         "name": "Nano Banana 2",
         "offline": false,
         "privacy": "anonymized",
@@ -10701,13 +10820,19 @@
           ],
           "aspectRatios": [
             "1:1",
+            "5:4",
+            "4:3",
             "3:2",
             "16:9",
             "21:9",
-            "9:16",
-            "2:3",
+            "4:1",
+            "8:1",
+            "4:5",
             "3:4",
-            "4:5"
+            "2:3",
+            "9:16",
+            "1:4",
+            "1:8"
           ],
           "defaultAspectRatio": "1:1",
           "steps": {
@@ -10719,6 +10844,7 @@
         "supportsWebSearch": true,
         "supportsOptimizePromptThinking": false,
         "supportsStyleReferences": false,
+        "description": "Nano Banana 2.1 is an update to Google's Gemini-based Nano Banana 2 image model, generating at up to 4K from prompts of up to 32,768 characters. It pairs with Nano Banana 2.1 Edit.",
         "name": "Nano Banana 2.1",
         "offline": false,
         "privacy": "anonymized",
@@ -10771,13 +10897,19 @@
           ],
           "aspectRatios": [
             "1:1",
+            "5:4",
+            "4:3",
             "3:2",
             "16:9",
             "21:9",
-            "9:16",
-            "2:3",
+            "4:1",
+            "8:1",
+            "4:5",
             "3:4",
-            "4:5"
+            "2:3",
+            "9:16",
+            "1:4",
+            "1:8"
           ],
           "defaultAspectRatio": "1:1",
           "steps": {
@@ -10789,6 +10921,7 @@
         "supportsWebSearch": true,
         "supportsOptimizePromptThinking": false,
         "supportsStyleReferences": false,
+        "description": "Nano Banana Pro is the Pro tier of Google's Gemini-based Nano Banana image models, generating at up to 4K from prompts of up to 32,768 characters. It pairs with Nano Banana Pro Edit for high-quality edits.",
         "name": "Nano Banana Pro",
         "offline": false,
         "privacy": "anonymized",
@@ -10825,13 +10958,19 @@
           "promptCharacterLimit": 10000,
           "aspectRatios": [
             "1:1",
+            "5:4",
+            "4:3",
             "3:2",
             "16:9",
             "21:9",
-            "9:16",
-            "2:3",
+            "4:1",
+            "8:1",
+            "4:5",
             "3:4",
-            "4:5"
+            "2:3",
+            "9:16",
+            "1:4",
+            "1:8"
           ],
           "defaultAspectRatio": "1:1",
           "steps": {
@@ -10843,6 +10982,7 @@
         "supportsWebSearch": false,
         "supportsOptimizePromptThinking": false,
         "supportsStyleReferences": false,
+        "description": "Nano Banana 2 Lite is the efficiency-focused tier of Google's Nano Banana 2 image models, built for fast, cost-effective generation. It pairs with Nano Banana 2 Lite Edit for quick multi-turn edits.",
         "name": "Nano Banana 2 Lite",
         "offline": false,
         "privacy": "anonymized",
@@ -10894,6 +11034,7 @@
         "supportsWebSearch": false,
         "supportsOptimizePromptThinking": false,
         "supportsStyleReferences": false,
+        "description": "Recraft V4 is Recraft's image model, known for high-quality output and precise text rendering. It suits design, branding and marketing work.",
         "name": "Recraft V4",
         "offline": false,
         "privacy": "anonymized",
@@ -10945,6 +11086,7 @@
         "supportsWebSearch": false,
         "supportsOptimizePromptThinking": false,
         "supportsStyleReferences": false,
+        "description": "Recraft V4 Pro is the premium tier of Recraft V4, adding finer detail to its precise text rendering. It suits design, branding and product imagery where detail matters.",
         "name": "Recraft V4 Pro",
         "offline": false,
         "privacy": "anonymized",
@@ -10996,6 +11138,7 @@
         "supportsWebSearch": false,
         "supportsOptimizePromptThinking": false,
         "supportsStyleReferences": false,
+        "description": "Seedream V4.5 is ByteDance Seed's image model, served uncensored, with strong composition and detail. It pairs with Seedream V4.5 Edit for natural-language editing.",
         "name": "Seedream V4.5",
         "offline": false,
         "privacy": "anonymized",
@@ -11049,6 +11192,7 @@
         "supportsWebSearch": false,
         "supportsOptimizePromptThinking": false,
         "supportsStyleReferences": false,
+        "description": "Seedream V5 Lite is the fast tier of ByteDance Seed's Seedream 5.0 image models, giving high-quality images at lower latency. It pairs with Seedream V5 Lite Edit.",
         "name": "Seedream V5 Lite",
         "offline": false,
         "privacy": "anonymized",
@@ -11097,12 +11241,16 @@
           ],
           "aspectRatios": [
             "1:1",
+            "5:4",
+            "4:3",
             "3:2",
             "16:9",
-            "9:16",
-            "2:3",
+            "21:9",
+            "4:5",
             "3:4",
-            "4:3"
+            "2:3",
+            "9:16",
+            "9:21"
           ],
           "defaultAspectRatio": "1:1",
           "steps": {
@@ -11114,6 +11262,7 @@
         "supportsWebSearch": false,
         "supportsOptimizePromptThinking": true,
         "supportsStyleReferences": false,
+        "description": "Seedream V5 Pro is the flagship tier of ByteDance Seed's Seedream 5.0, generating high-quality images at 1K or 2K. It pairs with Seedream V5 Pro Edit.",
         "name": "Seedream V5 Pro",
         "offline": false,
         "privacy": "anonymized",
@@ -11166,6 +11315,7 @@
         "supportsWebSearch": false,
         "supportsOptimizePromptThinking": false,
         "supportsStyleReferences": false,
+        "description": "Qwen Image 2 is Alibaba's Qwen Image 2.0 text-to-image model, with native 2K output and accurate typography. It pairs with Qwen Image 2 Edit for natural-language editing without masks.",
         "name": "Qwen Image 2",
         "offline": false,
         "privacy": "anonymized",
@@ -11220,6 +11370,7 @@
         "supportsWebSearch": false,
         "supportsOptimizePromptThinking": false,
         "supportsStyleReferences": false,
+        "description": "Qwen Image 2 Pro is the highest-fidelity tier of Alibaba's Qwen Image 2.0, built for professional typography and detail. It pairs with Qwen Image 2 Pro Edit.",
         "name": "Qwen Image 2 Pro",
         "offline": false,
         "privacy": "anonymized",
@@ -11271,6 +11422,7 @@
         "supportsWebSearch": false,
         "supportsOptimizePromptThinking": false,
         "supportsStyleReferences": false,
+        "description": "Wan 2.7 is Alibaba's Wan 2.7 model in text-to-image mode, combining strong prompt understanding with high image quality. It handles prompts of up to 3,000 characters.",
         "name": "Wan 2.7",
         "offline": false,
         "privacy": "anonymized",
@@ -11322,6 +11474,7 @@
         "supportsWebSearch": false,
         "supportsOptimizePromptThinking": false,
         "supportsStyleReferences": false,
+        "description": "Wan 2.7 Pro is the enhanced tier of Alibaba's Wan 2.7 for text-to-image generation, adding finer detail. It pairs with Wan 2.7 Pro Edit for editing with up to 6 input images.",
         "name": "Wan 2.7 Pro",
         "offline": false,
         "privacy": "anonymized",
@@ -11366,11 +11519,18 @@
           ],
           "aspectRatios": [
             "1:1",
-            "16:9",
-            "9:16",
-            "3:4",
+            "4:3",
             "3:2",
-            "2:3"
+            "16:9",
+            "2:1",
+            "19.5:9",
+            "20:9",
+            "3:4",
+            "2:3",
+            "9:16",
+            "1:2",
+            "9:19.5",
+            "9:20"
           ],
           "defaultAspectRatio": "1:1",
           "steps": {
@@ -11382,6 +11542,7 @@
         "supportsWebSearch": false,
         "supportsOptimizePromptThinking": false,
         "supportsStyleReferences": false,
+        "description": "Grok Imagine is xAI's image model, generating photorealistic images from text at 1K or 2K with reliable quality and low latency. It pairs with Grok Imagine Edit for changing elements and styles.",
         "name": "Grok Imagine",
         "offline": false,
         "privacy": "private",
@@ -11422,6 +11583,7 @@
         "supportsWebSearch": false,
         "supportsOptimizePromptThinking": false,
         "supportsStyleReferences": false,
+        "description": "Lustify SDXL is a community fine-tune of Stable Diffusion XL, built for uncensored, adult-oriented photorealistic images. It accepts prompts of up to 1,500 characters.",
         "name": "Lustify SDXL",
         "modelSource": "https://civitai.com/models/573152/lustify-sdxl-nsfw-checkpoint",
         "offline": false,
@@ -11467,6 +11629,7 @@
         "supportsWebSearch": false,
         "supportsOptimizePromptThinking": false,
         "supportsStyleReferences": false,
+        "description": "Lustify v7 is version 7 of the Lustify community SDXL checkpoint, built for uncensored, adult-oriented photorealistic images. It accepts prompts of up to 1,500 characters.",
         "name": "Lustify v7",
         "modelSource": "https://civitai.com/models/573152/lustify-sdxl-nsfw-checkpoint",
         "offline": false,
@@ -11514,6 +11677,7 @@
         "supportsWebSearch": false,
         "supportsOptimizePromptThinking": false,
         "supportsStyleReferences": false,
+        "description": "Lustify v8 is version 8 of the Lustify community SDXL checkpoint, built for uncensored, adult-oriented photorealistic images. It accepts prompts of up to 1,500 characters.",
         "name": "Lustify v8",
         "modelSource": "https://civitai.com/models/573152/lustify-sdxl-nsfw-checkpoint",
         "offline": false,
@@ -11569,6 +11733,7 @@
         "supportsWebSearch": false,
         "supportsOptimizePromptThinking": false,
         "supportsStyleReferences": false,
+        "description": "Qwen Image is Alibaba's open-weight text-to-image model, known for close prompt adherence and accurate text rendering, including Chinese. It accepts prompts of up to 2,048 characters.",
         "name": "Qwen Image",
         "modelSource": "https://huggingface.co/Qwen/Qwen-Image",
         "offline": false,
@@ -11615,6 +11780,7 @@
         "supportsWebSearch": false,
         "supportsOptimizePromptThinking": false,
         "supportsStyleReferences": false,
+        "description": "Anime (WAI) is WAI-Illustrious, a community anime checkpoint built on Illustrious XL, for anime illustration, including uncensored adult content. It accepts prompts of up to 1,500 characters.",
         "name": "Anime (WAI)",
         "modelSource": "https://civitai.com/models/827184?modelVersionId=1761560",
         "offline": false,
@@ -11660,6 +11826,7 @@
         "supportsWebSearch": false,
         "supportsOptimizePromptThinking": false,
         "supportsStyleReferences": false,
+        "description": "Z-Image Turbo is the distilled, fast version of Z-Image, an open-weight text-to-image model from Alibaba's Tongyi Lab. It produces high-quality images in a few steps, which makes it a good default for quick generation.",
         "name": "Z-Image Turbo",
         "modelSource": "https://huggingface.co/Tongyi-MAI/Z-Image-Turbo",
         "offline": false,
@@ -11708,6 +11875,7 @@
         "supportsWebSearch": false,
         "supportsOptimizePromptThinking": false,
         "supportsStyleReferences": false,
+        "description": "Chroma is an open-weight community text-to-image model based on FLUX.1 schnell, trained for uncensored, photorealistic generation. It accepts prompts of up to 7,500 characters.",
         "name": "Chroma",
         "modelSource": "https://huggingface.co/lodestones/Chroma1-HD",
         "offline": false,
@@ -11775,6 +11943,7 @@
         "supportsWebSearch": false,
         "supportsOptimizePromptThinking": true,
         "supportsStyleReferences": false,
+        "description": "Qwen Image 3 is the standard tier of Alibaba's Qwen Image 3.0, offering cost-efficient text-to-image generation at 1K or 2K with strong text rendering. It pairs with Qwen Image 3 Edit.",
         "name": "Qwen Image 3",
         "modelSource": "https://www.alibabacloud.com/help/en/model-studio/models",
         "offline": false,
@@ -11842,6 +12011,7 @@
         "supportsWebSearch": false,
         "supportsOptimizePromptThinking": true,
         "supportsStyleReferences": false,
+        "description": "Qwen Image 3 Pro is the Pro tier of Alibaba's Qwen Image 3.0, built for close prompt adherence and strong text rendering at 1K or 2K. It pairs with Qwen Image 3 Pro Edit.",
         "name": "Qwen Image 3 Pro",
         "modelSource": "https://www.alibabacloud.com/help/en/model-studio/models",
         "offline": false,
@@ -11906,6 +12076,7 @@
         "supportsWebSearch": false,
         "supportsOptimizePromptThinking": true,
         "supportsStyleReferences": false,
+        "description": "Qwen Image 2.1 Turbo is the fast, cost-effective tier of Alibaba's open-weight Qwen-Image 2.1 series, balancing quality and speed at 1K or 2K. It pairs with Qwen Image 2.1 Turbo Edit.",
         "name": "Qwen Image 2.1 Turbo",
         "modelSource": "https://www.alibabacloud.com/help/en/model-studio/models",
         "offline": false,
@@ -11970,6 +12141,7 @@
         "supportsWebSearch": false,
         "supportsOptimizePromptThinking": true,
         "supportsStyleReferences": false,
+        "description": "Qwen Image 2.1 Pro is the full-capacity Qwen-Image 2.1 model from Alibaba, compact and efficient while generating at 1K or 2K. It pairs with Qwen Image 2.1 Pro Edit, which takes up to 10 reference images.",
         "name": "Qwen Image 2.1 Pro",
         "modelSource": "https://www.alibabacloud.com/help/en/model-studio/models",
         "offline": false,
@@ -12020,6 +12192,7 @@
           "high_resolution",
           "ultra_high_resolution"
         ],
+        "description": "Gemini Omni Flash 1.1 is Google's video model; this text-to-video variant turns prompts into 4- to 10-second clips at up to 4K. Sibling variants cover image-to-video, reference-to-video and video editing.",
         "name": "Gemini Omni Flash 1.1",
         "offline": false,
         "traits": []
@@ -12065,6 +12238,7 @@
           "high_resolution",
           "ultra_high_resolution"
         ],
+        "description": "Gemini Omni Flash 1.1's image-to-video variant animates a starting image into a 4- to 10-second clip at up to 4K, using Google's Gemini Omni Flash 1.1 video model.",
         "name": "Gemini Omni Flash 1.1",
         "offline": false,
         "traits": []
@@ -12113,6 +12287,7 @@
           "high_resolution",
           "ultra_high_resolution"
         ],
+        "description": "Gemini Omni Flash 1.1 R2V combines several reference images of characters, objects or styles into one 4- to 10-second clip at up to 4K, using Google's Gemini Omni Flash 1.1.",
         "name": "Gemini Omni Flash 1.1 R2V",
         "offline": false,
         "traits": []
@@ -12155,6 +12330,7 @@
           "high_resolution",
           "ultra_high_resolution"
         ],
+        "description": "Gemini Omni Flash 1.1 Edit rewrites an existing clip from a text instruction, keeping its length, at up to 4K. It's the video editing variant of Google's Gemini Omni Flash 1.1.",
         "name": "Gemini Omni Flash 1.1 Edit",
         "offline": false,
         "traits": []
@@ -12162,130 +12338,6 @@
       "object": "model",
       "owned_by": "venice.ai",
       "type": "video"
-    },
-    {
-      "created": 1773964800,
-      "id": "seedance-1-5-pro-text-to-video-basic",
-      "model_spec": {
-        "privacy": "anonymized",
-        "constraints": {
-          "model_type": "text-to-video",
-          "aspect_ratios": [
-            "21:9",
-            "16:9",
-            "4:3",
-            "1:1",
-            "3:4",
-            "9:16"
-          ],
-          "resolutions": [
-            "1080p",
-            "720p",
-            "480p"
-          ],
-          "durations": [
-            "4s",
-            "5s",
-            "6s",
-            "7s",
-            "8s",
-            "9s",
-            "10s",
-            "11s",
-            "12s"
-          ],
-          "audio": true,
-          "audio_configurable": true,
-          "audio_input": false,
-          "per_reference_audio": false,
-          "video_input": false,
-          "prompt_character_limit": 3500
-        },
-        "model_sets": [
-          "uncensored",
-          "high_resolution",
-          "audio",
-          "long_duration",
-          "cinematic",
-          "photorealistic"
-        ],
-        "deprecation": {
-          "autoRemap": false,
-          "date": "2026-11-10T00:00:00.000Z",
-          "removesAt": "2026-11-10T00:00:00.000Z",
-          "replacementModelId": "seedance-2-0-mini-text-to-video-basic"
-        },
-        "name": "Seedance 1.5 Pro",
-        "offline": false,
-        "traits": [],
-        "uncensored": true
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "video",
-      "pricing": {
-        "base_price_usd": 0.14
-      }
-    },
-    {
-      "created": 1773964800,
-      "id": "seedance-1-5-pro-image-to-video-basic",
-      "model_spec": {
-        "privacy": "anonymized",
-        "constraints": {
-          "model_type": "image-to-video",
-          "aspect_ratios": [],
-          "resolutions": [
-            "1080p",
-            "720p",
-            "480p"
-          ],
-          "durations": [
-            "4s",
-            "5s",
-            "6s",
-            "7s",
-            "8s",
-            "9s",
-            "10s",
-            "11s",
-            "12s"
-          ],
-          "audio": true,
-          "audio_configurable": true,
-          "audio_input": false,
-          "per_reference_audio": false,
-          "video_input": false,
-          "prompt_character_limit": 3500,
-          "reference_image_min_short_side_pixels": 300,
-          "reference_image_min_aspect_ratio": 0.4,
-          "reference_image_max_aspect_ratio": 2.5
-        },
-        "model_sets": [
-          "uncensored",
-          "high_resolution",
-          "audio",
-          "long_duration",
-          "cinematic",
-          "photorealistic"
-        ],
-        "deprecation": {
-          "autoRemap": false,
-          "date": "2026-11-10T00:00:00.000Z",
-          "removesAt": "2026-11-10T00:00:00.000Z",
-          "replacementModelId": "seedance-2-0-mini-image-to-video-basic"
-        },
-        "name": "Seedance 1.5 Pro",
-        "offline": false,
-        "traits": [],
-        "uncensored": true
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "video",
-      "pricing": {
-        "base_price_usd": 0.14
-      }
     },
     {
       "created": 1774915200,
@@ -12337,6 +12389,7 @@
           "cinematic",
           "photorealistic"
         ],
+        "description": "Seedance 2.0 is ByteDance Seed's cinematic video model, with native audio and lip-sync in more than eight languages. This text-to-video variant generates 4- to 15-second clips at up to 4K.",
         "name": "Seedance 2.0",
         "offline": false,
         "traits": []
@@ -12394,6 +12447,7 @@
           "cinematic",
           "photorealistic"
         ],
+        "description": "Seedance 2.0's image-to-video variant turns a starting image into a 4- to 15-second clip at up to 4K, with optional synchronized dialogue and sound.",
         "name": "Seedance 2.0",
         "offline": false,
         "traits": []
@@ -12458,6 +12512,7 @@
           "cinematic",
           "photorealistic"
         ],
+        "description": "Seedance 2.0 R2V builds 4- to 15-second clips at up to 4K from reference images, videos and audio, and can also edit or extend existing footage. It's the reference-driven variant of ByteDance Seed's Seedance 2.0.",
         "name": "Seedance 2.0 R2V",
         "offline": false,
         "traits": []
@@ -12515,6 +12570,7 @@
           "cinematic",
           "photorealistic"
         ],
+        "description": "Seedance 2.0 Fast is a faster version of ByteDance Seed's Seedance 2.0, generating 4- to 15-second clips at up to 720p from text, with optional native audio and lip-sync.",
         "name": "Seedance 2.0 Fast",
         "offline": false,
         "traits": []
@@ -12568,6 +12624,7 @@
           "cinematic",
           "photorealistic"
         ],
+        "description": "Seedance 2.0 Fast's image-to-video variant turns a starting image into a 4- to 15-second clip at up to 720p, with optional synchronized audio.",
         "name": "Seedance 2.0 Fast",
         "offline": false,
         "traits": []
@@ -12628,6 +12685,7 @@
           "cinematic",
           "photorealistic"
         ],
+        "description": "Seedance 2.0 Fast R2V is the reference-driven variant of Seedance 2.0 Fast, generating, editing or extending 4- to 15-second clips at up to 720p from reference images, videos and audio.",
         "name": "Seedance 2.0 Fast R2V",
         "offline": false,
         "traits": []
@@ -12685,6 +12743,7 @@
           "cinematic",
           "photorealistic"
         ],
+        "description": "Seedance 2.0 Mini is ByteDance Seed's cost-effective Seedance 2.0 model for high-volume video creation. This text-to-video variant generates 4- to 15-second clips at up to 720p, with optional native audio.",
         "name": "Seedance 2.0 Mini",
         "offline": false,
         "traits": []
@@ -12738,6 +12797,7 @@
           "cinematic",
           "photorealistic"
         ],
+        "description": "Seedance 2.0 Mini's image-to-video variant turns a starting image into a 4- to 15-second clip at up to 720p, with optional native audio, for high-volume work.",
         "name": "Seedance 2.0 Mini",
         "offline": false,
         "traits": []
@@ -12798,6 +12858,7 @@
           "cinematic",
           "photorealistic"
         ],
+        "description": "Seedance 2.0 Mini R2V is the reference-driven variant of Seedance 2.0 Mini, building 4- to 15-second clips at up to 720p from reference images, videos and audio.",
         "name": "Seedance 2.0 Mini R2V",
         "offline": false,
         "traits": []
@@ -12872,6 +12933,7 @@
           "cinematic",
           "photorealistic"
         ],
+        "description": "Seedance 2.5 is the next generation of ByteDance Seed's cinematic video model, with native audio and stories of up to 30 seconds. This text-to-video variant generates 4- to 30-second clips at up to 1080p.",
         "name": "Seedance 2.5",
         "offline": false,
         "traits": []
@@ -12942,6 +13004,7 @@
           "cinematic",
           "photorealistic"
         ],
+        "description": "Seedance 2.5's image-to-video variant turns a starting image into a 4- to 30-second clip at up to 1080p, with optional native audio.",
         "name": "Seedance 2.5",
         "offline": false,
         "traits": []
@@ -13019,6 +13082,7 @@
           "cinematic",
           "photorealistic"
         ],
+        "description": "Seedance 2.5 R2V builds 4- to 30-second clips at up to 1080p from up to 30 reference images plus reference videos and audio, and can edit or extend footage. It's the reference-driven variant of ByteDance Seed's Seedance 2.5.",
         "name": "Seedance 2.5 R2V",
         "offline": false,
         "traits": []
@@ -13063,6 +13127,7 @@
           "cinematic",
           "photorealistic"
         ],
+        "description": "Seedance 2.5 Edit changes a 4- to 30-second source video by swapping subjects, objects or styles, while keeping its original motion, camera and length. Reference images are optional, and output is up to 1080p.",
         "name": "Seedance 2.5 Edit",
         "offline": false,
         "traits": []
@@ -13112,6 +13177,7 @@
           "audio",
           "long_duration"
         ],
+        "description": "Wan 3.0 is Alibaba's video model, generating 2- to 30-second clips at up to 1080p from text, with optional native audio.",
         "name": "Wan 3.0",
         "offline": false,
         "traits": [],
@@ -13167,6 +13233,7 @@
           "audio",
           "long_duration"
         ],
+        "description": "Wan 3.0's image-to-video variant animates a strict first frame, or a first-and-last-frame pair, into a 2- to 30-second clip at up to 1080p, with optional native audio.",
         "name": "Wan 3.0",
         "offline": false,
         "traits": [],
@@ -13222,6 +13289,7 @@
           "audio",
           "long_duration"
         ],
+        "description": "Wan 3.0 Reference generates 2- to 30-second clips at up to 1080p from reference images, videos and audio, keeping subjects consistent at the pixel level.",
         "name": "Wan 3.0 Reference",
         "offline": false,
         "traits": [],
@@ -13275,6 +13343,7 @@
           "audio",
           "long_duration"
         ],
+        "description": "Wan 3.0 Prime is a high-speed version of Alibaba's Wan 3.0, generating 2- to 30-second clips at up to 1080p from text much faster, with optional native audio.",
         "name": "Wan 3.0 Prime",
         "offline": false,
         "traits": [],
@@ -13330,6 +13399,7 @@
           "audio",
           "long_duration"
         ],
+        "description": "Wan 3.0 Prime's image-to-video variant quickly animates a strict first frame, or a first-and-last-frame pair, into a 2- to 30-second clip at up to 1080p.",
         "name": "Wan 3.0 Prime",
         "offline": false,
         "traits": [],
@@ -13385,6 +13455,7 @@
           "audio",
           "long_duration"
         ],
+        "description": "Wan 3.0 Prime Reference is the high-speed reference variant of Wan 3.0, building 2- to 30-second clips at up to 1080p from reference images, videos and audio with consistent subjects.",
         "name": "Wan 3.0 Prime Reference",
         "offline": false,
         "traits": [],
@@ -13438,6 +13509,7 @@
           "audio",
           "long_duration"
         ],
+        "description": "Wan 3.0 Pro is the highest-resolution tier of Alibaba's Wan 3.0, generating 2- to 30-second clips at up to 4K from text, with optional native audio.",
         "name": "Wan 3.0 Pro",
         "offline": false,
         "traits": [],
@@ -13493,6 +13565,7 @@
           "audio",
           "long_duration"
         ],
+        "description": "Wan 3.0 Pro's image-to-video variant animates a strict first frame, or a first-and-last-frame pair, into a 2- to 30-second clip at up to 4K.",
         "name": "Wan 3.0 Pro",
         "offline": false,
         "traits": [],
@@ -13548,6 +13621,7 @@
           "audio",
           "long_duration"
         ],
+        "description": "Wan 3.0 Pro Reference builds 2- to 30-second clips at up to 4K from reference images, videos and audio, keeping subjects consistent at the pixel level.",
         "name": "Wan 3.0 Pro Reference",
         "offline": false,
         "traits": [],
@@ -13601,6 +13675,7 @@
           "audio",
           "long_duration"
         ],
+        "description": "Wan 3.0 Prime Pro combines the speed of Wan 3.0 Prime with the 4K output of Wan 3.0 Pro, generating 2- to 30-second clips from text, with optional native audio.",
         "name": "Wan 3.0 Prime Pro",
         "offline": false,
         "traits": [],
@@ -13656,6 +13731,7 @@
           "audio",
           "long_duration"
         ],
+        "description": "Wan 3.0 Prime Pro's image-to-video variant quickly animates a strict first frame, or a first-and-last-frame pair, into a 2- to 30-second clip at up to 4K.",
         "name": "Wan 3.0 Prime Pro",
         "offline": false,
         "traits": [],
@@ -13711,6 +13787,7 @@
           "audio",
           "long_duration"
         ],
+        "description": "Wan 3.0 Prime Pro Reference is the fastest 4K reference variant of Wan 3.0, building 2- to 30-second clips from reference images, videos and audio with consistent subjects.",
         "name": "Wan 3.0 Prime Pro Reference",
         "offline": false,
         "traits": [],
@@ -13759,6 +13836,7 @@
           "venice_recommendations",
           "featured"
         ],
+        "description": "Wan 2.7 is Alibaba's video model, served uncensored, for high-fidelity text-to-video in 5-, 10- or 15-second clips at up to 1080p. It can follow an audio track you provide.",
         "name": "Wan 2.7",
         "offline": false,
         "traits": [],
@@ -13802,6 +13880,7 @@
           "open_source",
           "venice_recommendations"
         ],
+        "description": "Wan 2.7's image-to-video variant animates a starting image, or a first-and-last-frame pair, into an uncensored 5-, 10- or 15-second clip at up to 1080p. It can follow an audio track you provide.",
         "name": "Wan 2.7",
         "offline": false,
         "traits": [],
@@ -13843,6 +13922,7 @@
           "open_source",
           "venice_recommendations"
         ],
+        "description": "Wan 2.7 Reference generates uncensored 5- or 10-second clips at up to 1080p from reference images, keeping characters and subjects consistent, with native audio.",
         "name": "Wan 2.7 Reference",
         "offline": false,
         "traits": [],
@@ -13882,6 +13962,7 @@
           "open_source",
           "venice_recommendations"
         ],
+        "description": "Wan 2.7 Edit changes an existing video from text instructions, with an optional reference image, at up to 1080p. It's the uncensored editing variant of Alibaba's Wan 2.7.",
         "name": "Wan 2.7 Edit",
         "offline": false,
         "traits": [],
@@ -13922,6 +14003,7 @@
           "open_source",
           "venice_recommendations"
         ],
+        "description": "Wan 2.7 Enhanced is a version of Alibaba's Wan 2.7 for uncensored video with native audio. This image-to-video variant animates a starting image into a 5-, 10- or 15-second clip at up to 1080p.",
         "name": "Wan 2.7 Enhanced",
         "offline": false,
         "traits": [],
@@ -13969,6 +14051,7 @@
           "open_source",
           "venice_recommendations"
         ],
+        "description": "Wan 2.7 Enhanced is a version of Alibaba's Wan 2.7 for uncensored video with native audio. This text-to-video variant generates 5-, 10- or 15-second clips at up to 1080p.",
         "name": "Wan 2.7 Enhanced",
         "offline": false,
         "traits": [],
@@ -14007,6 +14090,7 @@
           "uncensored",
           "open_source"
         ],
+        "description": "Wan 2.2 Enhanced is a version of Alibaba's Wan 2.2 for uncensored image-to-video, animating a starting image into a 5- or 8-second clip at up to 720p.",
         "name": "Wan 2.2 Enhanced",
         "offline": false,
         "traits": [],
@@ -14065,6 +14149,7 @@
         "model_sets": [
           "high_resolution"
         ],
+        "description": "HappyHorse 1.1 is Alibaba's video model, with synchronized native audio and multilingual lip-sync. This text-to-video variant generates 3- to 15-second clips at up to 1080p.",
         "name": "HappyHorse 1.1",
         "offline": false,
         "traits": []
@@ -14113,6 +14198,7 @@
         "model_sets": [
           "high_resolution"
         ],
+        "description": "HappyHorse 1.1's image-to-video variant animates a starting image into a 3- to 15-second clip at up to 1080p, with native audio and multilingual lip-sync.",
         "name": "HappyHorse 1.1",
         "offline": false,
         "traits": []
@@ -14171,6 +14257,7 @@
         "model_sets": [
           "high_resolution"
         ],
+        "description": "HappyHorse 1.1 Reference builds 3- to 15-second clips at up to 1080p from reference images, keeping characters consistent, with native audio and multilingual lip-sync.",
         "name": "HappyHorse 1.1 Reference",
         "offline": false,
         "traits": []
@@ -14223,6 +14310,7 @@
           "high_resolution",
           "featured"
         ],
+        "description": "HappyHorse 1.0 is Alibaba's video model with native audio. This text-to-video variant generates high-fidelity 3- to 15-second clips at up to 1080p.",
         "name": "HappyHorse 1.0",
         "offline": false,
         "traits": []
@@ -14271,6 +14359,7 @@
         "model_sets": [
           "high_resolution"
         ],
+        "description": "HappyHorse 1.0's image-to-video variant animates a starting image into a 3- to 15-second clip at up to 1080p, with native audio.",
         "name": "HappyHorse 1.0",
         "offline": false,
         "traits": []
@@ -14325,6 +14414,7 @@
         "model_sets": [
           "high_resolution"
         ],
+        "description": "HappyHorse 1.0 Reference generates 3- to 15-second clips at up to 1080p from reference images, keeping characters and subjects consistent, with native audio.",
         "name": "HappyHorse 1.0 Reference",
         "offline": false,
         "traits": []
@@ -14361,6 +14451,7 @@
         "model_sets": [
           "high_resolution"
         ],
+        "description": "HappyHorse 1.0 Edit changes an existing video from text instructions, with optional reference images, at up to 1080p with native audio.",
         "name": "HappyHorse 1.0 Edit",
         "offline": false,
         "traits": []
@@ -14399,6 +14490,7 @@
           "long_duration",
           "open_source"
         ],
+        "description": "Wan 2.6 is Alibaba's video model with audio support. This image-to-video variant animates a starting image into a 5-, 10- or 15-second clip at up to 1080p, with optional audio, and can follow an audio track you provide.",
         "name": "Wan 2.6",
         "offline": false,
         "traits": [],
@@ -14441,6 +14533,7 @@
           "long_duration",
           "open_source"
         ],
+        "description": "Wan 2.6 Flash is a fast version of Alibaba's Wan 2.6 for image-to-video, animating a starting image into a 5-, 10- or 15-second clip at up to 1080p with native audio.",
         "name": "Wan 2.6 Flash",
         "offline": false,
         "traits": [],
@@ -14487,6 +14580,7 @@
           "long_duration",
           "open_source"
         ],
+        "description": "Wan 2.6 is Alibaba's video model with audio support. This text-to-video variant generates 5-, 10- or 15-second clips at up to 1080p, with optional audio, and can follow an audio track you provide.",
         "name": "Wan 2.6",
         "offline": false,
         "traits": [],
@@ -14528,6 +14622,7 @@
           "audio",
           "open_source"
         ],
+        "description": "Wan 2.5 Preview is a preview release of Alibaba's Wan 2.5, served uncensored. This image-to-video variant animates a starting image into a 5- or 10-second clip at up to 1080p with native audio.",
         "name": "Wan 2.5 Preview",
         "offline": false,
         "traits": [],
@@ -14573,6 +14668,7 @@
           "audio",
           "open_source"
         ],
+        "description": "Wan 2.5 Preview is a preview release of Alibaba's Wan 2.5, served uncensored. This text-to-video variant generates 5- or 10-second clips at up to 1080p with native audio.",
         "name": "Wan 2.5 Preview",
         "offline": false,
         "traits": [],
@@ -14634,6 +14730,7 @@
           "long_duration",
           "photorealistic"
         ],
+        "description": "Grok Imagine is xAI's video model, generating 1- to 15-second clips at up to 720p from text, with native audio.",
         "name": "Grok Imagine",
         "offline": false,
         "traits": []
@@ -14686,6 +14783,7 @@
           "long_duration",
           "photorealistic"
         ],
+        "description": "Grok Imagine's image-to-video variant turns a starting image into a 1- to 15-second clip at up to 720p, with native audio.",
         "name": "Grok Imagine",
         "offline": false,
         "traits": []
@@ -14739,6 +14837,7 @@
         "model_sets": [
           "photorealistic"
         ],
+        "description": "Grok Imagine R2V generates 1- to 10-second clips at up to 720p from several reference images, which you cite in the prompt as @Image1, @Image2 and so on.",
         "name": "Grok Imagine R2V",
         "offline": false,
         "traits": []
@@ -14780,6 +14879,7 @@
           "photorealistic",
           "venice_recommendations"
         ],
+        "description": "Grok Imagine's video editing variant changes an existing clip from text instructions, in 5-, 10- or 15-second results at up to 720p, with native audio.",
         "name": "Grok Imagine",
         "offline": false,
         "traits": []
@@ -14841,6 +14941,7 @@
           "venice_recommendations",
           "featured"
         ],
+        "description": "Grok Imagine 1.5 is xAI's updated video model, generating 1- to 15-second clips at up to 1080p from text, with native audio.",
         "name": "Grok Imagine 1.5",
         "offline": false,
         "traits": []
@@ -14896,6 +14997,7 @@
           "high_resolution",
           "venice_recommendations"
         ],
+        "description": "Grok Imagine 1.5's image-to-video variant turns a starting image into a 1- to 15-second clip at up to 1080p, with native audio.",
         "name": "Grok Imagine 1.5",
         "offline": false,
         "traits": []
@@ -14957,6 +15059,7 @@
           "photorealistic",
           "venice_recommendations"
         ],
+        "description": "Grok Imagine 1.5 R2V generates 1- to 15-second clips at up to 720p from up to 7 reference images, with native audio.",
         "name": "Grok Imagine 1.5 R2V",
         "offline": false,
         "traits": []
@@ -15019,6 +15122,7 @@
           "photorealistic",
           "high_resolution"
         ],
+        "description": "Grok Imagine 1.5 Lite is a quicker, more affordable version of xAI's Grok Imagine 1.5, generating 1- to 15-second clips at up to 1080p from text, with native audio.",
         "name": "Grok Imagine 1.5 Lite",
         "offline": false,
         "traits": []
@@ -15073,6 +15177,7 @@
           "photorealistic",
           "high_resolution"
         ],
+        "description": "Grok Imagine 1.5 Lite's image-to-video variant quickly turns a starting image into a 1- to 15-second clip at up to 1080p, with native audio.",
         "name": "Grok Imagine 1.5 Lite",
         "offline": false,
         "traits": []
@@ -15122,6 +15227,7 @@
           "audio",
           "open_source"
         ],
+        "description": "LTX Video 2.3 Fast is the speed-focused tier of Lightricks' open-weight LTX-2.3 video model. This image-to-video variant animates a starting image into a 6- to 20-second clip at up to 4K, with optional audio.",
         "name": "LTX Video 2.3 Fast",
         "modelSource": "https://huggingface.co/Lightricks/LTX-2.3",
         "offline": false,
@@ -15172,6 +15278,7 @@
           "audio",
           "open_source"
         ],
+        "description": "LTX Video 2.3 Fast is the speed-focused tier of Lightricks' open-weight LTX-2.3 video model. This text-to-video variant generates 6- to 20-second clips at up to 4K, with optional audio.",
         "name": "LTX Video 2.3 Fast",
         "modelSource": "https://huggingface.co/Lightricks/LTX-2.3",
         "offline": false,
@@ -15217,6 +15324,7 @@
           "audio",
           "open_source"
         ],
+        "description": "LTX Video 2.3 Full Quality runs Lightricks' open-weight LTX-2.3 at full quality. This image-to-video variant animates a starting image into a 6-, 8- or 10-second clip at up to 4K, with optional audio.",
         "name": "LTX Video 2.3 Full Quality",
         "modelSource": "https://huggingface.co/Lightricks/LTX-2.3",
         "offline": false,
@@ -15262,6 +15370,7 @@
           "audio",
           "open_source"
         ],
+        "description": "LTX Video 2.3 Full Quality runs Lightricks' open-weight LTX-2.3 at full quality. This text-to-video variant generates 6-, 8- or 10-second clips at up to 4K, with optional audio.",
         "name": "LTX Video 2.3 Full Quality",
         "modelSource": "https://huggingface.co/Lightricks/LTX-2.3",
         "offline": false,
@@ -15315,6 +15424,7 @@
           "long_duration",
           "open_source"
         ],
+        "description": "LTX Video 2.5 Fast is the speed-focused tier of Lightricks' open-weight LTX-2.5 video model. This image-to-video variant animates a starting image into a 6- to 20-second clip at up to 4K, with optional audio.",
         "name": "LTX Video 2.5 Fast",
         "modelSource": "https://huggingface.co/Lightricks/LTX-2.5",
         "offline": false,
@@ -15367,6 +15477,7 @@
           "long_duration",
           "open_source"
         ],
+        "description": "LTX Video 2.5 Fast is the speed-focused tier of Lightricks' open-weight LTX-2.5 video model. This text-to-video variant generates 6- to 20-second clips at up to 4K, with optional audio.",
         "name": "LTX Video 2.5 Fast",
         "modelSource": "https://huggingface.co/Lightricks/LTX-2.5",
         "offline": false,
@@ -15411,6 +15522,7 @@
           "audio",
           "open_source"
         ],
+        "description": "LTX Video 2.5 Pro is the quality-focused tier of Lightricks' open-weight LTX-2.5. This image-to-video variant animates a starting image into a 6-, 8- or 10-second clip at up to 1080p, with optional audio.",
         "name": "LTX Video 2.5 Pro",
         "modelSource": "https://huggingface.co/Lightricks/LTX-2.5",
         "offline": false,
@@ -15454,6 +15566,7 @@
           "audio",
           "open_source"
         ],
+        "description": "LTX Video 2.5 Pro is the quality-focused tier of Lightricks' open-weight LTX-2.5. This text-to-video variant generates 6-, 8- or 10-second clips at up to 1080p, with optional audio.",
         "name": "LTX Video 2.5 Pro",
         "modelSource": "https://huggingface.co/Lightricks/LTX-2.5",
         "offline": false,
@@ -15489,6 +15602,7 @@
           "audio",
           "open_source"
         ],
+        "description": "Ovi is Character.AI's open-weight audio-video model, based on Wan, that animates a starting image into a 5-second clip with native audio. It runs fast and is served uncensored.",
         "name": "Ovi",
         "modelSource": "https://huggingface.co/chetwinlow1/Ovi",
         "offline": false,
@@ -15552,6 +15666,7 @@
           "venice_recommendations",
           "fast"
         ],
+        "description": "MiniMax H3 Max is a post-trained variant of MiniMax's H3 video model. This text-to-video variant generates 5- to 15-second clips at up to 1080p with native stereo audio.",
         "name": "MiniMax H3 Max",
         "offline": false,
         "traits": [],
@@ -15607,6 +15722,7 @@
           "venice_recommendations",
           "fast"
         ],
+        "description": "MiniMax H3 Max's image-to-video variant animates a first frame, with an optional end frame, into a 5- to 15-second clip at up to 1080p with native stereo audio.",
         "name": "MiniMax H3 Max",
         "offline": false,
         "traits": [],
@@ -15660,6 +15776,7 @@
           "audio",
           "fast"
         ],
+        "description": "MiniMax H3 Max Multi-Angle moves a virtual camera around a single image, with precise control of orbit, elevation and distance, producing 5- to 15-second clips at up to 1080p with native audio.",
         "name": "MiniMax H3 Max Multi-Angle",
         "offline": false,
         "traits": [],
@@ -15725,6 +15842,7 @@
           "photorealistic",
           "venice_recommendations"
         ],
+        "description": "MiniMax H3 Max R2V generates 5- to 15-second clips at up to 1080p from reference images, videos and audio, cited in the prompt as @Image1, @Video1 and so on, with native audio.",
         "name": "MiniMax H3 Max R2V",
         "offline": false,
         "traits": [],
@@ -15769,6 +15887,7 @@
           "cinematic",
           "photorealistic"
         ],
+        "description": "MiniMax H3 Max Recast replaces the people in a source video with people from reference photos, preserving the original motion, camera, cuts and soundtrack, at up to 1080p.",
         "name": "MiniMax H3 Max Recast",
         "offline": false,
         "traits": [],
@@ -15827,6 +15946,7 @@
           "photorealistic",
           "fast"
         ],
+        "description": "MiniMax H3 Max Turbo is a faster version of MiniMax H3 Max, generating 5- to 15-second clips at up to 1080p from text with native stereo audio.",
         "name": "MiniMax H3 Max Turbo",
         "offline": false,
         "traits": [],
@@ -15881,6 +16001,7 @@
           "photorealistic",
           "fast"
         ],
+        "description": "MiniMax H3 Max Turbo's image-to-video variant animates a first frame, with an optional end frame, into a 5- to 15-second clip at up to 1080p with native stereo audio.",
         "name": "MiniMax H3 Max Turbo",
         "offline": false,
         "traits": [],
@@ -15921,6 +16042,7 @@
           "audio",
           "photorealistic"
         ],
+        "description": "Kling 2.6 Pro is Kling AI's full-quality video model with native audio generation. This text-to-video variant generates 5- or 10-second clips, with optional audio.",
         "name": "Kling 2.6 Pro",
         "offline": false,
         "traits": []
@@ -15956,6 +16078,7 @@
           "audio",
           "photorealistic"
         ],
+        "description": "Kling 2.6 Pro's image-to-video variant animates a starting image into a 5- or 10-second clip, with optional native audio.",
         "name": "Kling 2.6 Pro",
         "offline": false,
         "traits": []
@@ -15994,6 +16117,7 @@
           "cinematic",
           "photorealistic"
         ],
+        "description": "Kling 2.5 Turbo Pro is Kling AI's full-quality Kling 2.5 video model, generating 5- or 10-second clips from text.",
         "name": "Kling 2.5 Turbo Pro",
         "offline": false,
         "traits": []
@@ -16028,6 +16152,7 @@
           "cinematic",
           "photorealistic"
         ],
+        "description": "Kling 2.5 Turbo Pro's image-to-video variant animates a starting image into a 5- or 10-second clip.",
         "name": "Kling 2.5 Turbo Pro",
         "offline": false,
         "traits": []
@@ -16080,6 +16205,7 @@
           "long_duration",
           "ultra_high_resolution"
         ],
+        "description": "Kling V3 4K generates video at native 4K without upscaling, using Kling AI's V3 model. This text-to-video variant makes 3- to 15-second clips, with optional audio.",
         "name": "Kling V3 4K",
         "offline": false,
         "traits": []
@@ -16128,6 +16254,7 @@
           "long_duration",
           "ultra_high_resolution"
         ],
+        "description": "Kling V3 4K R2V animates a start frame into native 4K video, using reference elements to keep characters and objects consistent, in 3- to 15-second clips with optional audio.",
         "name": "Kling V3 4K R2V",
         "offline": false,
         "traits": []
@@ -16179,6 +16306,7 @@
           "long_duration",
           "ultra_high_resolution"
         ],
+        "description": "Kling O3 4K generates native 4K video with Kling AI's O3 model, tuned for stylized and anime looks. This text-to-video variant makes 3- to 15-second clips, with optional audio.",
         "name": "Kling O3 4K",
         "offline": false,
         "traits": []
@@ -16226,6 +16354,7 @@
           "long_duration",
           "ultra_high_resolution"
         ],
+        "description": "Kling O3 4K's image-to-video variant animates a starting image, with an optional end image, into native 4K stylized or anime motion, in 3- to 15-second clips.",
         "name": "Kling O3 4K",
         "offline": false,
         "traits": []
@@ -16277,6 +16406,7 @@
           "long_duration",
           "ultra_high_resolution"
         ],
+        "description": "Kling O3 4K R2V combines up to 7 character, object or style references into a single native 4K clip of 3 to 15 seconds, with optional audio.",
         "name": "Kling O3 4K R2V",
         "offline": false,
         "traits": []
@@ -16329,6 +16459,7 @@
           "long_duration",
           "venice_recommendations"
         ],
+        "description": "Kling O3 Pro is the premium tier of Kling AI's O3 video model. This text-to-video variant generates 3- to 15-second clips, with optional audio.",
         "name": "Kling O3 Pro",
         "offline": false,
         "traits": []
@@ -16377,6 +16508,7 @@
           "long_duration",
           "venice_recommendations"
         ],
+        "description": "Kling O3 Pro's image-to-video variant animates a starting image, with an optional end image, into a 3- to 15-second clip, with optional audio.",
         "name": "Kling O3 Pro",
         "offline": false,
         "traits": []
@@ -16428,6 +16560,7 @@
           "photorealistic",
           "long_duration"
         ],
+        "description": "Kling O3 Pro R2V turns images and elements into 3- to 15-second clips with stable character identity, using a frontal image and reference images for each element.",
         "name": "Kling O3 Pro R2V",
         "offline": false,
         "traits": []
@@ -16479,6 +16612,7 @@
           "photorealistic",
           "long_duration"
         ],
+        "description": "Kling O3 Standard is the balanced tier of Kling AI's O3 video model, trading some quality for speed. This text-to-video variant generates 3- to 15-second clips, with optional audio.",
         "name": "Kling O3 Standard",
         "offline": false,
         "traits": []
@@ -16526,6 +16660,7 @@
           "photorealistic",
           "long_duration"
         ],
+        "description": "Kling O3 Standard's image-to-video variant animates a starting image, with an optional end image, into a 3- to 15-second clip, with optional audio.",
         "name": "Kling O3 Standard",
         "offline": false,
         "traits": []
@@ -16577,6 +16712,7 @@
           "photorealistic",
           "long_duration"
         ],
+        "description": "Kling O3 Standard R2V turns images and elements into 3- to 15-second clips with stable character identity, at the Standard tier's balance of quality and speed.",
         "name": "Kling O3 Standard R2V",
         "offline": false,
         "traits": []
@@ -16611,6 +16747,7 @@
           "photorealistic",
           "long_duration"
         ],
+        "description": "Kling V3 Pro Motion Control transfers the movements in a reference video onto a character image, at Kling V3 Pro quality. The output follows the length of the source video.",
         "name": "Kling V3 Pro Motion Control",
         "offline": false,
         "traits": []
@@ -16659,6 +16796,7 @@
           "photorealistic",
           "long_duration"
         ],
+        "description": "Kling V3 Pro is the enhanced-quality tier of Kling AI's V3 video model. This text-to-video variant generates 3- to 15-second clips, with optional audio.",
         "name": "Kling V3 Pro",
         "offline": false,
         "traits": []
@@ -16706,6 +16844,7 @@
           "photorealistic",
           "long_duration"
         ],
+        "description": "Kling V3 Pro's image-to-video variant animates a start frame, with an optional end frame, into a 3- to 15-second clip, with optional audio.",
         "name": "Kling V3 Pro",
         "offline": false,
         "traits": []
@@ -16740,6 +16879,7 @@
           "photorealistic",
           "long_duration"
         ],
+        "description": "Kling V3 Standard Motion Control transfers the movements in a reference video onto a character image, a cost-effective option for portraits and simple animations. The output follows the length of the source video.",
         "name": "Kling V3 Standard Motion Control",
         "offline": false,
         "traits": []
@@ -16788,6 +16928,7 @@
           "photorealistic",
           "long_duration"
         ],
+        "description": "Kling V3 Standard is the balanced tier of Kling AI's V3 video model. This text-to-video variant generates 3- to 15-second clips, with optional audio.",
         "name": "Kling V3 Standard",
         "offline": false,
         "traits": []
@@ -16835,6 +16976,7 @@
           "photorealistic",
           "long_duration"
         ],
+        "description": "Kling V3 Standard's image-to-video variant animates a start frame, with an optional end frame, into a 3- to 15-second clip, with optional audio.",
         "name": "Kling V3 Standard",
         "offline": false,
         "traits": []
@@ -16886,6 +17028,7 @@
           "photorealistic",
           "long_duration"
         ],
+        "description": "Kling V3 Turbo Pro is a faster version of Kling V3 Pro, generating 3- to 15-second clips at 1080p from text, with multi-shot storyboards.",
         "name": "Kling V3 Turbo Pro",
         "offline": false,
         "traits": []
@@ -16933,6 +17076,7 @@
           "photorealistic",
           "long_duration"
         ],
+        "description": "Kling V3 Turbo Pro's image-to-video variant animates a start frame into a 3- to 15-second clip at 1080p, with multi-shot storyboards.",
         "name": "Kling V3 Turbo Pro",
         "offline": false,
         "traits": []
@@ -16984,6 +17128,7 @@
           "photorealistic",
           "long_duration"
         ],
+        "description": "Kling V3 Turbo Standard is a faster, cost-effective version of Kling V3, generating 3- to 15-second clips at 720p from text, with multi-shot storyboards.",
         "name": "Kling V3 Turbo Standard",
         "offline": false,
         "traits": []
@@ -17031,6 +17176,7 @@
           "photorealistic",
           "long_duration"
         ],
+        "description": "Kling V3 Turbo Standard's image-to-video variant animates a start frame into a 3- to 15-second clip at 720p, with multi-shot storyboards.",
         "name": "Kling V3 Turbo Standard",
         "offline": false,
         "traits": []
@@ -17103,6 +17249,7 @@
           "cinematic",
           "photorealistic"
         ],
+        "description": "Kling 4.0 is Kling AI's fourth-generation video model. This text-to-video variant generates 3- to 30-second clips at 720p or 1080p with native audio, and supports multi-shot prompts.",
         "name": "Kling 4.0",
         "offline": false,
         "traits": []
@@ -17173,6 +17320,7 @@
           "cinematic",
           "photorealistic"
         ],
+        "description": "Kling 4.0's image-to-video variant animates a starting image, with optional end-frame control, into a 3- to 30-second clip at 720p or 1080p with native audio and multi-shot prompts.",
         "name": "Kling 4.0",
         "offline": false,
         "traits": []
@@ -17249,6 +17397,7 @@
           "cinematic",
           "photorealistic"
         ],
+        "description": "Kling 4.0 R2V generates 3- to 30-second clips at 720p or 1080p with native audio from up to 10 reference images and 5 reference videos, with an optional start frame and multi-shot prompts.",
         "name": "Kling 4.0 R2V",
         "offline": false,
         "traits": []
@@ -17309,6 +17458,7 @@
           "cinematic",
           "photorealistic"
         ],
+        "description": "Kling 4.0 Flash is a faster version of Kling AI's Kling 4.0, generating 3- to 20-second clips at 720p from text with native audio.",
         "name": "Kling 4.0 Flash",
         "offline": false,
         "traits": []
@@ -17367,6 +17517,7 @@
           "cinematic",
           "photorealistic"
         ],
+        "description": "Kling 4.0 Flash's image-to-video variant animates a start frame into a 3- to 20-second clip at 720p with native audio.",
         "name": "Kling 4.0 Flash",
         "offline": false,
         "traits": []
@@ -17431,6 +17582,7 @@
           "cinematic",
           "photorealistic"
         ],
+        "description": "Kling 4.0 Flash R2V generates 3- to 20-second clips at 720p with native audio from up to 10 reference images and 5 reference videos, with an optional start frame.",
         "name": "Kling 4.0 Flash R2V",
         "offline": false,
         "traits": []
@@ -17470,6 +17622,7 @@
           "cinematic",
           "photorealistic"
         ],
+        "description": "Kling 4.0 Flash Edit changes a source video from a text instruction and up to 10 reference images, at 720p with native audio. The output follows the length of the source video.",
         "name": "Kling 4.0 Flash Edit",
         "offline": false,
         "traits": []
@@ -17507,6 +17660,7 @@
           "long_duration",
           "open_source"
         ],
+        "description": "Longcat Distilled is the faster, distilled version of Meituan's open-weight LongCat-Video model. This image-to-video variant animates a starting image into a 5- to 30-second clip at 720p.",
         "name": "Longcat Distilled",
         "modelSource": "https://huggingface.co/meituan-longcat/LongCat-Video",
         "offline": false,
@@ -17553,6 +17707,7 @@
           "long_duration",
           "open_source"
         ],
+        "description": "Longcat Distilled is the faster, distilled version of Meituan's open-weight LongCat-Video model. This text-to-video variant generates 5- to 30-second clips at 720p.",
         "name": "Longcat Distilled",
         "modelSource": "https://huggingface.co/meituan-longcat/LongCat-Video",
         "offline": false,
@@ -17595,6 +17750,7 @@
           "long_duration",
           "open_source"
         ],
+        "description": "Longcat Full Quality runs Meituan's open-weight LongCat-Video model at full quality, built for longer clips. This image-to-video variant animates a starting image into a 5- to 30-second clip at 720p.",
         "name": "Longcat Full Quality",
         "modelSource": "https://huggingface.co/meituan-longcat/LongCat-Video",
         "offline": false,
@@ -17641,6 +17797,7 @@
           "long_duration",
           "open_source"
         ],
+        "description": "Longcat Full Quality runs Meituan's open-weight LongCat-Video model at full quality, built for longer clips. This text-to-video variant generates 5- to 30-second clips at 720p.",
         "name": "Longcat Full Quality",
         "modelSource": "https://huggingface.co/meituan-longcat/LongCat-Video",
         "offline": false,
@@ -17688,6 +17845,7 @@
           "cinematic",
           "photorealistic"
         ],
+        "description": "Veo 3.1 Fast is a faster version of Google's Veo 3.1 video model. This text-to-video variant generates 4-, 6- or 8-second clips at up to 4K, with optional audio.",
         "name": "Veo 3.1 Fast",
         "offline": false,
         "traits": []
@@ -17730,6 +17888,7 @@
           "cinematic",
           "photorealistic"
         ],
+        "description": "Veo 3.1 Fast's image-to-video variant animates a starting image into a 4-, 6- or 8-second clip at up to 4K, with optional audio.",
         "name": "Veo 3.1 Fast",
         "offline": false,
         "traits": []
@@ -17775,6 +17934,7 @@
           "cinematic",
           "photorealistic"
         ],
+        "description": "Veo 3.1 Full Quality runs Google's Veo 3.1 video model at full quality. This text-to-video variant generates 4-, 6- or 8-second clips at up to 4K, with optional audio.",
         "name": "Veo 3.1 Full Quality",
         "offline": false,
         "traits": []
@@ -17817,6 +17977,7 @@
           "cinematic",
           "photorealistic"
         ],
+        "description": "Veo 3.1 Full Quality's image-to-video variant animates a starting image into a 4-, 6- or 8-second clip at up to 4K, with optional audio.",
         "name": "Veo 3.1 Full Quality",
         "offline": false,
         "traits": []
@@ -17858,6 +18019,7 @@
           "cinematic",
           "photorealistic"
         ],
+        "description": "Gemini Omni Flash is Google's video model for 4- to 10-second clips from text prompts. Gemini Omni Flash 1.1 is its newer successor.",
         "name": "Gemini Omni Flash",
         "offline": false,
         "traits": []
@@ -17899,6 +18061,7 @@
           "cinematic",
           "photorealistic"
         ],
+        "description": "Gemini Omni Flash's image-to-video variant animates a starting image into a 4- to 10-second clip, using Google's Gemini Omni Flash video model.",
         "name": "Gemini Omni Flash",
         "offline": false,
         "traits": []
@@ -17940,6 +18103,7 @@
           "cinematic",
           "photorealistic"
         ],
+        "description": "Gemini Omni Flash R2V combines several reference images into one 4- to 10-second clip, using Google's Gemini Omni Flash video model.",
         "name": "Gemini Omni Flash R2V",
         "offline": false,
         "traits": []
@@ -17992,6 +18156,7 @@
           "audio",
           "long_duration"
         ],
+        "description": "Flux 3 is Black Forest Labs' video model with synchronized audio. This text-to-video variant generates 5- to 20-second clips at up to 4K.",
         "name": "Flux 3",
         "offline": false,
         "traits": []
@@ -18044,6 +18209,7 @@
           "audio",
           "long_duration"
         ],
+        "description": "Flux 3's image-to-video variant animates a single still image into a 5- to 20-second clip at up to 4K, with synchronized audio.",
         "name": "Flux 3",
         "offline": false,
         "traits": []
@@ -18096,6 +18262,7 @@
           "audio",
           "long_duration"
         ],
+        "description": "Flux 3 First Last Frame generates the transition between a start frame and an end frame, as a 5- to 20-second clip at up to 4K with synchronized audio.",
         "name": "Flux 3 First Last Frame",
         "offline": false,
         "traits": []
@@ -18148,6 +18315,7 @@
           "audio",
           "long_duration"
         ],
+        "description": "Flux 3 Extend continues an existing clip beyond its final frame, adding 5 to 20 seconds at up to 4K with synchronized audio.",
         "name": "Flux 3 Extend",
         "offline": false,
         "traits": []
@@ -18208,6 +18376,7 @@
           "cinematic",
           "photorealistic"
         ],
+        "description": "Flux 3 Max is Black Forest Labs' post-trained Flux 3 video model, built for high visual quality at high speed. This text-to-video variant generates 5- to 20-second clips at up to 1080p with synchronized audio.",
         "name": "Flux 3 Max",
         "offline": false,
         "traits": []
@@ -18271,6 +18440,7 @@
           "cinematic",
           "photorealistic"
         ],
+        "description": "Flux 3 Max's image-to-video variant animates a still image, with an optional end frame, into a 5- to 20-second clip at up to 1080p with synchronized audio.",
         "name": "Flux 3 Max",
         "offline": false,
         "traits": []
@@ -18317,6 +18487,7 @@
           "audio",
           "cinematic"
         ],
+        "description": "PixVerse v5.6 is PixVerse's video model. This text-to-video variant generates 5- or 8-second clips at up to 1080p, with optional audio.",
         "name": "PixVerse v5.6",
         "offline": false,
         "traits": []
@@ -18357,6 +18528,7 @@
           "audio",
           "cinematic"
         ],
+        "description": "PixVerse v5.6's image-to-video variant animates a starting image into a 5- or 8-second clip at up to 1080p, with optional audio.",
         "name": "PixVerse v5.6",
         "offline": false,
         "traits": []
@@ -18403,6 +18575,7 @@
           "audio",
           "cinematic"
         ],
+        "description": "PixVerse v5.6 Transition creates a smooth transition between a start image and an end image, as a 5- or 8-second clip at up to 1080p, with optional audio.",
         "name": "PixVerse v5.6 Transition",
         "offline": false,
         "traits": []
@@ -18456,6 +18629,7 @@
           "cinematic",
           "long_duration"
         ],
+        "description": "PixVerse C1 is PixVerse's film-grade video model, generating 3- to 15-second clips at up to 1080p from text, with optional native audio.",
         "name": "PixVerse C1",
         "offline": false,
         "traits": []
@@ -18500,6 +18674,7 @@
           "cinematic",
           "long_duration"
         ],
+        "description": "PixVerse C1's image-to-video variant animates a starting image into a cinematic 3- to 15-second clip at up to 1080p, with optional native audio.",
         "name": "PixVerse C1",
         "offline": false,
         "traits": []
@@ -18553,6 +18728,7 @@
           "cinematic",
           "long_duration"
         ],
+        "description": "PixVerse C1 R2V generates character-consistent 3- to 15-second clips at up to 1080p from reference images of subjects and backgrounds, with optional native audio.",
         "name": "PixVerse C1 R2V",
         "offline": false,
         "traits": []
@@ -18606,6 +18782,7 @@
           "cinematic",
           "long_duration"
         ],
+        "description": "PixVerse C1 Transition creates a seamless cinematic transition between a start image and an end image, as a 3- to 15-second clip at up to 1080p, with optional native audio.",
         "name": "PixVerse C1 Transition",
         "offline": false,
         "traits": []
@@ -18659,6 +18836,7 @@
           "cinematic",
           "venice_recommendations"
         ],
+        "description": "Vidu Q3 is Vidu's video model. This text-to-video variant generates 3- to 16-second clips at up to 1080p, with optional audio.",
         "name": "Vidu Q3",
         "offline": false,
         "traits": []
@@ -18706,6 +18884,7 @@
           "cinematic",
           "venice_recommendations"
         ],
+        "description": "Vidu Q3's image-to-video variant animates a starting image into a 3- to 16-second clip at up to 1080p, with optional audio.",
         "name": "Vidu Q3",
         "offline": false,
         "traits": []
@@ -18755,6 +18934,7 @@
           "cinematic",
           "photorealistic"
         ],
+        "description": "Runway Gen-4.5 is Runway's video model. This image-to-video variant animates a starting image into a 2- to 10-second clip.",
         "name": "Runway Gen-4.5",
         "offline": false,
         "traits": []
@@ -18800,6 +18980,7 @@
           "cinematic",
           "photorealistic"
         ],
+        "description": "Runway Gen-4.5's text-to-video variant generates 2- to 10-second clips from prompts of up to 1,000 characters, using Runway's Gen-4.5 video model.",
         "name": "Runway Gen-4.5",
         "offline": false,
         "traits": []
@@ -18851,6 +19032,7 @@
           "photorealistic",
           "fast"
         ],
+        "description": "Runway Gen-4 Turbo is a faster version of Runway's Gen-4 video model, animating a starting image into a 2- to 10-second clip.",
         "name": "Runway Gen-4 Turbo",
         "offline": false,
         "traits": []
@@ -18887,6 +19069,7 @@
           "high_resolution",
           "ultra_high_resolution"
         ],
+        "description": "Topaz Video Upscale uses Topaz Labs' upscaling to enlarge an existing video 2x or 4x while restoring detail. The output keeps the source video's length.",
         "name": "Topaz Video Upscale",
         "offline": false,
         "traits": []
@@ -18940,6 +19123,7 @@
           "high_resolution",
           "photorealistic"
         ],
+        "description": "MiniMax H3 Enhanced is a version of MiniMax's H3 (Hailuo 3) tuned for uncensored output. This text-to-video variant generates 5- to 15-second clips at up to 2K with native audio.",
         "name": "MiniMax H3 Enhanced",
         "offline": false,
         "traits": [],
@@ -19000,6 +19184,7 @@
           "high_resolution",
           "photorealistic"
         ],
+        "description": "MiniMax H3 R2V Enhanced generates uncensored 5- to 15-second clips at up to 2K from reference images and audio, with native audio.",
         "name": "MiniMax H3 R2V Enhanced",
         "offline": false,
         "traits": [],
@@ -19057,6 +19242,7 @@
           "high_resolution",
           "photorealistic"
         ],
+        "description": "MiniMax H3, also called Hailuo 3, is MiniMax's video model. This text-to-video variant generates 5- to 15-second clips at up to 2K with native audio.",
         "name": "MiniMax H3",
         "offline": false,
         "traits": [],
@@ -19110,6 +19296,7 @@
           "high_resolution",
           "photorealistic"
         ],
+        "description": "MiniMax H3's image-to-video variant animates a first frame, with an optional end frame, into a 5- to 15-second clip at up to 2K with native audio.",
         "name": "MiniMax H3",
         "offline": false,
         "traits": [],
@@ -19170,6 +19357,7 @@
           "high_resolution",
           "photorealistic"
         ],
+        "description": "MiniMax H3 R2V generates 5- to 15-second clips at up to 2K from reference images, videos and audio, cited in the prompt as @Image1, @Video1 and so on, with native audio.",
         "name": "MiniMax H3 R2V",
         "offline": false,
         "traits": [],
@@ -20301,6 +20489,7 @@
         },
         "embeddingDimensions": 1024,
         "maxInputTokens": 8192,
+        "description": "BGE-M3 is BAAI's open-weight multilingual embedding model, covering more than 100 languages. It turns inputs of up to 8,192 tokens into 1,024-dimensional vectors for semantic search, retrieval and clustering across languages.",
         "name": "BGE-M3",
         "modelSource": "https://huggingface.co/BAAI/bge-m3",
         "offline": false,
@@ -20327,6 +20516,7 @@
         },
         "embeddingDimensions": 4096,
         "maxInputTokens": 8192,
+        "description": "BGE-EN-ICL is BAAI's English embedding model, which can take a few examples in the query to adapt to a task, an approach BAAI calls in-context learning. It returns 4,096-dimensional vectors for inputs of up to 8,192 tokens, for English retrieval and classification.",
         "name": "BGE-EN-ICL",
         "modelSource": "https://huggingface.co/BAAI/bge-en-icl",
         "offline": false,
@@ -20354,6 +20544,7 @@
         "embeddingDimensions": 4096,
         "maxInputTokens": 32768,
         "supportsCustomDimensions": true,
+        "description": "Qwen3 Embedding 8B is the largest model in Alibaba's open-weight Qwen3 Embedding series, built on Qwen3 and trained for more than 100 languages, including programming languages. It returns 4,096-dimensional vectors for multilingual and code retrieval.",
         "name": "Qwen3 Embedding 8B",
         "modelSource": "https://huggingface.co/Qwen/Qwen3-Embedding-8B",
         "offline": false,
@@ -20381,6 +20572,7 @@
         "embeddingDimensions": 1024,
         "maxInputTokens": 32768,
         "supportsCustomDimensions": true,
+        "description": "Qwen3 Embedding 0.6B is the smallest model in Alibaba's open-weight Qwen3 Embedding series, a fast, low-cost choice for multilingual and code retrieval. It returns 1,024-dimensional vectors.",
         "name": "Qwen3 Embedding 0.6B",
         "modelSource": "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B",
         "offline": false,
@@ -20407,6 +20599,7 @@
         },
         "embeddingDimensions": 1024,
         "maxInputTokens": 512,
+        "description": "Multilingual E5 Large Instruct is an open-weight embedding model from Microsoft's E5 family, covering about 100 languages. Queries start with a one-line task instruction, and inputs of up to 512 tokens become 1,024-dimensional vectors, which suits short passages and queries.",
         "name": "Multilingual E5 Large Instruct",
         "modelSource": "https://huggingface.co/intfloat/multilingual-e5-large-instruct",
         "offline": false,
@@ -20434,6 +20627,7 @@
         "embeddingDimensions": 1536,
         "maxInputTokens": 8191,
         "supportsCustomDimensions": true,
+        "description": "Text Embedding 3 Small is OpenAI's efficient embedding model, returning 1,536-dimensional vectors for inputs of up to 8,191 tokens. It's a low-cost default for semantic search, clustering and classification, and its vectors can be shortened with the dimensions parameter.",
         "name": "Text Embedding 3 Small",
         "offline": false,
         "privacy": "anonymized",
@@ -20460,6 +20654,7 @@
         "embeddingDimensions": 3072,
         "maxInputTokens": 8191,
         "supportsCustomDimensions": true,
+        "description": "Text Embedding 3 Large is OpenAI's larger embedding model, returning 3,072-dimensional vectors for inputs of up to 8,191 tokens. It suits retrieval where accuracy matters more than cost, and its vectors can be shortened with the dimensions parameter.",
         "name": "Text Embedding 3 Large",
         "offline": false,
         "privacy": "anonymized",
@@ -20486,6 +20681,7 @@
         "embeddingDimensions": 3072,
         "maxInputTokens": 2048,
         "supportsCustomDimensions": true,
+        "description": "Gemini Embedding 2 Preview is a preview of Google's Gemini-based embedding model, returning 3,072-dimensional vectors for inputs of up to 2,048 tokens. It's built for semantic search, retrieval and classification.",
         "name": "Gemini Embedding 2 Preview",
         "offline": false,
         "privacy": "anonymized",
@@ -20511,6 +20707,7 @@
         },
         "embeddingDimensions": 2048,
         "maxInputTokens": 32768,
+        "description": "Nemotron Embed VL 1B v2 is NVIDIA's open-weight embedding model from its Llama Nemotron family, trained for retrieval over visually rich documents such as reports, slides and scanned pages. Through the API it embeds text into 2,048-dimensional vectors.",
         "name": "Nemotron Embed VL 1B v2",
         "modelSource": "https://huggingface.co/nvidia/llama-nemotron-embed-vl-1b-v2",
         "offline": false,
@@ -20597,6 +20794,7 @@
           "zm_yunxia",
           "zm_yunyang"
         ],
+        "description": "Kokoro is hexgrad's open-weight 82M-parameter text-to-speech model. It speaks in 54 voices across several languages and returns MP3, Opus, AAC, FLAC, WAV or PCM audio.",
         "name": "Kokoro Text to Speech",
         "modelSource": "https://huggingface.co/hexgrad/Kokoro-82M",
         "offline": false,
@@ -20633,6 +20831,7 @@
           "Uncle_Fu",
           "Vivian"
         ],
+        "description": "Qwen 3 TTS 0.6B is the smaller of Alibaba's two open-weight Qwen3-TTS models, built for fast, low-cost speech. It offers 9 voices and returns MP3 audio.",
         "name": "Qwen 3 TTS 0.6B",
         "modelSource": "https://huggingface.co/Qwen/Qwen3-TTS",
         "offline": false,
@@ -20669,6 +20868,7 @@
           "Uncle_Fu",
           "Vivian"
         ],
+        "description": "Qwen 3 TTS 1.7B is the larger of Alibaba's two open-weight Qwen3-TTS models, trading some speed for higher-quality speech. It offers 9 voices and returns MP3 audio.",
         "name": "Qwen 3 TTS 1.7B",
         "modelSource": "https://huggingface.co/Qwen/Qwen3-TTS",
         "offline": false,
@@ -20724,6 +20924,7 @@
           "zagan",
           "zenith"
         ],
+        "description": "xAI TTS v1 is xAI's text-to-speech model, made for narration, assistants and voice apps. It offers 26 voices and returns MP3, WAV or PCM audio.",
         "name": "xAI TTS v1",
         "offline": false,
         "privacy": "private",
@@ -20764,6 +20965,7 @@
           "Sarah",
           "Theodore"
         ],
+        "description": "Inworld TTS-1.5 Max is the higher-quality tier of Inworld's TTS-1.5 speech model, made for expressive delivery in games, companions and voice agents. It offers 14 voices and returns WAV audio.",
         "name": "Inworld TTS-1.5 Max",
         "offline": false,
         "privacy": "anonymized",
@@ -20810,6 +21012,7 @@
           "min_sample_seconds": 5,
           "retention_days": 7
         },
+        "description": "Chatterbox HD is Resemble AI's open-weight text-to-speech model, known for expressive, natural delivery. It offers 9 voices and returns WAV audio.",
         "name": "Chatterbox HD (Resemble AI)",
         "modelSource": "https://huggingface.co/ResembleAI/chatterbox",
         "offline": false,
@@ -20845,6 +21048,7 @@
           "zac",
           "zoe"
         ],
+        "description": "Orpheus TTS is Canopy Labs' open-weight speech model, built on Llama 3B for natural, emotive delivery. It offers 8 voices and returns WAV audio.",
         "name": "Orpheus TTS",
         "modelSource": "https://huggingface.co/canopylabs/orpheus-3b-0.1-ft",
         "offline": false,
@@ -20893,6 +21097,7 @@
           "Sarah",
           "Will"
         ],
+        "description": "ElevenLabs Turbo v2.5 is ElevenLabs' low-latency multilingual speech model, balancing quality and speed for real-time use. It offers 21 voices and returns MP3 audio.",
         "name": "ElevenLabs Turbo v2.5",
         "offline": false,
         "privacy": "anonymized",
@@ -20995,6 +21200,7 @@
           "Zephyr",
           "Zubenelgenubi"
         ],
+        "description": "Gemini 3.1 Flash TTS is Google's Gemini-based speech model, which follows natural-language instructions for tone and pacing. It offers 30 voices and returns MP3, Opus or WAV audio.",
         "name": "Gemini 3.1 Flash TTS",
         "offline": false,
         "privacy": "anonymized",
@@ -21035,6 +21241,7 @@
           "Sergio",
           "Valentina"
         ],
+        "description": "Gradium TTS is Gradium's text-to-speech model for natural, low-latency voice generation. It offers 12 voices and returns WAV, PCM or Opus audio.",
         "name": "Gradium TTS",
         "offline": false,
         "privacy": "anonymized",
@@ -21064,6 +21271,7 @@
             }
           }
         },
+        "description": "Upscaler is Venice's image upscaling model, enlarging an image 2x to 4x, up to 4096\u00d74096 pixels. An optional creativity setting lets it add fine detail and texture as it scales.",
         "name": "Upscaler",
         "offline": false,
         "privacy": "private",
@@ -21087,19 +21295,23 @@
           "aspectRatios": [
             "auto",
             "1:1",
+            "5:4",
+            "4:3",
             "3:2",
             "16:9",
             "21:9",
-            "9:16",
-            "2:3",
+            "4:5",
             "3:4",
-            "4:5"
+            "2:3",
+            "9:16",
+            "9:21"
           ],
           "promptCharacterLimit": 1500,
           "combineImages": true,
           "singleImageAspectRatio": true
         },
         "supportsOptimizePromptThinking": false,
+        "description": "FireRed is an instruction-following image editor that changes a source image from a natural-language request, with support for several reference images. It accepts prompts of up to 1,500 characters.",
         "name": "FireRed",
         "offline": false,
         "privacy": "private",
@@ -21123,19 +21335,23 @@
           "aspectRatios": [
             "auto",
             "1:1",
+            "5:4",
+            "4:3",
             "3:2",
             "16:9",
             "21:9",
-            "9:16",
-            "2:3",
+            "4:5",
             "3:4",
-            "4:5"
+            "2:3",
+            "9:16",
+            "9:21"
           ],
           "promptCharacterLimit": 1500,
           "combineImages": true,
           "singleImageAspectRatio": true
         },
         "supportsOptimizePromptThinking": false,
+        "description": "Qwen Edit Uncensored is an uncensored image editor based on Alibaba's Qwen image editing model, with improved quality and precision. It changes a source image from a natural-language instruction, without masks.",
         "name": "Qwen Edit Uncensored",
         "offline": false,
         "privacy": "private",
@@ -21177,11 +21393,18 @@
           "aspectRatios": [
             "auto",
             "1:1",
-            "16:9",
-            "9:16",
-            "3:4",
+            "4:3",
             "3:2",
-            "2:3"
+            "16:9",
+            "2:1",
+            "19.5:9",
+            "20:9",
+            "3:4",
+            "2:3",
+            "9:16",
+            "1:2",
+            "9:19.5",
+            "9:20"
           ],
           "promptCharacterLimit": 7500,
           "combineImages": true,
@@ -21193,6 +21416,7 @@
           ]
         },
         "supportsOptimizePromptThinking": false,
+        "description": "Grok Imagine Edit uses xAI's Grok Imagine to change an existing image from a text instruction: swap elements, restyle a scene or adjust details, at 1K or 2K.",
         "name": "Grok Imagine",
         "offline": false,
         "privacy": "private",
@@ -21255,11 +21479,20 @@
           "aspectRatios": [
             "auto",
             "1:1",
-            "16:9",
-            "9:16",
-            "3:4",
+            "4:3",
             "3:2",
-            "2:3"
+            "16:9",
+            "2:1",
+            "19.5:9",
+            "20:9",
+            "21:9",
+            "5:2",
+            "3:4",
+            "2:3",
+            "9:16",
+            "1:2",
+            "9:19.5",
+            "9:20"
           ],
           "promptCharacterLimit": 7500,
           "combineImages": true,
@@ -21276,6 +21509,7 @@
           ]
         },
         "supportsOptimizePromptThinking": false,
+        "description": "Grok Imagine 2.0 Edit uses xAI's Grok Imagine 2.0 to change elements, styles and details of an existing image from a text instruction, at 1K or 2K with low and medium quality settings.",
         "name": "Grok Imagine 2.0",
         "offline": false,
         "privacy": "private",
@@ -21377,6 +21611,7 @@
           ]
         },
         "supportsOptimizePromptThinking": false,
+        "description": "Krea 3 Edit changes an image from a text instruction and can combine up to 8 input images, rendering at up to 4K. It offers medium and high quality settings.",
         "name": "Krea 3",
         "offline": false,
         "privacy": "anonymized",
@@ -21412,6 +21647,7 @@
           "singleImageAspectRatio": true
         },
         "supportsOptimizePromptThinking": false,
+        "description": "Qwen Image 2 Edit is Alibaba's Qwen Image 2.0 in editing mode, changing an image from a natural-language instruction without masks.",
         "name": "Qwen Image 2",
         "offline": false,
         "privacy": "anonymized",
@@ -21447,6 +21683,7 @@
           "singleImageAspectRatio": true
         },
         "supportsOptimizePromptThinking": false,
+        "description": "Qwen Image 2 Pro Edit is the highest-fidelity tier of Alibaba's Qwen Image 2.0 for natural-language editing, built for precise, professional results.",
         "name": "Qwen Image 2 Pro",
         "offline": false,
         "privacy": "anonymized",
@@ -21481,6 +21718,7 @@
           ]
         },
         "supportsOptimizePromptThinking": false,
+        "description": "Wan 2.7 Pro Edit is the premium tier of Alibaba's Wan 2.7 for natural-language image editing, combining up to 6 input images at 1K or 2K.",
         "name": "Wan 2.7 Pro",
         "offline": false,
         "privacy": "anonymized",
@@ -21525,6 +21763,7 @@
           "singleImageAspectRatio": true
         },
         "supportsOptimizePromptThinking": false,
+        "description": "Flux 2 Max Edit is the top FLUX.2 tier from Black Forest Labs for editing, built for realism, precision and consistency across up to 6 input images.",
         "name": "Flux 2 Max",
         "offline": false,
         "privacy": "anonymized",
@@ -21582,6 +21821,7 @@
           ]
         },
         "supportsOptimizePromptThinking": false,
+        "description": "Flux 3 Edit is Black Forest Labs' flagship image editor, made for precise local edits and multi-reference composition across up to 6 input images, with output up to 4K.",
         "name": "Flux 3",
         "offline": false,
         "privacy": "anonymized",
@@ -21670,13 +21910,16 @@
           "aspectRatios": [
             "auto",
             "1:1",
+            "5:4",
+            "4:3",
             "3:2",
             "16:9",
             "21:9",
-            "9:16",
-            "2:3",
+            "4:5",
             "3:4",
-            "4:5"
+            "2:3",
+            "9:16",
+            "9:21"
           ],
           "promptCharacterLimit": 10000,
           "combineImages": true,
@@ -21697,6 +21940,7 @@
           "supportsTransparentBackground": true
         },
         "supportsOptimizePromptThinking": false,
+        "description": "GPT Image 2.5 Flare Edit makes fast, scoped edits with OpenAI's GPT Image 2.5 while keeping the subject and composition intact. It takes up to 6 input images and renders at up to 4K.",
         "name": "GPT Image 2.5 Flare",
         "offline": false,
         "privacy": "anonymized",
@@ -21785,13 +22029,16 @@
           "aspectRatios": [
             "auto",
             "1:1",
+            "5:4",
+            "4:3",
             "3:2",
             "16:9",
             "21:9",
-            "9:16",
-            "2:3",
+            "4:5",
             "3:4",
-            "4:5"
+            "2:3",
+            "9:16",
+            "9:21"
           ],
           "promptCharacterLimit": 10000,
           "combineImages": true,
@@ -21812,6 +22059,7 @@
           "supportsTransparentBackground": true
         },
         "supportsOptimizePromptThinking": false,
+        "description": "GPT Image 2.5 Sunburst Edit gives tight control over edits with OpenAI's premium GPT Image 2.5 tier, holding the subject and composition steady across revisions. It takes up to 6 input images and renders at up to 4K.",
         "name": "GPT Image 2.5 Sunburst",
         "offline": false,
         "privacy": "anonymized",
@@ -21900,13 +22148,16 @@
           "aspectRatios": [
             "auto",
             "1:1",
+            "5:4",
+            "4:3",
             "3:2",
             "16:9",
             "21:9",
-            "9:16",
-            "2:3",
+            "4:5",
             "3:4",
-            "4:5"
+            "2:3",
+            "9:16",
+            "9:21"
           ],
           "promptCharacterLimit": 10000,
           "combineImages": true,
@@ -21927,6 +22178,7 @@
           "supportsTransparentBackground": true
         },
         "supportsOptimizePromptThinking": false,
+        "description": "GPT Image 2.6 Sunburst Edit makes high-fidelity edits with OpenAI's GPT Image 2.6 Sunburst, keeping the subject and composition intact. It takes up to 6 input images and renders at up to 4K.",
         "name": "GPT Image 2.6 Sunburst Edit",
         "offline": false,
         "privacy": "anonymized",
@@ -22015,13 +22267,16 @@
           "aspectRatios": [
             "auto",
             "1:1",
+            "5:4",
+            "4:3",
             "3:2",
             "16:9",
             "21:9",
-            "9:16",
-            "2:3",
+            "4:5",
             "3:4",
-            "4:5"
+            "2:3",
+            "9:16",
+            "9:21"
           ],
           "promptCharacterLimit": 10000,
           "combineImages": true,
@@ -22042,6 +22297,7 @@
           "supportsTransparentBackground": true
         },
         "supportsOptimizePromptThinking": false,
+        "description": "GPT Image 2.6 Flare Edit makes fast, high-fidelity edits with OpenAI's GPT Image 2.6 Flare, keeping the subject and composition intact. It takes up to 6 input images and renders at up to 4K.",
         "name": "GPT Image 2.6 Flare Edit",
         "offline": false,
         "privacy": "anonymized",
@@ -22129,13 +22385,16 @@
         "constraints": {
           "aspectRatios": [
             "1:1",
+            "5:4",
+            "4:3",
             "3:2",
             "16:9",
             "21:9",
-            "9:16",
-            "2:3",
+            "4:5",
             "3:4",
-            "4:5"
+            "2:3",
+            "9:16",
+            "9:21"
           ],
           "promptCharacterLimit": 10000,
           "combineImages": true,
@@ -22155,6 +22414,7 @@
           ]
         },
         "supportsOptimizePromptThinking": false,
+        "description": "GPT Image 2 Edit makes high-fidelity edits with OpenAI's GPT Image 2 that preserve the original composition. It takes up to 6 input images and renders at up to 4K.",
         "name": "GPT Image 2",
         "offline": false,
         "privacy": "anonymized",
@@ -22195,6 +22455,7 @@
           "supportsTransparentBackground": true
         },
         "supportsOptimizePromptThinking": false,
+        "description": "GPT Image 1.5 Edit makes high-fidelity edits with OpenAI's GPT Image 1.5, preserving composition, lighting and detail. It takes up to 6 input images.",
         "name": "GPT Image 1.5",
         "offline": false,
         "privacy": "anonymized",
@@ -22282,6 +22543,7 @@
           ]
         },
         "supportsOptimizePromptThinking": false,
+        "description": "Ideogram V4.5 Edit is Ideogram's typography-aware image editor, changing images and the text within them. It takes up to 5 input images, the source plus up to 4 references, at 1K or 2K.",
         "name": "Ideogram V4.5",
         "offline": false,
         "privacy": "anonymized",
@@ -22319,13 +22581,19 @@
           "aspectRatios": [
             "auto",
             "1:1",
+            "5:4",
+            "4:3",
             "3:2",
             "16:9",
             "21:9",
-            "9:16",
-            "2:3",
+            "4:1",
+            "8:1",
+            "4:5",
             "3:4",
-            "4:5"
+            "2:3",
+            "9:16",
+            "1:4",
+            "1:8"
           ],
           "promptCharacterLimit": 32768,
           "combineImages": true,
@@ -22339,6 +22607,7 @@
           ]
         },
         "supportsOptimizePromptThinking": false,
+        "description": "Nano Banana 2 Edit uses Google's Gemini-based Nano Banana 2 to edit images from a text instruction, combining up to 6 input images at up to 4K with fast turnaround.",
         "name": "Nano Banana 2",
         "offline": false,
         "privacy": "anonymized",
@@ -22376,13 +22645,19 @@
           "aspectRatios": [
             "auto",
             "1:1",
+            "5:4",
+            "4:3",
             "3:2",
             "16:9",
             "21:9",
-            "9:16",
-            "2:3",
+            "4:1",
+            "8:1",
+            "4:5",
             "3:4",
-            "4:5"
+            "2:3",
+            "9:16",
+            "1:4",
+            "1:8"
           ],
           "promptCharacterLimit": 32768,
           "combineImages": true,
@@ -22396,6 +22671,7 @@
           ]
         },
         "supportsOptimizePromptThinking": false,
+        "description": "Nano Banana 2.1 Edit uses Google's Gemini-based Nano Banana 2.1 to edit images from a text instruction, combining up to 6 input images at up to 4K with fast turnaround.",
         "name": "Nano Banana 2.1",
         "offline": false,
         "privacy": "anonymized",
@@ -22433,13 +22709,19 @@
           "aspectRatios": [
             "auto",
             "1:1",
+            "5:4",
+            "4:3",
             "3:2",
             "16:9",
             "21:9",
-            "9:16",
-            "2:3",
+            "4:1",
+            "8:1",
+            "4:5",
             "3:4",
-            "4:5"
+            "2:3",
+            "9:16",
+            "1:4",
+            "1:8"
           ],
           "promptCharacterLimit": 32768,
           "combineImages": true,
@@ -22453,6 +22735,7 @@
           ]
         },
         "supportsOptimizePromptThinking": false,
+        "description": "Nano Banana Pro Edit uses Google's Nano Banana Pro for high-quality edits from a text instruction, combining up to 6 input images at up to 4K.",
         "name": "Nano Banana Pro",
         "offline": false,
         "privacy": "anonymized",
@@ -22476,13 +22759,19 @@
           "aspectRatios": [
             "auto",
             "1:1",
+            "5:4",
+            "4:3",
             "3:2",
             "16:9",
             "21:9",
-            "9:16",
-            "2:3",
+            "4:1",
+            "8:1",
+            "4:5",
             "3:4",
-            "4:5"
+            "2:3",
+            "9:16",
+            "1:4",
+            "1:8"
           ],
           "promptCharacterLimit": 10000,
           "combineImages": true,
@@ -22490,6 +22779,7 @@
           "singleImageAspectRatio": true
         },
         "supportsOptimizePromptThinking": false,
+        "description": "Nano Banana 2 Lite Edit is Google's efficiency-focused image editor, built for fast multi-turn local edits with up to 6 input images.",
         "name": "Nano Banana 2 Lite",
         "offline": false,
         "privacy": "anonymized",
@@ -22527,6 +22817,7 @@
           "singleImageAspectRatio": false
         },
         "supportsOptimizePromptThinking": false,
+        "description": "Luma Uni-1 Edit makes text-guided edits with Luma AI's Uni-1 while preserving the structure of the source image.",
         "name": "Luma Uni-1",
         "offline": false,
         "privacy": "anonymized",
@@ -22564,6 +22855,7 @@
           "singleImageAspectRatio": false
         },
         "supportsOptimizePromptThinking": false,
+        "description": "Luma Uni-1 Max Edit makes text-guided edits at maximum fidelity with Luma AI's Uni-1, preserving the structure of the source image.",
         "name": "Luma Uni-1 Max",
         "offline": false,
         "privacy": "anonymized",
@@ -22600,6 +22892,7 @@
           "singleImageAspectRatio": true
         },
         "supportsOptimizePromptThinking": false,
+        "description": "Muse Image Edit is Meta's Muse Image in editing mode. It changes only what you ask and can compose from up to 6 reference images.",
         "name": "Muse Image",
         "offline": false,
         "privacy": "anonymized",
@@ -22637,6 +22930,7 @@
           "singleImageAspectRatio": true
         },
         "supportsOptimizePromptThinking": false,
+        "description": "Seedream V5 Lite Edit is the fast tier of ByteDance Seed's Seedream 5.0 for natural-language editing, with up to 6 input images.",
         "name": "Seedream V5 Lite",
         "offline": false,
         "privacy": "anonymized",
@@ -22678,12 +22972,16 @@
           "aspectRatios": [
             "auto",
             "1:1",
+            "5:4",
+            "4:3",
             "3:2",
             "16:9",
-            "9:16",
-            "2:3",
+            "21:9",
+            "4:5",
             "3:4",
-            "4:3"
+            "2:3",
+            "9:16",
+            "9:21"
           ],
           "promptCharacterLimit": 10000,
           "combineImages": true,
@@ -22696,6 +22994,7 @@
           ]
         },
         "supportsOptimizePromptThinking": true,
+        "description": "Seedream V5 Pro Edit is the flagship tier of ByteDance Seed's Seedream 5.0 for natural-language editing, at 1K or 2K with up to 6 input images.",
         "name": "Seedream V5 Pro",
         "offline": false,
         "privacy": "anonymized",
@@ -22733,6 +23032,7 @@
           "singleImageAspectRatio": true
         },
         "supportsOptimizePromptThinking": false,
+        "description": "Seedream V4.5 Edit is ByteDance Seed's Seedream 4.5 in editing mode, known for well-composed results from natural-language instructions, with up to 6 input images.",
         "name": "Seedream V4.5",
         "offline": false,
         "privacy": "anonymized",
@@ -22792,6 +23092,7 @@
           ]
         },
         "supportsOptimizePromptThinking": true,
+        "description": "Qwen Image 3 Edit is the standard tier of Alibaba's Qwen Image 3.0 for natural-language editing, cost-efficient and able to use multiple reference images at 1K or 2K.",
         "name": "Qwen Image 3",
         "modelSource": "https://www.alibabacloud.com/help/en/model-studio/models",
         "offline": false,
@@ -22852,6 +23153,7 @@
           ]
         },
         "supportsOptimizePromptThinking": true,
+        "description": "Qwen Image 3 Pro Edit is the Pro tier of Alibaba's Qwen Image 3.0 for natural-language editing with multiple reference images, at 1K or 2K.",
         "name": "Qwen Image 3 Pro",
         "modelSource": "https://www.alibabacloud.com/help/en/model-studio/models",
         "offline": false,
@@ -22906,6 +23208,7 @@
           ]
         },
         "supportsOptimizePromptThinking": true,
+        "description": "Qwen Image 2.1 Turbo Edit is the fast tier of Alibaba's Qwen-Image 2.1 for editing: local edits, restyles and compositions from up to 6 input images at 1K or 2K.",
         "name": "Qwen Image 2.1 Turbo",
         "modelSource": "https://www.alibabacloud.com/help/en/model-studio/models",
         "offline": false,
@@ -22960,6 +23263,7 @@
           ]
         },
         "supportsOptimizePromptThinking": true,
+        "description": "Qwen Image 2.1 Pro Edit is the full-capacity Qwen-Image 2.1 editor, handling local edits and compositions of people and products from up to 10 reference images at 1K or 2K.",
         "name": "Qwen Image 2.1 Pro",
         "modelSource": "https://www.alibabacloud.com/help/en/model-studio/models",
         "offline": false,
@@ -22981,6 +23285,7 @@
             "diem": 0.0001
           }
         },
+        "description": "Parakeet TDT 0.6B v3 is NVIDIA's open-weight speech recognition model, with 600 million parameters and support for 25 European languages, which it detects on its own. It transcribes quickly, with punctuation and capitalization.",
         "name": "Parakeet ASR",
         "modelSource": "https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3",
         "offline": false,
@@ -23001,6 +23306,7 @@
             "diem": 0.0001
           }
         },
+        "description": "Whisper Large V3 is OpenAI's open-weight speech recognition model, trained on about 5 million hours of audio and able to transcribe around 100 languages. It's a robust general-purpose choice for multilingual transcription.",
         "name": "Whisper Large V3",
         "modelSource": "https://huggingface.co/openai/whisper-large-v3",
         "offline": false,
@@ -23021,6 +23327,7 @@
             "diem": 0.0001
           }
         },
+        "description": "Wizper is an optimized deployment of OpenAI's Whisper Large V3, transcribing the same languages with faster turnaround. It accepts a language hint and returns segment timestamps.",
         "name": "Wizper (Whisper v3)",
         "modelSource": "https://huggingface.co/openai/whisper-large-v3",
         "offline": false,
@@ -23041,6 +23348,7 @@
             "diem": 0.000167
           }
         },
+        "description": "ElevenLabs Scribe V2 is ElevenLabs' speech-to-text model, built for accurate transcription across many languages. It accepts a language hint and returns word-level timestamps with speaker labels.",
         "name": "ElevenLabs Scribe V2",
         "offline": false,
         "privacy": "anonymized",
@@ -23060,6 +23368,7 @@
             "diem": 3.1480000000000004e-05
           }
         },
+        "description": "xAI Speech to Text v1 is xAI's speech recognition model, which transcribes recorded audio into text. It accepts a language hint and returns word-level timestamps.",
         "name": "xAI Speech to Text v1",
         "offline": false,
         "privacy": "private",
@@ -23086,6 +23395,7 @@
         },
         "maxStateTokens": 32000,
         "maxTotalTokens": 64000,
+        "description": "Jev (System One) is TypeSafe AI's decision model. Instead of writing text, it answers typed questions about a passage with structured judgments: yes-or-no probabilities, choices with confidence, or scores on a rubric. It reads up to 32,000 tokens of context, with up to 64,000 tokens across context and questions.",
         "name": "Jev (System One)",
         "offline": false,
         "privacy": "anonymized",
@@ -23112,6 +23422,7 @@
         },
         "maxStateTokens": 32768,
         "maxTotalTokens": 32768,
+        "description": "Clef (System One) is Cloudflare's decision model. Like Jev, it answers typed questions about a passage with structured judgments rather than prose: probabilities, choices or rubric scores. It reads up to 32,768 tokens of context.",
         "name": "Clef (System One)",
         "offline": false,
         "privacy": "private",
