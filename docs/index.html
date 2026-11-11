@@ -812,7 +812,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-11-11 03:15)</div>
+            <div class="meta">Generated from Live API Data (2026-11-11 10:29)</div>
         </header>
 
         <div class="controls">
@@ -5421,12 +5421,6 @@
           "supportsVision": true,
           "supportsWebSearch": true,
           "supportsXSearch": false
-        },
-        "deprecation": {
-          "autoRemap": true,
-          "date": "2026-11-15T00:00:00.000Z",
-          "removesAt": "2026-11-15T00:00:00.000Z",
-          "replacementModelId": "deepseek-v4-1-flash-1017"
         },
         "description": "DeepSeek V4.1 Flash is a multimodal Mixture-of-Experts model with 552B backbone parameters (8B active on input, 16B on output) and a 1M-token context window. It natively processes images and text, with strong reasoning, coding, and agentic performance.",
         "name": "DeepSeek V4.1 Flash",
@@ -10659,6 +10653,77 @@
       "type": "image"
     },
     {
+      "created": 1794268800,
+      "id": "minimax-h3-image",
+      "model_spec": {
+        "pricing": {
+          "resolutions": {
+            "1K": {
+              "usd": 0.04,
+              "diem": 0.04
+            },
+            "2K": {
+              "usd": 0.04,
+              "diem": 0.04
+            },
+            "4K": {
+              "usd": 0.1,
+              "diem": 0.1
+            }
+          },
+          "upscale": {
+            "2x": {
+              "usd": 0.02,
+              "diem": 0.02
+            },
+            "4x": {
+              "usd": 0.08,
+              "diem": 0.08
+            }
+          }
+        },
+        "constraints": {
+          "promptCharacterLimit": 10000,
+          "defaultResolution": "1K",
+          "resolutions": [
+            "1K",
+            "2K",
+            "4K"
+          ],
+          "aspectRatios": [
+            "1:1",
+            "5:4",
+            "4:3",
+            "3:2",
+            "16:9",
+            "21:9",
+            "4:5",
+            "3:4",
+            "2:3",
+            "9:16",
+            "9:21"
+          ],
+          "defaultAspectRatio": "1:1",
+          "steps": {
+            "default": 20,
+            "max": 50
+          },
+          "widthHeightDivisor": 1
+        },
+        "supportsWebSearch": false,
+        "supportsOptimizePromptThinking": true,
+        "supportsStyleReferences": false,
+        "description": "MiniMax H3 Image is MiniMax's image model for text-to-image generation, rendering at 1K, 2K and 4K in aspect ratios from 21:9 to 9:21. It pairs with MiniMax H3 Image Edit for changing and combining images.",
+        "name": "MiniMax H3 Image",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "image"
+    },
+    {
       "created": 1788393600,
       "id": "muse-image",
       "model_spec": {
@@ -11290,8 +11355,8 @@
               "diem": 0.0255
             },
             "1.5K": {
-              "usd": 0.0255,
-              "diem": 0.0255
+              "usd": 0.034,
+              "diem": 0.034
             },
             "2K": {
               "usd": 0.051,
@@ -22942,6 +23007,74 @@
       "type": "inpaint"
     },
     {
+      "created": 1794268800,
+      "id": "minimax-h3-image-edit",
+      "model_spec": {
+        "pricing": {
+          "inpaint": {
+            "usd": 0.06,
+            "diem": 0.06
+          },
+          "resolutions": {
+            "1K": {
+              "usd": 0.06,
+              "diem": 0.06
+            },
+            "2K": {
+              "usd": 0.06,
+              "diem": 0.06
+            },
+            "4K": {
+              "usd": 0.12,
+              "diem": 0.12
+            }
+          },
+          "inputImages": {
+            "included": 1,
+            "additional": {
+              "usd": 0.019374050000000004,
+              "diem": 0.019374050000000004
+            }
+          }
+        },
+        "constraints": {
+          "aspectRatios": [
+            "auto",
+            "1:1",
+            "5:4",
+            "4:3",
+            "3:2",
+            "16:9",
+            "21:9",
+            "4:5",
+            "3:4",
+            "2:3",
+            "9:16",
+            "9:21"
+          ],
+          "promptCharacterLimit": 10000,
+          "combineImages": true,
+          "maxInputImages": 16,
+          "singleImageAspectRatio": true,
+          "defaultResolution": "1K",
+          "resolutions": [
+            "1K",
+            "2K",
+            "4K"
+          ]
+        },
+        "supportsOptimizePromptThinking": false,
+        "description": "MiniMax H3 Image Edit changes an image from a text instruction and can combine up to 16 input images, rendering at up to 4K.",
+        "name": "MiniMax H3 Image",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "inpaint"
+    },
+    {
       "created": 1788393600,
       "id": "muse-image-edit",
       "model_spec": {
@@ -23096,8 +23229,8 @@
               "diem": 0.0255
             },
             "1.5K": {
-              "usd": 0.0255,
-              "diem": 0.0255
+              "usd": 0.034,
+              "diem": 0.034
             },
             "2K": {
               "usd": 0.051,
