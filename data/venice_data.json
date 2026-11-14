@@ -98,6 +98,54 @@
     },
     {
       "context_length": 1000000,
+      "created": 1794614400,
+      "id": "gemini-4-hydrogen",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 1.875,
+            "diem": 1.875
+          },
+          "cache_input": {
+            "usd": 0.09375,
+            "diem": 0.09375
+          },
+          "output": {
+            "usd": 9.375,
+            "diem": 9.375
+          }
+        },
+        "availableContextTokens": 1000000,
+        "maxCompletionTokens": 65536,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "not-available",
+          "supportsAudioInput": true,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": true,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Gemini 4 Hydrogen is Google's fast, efficient model for coding and agentic work, with a unified 1M token context window and tunable thinking.",
+        "name": "Gemini 4 Hydrogen",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 1000000,
       "created": 1791936000,
       "id": "pareto",
       "model_spec": {
@@ -4746,6 +4794,7 @@
         "offline": false,
         "privacy": "private",
         "traits": [
+          "app_default",
           "default",
           "function_calling_default"
         ],
@@ -12427,6 +12476,264 @@
         ],
         "description": "Seedance 2.5 Edit changes a 4- to 30-second source video by swapping subjects, objects or styles, while keeping its original motion, camera and length. Reference images are optional, and output is up to 4K.",
         "name": "Seedance 2.5 Edit",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video"
+    },
+    {
+      "created": 1794614400,
+      "id": "seedance-2-5-flash-text-to-video-basic",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "text-to-video",
+          "aspect_ratios": [
+            "21:9",
+            "16:9",
+            "4:3",
+            "1:1",
+            "3:4",
+            "9:16"
+          ],
+          "resolutions": [
+            "720p",
+            "480p"
+          ],
+          "durations": [
+            "4s",
+            "5s",
+            "6s",
+            "7s",
+            "8s",
+            "9s",
+            "10s",
+            "11s",
+            "12s",
+            "13s",
+            "14s",
+            "15s",
+            "16s",
+            "17s",
+            "18s",
+            "19s",
+            "20s",
+            "21s",
+            "22s",
+            "23s",
+            "24s",
+            "25s",
+            "26s",
+            "27s",
+            "28s",
+            "29s",
+            "30s"
+          ],
+          "audio": true,
+          "audio_configurable": true,
+          "audio_input": false,
+          "per_reference_audio": false,
+          "video_input": false,
+          "prompt_character_limit": 15000
+        },
+        "model_sets": [
+          "audio",
+          "long_duration",
+          "cinematic",
+          "photorealistic"
+        ],
+        "description": "Seedance 2.5 Flash is a faster version of ByteDance Seed's Seedance 2.5, with native audio. This text-to-video variant generates 4- to 30-second clips at up to 720p.",
+        "name": "Seedance 2.5 Flash",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.35
+      }
+    },
+    {
+      "created": 1794614400,
+      "id": "seedance-2-5-flash-image-to-video-basic",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [],
+          "resolutions": [
+            "720p",
+            "480p"
+          ],
+          "durations": [
+            "4s",
+            "5s",
+            "6s",
+            "7s",
+            "8s",
+            "9s",
+            "10s",
+            "11s",
+            "12s",
+            "13s",
+            "14s",
+            "15s",
+            "16s",
+            "17s",
+            "18s",
+            "19s",
+            "20s",
+            "21s",
+            "22s",
+            "23s",
+            "24s",
+            "25s",
+            "26s",
+            "27s",
+            "28s",
+            "29s",
+            "30s"
+          ],
+          "audio": true,
+          "audio_configurable": true,
+          "audio_input": false,
+          "per_reference_audio": false,
+          "video_input": false,
+          "prompt_character_limit": 15000,
+          "reference_image_min_short_side_pixels": 300,
+          "reference_image_min_aspect_ratio": 0.4,
+          "reference_image_max_aspect_ratio": 2.5
+        },
+        "model_sets": [
+          "audio",
+          "long_duration",
+          "cinematic",
+          "photorealistic"
+        ],
+        "description": "Seedance 2.5 Flash's image-to-video variant turns a starting image into a 4- to 30-second clip at up to 720p, with optional native audio.",
+        "name": "Seedance 2.5 Flash",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.34
+      }
+    },
+    {
+      "created": 1794614400,
+      "id": "seedance-2-5-flash-reference-to-video-basic",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "image-to-video",
+          "aspect_ratios": [
+            "21:9",
+            "16:9",
+            "4:3",
+            "1:1",
+            "3:4",
+            "9:16"
+          ],
+          "resolutions": [
+            "720p",
+            "480p"
+          ],
+          "durations": [
+            "4s",
+            "5s",
+            "6s",
+            "7s",
+            "8s",
+            "9s",
+            "10s",
+            "11s",
+            "12s",
+            "13s",
+            "14s",
+            "15s",
+            "16s",
+            "17s",
+            "18s",
+            "19s",
+            "20s",
+            "21s",
+            "22s",
+            "23s",
+            "24s",
+            "25s",
+            "26s",
+            "27s",
+            "28s",
+            "29s",
+            "30s"
+          ],
+          "audio": true,
+          "audio_configurable": true,
+          "audio_input": true,
+          "per_reference_audio": false,
+          "video_input": false,
+          "prompt_character_limit": 15000,
+          "reference_image_min_short_side_pixels": 300,
+          "reference_image_min_aspect_ratio": 0.4,
+          "reference_image_max_aspect_ratio": 2.5
+        },
+        "model_sets": [
+          "audio",
+          "long_duration",
+          "cinematic",
+          "photorealistic"
+        ],
+        "description": "Seedance 2.5 Flash R2V builds 4- to 30-second clips at up to 720p from up to 10 reference images plus reference videos and audio, and can edit or extend footage. It's the reference-driven variant of Seedance 2.5 Flash.",
+        "name": "Seedance 2.5 Flash R2V",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video",
+      "pricing": {
+        "base_price_usd": 0.35
+      }
+    },
+    {
+      "created": 1794614400,
+      "id": "seedance-2-5-flash-edit-video-basic",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "video",
+          "aspect_ratios": [],
+          "resolutions": [
+            "720p",
+            "480p"
+          ],
+          "durations": [
+            "Auto"
+          ],
+          "audio": true,
+          "audio_configurable": true,
+          "audio_input": true,
+          "per_reference_audio": false,
+          "video_input": false,
+          "prompt_character_limit": 15000,
+          "reference_image_min_short_side_pixels": 300,
+          "reference_image_min_aspect_ratio": 0.4,
+          "reference_image_max_aspect_ratio": 2.5
+        },
+        "model_sets": [
+          "audio",
+          "long_duration",
+          "cinematic",
+          "photorealistic"
+        ],
+        "description": "Seedance 2.5 Flash Edit changes a 4- to 30-second source video by swapping subjects, objects or styles, while keeping its original motion, camera and length. Reference images are optional, and output is up to 720p.",
+        "name": "Seedance 2.5 Flash Edit",
         "offline": false,
         "traits": []
       },
