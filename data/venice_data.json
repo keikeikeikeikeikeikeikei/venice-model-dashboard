@@ -15268,8 +15268,7 @@
           "long_duration",
           "cinematic",
           "photorealistic",
-          "venice_recommendations",
-          "fast"
+          "venice_recommendations"
         ],
         "description": "MiniMax H3 Max is a post-trained variant of MiniMax's H3 video model. This text-to-video variant generates 5- to 15-second clips at up to 1080p with native stereo audio.",
         "name": "MiniMax H3 Max",
@@ -18090,7 +18089,8 @@
         "model_sets": [
           "high_resolution",
           "audio",
-          "cinematic"
+          "cinematic",
+          "fast"
         ],
         "description": "PixVerse v5.6 is PixVerse's video model. This text-to-video variant generates 5- or 8-second clips at up to 1080p, with optional audio.",
         "name": "PixVerse v5.6",
