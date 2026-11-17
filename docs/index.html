@@ -812,7 +812,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-11-17 21:40)</div>
+            <div class="meta">Generated from Live API Data (2026-11-18 06:09)</div>
         </header>
 
         <div class="controls">
@@ -845,6 +845,7 @@
                                 <option value="128000">125k+</option>
                                 <option value="256000">250k+</option>
                                 <option value="1000448">977k+</option>
+                                <option value="1048576">1M+</option>
                                 <option value="1049600">1.0M+</option>
                                 <option value="1999872">1.9M+</option>
                             </select>
@@ -8087,6 +8088,330 @@
         "description": "GPT-6.1 Terra is a fast, efficient model for visual reasoning, precise computer use, and clear, natural writing. It has a 1.05M token context window (922K input, 128K output), support for text and image inputs, and reasoning effort from none through max.",
         "name": "GPT-6.1 Terra",
         "modelSource": "https://developers.openai.com/api/docs/models/gpt-6.1-terra",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 1050000,
+      "created": 1794873600,
+      "id": "openai-gpt-62-astra",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 8,
+            "diem": 8
+          },
+          "cache_input": {
+            "usd": 0.4,
+            "diem": 0.4
+          },
+          "cache_write": {
+            "usd": 10,
+            "diem": 10
+          },
+          "output": {
+            "usd": 40,
+            "diem": 40
+          },
+          "extended": {
+            "context_token_threshold": 272000,
+            "input": {
+              "usd": 16,
+              "diem": 16
+            },
+            "output": {
+              "usd": 60,
+              "diem": 60
+            },
+            "cache_input": {
+              "usd": 0.8,
+              "diem": 0.8
+            },
+            "cache_write": {
+              "usd": 20,
+              "diem": 20
+            }
+          }
+        },
+        "availableContextTokens": 1050000,
+        "maxCompletionTokens": 128000,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": true,
+          "reasoningEffortOptions": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "defaultReasoningEffort": "high",
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "GPT-6.2 Astra is the flagship model in OpenAI's GPT-6.2 series, built for the hardest projects. It is suited for real-world engineering, professional work, and scientific research, with stronger visual reasoning for websites, slideshows, and 3D designs. It has a 1.05M token context window (922K input, 128K output) and support for text and image inputs.",
+        "name": "GPT-6.2 Astra",
+        "modelSource": "https://developers.openai.com/api/docs/models/gpt-6.2-astra",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 1050000,
+      "created": 1794873600,
+      "id": "openai-gpt-62-astra-pro",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 8,
+            "diem": 8
+          },
+          "cache_input": {
+            "usd": 0.4,
+            "diem": 0.4
+          },
+          "cache_write": {
+            "usd": 10,
+            "diem": 10
+          },
+          "output": {
+            "usd": 40,
+            "diem": 40
+          },
+          "extended": {
+            "context_token_threshold": 272000,
+            "input": {
+              "usd": 16,
+              "diem": 16
+            },
+            "output": {
+              "usd": 60,
+              "diem": 60
+            },
+            "cache_input": {
+              "usd": 0.8,
+              "diem": 0.8
+            },
+            "cache_write": {
+              "usd": 20,
+              "diem": 20
+            }
+          }
+        },
+        "availableContextTokens": 1050000,
+        "maxCompletionTokens": 128000,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": true,
+          "reasoningEffortOptions": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "defaultReasoningEffort": "high",
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "GPT-6.2 Astra with pro reasoning mode for difficult tasks that benefit from more model work. Supports text and image inputs with a 1.05M token context window. Pro mode can use more tokens and take longer than standard Astra.",
+        "name": "GPT-6.2 Astra Pro",
+        "modelSource": "https://developers.openai.com/api/docs/models/gpt-6.2-astra",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 1050000,
+      "created": 1794873600,
+      "id": "openai-gpt-62-sol",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 2,
+            "diem": 2
+          },
+          "cache_input": {
+            "usd": 0.1,
+            "diem": 0.1
+          },
+          "cache_write": {
+            "usd": 2.5,
+            "diem": 2.5
+          },
+          "output": {
+            "usd": 10,
+            "diem": 10
+          },
+          "extended": {
+            "context_token_threshold": 272000,
+            "input": {
+              "usd": 4,
+              "diem": 4
+            },
+            "output": {
+              "usd": 15,
+              "diem": 15
+            },
+            "cache_input": {
+              "usd": 0.2,
+              "diem": 0.2
+            },
+            "cache_write": {
+              "usd": 5,
+              "diem": 5
+            }
+          }
+        },
+        "availableContextTokens": 1050000,
+        "maxCompletionTokens": 128000,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": true,
+          "reasoningEffortOptions": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "defaultReasoningEffort": "high",
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "GPT-6.2 Sol is an upgrade to GPT-6.1 Sol, positioned below GPT-6.2 Astra. It is an efficient, versatile model for everyday work, suited for multistep agentic workflows and clear, natural writing across technical and non-technical tasks. It has a 1.05M token context window (922K input, 128K output) and support for text and image inputs.",
+        "name": "GPT-6.2 Sol",
+        "modelSource": "https://developers.openai.com/api/docs/models/gpt-6.2-sol",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 1050000,
+      "created": 1794873600,
+      "id": "openai-gpt-62-sol-pro",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 2,
+            "diem": 2
+          },
+          "cache_input": {
+            "usd": 0.1,
+            "diem": 0.1
+          },
+          "cache_write": {
+            "usd": 2.5,
+            "diem": 2.5
+          },
+          "output": {
+            "usd": 10,
+            "diem": 10
+          },
+          "extended": {
+            "context_token_threshold": 272000,
+            "input": {
+              "usd": 4,
+              "diem": 4
+            },
+            "output": {
+              "usd": 15,
+              "diem": 15
+            },
+            "cache_input": {
+              "usd": 0.2,
+              "diem": 0.2
+            },
+            "cache_write": {
+              "usd": 5,
+              "diem": 5
+            }
+          }
+        },
+        "availableContextTokens": 1050000,
+        "maxCompletionTokens": 128000,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": true,
+          "reasoningEffortOptions": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "defaultReasoningEffort": "high",
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "GPT-6.2 Sol with pro reasoning mode for difficult tasks that benefit from more model work. Supports text and image inputs with a 1.05M token context window. Pro mode can use more tokens and take longer than standard Sol.",
+        "name": "GPT-6.2 Sol Pro",
+        "modelSource": "https://developers.openai.com/api/docs/models/gpt-6.2-sol",
         "offline": false,
         "privacy": "anonymized",
         "traits": []
@@ -16495,8 +16820,7 @@
           "long_duration",
           "cinematic",
           "photorealistic",
-          "venice_recommendations",
-          "fast"
+          "venice_recommendations"
         ],
         "description": "MiniMax H3 Max R2V generates 5- to 15-second clips at up to 1080p from reference images, videos and audio, cited in the prompt as @Image1, @Video1 and so on, with native audio.",
         "name": "MiniMax H3 Max R2V",
@@ -19685,7 +20009,8 @@
         "model_sets": [
           "fast",
           "cinematic",
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "description": "Runway Gen-4 Turbo is a faster version of Runway's Gen-4 video model, animating a starting image into a 2- to 10-second clip.",
         "name": "Runway Gen-4 Turbo",
