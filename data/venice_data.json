@@ -7939,6 +7939,61 @@
       "type": "text"
     },
     {
+      "context_length": 1000000,
+      "created": 1794873600,
+      "id": "e2ee-kimi-k3-1-pro-p",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 2.5,
+            "diem": 2.5
+          },
+          "cache_input": {
+            "usd": 0.25,
+            "diem": 0.25
+          },
+          "output": {
+            "usd": 12.5,
+            "diem": 12.5
+          }
+        },
+        "availableContextTokens": 1000000,
+        "maxCompletionTokens": 131072,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": true,
+          "reasoningEffortOptions": [
+            "none",
+            "max"
+          ],
+          "defaultReasoningEffort": "max",
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": true,
+          "supportsE2EE": true,
+          "supportsVideoInput": false,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Kimi K3.1 Pro is Moonshot AI's flagship multimodal reasoning model and the post-trained successor to Kimi K3, with a 1M-token context window. It is built for long-horizon coding, agentic workflows, financial research, and 3D modeling through CAD code.",
+        "name": "Kimi K3.1 Pro",
+        "modelSource": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
       "context_length": 32000,
       "created": 1773792000,
       "id": "e2ee-qwen-2-5-7b-p",
