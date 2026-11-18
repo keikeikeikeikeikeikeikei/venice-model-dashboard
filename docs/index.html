@@ -812,7 +812,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-11-18 06:09)</div>
+            <div class="meta">Generated from Live API Data (2026-11-18 11:39)</div>
         </header>
 
         <div class="controls">
@@ -3004,58 +3004,6 @@
       "type": "text"
     },
     {
-      "context_length": 256000,
-      "created": 1776038400,
-      "id": "gemma-4-uncensored",
-      "model_spec": {
-        "pricing": {
-          "input": {
-            "usd": 0.1625,
-            "diem": 0.1625
-          },
-          "output": {
-            "usd": 0.5,
-            "diem": 0.5
-          }
-        },
-        "availableContextTokens": 256000,
-        "maxCompletionTokens": 8192,
-        "capabilities": {
-          "optimizedForCode": false,
-          "quantization": "int4",
-          "supportsAudioInput": false,
-          "supportsFunctionCalling": true,
-          "supportsLogProbs": true,
-          "supportsMultipleImages": false,
-          "supportsReasoning": false,
-          "supportsReasoningEffort": false,
-          "supportsResponseSchema": true,
-          "supportsTeeAttestation": false,
-          "supportsE2EE": false,
-          "supportsVideoInput": false,
-          "supportsVision": true,
-          "supportsWebSearch": true,
-          "supportsXSearch": false
-        },
-        "deprecation": {
-          "autoRemap": true,
-          "date": "2026-11-18T00:00:00.000Z",
-          "removesAt": "2026-11-18T00:00:00.000Z",
-          "replacementModelId": "google-gemma-4-26b-a4b-it"
-        },
-        "description": "Gemma 4 Uncensored is an uncensored variant of Google Gemma 4 26B, a Mixture-of-Experts model with 26B total parameters and only 4B active per token. Fine-tuned for uncensored chat without content filtering, it supports 256K context, coding, and general-purpose conversation.",
-        "name": "Gemma 4 Uncensored",
-        "modelSource": "https://huggingface.co/Jiunsong/supergemma4-26b-uncensored-gguf-v2",
-        "offline": false,
-        "privacy": "private",
-        "traits": [],
-        "uncensored": true
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "text"
-    },
-    {
       "context_length": 198000,
       "created": 1762214400,
       "id": "google-gemma-3-27b-it",
@@ -5157,68 +5105,6 @@
         "description": "Kimi K2.6 is an open-source, native multimodal agentic model from Moonshot AI with 1T total parameters and 32B active parameters. It excels at long-horizon coding, coding-driven design, agent swarm orchestration, and proactive autonomous execution with a 256K-token context window.",
         "name": "Kimi K2.6",
         "modelSource": "https://huggingface.co/moonshotai/Kimi-K2.6",
-        "offline": false,
-        "privacy": "private",
-        "traits": []
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "text"
-    },
-    {
-      "context_length": 256000,
-      "created": 1769548800,
-      "id": "kimi-k2-5",
-      "model_spec": {
-        "pricing": {
-          "input": {
-            "usd": 0.56,
-            "diem": 0.56
-          },
-          "cache_input": {
-            "usd": 0.22,
-            "diem": 0.22
-          },
-          "output": {
-            "usd": 3.5,
-            "diem": 3.5
-          }
-        },
-        "availableContextTokens": 256000,
-        "maxCompletionTokens": 65536,
-        "capabilities": {
-          "optimizedForCode": true,
-          "quantization": "not-available",
-          "supportsAudioInput": false,
-          "supportsFunctionCalling": true,
-          "supportsLogProbs": true,
-          "supportsMultipleImages": true,
-          "maxImages": 10,
-          "supportsReasoning": true,
-          "supportsReasoningEffort": true,
-          "reasoningEffortOptions": [
-            "none",
-            "low",
-            "medium",
-            "high"
-          ],
-          "defaultReasoningEffort": "high",
-          "supportsResponseSchema": true,
-          "supportsTeeAttestation": false,
-          "supportsE2EE": false,
-          "supportsVideoInput": false,
-          "supportsVision": true,
-          "supportsWebSearch": true,
-          "supportsXSearch": false
-        },
-        "deprecation": {
-          "autoRemap": false,
-          "date": "2026-11-18T00:00:00.000Z",
-          "removesAt": "2026-11-18T00:00:00.000Z"
-        },
-        "description": "Kimi K2.5 is an open reasoning model from Moonshot AI, featuring trillion-parameter Mixture-of-Experts architecture with 32B active parameters and a 256K-token context window.",
-        "name": "Kimi K2.5",
-        "modelSource": "https://huggingface.co/moonshotai/Kimi-K2.5",
         "offline": false,
         "privacy": "private",
         "traits": []
@@ -12862,6 +12748,195 @@
         "privacy": "anonymized",
         "traits": [],
         "uncensored": true
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "image"
+    },
+    {
+      "created": 1794873600,
+      "id": "kling-v4-text-to-image",
+      "model_spec": {
+        "pricing": {
+          "resolutions": {
+            "2K": {
+              "usd": 0.08,
+              "diem": 0.08
+            },
+            "4K": {
+              "usd": 0.12,
+              "diem": 0.12
+            }
+          },
+          "upscale": {
+            "2x": {
+              "usd": 0.02,
+              "diem": 0.02
+            },
+            "4x": {
+              "usd": 0.08,
+              "diem": 0.08
+            }
+          }
+        },
+        "constraints": {
+          "promptCharacterLimit": 32768,
+          "defaultResolution": "2K",
+          "resolutions": [
+            "2K",
+            "4K"
+          ],
+          "aspectRatios": [
+            "1:1",
+            "16:9",
+            "9:16",
+            "4:3",
+            "3:4",
+            "3:2",
+            "2:3",
+            "21:9"
+          ],
+          "defaultAspectRatio": "1:1",
+          "steps": {
+            "default": 20,
+            "max": 50
+          },
+          "widthHeightDivisor": 1
+        },
+        "supportsWebSearch": false,
+        "supportsOptimizePromptThinking": false,
+        "supportsStyleReferences": false,
+        "description": "Text-to-image at 2K and 4K, in aspect ratios from 21:9 to 9:16.",
+        "name": "Kling Image 4.0",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "image"
+    },
+    {
+      "created": 1794873600,
+      "id": "mai-image-2-7",
+      "model_spec": {
+        "pricing": {
+          "resolutions": {
+            "1K": {
+              "usd": 0.05,
+              "diem": 0.05
+            },
+            "2K": {
+              "usd": 0.17,
+              "diem": 0.17
+            }
+          },
+          "upscale": {
+            "2x": {
+              "usd": 0.02,
+              "diem": 0.02
+            },
+            "4x": {
+              "usd": 0.08,
+              "diem": 0.08
+            }
+          }
+        },
+        "constraints": {
+          "promptCharacterLimit": 32000,
+          "defaultResolution": "1K",
+          "resolutions": [
+            "1K",
+            "2K"
+          ],
+          "supportsTransparentBackground": true,
+          "aspectRatios": [
+            "1:1",
+            "16:9",
+            "9:16",
+            "4:3",
+            "3:4",
+            "3:2",
+            "2:3"
+          ],
+          "defaultAspectRatio": "1:1",
+          "steps": {
+            "default": 20,
+            "max": 50
+          },
+          "widthHeightDivisor": 1
+        },
+        "supportsWebSearch": false,
+        "supportsOptimizePromptThinking": false,
+        "supportsStyleReferences": false,
+        "description": "MAI Image 2.7 is Microsoft's text-to-image model. It renders at 1K or 2K in seven aspect ratios and supports transparent backgrounds.",
+        "name": "MAI Image 2.7",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "image"
+    },
+    {
+      "created": 1794873600,
+      "id": "mai-image-2-7-flash",
+      "model_spec": {
+        "pricing": {
+          "resolutions": {
+            "1K": {
+              "usd": 0.02,
+              "diem": 0.02
+            },
+            "2K": {
+              "usd": 0.05,
+              "diem": 0.05
+            }
+          },
+          "upscale": {
+            "2x": {
+              "usd": 0.02,
+              "diem": 0.02
+            },
+            "4x": {
+              "usd": 0.08,
+              "diem": 0.08
+            }
+          }
+        },
+        "constraints": {
+          "promptCharacterLimit": 32000,
+          "defaultResolution": "1K",
+          "resolutions": [
+            "1K",
+            "2K"
+          ],
+          "supportsTransparentBackground": true,
+          "aspectRatios": [
+            "1:1",
+            "16:9",
+            "9:16",
+            "4:3",
+            "3:4",
+            "3:2",
+            "2:3"
+          ],
+          "defaultAspectRatio": "1:1",
+          "steps": {
+            "default": 20,
+            "max": 50
+          },
+          "widthHeightDivisor": 1
+        },
+        "supportsWebSearch": false,
+        "supportsOptimizePromptThinking": false,
+        "supportsStyleReferences": false,
+        "description": "MAI Image 2.7 Flash is the faster, lower-cost variant of Microsoft's MAI Image 2.7. It renders at 1K or 2K in seven aspect ratios and supports transparent backgrounds.",
+        "name": "MAI Image 2.7 Flash",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
       },
       "object": "model",
       "owned_by": "venice.ai",
@@ -24405,6 +24480,184 @@
         "privacy": "anonymized",
         "traits": [],
         "uncensored": true
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "inpaint"
+    },
+    {
+      "created": 1794873600,
+      "id": "kling-v4-image-edit",
+      "model_spec": {
+        "pricing": {
+          "inpaint": {
+            "usd": 0.08,
+            "diem": 0.08
+          },
+          "resolutions": {
+            "2K": {
+              "usd": 0.08,
+              "diem": 0.08
+            },
+            "4K": {
+              "usd": 0.12,
+              "diem": 0.12
+            }
+          },
+          "inputImages": {
+            "included": 0,
+            "additional": {
+              "usd": 0.0036800000000000005,
+              "diem": 0.0036800000000000005
+            }
+          }
+        },
+        "constraints": {
+          "aspectRatios": [
+            "auto",
+            "1:1",
+            "16:9",
+            "9:16",
+            "4:3",
+            "3:4",
+            "3:2",
+            "2:3",
+            "21:9"
+          ],
+          "promptCharacterLimit": 32768,
+          "combineImages": true,
+          "maxInputImages": 10,
+          "singleImageAspectRatio": true,
+          "defaultResolution": "2K",
+          "resolutions": [
+            "2K",
+            "4K"
+          ]
+        },
+        "supportsOptimizePromptThinking": false,
+        "description": "Edits images from a text instruction. Refer to inputs as @Image1, @Image2, and so on. Accepts up to 10 images, at 2K and 4K.",
+        "name": "Kling Image 4.0",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "inpaint"
+    },
+    {
+      "created": 1794873600,
+      "id": "mai-image-2-7-edit",
+      "model_spec": {
+        "pricing": {
+          "inpaint": {
+            "usd": 0.06,
+            "diem": 0.06
+          },
+          "resolutions": {
+            "1K": {
+              "usd": 0.06,
+              "diem": 0.06
+            },
+            "2K": {
+              "usd": 0.18,
+              "diem": 0.18
+            }
+          },
+          "inputImages": {
+            "included": 1,
+            "additional": {
+              "usd": 0.009430000000000003,
+              "diem": 0.009430000000000003
+            }
+          }
+        },
+        "constraints": {
+          "aspectRatios": [
+            "1:1",
+            "16:9",
+            "9:16",
+            "4:3",
+            "3:4",
+            "3:2",
+            "2:3"
+          ],
+          "promptCharacterLimit": 32000,
+          "combineImages": true,
+          "maxInputImages": 5,
+          "singleImageAspectRatio": true,
+          "defaultResolution": "1K",
+          "resolutions": [
+            "1K",
+            "2K"
+          ],
+          "supportsTransparentBackground": true
+        },
+        "supportsOptimizePromptThinking": false,
+        "description": "Edits images from a text instruction with Microsoft's MAI Image 2.7. Accepts up to 5 images, at 1K and 2K.",
+        "name": "MAI Image 2.7",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "inpaint"
+    },
+    {
+      "created": 1794873600,
+      "id": "mai-image-2-7-flash-edit",
+      "model_spec": {
+        "pricing": {
+          "inpaint": {
+            "usd": 0.02,
+            "diem": 0.02
+          },
+          "resolutions": {
+            "1K": {
+              "usd": 0.02,
+              "diem": 0.02
+            },
+            "2K": {
+              "usd": 0.06,
+              "diem": 0.06
+            }
+          },
+          "inputImages": {
+            "included": 1,
+            "additional": {
+              "usd": 0.00299,
+              "diem": 0.00299
+            }
+          }
+        },
+        "constraints": {
+          "aspectRatios": [
+            "1:1",
+            "16:9",
+            "9:16",
+            "4:3",
+            "3:4",
+            "3:2",
+            "2:3"
+          ],
+          "promptCharacterLimit": 32000,
+          "combineImages": true,
+          "maxInputImages": 5,
+          "singleImageAspectRatio": true,
+          "defaultResolution": "1K",
+          "resolutions": [
+            "1K",
+            "2K"
+          ],
+          "supportsTransparentBackground": true
+        },
+        "supportsOptimizePromptThinking": false,
+        "description": "Edits images from a text instruction with MAI Image 2.7 Flash, the faster, lower-cost variant of Microsoft's MAI Image 2.7. Accepts up to 5 images, at 1K and 2K.",
+        "name": "MAI Image 2.7 Flash",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
       },
       "object": "model",
       "owned_by": "venice.ai",
