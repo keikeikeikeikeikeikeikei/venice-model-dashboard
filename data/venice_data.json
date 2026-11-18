@@ -2119,6 +2119,52 @@
       "type": "text"
     },
     {
+      "context_length": 256000,
+      "created": 1776038400,
+      "id": "gemma-4-uncensored",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.1625,
+            "diem": 0.1625
+          },
+          "output": {
+            "usd": 0.5,
+            "diem": 0.5
+          }
+        },
+        "availableContextTokens": 256000,
+        "maxCompletionTokens": 8192,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "int4",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": true,
+          "supportsMultipleImages": false,
+          "supportsReasoning": false,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Gemma 4 Uncensored is an uncensored variant of Google Gemma 4 26B, a Mixture-of-Experts model with 26B total parameters and only 4B active per token. Fine-tuned for uncensored chat without content filtering, it supports 256K context, coding, and general-purpose conversation.",
+        "name": "Gemma 4 Uncensored",
+        "modelSource": "https://huggingface.co/Jiunsong/supergemma4-26b-uncensored-gguf-v2",
+        "offline": false,
+        "privacy": "private",
+        "traits": [],
+        "uncensored": true
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
       "context_length": 198000,
       "created": 1762214400,
       "id": "google-gemma-3-27b-it",
