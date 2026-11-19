@@ -98,6 +98,54 @@
     },
     {
       "context_length": 1000000,
+      "created": 1795046400,
+      "id": "gemini-4-neon",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 3.75,
+            "diem": 3.75
+          },
+          "cache_input": {
+            "usd": 0.1875,
+            "diem": 0.1875
+          },
+          "output": {
+            "usd": 18.75,
+            "diem": 18.75
+          }
+        },
+        "availableContextTokens": 1000000,
+        "maxCompletionTokens": 65536,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "not-available",
+          "supportsAudioInput": true,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": true,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Gemini 4 Neon is Google's low-latency model for coding, multi-step reasoning, and multimodal understanding in agentic workflows, with a unified 1M token context window and tunable thinking.",
+        "name": "Gemini 4 Neon",
+        "offline": false,
+        "privacy": "anonymized",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 1000000,
       "created": 1794614400,
       "id": "gemini-4-hydrogen",
       "model_spec": {
