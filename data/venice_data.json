@@ -17529,6 +17529,15 @@
     {
       "created": 1792800000,
       "id": "kling-v4-text-to-video",
+      "capabilities": {
+        "supportsHdr": true
+      },
+      "settings": {
+        "hdrResolutions": [
+          "1080p",
+          "4k"
+        ]
+      },
       "model_spec": {
         "privacy": "anonymized",
         "constraints": {
@@ -17541,7 +17550,13 @@
           ],
           "resolutions": [
             "720p",
-            "1080p"
+            "1080p",
+            "4k"
+          ],
+          "supportsHdr": true,
+          "hdrResolutions": [
+            "1080p",
+            "4k"
           ],
           "durations": [
             "3s",
@@ -17583,11 +17598,12 @@
         "model_sets": [
           "audio",
           "high_resolution",
+          "ultra_high_resolution",
           "long_duration",
           "cinematic",
           "photorealistic"
         ],
-        "description": "Kling 4.0 is Kling AI's fourth-generation video model. This text-to-video variant generates 3- to 30-second clips at 720p or 1080p with native audio, and supports multi-shot prompts.",
+        "description": "Kling 4.0 is Kling AI's fourth-generation video model. This text-to-video variant generates 3- to 30-second clips at 720p, 1080p, or 4K with native audio, optional HDR at 1080p and 4K, and multi-shot prompts.",
         "name": "Kling 4.0",
         "offline": false,
         "traits": []
@@ -17602,6 +17618,15 @@
     {
       "created": 1792800000,
       "id": "kling-v4-image-to-video",
+      "capabilities": {
+        "supportsHdr": true
+      },
+      "settings": {
+        "hdrResolutions": [
+          "1080p",
+          "4k"
+        ]
+      },
       "model_spec": {
         "privacy": "anonymized",
         "constraints": {
@@ -17609,7 +17634,13 @@
           "aspect_ratios": [],
           "resolutions": [
             "720p",
-            "1080p"
+            "1080p",
+            "4k"
+          ],
+          "supportsHdr": true,
+          "hdrResolutions": [
+            "1080p",
+            "4k"
           ],
           "durations": [
             "3s",
@@ -17654,11 +17685,12 @@
         "model_sets": [
           "audio",
           "high_resolution",
+          "ultra_high_resolution",
           "long_duration",
           "cinematic",
           "photorealistic"
         ],
-        "description": "Kling 4.0's image-to-video variant animates a starting image, with optional end-frame control, into a 3- to 30-second clip at 720p or 1080p with native audio and multi-shot prompts.",
+        "description": "Kling 4.0's image-to-video variant animates a starting image, with optional end-frame control, into a 3- to 30-second clip at 720p, 1080p, or 4K with native audio, optional HDR at 1080p and 4K, and multi-shot prompts.",
         "name": "Kling 4.0",
         "offline": false,
         "traits": []
@@ -17673,6 +17705,15 @@
     {
       "created": 1792800000,
       "id": "kling-v4-reference-to-video",
+      "capabilities": {
+        "supportsHdr": true
+      },
+      "settings": {
+        "hdrResolutions": [
+          "1080p",
+          "4k"
+        ]
+      },
       "model_spec": {
         "privacy": "anonymized",
         "constraints": {
@@ -17686,7 +17727,13 @@
           ],
           "resolutions": [
             "720p",
-            "1080p"
+            "1080p",
+            "4k"
+          ],
+          "supportsHdr": true,
+          "hdrResolutions": [
+            "1080p",
+            "4k"
           ],
           "durations": [
             "3s",
@@ -17731,11 +17778,12 @@
         "model_sets": [
           "audio",
           "high_resolution",
+          "ultra_high_resolution",
           "long_duration",
           "cinematic",
           "photorealistic"
         ],
-        "description": "Kling 4.0 R2V generates 3- to 30-second clips at 720p or 1080p with native audio from up to 10 reference images and 5 reference videos, with an optional start frame and multi-shot prompts.",
+        "description": "Kling 4.0 R2V generates 3- to 30-second clips at 720p, 1080p, or 4K with native audio and optional HDR at 1080p and 4K, from up to 10 reference images and 5 reference videos, with an optional start frame and multi-shot prompts.",
         "name": "Kling 4.0 R2V",
         "offline": false,
         "traits": []
