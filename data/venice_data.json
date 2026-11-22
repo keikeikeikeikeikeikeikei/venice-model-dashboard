@@ -17796,6 +17796,61 @@
       }
     },
     {
+      "created": 1795219200,
+      "id": "kling-v4-video-to-video",
+      "capabilities": {
+        "supportsHdr": true
+      },
+      "settings": {
+        "hdrResolutions": [
+          "1080p",
+          "4k"
+        ]
+      },
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "video",
+          "aspect_ratios": [],
+          "resolutions": [
+            "720p",
+            "1080p",
+            "4k"
+          ],
+          "supportsHdr": true,
+          "hdrResolutions": [
+            "1080p",
+            "4k"
+          ],
+          "durations": [
+            "Auto"
+          ],
+          "audio": true,
+          "audio_configurable": false,
+          "audio_input": false,
+          "per_reference_audio": false,
+          "video_input": true,
+          "prompt_character_limit": 26000,
+          "reference_image_min_short_side_pixels": 300
+        },
+        "model_sets": [
+          "audio",
+          "high_resolution",
+          "ultra_high_resolution",
+          "long_duration",
+          "cinematic",
+          "photorealistic"
+        ],
+        "description": "Kling 4.0 Edit changes a source video from a text instruction and up to 10 reference images, at 720p, 1080p, or 4K with native audio and optional HDR at 1080p and 4K. The output follows the length of the source video.",
+        "name": "Kling 4.0 Edit",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video"
+    },
+    {
       "created": 1793836800,
       "id": "kling-v4-flash-text-to-video",
       "model_spec": {
