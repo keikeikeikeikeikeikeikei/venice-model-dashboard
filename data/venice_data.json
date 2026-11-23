@@ -29,7 +29,13 @@
           "supportsLogProbs": false,
           "supportsMultipleImages": false,
           "supportsReasoning": true,
-          "supportsReasoningEffort": false,
+          "supportsReasoningEffort": true,
+          "reasoningEffortOptions": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "defaultReasoningEffort": "medium",
           "supportsResponseSchema": true,
           "supportsTeeAttestation": false,
           "supportsE2EE": false,
@@ -77,7 +83,13 @@
           "supportsLogProbs": false,
           "supportsMultipleImages": false,
           "supportsReasoning": true,
-          "supportsReasoningEffort": false,
+          "supportsReasoningEffort": true,
+          "reasoningEffortOptions": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "defaultReasoningEffort": "medium",
           "supportsResponseSchema": true,
           "supportsTeeAttestation": false,
           "supportsE2EE": false,
@@ -125,7 +137,14 @@
           "supportsLogProbs": false,
           "supportsMultipleImages": false,
           "supportsReasoning": true,
-          "supportsReasoningEffort": false,
+          "supportsReasoningEffort": true,
+          "reasoningEffortOptions": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "defaultReasoningEffort": "high",
           "supportsResponseSchema": true,
           "supportsTeeAttestation": false,
           "supportsE2EE": false,
@@ -173,7 +192,14 @@
           "supportsLogProbs": false,
           "supportsMultipleImages": false,
           "supportsReasoning": true,
-          "supportsReasoningEffort": false,
+          "supportsReasoningEffort": true,
+          "reasoningEffortOptions": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "defaultReasoningEffort": "high",
           "supportsResponseSchema": true,
           "supportsTeeAttestation": false,
           "supportsE2EE": false,
@@ -370,7 +396,13 @@
           "supportsLogProbs": false,
           "supportsMultipleImages": false,
           "supportsReasoning": true,
-          "supportsReasoningEffort": false,
+          "supportsReasoningEffort": true,
+          "reasoningEffortOptions": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "defaultReasoningEffort": "high",
           "supportsResponseSchema": true,
           "supportsTeeAttestation": false,
           "supportsE2EE": false,
@@ -14208,7 +14240,8 @@
           "audio_configurable": false,
           "audio_input": true,
           "per_reference_audio": false,
-          "video_input": false
+          "video_input": false,
+          "reference_image_min_short_side_pixels": 240
         },
         "model_sets": [
           "uncensored",
@@ -14251,7 +14284,8 @@
           "audio_configurable": false,
           "audio_input": false,
           "per_reference_audio": true,
-          "video_input": false
+          "video_input": false,
+          "reference_image_min_short_side_pixels": 240
         },
         "model_sets": [
           "uncensored",
@@ -14292,7 +14326,8 @@
           "audio_configurable": false,
           "audio_input": false,
           "per_reference_audio": false,
-          "video_input": true
+          "video_input": true,
+          "reference_image_min_short_side_pixels": 240
         },
         "model_sets": [
           "uncensored",
