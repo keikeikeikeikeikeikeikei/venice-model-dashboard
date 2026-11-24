@@ -633,16 +633,16 @@
       "model_spec": {
         "pricing": {
           "input": {
-            "usd": 1.54,
-            "diem": 1.54
+            "usd": 1.33,
+            "diem": 1.33
           },
           "cache_input": {
-            "usd": 0.286,
-            "diem": 0.286
+            "usd": 0.247,
+            "diem": 0.247
           },
           "output": {
-            "usd": 4.84,
-            "diem": 4.84
+            "usd": 4.18,
+            "diem": 4.18
           }
         },
         "availableContextTokens": 200000,
@@ -970,16 +970,16 @@
       "model_spec": {
         "pricing": {
           "input": {
-            "usd": 0.55,
-            "diem": 0.55
+            "usd": 0.4,
+            "diem": 0.4
           },
           "cache_input": {
-            "usd": 0.11,
-            "diem": 0.11
+            "usd": 0.08,
+            "diem": 0.08
           },
           "output": {
-            "usd": 2.65,
-            "diem": 2.65
+            "usd": 1.75,
+            "diem": 1.75
           }
         },
         "availableContextTokens": 198000,
@@ -1182,16 +1182,16 @@
       "model_spec": {
         "pricing": {
           "input": {
-            "usd": 2.5,
-            "diem": 2.5
+            "usd": 2,
+            "diem": 2
           },
           "cache_input": {
-            "usd": 0.3125,
-            "diem": 0.3125
+            "usd": 0.25,
+            "diem": 0.25
           },
           "output": {
-            "usd": 7.5,
-            "diem": 7.5
+            "usd": 6,
+            "diem": 6
           }
         },
         "availableContextTokens": 262144,
@@ -1615,12 +1615,12 @@
       "model_spec": {
         "pricing": {
           "input": {
-            "usd": 0.325,
-            "diem": 0.325
+            "usd": 0.32,
+            "diem": 0.32
           },
           "output": {
-            "usd": 3.25,
-            "diem": 3.25
+            "usd": 3.2,
+            "diem": 3.2
           }
         },
         "availableContextTokens": 256000,
@@ -2153,8 +2153,8 @@
             "diem": 0.12
           },
           "cache_input": {
-            "usd": 0.09,
-            "diem": 0.09
+            "usd": 0.05,
+            "diem": 0.05
           },
           "output": {
             "usd": 0.36,
@@ -2729,12 +2729,12 @@
       "model_spec": {
         "pricing": {
           "input": {
-            "usd": 0.09375,
-            "diem": 0.09375
+            "usd": 0.075,
+            "diem": 0.075
           },
           "output": {
-            "usd": 0.25,
-            "diem": 0.25
+            "usd": 0.2,
+            "diem": 0.2
           }
         },
         "availableContextTokens": 256000,
@@ -4364,6 +4364,66 @@
       "type": "text"
     },
     {
+      "context_length": 524288,
+      "created": 1795478400,
+      "id": "inkling-2-mini",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.12,
+            "diem": 0.12
+          },
+          "cache_input": {
+            "usd": 0.024,
+            "diem": 0.024
+          },
+          "output": {
+            "usd": 0.5,
+            "diem": 0.5
+          }
+        },
+        "availableContextTokens": 524288,
+        "maxCompletionTokens": 131072,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "fp4",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": true,
+          "reasoningEffortOptions": [
+            "none",
+            "minimal",
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "defaultReasoningEffort": "high",
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Inkling 2 Mini is a multimodal looped-transformer MoE model from Thinking Machines Lab (26B total / 3.4B active, 5.4B effective active across 3 loop passes) that accepts text and image inputs and generates text. It supports a 512K-token context window, tool calling, and variable reasoning effort — suited for coding, agentic workflows, chat, and visual tasks.",
+        "name": "Inkling 2 Mini",
+        "modelSource": "https://huggingface.co/thinkingmachines/Inkling-2-Mini",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
       "context_length": 1000000,
       "created": 1781136000,
       "id": "xiaomi-mimo-v2-5",
@@ -4427,16 +4487,16 @@
       "model_spec": {
         "pricing": {
           "input": {
-            "usd": 0.175,
-            "diem": 0.175
+            "usd": 0.14,
+            "diem": 0.14
           },
           "cache_input": {
-            "usd": 0.00375,
-            "diem": 0.00375
+            "usd": 0.0028,
+            "diem": 0.0028
           },
           "output": {
-            "usd": 0.35,
-            "diem": 0.35
+            "usd": 0.28,
+            "diem": 0.28
           }
         },
         "availableContextTokens": 1000000,
@@ -5000,16 +5060,16 @@
       "model_spec": {
         "pricing": {
           "input": {
-            "usd": 0.33,
-            "diem": 0.33
+            "usd": 0.26,
+            "diem": 0.26
           },
           "cache_input": {
-            "usd": 0.16,
-            "diem": 0.16
+            "usd": 0.13,
+            "diem": 0.13
           },
           "output": {
-            "usd": 0.48,
-            "diem": 0.48
+            "usd": 0.38,
+            "diem": 0.38
           }
         },
         "availableContextTokens": 160000,
@@ -7970,16 +8030,16 @@
       "model_spec": {
         "pricing": {
           "input": {
-            "usd": 0.625,
-            "diem": 0.625
+            "usd": 0.5,
+            "diem": 0.5
           },
           "cache_input": {
-            "usd": 0.1875,
-            "diem": 0.1875
+            "usd": 0.1,
+            "diem": 0.1
           },
           "output": {
-            "usd": 3.125,
-            "diem": 3.125
+            "usd": 2.2,
+            "diem": 2.2
           }
         },
         "availableContextTokens": 256000,
