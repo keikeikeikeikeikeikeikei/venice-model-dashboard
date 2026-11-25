@@ -8800,6 +8800,61 @@
     },
     {
       "context_length": 1048576,
+      "created": 1795564800,
+      "id": "hy4",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 1.0425,
+            "diem": 1.0425
+          },
+          "cache_input": {
+            "usd": 0.0525,
+            "diem": 0.0525
+          },
+          "output": {
+            "usd": 3.12625,
+            "diem": 3.12625
+          }
+        },
+        "availableContextTokens": 1048576,
+        "maxCompletionTokens": 64000,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "fp4",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": true,
+          "reasoningEffortOptions": [
+            "none",
+            "low",
+            "high"
+          ],
+          "defaultReasoningEffort": "high",
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Hy4 is a 770B-parameter Mixture-of-Experts flagship model from the Tencent Hy team, with 49B parameters active per token and a 1M-token context window. It is post-trained for software engineering, office and data analysis, game development, and scientific research, with strong long-horizon reasoning, tool use, and agentic performance.",
+        "name": "Hy4",
+        "modelSource": "https://huggingface.co/tencent/Hy4",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 1048576,
       "created": 1787875200,
       "id": "hy4-preview",
       "model_spec": {
@@ -8841,6 +8896,12 @@
           "supportsVision": false,
           "supportsWebSearch": true,
           "supportsXSearch": false
+        },
+        "deprecation": {
+          "autoRemap": false,
+          "date": "2026-12-02T00:00:00.000Z",
+          "removesAt": "2026-12-02T00:00:00.000Z",
+          "replacementModelId": "hy4"
         },
         "description": "Hy4 Preview is a 770B-parameter Mixture-of-Experts flagship model from the Tencent Hy team, with 49B parameters active per token and a 1M-token context window. It is post-trained for software engineering, office and data analysis, game development, and scientific research, with strong long-horizon reasoning, tool use, and agentic performance.",
         "name": "Hy4 Preview",
@@ -19632,8 +19693,7 @@
         "model_sets": [
           "fast",
           "cinematic",
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "description": "Runway Gen-4 Turbo is a faster version of Runway's Gen-4 video model, animating a starting image into a 2- to 10-second clip.",
         "name": "Runway Gen-4 Turbo",
@@ -19674,6 +19734,609 @@
         ],
         "description": "Topaz Video Upscale uses Topaz Labs' upscaling to enlarge an existing video 2x or 4x while restoring detail. The output keeps the source video's length.",
         "name": "Topaz Video Upscale",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video"
+    },
+    {
+      "created": 1787097600,
+      "id": "topaz-video-precision",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "video",
+          "aspect_ratios": [],
+          "resolutions": [
+            "2x",
+            "4x"
+          ],
+          "durations": [
+            "Auto"
+          ],
+          "audio": false,
+          "audio_configurable": false,
+          "audio_input": false,
+          "per_reference_audio": false,
+          "video_input": true,
+          "topaz": {
+            "models": [
+              {
+                "display": "Proteus",
+                "value": "Proteus"
+              },
+              {
+                "display": "Proteus Natural",
+                "value": "Proteus Natural"
+              },
+              {
+                "display": "Iris",
+                "value": "Iris"
+              },
+              {
+                "display": "Iris Low Quality",
+                "value": "Iris Low Quality"
+              },
+              {
+                "display": "Dione DV",
+                "value": "Dione DV"
+              },
+              {
+                "display": "Dione TV",
+                "value": "Dione TV"
+              },
+              {
+                "display": "Dione Robust",
+                "value": "Dione Robust"
+              },
+              {
+                "display": "Dione Dehalo",
+                "value": "Dione Dehalo"
+              },
+              {
+                "display": "Dione Robust Dehalo",
+                "value": "Dione Robust Dehalo"
+              },
+              {
+                "display": "Artemis High Quality",
+                "value": "Artemis High Quality"
+              },
+              {
+                "display": "Artemis Medium Quality",
+                "value": "Artemis Medium Quality"
+              },
+              {
+                "display": "Artemis Low Quality",
+                "value": "Artemis Low Quality"
+              },
+              {
+                "display": "Artemis Strong Halo",
+                "value": "Artemis Strong Halo"
+              },
+              {
+                "display": "Artemis Medium Halo",
+                "value": "Artemis Medium Halo"
+              },
+              {
+                "display": "Artemis Aliasing & Moire",
+                "value": "Artemis Aliasing & Moire"
+              },
+              {
+                "display": "Gaia HQ",
+                "value": "Gaia HQ"
+              },
+              {
+                "display": "Gaia CG",
+                "value": "Gaia CG"
+              },
+              {
+                "display": "Gaia 2",
+                "value": "Gaia 2"
+              },
+              {
+                "display": "Rhea",
+                "value": "Rhea"
+              },
+              {
+                "display": "Theia Fine Tune Detail",
+                "value": "Theia Fine Tune Detail"
+              },
+              {
+                "display": "Theia Fine Tune Fidelity",
+                "value": "Theia Fine Tune Fidelity"
+              }
+            ],
+            "sliders": [
+              {
+                "default": 0.5,
+                "max": 1,
+                "min": 0,
+                "param": "compression"
+              },
+              {
+                "default": 0.5,
+                "max": 1,
+                "min": 0,
+                "param": "noise"
+              },
+              {
+                "default": 0.5,
+                "max": 1,
+                "min": 0,
+                "param": "halo"
+              },
+              {
+                "default": 0,
+                "max": 0.1,
+                "min": 0,
+                "param": "grain"
+              },
+              {
+                "default": 0.5,
+                "max": 1,
+                "min": 0,
+                "param": "recover_detail"
+              }
+            ],
+            "selects": [
+              {
+                "default": "",
+                "options": [
+                  "",
+                  "30",
+                  "60"
+                ],
+                "param": "target_fps"
+              }
+            ],
+            "h264_output": true
+          }
+        },
+        "model_sets": [
+          "high_resolution",
+          "ultra_high_resolution"
+        ],
+        "description": "Topaz Video Precision upscales an existing video 2x or 4x with faithful, non-generative enhancement models such as Proteus, Iris, Artemis and Gaia, with optional 30 or 60 fps output. The output keeps the source video's length.",
+        "name": "Topaz Video Precision",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video"
+    },
+    {
+      "created": 1787097600,
+      "id": "topaz-video-starlight",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "video",
+          "aspect_ratios": [],
+          "resolutions": [
+            "2x",
+            "4x"
+          ],
+          "durations": [
+            "Auto"
+          ],
+          "audio": false,
+          "audio_configurable": false,
+          "audio_input": false,
+          "per_reference_audio": false,
+          "video_input": true,
+          "topaz": {
+            "models": [
+              {
+                "display": "Precise 2.6",
+                "value": "Starlight Precise 2.6"
+              },
+              {
+                "display": "HQ",
+                "value": "Starlight HQ"
+              },
+              {
+                "display": "Mini",
+                "value": "Starlight Mini"
+              },
+              {
+                "display": "Sharp",
+                "value": "Starlight Sharp"
+              }
+            ],
+            "sliders": [
+              {
+                "default": 3,
+                "max": 5,
+                "min": 1,
+                "param": "softness",
+                "only_for_models": [
+                  "Starlight Precise 2.6"
+                ]
+              }
+            ],
+            "selects": [
+              {
+                "default": "",
+                "options": [
+                  "",
+                  "30",
+                  "60"
+                ],
+                "param": "target_fps"
+              }
+            ],
+            "h264_output": true
+          }
+        },
+        "model_sets": [
+          "high_resolution",
+          "ultra_high_resolution"
+        ],
+        "description": "Topaz Video Starlight is a generative restoration model that rebuilds detail missing from the source while upscaling an existing video 2x or 4x, for AI-generated footage and heavily compressed archives. The output keeps the source video's length.",
+        "name": "Topaz Video Starlight",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video"
+    },
+    {
+      "created": 1787097600,
+      "id": "topaz-video-starlight-fast",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "video",
+          "aspect_ratios": [],
+          "resolutions": [
+            "2x",
+            "4x"
+          ],
+          "durations": [
+            "Auto"
+          ],
+          "audio": false,
+          "audio_configurable": false,
+          "audio_input": false,
+          "per_reference_audio": false,
+          "video_input": true,
+          "topaz": {
+            "selects": [
+              {
+                "default": "",
+                "options": [
+                  "",
+                  "30",
+                  "60"
+                ],
+                "param": "target_fps"
+              }
+            ],
+            "h264_output": true
+          }
+        },
+        "model_sets": [
+          "high_resolution",
+          "ultra_high_resolution"
+        ],
+        "description": "Topaz Video Starlight Fast is the quicker, lower-cost generative upscaler: it rebuilds detail while enlarging an existing video 2x or 4x. The output keeps the source video's length.",
+        "name": "Topaz Video Starlight Fast",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video"
+    },
+    {
+      "created": 1787097600,
+      "id": "topaz-video-astra",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "video",
+          "aspect_ratios": [],
+          "resolutions": [
+            "2x",
+            "4x"
+          ],
+          "durations": [
+            "Auto"
+          ],
+          "audio": false,
+          "audio_configurable": false,
+          "audio_input": false,
+          "per_reference_audio": false,
+          "video_input": true,
+          "topaz": {
+            "sliders": [
+              {
+                "default": 0.5,
+                "max": 1,
+                "min": 0,
+                "param": "creativity"
+              },
+              {
+                "default": 0.5,
+                "max": 1,
+                "min": 0,
+                "param": "realism"
+              },
+              {
+                "default": 0.5,
+                "max": 1,
+                "min": 0,
+                "param": "sharp"
+              }
+            ],
+            "selects": [
+              {
+                "default": "",
+                "options": [
+                  "",
+                  "30",
+                  "60"
+                ],
+                "param": "target_fps"
+              }
+            ],
+            "h264_output": true,
+            "prompt": true
+          }
+        },
+        "model_sets": [
+          "high_resolution",
+          "ultra_high_resolution"
+        ],
+        "description": "Topaz Video Astra is a creative upscaler that reimagines fine detail and texture while enlarging an existing video 2x or 4x, optionally guided by a text prompt. The output keeps the source video's length.",
+        "name": "Topaz Video Astra",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video"
+    },
+    {
+      "created": 1787097600,
+      "id": "topaz-video-hyperion",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "video",
+          "aspect_ratios": [],
+          "resolutions": [],
+          "durations": [
+            "Auto"
+          ],
+          "audio": false,
+          "audio_configurable": false,
+          "audio_input": false,
+          "per_reference_audio": false,
+          "video_input": true,
+          "topaz": {
+            "selects": [
+              {
+                "default": "mp4",
+                "options": [
+                  "mp4",
+                  "prores"
+                ],
+                "param": "output_format"
+              }
+            ]
+          }
+        },
+        "description": "Topaz Video Hyperion converts an existing SDR video to HDR at the source resolution and frame rate, as MP4 or 10-bit ProRes.",
+        "name": "Topaz Video Hyperion",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video"
+    },
+    {
+      "created": 1787097600,
+      "id": "topaz-video-interpolate",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "video",
+          "aspect_ratios": [],
+          "resolutions": [],
+          "durations": [
+            "Auto"
+          ],
+          "audio": false,
+          "audio_configurable": false,
+          "audio_input": false,
+          "per_reference_audio": false,
+          "video_input": true,
+          "topaz": {
+            "models": [
+              {
+                "display": "Apollo",
+                "value": "Apollo"
+              },
+              {
+                "display": "Chronos",
+                "value": "Chronos"
+              },
+              {
+                "display": "Aion",
+                "value": "Aion"
+              }
+            ],
+            "selects": [
+              {
+                "default": "60",
+                "options": [
+                  "30",
+                  "60",
+                  "120"
+                ],
+                "param": "target_fps"
+              },
+              {
+                "default": "1",
+                "options": [
+                  "1",
+                  "2",
+                  "4",
+                  "8"
+                ],
+                "param": "slowdown_factor"
+              }
+            ],
+            "h264_output": true
+          }
+        },
+        "description": "Topaz Video Interpolate generates in-between frames to retime an existing video to 30, 60 or 120 fps at the source resolution, with optional 2x, 4x or 8x slow motion.",
+        "name": "Topaz Video Interpolate",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video"
+    },
+    {
+      "created": 1787097600,
+      "id": "topaz-video-denoise",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "video",
+          "aspect_ratios": [],
+          "resolutions": [
+            "1x",
+            "2x",
+            "4x"
+          ],
+          "durations": [
+            "Auto"
+          ],
+          "audio": false,
+          "audio_configurable": false,
+          "audio_input": false,
+          "per_reference_audio": false,
+          "video_input": true,
+          "topaz": {
+            "models": [
+              {
+                "display": "Nyx",
+                "value": "Nyx"
+              },
+              {
+                "display": "Nyx Fast",
+                "value": "Nyx Fast"
+              },
+              {
+                "display": "Nyx XL",
+                "value": "Nyx XL"
+              },
+              {
+                "display": "Nyx HF",
+                "value": "Nyx HF"
+              }
+            ],
+            "sliders": [
+              {
+                "default": 0.5,
+                "max": 1,
+                "min": 0,
+                "param": "noise"
+              },
+              {
+                "default": 0.5,
+                "max": 1,
+                "min": 0,
+                "param": "halo"
+              },
+              {
+                "default": 0.5,
+                "max": 1,
+                "min": 0,
+                "param": "compression"
+              }
+            ],
+            "no_upscale_models": [
+              "Nyx Fast",
+              "Nyx HF"
+            ],
+            "h264_output": true
+          }
+        },
+        "description": "Topaz Video Denoise removes noise and grain from an existing video at the source resolution, with optional 2x or 4x upscaling. The output keeps the source video's length.",
+        "name": "Topaz Video Denoise",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video"
+    },
+    {
+      "created": 1787097600,
+      "id": "topaz-video-deblur",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "video",
+          "aspect_ratios": [],
+          "resolutions": [],
+          "durations": [
+            "Auto"
+          ],
+          "audio": false,
+          "audio_configurable": false,
+          "audio_input": false,
+          "per_reference_audio": false,
+          "video_input": true,
+          "topaz": {
+            "h264_output": true
+          }
+        },
+        "model_sets": [
+          "fast"
+        ],
+        "description": "Topaz Video Deblur restores clarity to fast-moving, motion-blurred footage at the source resolution. The output keeps the source video's length.",
+        "name": "Topaz Video Deblur",
+        "offline": false,
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "video"
+    },
+    {
+      "created": 1787097600,
+      "id": "topaz-video-colorize",
+      "model_spec": {
+        "privacy": "anonymized",
+        "constraints": {
+          "model_type": "video",
+          "aspect_ratios": [],
+          "resolutions": [],
+          "durations": [
+            "Auto"
+          ],
+          "audio": false,
+          "audio_configurable": false,
+          "audio_input": false,
+          "per_reference_audio": false,
+          "video_input": true,
+          "topaz": {
+            "h264_output": true
+          }
+        },
+        "description": "Topaz Video Colorize brings natural color to black-and-white footage of up to 450 source frames, with output at 1080p or more.",
+        "name": "Topaz Video Colorize",
         "offline": false,
         "traits": []
       },
