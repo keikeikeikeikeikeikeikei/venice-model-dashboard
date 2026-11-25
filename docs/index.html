@@ -812,7 +812,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-11-25 04:08)</div>
+            <div class="meta">Generated from Live API Data (2026-11-25 10:29)</div>
         </header>
 
         <div class="controls">
@@ -1556,6 +1556,11 @@
           "supportsWebSearch": true,
           "supportsXSearch": false
         },
+        "deprecation": {
+          "autoRemap": false,
+          "date": "2026-12-01T16:38:00.000Z",
+          "removesAt": "2026-12-01T16:38:00.000Z"
+        },
         "description": "GLM-5.1, the successor to GLM-5, is a large language model developed by Z.ai, featuring significantly enhanced reasoning capabilities, improved instruction following, and support for multiple languages. Supports large context windows for processing extensive text and detailed analysis with fast inference speed.",
         "name": "GLM 5.1",
         "modelSource": "https://huggingface.co/zai-org/GLM-5.1",
@@ -1611,6 +1616,11 @@
           "supportsVision": false,
           "supportsWebSearch": true,
           "supportsXSearch": false
+        },
+        "deprecation": {
+          "autoRemap": false,
+          "date": "2026-12-01T00:00:00.000Z",
+          "removesAt": "2026-12-01T00:00:00.000Z"
         },
         "description": "GLM-5, the successor to GLM-4.7, is a large language model developed by Z.ai, featuring significantly enhanced reasoning capabilities, improved instruction following, and support for multiple languages. Supports large context windows for processing extensive text and detailed analysis.",
         "name": "GLM 5",
@@ -2003,7 +2013,7 @@
       "type": "text"
     },
     {
-      "context_length": 1000000,
+      "context_length": 262144,
       "created": 1794794400,
       "id": "qwen-4-max",
       "model_spec": {
@@ -2016,21 +2026,13 @@
             "usd": 0.09375,
             "diem": 0.09375
           },
-          "cache_write": {
-            "usd": 2.34375,
-            "diem": 2.34375
-          },
-          "cache_write_1h": {
-            "usd": 3.75,
-            "diem": 3.75
-          },
           "output": {
             "usd": 5.625,
             "diem": 5.625
           }
         },
-        "availableContextTokens": 1000000,
-        "maxCompletionTokens": 393216,
+        "availableContextTokens": 262144,
+        "maxCompletionTokens": 65536,
         "capabilities": {
           "optimizedForCode": true,
           "quantization": "not-available",
@@ -2040,20 +2042,28 @@
           "supportsMultipleImages": true,
           "maxImages": 10,
           "supportsReasoning": true,
-          "supportsReasoningEffort": false,
+          "supportsReasoningEffort": true,
+          "reasoningEffortOptions": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ],
+          "defaultReasoningEffort": "xhigh",
           "supportsResponseSchema": false,
           "supportsTeeAttestation": false,
           "supportsE2EE": false,
-          "supportsVideoInput": true,
+          "supportsVideoInput": false,
           "supportsVision": true,
           "supportsWebSearch": true,
           "supportsXSearch": false
         },
-        "description": "Qwen 4 Max is the flagship model of the Qwen 4 series. It accepts text, image, and video input, thinks by default with adjustable reasoning effort, and supports a 1M-token context window.",
+        "description": "Qwen 4 Max is the flagship model of the Qwen 4 series. It accepts text and image input, thinks by default with adjustable reasoning effort, and supports a 262K-token context window.",
         "name": "Qwen 4 Max",
         "modelSource": "https://www.alibabacloud.com/help/en/model-studio/models",
         "offline": false,
-        "privacy": "anonymized",
+        "privacy": "private",
         "traits": []
       },
       "object": "model",
@@ -5179,6 +5189,11 @@
           "supportsVision": true,
           "supportsWebSearch": true,
           "supportsXSearch": false
+        },
+        "deprecation": {
+          "autoRemap": false,
+          "date": "2026-12-01T00:00:00.000Z",
+          "removesAt": "2026-12-01T00:00:00.000Z"
         },
         "description": "Kimi K2.7 Code is Moonshot AI's coding-focused agentic model built on Kimi K2.6, with 1T total parameters and 32B active parameters. It always operates in thinking mode, supports text and image input, and targets long-horizon software engineering, agentic task decomposition, and multi-turn coding workflows with 256K context.",
         "name": "Kimi K2.7 Code",
