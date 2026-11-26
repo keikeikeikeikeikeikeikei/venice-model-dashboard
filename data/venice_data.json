@@ -8113,373 +8113,9 @@
       "type": "text"
     },
     {
-      "context_length": 64000,
-      "created": 1779580800,
-      "id": "e2ee-gemma-4-26b-a4b-uncensored-p",
-      "model_spec": {
-        "pricing": {
-          "input": {
-            "usd": 0.19,
-            "diem": 0.19
-          },
-          "output": {
-            "usd": 0.88,
-            "diem": 0.88
-          }
-        },
-        "availableContextTokens": 64000,
-        "maxCompletionTokens": 4096,
-        "capabilities": {
-          "optimizedForCode": false,
-          "quantization": "fp8",
-          "supportsAudioInput": false,
-          "supportsFunctionCalling": false,
-          "supportsLogProbs": false,
-          "supportsMultipleImages": false,
-          "supportsReasoning": false,
-          "supportsReasoningEffort": false,
-          "supportsResponseSchema": false,
-          "supportsTeeAttestation": true,
-          "supportsE2EE": true,
-          "supportsVideoInput": false,
-          "supportsVision": false,
-          "supportsWebSearch": true,
-          "supportsXSearch": false
-        },
-        "description": "Gemma 4 26B A4B Uncensored running in a Trusted Execution Environment (TEE). An uncensored variant of Google's Gemma 4 MoE model with 25.2B total / 3.8B active parameters, with hardware attestation evidence available for independent verification.",
-        "name": "Gemma 4 26B A4B Uncensored",
-        "modelSource": "https://huggingface.co/coder3101/gemma-4-26B-A4B-it-heretic",
-        "offline": false,
-        "privacy": "private",
-        "traits": [],
-        "uncensored": true
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "text"
-    },
-    {
-      "context_length": 524288,
-      "created": 1781568000,
-      "id": "e2ee-glm-5-2-p",
-      "model_spec": {
-        "pricing": {
-          "input": {
-            "usd": 1.75,
-            "diem": 1.75
-          },
-          "cache_input": {
-            "usd": 0.3,
-            "diem": 0.3
-          },
-          "output": {
-            "usd": 5.75,
-            "diem": 5.75
-          }
-        },
-        "availableContextTokens": 524288,
-        "maxCompletionTokens": 32768,
-        "capabilities": {
-          "optimizedForCode": true,
-          "quantization": "not-available",
-          "supportsAudioInput": false,
-          "supportsFunctionCalling": true,
-          "supportsLogProbs": false,
-          "supportsMultipleImages": false,
-          "supportsReasoning": true,
-          "supportsReasoningEffort": true,
-          "reasoningEffortOptions": [
-            "none",
-            "low",
-            "medium",
-            "high"
-          ],
-          "defaultReasoningEffort": "low",
-          "supportsResponseSchema": false,
-          "supportsTeeAttestation": true,
-          "supportsE2EE": true,
-          "supportsVideoInput": false,
-          "supportsVision": false,
-          "supportsWebSearch": true,
-          "supportsXSearch": false
-        },
-        "description": "GLM 5.2 running in a Trusted Execution Environment (TEE). A Z.AI model for long-horizon tasks with enhanced reasoning and project-level engineering context, with hardware attestation evidence available for independent verification.",
-        "name": "GLM 5.2",
-        "modelSource": "https://huggingface.co/zai-org/GLM-5.2",
-        "offline": false,
-        "privacy": "private",
-        "traits": []
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "text"
-    },
-    {
-      "context_length": 1000000,
-      "created": 1788652800,
-      "id": "e2ee-glm-5-3-p",
-      "model_spec": {
-        "pricing": {
-          "input": {
-            "usd": 1.75,
-            "diem": 1.75
-          },
-          "cache_input": {
-            "usd": 0.325,
-            "diem": 0.325
-          },
-          "output": {
-            "usd": 5.5,
-            "diem": 5.5
-          }
-        },
-        "availableContextTokens": 1000000,
-        "maxCompletionTokens": 32768,
-        "capabilities": {
-          "optimizedForCode": true,
-          "quantization": "not-available",
-          "supportsAudioInput": false,
-          "supportsFunctionCalling": true,
-          "supportsLogProbs": false,
-          "supportsMultipleImages": false,
-          "supportsReasoning": true,
-          "supportsReasoningEffort": true,
-          "reasoningEffortOptions": [
-            "none",
-            "low",
-            "medium",
-            "high"
-          ],
-          "defaultReasoningEffort": "low",
-          "supportsResponseSchema": false,
-          "supportsTeeAttestation": true,
-          "supportsE2EE": true,
-          "supportsVideoInput": false,
-          "supportsVision": false,
-          "supportsWebSearch": true,
-          "supportsXSearch": false
-        },
-        "description": "GLM 5.3 running in a Trusted Execution Environment (TEE). Z.ai's flagship model with 1M context. Hardware attestation evidence is available for independent verification of enclave identity and configuration.",
-        "name": "GLM 5.3",
-        "modelSource": "https://huggingface.co/zai-org/GLM-5.3",
-        "offline": false,
-        "privacy": "private",
-        "traits": []
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "text"
-    },
-    {
-      "context_length": 128000,
+      "context_length": 16384,
       "created": 1773792000,
-      "id": "e2ee-gpt-oss-120b-p",
-      "model_spec": {
-        "pricing": {
-          "input": {
-            "usd": 0.13,
-            "diem": 0.13
-          },
-          "output": {
-            "usd": 0.65,
-            "diem": 0.65
-          }
-        },
-        "availableContextTokens": 128000,
-        "maxCompletionTokens": 32768,
-        "capabilities": {
-          "optimizedForCode": false,
-          "quantization": "not-available",
-          "supportsAudioInput": false,
-          "supportsFunctionCalling": false,
-          "supportsLogProbs": false,
-          "supportsMultipleImages": false,
-          "supportsReasoning": true,
-          "supportsReasoningEffort": true,
-          "reasoningEffortOptions": [
-            "low",
-            "medium",
-            "high"
-          ],
-          "defaultReasoningEffort": "low",
-          "supportsResponseSchema": false,
-          "supportsTeeAttestation": true,
-          "supportsE2EE": true,
-          "supportsVideoInput": false,
-          "supportsVision": false,
-          "supportsWebSearch": true,
-          "supportsXSearch": false
-        },
-        "description": "GPT OSS 120B running in a Trusted Execution Environment (TEE). OpenAI's open-weight 117B-parameter MoE model with configurable reasoning depth and native tool use, with hardware attestation evidence available for independent verification.",
-        "name": "GPT OSS 120B",
-        "modelSource": "https://huggingface.co/openai/gpt-oss-120b",
-        "offline": false,
-        "privacy": "private",
-        "traits": []
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "text"
-    },
-    {
-      "context_length": 1000000,
-      "created": 1788825600,
-      "id": "e2ee-kimi-k3-p",
-      "model_spec": {
-        "pricing": {
-          "input": {
-            "usd": 3.75,
-            "diem": 3.75
-          },
-          "cache_input": {
-            "usd": 0.375,
-            "diem": 0.375
-          },
-          "output": {
-            "usd": 18.75,
-            "diem": 18.75
-          }
-        },
-        "availableContextTokens": 1000000,
-        "maxCompletionTokens": 131072,
-        "capabilities": {
-          "optimizedForCode": true,
-          "quantization": "not-available",
-          "supportsAudioInput": false,
-          "supportsFunctionCalling": true,
-          "supportsLogProbs": false,
-          "supportsMultipleImages": true,
-          "maxImages": 10,
-          "supportsReasoning": true,
-          "supportsReasoningEffort": true,
-          "reasoningEffortOptions": [
-            "none",
-            "max"
-          ],
-          "defaultReasoningEffort": "max",
-          "supportsResponseSchema": true,
-          "supportsTeeAttestation": true,
-          "supportsE2EE": true,
-          "supportsVideoInput": false,
-          "supportsVision": true,
-          "supportsWebSearch": true,
-          "supportsXSearch": false
-        },
-        "description": "Kimi K3 is a 2.8T parameter open-weight multimodal reasoning model from Moonshot AI. It is suited for complex coding, knowledge work, and long-horizon agentic workflows.",
-        "name": "Kimi K3",
-        "modelSource": "https://huggingface.co/moonshotai/Kimi-K3",
-        "offline": false,
-        "privacy": "private",
-        "traits": []
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "text"
-    },
-    {
-      "context_length": 1000000,
-      "created": 1794873600,
-      "id": "e2ee-kimi-k3-1-pro-p",
-      "model_spec": {
-        "pricing": {
-          "input": {
-            "usd": 2.5,
-            "diem": 2.5
-          },
-          "cache_input": {
-            "usd": 0.25,
-            "diem": 0.25
-          },
-          "output": {
-            "usd": 12.5,
-            "diem": 12.5
-          }
-        },
-        "availableContextTokens": 1000000,
-        "maxCompletionTokens": 131072,
-        "capabilities": {
-          "optimizedForCode": true,
-          "quantization": "not-available",
-          "supportsAudioInput": false,
-          "supportsFunctionCalling": true,
-          "supportsLogProbs": false,
-          "supportsMultipleImages": true,
-          "maxImages": 10,
-          "supportsReasoning": true,
-          "supportsReasoningEffort": true,
-          "reasoningEffortOptions": [
-            "none",
-            "max"
-          ],
-          "defaultReasoningEffort": "max",
-          "supportsResponseSchema": true,
-          "supportsTeeAttestation": true,
-          "supportsE2EE": true,
-          "supportsVideoInput": false,
-          "supportsVision": true,
-          "supportsWebSearch": true,
-          "supportsXSearch": false
-        },
-        "description": "Kimi K3.1 Pro is Moonshot AI's flagship multimodal reasoning model and the post-trained successor to Kimi K3, with a 1M-token context window. It is built for long-horizon coding, agentic workflows, financial research, and 3D modeling through CAD code.",
-        "name": "Kimi K3.1 Pro",
-        "modelSource": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
-        "offline": false,
-        "privacy": "private",
-        "traits": []
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "text"
-    },
-    {
-      "context_length": 32000,
-      "created": 1773792000,
-      "id": "e2ee-qwen-2-5-7b-p",
-      "model_spec": {
-        "pricing": {
-          "input": {
-            "usd": 0.05,
-            "diem": 0.05
-          },
-          "output": {
-            "usd": 0.13,
-            "diem": 0.13
-          }
-        },
-        "availableContextTokens": 32000,
-        "maxCompletionTokens": 4096,
-        "capabilities": {
-          "optimizedForCode": false,
-          "quantization": "not-available",
-          "supportsAudioInput": false,
-          "supportsFunctionCalling": false,
-          "supportsLogProbs": false,
-          "supportsMultipleImages": false,
-          "supportsReasoning": false,
-          "supportsReasoningEffort": false,
-          "supportsResponseSchema": false,
-          "supportsTeeAttestation": true,
-          "supportsE2EE": true,
-          "supportsVideoInput": false,
-          "supportsVision": false,
-          "supportsWebSearch": true,
-          "supportsXSearch": false
-        },
-        "description": "Qwen 2.5 7B Instruct running in a Trusted Execution Environment (TEE). A compact model with strong coding, math, and multilingual capabilities supporting 29+ languages, with hardware attestation evidence available for independent verification.",
-        "name": "Qwen 2.5 7B",
-        "modelSource": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct",
-        "offline": false,
-        "privacy": "private",
-        "traits": []
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "text"
-    },
-    {
-      "context_length": 128000,
-      "created": 1773792000,
-      "id": "e2ee-qwen3-vl-30b-a3b-p",
+      "id": "e2ee-qwen3-vl-30b-a3b",
       "model_spec": {
         "pricing": {
           "input": {
@@ -8491,13 +8127,13 @@
             "diem": 0.9
           }
         },
-        "availableContextTokens": 128000,
+        "availableContextTokens": 16384,
         "maxCompletionTokens": 4096,
         "capabilities": {
           "optimizedForCode": false,
-          "quantization": "not-available",
+          "quantization": "fp8",
           "supportsAudioInput": false,
-          "supportsFunctionCalling": true,
+          "supportsFunctionCalling": false,
           "supportsLogProbs": false,
           "supportsMultipleImages": false,
           "supportsReasoning": false,
@@ -8573,7 +8209,7 @@
     {
       "context_length": 1000000,
       "created": 1783382400,
-      "id": "e2ee-deepseek-v4-flash",
+      "id": "e2ee-deepseek-v4-1-flash-1017",
       "model_spec": {
         "pricing": {
           "input": {
@@ -8608,9 +8244,9 @@
           "supportsWebSearch": true,
           "supportsXSearch": false
         },
-        "description": "DeepSeek V4 Flash running in a Trusted Execution Environment (TEE). Hardware attestation evidence is available for independent verification of enclave identity and configuration.",
-        "name": "DeepSeek V4 Flash",
-        "modelSource": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
+        "description": "DeepSeek V4.1 Flash 1017 running in a Trusted Execution Environment (TEE). Hardware attestation evidence is available for independent verification of enclave identity and configuration.",
+        "name": "DeepSeek V4.1 Flash 1017",
+        "modelSource": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
         "offline": false,
         "privacy": "private",
         "traits": []
@@ -8759,55 +8395,6 @@
         "description": "Qwen 3.8 27B running in a Trusted Execution Environment (TEE). A multimodal model with 262K context supporting text and image input. Hardware attestation evidence is available for independent verification of enclave identity and configuration.",
         "name": "Qwen 3.8 27B",
         "modelSource": "https://huggingface.co/Qwen/Qwen3.8-27B",
-        "offline": false,
-        "privacy": "private",
-        "traits": []
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "text"
-    },
-    {
-      "context_length": 262144,
-      "created": 1788652800,
-      "id": "e2ee-kimi-k2-6",
-      "model_spec": {
-        "pricing": {
-          "input": {
-            "usd": 0.87,
-            "diem": 0.87
-          },
-          "cache_input": {
-            "usd": 0.44,
-            "diem": 0.44
-          },
-          "output": {
-            "usd": 4.12,
-            "diem": 4.12
-          }
-        },
-        "availableContextTokens": 262144,
-        "maxCompletionTokens": 8192,
-        "capabilities": {
-          "optimizedForCode": true,
-          "quantization": "not-available",
-          "supportsAudioInput": false,
-          "supportsFunctionCalling": true,
-          "supportsLogProbs": false,
-          "supportsMultipleImages": false,
-          "supportsReasoning": true,
-          "supportsReasoningEffort": false,
-          "supportsResponseSchema": false,
-          "supportsTeeAttestation": true,
-          "supportsE2EE": true,
-          "supportsVideoInput": false,
-          "supportsVision": true,
-          "supportsWebSearch": true,
-          "supportsXSearch": false
-        },
-        "description": "Kimi K2.6 running in a Trusted Execution Environment (TEE). MoonshotAI's multimodal model with 262K context. Hardware attestation evidence is available for independent verification of enclave identity and configuration.",
-        "name": "Kimi K2.6",
-        "modelSource": "https://huggingface.co/moonshotai/Kimi-K2.6",
         "offline": false,
         "privacy": "private",
         "traits": []
@@ -19711,7 +19298,8 @@
         "model_sets": [
           "fast",
           "cinematic",
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "description": "Runway Gen-4 Turbo is a faster version of Runway's Gen-4 video model, animating a starting image into a 2- to 10-second clip.",
         "name": "Runway Gen-4 Turbo",
@@ -20320,9 +19908,6 @@
             "h264_output": true
           }
         },
-        "model_sets": [
-          "fast"
-        ],
         "description": "Topaz Video Deblur restores clarity to fast-moving, motion-blurred footage at the source resolution. The output keeps the source video's length.",
         "name": "Topaz Video Deblur",
         "offline": false,
