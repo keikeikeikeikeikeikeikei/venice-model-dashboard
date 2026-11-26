@@ -297,7 +297,13 @@
           "supportsLogProbs": false,
           "supportsMultipleImages": false,
           "supportsReasoning": true,
-          "supportsReasoningEffort": false,
+          "supportsReasoningEffort": true,
+          "reasoningEffortOptions": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "defaultReasoningEffort": "high",
           "supportsResponseSchema": true,
           "supportsTeeAttestation": false,
           "supportsE2EE": false,
@@ -345,7 +351,13 @@
           "supportsLogProbs": false,
           "supportsMultipleImages": false,
           "supportsReasoning": true,
-          "supportsReasoningEffort": false,
+          "supportsReasoningEffort": true,
+          "reasoningEffortOptions": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "defaultReasoningEffort": "high",
           "supportsResponseSchema": true,
           "supportsTeeAttestation": false,
           "supportsE2EE": false,
@@ -450,7 +462,13 @@
           "supportsLogProbs": false,
           "supportsMultipleImages": false,
           "supportsReasoning": true,
-          "supportsReasoningEffort": false,
+          "supportsReasoningEffort": true,
+          "reasoningEffortOptions": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "defaultReasoningEffort": "high",
           "supportsResponseSchema": true,
           "supportsTeeAttestation": false,
           "supportsE2EE": false,
