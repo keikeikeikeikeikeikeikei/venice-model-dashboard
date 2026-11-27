@@ -812,7 +812,7 @@
     <div class="container">
         <header>
             <h1>Venice Model Pricing</h1>
-            <div class="meta">Generated from Live API Data (2026-11-26 18:02)</div>
+            <div class="meta">Generated from Live API Data (2026-11-27 10:05)</div>
         </header>
 
         <div class="controls">
@@ -1141,6 +1141,11 @@
           "supportsVision": true,
           "supportsWebSearch": true,
           "supportsXSearch": false
+        },
+        "deprecation": {
+          "autoRemap": false,
+          "date": "2026-11-27T23:59:59.000Z",
+          "removesAt": "2026-11-27T23:59:59.000Z"
         },
         "description": "Pareto is a blended model that runs several frontier models in parallel on every request and returns one answer. It accepts text and image inputs.",
         "name": "Pareto",
@@ -8998,9 +9003,211 @@
       "type": "text"
     },
     {
-      "context_length": 16384,
+      "context_length": 64000,
+      "created": 1779580800,
+      "id": "e2ee-gemma-4-26b-a4b-uncensored-p",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.19,
+            "diem": 0.19
+          },
+          "output": {
+            "usd": 0.88,
+            "diem": 0.88
+          }
+        },
+        "availableContextTokens": 64000,
+        "maxCompletionTokens": 4096,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "fp8",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": false,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": false,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": false,
+          "supportsTeeAttestation": true,
+          "supportsE2EE": true,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Gemma 4 26B A4B Uncensored running in a Trusted Execution Environment (TEE). An uncensored variant of Google's Gemma 4 MoE model with 25.2B total / 3.8B active parameters, with hardware attestation evidence available for independent verification.",
+        "name": "Gemma 4 26B A4B Uncensored",
+        "modelSource": "https://huggingface.co/coder3101/gemma-4-26B-A4B-it-heretic",
+        "offline": false,
+        "privacy": "private",
+        "traits": [],
+        "uncensored": true
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 1000000,
+      "created": 1788652800,
+      "id": "e2ee-glm-5-3-p",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 1.75,
+            "diem": 1.75
+          },
+          "cache_input": {
+            "usd": 0.325,
+            "diem": 0.325
+          },
+          "output": {
+            "usd": 5.5,
+            "diem": 5.5
+          }
+        },
+        "availableContextTokens": 1000000,
+        "maxCompletionTokens": 32768,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": true,
+          "reasoningEffortOptions": [
+            "none",
+            "low",
+            "medium",
+            "high"
+          ],
+          "defaultReasoningEffort": "low",
+          "supportsResponseSchema": false,
+          "supportsTeeAttestation": true,
+          "supportsE2EE": true,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "GLM 5.3 running in a Trusted Execution Environment (TEE). Z.ai's flagship model with 1M context. Hardware attestation evidence is available for independent verification of enclave identity and configuration.",
+        "name": "GLM 5.3",
+        "modelSource": "https://huggingface.co/zai-org/GLM-5.3",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 1000000,
+      "created": 1794873600,
+      "id": "e2ee-kimi-k3-1-pro-p",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 2.5,
+            "diem": 2.5
+          },
+          "cache_input": {
+            "usd": 0.25,
+            "diem": 0.25
+          },
+          "output": {
+            "usd": 12.5,
+            "diem": 12.5
+          }
+        },
+        "availableContextTokens": 1000000,
+        "maxCompletionTokens": 131072,
+        "capabilities": {
+          "optimizedForCode": true,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": true,
+          "maxImages": 10,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": true,
+          "reasoningEffortOptions": [
+            "none",
+            "max"
+          ],
+          "defaultReasoningEffort": "max",
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": true,
+          "supportsE2EE": true,
+          "supportsVideoInput": false,
+          "supportsVision": true,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Kimi K3.1 Pro is Moonshot AI's flagship multimodal reasoning model and the post-trained successor to Kimi K3, with a 1M-token context window. It is built for long-horizon coding, agentic workflows, financial research, and 3D modeling through CAD code.",
+        "name": "Kimi K3.1 Pro",
+        "modelSource": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 32000,
       "created": 1773792000,
-      "id": "e2ee-qwen3-vl-30b-a3b",
+      "id": "e2ee-qwen-2-5-7b-p",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.05,
+            "diem": 0.05
+          },
+          "output": {
+            "usd": 0.13,
+            "diem": 0.13
+          }
+        },
+        "availableContextTokens": 32000,
+        "maxCompletionTokens": 4096,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "not-available",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": false,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": false,
+          "supportsReasoningEffort": false,
+          "supportsResponseSchema": false,
+          "supportsTeeAttestation": true,
+          "supportsE2EE": true,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "Qwen 2.5 7B Instruct running in a Trusted Execution Environment (TEE). A compact model with strong coding, math, and multilingual capabilities supporting 29+ languages, with hardware attestation evidence available for independent verification.",
+        "name": "Qwen 2.5 7B",
+        "modelSource": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 128000,
+      "created": 1773792000,
+      "id": "e2ee-qwen3-vl-30b-a3b-p",
       "model_spec": {
         "pricing": {
           "input": {
@@ -9012,13 +9219,13 @@
             "diem": 0.9
           }
         },
-        "availableContextTokens": 16384,
+        "availableContextTokens": 128000,
         "maxCompletionTokens": 4096,
         "capabilities": {
           "optimizedForCode": false,
-          "quantization": "fp8",
+          "quantization": "not-available",
           "supportsAudioInput": false,
-          "supportsFunctionCalling": false,
+          "supportsFunctionCalling": true,
           "supportsLogProbs": false,
           "supportsMultipleImages": false,
           "supportsReasoning": false,
@@ -9098,16 +9305,16 @@
       "model_spec": {
         "pricing": {
           "input": {
-            "usd": 0.182,
-            "diem": 0.182
+            "usd": 0.3,
+            "diem": 0.3
           },
           "cache_input": {
-            "usd": 0.038,
-            "diem": 0.038
+            "usd": 0.006,
+            "diem": 0.006
           },
           "output": {
-            "usd": 0.373,
-            "diem": 0.373
+            "usd": 1.2,
+            "diem": 1.2
           }
         },
         "availableContextTokens": 1000000,
@@ -9467,6 +9674,10 @@
             "2K": {
               "usd": 0.051,
               "diem": 0.051
+            },
+            "4K": {
+              "usd": 0.102,
+              "diem": 0.102
             }
           },
           "upscale": {
@@ -9489,7 +9700,8 @@
           "resolutions": [
             "1K",
             "1.5K",
-            "2K"
+            "2K",
+            "4K"
           ],
           "supportsTransparentBackground": true,
           "aspectRatios": [
@@ -9512,7 +9724,7 @@
         "supportsWebSearch": false,
         "supportsOptimizePromptThinking": false,
         "supportsStyleReferences": false,
-        "description": "Seedream V5.5 is ByteDance Seed's Seedream 5.5, generating high-quality images at 1K, 1.5K, or 2K with improved realism and text rendering. It pairs with Seedream V5.5 Edit.",
+        "description": "Seedream V5.5 is ByteDance Seed's Seedream 5.5, generating high-quality images at 1K, 1.5K, 2K, or 4K with improved realism and text rendering. It pairs with Seedream V5.5 Edit.",
         "name": "Seedream V5.5",
         "offline": false,
         "privacy": "anonymized",
@@ -9898,7 +10110,7 @@
         "supportsWebSearch": false,
         "supportsOptimizePromptThinking": false,
         "supportsStyleReferences": false,
-        "description": "Flux 2 Max is the top tier of Black Forest Labs' FLUX.2 image family, aimed at realism, precision and consistency. It pairs with Flux 2 Max Edit for editing with up to 6 input images.",
+        "description": "Flux 2 Max is the top tier of Black Forest Labs' FLUX.2 image family, aimed at realism, precision and consistency. It pairs with Flux 2 Max Edit for editing with up to 8 input images.",
         "name": "Flux 2 Max",
         "offline": false,
         "privacy": "anonymized",
@@ -12067,7 +12279,7 @@
         "supportsWebSearch": false,
         "supportsOptimizePromptThinking": false,
         "supportsStyleReferences": false,
-        "description": "Wan 2.7 Pro is the enhanced tier of Alibaba's Wan 2.7 for text-to-image generation, adding finer detail. It pairs with Wan 2.7 Pro Edit for editing with up to 6 input images.",
+        "description": "Wan 2.7 Pro is the enhanced tier of Alibaba's Wan 2.7 for text-to-image generation, adding finer detail. It pairs with Wan 2.7 Pro Edit for editing with up to 9 input images.",
         "name": "Wan 2.7 Pro",
         "offline": false,
         "privacy": "anonymized",
@@ -12993,7 +13205,10 @@
         "privacy": "anonymized",
         "constraints": {
           "model_type": "image-to-video",
-          "aspect_ratios": [],
+          "aspect_ratios": [
+            "16:9",
+            "9:16"
+          ],
           "resolutions": [
             "360p",
             "720p",
@@ -20233,7 +20448,7 @@
       "type": "video"
     },
     {
-      "created": 1787097600,
+      "created": 1795564800,
       "id": "topaz-video-precision",
       "model_spec": {
         "privacy": "anonymized",
@@ -20399,7 +20614,7 @@
       "type": "video"
     },
     {
-      "created": 1787097600,
+      "created": 1795564800,
       "id": "topaz-video-starlight",
       "model_spec": {
         "privacy": "anonymized",
@@ -20476,7 +20691,7 @@
       "type": "video"
     },
     {
-      "created": 1787097600,
+      "created": 1795564800,
       "id": "topaz-video-starlight-fast",
       "model_spec": {
         "privacy": "anonymized",
@@ -20524,7 +20739,7 @@
       "type": "video"
     },
     {
-      "created": 1787097600,
+      "created": 1795564800,
       "id": "topaz-video-astra",
       "model_spec": {
         "privacy": "anonymized",
@@ -20593,7 +20808,7 @@
       "type": "video"
     },
     {
-      "created": 1787097600,
+      "created": 1795564800,
       "id": "topaz-video-hyperion",
       "model_spec": {
         "privacy": "anonymized",
@@ -20632,7 +20847,7 @@
       "type": "video"
     },
     {
-      "created": 1787097600,
+      "created": 1795564800,
       "id": "topaz-video-interpolate",
       "model_spec": {
         "privacy": "anonymized",
@@ -20697,7 +20912,7 @@
       "type": "video"
     },
     {
-      "created": 1787097600,
+      "created": 1795564800,
       "id": "topaz-video-denoise",
       "model_spec": {
         "privacy": "anonymized",
@@ -20773,7 +20988,7 @@
       "type": "video"
     },
     {
-      "created": 1787097600,
+      "created": 1795564800,
       "id": "topaz-video-deblur",
       "model_spec": {
         "privacy": "anonymized",
@@ -20803,7 +21018,7 @@
       "type": "video"
     },
     {
-      "created": 1787097600,
+      "created": 1795564800,
       "id": "topaz-video-colorize",
       "model_spec": {
         "privacy": "anonymized",
@@ -23458,6 +23673,10 @@
             "2K": {
               "usd": 0.051,
               "diem": 0.051
+            },
+            "4K": {
+              "usd": 0.102,
+              "diem": 0.102
             }
           },
           "inputImages": {
@@ -23488,12 +23707,13 @@
           "resolutions": [
             "1K",
             "1.5K",
-            "2K"
+            "2K",
+            "4K"
           ],
           "supportsTransparentBackground": true
         },
         "supportsOptimizePromptThinking": false,
-        "description": "Seedream V5.5 Edit is ByteDance Seed's Seedream 5.5 for natural-language editing, at 1K, 1.5K, or 2K with up to 10 input images.",
+        "description": "Seedream V5.5 Edit is ByteDance Seed's Seedream 5.5 for natural-language editing, at 1K, 1.5K, 2K, or 4K with up to 10 input images.",
         "name": "Seedream V5.5",
         "offline": false,
         "privacy": "anonymized",
@@ -23591,6 +23811,7 @@
           ],
           "promptCharacterLimit": 7500,
           "combineImages": true,
+          "maxInputImages": 5,
           "singleImageAspectRatio": true,
           "defaultResolution": "1K",
           "resolutions": [
@@ -23679,6 +23900,7 @@
           ],
           "promptCharacterLimit": 7500,
           "combineImages": true,
+          "maxInputImages": 5,
           "singleImageAspectRatio": true,
           "defaultResolution": "1K",
           "resolutions": [
@@ -23892,7 +24114,7 @@
           ],
           "promptCharacterLimit": 5000,
           "combineImages": true,
-          "maxInputImages": 6,
+          "maxInputImages": 9,
           "singleImageAspectRatio": true,
           "defaultResolution": "1K",
           "resolutions": [
@@ -23901,7 +24123,7 @@
           ]
         },
         "supportsOptimizePromptThinking": false,
-        "description": "Wan 2.7 Pro Edit is the premium tier of Alibaba's Wan 2.7 for natural-language image editing, combining up to 6 input images at 1K or 2K.",
+        "description": "Wan 2.7 Pro Edit is the premium tier of Alibaba's Wan 2.7 for natural-language image editing, combining up to 9 input images at 1K or 2K.",
         "name": "Wan 2.7 Pro",
         "offline": false,
         "privacy": "anonymized",
@@ -23942,11 +24164,11 @@
           ],
           "promptCharacterLimit": 3000,
           "combineImages": true,
-          "maxInputImages": 6,
+          "maxInputImages": 8,
           "singleImageAspectRatio": true
         },
         "supportsOptimizePromptThinking": false,
-        "description": "Flux 2 Max Edit is the top FLUX.2 tier from Black Forest Labs for editing, built for realism, precision and consistency across up to 6 input images.",
+        "description": "Flux 2 Max Edit is the top FLUX.2 tier from Black Forest Labs for editing, built for realism, precision and consistency across up to 8 input images.",
         "name": "Flux 2 Max",
         "offline": false,
         "privacy": "anonymized",
@@ -23994,7 +24216,7 @@
           ],
           "promptCharacterLimit": 32000,
           "combineImages": true,
-          "maxInputImages": 6,
+          "maxInputImages": 10,
           "singleImageAspectRatio": true,
           "defaultResolution": "1K",
           "resolutions": [
@@ -24004,7 +24226,7 @@
           ]
         },
         "supportsOptimizePromptThinking": false,
-        "description": "Flux 3 Edit is Black Forest Labs' flagship image editor, made for precise local edits and multi-reference composition across up to 6 input images, with output up to 4K.",
+        "description": "Flux 3 Edit is Black Forest Labs' flagship image editor, made for precise local edits and multi-reference composition across up to 10 input images, with output up to 4K.",
         "name": "Flux 3",
         "offline": false,
         "privacy": "anonymized",
@@ -24106,7 +24328,7 @@
           ],
           "promptCharacterLimit": 10000,
           "combineImages": true,
-          "maxInputImages": 6,
+          "maxInputImages": 16,
           "singleImageAspectRatio": true,
           "defaultResolution": "1K",
           "resolutions": [
@@ -24123,7 +24345,7 @@
           "supportsTransparentBackground": true
         },
         "supportsOptimizePromptThinking": false,
-        "description": "GPT Image 2.5 Flare Edit makes fast, scoped edits with OpenAI's GPT Image 2.5 while keeping the subject and composition intact. It takes up to 6 input images and renders at up to 4K.",
+        "description": "GPT Image 2.5 Flare Edit makes fast, scoped edits with OpenAI's GPT Image 2.5 while keeping the subject and composition intact. It takes up to 16 input images and renders at up to 4K.",
         "name": "GPT Image 2.5 Flare",
         "offline": false,
         "privacy": "anonymized",
@@ -24225,7 +24447,7 @@
           ],
           "promptCharacterLimit": 10000,
           "combineImages": true,
-          "maxInputImages": 6,
+          "maxInputImages": 16,
           "singleImageAspectRatio": true,
           "defaultResolution": "1K",
           "resolutions": [
@@ -24242,7 +24464,7 @@
           "supportsTransparentBackground": true
         },
         "supportsOptimizePromptThinking": false,
-        "description": "GPT Image 2.5 Sunburst Edit gives tight control over edits with OpenAI's premium GPT Image 2.5 tier, holding the subject and composition steady across revisions. It takes up to 6 input images and renders at up to 4K.",
+        "description": "GPT Image 2.5 Sunburst Edit gives tight control over edits with OpenAI's premium GPT Image 2.5 tier, holding the subject and composition steady across revisions. It takes up to 16 input images and renders at up to 4K.",
         "name": "GPT Image 2.5 Sunburst",
         "offline": false,
         "privacy": "anonymized",
@@ -24344,7 +24566,7 @@
           ],
           "promptCharacterLimit": 10000,
           "combineImages": true,
-          "maxInputImages": 6,
+          "maxInputImages": 16,
           "singleImageAspectRatio": true,
           "defaultResolution": "1K",
           "resolutions": [
@@ -24361,7 +24583,7 @@
           "supportsTransparentBackground": true
         },
         "supportsOptimizePromptThinking": false,
-        "description": "GPT Image 2.6 Sunburst Edit makes high-fidelity edits with OpenAI's GPT Image 2.6 Sunburst, keeping the subject and composition intact. It takes up to 6 input images and renders at up to 4K.",
+        "description": "GPT Image 2.6 Sunburst Edit makes high-fidelity edits with OpenAI's GPT Image 2.6 Sunburst, keeping the subject and composition intact. It takes up to 16 input images and renders at up to 4K.",
         "name": "GPT Image 2.6 Sunburst Edit",
         "offline": false,
         "privacy": "anonymized",
@@ -24463,7 +24685,7 @@
           ],
           "promptCharacterLimit": 10000,
           "combineImages": true,
-          "maxInputImages": 6,
+          "maxInputImages": 16,
           "singleImageAspectRatio": true,
           "defaultResolution": "1K",
           "resolutions": [
@@ -24480,7 +24702,7 @@
           "supportsTransparentBackground": true
         },
         "supportsOptimizePromptThinking": false,
-        "description": "GPT Image 2.6 Flare Edit makes fast, high-fidelity edits with OpenAI's GPT Image 2.6 Flare, keeping the subject and composition intact. It takes up to 6 input images and renders at up to 4K.",
+        "description": "GPT Image 2.6 Flare Edit makes fast, high-fidelity edits with OpenAI's GPT Image 2.6 Flare, keeping the subject and composition intact. It takes up to 16 input images and renders at up to 4K.",
         "name": "GPT Image 2.6 Flare Edit",
         "offline": false,
         "privacy": "anonymized",
@@ -24581,7 +24803,7 @@
           ],
           "promptCharacterLimit": 10000,
           "combineImages": true,
-          "maxInputImages": 6,
+          "maxInputImages": 16,
           "singleImageAspectRatio": true,
           "defaultResolution": "1K",
           "resolutions": [
@@ -24597,7 +24819,7 @@
           ]
         },
         "supportsOptimizePromptThinking": false,
-        "description": "GPT Image 2 Edit makes high-fidelity edits with OpenAI's GPT Image 2 that preserve the original composition. It takes up to 6 input images and renders at up to 4K.",
+        "description": "GPT Image 2 Edit makes high-fidelity edits with OpenAI's GPT Image 2 that preserve the original composition. It takes up to 16 input images and renders at up to 4K.",
         "name": "GPT Image 2",
         "offline": false,
         "privacy": "anonymized",
@@ -24633,12 +24855,12 @@
           ],
           "promptCharacterLimit": 5000,
           "combineImages": true,
-          "maxInputImages": 6,
+          "maxInputImages": 10,
           "singleImageAspectRatio": true,
           "supportsTransparentBackground": true
         },
         "supportsOptimizePromptThinking": false,
-        "description": "GPT Image 1.5 Edit makes high-fidelity edits with OpenAI's GPT Image 1.5, preserving composition, lighting and detail. It takes up to 6 input images.",
+        "description": "GPT Image 1.5 Edit makes high-fidelity edits with OpenAI's GPT Image 1.5, preserving composition, lighting and detail. It takes up to 10 input images.",
         "name": "GPT Image 1.5",
         "offline": false,
         "privacy": "anonymized",
@@ -24894,7 +25116,7 @@
           ],
           "promptCharacterLimit": 32768,
           "combineImages": true,
-          "maxInputImages": 6,
+          "maxInputImages": 14,
           "singleImageAspectRatio": true,
           "defaultResolution": "1K",
           "resolutions": [
@@ -24904,7 +25126,7 @@
           ]
         },
         "supportsOptimizePromptThinking": false,
-        "description": "Nano Banana 2 Edit uses Google's Gemini-based Nano Banana 2 to edit images from a text instruction, combining up to 6 input images at up to 4K with fast turnaround.",
+        "description": "Nano Banana 2 Edit uses Google's Gemini-based Nano Banana 2 to edit images from a text instruction, combining up to 14 input images at up to 4K with fast turnaround.",
         "name": "Nano Banana 2",
         "offline": false,
         "privacy": "anonymized",
@@ -24965,7 +25187,7 @@
           ],
           "promptCharacterLimit": 32768,
           "combineImages": true,
-          "maxInputImages": 6,
+          "maxInputImages": 14,
           "singleImageAspectRatio": true,
           "defaultResolution": "1K",
           "resolutions": [
@@ -24975,7 +25197,7 @@
           ]
         },
         "supportsOptimizePromptThinking": false,
-        "description": "Nano Banana 2.1 Edit uses Google's Gemini-based Nano Banana 2.1 to edit images from a text instruction, combining up to 6 input images at up to 4K with fast turnaround.",
+        "description": "Nano Banana 2.1 Edit uses Google's Gemini-based Nano Banana 2.1 to edit images from a text instruction, combining up to 14 input images at up to 4K with fast turnaround.",
         "name": "Nano Banana 2.1",
         "offline": false,
         "privacy": "anonymized",
@@ -25029,7 +25251,7 @@
           ],
           "promptCharacterLimit": 32768,
           "combineImages": true,
-          "maxInputImages": 6,
+          "maxInputImages": 14,
           "singleImageAspectRatio": true,
           "defaultResolution": "1K",
           "resolutions": [
@@ -25039,7 +25261,7 @@
           ]
         },
         "supportsOptimizePromptThinking": false,
-        "description": "Nano Banana Pro Edit uses Google's Nano Banana Pro for high-quality edits from a text instruction, combining up to 6 input images at up to 4K.",
+        "description": "Nano Banana Pro Edit uses Google's Nano Banana Pro for high-quality edits from a text instruction, combining up to 14 input images at up to 4K.",
         "name": "Nano Banana Pro",
         "offline": false,
         "privacy": "anonymized",
@@ -25086,11 +25308,11 @@
           ],
           "promptCharacterLimit": 10000,
           "combineImages": true,
-          "maxInputImages": 6,
+          "maxInputImages": 14,
           "singleImageAspectRatio": true
         },
         "supportsOptimizePromptThinking": false,
-        "description": "Nano Banana 2 Lite Edit is Google's efficiency-focused image editor, built for fast multi-turn local edits with up to 6 input images.",
+        "description": "Nano Banana 2 Lite Edit is Google's efficiency-focused image editor, built for fast multi-turn local edits with up to 14 input images.",
         "name": "Nano Banana 2 Lite",
         "offline": false,
         "privacy": "anonymized",
@@ -25267,11 +25489,11 @@
           ],
           "promptCharacterLimit": 10000,
           "combineImages": true,
-          "maxInputImages": 6,
+          "maxInputImages": 10,
           "singleImageAspectRatio": true
         },
         "supportsOptimizePromptThinking": false,
-        "description": "Muse Image Edit is Meta's Muse Image in editing mode. It changes only what you ask and can compose from up to 6 reference images.",
+        "description": "Muse Image Edit is Meta's Muse Image in editing mode. It changes only what you ask and can compose from up to 10 reference images.",
         "name": "Muse Image",
         "offline": false,
         "privacy": "anonymized",
@@ -25305,11 +25527,11 @@
           ],
           "promptCharacterLimit": 10000,
           "combineImages": true,
-          "maxInputImages": 6,
+          "maxInputImages": 14,
           "singleImageAspectRatio": true
         },
         "supportsOptimizePromptThinking": false,
-        "description": "Seedream V5 Lite Edit is the fast tier of ByteDance Seed's Seedream 5.0 for natural-language editing, with up to 6 input images.",
+        "description": "Seedream V5 Lite Edit is the fast tier of ByteDance Seed's Seedream 5.0 for natural-language editing, with up to 14 input images.",
         "name": "Seedream V5 Lite",
         "offline": false,
         "privacy": "anonymized",
@@ -25364,7 +25586,7 @@
           ],
           "promptCharacterLimit": 10000,
           "combineImages": true,
-          "maxInputImages": 6,
+          "maxInputImages": 10,
           "singleImageAspectRatio": true,
           "defaultResolution": "1K",
           "resolutions": [
@@ -25373,7 +25595,7 @@
           ]
         },
         "supportsOptimizePromptThinking": true,
-        "description": "Seedream V5 Pro Edit is the flagship tier of ByteDance Seed's Seedream 5.0 for natural-language editing, at 1K or 2K with up to 6 input images.",
+        "description": "Seedream V5 Pro Edit is the flagship tier of ByteDance Seed's Seedream 5.0 for natural-language editing, at 1K or 2K with up to 10 input images.",
         "name": "Seedream V5 Pro",
         "offline": false,
         "privacy": "anonymized",
@@ -25407,11 +25629,11 @@
           ],
           "promptCharacterLimit": 10000,
           "combineImages": true,
-          "maxInputImages": 6,
+          "maxInputImages": 14,
           "singleImageAspectRatio": true
         },
         "supportsOptimizePromptThinking": false,
-        "description": "Seedream V4.5 Edit is ByteDance Seed's Seedream 4.5 in editing mode, known for well-composed results from natural-language instructions, with up to 6 input images.",
+        "description": "Seedream V4.5 Edit is ByteDance Seed's Seedream 4.5 in editing mode, known for well-composed results from natural-language instructions, with up to 14 input images.",
         "name": "Seedream V4.5",
         "offline": false,
         "privacy": "anonymized",
@@ -25578,7 +25800,7 @@
           ],
           "promptCharacterLimit": 10000,
           "combineImages": true,
-          "maxInputImages": 6,
+          "maxInputImages": 10,
           "singleImageAspectRatio": true,
           "defaultResolution": "1K",
           "resolutions": [
@@ -25587,7 +25809,7 @@
           ]
         },
         "supportsOptimizePromptThinking": true,
-        "description": "Qwen Image 2.1 Turbo Edit is the fast tier of Alibaba's Qwen-Image 2.1 for editing: local edits, restyles and compositions from up to 6 input images at 1K or 2K.",
+        "description": "Qwen Image 2.1 Turbo Edit is the fast tier of Alibaba's Qwen-Image 2.1 for editing: local edits, restyles and compositions from up to 10 input images at 1K or 2K.",
         "name": "Qwen Image 2.1 Turbo",
         "modelSource": "https://www.alibabacloud.com/help/en/model-studio/models",
         "offline": false,
