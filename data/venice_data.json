@@ -15556,7 +15556,8 @@
           "audio",
           "long_duration",
           "photorealistic",
-          "high_resolution"
+          "high_resolution",
+          "fast"
         ],
         "description": "Grok Imagine 1.5 Lite's image-to-video variant quickly turns a starting image into a 1- to 15-second clip at up to 1080p, with native audio.",
         "name": "Grok Imagine 1.5 Lite",
@@ -19513,8 +19514,7 @@
         "model_sets": [
           "fast",
           "cinematic",
-          "photorealistic",
-          "fast"
+          "photorealistic"
         ],
         "description": "Runway Gen-4 Turbo is a faster version of Runway's Gen-4 video model, animating a starting image into a 2- to 10-second clip.",
         "name": "Runway Gen-4 Turbo",
