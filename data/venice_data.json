@@ -220,61 +220,6 @@
     },
     {
       "context_length": 1000000,
-      "created": 1791936000,
-      "id": "pareto",
-      "model_spec": {
-        "betaModel": true,
-        "pricing": {
-          "input": {
-            "usd": 1,
-            "diem": 1
-          },
-          "cache_input": {
-            "usd": 0.0375,
-            "diem": 0.0375
-          },
-          "output": {
-            "usd": 4,
-            "diem": 4
-          }
-        },
-        "availableContextTokens": 1000000,
-        "maxCompletionTokens": 32768,
-        "capabilities": {
-          "optimizedForCode": false,
-          "quantization": "not-available",
-          "supportsAudioInput": false,
-          "supportsFunctionCalling": true,
-          "supportsLogProbs": false,
-          "supportsMultipleImages": false,
-          "supportsReasoning": false,
-          "supportsReasoningEffort": false,
-          "supportsResponseSchema": false,
-          "supportsTeeAttestation": false,
-          "supportsE2EE": false,
-          "supportsVideoInput": false,
-          "supportsVision": true,
-          "supportsWebSearch": true,
-          "supportsXSearch": false
-        },
-        "deprecation": {
-          "autoRemap": false,
-          "date": "2026-11-27T23:59:59.000Z",
-          "removesAt": "2026-11-27T23:59:59.000Z"
-        },
-        "description": "Pareto is a blended model that runs several frontier models in parallel on every request and returns one answer. It accepts text and image inputs.",
-        "name": "Pareto",
-        "modelSource": "https://unbiased.ai/model-card/",
-        "offline": false,
-        "privacy": "anonymized",
-        "traits": []
-      },
-      "object": "model",
-      "owned_by": "venice.ai",
-      "type": "text"
-    },
-    {
-      "context_length": 1000000,
       "created": 1783555200,
       "id": "gemini-3-6-flash",
       "model_spec": {
@@ -1917,6 +1862,11 @@
           "supportsVision": false,
           "supportsWebSearch": true,
           "supportsXSearch": false
+        },
+        "deprecation": {
+          "autoRemap": false,
+          "date": "2026-12-03T00:00:00.000Z",
+          "removesAt": "2026-12-03T00:00:00.000Z"
         },
         "description": "Reasons step by step before it answers. Built for in-depth research and handling long, complex documents. Ideal for technical work and high-precision tasks.",
         "name": "Qwen 3 235B A22B Thinking 2507",
@@ -4507,6 +4457,11 @@
           "supportsWebSearch": true,
           "supportsXSearch": false
         },
+        "deprecation": {
+          "autoRemap": false,
+          "date": "2026-12-03T00:00:00.000Z",
+          "removesAt": "2026-12-03T00:00:00.000Z"
+        },
         "description": "MiMo-V2.5 is Xiaomi's native omnimodal model with strong agentic capabilities, supporting text, image, video, and audio understanding in a unified architecture. Built on a sparse Mixture-of-Experts backbone with 310B total and 15B active parameters, it delivers long-context reasoning up to 1M tokens, function calling, and multimodal perception.",
         "name": "MiMo-V2.5",
         "modelSource": "https://huggingface.co/XiaomiMiMo/MiMo-V2.5",
@@ -5632,7 +5587,7 @@
         "maxCompletionTokens": 4096,
         "capabilities": {
           "optimizedForCode": false,
-          "quantization": "fp16",
+          "quantization": "bf16",
           "supportsAudioInput": false,
           "supportsFunctionCalling": true,
           "supportsLogProbs": false,
@@ -7898,6 +7853,11 @@
           "supportsWebSearch": true,
           "supportsXSearch": false
         },
+        "deprecation": {
+          "autoRemap": false,
+          "date": "2026-12-03T00:00:00.000Z",
+          "removesAt": "2026-12-03T00:00:00.000Z"
+        },
         "description": "MiniMax-M2.5 is a large language model optimized for coding, agentic workflows, and modern application development with enhanced reasoning capabilities.",
         "name": "MiniMax M2.5",
         "modelSource": "https://huggingface.co/MiniMaxAI/MiniMax-M2.5",
@@ -7954,6 +7914,11 @@
           "supportsWebSearch": true,
           "supportsXSearch": false
         },
+        "deprecation": {
+          "autoRemap": false,
+          "date": "2026-12-03T00:00:00.000Z",
+          "removesAt": "2026-12-03T00:00:00.000Z"
+        },
         "description": "MiniMax-M2.7 is a large language model designed for autonomous, real-world productivity with advanced agentic capabilities through multi-agent collaboration.",
         "name": "MiniMax M2.7",
         "modelSource": "https://huggingface.co/MiniMaxAI/MiniMax-M2.7",
@@ -7999,9 +7964,67 @@
           "supportsWebSearch": true,
           "supportsXSearch": false
         },
+        "deprecation": {
+          "autoRemap": false,
+          "date": "2026-12-03T00:00:00.000Z",
+          "removesAt": "2026-12-03T00:00:00.000Z",
+          "replacementModelId": "nvidia-nemotron-3-5-lightning-30b-a3b"
+        },
         "description": "NVIDIA Nemotron 3 Nano 30B is a compact and efficient language model from NVIDIA, optimized for fast inference while maintaining strong performance across diverse tasks.",
         "name": "NVIDIA Nemotron 3 Nano 30B",
         "modelSource": "https://huggingface.co/nvidia/Nemotron-3-Nano-30B-A3B",
+        "offline": false,
+        "privacy": "private",
+        "traits": []
+      },
+      "object": "model",
+      "owned_by": "venice.ai",
+      "type": "text"
+    },
+    {
+      "context_length": 262144,
+      "created": 1795824000,
+      "id": "nvidia-nemotron-3-5-lightning-30b-a3b",
+      "model_spec": {
+        "pricing": {
+          "input": {
+            "usd": 0.075,
+            "diem": 0.075
+          },
+          "output": {
+            "usd": 0.3,
+            "diem": 0.3
+          }
+        },
+        "availableContextTokens": 262144,
+        "maxCompletionTokens": 32768,
+        "capabilities": {
+          "optimizedForCode": false,
+          "quantization": "fp4",
+          "supportsAudioInput": false,
+          "supportsFunctionCalling": true,
+          "supportsLogProbs": false,
+          "supportsMultipleImages": false,
+          "supportsReasoning": true,
+          "supportsReasoningEffort": true,
+          "reasoningEffortOptions": [
+            "none",
+            "low",
+            "medium",
+            "high"
+          ],
+          "defaultReasoningEffort": "low",
+          "supportsResponseSchema": true,
+          "supportsTeeAttestation": false,
+          "supportsE2EE": false,
+          "supportsVideoInput": false,
+          "supportsVision": false,
+          "supportsWebSearch": true,
+          "supportsXSearch": false
+        },
+        "description": "NVIDIA Nemotron 3.5 Lightning 30B is a fast hybrid Mixture-of-Experts model from NVIDIA with 30B total parameters (3B active), engineered for always-on agents, reasoning, tool use, and structured outputs at high throughput.",
+        "name": "NVIDIA Nemotron 3.5 Lightning 30B",
+        "modelSource": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
         "offline": false,
         "privacy": "private",
         "traits": []
@@ -15556,8 +15579,7 @@
           "audio",
           "long_duration",
           "photorealistic",
-          "high_resolution",
-          "fast"
+          "high_resolution"
         ],
         "description": "Grok Imagine 1.5 Lite's image-to-video variant quickly turns a starting image into a 1- to 15-second clip at up to 1080p, with native audio.",
         "name": "Grok Imagine 1.5 Lite",
@@ -19514,7 +19536,8 @@
         "model_sets": [
           "fast",
           "cinematic",
-          "photorealistic"
+          "photorealistic",
+          "fast"
         ],
         "description": "Runway Gen-4 Turbo is a faster version of Runway's Gen-4 video model, animating a starting image into a 2- to 10-second clip.",
         "name": "Runway Gen-4 Turbo",
